@@ -52,7 +52,7 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Build JSON Validation CLI
         run: |
-          cd ${GITHUB_WORKSPACE}/${OSCAL_TOOLS_PATH_NAME}
+          cd ${GITHUB_WORKSPACE}/${OSCAL_TOOLS_PATH_NAME}/json-cli
           mvn install
       - name: Validate Content
         run:
