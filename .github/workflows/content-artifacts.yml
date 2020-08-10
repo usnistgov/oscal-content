@@ -56,9 +56,6 @@ jobs:
           mvn install
       - name: Validate Content
         run:
-          OSCAL_DIR="${GITHUB_WORKSPACE}/${REPO_PATH_NAME}/${OSCAL_DIR_PATH}" bash "${GITHUB_WORKSPACE}/${REPO_PATH_NAME}/$CICD_DIR_PATH/validate-content.sh" -w "$OSCAL_BUILD_DIR_PATH"
-      - uses: lannonbr/issue-label-manager-action@2.0.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OSCAL_DIR="${GITHUB_WORKSPACE}/${REPO_PATH_NAME}/${OSCAL_DIR_PATH}" bash "${GITHUB_WORKSPACE}/${REPO_PATH_NAME}/${CICD_DIR_PATH}/validate-content.sh" -w "${OSCAL_BUILD_DIR_PATH}"
       # job-copy-and-convert-content
       # job-deploy-artifacts
