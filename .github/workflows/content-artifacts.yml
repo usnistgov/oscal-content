@@ -11,12 +11,10 @@ name: Process Content
 env:
   REPO_PATH_NAME: git-content
   OSCAL_TOOLS_PATH_NAME: git-oscal-tools
-  REPO_DIR: ${{ env.GITHUB_WORKSPACE }}/${{ env.REPO_PATH_NAME }}
-  OSCAL_DIR: ${{ env.REPO_DIR }}/oscal
-  CICD_DIR: ${{ env.OSCAL_DIR }}/build/ci-cd
-  OSCAL_TOOLS_DIR: ${{ env.GITHUB_WORKSPACE }}/git-oscal-tools
+  OSCAL_DIR_PATH: oscal
+  CICD_DIR_PATH: oscal/build/ci-cd
   SAXON_VERSION: 9.9.0-1
-  OSCAL_BUILD_DIR: ~/content-build
+  OSCAL_BUILD_DIR_PATH: ~/content-build
 jobs:
   validate-content:
     name: Content Validation Checking
@@ -54,11 +52,11 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Build JSON Validation CLI
         run: |
-          cd ${{ env.OSCAL_TOOLS_DIR }}
+          cd ${GITHUB_WORKSPACE}/${OSCAL_TOOLS_PATH_NAME}
           mvn install
       - name: Validate Content
         run:
-          bash "$CICD_DIR/validate-content.sh" -w "$OSCAL_BUILD_DIR"
+          OSCAL_DIR="${GITHUB_WORKSPACE}/${REPO_PATH_NAME}/${OSCAL_DIR_PATH}" bash "${GITHUB_WORKSPACE}/${REPO_PATH_NAME}/$CICD_DIR_PATH/validate-content.sh" -w "$OSCAL_BUILD_DIR_PATH"
       - uses: lannonbr/issue-label-manager-action@2.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
