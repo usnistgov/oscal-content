@@ -1,3 +1,5 @@
+![Process Content](https://github.com/usnistgov/oscal-content/workflows/Process%20Content/badge.svg?branch=master)
+
 # OSCAL Examples
 
 This directory contains numerous OSCAL examples in XML, JSON, and YAML formats.
