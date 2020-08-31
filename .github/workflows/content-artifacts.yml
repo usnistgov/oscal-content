@@ -8,6 +8,8 @@ on:
     paths:
       - 'src/**'
   workflow_dispatch:
+    branches:
+      - master
 name: Process Content
 env:
   OSCAL_DIR_PATH: oscal
@@ -15,8 +17,8 @@ env:
   CONTENT_CONFIG_PATH: src/config
   SAXON_VERSION: 9.9.0-1
 jobs:
-  validate-content:
-    name: Content Validation Checking
+  validate-and-publish-content:
+    name: Content Validation Checking, Conversion and Validation
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
