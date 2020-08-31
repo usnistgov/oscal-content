@@ -4,6 +4,7 @@ on:
       - master
     paths:
       - 'src/**'
+      - 'oscal'
   pull_request:
     paths:
       - 'src/**'
@@ -51,11 +52,11 @@ jobs:
       - name: Validate Content
         run:
           # mkdir -p "${OSCAL_BUILD_DIR_PATH}"
-          bash "${GITHUB_WORKSPACE}/git-content/${CICD_DIR_PATH}/validate-content.sh" -o "${GITHUB_WORKSPACE}/git-content/${OSCAL_DIR_PATH}" -a "${GITHUB_WORKSPACE}/git-content" -c "${GITHUB_WORKSPACE}/${REPO_DIR_NAME}/${CONTENT_CONFIG_PATH}"
+          bash "${GITHUB_WORKSPACE}/git-content/${CICD_DIR_PATH}/validate-content.sh" -o "${GITHUB_WORKSPACE}/git-content/${OSCAL_DIR_PATH}" -a "${GITHUB_WORKSPACE}/git-content" -c "${GITHUB_WORKSPACE}/git-content/${CONTENT_CONFIG_PATH}"
       # job-copy-and-convert-content
       - name: Auto-convert Content
         run:
-          bash "${GITHUB_WORKSPACE}/git-content/${CICD_DIR_PATH}/copy-and-convert-content.sh" -o "${GITHUB_WORKSPACE}/git-content/${OSCAL_DIR_PATH}" -a "${GITHUB_WORKSPACE}/git-content" -c "${GITHUB_WORKSPACE}/${REPO_DIR_NAME}/${CONTENT_CONFIG_PATH}" -w "${GITHUB_WORKSPACE}/git-content"
+          bash "${GITHUB_WORKSPACE}/git-content/${CICD_DIR_PATH}/copy-and-convert-content.sh" -o "${GITHUB_WORKSPACE}/git-content/${OSCAL_DIR_PATH}" -a "${GITHUB_WORKSPACE}/git-content" -c "${GITHUB_WORKSPACE}/git-content/${CONTENT_CONFIG_PATH}" -w "${GITHUB_WORKSPACE}/git-content"
       # job-deploy-artifacts
       - name: Setup SSH key
         # only do this on master
