@@ -32,7 +32,7 @@ jobs:
       - name: Install APT dependencies
         run: |
           sudo apt-get install libxml2-utils
-      - name: Install APT dependencies
+      - name: Install NPM dependencies
         run: |
           sudo npm install -g ajv-cli
       - name: Set up JDK 11
@@ -66,6 +66,7 @@ jobs:
         if: github.ref == 'refs/heads/master'
         uses: stefanzweifel/git-auto-commit-action@v4.4.1
         with:
+          repository: git-content
           commit_message: Publishing auto-converted artifacts
           commit_user_name: OSCAL GitHub Actions Bot
           commit_user_email: oscal@nist.gov
