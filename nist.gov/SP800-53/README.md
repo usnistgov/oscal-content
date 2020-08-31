@@ -1,6 +1,6 @@
 # NIST maintained OSCAL content for NIST Special Publication 800-53
 
-NIST is maintaining OSCAL content for multiple revisions of the NIST Special Publication (SP) 800-53.
+NIST is maintaining OSCAL content for multiple revisions of the NIST Special Publication (SP) 800-53. The XML, JSON, and YAML versions of SP800-53 given here are derived from the NIST publications. These OSCAL files are intended to faithfully to represent the published documents in machinable readable form.
 
 OSCAL XML-, JSON-, and YAML-based content is provided for the following revisions:
 
