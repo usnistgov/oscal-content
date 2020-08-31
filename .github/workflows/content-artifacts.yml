@@ -3,10 +3,10 @@ on:
     branches:
       - master
     paths:
-      - 'src/content/**'
+      - 'src/**'
   pull_request:
     paths:
-      - 'src/content/**'
+      - 'src/**'
 name: Process Content
 env:
   OSCAL_DIR_PATH: oscal
