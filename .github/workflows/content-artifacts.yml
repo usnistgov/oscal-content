@@ -25,7 +25,6 @@ jobs:
         with:
           path: git-content
           submodules: recursive
-          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
       # job-validate-content
       - name: Update APT package metadata
         run: |
@@ -55,6 +54,10 @@ jobs:
         run:
           bash "${GITHUB_WORKSPACE}/git-content/${CICD_DIR_PATH}/copy-and-convert-content.sh" -o "${GITHUB_WORKSPACE}/git-content/${OSCAL_DIR_PATH}" -a "${GITHUB_WORKSPACE}/git-content" -c "${GITHUB_WORKSPACE}/${REPO_DIR_NAME}/${CONTENT_CONFIG_PATH}" -w "${GITHUB_WORKSPACE}/git-content"
       # job-deploy-artifacts
+      - name: Setup SSH key
+        run: |
+          eval "$(ssh-agent -s)"
+          ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
       - name: Publish Artifacts
         # only do this on master
         if: github.ref == 'refs/heads/master'
