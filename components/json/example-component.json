@@ -2,9 +2,9 @@
   "component-definition": {
     "metadata": {
       "title": "Test Component Defintion",
-      "last-modified": "2019-08-21T15:24:24.389Z",
+      "last-modified": "2020-08-31T20:45:24.389Z",
       "version": "20200723",
-      "oscal-version": "1.0.0-milestone2",
+      "oscal-version": "1.0.0-milestone3",
       "parties": [
         {
           "uuid": "ee47836c-877c-4007-bbf3-c9d9bd805a9a",
