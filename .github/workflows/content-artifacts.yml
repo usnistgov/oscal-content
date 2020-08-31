@@ -25,7 +25,7 @@ jobs:
         with:
           path: git-content
           submodules: recursive
-          ssh-key: '${{ secrets.SSH_PRIVATE_KEY }}'
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
       # job-validate-content
       - name: Update APT package metadata
         run: |
