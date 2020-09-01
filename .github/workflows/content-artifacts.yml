@@ -5,7 +5,7 @@ on:
     paths:
       - 'src/**'
       - 'oscal'
-  pull_request:
+  pull_request_target:
     paths:
       - 'src/**'
   workflow_dispatch:
