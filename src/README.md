@@ -1,9 +1,8 @@
 # OSCAL Examples Source
 
-This directory contains the source files for numerous OSCAL examples.
+This directory contains the source files for all the OSCAL examples located in this repository.
 
 **Automated:** The source for a given file is in one of the supported XML, JSON, or YAML formats. The Continuous Integration and Continuous Deployment (CI/CD) scripting automatically converts these content sources into the alternate formats. As a result, the example files, who's directories are located in the root directory of this repository, should not be modified. Instead, the source of the file should be edited here.
-
 
 The structure and contents of the examples directory are as follows:
 
