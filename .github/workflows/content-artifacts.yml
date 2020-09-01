@@ -5,9 +5,8 @@ on:
     paths:
       - 'src/**'
       - 'oscal'
-  pull_request_target:
-    paths:
-      - 'src/**'
+  pull_request:
+    types: [opened, synchronize, reopened]
   workflow_dispatch:
     branches:
       - master
