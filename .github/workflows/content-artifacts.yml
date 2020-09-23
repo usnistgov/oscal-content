@@ -5,20 +5,21 @@ on:
     paths:
       - 'src/**'
       - 'oscal'
-  pull_request:
+  pull_request_target:
     types: [opened, synchronize, reopened]
   workflow_dispatch:
     branches:
       - master
-name: Process Content
+name: Process Content Artifacts
 env:
   OSCAL_DIR_PATH: oscal
   CICD_DIR_PATH: oscal/build/ci-cd
   CONTENT_CONFIG_PATH: src/config
   SAXON_VERSION: 9.9.0-1
+  HOME_REPO: usnistgov/oscal-content
 jobs:
   validate-and-publish-content:
-    name: Content Validation Checking, Conversion and Validation
+    name: Checking, Convert and Validate Content
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
@@ -58,14 +59,14 @@ jobs:
           bash "${GITHUB_WORKSPACE}/git-content/${CICD_DIR_PATH}/copy-and-convert-content.sh" -o "${GITHUB_WORKSPACE}/git-content/${OSCAL_DIR_PATH}" -a "${GITHUB_WORKSPACE}/git-content" -c "${GITHUB_WORKSPACE}/git-content/${CONTENT_CONFIG_PATH}" -w "${GITHUB_WORKSPACE}/git-content"
       # job-deploy-artifacts
       - name: Setup SSH key
-        # only do this on master
-        if: github.ref == 'refs/heads/master'
+        # only do this on master in the home repo
+        if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/master'
         run: |
           eval "$(ssh-agent -s)"
           ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
       - name: Publish Artifacts
         # only do this on master
-        if: github.ref == 'refs/heads/master'
+        if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/master'
         uses: stefanzweifel/git-auto-commit-action@v4.4.1
         with:
           repository: git-content
