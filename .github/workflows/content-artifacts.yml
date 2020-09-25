@@ -5,7 +5,7 @@ on:
     paths:
       - 'src/**'
       - 'oscal'
-  pull_request_target:
+  pull_request:
     types: [opened, synchronize, reopened]
   workflow_dispatch:
     branches:
@@ -19,7 +19,7 @@ env:
   HOME_REPO: usnistgov/oscal-content
 jobs:
   validate-and-publish-content:
-    name: Checking, Convert and Validate Content
+    name: Check, Convert and Validate Content
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
