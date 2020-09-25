@@ -3,7 +3,7 @@
          uuid="0976da03-108c-4f01-81a6-ad9ed63354fe">
    <metadata>
       <title>SP800-53 MODERATE IMPACT BASELINE</title>
-      <last-modified>2020-08-26T16:28:37.775-04:00</last-modified>
+      <last-modified>2020-09-25T12:02:00.000-04:00</last-modified>
       <version>FPD</version>
       <oscal-version>1.0.0-milestone3</oscal-version>
       <role id="creator">
@@ -32,7 +32,7 @@
          <party-uuid>2ef7cfec-cb8e-4571-a7a2-a5c609b4767a</party-uuid>
       </responsible-party>
    </metadata>
-   <import href="NIST_SP-800-53_rev5-FPD_catalog.xml">
+   <import href="NIST_SP-800-53_rev5-FINAL_catalog.xml">
       <include>
          <call control-id="ac-1"/>
          <call control-id="ac-2"/>

@@ -3,7 +3,7 @@
          uuid="3ae6cabe-4976-43e4-b921-11c34b432b51">
    <metadata>
       <title>SP800-53 HIGH IMPACT BASELINE</title>
-      <last-modified>2020-08-26T16:28:38.111-04:00</last-modified>
+      <last-modified>2020-09-25T12:02:00.000-04:00</last-modified>
       <version>FPD</version>
       <oscal-version>1.0.0-milestone3</oscal-version>
       <role id="creator">
@@ -32,7 +32,7 @@
          <party-uuid>a90f4235-ab3c-4bf1-ba0a-865bbc833346</party-uuid>
       </responsible-party>
    </metadata>
-   <import href="NIST_SP-800-53_rev5-FPD_catalog.xml">
+   <import href="NIST_SP-800-53_rev5-FINAL_catalog.xml">
       <include>
          <call control-id="ac-1"/>
          <call control-id="ac-2"/>

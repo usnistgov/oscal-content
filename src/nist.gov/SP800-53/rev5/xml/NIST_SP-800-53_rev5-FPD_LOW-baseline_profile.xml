@@ -3,7 +3,7 @@
          uuid="7ef5286d-c162-439d-8c32-6eecd08f93d5">
    <metadata>
       <title>SP800-53 LOW IMPACT BASELINE</title>
-      <last-modified>2020-08-26T16:28:37.432-04:00</last-modified>
+      <last-modified>2020-09-25T12:02:00.000-04:00</last-modified>
       <version>FPD</version>
       <oscal-version>1.0.0-milestone3</oscal-version>
       <role id="creator">
@@ -32,7 +32,7 @@
          <party-uuid>fcba95f8-df3b-47cd-ae6f-57089a2b7174</party-uuid>
       </responsible-party>
    </metadata>
-   <import href="NIST_SP-800-53_rev5-FPD_catalog.xml">
+   <import href="NIST_SP-800-53_rev5-FINAL_catalog.xml">
       <include>
          <call control-id="ac-1"/>
          <call control-id="ac-2"/>
