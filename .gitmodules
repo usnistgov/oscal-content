@@ -1,4 +1,4 @@
 [submodule "oscal"]
 	path = oscal
-	url = git@github.com:usnistgov/OSCAL.git
+	url = https://github.com/usnistgov/OSCAL.git
 	branch = master
