@@ -3,7 +3,7 @@
     "uuid": "3ae6cabe-4976-43e4-b921-11c34b432b51",
     "metadata": {
       "title": "SP800-53 HIGH IMPACT BASELINE",
-      "last-modified": "2020-08-26T16:28:38.111-04:00",
+      "last-modified": "2020-09-25T12:02:00.000-04:00",
       "version": "FPD",
       "oscal-version": "1.0.0-milestone3",
       "roles": [
@@ -54,7 +54,7 @@
     },
     "imports": [
       {
-        "href": "NIST_SP-800-53_rev5-FPD_catalog.xml",
+        "href": "NIST_SP-800-53_rev5-FINAL_catalog.xml",
         "include": {
           "id-selectors": [
             {

@@ -2,7 +2,7 @@ profile:
   uuid:     fcd0e29e-74e3-4f59-9834-f72a98fa2519
   metadata: 
     title:               SP800-53 PRIVACY BASELINE
-    last-modified:       2020-08-26T16:28:37.032-04:00
+    last-modified:       2020-09-25T12:02:00.000-04:00
     version:             FPD
     oscal-version:       1.0.0-milestone3
     roles: 
@@ -31,7 +31,7 @@ profile:
         party-uuids: d8bc8fc4-0f2e-4bfd-983f-e2ec9dc64696
   imports: 
     - 
-      href:    NIST_SP-800-53_rev5-FPD_catalog.xml
+      href:    NIST_SP-800-53_rev5-FINAL_catalog.xml
       include: 
         id-selectors: 
           - 
