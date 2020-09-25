@@ -76,10 +76,10 @@ jobs:
       - name: Publish Artifacts
         # only do this on master
         if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/master'
-        uses: stefanzweifel/git-auto-commit-action@v4.4.1
+        uses: stefanzweifel/git-auto-commit-action@v4.5.1
         with:
           repository: git-content
-          token: ${{ secrets.COMMIT_TOKEN }}
+#          token: ${{ secrets.COMMIT_TOKEN }}
           commit_message: Publishing auto-converted artifacts
           commit_user_name: OSCAL GitHub Actions Bot
           commit_user_email: oscal@nist.gov
