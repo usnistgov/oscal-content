@@ -79,7 +79,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4.5.1
         with:
           repository: git-content
-#          token: ${{ secrets.COMMIT_TOKEN }}
+          push_options: --force
           commit_message: Publishing auto-converted artifacts
           commit_user_name: OSCAL GitHub Actions Bot
           commit_user_email: oscal@nist.gov
