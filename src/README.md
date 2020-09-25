@@ -1,3 +1,5 @@
+![Process Content](https://github.com/usnistgov/oscal-content/workflows/Process%20Content%20Artifacts/badge.svg)
+
 # OSCAL Examples Source
 
 This directory contains the source files for all the OSCAL examples located in this repository.
