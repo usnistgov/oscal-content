@@ -22,7 +22,16 @@ jobs:
     name: Check, Convert and Validate Content
     runs-on: ubuntu-18.04
     steps:
+      # use this if checkout needs to be authenticated
       - uses: actions/checkout@v2
+        if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/master'
+        with:
+          path: git-content
+          submodules: recursive
+          token: ${{ secrets.COMMIT_TOKEN }}
+      # use this if checkout is anonymous
+      - uses: actions/checkout@v2
+        if: github.repository != env.HOME_REPO || github.ref != 'refs/heads/master'
         with:
           path: git-content
           submodules: recursive
