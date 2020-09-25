@@ -1,6 +1,6 @@
 {
   "catalog": {
-    "uuid": "511993f5-7030-49ef-8ae9-e4d9a192b232",
+    "uuid": "6a63b60f-7f30-498b-8af2-1eae389eb860",
     "metadata": {
       "title": "SP800-53 MODERATE IMPACT BASELINE",
       "last-modified": "2020-09-25T12:02:00.000-04:00",
@@ -9,7 +9,7 @@
       "properties": [
         {
           "name": "resolution-timestamp",
-          "value": "2020-09-25T18:48:03.709735Z"
+          "value": "2020-09-25T20:56:11.190018Z"
         }
       ],
       "links": [
