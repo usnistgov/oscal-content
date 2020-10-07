@@ -1,6 +1,6 @@
 {
   "catalog": {
-    "uuid": "c14ec235-2134-42cb-a5a8-48d097f5000f",
+    "uuid": "a7f16ed8-3ff0-4665-8684-6e3a4f9a436d",
     "metadata": {
       "title": "SP800-53 HIGH IMPACT BASELINE",
       "last-modified": "2020-09-25T12:02:00.000-04:00",
@@ -9,7 +9,7 @@
       "properties": [
         {
           "name": "resolution-timestamp",
-          "value": "2020-09-25T20:55:54.428283Z"
+          "value": "2020-10-07T06:52:26.051228Z"
         }
       ],
       "links": [
