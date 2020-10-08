@@ -310,15 +310,12 @@
         {
           "uuid": "aaadb3ff-6ae8-4332-92db-211468c52af2",
           "control-id": "au-1",
-          "description": "This should be a description of how au-1 is implemented.",
           "statements": {
             "au-1smt": {
-              "uuid": "7ad47329-dc55-4196-a19d-178a8fe7438d",
-              "description": "N/A"
+              "uuid": "7ad47329-dc55-4196-a19d-178a8fe7438d"
             },
             "au-1smt.a": {
               "uuid": "f3887a91-9ed3-425c-b305-21e4634a1c34",
-              "description": "",
               "by-components": {
                 "795533ab-9427-4abe-820f-0b571bacfe6d": {
                   "uuid": "a74681b2-fbcb-46eb-90fd-0d55aa74ac7b",

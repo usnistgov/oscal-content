@@ -1,5 +1,5 @@
 catalog: 
-  uuid:        a7f16ed8-3ff0-4665-8684-6e3a4f9a436d
+  uuid:        fbd84792-ba9e-4f51-85d5-37280971e404
   metadata: 
     title:               SP800-53 HIGH IMPACT BASELINE
     last-modified:       2020-09-25T12:02:00.000-04:00
@@ -8,7 +8,7 @@ catalog:
     properties: 
       - 
         name:  resolution-timestamp
-        value: 2020-10-07T06:52:26.051228Z
+        value: 2020-10-08T18:38:36.710921Z
     links: 
       - 
         href: NIST_SP-800-53_rev5-FPD_HIGH-baseline_profile.xml

@@ -179,16 +179,8 @@
          <p>This is the control implementation for the system.</p>
       </description>
       <implemented-requirement uuid="aaadb3ff-6ae8-4332-92db-211468c52af2" control-id="au-1">
-         <description>
-            <p>This should be a description of how au-1 is implemented.</p>
-         </description>
-         <statement statement-id="au-1smt" uuid="7ad47329-dc55-4196-a19d-178a8fe7438d">
-            <description>
-               <p>N/A</p>
-            </description>
-         </statement>
+         <statement statement-id="au-1smt" uuid="7ad47329-dc55-4196-a19d-178a8fe7438d"/>
          <statement statement-id="au-1smt.a" uuid="f3887a91-9ed3-425c-b305-21e4634a1c34">
-            <description/>
             <by-component component-uuid="795533ab-9427-4abe-820f-0b571bacfe6d"
                           uuid="a74681b2-fbcb-46eb-90fd-0d55aa74ac7b">
                <description>
