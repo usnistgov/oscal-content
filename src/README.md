@@ -10,7 +10,7 @@ The structure and contents of the examples directory are as follows:
 
  * [nist.gov/SP800-53/rev4](nist.gov/SP800-53/rev4): This directory contains OSCAL examples of the catalog, and low, moderate, and high baselines defined by NIST Special Publication (SP) 800-53 Revision 4.
  * [nist.gov/SP800-53/rev5](nist.gov/SP800-53/rev5): This directory contains OSCAL examples of the catalog, and low, moderate, and high baselines defined by NIST Special Publication (SP) 800-53B Revision 5 and SP 800-53B Revision 5 respectively.
-   * [nist.gov/SP800-53/rev5/draft](nist.gov/SP800-53/rev5/draft): Earlier releases of draft content extractions of the Final Public Draft (FPD) version of the Revision 5 catalog and profiles - for reference only
+   * [nist.gov/SP800-53/rev5/draft](nist.gov/SP800-53/rev5/draft): Earlier releases of draft content extractions of the Final Public Draft (FPD) version of the Revision 5 catalog and profiles - for reference only,
  * [fedramp.gov](fedramp.gov): This directory contains OSCAL examples of the low, moderate, and high baselines defined by FedRAMP (the Federal Risk and Authorization Management Program).
  * [components](components): This directory contains sample OSCAL component files.
  * [mini-testing](mini-testing): This directory contains sample files that can be used for unit testing in support of regressions of OSCAL.
