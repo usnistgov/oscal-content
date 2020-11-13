@@ -32,7 +32,7 @@
          <party-uuid>fcabc5cf-15ed-456e-bba5-34f95f144c7d</party-uuid>
       </responsible-party>
    </metadata>
-   <import href="NIST_SP-800-53_rev5-FINAL_catalog.xml">
+   <import href="NIST_SP-800-53_rev5_catalog.xml">
       <include>
          <call control-id="ac-1"/>
          <call control-id="ac-2"/>
