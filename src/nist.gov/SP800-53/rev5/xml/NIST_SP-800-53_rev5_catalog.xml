@@ -1,8 +1,8 @@
-<!-- XML produced by extraction/mapping from docx via XSweet++: 2020-11-19T11:38:40.817-05:00 -->
-<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="6a3a6ec0-1be1-499b-a342-8777f92b4480">
+<!-- XML produced by extraction/mapping from docx via XSweet++: 2020-11-30T09:56:24.443-05:00 -->
+<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="0bea0712-d7bf-4608-82da-6786cf533901">
   <metadata>
     <title>NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Federal Information Systems and Organizations</title>
-    <last-modified>2020-11-19T11:38:39.083-05:00</last-modified>
+    <last-modified>2020-11-30T09:56:22.345-05:00</last-modified>
     <version>Revision 5</version>
     <oscal-version>1.0.0-Milestone3</oscal-version>
     <prop name="keywords">assurance; availability; computer security; confidentiality; control; cybersecurity; FISMA; information security; information system; integrity; personally identifiable information; Privacy Act; privacy controls; privacy functions; privacy requirements; Risk Management Framework; security controls; security functions; security requirements; system; system security.</prop>
@@ -3774,6 +3774,9 @@
         <label>organization-defined event types that the system is capable of logging</label>
       </param>
       <param id="au-2_prm_2">
+        <label>organization-defined event types (subset of the event types defined in <a href="#au-2_smt.a">AU-2a.</a>) along with the frequency of (or situation requiring) logging for each identified event type</label>
+      </param>
+      <param id="au-2_prm_3">
         <label>organization-defined frequency</label>
       </param>
       <prop name="label">AU-2</prop>
@@ -3825,7 +3828,7 @@
         </part>
         <part name="item" id="au-2_smt.c">
           <prop name="label">c.</prop>
-          <p>Specify the following event types for logging within the system: [Assignment: organization-defined event types (subset of the event types defined in <a href="#au-2_smt.a">AU-2a.</a>) along with the frequency of (or situation requiring) logging for each identified event type];</p>
+          <p>Specify the following event types for logging within the system: <insert param-id="au-2_prm_2"/>;</p>
         </part>
         <part name="item" id="au-2_smt.d">
           <prop name="label">d.</prop>
@@ -3833,7 +3836,7 @@
         </part>
         <part name="item" id="au-2_smt.e">
           <prop name="label">e.</prop>
-          <p>Review and update the event types selected for logging <insert param-id="au-2_prm_2"/>.</p>
+          <p>Review and update the event types selected for logging <insert param-id="au-2_prm_3"/>.</p>
         </part>
       </part>
       <part name="guidance" id="au-2_gdn">
@@ -6060,6 +6063,9 @@
       <param id="cm-2_prm_1">
         <label>organization-defined frequency</label>
       </param>
+      <param id="cm-2_prm_2">
+        <label>organization-defined circumstances</label>
+      </param>
       <prop name="label">CM-2</prop>
       <prop name="sort-id">cm-02</prop>
       <link rel="reference" href="#0f66be67-85e7-4ca6-bd19-39453e9f4394">SP 800-124</link>
@@ -6097,7 +6103,7 @@
           </part>
           <part name="item" id="cm-2_smt.b.2">
             <prop name="label">2.</prop>
-            <p>When required due to [Assignment organization-defined circumstances]; and</p>
+            <p>When required due to <insert param-id="cm-2_prm_2"/>; and</p>
           </part>
           <part name="item" id="cm-2_smt.b.3">
             <prop name="label">3.</prop>
@@ -16244,12 +16250,15 @@
     <control class="SP800-53" id="pt-3">
       <title>Personally Identifiable Information Processing Purposes</title>
       <param id="pt-3_prm_1">
-        <label>organization-defined processing</label>
+        <label>organization-defined purpose(s)</label>
       </param>
       <param id="pt-3_prm_2">
-        <label>organization-defined mechanisms</label>
+        <label>organization-defined processing</label>
       </param>
       <param id="pt-3_prm_3">
+        <label>organization-defined mechanisms</label>
+      </param>
+      <param id="pt-3_prm_4">
         <label>organization-defined requirements</label>
       </param>
       <prop name="label">PT-3</prop>
@@ -16275,7 +16284,7 @@
       <part name="statement" id="pt-3_smt">
         <part name="item" id="pt-3_smt.a">
           <prop name="label">a.</prop>
-          <p>Identify and document the [Assignment organization-defined purpose(s)] for processing personally identifiable information;</p>
+          <p>Identify and document the <insert param-id="pt-3_prm_1"/> for processing personally identifiable information;</p>
         </part>
         <part name="item" id="pt-3_smt.b">
           <prop name="label">b.</prop>
@@ -16283,11 +16292,11 @@
         </part>
         <part name="item" id="pt-3_smt.c">
           <prop name="label">c.</prop>
-          <p>Restrict the <insert param-id="pt-3_prm_1"/> of personally identifiable information to only that which is compatible with the identified purpose(s); and </p>
+          <p>Restrict the <insert param-id="pt-3_prm_2"/> of personally identifiable information to only that which is compatible with the identified purpose(s); and </p>
         </part>
         <part name="item" id="pt-3_smt.d">
           <prop name="label">d.</prop>
-          <p>Monitor changes in processing personally identifiable information and implement <insert param-id="pt-3_prm_2"/> to ensure that any changes are made in accordance with <insert param-id="pt-3_prm_3"/>.</p>
+          <p>Monitor changes in processing personally identifiable information and implement <insert param-id="pt-3_prm_3"/> to ensure that any changes are made in accordance with <insert param-id="pt-3_prm_4"/>.</p>
         </part>
       </part>
       <part name="guidance" id="pt-3_gdn">
@@ -25690,6 +25699,9 @@
       <param id="si-23_prm_2">
         <label>organization-defined information</label>
       </param>
+      <param id="si-23_prm_3">
+        <label>organization-defined systems or system components</label>
+      </param>
       <prop name="label">SI-23</prop>
       <prop name="sort-id">si-23</prop>
       <link rel="reference" href="#61ccf0f4-d3e7-42db-9796-ce6cb1c85989">SP 800-160-2</link>
@@ -25701,7 +25713,7 @@
         </part>
         <part name="item" id="si-23_smt.b">
           <prop name="label">b.</prop>
-          <p>Distribute the fragmented information across the following systems or system components: [Assignment organization-defined systems or system components].</p>
+          <p>Distribute the fragmented information across the following systems or system components: <insert param-id="si-23_prm_3"/>.</p>
         </part>
       </part>
       <part name="guidance" id="si-23_gdn">
