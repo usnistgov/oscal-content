@@ -4,13 +4,12 @@ NIST is maintaining OSCAL content for multiple revisions of the NIST Special Pub
 
 OSCAL XML-, JSON-, and YAML-based content is provided for the following SP 800-53 revisions:
 
-- NIST [SP 800-53 Revision 4][sp800-53-rev4] controls catalog and baselines are provided in OSCAL in [rev4](rev4), as:
+- NIST [SP 800-53 Revision 4][sp800-53-rev4] control catalog and baselines are provided in OSCAL in [rev4](rev4), as:
    - an OSCAL control catalog file that captures the SP 800-53 rev 4 and SP 800-53A rev4, combined; and
    - an OSCAL profile file for each of the SP 800-53 rev 4 baselines.
--  NIST [SP 800-53 Revision 5][sp800-53-rev5] Final control catalog, and [SP 800-53B][sp800-53B] FPD baselines are provided in OSCAL in [rev5](rev5), as:
+-  NIST [SP 800-53 Revision 5][sp800-53-rev5] control catalog, and [SP 800-53B][sp800-53B] baselines are provided in OSCAL in [rev5](rev5), as:
    - an OSCAL controls catalog file that captures the SP 800-53 rev 5;
-   - an OSCAL controls catalog file that captures the SP 800-53 rev final public draft (FPD); and
-   - an OSCAL profile file for each of the SP 800-53B rev 5 baselines FPD.
+   - an OSCAL profile file for each of the SP 800-53B baselines.
     
 Note: In the SP 800-53 Revision 5, the control catalog and control baselines are published in separate documents. The control baselines are published as [SP 800-53B][sp800-53B] (draft).
 
