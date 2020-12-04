@@ -1,6 +1,6 @@
 {
   "catalog": {
-    "uuid": "4fe07d6e-8761-42e4-9169-e4a3089d5976",
+    "uuid": "d518f204-2006-4428-bf71-daa18e32e436",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 4 LOW IMPACT BASELINE",
       "last-modified": "2020-05-29T23:29:27.272-04:00",
@@ -9,7 +9,7 @@
       "properties": [
         {
           "name": "resolution-timestamp",
-          "value": "2020-10-08T18:38:13.529285Z"
+          "value": "2020-12-04T17:30:57.40924Z"
         }
       ],
       "links": [
