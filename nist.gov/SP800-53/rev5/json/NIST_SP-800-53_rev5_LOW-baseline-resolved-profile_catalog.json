@@ -1,6 +1,6 @@
 {
   "catalog": {
-    "uuid": "ccf0d49f-2875-49b8-8a2c-4abe838341e8",
+    "uuid": "bfedf283-381c-40e3-9ca4-87ec72d910d7",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 5 LOW IMPACT BASELINE",
       "last-modified": "2020-11-09T15:39:11.596-05:00",
@@ -9,7 +9,7 @@
       "properties": [
         {
           "name": "resolution-timestamp",
-          "value": "2020-12-04T17:31:26.366806Z"
+          "value": "2020-12-07T16:28:59.881469Z"
         }
       ],
       "links": [
@@ -81,7 +81,15 @@
                 "label": "organization-defined personnel or roles"
               },
               {
-                "id": "ac-1_prm_2"
+                "id": "ac-1_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "organization-level",
+                    "mission/business process-level",
+                    "system-level"
+                  ]
+                }
               },
               {
                 "id": "ac-1_prm_3",
@@ -1052,7 +1060,17 @@
                 "label": "organization-defined time period"
               },
               {
-                "id": "ac-7_prm_3"
+                "id": "ac-7_prm_3",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "lock the account or node for an {{ ac-7_prm_4 }}\n               ",
+                    "lock the account or node until released by an administrator",
+                    "delay next logon prompt per {{ ac-7_prm_5 }}\n               ",
+                    "notify system administrator",
+                    "take other {{ ac-7_prm_6 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "ac-7_prm_4",
@@ -1877,7 +1895,14 @@
             "title": "Use of External Systems",
             "parameters": [
               {
-                "id": "ac-20_prm_1"
+                "id": "ac-20_prm_1",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "Establish {{ ac-20_prm_2 }}\n               ",
+                    "Identify {{ ac-20_prm_3 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "ac-20_prm_2",
@@ -2148,7 +2173,15 @@
                 "label": "organization-defined personnel or roles"
               },
               {
-                "id": "at-1_prm_2"
+                "id": "at-1_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "organization-level",
+                    "mission/business process-level",
+                    "system-level"
+                  ]
+                }
               },
               {
                 "id": "at-1_prm_3",
@@ -2958,7 +2991,15 @@
                 "label": "organization-defined personnel or roles"
               },
               {
-                "id": "au-1_prm_2"
+                "id": "au-1_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "organization-level",
+                    "mission/business process-level",
+                    "system-level"
+                  ]
+                }
               },
               {
                 "id": "au-1_prm_3",
@@ -4497,7 +4538,15 @@
                 "label": "organization-defined personnel or roles"
               },
               {
-                "id": "ca-1_prm_2"
+                "id": "ca-1_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "organization-level",
+                    "mission/business process-level",
+                    "system-level"
+                  ]
+                }
               },
               {
                 "id": "ca-1_prm_3",
@@ -4973,7 +5022,19 @@
             "title": "Information Exchange",
             "parameters": [
               {
-                "id": "ca-3_prm_1"
+                "id": "ca-3_prm_1",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "interconnection security agreements",
+                    "information exchange security agreements",
+                    "memoranda of understanding or agreement",
+                    "service level agreements",
+                    "user agreements",
+                    "nondisclosure agreements",
+                    "\n                  {{ ca-3_prm_2 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "ca-3_prm_2",
@@ -6043,7 +6104,15 @@
                 "label": "organization-defined personnel or roles"
               },
               {
-                "id": "cm-1_prm_2"
+                "id": "cm-1_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "organization-level",
+                    "mission/business process-level",
+                    "system-level"
+                  ]
+                }
               },
               {
                 "id": "cm-1_prm_3",
@@ -7538,7 +7607,15 @@
                 "label": "organization-defined personnel or roles"
               },
               {
-                "id": "cp-1_prm_2"
+                "id": "cp-1_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "organization-level",
+                    "mission/business process-level",
+                    "system-level"
+                  ]
+                }
               },
               {
                 "id": "cp-1_prm_3",
@@ -8654,7 +8731,15 @@
                 "label": "organization-defined personnel or roles"
               },
               {
-                "id": "ia-1_prm_2"
+                "id": "ia-1_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "organization-level",
+                    "mission/business process-level",
+                    "system-level"
+                  ]
+                }
               },
               {
                 "id": "ia-1_prm_3",
@@ -9171,7 +9256,14 @@
                 "title": "Access to Accounts — Replay Resistant",
                 "parameters": [
                   {
-                    "id": "ia-2.8_prm_1"
+                    "id": "ia-2.8_prm_1",
+                    "select": {
+                      "how-many": "one or more",
+                      "alternatives": [
+                        "privileged accounts",
+                        "non-privileged accounts"
+                      ]
+                    }
                   }
                 ],
                 "properties": [
@@ -10298,7 +10390,15 @@
                 "label": "organization-defined personnel or roles"
               },
               {
-                "id": "ir-1_prm_2"
+                "id": "ir-1_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "organization-level",
+                    "mission/business process-level",
+                    "system-level"
+                  ]
+                }
               },
               {
                 "id": "ir-1_prm_3",
@@ -11472,7 +11572,15 @@
                 "label": "organization-defined personnel or roles"
               },
               {
-                "id": "ma-1_prm_2"
+                "id": "ma-1_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "organization-level",
+                    "mission/business process-level",
+                    "system-level"
+                  ]
+                }
               },
               {
                 "id": "ma-1_prm_3",
@@ -12171,7 +12279,15 @@
                 "label": "organization-defined personnel or roles"
               },
               {
-                "id": "mp-1_prm_2"
+                "id": "mp-1_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "organization-level",
+                    "mission/business process-level",
+                    "system-level"
+                  ]
+                }
               },
               {
                 "id": "mp-1_prm_3",
@@ -12667,7 +12783,13 @@
             "title": "Media Use",
             "parameters": [
               {
-                "id": "mp-7_prm_1"
+                "id": "mp-7_prm_1",
+                "select": {
+                  "alternatives": [
+                    "Restrict",
+                    "Prohibit"
+                  ]
+                }
               },
               {
                 "id": "mp-7_prm_2",
@@ -12787,7 +12909,15 @@
                 "label": "organization-defined personnel or roles"
               },
               {
-                "id": "pe-1_prm_2"
+                "id": "pe-1_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "organization-level",
+                    "mission/business process-level",
+                    "system-level"
+                  ]
+                }
               },
               {
                 "id": "pe-1_prm_3",
@@ -13161,7 +13291,14 @@
                 "label": "organization-defined entry and exit points to the facility where the system resides"
               },
               {
-                "id": "pe-3_prm_2"
+                "id": "pe-3_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "\n                  {{ pe-3_prm_3 }}\n               ",
+                    "guards"
+                  ]
+                }
               },
               {
                 "id": "pe-3_prm_3",
@@ -13744,7 +13881,17 @@
             "title": "Environmental Controls",
             "parameters": [
               {
-                "id": "pe-14_prm_1"
+                "id": "pe-14_prm_1",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "temperature",
+                    "humidity",
+                    "pressure",
+                    "radiation",
+                    "\n                  {{ pe-14_prm_2 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "pe-14_prm_2",
@@ -13982,7 +14129,15 @@
                 "label": "organization-defined personnel or roles"
               },
               {
-                "id": "pl-1_prm_2"
+                "id": "pl-1_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "organization-level",
+                    "mission/business process-level",
+                    "system-level"
+                  ]
+                }
               },
               {
                 "id": "pl-1_prm_3",
@@ -14667,7 +14822,14 @@
                 "label": "organization-defined frequency"
               },
               {
-                "id": "pl-4_prm_2"
+                "id": "pl-4_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "\n                  {{ pl-4_prm_3 }}\n               ",
+                    "when the rules are revised or updated"
+                  ]
+                }
               },
               {
                 "id": "pl-4_prm_3",
@@ -15166,7 +15328,15 @@
                 "label": "organization-defined personnel or roles"
               },
               {
-                "id": "ps-1_prm_2"
+                "id": "ps-1_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "organization-level",
+                    "mission/business process-level",
+                    "system-level"
+                  ]
+                }
               },
               {
                 "id": "ps-1_prm_3",
@@ -16425,7 +16595,15 @@
                 "label": "organization-defined personnel or roles"
               },
               {
-                "id": "ra-1_prm_2"
+                "id": "ra-1_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "organization-level",
+                    "mission/business process-level",
+                    "system-level"
+                  ]
+                }
               },
               {
                 "id": "ra-1_prm_3",
@@ -16803,7 +16981,14 @@
             "title": "Risk Assessment",
             "parameters": [
               {
-                "id": "ra-3_prm_1"
+                "id": "ra-3_prm_1",
+                "select": {
+                  "alternatives": [
+                    "security and privacy plans",
+                    "risk assessment report",
+                    "\n                  {{ ra-3_prm_2 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "ra-3_prm_2",
@@ -17485,7 +17670,15 @@
                 "title": "Update Vulnerabilities to Be Scanned",
                 "parameters": [
                   {
-                    "id": "ra-5.2_prm_1"
+                    "id": "ra-5.2_prm_1",
+                    "select": {
+                      "how-many": "one or more",
+                      "alternatives": [
+                        "\n                     {{ ra-5.2_prm_2 }}\n                  ",
+                        "prior to a new scan",
+                        "when new vulnerabilities are identified and reported"
+                      ]
+                    }
                   },
                   {
                     "id": "ra-5.2_prm_2",
@@ -17720,7 +17913,15 @@
                 "label": "organization-defined personnel or roles"
               },
               {
-                "id": "sa-1_prm_2"
+                "id": "sa-1_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "organization-level",
+                    "mission/business process-level",
+                    "system-level"
+                  ]
+                }
               },
               {
                 "id": "sa-1_prm_3",
@@ -18213,7 +18414,14 @@
             "title": "Acquisition Process",
             "parameters": [
               {
-                "id": "sa-4_prm_1"
+                "id": "sa-4_prm_1",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "standardized contract language",
+                    "\n                  {{ sa-4_prm_2 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "sa-4_prm_2",
@@ -19161,7 +19369,14 @@
             "title": "Unsupported System Components",
             "parameters": [
               {
-                "id": "sa-22_prm_1"
+                "id": "sa-22_prm_1",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "in-house support",
+                    "\n                  {{ sa-22_prm_2 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "sa-22_prm_2",
@@ -19244,7 +19459,15 @@
                 "label": "organization-defined personnel or roles"
               },
               {
-                "id": "sc-1_prm_2"
+                "id": "sc-1_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "organization-level",
+                    "mission/business process-level",
+                    "system-level"
+                  ]
+                }
               },
               {
                 "id": "sc-1_prm_3",
@@ -19439,7 +19662,13 @@
             "title": "Denial-of-service Protection",
             "parameters": [
               {
-                "id": "sc-5_prm_1"
+                "id": "sc-5_prm_1",
+                "select": {
+                  "alternatives": [
+                    "Protect against",
+                    "Limit"
+                  ]
+                }
               },
               {
                 "id": "sc-5_prm_2",
@@ -19534,7 +19763,13 @@
             "title": "Boundary Protection",
             "parameters": [
               {
-                "id": "sc-7_prm_1"
+                "id": "sc-7_prm_1",
+                "select": {
+                  "alternatives": [
+                    "physically",
+                    "logically"
+                  ]
+                }
               }
             ],
             "properties": [
@@ -20492,7 +20727,15 @@
                 "label": "organization-defined personnel or roles"
               },
               {
-                "id": "si-1_prm_2"
+                "id": "si-1_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "organization-level",
+                    "mission/business process-level",
+                    "system-level"
+                  ]
+                }
               },
               {
                 "id": "si-1_prm_3",
@@ -20877,17 +21120,39 @@
             "title": "Malicious Code Protection",
             "parameters": [
               {
-                "id": "si-3_prm_1"
+                "id": "si-3_prm_1",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "signature based",
+                    "non-signature based"
+                  ]
+                }
               },
               {
                 "id": "si-3_prm_2",
                 "label": "organization-defined frequency"
               },
               {
-                "id": "si-3_prm_3"
+                "id": "si-3_prm_3",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "endpoint",
+                    "network entry and exit points"
+                  ]
+                }
               },
               {
-                "id": "si-3_prm_4"
+                "id": "si-3_prm_4",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "block malicious code",
+                    "quarantine malicious code",
+                    "take {{ si-3_prm_5 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "si-3_prm_5",
@@ -21125,7 +21390,14 @@
                 "label": "organization-defined personnel or roles"
               },
               {
-                "id": "si-4_prm_5"
+                "id": "si-4_prm_5",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "as needed",
+                    "\n                  {{ si-4_prm_6 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "si-4_prm_6",
@@ -21501,7 +21773,15 @@
                 "label": "organization-defined external organizations"
               },
               {
-                "id": "si-5_prm_2"
+                "id": "si-5_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "\n                  {{ si-5_prm_3 }}\n               ",
+                    "\n                  {{ si-5_prm_4 }}\n               ",
+                    "\n                  {{ si-5_prm_5 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "si-5_prm_3",
@@ -21920,7 +22200,15 @@
                 "label": "organization-defined personnel or roles"
               },
               {
-                "id": "sr-1_prm_2"
+                "id": "sr-1_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "organization-level",
+                    "mission/business process-level",
+                    "system-level"
+                  ]
+                }
               },
               {
                 "id": "sr-1_prm_3",
@@ -22426,7 +22714,14 @@
                 "label": "organization-defined supply chain controls"
               },
               {
-                "id": "sr-3_prm_4"
+                "id": "sr-3_prm_4",
+                "select": {
+                  "alternatives": [
+                    "security and privacy plans",
+                    "supply chain risk management plan",
+                    "\n                  {{ sr-3_prm_5 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "sr-3_prm_5",
@@ -22794,7 +23089,15 @@
             "title": "Notification Agreements",
             "parameters": [
               {
-                "id": "sr-8_prm_1"
+                "id": "sr-8_prm_1",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "notification of supply chain compromises",
+                    "results of assessments or audits",
+                    "\n                  {{ sr-8_prm_2 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "sr-8_prm_2",
@@ -22883,7 +23186,14 @@
             "title": "Inspection of Systems or Components",
             "parameters": [
               {
-                "id": "sr-10_prm_1"
+                "id": "sr-10_prm_1",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "at random",
+                    "at {{ sr-10_prm_2 }}, upon {{ sr-10_prm_3 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "sr-10_prm_2",
@@ -22981,7 +23291,15 @@
             "title": "Component Authenticity",
             "parameters": [
               {
-                "id": "sr-11_prm_1"
+                "id": "sr-11_prm_1",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "source of counterfeit component",
+                    "\n                  {{ sr-11_prm_2 }}\n               ",
+                    "\n                  {{ sr-11_prm_3 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "sr-11_prm_2",

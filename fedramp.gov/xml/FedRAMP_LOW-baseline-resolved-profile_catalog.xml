@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="5d9d259d-da93-447b-82e0-a49b85083f61">
+         uuid="57de0ba8-3ddd-4ca3-ac65-bcc56629767c">
    <metadata>
       <title>FedRAMP Low Baseline</title>
       <published>2020-06-01T00:00:00.000-04:00</published>
       <last-modified>2020-06-01T10:00:00.000-04:00</last-modified>
       <version>1.2</version>
       <oscal-version>1.0.0-milestone3</oscal-version>
-      <prop name="resolution-timestamp">2020-12-04T17:30:23.740966Z</prop>
+      <prop name="resolution-timestamp">2020-12-07T16:27:58.519682Z</prop>
       <link rel="resolution-source" href="FedRAMP_LOW-baseline_profile.xml">FedRAMP Low Baseline</link>
       <role id="parpared-by">
          <title>Document creator</title>
@@ -719,7 +719,15 @@
             <label>organization-defined time period</label>
             <constraint>fifteen (15) minutes</constraint>
          </param>
-         <param id="ac-7_prm_3"/>
+         <param id="ac-7_prm_3">
+            <select>
+               <choice>locks the account/node for an <insert param-id="ac-7_prm_4"/>
+               </choice>
+               <choice>locks the account/node until released by an administrator</choice>
+               <choice>delays next logon prompt according to <insert param-id="ac-7_prm_5"/>
+               </choice>
+            </select>
+         </param>
          <param id="ac-7_prm_4" depends-on="ac-7_prm_3">
             <label>organization-defined time period</label>
             <constraint>thirty (30) minutes</constraint>
@@ -10966,7 +10974,12 @@
       </control>
       <control class="SP800-53" id="mp-7">
          <title>Media Use</title>
-         <param id="mp-7_prm_1"/>
+         <param id="mp-7_prm_1">
+            <select>
+               <choice>restricts</choice>
+               <choice>prohibits</choice>
+            </select>
+         </param>
          <param id="mp-7_prm_2">
             <label>organization-defined types of information system media</label>
          </param>
@@ -11433,6 +11446,12 @@
          </param>
          <param id="pe-3_prm_2">
             <constraint>CSP defined physical access control systems/devices AND guards</constraint>
+            <select how-many="one or more">
+               <choice>
+                  <insert param-id="pe-3_prm_3"/>
+               </choice>
+               <choice>guards</choice>
+            </select>
          </param>
          <param id="pe-3_prm_3" depends-on="pe-3_prm_2">
             <label>organization-defined physical access control systems/devices</label>
@@ -14513,7 +14532,15 @@
       </control>
       <control class="SP800-53" id="ra-3">
          <title>Risk Assessment</title>
-         <param id="ra-3_prm_1"/>
+         <param id="ra-3_prm_1">
+            <select>
+               <choice>security plan</choice>
+               <choice>risk assessment report</choice>
+               <choice>
+                  <insert param-id="ra-3_prm_2"/>
+               </choice>
+            </select>
+         </param>
          <param id="ra-3_prm_2" depends-on="ra-3_prm_1">
             <label>organization-defined document</label>
             <constraint>security assessment report</constraint>
@@ -16381,7 +16408,12 @@
       </control>
       <control class="SP800-53" id="sc-7">
          <title>Boundary Protection</title>
-         <param id="sc-7_prm_1"/>
+         <param id="sc-7_prm_1">
+            <select>
+               <choice>physically</choice>
+               <choice>logically</choice>
+            </select>
+         </param>
          <prop name="label">SC-7</prop>
          <prop name="sort-id">sc-07</prop>
          <link href="#e85cdb3f-7f0a-4083-8639-f13f70d3760b" rel="reference">FIPS Publication 199</link>
@@ -17550,9 +17582,21 @@
          </param>
          <param id="si-3_prm_2">
             <constraint>to include endpoints</constraint>
+            <select how-many="one or more">
+               <choice>endpoint</choice>
+               <choice>network entry/exit points</choice>
+            </select>
          </param>
          <param id="si-3_prm_3">
             <constraint>to include alerting administrator or defined security personnel</constraint>
+            <select how-many="one or more">
+               <choice>block malicious code</choice>
+               <choice>quarantine malicious code</choice>
+               <choice>send alert to administrator</choice>
+               <choice>
+                  <insert param-id="si-3_prm_4"/>
+               </choice>
+            </select>
          </param>
          <param id="si-3_prm_4" depends-on="si-3_prm_3">
             <label>organization-defined action</label>
@@ -17803,7 +17847,14 @@
          <param id="si-4_prm_4">
             <label>organization-defined personnel or roles</label>
          </param>
-         <param id="si-4_prm_5"/>
+         <param id="si-4_prm_5">
+            <select how-many="one or more">
+               <choice>as needed</choice>
+               <choice>
+                  <insert param-id="si-4_prm_6"/>
+               </choice>
+            </select>
+         </param>
          <param id="si-4_prm_6" depends-on="si-4_prm_5">
             <label>organization-defined frequency</label>
          </param>
@@ -18131,6 +18182,17 @@
          </param>
          <param id="si-5_prm_2">
             <constraint>to include system security personnel and administrators with configuration/patch-management responsibilities</constraint>
+            <select how-many="one or more">
+               <choice>
+                  <insert param-id="si-5_prm_3"/>
+               </choice>
+               <choice>
+                  <insert param-id="si-5_prm_4"/>
+               </choice>
+               <choice>
+                  <insert param-id="si-5_prm_5"/>
+               </choice>
+            </select>
          </param>
          <param id="si-5_prm_3" depends-on="si-5_prm_2">
             <label>organization-defined personnel or roles</label>

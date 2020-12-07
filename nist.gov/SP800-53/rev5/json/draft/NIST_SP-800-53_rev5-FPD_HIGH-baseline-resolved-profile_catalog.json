@@ -1,0 +1,69 @@
+{
+  "catalog": {
+    "uuid": "da06dcba-63d2-474b-991d-7d85479ee2d6",
+    "metadata": {
+      "title": "SP800-53 HIGH IMPACT BASELINE",
+      "last-modified": "2020-09-25T12:02:00.000-04:00",
+      "version": "FPD",
+      "oscal-version": "1.0.0-milestone3",
+      "properties": [
+        {
+          "name": "resolution-timestamp",
+          "value": "2020-12-07T16:29:26.644497Z"
+        }
+      ],
+      "links": [
+        {
+          "href": "NIST_SP-800-53_rev5-FPD_HIGH-baseline_profile.xml",
+          "rel": "resolution-source",
+          "text": "SP800-53 HIGH IMPACT BASELINE"
+        }
+      ],
+      "roles": [
+        {
+          "id": "creator",
+          "title": "Document Creator"
+        },
+        {
+          "id": "contact",
+          "title": "Contact"
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "a90f4235-ab3c-4bf1-ba0a-865bbc833346",
+          "type": "organization",
+          "party-name": "Joint Task Force, Transformation Initiative",
+          "addresses": [
+            {
+              "postal-address": [
+                "National Institute of Standards and Technology",
+                "Attn: Computer Security Division",
+                "Information Technology Laboratory",
+                "100 Bureau Drive (Mail Stop 8930)"
+              ],
+              "city": "Gaithersburg",
+              "state": "MD",
+              "postal-code": "20899-8930"
+            }
+          ],
+          "email-addresses": [
+            "sec-cert@nist.gov"
+          ]
+        }
+      ],
+      "responsible-parties": {
+        "creator": {
+          "party-uuids": [
+            "a90f4235-ab3c-4bf1-ba0a-865bbc833346"
+          ]
+        },
+        "contact": {
+          "party-uuids": [
+            "a90f4235-ab3c-4bf1-ba0a-865bbc833346"
+          ]
+        }
+      }
+    }
+  }
+}

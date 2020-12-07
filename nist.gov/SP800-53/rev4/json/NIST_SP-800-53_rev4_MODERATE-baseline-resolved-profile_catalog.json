@@ -1,6 +1,6 @@
 {
   "catalog": {
-    "uuid": "41992912-770e-459a-a191-99dcd639483f",
+    "uuid": "7103957e-61ff-4271-96ff-47afe3abe4af",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 4 MODERATE IMPACT BASELINE",
       "last-modified": "2020-05-29T23:29:27.272-04:00",
@@ -9,7 +9,7 @@
       "properties": [
         {
           "name": "resolution-timestamp",
-          "value": "2020-12-04T17:31:05.665678Z"
+          "value": "2020-12-07T16:28:39.12446Z"
         }
       ],
       "links": [
@@ -1432,7 +1432,13 @@
                 "title": "Removal of Temporary / Emergency Accounts",
                 "parameters": [
                   {
-                    "id": "ac-2.2_prm_1"
+                    "id": "ac-2.2_prm_1",
+                    "select": {
+                      "alternatives": [
+                        "removes",
+                        "disables"
+                      ]
+                    }
                   },
                   {
                     "id": "ac-2.2_prm_2",
@@ -3240,7 +3246,14 @@
                 "label": "organization-defined time period"
               },
               {
-                "id": "ac-7_prm_3"
+                "id": "ac-7_prm_3",
+                "select": {
+                  "alternatives": [
+                    "locks the account/node for an {{ ac-7_prm_4 }}\n               ",
+                    "locks the account/node until released by an administrator",
+                    "delays next logon prompt according to {{ ac-7_prm_5 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "ac-7_prm_4",
@@ -5454,7 +5467,14 @@
                 "title": "Authentication and Encryption",
                 "parameters": [
                   {
-                    "id": "ac-18.1_prm_1"
+                    "id": "ac-18.1_prm_1",
+                    "select": {
+                      "how-many": "one or more",
+                      "alternatives": [
+                        "users",
+                        "devices"
+                      ]
+                    }
                   }
                 ],
                 "properties": [
@@ -5841,7 +5861,13 @@
                 "title": "Full Device / Container-based Encryption",
                 "parameters": [
                   {
-                    "id": "ac-19.5_prm_1"
+                    "id": "ac-19.5_prm_1",
+                    "select": {
+                      "alternatives": [
+                        "full-device encryption",
+                        "container encryption"
+                      ]
+                    }
                   },
                   {
                     "id": "ac-19.5_prm_2",
@@ -6284,7 +6310,13 @@
                 "title": "Portable Storage Devices",
                 "parameters": [
                   {
-                    "id": "ac-20.2_prm_1"
+                    "id": "ac-20.2_prm_1",
+                    "select": {
+                      "alternatives": [
+                        "restricts",
+                        "prohibits"
+                      ]
+                    }
                   }
                 ],
                 "properties": [
@@ -12710,7 +12742,13 @@
                 "title": "Restrictions On External System Connections",
                 "parameters": [
                   {
-                    "id": "ca-3.5_prm_1"
+                    "id": "ca-3.5_prm_1",
+                    "select": {
+                      "alternatives": [
+                        "allow-all, deny-by-exception",
+                        "deny-all, permit-by-exception"
+                      ]
+                    }
                   },
                   {
                     "id": "ca-3.5_prm_2",
@@ -15407,7 +15445,14 @@
                 "label": "organization-defined configuration change control element (e.g., committee,\n               board)"
               },
               {
-                "id": "cm-3_prm_3"
+                "id": "cm-3_prm_3",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "\n                  {{ cm-3_prm_4 }}\n               ",
+                    "\n                  {{ cm-3_prm_5 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "cm-3_prm_4",
@@ -17334,7 +17379,14 @@
                 "title": "Prevent Program Execution",
                 "parameters": [
                   {
-                    "id": "cm-7.2_prm_1"
+                    "id": "cm-7.2_prm_1",
+                    "select": {
+                      "how-many": "one or more",
+                      "alternatives": [
+                        "\n                     {{ cm-7.2_prm_2 }}\n                  ",
+                        "rules authorizing the terms and conditions of software program\n                     usage"
+                      ]
+                    }
                   },
                   {
                     "id": "cm-7.2_prm_2",
@@ -18111,7 +18163,15 @@
                     "label": "organization-defined frequency"
                   },
                   {
-                    "id": "cm-8.3_prm_2"
+                    "id": "cm-8.3_prm_2",
+                    "select": {
+                      "how-many": "one or more",
+                      "alternatives": [
+                        "disables network access by such components",
+                        "isolates the components",
+                        "notifies {{ cm-8.3_prm_3 }}\n                  "
+                      ]
+                    }
                   },
                   {
                     "id": "cm-8.3_prm_3",
@@ -24313,7 +24373,15 @@
                 "label": "organization-defined specific and/or types of devices"
               },
               {
-                "id": "ia-3_prm_2"
+                "id": "ia-3_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "local",
+                    "remote",
+                    "network"
+                  ]
+                }
               }
             ],
             "properties": [
@@ -26324,7 +26392,13 @@
                     "label": "organization-defined types of and/or specific authenticators"
                   },
                   {
-                    "id": "ia-5.3_prm_2"
+                    "id": "ia-5.3_prm_2",
+                    "select": {
+                      "alternatives": [
+                        "in person",
+                        "by a trusted third party"
+                      ]
+                    }
                   },
                   {
                     "id": "ia-5.3_prm_3",
@@ -33815,7 +33889,13 @@
             "title": "Media Use",
             "parameters": [
               {
-                "id": "mp-7_prm_1"
+                "id": "mp-7_prm_1",
+                "select": {
+                  "alternatives": [
+                    "restricts",
+                    "prohibits"
+                  ]
+                }
               },
               {
                 "id": "mp-7_prm_2",
@@ -34815,7 +34895,14 @@
                 "label": "organization-defined entry/exit points to the facility where the information\n               system resides"
               },
               {
-                "id": "pe-3_prm_2"
+                "id": "pe-3_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "\n                  {{ pe-3_prm_3 }}\n               ",
+                    "guards"
+                  ]
+                }
               },
               {
                 "id": "pe-3_prm_3",
@@ -36572,7 +36659,14 @@
             "title": "Emergency Power",
             "parameters": [
               {
-                "id": "pe-11_prm_1"
+                "id": "pe-11_prm_1",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "an orderly shutdown of the information system",
+                    "transition of the information system to long-term alternate power"
+                  ]
+                }
               }
             ],
             "properties": [
@@ -42624,7 +42718,14 @@
             "title": "Risk Assessment",
             "parameters": [
               {
-                "id": "ra-3_prm_1"
+                "id": "ra-3_prm_1",
+                "select": {
+                  "alternatives": [
+                    "security plan",
+                    "risk assessment report",
+                    "\n                  {{ ra-3_prm_2 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "ra-3_prm_2",
@@ -43740,7 +43841,15 @@
                 "title": "Update by Frequency / Prior to New Scan / When Identified",
                 "parameters": [
                   {
-                    "id": "ra-5.2_prm_1"
+                    "id": "ra-5.2_prm_1",
+                    "select": {
+                      "how-many": "one or more",
+                      "alternatives": [
+                        "\n                     {{ ra-5.2_prm_2 }}\n                  ",
+                        "prior to a new scan",
+                        "when new vulnerabilities are identified and reported"
+                      ]
+                    }
                   },
                   {
                     "id": "ra-5.2_prm_2",
@@ -45364,7 +45473,17 @@
                 "title": "Design / Implementation Information for Security Controls",
                 "parameters": [
                   {
-                    "id": "sa-4.2_prm_1"
+                    "id": "sa-4.2_prm_1",
+                    "select": {
+                      "how-many": "one or more",
+                      "alternatives": [
+                        "security-relevant external system interfaces",
+                        "high-level design",
+                        "low-level design",
+                        "source code or hardware schematics",
+                        "\n                     {{ sa-4.2_prm_2 }}\n                  "
+                      ]
+                    }
                   },
                   {
                     "id": "sa-4.2_prm_2",
@@ -46883,7 +47002,16 @@
             "title": "Developer Configuration Management",
             "parameters": [
               {
-                "id": "sa-10_prm_1"
+                "id": "sa-10_prm_1",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "design",
+                    "development",
+                    "implementation",
+                    "operation"
+                  ]
+                }
               },
               {
                 "id": "sa-10_prm_2",
@@ -47311,7 +47439,16 @@
             "title": "Developer Security Testing and Evaluation",
             "parameters": [
               {
-                "id": "sa-11_prm_1"
+                "id": "sa-11_prm_1",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "unit",
+                    "integration",
+                    "system",
+                    "regression"
+                  ]
+                }
               },
               {
                 "id": "sa-11_prm_2",
@@ -48458,7 +48595,13 @@
             "title": "Boundary Protection",
             "parameters": [
               {
-                "id": "sc-7_prm_1"
+                "id": "sc-7_prm_1",
+                "select": {
+                  "alternatives": [
+                    "physically",
+                    "logically"
+                  ]
+                }
               }
             ],
             "properties": [
@@ -49300,7 +49443,14 @@
             "title": "Transmission Confidentiality and Integrity",
             "parameters": [
               {
-                "id": "sc-8_prm_1"
+                "id": "sc-8_prm_1",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "confidentiality",
+                    "integrity"
+                  ]
+                }
               }
             ],
             "properties": [
@@ -49464,7 +49614,14 @@
                 "title": "Cryptographic or Alternate Physical Protection",
                 "parameters": [
                   {
-                    "id": "sc-8.1_prm_1"
+                    "id": "sc-8.1_prm_1",
+                    "select": {
+                      "how-many": "one or more",
+                      "alternatives": [
+                        "prevent unauthorized disclosure of information",
+                        "detect changes to information"
+                      ]
+                    }
                   },
                   {
                     "id": "sc-8.1_prm_2",
@@ -51523,7 +51680,14 @@
             "title": "Protection of Information at Rest",
             "parameters": [
               {
-                "id": "sc-28_prm_1"
+                "id": "sc-28_prm_1",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "confidentiality",
+                    "integrity"
+                  ]
+                }
               },
               {
                 "id": "sc-28_prm_2",
@@ -52797,10 +52961,26 @@
                 "label": "organization-defined frequency"
               },
               {
-                "id": "si-3_prm_2"
+                "id": "si-3_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "endpoint",
+                    "network entry/exit points"
+                  ]
+                }
               },
               {
-                "id": "si-3_prm_3"
+                "id": "si-3_prm_3",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "block malicious code",
+                    "quarantine malicious code",
+                    "send alert to administrator",
+                    "\n                  {{ si-3_prm_4 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "si-3_prm_4",
@@ -53441,7 +53621,14 @@
                 "label": "organization-defined personnel or roles"
               },
               {
-                "id": "si-4_prm_5"
+                "id": "si-4_prm_5",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "as needed",
+                    "\n                  {{ si-4_prm_6 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "si-4_prm_6",
@@ -54485,7 +54672,15 @@
                 "label": "organization-defined external organizations"
               },
               {
-                "id": "si-5_prm_2"
+                "id": "si-5_prm_2",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "\n                  {{ si-5_prm_3 }}\n               ",
+                    "\n                  {{ si-5_prm_4 }}\n               ",
+                    "\n                  {{ si-5_prm_5 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "si-5_prm_3",
@@ -55036,7 +55231,15 @@
                     "label": "organization-defined software, firmware, and information"
                   },
                   {
-                    "id": "si-7.1_prm_2"
+                    "id": "si-7.1_prm_2",
+                    "select": {
+                      "how-many": "one or more",
+                      "alternatives": [
+                        "at startup",
+                        "at {{ si-7.1_prm_3 }}\n                  ",
+                        "\n                     {{ si-7.1_prm_4 }}\n                  "
+                      ]
+                    }
                   },
                   {
                     "id": "si-7.1_prm_3",

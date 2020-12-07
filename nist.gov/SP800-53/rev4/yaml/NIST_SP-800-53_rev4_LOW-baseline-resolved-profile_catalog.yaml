@@ -1,5 +1,5 @@
 catalog: 
-  uuid:        d518f204-2006-4428-bf71-daa18e32e436
+  uuid:        ac501e4c-dced-42d2-89fc-b325ce53c9a3
   metadata: 
     title:               NIST Special Publication 800-53 Revision 4 LOW IMPACT BASELINE
     last-modified:       2020-05-29T23:29:27.272-04:00
@@ -8,7 +8,7 @@ catalog:
     properties: 
       - 
         name:  resolution-timestamp
-        value: 2020-12-04T17:30:57.40924Z
+        value: 2020-12-07T16:28:30.997782Z
     links: 
       - 
         href: NIST_SP-800-53_rev4_LOW-baseline_profile.xml
@@ -1279,7 +1279,20 @@ catalog:
               id:    ac-7_prm_2
               label: organization-defined time period
             - 
-              id: ac-7_prm_3
+              id:     ac-7_prm_3
+              select: 
+                alternatives: 
+                  - 
+                    """
+                      locks the account/node for an {{ ac-7_prm_4 }}
+                                     
+                    """
+                  - locks the account/node until released by an administrator
+                  - 
+                    """
+                      delays next logon prompt according to {{ ac-7_prm_5 }}
+                                     
+                    """
             - 
               id:         ac-7_prm_4
               depends-on: ac-7_prm_3
@@ -19248,7 +19261,9 @@ catalog:
           title:      Media Use
           parameters: 
             - 
-              id: mp-7_prm_1
+              id:     mp-7_prm_1
+              select: 
+                alternatives: restricts,prohibits
             - 
               id:    mp-7_prm_2
               label: organization-defined types of information system media
@@ -20061,7 +20076,17 @@ catalog:
                                  system resides
                 """
             - 
-              id: pe-3_prm_2
+              id:     pe-3_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: 
+                  - 
+                    """
+                      
+                                        {{ pe-3_prm_3 }}
+                                     
+                    """
+                  - guards
             - 
               id:         pe-3_prm_3
               depends-on: pe-3_prm_2
@@ -25541,7 +25566,11 @@ catalog:
           title:      Risk Assessment
           parameters: 
             - 
-              id: ra-3_prm_1
+              id:     ra-3_prm_1
+              select: 
+                alternatives: security plan,risk assessment report,
+                  {{ ra-3_prm_2 }}
+               
             - 
               id:         ra-3_prm_2
               depends-on: ra-3_prm_1
@@ -28947,7 +28976,9 @@ catalog:
           title:      Boundary Protection
           parameters: 
             - 
-              id: sc-7_prm_1
+              id:     sc-7_prm_1
+              select: 
+                alternatives: physically,logically
           properties: 
             - 
               name:  priority
@@ -31011,9 +31042,17 @@ catalog:
               id:    si-3_prm_1
               label: organization-defined frequency
             - 
-              id: si-3_prm_2
+              id:     si-3_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: endpoint,network entry/exit points
             - 
-              id: si-3_prm_3
+              id:     si-3_prm_3
+              select: 
+                how-many:     one or more
+                alternatives: block malicious code,quarantine malicious code,send alert to administrator,
+                  {{ si-3_prm_4 }}
+               
             - 
               id:         si-3_prm_4
               depends-on: si-3_prm_3
@@ -31461,7 +31500,12 @@ catalog:
               id:    si-4_prm_4
               label: organization-defined personnel or roles
             - 
-              id: si-4_prm_5
+              id:     si-4_prm_5
+              select: 
+                how-many:     one or more
+                alternatives: as needed,
+                  {{ si-4_prm_6 }}
+               
             - 
               id:         si-4_prm_6
               depends-on: si-4_prm_5
@@ -32070,7 +32114,28 @@ catalog:
               id:    si-5_prm_1
               label: organization-defined external organizations
             - 
-              id: si-5_prm_2
+              id:     si-5_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: 
+                  - 
+                    """
+                      
+                                        {{ si-5_prm_3 }}
+                                     
+                    """
+                  - 
+                    """
+                      
+                                        {{ si-5_prm_4 }}
+                                     
+                    """
+                  - 
+                    """
+                      
+                                        {{ si-5_prm_5 }}
+                                     
+                    """
             - 
               id:         si-5_prm_3
               depends-on: si-5_prm_2

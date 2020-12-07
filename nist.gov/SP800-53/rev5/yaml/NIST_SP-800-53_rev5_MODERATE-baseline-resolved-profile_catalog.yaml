@@ -1,5 +1,5 @@
 catalog: 
-  uuid:        218a6be1-6cc5-41a5-aaad-7dcbd2311fac
+  uuid:        d3fc9700-5ee3-4725-ad67-36cd501dd0fd
   metadata: 
     title:               NIST Special Publication 800-53 Revision 5 MODERATE IMPACT BASELINE
     last-modified:       2020-11-09T15:39:11.639-05:00
@@ -8,7 +8,7 @@ catalog:
     properties: 
       - 
         name:  resolution-timestamp
-        value: 2020-12-04T17:31:33.984221Z
+        value: 2020-12-07T16:29:07.827169Z
     links: 
       - 
         href: NIST_SP-800-53_rev5_MODERATE-baseline_profile.xml
@@ -53,7 +53,10 @@ catalog:
               id:    ac-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: ac-1_prm_2
+              id:     ac-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    ac-1_prm_3
               label: organization-defined official
@@ -608,7 +611,9 @@ catalog:
               title:      Automated Temporary and Emergency Account Management
               parameters: 
                 - 
-                  id: ac-2.2_prm_1
+                  id:     ac-2.2_prm_1
+                  select: 
+                    alternatives: remove,disable
                 - 
                   id:    ac-2.2_prm_2
                   label: organization-defined time period for each type of account
@@ -1617,7 +1622,27 @@ catalog:
               id:    ac-7_prm_2
               label: organization-defined time period
             - 
-              id: ac-7_prm_3
+              id:     ac-7_prm_3
+              select: 
+                how-many:     one or more
+                alternatives: 
+                  - 
+                    """
+                      lock the account or node for an {{ ac-7_prm_4 }}
+                                     
+                    """
+                  - lock the account or node until released by an administrator
+                  - 
+                    """
+                      delay next logon prompt per {{ ac-7_prm_5 }}
+                                     
+                    """
+                  - notify system administrator
+                  - 
+                    """
+                      take other {{ ac-7_prm_6 }}
+                                     
+                    """
             - 
               id:         ac-7_prm_4
               depends-on: ac-7_prm_3
@@ -1819,7 +1844,10 @@ catalog:
           title:      Device Lock
           parameters: 
             - 
-              id: ac-11_prm_1
+              id:     ac-11_prm_1
+              select: 
+                how-many:     one or more
+                alternatives: initiating a device lock after {{ ac-11_prm_2 }} of inactivity,requiring the user to initiate a device lock before leaving the system unattended
             - 
               id:         ac-11_prm_2
               depends-on: ac-11_prm_1
@@ -2403,7 +2431,10 @@ catalog:
               title:      Authentication and Encryption
               parameters: 
                 - 
-                  id: ac-18.1_prm_1
+                  id:     ac-18.1_prm_1
+                  select: 
+                    how-many:     one or more
+                    alternatives: users,devices
               properties: 
                 - 
                   name:  label
@@ -2602,7 +2633,9 @@ catalog:
               title:      Full Device or Container-based Encryption
               parameters: 
                 - 
-                  id: ac-19.5_prm_1
+                  id:     ac-19.5_prm_1
+                  select: 
+                    alternatives: full-device encryption,container-based encryption
                 - 
                   id:    ac-19.5_prm_2
                   label: organization-defined mobile devices
@@ -2653,7 +2686,20 @@ catalog:
           title:      Use of External Systems
           parameters: 
             - 
-              id: ac-20_prm_1
+              id:     ac-20_prm_1
+              select: 
+                how-many:     one or more
+                alternatives: 
+                  - 
+                    """
+                      Establish {{ ac-20_prm_2 }}
+                                     
+                    """
+                  - 
+                    """
+                      Identify {{ ac-20_prm_3 }}
+                                     
+                    """
             - 
               id:         ac-20_prm_2
               depends-on: ac-20_prm_1
@@ -3026,7 +3072,10 @@ catalog:
               id:    at-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: at-1_prm_2
+              id:     at-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    at-1_prm_3
               label: organization-defined official
@@ -3661,7 +3710,10 @@ catalog:
               id:    au-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: au-1_prm_2
+              id:     au-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    au-1_prm_3
               label: organization-defined official
@@ -5081,7 +5133,10 @@ catalog:
               id:    ca-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: ca-1_prm_2
+              id:     ca-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    ca-1_prm_3
               label: organization-defined official
@@ -5466,7 +5521,12 @@ catalog:
           title:      Information Exchange
           parameters: 
             - 
-              id: ca-3_prm_1
+              id:     ca-3_prm_1
+              select: 
+                how-many:     one or more
+                alternatives: interconnection security agreements,information exchange security agreements,memoranda of understanding or agreement,service level agreements,user agreements,nondisclosure agreements,
+                  {{ ca-3_prm_2 }}
+               
             - 
               id:         ca-3_prm_2
               depends-on: ca-3_prm_1
@@ -6305,7 +6365,10 @@ catalog:
               id:    cm-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: cm-1_prm_2
+              id:     cm-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    cm-1_prm_3
               label: organization-defined official
@@ -6760,7 +6823,21 @@ catalog:
               id:    cm-3_prm_2
               label: organization-defined configuration change control element
             - 
-              id: cm-3_prm_3
+              id:     cm-3_prm_3
+              select: 
+                how-many:     one or more
+                alternatives: 
+                  - 
+                    """
+                      
+                                        {{ cm-3_prm_4 }}
+                                     
+                    """
+                  - 
+                    """
+                      when {{ cm-3_prm_5 }}
+                                     
+                    """
             - 
               id:         cm-3_prm_4
               depends-on: cm-3_prm_3
@@ -7578,7 +7655,17 @@ catalog:
               title:      Prevent Program Execution
               parameters: 
                 - 
-                  id: cm-7.2_prm_1
+                  id:     cm-7.2_prm_1
+                  select: 
+                    how-many:     one or more
+                    alternatives: 
+                      - 
+                        """
+                          
+                                               {{ cm-7.2_prm_2 }}
+                                            
+                        """
+                      - rules authorizing the terms and conditions of software program usage
                 - 
                   id:         cm-7.2_prm_2
                   depends-on: cm-7.2_prm_1
@@ -7939,7 +8026,11 @@ catalog:
                   id:    cm-8.3_prm_2
                   label: organization-defined frequency
                 - 
-                  id: cm-8.3_prm_3
+                  id:     cm-8.3_prm_3
+                  select: 
+                    how-many:     one or more
+                    alternatives: disable network access by such components,isolate the components,notify {{ cm-8.3_prm_4 }}
+                  
                 - 
                   id:         cm-8.3_prm_4
                   depends-on: cm-8.3_prm_3
@@ -8483,7 +8574,10 @@ catalog:
               id:    cp-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: cp-1_prm_2
+              id:     cp-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    cp-1_prm_3
               label: organization-defined official
@@ -8926,7 +9020,9 @@ catalog:
               title:      Resume Mission and Business Functions
               parameters: 
                 - 
-                  id: cp-2.3_prm_1
+                  id:     cp-2.3_prm_1
+                  select: 
+                    alternatives: all,essential
                 - 
                   id:    cp-2.3_prm_2
                   label: organization-defined time period
@@ -8957,7 +9053,9 @@ catalog:
               title:      Identify Critical Assets
               parameters: 
                 - 
-                  id: cp-2.8_prm_1
+                  id:     cp-2.8_prm_1
+                  select: 
+                    alternatives: all,essential
               properties: 
                 - 
                   name:  label
@@ -10037,7 +10135,10 @@ catalog:
               id:    ia-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: ia-1_prm_2
+              id:     ia-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    ia-1_prm_3
               label: organization-defined official
@@ -10435,7 +10536,10 @@ catalog:
               title:      Access to Accounts — Replay Resistant
               parameters: 
                 - 
-                  id: ia-2.8_prm_1
+                  id:     ia-2.8_prm_1
+                  select: 
+                    how-many:     one or more
+                    alternatives: privileged accounts,non-privileged accounts
               properties: 
                 - 
                   name:  label
@@ -10491,7 +10595,10 @@ catalog:
               id:    ia-3_prm_1
               label: organization-defined devices and/or types of devices
             - 
-              id: ia-3_prm_2
+              id:     ia-3_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: local,remote,network
           properties: 
             - 
               name:  label
@@ -11633,7 +11740,9 @@ catalog:
               title:      Address Confirmation
               parameters: 
                 - 
-                  id: ia-12.5_prm_1
+                  id:     ia-12.5_prm_1
+                  select: 
+                    alternatives: registration code,notice of proofing
               properties: 
                 - 
                   name:  label
@@ -11673,7 +11782,10 @@ catalog:
               id:    ir-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: ir-1_prm_2
+              id:     ir-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    ir-1_prm_3
               label: organization-defined official
@@ -12796,7 +12908,10 @@ catalog:
               id:    ma-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: ma-1_prm_2
+              id:     ma-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    ma-1_prm_3
               label: organization-defined official
@@ -13570,7 +13685,10 @@ catalog:
               id:    mp-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: mp-1_prm_2
+              id:     mp-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    mp-1_prm_3
               label: organization-defined official
@@ -14272,7 +14390,9 @@ catalog:
           title:      Media Use
           parameters: 
             - 
-              id: mp-7_prm_1
+              id:     mp-7_prm_1
+              select: 
+                alternatives: Restrict,Prohibit
             - 
               id:    mp-7_prm_2
               label: organization-defined types of system media
@@ -14365,7 +14485,10 @@ catalog:
               id:    pe-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: pe-1_prm_2
+              id:     pe-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    pe-1_prm_3
               label: organization-defined official
@@ -14647,7 +14770,17 @@ catalog:
               id:    pe-3_prm_1
               label: organization-defined entry and exit points to the facility where the system resides
             - 
-              id: pe-3_prm_2
+              id:     pe-3_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: 
+                  - 
+                    """
+                      
+                                        {{ pe-3_prm_3 }}
+                                     
+                    """
+                  - guards
             - 
               id:         pe-3_prm_3
               depends-on: pe-3_prm_2
@@ -15249,7 +15382,10 @@ catalog:
           title:      Emergency Power
           parameters: 
             - 
-              id: pe-11_prm_1
+              id:     pe-11_prm_1
+              select: 
+                how-many:     one or more
+                alternatives: an orderly shutdown of the system,transition of the system to long-term alternate power
           properties: 
             - 
               name:  label
@@ -15372,7 +15508,12 @@ catalog:
           title:      Environmental Controls
           parameters: 
             - 
-              id: pe-14_prm_1
+              id:     pe-14_prm_1
+              select: 
+                how-many:     one or more
+                alternatives: temperature,humidity,pressure,radiation,
+                  {{ pe-14_prm_2 }}
+               
             - 
               id:         pe-14_prm_2
               depends-on: pe-14_prm_1
@@ -15624,7 +15765,10 @@ catalog:
               id:    pl-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: pl-1_prm_2
+              id:     pl-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    pl-1_prm_3
               label: organization-defined official
@@ -16141,7 +16285,17 @@ catalog:
               id:    pl-4_prm_1
               label: organization-defined frequency
             - 
-              id: pl-4_prm_2
+              id:     pl-4_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: 
+                  - 
+                    """
+                      
+                                        {{ pl-4_prm_3 }}
+                                     
+                    """
+                  - when the rules are revised or updated
             - 
               id:         pl-4_prm_3
               depends-on: pl-4_prm_2
@@ -16673,7 +16827,10 @@ catalog:
               id:    ps-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: ps-1_prm_2
+              id:     ps-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    ps-1_prm_3
               label: organization-defined official
@@ -17618,7 +17775,10 @@ catalog:
               id:    ra-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: ra-1_prm_2
+              id:     ra-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    ra-1_prm_3
               label: organization-defined official
@@ -17905,7 +18065,11 @@ catalog:
           title:      Risk Assessment
           parameters: 
             - 
-              id: ra-3_prm_1
+              id:     ra-3_prm_1
+              select: 
+                alternatives: security and privacy plans,risk assessment report,
+                  {{ ra-3_prm_2 }}
+               
             - 
               id:         ra-3_prm_2
               depends-on: ra-3_prm_1
@@ -18421,7 +18585,18 @@ catalog:
               title:      Update Vulnerabilities to Be Scanned
               parameters: 
                 - 
-                  id: ra-5.2_prm_1
+                  id:     ra-5.2_prm_1
+                  select: 
+                    how-many:     one or more
+                    alternatives: 
+                      - 
+                        """
+                          
+                                               {{ ra-5.2_prm_2 }}
+                                            
+                        """
+                      - prior to a new scan
+                      - when new vulnerabilities are identified and reported
                 - 
                   id:         ra-5.2_prm_2
                   depends-on: ra-5.2_prm_1
@@ -18703,7 +18878,10 @@ catalog:
               id:    sa-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: sa-1_prm_2
+              id:     sa-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    sa-1_prm_3
               label: organization-defined official
@@ -19075,7 +19253,12 @@ catalog:
           title:      Acquisition Process
           parameters: 
             - 
-              id: sa-4_prm_1
+              id:     sa-4_prm_1
+              select: 
+                how-many:     one or more
+                alternatives: standardized contract language,
+                  {{ sa-4_prm_2 }}
+               
             - 
               id:         sa-4_prm_2
               depends-on: sa-4_prm_1
@@ -19338,7 +19521,12 @@ catalog:
               title:      Design and Implementation Information for Controls
               parameters: 
                 - 
-                  id: sa-4.2_prm_1
+                  id:     sa-4.2_prm_1
+                  select: 
+                    how-many:     one or more
+                    alternatives: security-relevant external system interfaces,high-level design,low-level design,source code or hardware schematics,
+                     {{ sa-4.2_prm_2 }}
+                  
                 - 
                   id:         sa-4.2_prm_2
                   depends-on: sa-4.2_prm_1
@@ -19928,7 +20116,10 @@ catalog:
           title:      Developer Configuration Management
           parameters: 
             - 
-              id: sa-10_prm_1
+              id:     sa-10_prm_1
+              select: 
+                how-many:     one or more
+                alternatives: design,development,implementation,operation,disposal
             - 
               id:    sa-10_prm_2
               label: organization-defined configuration items under configuration management
@@ -20075,7 +20266,10 @@ catalog:
           title:      Developer Testing and Evaluation
           parameters: 
             - 
-              id: sa-11_prm_1
+              id:     sa-11_prm_1
+              select: 
+                how-many:     one or more
+                alternatives: unit,integration,system,regression
             - 
               id:    sa-11_prm_2
               label: organization-defined frequency
@@ -20401,7 +20595,12 @@ catalog:
           title:      Unsupported System Components
           parameters: 
             - 
-              id: sa-22_prm_1
+              id:     sa-22_prm_1
+              select: 
+                how-many:     one or more
+                alternatives: in-house support,
+                  {{ sa-22_prm_2 }}
+               
             - 
               id:         sa-22_prm_2
               depends-on: sa-22_prm_1
@@ -20461,7 +20660,10 @@ catalog:
               id:    sc-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: sc-1_prm_2
+              id:     sc-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    sc-1_prm_3
               label: organization-defined official
@@ -20693,7 +20895,9 @@ catalog:
           title:      Denial-of-service Protection
           parameters: 
             - 
-              id: sc-5_prm_1
+              id:     sc-5_prm_1
+              select: 
+                alternatives: Protect against,Limit
             - 
               id:    sc-5_prm_2
               label: organization-defined types of denial-of-service events
@@ -20767,7 +20971,9 @@ catalog:
           title:      Boundary Protection
           parameters: 
             - 
-              id: sc-7_prm_1
+              id:     sc-7_prm_1
+              select: 
+                alternatives: physically,logically
           properties: 
             - 
               name:  label
@@ -21070,7 +21276,11 @@ catalog:
               title:      Deny by Default — Allow by Exception
               parameters: 
                 - 
-                  id: sc-7.5_prm_1
+                  id:     sc-7.5_prm_1
+                  select: 
+                    how-many:     one or more
+                    alternatives: at managed interfaces,for {{ sc-7.5_prm_2 }}
+                  
                 - 
                   id:         sc-7.5_prm_2
                   depends-on: sc-7.5_prm_1
@@ -21167,7 +21377,10 @@ catalog:
           title:      Transmission Confidentiality and Integrity
           parameters: 
             - 
-              id: sc-8_prm_1
+              id:     sc-8_prm_1
+              select: 
+                how-many:     one or more
+                alternatives: confidentiality,integrity
           properties: 
             - 
               name:  label
@@ -21284,7 +21497,10 @@ catalog:
               title:      Cryptographic Protection
               parameters: 
                 - 
-                  id: sc-8.1_prm_1
+                  id:     sc-8.1_prm_1
+                  select: 
+                    how-many:     one or more
+                    alternatives: prevent unauthorized disclosure of information,detect changes to information
               properties: 
                 - 
                   name:  label
@@ -22037,7 +22253,10 @@ catalog:
           title:      Protection of Information at Rest
           parameters: 
             - 
-              id: sc-28_prm_1
+              id:     sc-28_prm_1
+              select: 
+                how-many:     one or more
+                alternatives: confidentiality,integrity
             - 
               id:    sc-28_prm_2
               label: organization-defined information at rest
@@ -22286,7 +22505,10 @@ catalog:
               id:    si-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: si-1_prm_2
+              id:     si-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    si-1_prm_3
               label: organization-defined official
@@ -22622,14 +22844,24 @@ catalog:
           title:      Malicious Code Protection
           parameters: 
             - 
-              id: si-3_prm_1
+              id:     si-3_prm_1
+              select: 
+                how-many:     one or more
+                alternatives: signature based,non-signature based
             - 
               id:    si-3_prm_2
               label: organization-defined frequency
             - 
-              id: si-3_prm_3
+              id:     si-3_prm_3
+              select: 
+                how-many:     one or more
+                alternatives: endpoint,network entry and exit points
             - 
-              id: si-3_prm_4
+              id:     si-3_prm_4
+              select: 
+                how-many:     one or more
+                alternatives: block malicious code,quarantine malicious code,take {{ si-3_prm_5 }}
+               
             - 
               id:         si-3_prm_5
               depends-on: si-3_prm_4
@@ -22813,7 +23045,12 @@ catalog:
               id:    si-4_prm_4
               label: organization-defined personnel or roles
             - 
-              id: si-4_prm_5
+              id:     si-4_prm_5
+              select: 
+                how-many:     one or more
+                alternatives: as needed,
+                  {{ si-4_prm_6 }}
+               
             - 
               id:         si-4_prm_6
               depends-on: si-4_prm_5
@@ -23232,7 +23469,28 @@ catalog:
               id:    si-5_prm_1
               label: organization-defined external organizations
             - 
-              id: si-5_prm_2
+              id:     si-5_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: 
+                  - 
+                    """
+                      
+                                        {{ si-5_prm_3 }}
+                                     
+                    """
+                  - 
+                    """
+                      
+                                        {{ si-5_prm_4 }}
+                                     
+                    """
+                  - 
+                    """
+                      
+                                        {{ si-5_prm_5 }}
+                                     
+                    """
             - 
               id:         si-5_prm_3
               depends-on: si-5_prm_2
@@ -23484,7 +23742,13 @@ catalog:
                   id:    si-7.1_prm_1
                   label: organization-defined software, firmware, and information
                 - 
-                  id: si-7.1_prm_2
+                  id:     si-7.1_prm_2
+                  select: 
+                    how-many:     one or more
+                    alternatives: at startup,at {{ si-7.1_prm_3 }}
+                  ,
+                     {{ si-7.1_prm_4 }}
+                  
                 - 
                   id:         si-7.1_prm_3
                   depends-on: si-7.1_prm_2
@@ -24066,7 +24330,10 @@ catalog:
               id:    sr-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: sr-1_prm_2
+              id:     sr-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    sr-1_prm_3
               label: organization-defined official
@@ -24450,7 +24717,11 @@ catalog:
               id:    sr-3_prm_3
               label: organization-defined supply chain controls
             - 
-              id: sr-3_prm_4
+              id:     sr-3_prm_4
+              select: 
+                alternatives: security and privacy plans,supply chain risk management plan,
+                  {{ sr-3_prm_5 }}
+               
             - 
               id:         sr-3_prm_5
               depends-on: sr-3_prm_4
@@ -24820,7 +25091,12 @@ catalog:
           title:      Notification Agreements
           parameters: 
             - 
-              id: sr-8_prm_1
+              id:     sr-8_prm_1
+              select: 
+                how-many:     one or more
+                alternatives: notification of supply chain compromises,results of assessments or audits,
+                  {{ sr-8_prm_2 }}
+               
             - 
               id:         sr-8_prm_2
               depends-on: sr-8_prm_1
@@ -24888,7 +25164,11 @@ catalog:
           title:      Inspection of Systems or Components
           parameters: 
             - 
-              id: sr-10_prm_1
+              id:     sr-10_prm_1
+              select: 
+                how-many:     one or more
+                alternatives: at random,at {{ sr-10_prm_2 }}, upon {{ sr-10_prm_3 }}
+               
             - 
               id:         sr-10_prm_2
               depends-on: sr-10_prm_1
@@ -24963,7 +25243,14 @@ catalog:
           title:      Component Authenticity
           parameters: 
             - 
-              id: sr-11_prm_1
+              id:     sr-11_prm_1
+              select: 
+                how-many:     one or more
+                alternatives: source of counterfeit component,
+                  {{ sr-11_prm_2 }}
+               ,
+                  {{ sr-11_prm_3 }}
+               
             - 
               id:         sr-11_prm_2
               depends-on: sr-11_prm_1

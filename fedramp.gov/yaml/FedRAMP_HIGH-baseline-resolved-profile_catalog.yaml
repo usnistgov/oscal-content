@@ -1,5 +1,5 @@
 catalog: 
-  uuid:        a15a0b5a-db39-4c23-9032-8ea1f2b92013
+  uuid:        80485bf3-c64f-46eb-b3ef-3650d869fe91
   metadata: 
     title:               FedRAMP High Baseline
     published:           2020-06-01T00:00:00.000-04:00
@@ -9,7 +9,7 @@ catalog:
     properties: 
       - 
         name:  resolution-timestamp
-        value: 2020-12-04T17:30:03.04478Z
+        value: 2020-12-07T16:27:39.446894Z
     links: 
       - 
         href: FedRAMP_HIGH-baseline_profile.xml
@@ -1477,6 +1477,8 @@ catalog:
                   constraints: 
                     - 
                       detail: Selection: disables
+                  select: 
+                    alternatives: removes,disables
                 - 
                   id:          ac-2.2_prm_2
                   label:       organization-defined time period for each type of account
@@ -5220,7 +5222,20 @@ catalog:
                 - 
                   detail: fifteen (15) minutes
             - 
-              id: ac-7_prm_3
+              id:     ac-7_prm_3
+              select: 
+                alternatives: 
+                  - 
+                    """
+                      locks the account/node for an {{ ac-7_prm_4 }}
+                                     
+                    """
+                  - locks the account/node until released by an administrator
+                  - 
+                    """
+                      delays next logon prompt according to {{ ac-7_prm_5 }}
+                                     
+                    """
             - 
               id:          ac-7_prm_4
               depends-on:  ac-7_prm_3
@@ -8239,7 +8254,10 @@ catalog:
               title:      Authentication and Encryption
               parameters: 
                 - 
-                  id: ac-18.1_prm_1
+                  id:     ac-18.1_prm_1
+                  select: 
+                    how-many:     one or more
+                    alternatives: users,devices
               properties: 
                 - 
                   name:  label
@@ -8982,7 +9000,9 @@ catalog:
               title:      Full Device / Container-based Encryption
               parameters: 
                 - 
-                  id: ac-19.5_prm_1
+                  id:     ac-19.5_prm_1
+                  select: 
+                    alternatives: full-device encryption,container encryption
                 - 
                   id:    ac-19.5_prm_2
                   label: organization-defined mobile devices
@@ -9511,7 +9531,9 @@ catalog:
               title:      Portable Storage Devices
               parameters: 
                 - 
-                  id: ac-20.2_prm_1
+                  id:     ac-20.2_prm_1
+                  select: 
+                    alternatives: restricts,prohibits
               properties: 
                 - 
                   name:  label
@@ -14539,7 +14561,12 @@ catalog:
               title:      Integration / Scanning and Monitoring Capabilities
               parameters: 
                 - 
-                  id: au-6.5_prm_1
+                  id:     au-6.5_prm_1
+                  select: 
+                    how-many:     one or more
+                    alternatives: vulnerability scanning information,performance data,information system monitoring information,
+                     {{ au-6.5_prm_2 }}
+                  
                 - 
                   id:          au-6.5_prm_2
                   depends-on:  au-6.5_prm_1
@@ -14870,6 +14897,9 @@ catalog:
                   constraints: 
                     - 
                       detail: information system process; role; user
+                  select: 
+                    how-many:     one or more
+                    alternatives: information system process,role,user
               properties: 
                 - 
                   name:  label
@@ -18481,9 +18511,16 @@ catalog:
                     - 
                       detail: at least annually
                 - 
-                  id: ca-2.2_prm_2
+                  id:     ca-2.2_prm_2
+                  select: 
+                    alternatives: announced,unannounced
                 - 
-                  id: ca-2.2_prm_3
+                  id:     ca-2.2_prm_3
+                  select: 
+                    how-many:     one or more
+                    alternatives: in-depth monitoring,vulnerability scanning,malicious user testing,insider threat assessment,performance/load testing,
+                     {{ ca-2.2_prm_4 }}
+                  
                 - 
                   id:         ca-2.2_prm_4
                   depends-on: ca-2.2_prm_3
@@ -19349,6 +19386,8 @@ catalog:
                   constraints: 
                     - 
                       detail: deny-all, permit by exception
+                  select: 
+                    alternatives: allow-all, deny-by-exception,deny-all, permit-by-exception
                 - 
                   id:          ca-3.5_prm_2
                   label:       organization-defined information systems
@@ -22996,7 +23035,22 @@ catalog:
                                  board)
                 """
             - 
-              id: cm-3_prm_3
+              id:     cm-3_prm_3
+              select: 
+                how-many:     one or more
+                alternatives: 
+                  - 
+                    """
+                      
+                                        {{ cm-3_prm_4 }}
+                                     
+                    """
+                  - 
+                    """
+                      
+                                        {{ cm-3_prm_5 }}
+                                     
+                    """
             - 
               id:         cm-3_prm_4
               depends-on: cm-3_prm_3
@@ -27038,7 +27092,21 @@ catalog:
               title:      Prevent Program Execution
               parameters: 
                 - 
-                  id: cm-7.2_prm_1
+                  id:     cm-7.2_prm_1
+                  select: 
+                    how-many:     one or more
+                    alternatives: 
+                      - 
+                        """
+                          
+                                               {{ cm-7.2_prm_2 }}
+                                            
+                        """
+                      - 
+                        """
+                          rules authorizing the terms and conditions of software program
+                                               usage
+                        """
                 - 
                   id:         cm-7.2_prm_2
                   depends-on: cm-7.2_prm_1
@@ -28054,7 +28122,11 @@ catalog:
                     - 
                       detail: Continuously, using automated mechanisms with a maximum five-minute delay in detection.
                 - 
-                  id: cm-8.3_prm_2
+                  id:     cm-8.3_prm_2
+                  select: 
+                    how-many:     one or more
+                    alternatives: disables network access by such components,isolates the components,notifies {{ cm-8.3_prm_3 }}
+                  
                 - 
                   id:         cm-8.3_prm_3
                   depends-on: cm-8.3_prm_2
@@ -28391,6 +28463,9 @@ catalog:
                   constraints: 
                     - 
                       detail: position and role
+                  select: 
+                    how-many:     one or more
+                    alternatives: name,position,role
               properties: 
                 - 
                   name:  label
@@ -37275,7 +37350,10 @@ catalog:
               id:    ia-3_prm_1
               label: organization-defined specific and/or types of devices
             - 
-              id: ia-3_prm_2
+              id:     ia-3_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: local,remote,network
           properties: 
             - 
               name:  label
@@ -39708,6 +39786,8 @@ catalog:
                   constraints: 
                     - 
                       detail: in person
+                  select: 
+                    alternatives: in person,by a trusted third party
                 - 
                   id:    ia-5.3_prm_3
                   label: organization-defined registration authority
@@ -51739,7 +51819,9 @@ catalog:
           title:      Media Use
           parameters: 
             - 
-              id: mp-7_prm_1
+              id:     mp-7_prm_1
+              select: 
+                alternatives: restricts,prohibits
             - 
               id:    mp-7_prm_2
               label: organization-defined types of information system media
@@ -52848,6 +52930,16 @@ catalog:
               constraints: 
                 - 
                   detail: CSP defined physical access control systems/devices AND guards
+              select: 
+                how-many:     one or more
+                alternatives: 
+                  - 
+                    """
+                      
+                                        {{ pe-3_prm_3 }}
+                                     
+                    """
+                  - guards
             - 
               id:          pe-3_prm_3
               depends-on:  pe-3_prm_2
@@ -55155,7 +55247,10 @@ catalog:
           title:      Emergency Power
           parameters: 
             - 
-              id: pe-11_prm_1
+              id:     pe-11_prm_1
+              select: 
+                how-many:     one or more
+                alternatives: an orderly shutdown of the information system,transition of the information system to long-term alternate power
           properties: 
             - 
               name:  label
@@ -63112,7 +63207,11 @@ catalog:
           title:      Risk Assessment
           parameters: 
             - 
-              id: ra-3_prm_1
+              id:     ra-3_prm_1
+              select: 
+                alternatives: security plan,risk assessment report,
+                  {{ ra-3_prm_2 }}
+               
             - 
               id:          ra-3_prm_2
               depends-on:  ra-3_prm_1
@@ -64433,6 +64532,17 @@ catalog:
                   constraints: 
                     - 
                       detail: prior to a new scan
+                  select: 
+                    how-many:     one or more
+                    alternatives: 
+                      - 
+                        """
+                          
+                                               {{ ra-5.2_prm_2 }}
+                                            
+                        """
+                      - prior to a new scan
+                      - when new vulnerabilities are identified and reported
                 - 
                   id:         ra-5.2_prm_2
                   depends-on: ra-5.2_prm_1
@@ -66752,6 +66862,11 @@ catalog:
                   constraints: 
                     - 
                       detail: at a minimum to include security-relevant external system interfaces; high-level design; low-level design; source code or network and data flow diagram; [organization-defined design/implementation information]
+                  select: 
+                    how-many:     one or more
+                    alternatives: security-relevant external system interfaces,high-level design,low-level design,source code or hardware schematics,
+                     {{ sa-4.2_prm_2 }}
+                  
                 - 
                   id:         sa-4.2_prm_2
                   depends-on: sa-4.2_prm_1
@@ -68962,6 +69077,9 @@ catalog:
                   constraints: 
                     - 
                       detail: information processing, information data, AND information services
+                  select: 
+                    how-many:     one or more
+                    alternatives: information processing,information/data,information system services
                 - 
                   id:          sa-9.5_prm_2
                   label:       organization-defined locations
@@ -69157,6 +69275,9 @@ catalog:
               constraints: 
                 - 
                   detail: development, implementation, AND operation
+              select: 
+                how-many:     one or more
+                alternatives: design,development,implementation,operation
             - 
               id:    sa-10_prm_2
               label: organization-defined configuration items under configuration management
@@ -69740,7 +69861,10 @@ catalog:
           title:      Developer Security Testing and Evaluation
           parameters: 
             - 
-              id: sa-11_prm_1
+              id:     sa-11_prm_1
+              select: 
+                how-many:     one or more
+                alternatives: unit,integration,system,regression
             - 
               id:    sa-11_prm_2
               label: organization-defined depth and coverage
@@ -72483,7 +72607,12 @@ catalog:
               id:    sc-6_prm_1
               label: organization-defined resources
             - 
-              id: sc-6_prm_2
+              id:     sc-6_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: priority,quota,
+                  {{ sc-6_prm_3 }}
+               
             - 
               id:         sc-6_prm_3
               depends-on: sc-6_prm_2
@@ -72645,7 +72774,9 @@ catalog:
           title:      Boundary Protection
           parameters: 
             - 
-              id: sc-7_prm_1
+              id:     sc-7_prm_1
+              select: 
+                alternatives: physically,logically
           properties: 
             - 
               name:  label
@@ -74544,6 +74675,9 @@ catalog:
               constraints: 
                 - 
                   detail: confidentiality AND integrity
+              select: 
+                how-many:     one or more
+                alternatives: confidentiality,integrity
           properties: 
             - 
               name:  label
@@ -74709,6 +74843,9 @@ catalog:
                   constraints: 
                     - 
                       detail: prevent unauthorized disclosure of information AND detect changes to information
+                  select: 
+                    how-many:     one or more
+                    alternatives: prevent unauthorized disclosure of information,detect changes to information
                 - 
                   id:          sc-8.1_prm_2
                   label:       organization-defined alternative physical safeguards
@@ -75262,6 +75399,8 @@ catalog:
                   constraints: 
                     - 
                       detail: NIST FIPS-compliant
+                  select: 
+                    alternatives: NIST FIPS-compliant,NSA-approved
               properties: 
                 - 
                   name:  label
@@ -75365,7 +75504,11 @@ catalog:
               title:      Asymmetric Keys
               parameters: 
                 - 
-                  id: sc-12.3_prm_1
+                  id:     sc-12.3_prm_1
+                  select: 
+                    alternatives: NSA-approved key management technology and processes,approved PKI Class 3 certificates or prepositioned keying
+                     material,approved PKI Class 3 or Class 4 certificates and hardware security tokens
+                     that protect the user’s private key
               properties: 
                 - 
                   name:  label
@@ -77524,6 +77667,9 @@ catalog:
               constraints: 
                 - 
                   detail: confidentiality AND integrity
+              select: 
+                how-many:     one or more
+                alternatives: confidentiality,integrity
             - 
               id:    sc-28_prm_2
               label: organization-defined information at rest
@@ -79346,11 +79492,19 @@ catalog:
               constraints: 
                 - 
                   detail: to include endpoints
+              select: 
+                how-many:     one or more
+                alternatives: endpoint,network entry/exit points
             - 
               id:          si-3_prm_3
               constraints: 
                 - 
                   detail: to include blocking and quarantining malicious code and alerting administrator or defined security personnel near-realtime
+              select: 
+                how-many:     one or more
+                alternatives: block malicious code,quarantine malicious code,send alert to administrator,
+                  {{ si-3_prm_4 }}
+               
             - 
               id:         si-3_prm_4
               depends-on: si-3_prm_3
@@ -80188,7 +80342,12 @@ catalog:
               id:    si-4_prm_4
               label: organization-defined personnel or roles
             - 
-              id: si-4_prm_5
+              id:     si-4_prm_5
+              select: 
+                how-many:     one or more
+                alternatives: as needed,
+                  {{ si-4_prm_6 }}
+               
             - 
               id:         si-4_prm_6
               depends-on: si-4_prm_5
@@ -82325,7 +82484,11 @@ catalog:
                   id:    si-4.22_prm_1
                   label: organization-defined authorization or approval processes
                 - 
-                  id: si-4.22_prm_2
+                  id:     si-4.22_prm_2
+                  select: 
+                    how-many:     one or more
+                    alternatives: audits,alerts {{ si-4.22_prm_3 }}
+                  
                 - 
                   id:         si-4.22_prm_3
                   depends-on: si-4.22_prm_2
@@ -82779,6 +82942,27 @@ catalog:
               constraints: 
                 - 
                   detail: to include system security personnel and administrators with configuration/patch-management responsibilities
+              select: 
+                how-many:     one or more
+                alternatives: 
+                  - 
+                    """
+                      
+                                        {{ si-5_prm_3 }}
+                                     
+                    """
+                  - 
+                    """
+                      
+                                        {{ si-5_prm_4 }}
+                                     
+                    """
+                  - 
+                    """
+                      
+                                        {{ si-5_prm_5 }}
+                                     
+                    """
             - 
               id:         si-5_prm_3
               depends-on: si-5_prm_2
@@ -83277,7 +83461,23 @@ catalog:
               id:    si-6_prm_1
               label: organization-defined security functions
             - 
-              id: si-6_prm_2
+              id:     si-6_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: 
+                  - 
+                    """
+                      
+                                        {{ si-6_prm_3 }}
+                                     
+                    """
+                  - upon command by user with appropriate privilege
+                  - 
+                    """
+                      
+                                        {{ si-6_prm_4 }}
+                                     
+                    """
             - 
               id:          si-6_prm_3
               depends-on:  si-6_prm_2
@@ -83299,7 +83499,12 @@ catalog:
                 - 
                   detail: to include system administrators and security personnel
             - 
-              id: si-6_prm_6
+              id:     si-6_prm_6
+              select: 
+                how-many:     one or more
+                alternatives: shuts the information system down,restarts the information system,
+                  {{ si-6_prm_7 }}
+               
             - 
               id:          si-6_prm_7
               depends-on:  si-6_prm_6
@@ -83927,7 +84132,13 @@ catalog:
                   id:    si-7.1_prm_1
                   label: organization-defined software, firmware, and information
                 - 
-                  id: si-7.1_prm_2
+                  id:     si-7.1_prm_2
+                  select: 
+                    how-many:     one or more
+                    alternatives: at startup,at {{ si-7.1_prm_3 }}
+                  ,
+                     {{ si-7.1_prm_4 }}
+                  
                 - 
                   id:          si-7.1_prm_3
                   depends-on:  si-7.1_prm_2
@@ -84326,7 +84537,11 @@ catalog:
               title:      Automated Response to Integrity Violations
               parameters: 
                 - 
-                  id: si-7.5_prm_1
+                  id:     si-7.5_prm_1
+                  select: 
+                    how-many:     one or more
+                    alternatives: shuts the information system down,restarts the information system,implements {{ si-7.5_prm_2 }}
+                  
                 - 
                   id:         si-7.5_prm_2
                   depends-on: si-7.5_prm_1

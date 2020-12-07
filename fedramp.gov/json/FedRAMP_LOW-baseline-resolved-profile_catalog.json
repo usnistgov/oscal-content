@@ -1,6 +1,6 @@
 {
   "catalog": {
-    "uuid": "5d9d259d-da93-447b-82e0-a49b85083f61",
+    "uuid": "57de0ba8-3ddd-4ca3-ac65-bcc56629767c",
     "metadata": {
       "title": "FedRAMP Low Baseline",
       "published": "2020-06-01T00:00:00.000-04:00",
@@ -10,7 +10,7 @@
       "properties": [
         {
           "name": "resolution-timestamp",
-          "value": "2020-12-04T17:30:23.740966Z"
+          "value": "2020-12-07T16:27:58.519682Z"
         }
       ],
       "links": [
@@ -1912,7 +1912,14 @@
                 ]
               },
               {
-                "id": "ac-7_prm_3"
+                "id": "ac-7_prm_3",
+                "select": {
+                  "alternatives": [
+                    "locks the account/node for an {{ ac-7_prm_4 }}\n               ",
+                    "locks the account/node until released by an administrator",
+                    "delays next logon prompt according to {{ ac-7_prm_5 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "ac-7_prm_4",
@@ -27601,7 +27608,13 @@
             "title": "Media Use",
             "parameters": [
               {
-                "id": "mp-7_prm_1"
+                "id": "mp-7_prm_1",
+                "select": {
+                  "alternatives": [
+                    "restricts",
+                    "prohibits"
+                  ]
+                }
               },
               {
                 "id": "mp-7_prm_2",
@@ -28768,7 +28781,14 @@
                   {
                     "detail": "CSP defined physical access control systems/devices AND guards"
                   }
-                ]
+                ],
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "\n                  {{ pe-3_prm_3 }}\n               ",
+                    "guards"
+                  ]
+                }
               },
               {
                 "id": "pe-3_prm_3",
@@ -36896,7 +36916,14 @@
             "title": "Risk Assessment",
             "parameters": [
               {
-                "id": "ra-3_prm_1"
+                "id": "ra-3_prm_1",
+                "select": {
+                  "alternatives": [
+                    "security plan",
+                    "risk assessment report",
+                    "\n                  {{ ra-3_prm_2 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "ra-3_prm_2",
@@ -41488,7 +41515,13 @@
             "title": "Boundary Protection",
             "parameters": [
               {
-                "id": "sc-7_prm_1"
+                "id": "sc-7_prm_1",
+                "select": {
+                  "alternatives": [
+                    "physically",
+                    "logically"
+                  ]
+                }
               }
             ],
             "properties": [
@@ -44395,7 +44428,14 @@
                   {
                     "detail": "to include endpoints"
                   }
-                ]
+                ],
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "endpoint",
+                    "network entry/exit points"
+                  ]
+                }
               },
               {
                 "id": "si-3_prm_3",
@@ -44403,7 +44443,16 @@
                   {
                     "detail": "to include alerting administrator or defined security personnel"
                   }
-                ]
+                ],
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "block malicious code",
+                    "quarantine malicious code",
+                    "send alert to administrator",
+                    "\n                  {{ si-3_prm_4 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "si-3_prm_4",
@@ -44980,7 +45029,14 @@
                 "label": "organization-defined personnel or roles"
               },
               {
-                "id": "si-4_prm_5"
+                "id": "si-4_prm_5",
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "as needed",
+                    "\n                  {{ si-4_prm_6 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "si-4_prm_6",
@@ -45855,7 +45911,15 @@
                   {
                     "detail": "to include system security personnel and administrators with configuration/patch-management responsibilities"
                   }
-                ]
+                ],
+                "select": {
+                  "how-many": "one or more",
+                  "alternatives": [
+                    "\n                  {{ si-5_prm_3 }}\n               ",
+                    "\n                  {{ si-5_prm_4 }}\n               ",
+                    "\n                  {{ si-5_prm_5 }}\n               "
+                  ]
+                }
               },
               {
                 "id": "si-5_prm_3",

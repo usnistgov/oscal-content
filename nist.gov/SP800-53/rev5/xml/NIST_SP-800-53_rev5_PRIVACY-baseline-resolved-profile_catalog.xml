@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="7c8cf764-63a5-42d6-b5a1-706de2889cc1">
+         uuid="4e757a6b-62d7-400e-a184-ba5d252d9281">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 5 PRIVACY BASELINE</title>
       <last-modified>2020-11-09T15:39:11.548-05:00</last-modified>
       <version>Final</version>
       <oscal-version>1.0.0-milestone3</oscal-version>
-      <prop name="resolution-timestamp">2020-12-04T17:31:41.65577Z</prop>
+      <prop name="resolution-timestamp">2020-12-07T16:29:15.788317Z</prop>
       <link rel="resolution-source"
             href="NIST_SP-800-53_rev5_PRIVACY-baseline_profile.xml">NIST Special Publication 800-53 Revision 5 PRIVACY BASELINE</link>
       <role id="creator">
@@ -42,7 +42,13 @@
          <param id="ac-1_prm_1">
             <label>organization-defined personnel or roles</label>
          </param>
-         <param id="ac-1_prm_2"/>
+         <param id="ac-1_prm_2">
+            <select how-many="one or more">
+               <choice>organization-level</choice>
+               <choice>mission/business process-level</choice>
+               <choice>system-level</choice>
+            </select>
+         </param>
          <param id="ac-1_prm_3">
             <label>organization-defined official</label>
          </param>
@@ -122,7 +128,13 @@
          <param id="at-1_prm_1">
             <label>organization-defined personnel or roles</label>
          </param>
-         <param id="at-1_prm_2"/>
+         <param id="at-1_prm_2">
+            <select how-many="one or more">
+               <choice>organization-level</choice>
+               <choice>mission/business process-level</choice>
+               <choice>system-level</choice>
+            </select>
+         </param>
          <param id="at-1_prm_3">
             <label>organization-defined official</label>
          </param>
@@ -393,7 +405,13 @@
          <param id="au-1_prm_1">
             <label>organization-defined personnel or roles</label>
          </param>
-         <param id="au-1_prm_2"/>
+         <param id="au-1_prm_2">
+            <select how-many="one or more">
+               <choice>organization-level</choice>
+               <choice>mission/business process-level</choice>
+               <choice>system-level</choice>
+            </select>
+         </param>
          <param id="au-1_prm_3">
             <label>organization-defined official</label>
          </param>
@@ -570,7 +588,13 @@
          <param id="ca-1_prm_1">
             <label>organization-defined personnel or roles</label>
          </param>
-         <param id="ca-1_prm_2"/>
+         <param id="ca-1_prm_2">
+            <select how-many="one or more">
+               <choice>organization-level</choice>
+               <choice>mission/business process-level</choice>
+               <choice>system-level</choice>
+            </select>
+         </param>
          <param id="ca-1_prm_3">
             <label>organization-defined official</label>
          </param>
@@ -952,7 +976,13 @@
          <param id="cm-1_prm_1">
             <label>organization-defined personnel or roles</label>
          </param>
-         <param id="cm-1_prm_2"/>
+         <param id="cm-1_prm_2">
+            <select how-many="one or more">
+               <choice>organization-level</choice>
+               <choice>mission/business process-level</choice>
+               <choice>system-level</choice>
+            </select>
+         </param>
          <param id="cm-1_prm_3">
             <label>organization-defined official</label>
          </param>
@@ -1054,7 +1084,13 @@
          <param id="ir-1_prm_1">
             <label>organization-defined personnel or roles</label>
          </param>
-         <param id="ir-1_prm_2"/>
+         <param id="ir-1_prm_2">
+            <select how-many="one or more">
+               <choice>organization-level</choice>
+               <choice>mission/business process-level</choice>
+               <choice>system-level</choice>
+            </select>
+         </param>
          <param id="ir-1_prm_3">
             <label>organization-defined official</label>
          </param>
@@ -1480,7 +1516,13 @@
          <param id="mp-1_prm_1">
             <label>organization-defined personnel or roles</label>
          </param>
-         <param id="mp-1_prm_2"/>
+         <param id="mp-1_prm_2">
+            <select how-many="one or more">
+               <choice>organization-level</choice>
+               <choice>mission/business process-level</choice>
+               <choice>system-level</choice>
+            </select>
+         </param>
          <param id="mp-1_prm_3">
             <label>organization-defined official</label>
          </param>
@@ -1603,7 +1645,13 @@
          <param id="pl-1_prm_1">
             <label>organization-defined personnel or roles</label>
          </param>
-         <param id="pl-1_prm_2"/>
+         <param id="pl-1_prm_2">
+            <select how-many="one or more">
+               <choice>organization-level</choice>
+               <choice>mission/business process-level</choice>
+               <choice>system-level</choice>
+            </select>
+         </param>
          <param id="pl-1_prm_3">
             <label>organization-defined official</label>
          </param>
@@ -1822,7 +1870,14 @@
          <param id="pl-4_prm_1">
             <label>organization-defined frequency</label>
          </param>
-         <param id="pl-4_prm_2"/>
+         <param id="pl-4_prm_2">
+            <select how-many="one or more">
+               <choice>
+                  <insert param-id="pl-4_prm_3"/>
+               </choice>
+               <choice>when the rules are revised or updated</choice>
+            </select>
+         </param>
          <param id="pl-4_prm_3" depends-on="pl-4_prm_2">
             <label>organization-defined frequency</label>
          </param>
@@ -2897,7 +2952,13 @@
          <param id="pt-1_prm_1">
             <label>organization-defined personnel or roles</label>
          </param>
-         <param id="pt-1_prm_2"/>
+         <param id="pt-1_prm_2">
+            <select how-many="one or more">
+               <choice>organization-level</choice>
+               <choice>mission/business process-level</choice>
+               <choice>system-level</choice>
+            </select>
+         </param>
          <param id="pt-1_prm_3">
             <label>organization-defined official</label>
          </param>
@@ -3317,7 +3378,13 @@
          <param id="ra-1_prm_1">
             <label>organization-defined personnel or roles</label>
          </param>
-         <param id="ra-1_prm_2"/>
+         <param id="ra-1_prm_2">
+            <select how-many="one or more">
+               <choice>organization-level</choice>
+               <choice>mission/business process-level</choice>
+               <choice>system-level</choice>
+            </select>
+         </param>
          <param id="ra-1_prm_3">
             <label>organization-defined official</label>
          </param>
@@ -3388,7 +3455,15 @@
       </control>
       <control class="SP800-53" id="ra-3">
          <title>Risk Assessment</title>
-         <param id="ra-3_prm_1"/>
+         <param id="ra-3_prm_1">
+            <select>
+               <choice>security and privacy plans</choice>
+               <choice>risk assessment report</choice>
+               <choice>
+                  <insert param-id="ra-3_prm_2"/>
+               </choice>
+            </select>
+         </param>
          <param id="ra-3_prm_2" depends-on="ra-3_prm_1">
             <label>organization-defined document</label>
          </param>
@@ -3553,7 +3628,13 @@
          <param id="sa-1_prm_1">
             <label>organization-defined personnel or roles</label>
          </param>
-         <param id="sa-1_prm_2"/>
+         <param id="sa-1_prm_2">
+            <select how-many="one or more">
+               <choice>organization-level</choice>
+               <choice>mission/business process-level</choice>
+               <choice>system-level</choice>
+            </select>
+         </param>
          <param id="sa-1_prm_3">
             <label>organization-defined official</label>
          </param>
@@ -3706,7 +3787,14 @@
       </control>
       <control class="SP800-53" id="sa-4">
          <title>Acquisition Process</title>
-         <param id="sa-4_prm_1"/>
+         <param id="sa-4_prm_1">
+            <select how-many="one or more">
+               <choice>standardized contract language</choice>
+               <choice>
+                  <insert param-id="sa-4_prm_2"/>
+               </choice>
+            </select>
+         </param>
          <param id="sa-4_prm_2" depends-on="sa-4_prm_1">
             <label>organization-defined contract language</label>
          </param>
@@ -3838,7 +3926,14 @@
       </control>
       <control class="SP800-53" id="sa-11">
          <title>Developer Testing and Evaluation</title>
-         <param id="sa-11_prm_1"/>
+         <param id="sa-11_prm_1">
+            <select how-many="one or more">
+               <choice>unit</choice>
+               <choice>integration</choice>
+               <choice>system</choice>
+               <choice>regression</choice>
+            </select>
+         </param>
          <param id="sa-11_prm_2">
             <label>organization-defined frequency</label>
          </param>
@@ -3901,7 +3996,13 @@
          <param id="si-1_prm_1">
             <label>organization-defined personnel or roles</label>
          </param>
-         <param id="si-1_prm_2"/>
+         <param id="si-1_prm_2">
+            <select how-many="one or more">
+               <choice>organization-level</choice>
+               <choice>mission/business process-level</choice>
+               <choice>system-level</choice>
+            </select>
+         </param>
          <param id="si-1_prm_3">
             <label>organization-defined official</label>
          </param>

@@ -1,5 +1,5 @@
 catalog: 
-  uuid:        7c8cf764-63a5-42d6-b5a1-706de2889cc1
+  uuid:        4e757a6b-62d7-400e-a184-ba5d252d9281
   metadata: 
     title:               NIST Special Publication 800-53 Revision 5 PRIVACY BASELINE
     last-modified:       2020-11-09T15:39:11.548-05:00
@@ -8,7 +8,7 @@ catalog:
     properties: 
       - 
         name:  resolution-timestamp
-        value: 2020-12-04T17:31:41.65577Z
+        value: 2020-12-07T16:29:15.788317Z
     links: 
       - 
         href: NIST_SP-800-53_rev5_PRIVACY-baseline_profile.xml
@@ -53,7 +53,10 @@ catalog:
               id:    ac-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: ac-1_prm_2
+              id:     ac-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    ac-1_prm_3
               label: organization-defined official
@@ -223,7 +226,10 @@ catalog:
               id:    at-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: at-1_prm_2
+              id:     at-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    at-1_prm_3
               label: organization-defined official
@@ -864,7 +870,10 @@ catalog:
               id:    au-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: au-1_prm_2
+              id:     au-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    au-1_prm_3
               label: organization-defined official
@@ -1298,7 +1307,10 @@ catalog:
               id:    ca-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: ca-1_prm_2
+              id:     ca-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    ca-1_prm_3
               label: organization-defined official
@@ -2253,7 +2265,10 @@ catalog:
               id:    cm-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: cm-1_prm_2
+              id:     cm-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    cm-1_prm_3
               label: organization-defined official
@@ -2488,7 +2503,10 @@ catalog:
               id:    ir-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: ir-1_prm_2
+              id:     ir-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    ir-1_prm_3
               label: organization-defined official
@@ -3533,7 +3551,10 @@ catalog:
               id:    mp-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: mp-1_prm_2
+              id:     mp-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    mp-1_prm_3
               label: organization-defined official
@@ -3823,7 +3844,10 @@ catalog:
               id:    pl-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: pl-1_prm_2
+              id:     pl-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    pl-1_prm_3
               label: organization-defined official
@@ -4340,7 +4364,17 @@ catalog:
               id:    pl-4_prm_1
               label: organization-defined frequency
             - 
-              id: pl-4_prm_2
+              id:     pl-4_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: 
+                  - 
+                    """
+                      
+                                        {{ pl-4_prm_3 }}
+                                     
+                    """
+                  - when the rules are revised or updated
             - 
               id:         pl-4_prm_3
               depends-on: pl-4_prm_2
@@ -7019,7 +7053,10 @@ catalog:
               id:    pt-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: pt-1_prm_2
+              id:     pt-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    pt-1_prm_3
               label: organization-defined official
@@ -7974,7 +8011,10 @@ catalog:
               id:    ra-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: ra-1_prm_2
+              id:     ra-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    ra-1_prm_3
               label: organization-defined official
@@ -8124,7 +8164,11 @@ catalog:
           title:      Risk Assessment
           parameters: 
             - 
-              id: ra-3_prm_1
+              id:     ra-3_prm_1
+              select: 
+                alternatives: security and privacy plans,risk assessment report,
+                  {{ ra-3_prm_2 }}
+               
             - 
               id:         ra-3_prm_2
               depends-on: ra-3_prm_1
@@ -8550,7 +8594,10 @@ catalog:
               id:    sa-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: sa-1_prm_2
+              id:     sa-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    sa-1_prm_3
               label: organization-defined official
@@ -8922,7 +8969,12 @@ catalog:
           title:      Acquisition Process
           parameters: 
             - 
-              id: sa-4_prm_1
+              id:     sa-4_prm_1
+              select: 
+                how-many:     one or more
+                alternatives: standardized contract language,
+                  {{ sa-4_prm_2 }}
+               
             - 
               id:         sa-4_prm_2
               depends-on: sa-4_prm_1
@@ -9279,7 +9331,10 @@ catalog:
           title:      Developer Testing and Evaluation
           parameters: 
             - 
-              id: sa-11_prm_1
+              id:     sa-11_prm_1
+              select: 
+                how-many:     one or more
+                alternatives: unit,integration,system,regression
             - 
               id:    sa-11_prm_2
               label: organization-defined frequency
@@ -9430,7 +9485,10 @@ catalog:
               id:    si-1_prm_1
               label: organization-defined personnel or roles
             - 
-              id: si-1_prm_2
+              id:     si-1_prm_2
+              select: 
+                how-many:     one or more
+                alternatives: organization-level,mission/business process-level,system-level
             - 
               id:    si-1_prm_3
               label: organization-defined official
