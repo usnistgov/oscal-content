@@ -1,7 +1,4 @@
----
-title: Sample Control Catalog
-description: A sample control catalog.
----
+# Sample Control Catalog
 
 The following catalog examples illustrate a simple control catalog. This catalog is represented in the prose below. OSCAL catalog representations in [XML](xml/basic-catalog.xml), [JSON](json/basic-catalog.json), and [YAML](yaml/basic-catalog.yaml) are also available, which illustrate formatting the prose below in the OSCAL catalog XML, JSON, and YAML formats.
 
