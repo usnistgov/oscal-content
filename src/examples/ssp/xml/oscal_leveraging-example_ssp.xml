@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-   uuid="a4043496-d737-480b-9a55-6da39332a1f5">
+                      uuid="a75f5a9e-716a-4651-be22-83bae464f464">
    <metadata>
       <title>Leveraging SaaS System Security Plan</title>
       <last-modified>2020-06-23T10:07:03.803-04:00</last-modified>
@@ -10,11 +10,13 @@
          <title>Administrator</title>
       </role>
       <party type="person" uuid="22222222-0000-4000-9000-100000000001">
-         <party-name>Annie Admin</party-name>
+         <name>Annie Admin</name>
       </party>
       <party type="person" uuid="22222222-0000-4000-9000-100000000002">
-         <party-name>LA Lane</party-name>
-         <remarks><p>Leveraged Authorization POC</p></remarks>
+         <name>LA Lane</name>
+         <remarks>
+            <p>Leveraged Authorization POC</p>
+         </remarks>
       </party>
    </metadata>
    <import-profile href="../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_LOW-baseline_profile.xml"/>
@@ -41,7 +43,6 @@ Cust-A    Cust-B    Cust-C
          <p>In this example, the IaaS SSP specifies customer responsibilities for certain controls.</p>
          <p>The SaaS must address these for the control to be fully satisfied.</p>
          <p>The SaaS provider may either implement these directly, or pass the responsiblity on to their customers. Both may be necessary.</p>
-         
          <p>For any given control, the Leveraged IaaS SSP must describe:</p>
          <ol>
             <li>HOW the IaaS is directly satisfying the control</li>
@@ -61,7 +62,9 @@ Cust-A    Cust-B    Cust-C
             <description>
                <p>This system handles information pertaining to audit events.</p>
             </description>
-            <information-type-id system="https://doi.org/10.6028/NIST.SP.800-60v2r1">C.3.5.8</information-type-id>
+            <categorization system="https://doi.org/10.6028/NIST.SP.800-60v2r1">
+               <information-type-id>C.3.5.8</information-type-id>
+            </categorization>
             <confidentiality-impact>
                <base>fips-199-moderate</base>
                <selected>fips-199-low</selected>
@@ -103,11 +106,10 @@ Cust-A    Cust-B    Cust-C
    <system-implementation>
       <leveraged-authorization uuid="22222222-0000-4000-9000-300000000001">
          <title>CSP IaaS [Leveraged System]</title>
-         <link href="./oscal_csp-example_ssp.xml" rel="OSCAL-SSP-XML" />
+         <link href="./oscal_csp-example_ssp.xml" rel="OSCAL-SSP-XML"/>
          <party-uuid>22222222-0000-4000-9000-100000000002</party-uuid>
          <date-authorized>2018-01-01</date-authorized>
       </leveraged-authorization>
-      
       <user uuid="22222222-0000-4000-9000-200000000001">
          <role-id>admin</role-id>
          <authorized-privilege>
@@ -115,9 +117,10 @@ Cust-A    Cust-B    Cust-C
             <function-performed>Manages the components within the SaaS.</function-performed>
          </authorized-privilege>
       </user>
-
-      <component uuid="22222222-0000-4000-9001-000000000001" component-type="this-system">
-         <title><b>THIS SYSTEM (SaaS)</b></title>
+      <component uuid="22222222-0000-4000-9001-000000000001" type="this-system">
+         <title>
+            <b>THIS SYSTEM (SaaS)</b>
+         </title>
          <description>
             <p>This Leveraging SaaS.</p>
             <p>The entire system as depicted in the system authorization boundary</p>
@@ -125,19 +128,19 @@ Cust-A    Cust-B    Cust-C
          <prop name="implementation-point">system</prop>
          <status state="operational"/>
       </component>
-      
-      <component uuid="22222222-0000-4000-9001-000000000002" component-type="leveraged-system">
-         <title><b>LEVERAGED SYSTEM (IaaS)</b></title>
+      <component uuid="22222222-0000-4000-9001-000000000002" type="leveraged-system">
+         <title>
+            <b>LEVERAGED SYSTEM (IaaS)</b>
+         </title>
          <description>
             <p>If the leveraged system owner provides a UUID for their system (such as in an OSCAL-based CRM), it should be used as the UUID for this component.</p>
          </description>
          <prop name="implementation-point">external</prop>
          <prop name="leveraged-authorization-uuid">22222222-0000-4000-9000-300000000001</prop>
-         <prop name="inherited-uuid"              >11111111-0000-4000-9001-000000000001</prop>
+         <prop name="inherited-uuid">11111111-0000-4000-9001-000000000001</prop>
          <status state="operational"/>
       </component>
-      
-      <component uuid="22222222-0000-4000-9001-000000000003" component-type="appliance">
+      <component uuid="22222222-0000-4000-9001-000000000003" type="appliance">
          <title>Access Control Appliance</title>
          <description>
             <p>An access control virtual appliance, wich performs XYZ functions.</p>
@@ -146,97 +149,92 @@ Cust-A    Cust-B    Cust-C
          <prop name="virtual">yes</prop>
          <status state="operational"/>
       </component>
-
-      <component uuid="22222222-0000-4000-9001-000000000004" component-type="application">
+      <component uuid="22222222-0000-4000-9001-000000000004" type="application">
          <title>Leveraged Application</title>
          <description>
             <p>Inherited from underlying IaaS.</p>
          </description>
          <prop name="implementation-point">external</prop>
          <prop name="leveraged-authorization-uuid">22222222-0000-4000-9000-300000000001</prop>
-         <prop name="inherited-uuid"              >11111111-0000-4000-9001-000000000002</prop>
+         <prop name="inherited-uuid">11111111-0000-4000-9001-000000000002</prop>
          <status state="operational"/>
       </component>
-
    </system-implementation>
-
    <!-- ************************ -->
-
    <control-implementation>
       <description>
          <p>This is a collection of control responses.</p>
       </description>
-      
       <implemented-requirement control-id="ac-2" uuid="22222222-0000-4000-9009-002000000000">
          <set-parameter param-id="ac-2_prm_1">
             <value>privileged and non-privileged</value>
          </set-parameter>
          <!-- additional parameters omitted -->
-         
          <statement statement-id="ac-2_stmt.a" uuid="22222222-0000-4000-9009-002001000000">
-            
-            <by-component uuid="22222222-0000-4000-9009-002001001000" component-uuid="22222222-0000-4000-9001-000000000001">
+            <by-component uuid="22222222-0000-4000-9009-002001001000"
+                          component-uuid="22222222-0000-4000-9001-000000000001">
                <description>
                   <p>Response for the "This System" component.</p>
                   <p>Overall description of how "This System" satisfies AC-2, Part a.</p>
+                  <p>Response for the "This System" component.</p>
+                  <p>Overall description of how "This System" satisfies AC-2, Part a.</p>
                </description>
-               <annotation name="responsibility" value="provider" />
+               <annotation name="responsibility" value="provider"/>
             </by-component>
-
-            <by-component uuid="22222222-0000-4000-9009-002001002000" component-uuid="22222222-0000-4000-9001-000000000002">
+            <by-component uuid="22222222-0000-4000-9009-002001002000"
+                          component-uuid="22222222-0000-4000-9001-000000000002">
                <description>
                   <p>Describe how this internal virtual appliance satisfies AC-2, Part a.</p>
                </description>
-
-               <satisfied uuid="22222222-0000-4000-9009-002001002001" responsibility-uuid="11111111-0000-4000-9009-002001001001">
+               <satisfied uuid="22222222-0000-4000-9009-002001002001"
+                          responsibility-uuid="11111111-0000-4000-9009-002001001001">
                   <description>
                      <p>Description that directly addresses how the consumer responsibility was satisfied.</p>
                   </description>
-                  <responsible-role role-id="role-id" />
+                  <responsible-role role-id="role-id"/>
                </satisfied>
-
             </by-component>
-
-            <by-component uuid="22222222-0000-4000-9009-002001003000" component-uuid="22222222-0000-4000-9001-000000000003">
+            <by-component uuid="22222222-0000-4000-9009-002001003000"
+                          component-uuid="22222222-0000-4000-9001-000000000003">
                <description>
-                     <p><i>duplicated/tailored description of what was inherited, and description of what was configured.</i></p>
-                     <p>Consumer-appropriate description of what may be inherited.</p>
-                     <p>In the context of the application component in satisfaction of AC-2, part a.</p>
+                  <p>
+                     <i>duplicated/tailored description of what was inherited, and description of what was configured.</i>
+                  </p>
+                  <p>Consumer-appropriate description of what may be inherited.</p>
+                  <p>In the context of the application component in satisfaction of AC-2, part a.</p>
                </description>
-                  
-               <inherited uuid="22222222-0000-4000-9009-002001002002" provided-uuid="11111111-0000-4000-9009-002001002001">
+               <inherited uuid="22222222-0000-4000-9009-002001002002"
+                          provided-uuid="11111111-0000-4000-9009-002001002001">
                   <description>
                      <p>Optional description.</p>
-                     <p><i>Possibly duplicated description of what was inherited.</i></p>
+                     <p>
+                        <i>Possibly duplicated description of what was inherited.</i>
+                     </p>
                      <p>Consumer-appropriate description of what may be inherited.</p>
                      <p>In the context of the application component in satisfaction of AC-2, part a.</p>
                   </description>
                </inherited>
-                  
-               <satisfied uuid="22222222-0000-4000-9009-002001002003" responsibility-uuid="11111111-0000-4000-9009-002001002002">
+               <satisfied uuid="22222222-0000-4000-9009-002001002003"
+                          responsibility-uuid="11111111-0000-4000-9009-002001002002">
                   <description>
                      <p>Description of how the responsibility was satisfied.</p>
                   </description>
                </satisfied>
-
             </by-component>
-
             <remarks>
                <p>a. Identifies and selects the following types of information system accounts to support
                   organizational missions/business functions: [Assignment: privileged and non-privileged];</p>
             </remarks>
-
          </statement>
-      <remarks>
-         <p>The organization:</p>
-         <p>a. Identifies and selects the following types of information system accounts to support
+         <remarks>
+            <p>The organization:</p>
+            <p>a. Identifies and selects the following types of information system accounts to support
             organizational missions/business functions: [Assignment: organization-defined information
             system account types];</p>
-         <p>b. Assigns account managers for information system accounts;</p>
-         <p>c. Establishes conditions for group and role membership;</p>
-         <p>Omitted: d. through j.</p>
-      </remarks>
-
+            <p>b. Assigns account managers for information system accounts;</p>
+            <p>c. Establishes conditions for group and role membership;</p>
+            <p>Omitted: d. through j.</p>
+         </remarks>
       </implemented-requirement>
    </control-implementation>
    <back-matter>

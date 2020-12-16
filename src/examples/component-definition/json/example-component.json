@@ -28,23 +28,24 @@
                     {
                         "uuid": "cfcdd674-8595-4f98-a9d1-3ac70825c49f",
                         "source": "../../../content/nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_catalog.json",
-                        "description": "This is a partial implementation of the SP 800-53 rev4 catalog, focusing on the control enhancement AC-2 (2).",
+                        "description": "This is a partial implementation of the SP 800-53 rev4 catalog, focusing on the control enhancement AC-2 (3).",
                         "implemented-requirements": [
                             {
                                 "uuid": "d1016df0-9b5c-4839-86cd-f9c1d113077b",
                                 "description": "Inactive accounts are automatically disabled based on the duration specified by the duration parameter. Disabled accounts are expected to be reviewed and removed when appropriate.",
-                                "control-id": "ac-2.2"
+                                "control-id": "ac-2.3"
                             }
                         ]
                     },
                     {
                         "uuid": "22dbff65-9729-449f-9dfc-4e5fee0906de",
                         "source": "../../../content/fedramp.gov/json/FedRAMP_HIGH-baseline_profile.json",
-                        "description": "This is a partial implementation of the FedRAMP High profile, focusing on the control enhancement AC-2 (2).",
+                        "description": "This is a partial implementation of the FedRAMP High profile, focusing on the control enhancement AC-2 (3).",
                         "implemented-requirements": [
                             {
                                 "uuid": "65e30b37-0640-4844-9f42-b2a7ae944bb1",
-                                "control-id": "ac-2.2"
+                                "description": "An alternate narative for FedRAMP..",
+                                "control-id": "ac-2.3"
                             }
                         ]
                     }
