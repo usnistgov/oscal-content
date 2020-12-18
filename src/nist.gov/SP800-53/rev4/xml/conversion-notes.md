@@ -5,12 +5,12 @@ The XML, JSON, and YAML versions of SP800-53 given here are derived from officia
 Keep in mind that the OSCAL code is thus a *representation* of an *interpretation* of the standard, and can in no way be considered as authoritative in itself. Any authority or reliability it may be considered to have derives entirely from its resemblance to the standard as published, as confirmed by external inspection.
 
 Specifically, this OSCAL XML was produced via XSLT transformation pipeline from 
-[NIST NVD XML sources](https://nvd.nist.gov/800-53) (Control descriptions in Appendixes F & G and Objective Appendix F)
+documentary sources maintained and published in other formats (Control descriptions in Appendixes F & G and Objective Appendix F).
 
 The transformation pipeline applies the following enhancements and mappings to this data set:
 
 1. Source is ameliorated at points of detected failure such as typographical glitches (where necessary to enable downstream processing).
-1. Source is cast from native (NVD XML) description into OSCAL
+1. Source is cast from native format (MS Word Office Open docx) description into OSCAL
 1. Various enhancements are made, such as inferring parameter markup, establishing internal cross-references etc.
 1. Along the way, IDs are produced by mapping literal values (generally, labels) found in the source data. This entails some rewriting of identifiers (see below). Because these values are produced by direct mapping from the data, as opposed to auto-generating them based on intrinsic document properties (structure), they can also be meaningfully *validated*. See below.
 1. In the result, control descriptions from the base publication, SP800-53, are merged with detailed objective and assessment descriptions from Appendix A, by control.
@@ -28,7 +28,7 @@ Globally in OSCAL, `@id` attributes (XML) or 'id' fields (JSON) are validated as
 
 As a consequence of the second constraint, ids serve as robust targets for linking when other information is not determinative, especially when used in combination with unique identifiers at the document level.
 
-Additionally, in the OSCAL version of SP800-53 rev 4, the following ID conventions are followed:
+Additionally, in the OSCAL version of SP800-53 revs 4 and 5, the following ID conventions are followed:
 
 1. IDs of controls are derived from the name (label) of the Control. So control "AC-1" has id `ac-1` and "PM-15" has `pm-15`.
 1. IDs of control enhancements (child controls) are produced similarly, with the parenthetical expression cast to "dot notation". So control enhancement SI-14(1) has id `si-14.1`, etc.
