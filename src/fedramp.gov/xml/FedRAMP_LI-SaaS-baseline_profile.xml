@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="48d3387b-e554-4232-97bc-a8617cf238d9">
-   
+<!-- Modified again 2020-12-18-05:00 to conform with RC1 schema with updated link representations. -->
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
+         uuid="30f110be-eb28-476a-a3aa-dc99248b2731">
    <metadata>
       <title>FedRAMP Tailored Low Impact Software as a Service (LI-SaaS) Baseline</title>
       <published>2020-02-02T00:00:00.000-05:00</published>
-      <last-modified>2020-06-01T10:00:00.000-05:00</last-modified>
+      <last-modified>2020-12-18T16:38:39.798-05:00</last-modified>
       <version>1.2</version>
-      <oscal-version>1.0.0-milestone3</oscal-version>
+      <oscal-version>1.0.0-rc1</oscal-version>
       <role id="parpared-by">
          <title>Document creator</title>
       </role>
@@ -18,11 +19,11 @@
          <title>The FedRAMP Joint Authorization Board (JAB)</title>
          <short-name>CSP</short-name>
       </role>
-
       <party uuid="8cc0b8e5-9650-4d5f-9796-316f05fa9a2d" type="organization">
-         <party-name>Federal Risk and Authorization Management Program: Program Management Office</party-name>
+         <name>Federal Risk and Authorization Management Program: Program Management Office</name>
          <short-name>FedRAMP PMO</short-name>
-         <link href="https://fedramp.gov" rel="homepage" />
+         <link href="https://fedramp.gov" rel="homepage"/>
+         <email-address>info@fedramp.gov</email-address>
          <address type="work">
             <addr-line>1800 F St. NW</addr-line>
             <addr-line/>
@@ -31,13 +32,11 @@
             <postal-code/>
             <country>US</country>
          </address>
-         <email>info@fedramp.gov</email>
       </party>
       <party uuid="ca9ba80e-1342-4bfd-b32a-abac468c24b4" type="organization">
-         <party-name>Federal Risk and Authorization Management Program: Joint Authorization Board</party-name>
+         <name>Federal Risk and Authorization Management Program: Joint Authorization Board</name>
          <short-name>FedRAMP JAB</short-name>
       </party>
-      
       <responsible-party role-id="prepared-by">
          <party-uuid>4aa7b203-318b-4cde-96cf-feaeffc3a4b7</party-uuid>
       </responsible-party>
@@ -182,156 +181,319 @@
       <combine method="keep"/>
       <as-is>true</as-is>
    </merge>
-   <modify>
-      <!-- - - AC-22 - -  -->
+   <modify><!-- - - AC-22 - -  -->
       <set-parameter param-id="ac-22_prm_1">
-         <constraint>at least quarterly</constraint>
+         <constraint>
+            <description>
+               <p>at least quarterly</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - AU-5 - -  -->
       <set-parameter param-id="au-5_prm_2">
-         <constraint>organization-defined actions to be taken (overwrite oldest record)</constraint>
+         <constraint>
+            <description>
+               <p>organization-defined actions to be taken (overwrite oldest record)</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - AU-6 - -  -->
       <set-parameter param-id="au-6_prm_1">
-         <constraint>at least weekly</constraint>
+         <constraint>
+            <description>
+               <p>at least weekly</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - CA-2 - -  -->
       <set-parameter param-id="ca-2_prm_1">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ca-2_prm_2">
-         <constraint>individuals or roles to include FedRAMP PMO</constraint>
+         <constraint>
+            <description>
+               <p>individuals or roles to include FedRAMP PMO</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - CA-2 (1) - -  -->
       <!-- - - CA-3 - -  -->
       <set-parameter param-id="ca-3_prm_1">
-         <constraint>at least annually and on input from FedRAMP</constraint>
+         <constraint>
+            <description>
+               <p>at least annually and on input from FedRAMP</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - CA-5 - -  -->
       <set-parameter param-id="ca-5_prm_1">
-         <constraint>at least monthly</constraint>
+         <constraint>
+            <description>
+               <p>at least monthly</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - CA-6 - -  -->
       <set-parameter param-id="ca-6_prm_1">
-         <constraint>at least every three years or when a significant change occurs</constraint>
+         <constraint>
+            <description>
+               <p>at least every three years or when a significant change occurs</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - CA-7 - -  -->
       <set-parameter param-id="ca-7_prm_4">
-         <constraint>to meet Federal and FedRAMP requirements (See additional guidance)</constraint>
+         <constraint>
+            <description>
+               <p>to meet Federal and FedRAMP requirements (See additional guidance)</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ca-7_prm_5">
-         <constraint>to meet Federal and FedRAMP requirements (See additional guidance)</constraint>
+         <constraint>
+            <description>
+               <p>to meet Federal and FedRAMP requirements (See additional guidance)</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - CM-6 - -  -->
       <set-parameter param-id="cm-6_prm_1">
-         <constraint>see CM-6(a) Additional FedRAMP Requirements and Guidance</constraint>
+         <constraint>
+            <description>
+               <p>see CM-6(a) Additional FedRAMP Requirements and Guidance</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - CM-8 - -  -->
       <set-parameter param-id="cm-8_prm_2">
-         <constraint>at least monthly</constraint>
+         <constraint>
+            <description>
+               <p>at least monthly</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - CP-9 - -  -->
       <set-parameter param-id="cp-9_prm_1">
-         <constraint>daily incremental; weekly full</constraint>
+         <constraint>
+            <description>
+               <p>daily incremental; weekly full</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="cp-9_prm_2">
-         <constraint>daily incremental; weekly full</constraint>
+         <constraint>
+            <description>
+               <p>daily incremental; weekly full</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="cp-9_prm_3">
-         <constraint>daily incremental; weekly full</constraint>
+         <constraint>
+            <description>
+               <p>daily incremental; weekly full</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - IR-6 - -  -->
       <set-parameter param-id="ir-6_prm_1">
-         <constraint>US-CERT incident reporting timelines as specified in NIST Special Publication 800-61 (as amended)</constraint>
+         <constraint>
+            <description>
+               <p>US-CERT incident reporting timelines as specified in NIST Special Publication 800-61 (as amended)</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - PE-2 - -  -->
       <set-parameter param-id="pe-2_prm_1">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - PE-3 - -  -->
       <set-parameter param-id="pe-3_prm_2">
-         <constraint>CSP defined physical access control systems/devices AND guards</constraint>
+         <constraint>
+            <description>
+               <p>CSP defined physical access control systems/devices AND guards</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pe-3_prm_6">
-         <constraint>in all circumstances within restricted access area where the information system resides</constraint>
+         <constraint>
+            <description>
+               <p>in all circumstances within restricted access area where the information system resides</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pe-3_prm_8">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pe-3_prm_9">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - PE-6 - -  -->
       <set-parameter param-id="pe-6_prm_1">
-         <constraint>at least monthly</constraint>
+         <constraint>
+            <description>
+               <p>at least monthly</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - PE-8 - -  -->
       <set-parameter param-id="pe-8_prm_1">
-         <constraint>for a minimum of one (1) year</constraint>
+         <constraint>
+            <description>
+               <p>for a minimum of one (1) year</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pe-8_prm_2">
-         <constraint>at least monthly</constraint>
+         <constraint>
+            <description>
+               <p>at least monthly</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - PE-14 - -  -->
       <set-parameter param-id="pe-14_prm_1">
-         <constraint>consistent with American Society of Heating, Refrigerating and Air-conditioning Engineers (ASHRAE) document entitled Thermal Guidelines for Data Processing Environments</constraint>
+         <constraint>
+            <description>
+               <p>consistent with American Society of Heating, Refrigerating and Air-conditioning Engineers (ASHRAE) document entitled Thermal Guidelines for Data Processing Environments</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pe-14_prm_2">
-         <constraint>continuously</constraint>
+         <constraint>
+            <description>
+               <p>continuously</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - PE-16 - -  -->
       <set-parameter param-id="pe-16_prm_1">
-         <constraint>all information system components</constraint>
+         <constraint>
+            <description>
+               <p>all information system components</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - PL-2 - -  -->
       <set-parameter param-id="pl-2_prm_2">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - PS-3 - -  -->
       <set-parameter param-id="ps-3_prm_1">
-         <constraint>For national security clearances; a reinvestigation is required during the 5th year for top secret security clearance, the 10th year for secret security clearance, and 15th year for confidential security clearance. For moderate risk law enforcement and high impact public trust level, a reinvestigation is required during the 5th year. There is no reinvestigation for other moderate risk positions or any low risk positions.</constraint>
+         <constraint>
+            <description>
+               <p>For national security clearances; a reinvestigation is required during the 5th year for top secret security clearance, the 10th year for secret security clearance, and 15th year for confidential security clearance. For moderate risk law enforcement and high impact public trust level, a reinvestigation is required during the 5th year. There is no reinvestigation for other moderate risk positions or any low risk positions.</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - RA-3 - -  -->
       <set-parameter param-id="ra-3_prm_2">
-         <constraint>security assessment report</constraint>
+         <constraint>
+            <description>
+               <p>security assessment report</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ra-3_prm_3">
-         <constraint>at least every three (3) years or when a significant change occurs</constraint>
+         <constraint>
+            <description>
+               <p>at least every three (3) years or when a significant change occurs</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ra-3_prm_5">
-         <constraint>at least every three (3) years or when a significant change occurs</constraint>
+         <constraint>
+            <description>
+               <p>at least every three (3) years or when a significant change occurs</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - RA-5 - -  -->
       <set-parameter param-id="ra-5_prm_1">
-         <constraint>monthly operating system/infrastructure; monthly web applications and databases</constraint>
+         <constraint>
+            <description>
+               <p>monthly operating system/infrastructure; monthly web applications and databases</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ra-5_prm_2">
-         <constraint>[high-risk vulnerabilities mitigated within thirty (30) days from date of discovery; moderate-risk vulnerabilities mitigated within ninety (90) days from date of discovery; low risk vulnerabilities mitigated within one hundred and eighty (180) days from date of discovery.</constraint>
+         <constraint>
+            <description>
+               <p>[high-risk vulnerabilities mitigated within thirty (30) days from date of discovery; moderate-risk vulnerabilities mitigated within ninety (90) days from date of discovery; low risk vulnerabilities mitigated within one hundred and eighty (180) days from date of discovery.</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - SA-9 - -  -->
       <set-parameter param-id="sa-9_prm_1">
-         <constraint>FedRAMP Security Controls Baseline(s) if Federal information is processed or stored within the external system</constraint>
+         <constraint>
+            <description>
+               <p>FedRAMP Security Controls Baseline(s) if Federal information is processed or stored within the external system</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="sa-9_prm_2">
-         <constraint>Federal/FedRAMP Continuous Monitoring requirements must be met for external systems where Federal information is processed or stored</constraint>
+         <constraint>
+            <description>
+               <p>Federal/FedRAMP Continuous Monitoring requirements must be met for external systems where Federal information is processed or stored</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - SC-13 - -  -->
       <set-parameter param-id="sc-13_prm_1">
-         <constraint>FIPS-validated or NSA-approved cryptography</constraint>
+         <constraint>
+            <description>
+               <p>FIPS-validated or NSA-approved cryptography</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - SI-2 - -  -->
       <set-parameter param-id="si-2_prm_1">
-         <constraint>within 30 days of release of updates</constraint>
+         <constraint>
+            <description>
+               <p>within 30 days of release of updates</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - - SI-3 - -  -->
       <set-parameter param-id="si-3_prm_1">
-         <constraint>at least weekly</constraint>
+         <constraint>
+            <description>
+               <p>at least weekly</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="si-3_prm_2">
-         <constraint>to include endpoints</constraint>
+         <constraint>
+            <description>
+               <p>to include endpoints</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="si-3_prm_3">
-         <constraint>to include alerting administrator or defined security personnel</constraint>
+         <constraint>
+            <description>
+               <p>to include alerting administrator or defined security personnel</p>
+            </description>
+         </constraint>
       </set-parameter>
       <!-- - -     CONTROL MODIFICATIONS      - -  -->
       <!-- - - AC-1 - -  -->
@@ -359,8 +521,7 @@
                <title>AC-2 Additional FedRAMP Requirements and Guidance</title>
                <part id="ac-2_fr_gdn.1" name="guidance">
                   <prop name="label">Guidance:</prop>
-                  <p>Parts (b), (c), (d), (e), (i), (j), and (k) are excluded from FedRAMP Tailored
-                     for LI-SaaS.</p>
+                  <p>Parts (b), (c), (d), (e), (i), (j), and (k) are excluded from FedRAMP Tailored for LI-SaaS.</p>
                </part>
             </part>
          </add>
@@ -381,8 +542,7 @@
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
-               <p>NSO for non-privileged users. Attestation for privileged users related to
-                  multi-factor identification and authentication.</p>
+               <p>NSO for non-privileged users. Attestation for privileged users related to multi-factor identification and authentication.</p>
             </part>
          </add>
       </alter>
@@ -423,11 +583,7 @@
          <add position="ending">
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
-               <p>NSO - All access to Cloud SaaS are via web services and/or API. The device
-                  accessed from or whether via wired or wireless connection is out of scope.
-                  Regardless of device accessed from, must utilize approved remote access methods
-                  (AC-17), secure communication with strong encryption (SC-13), key management
-                  (SC-12), and multi-factor authentication for privileged access (IA-2[1]).</p>
+               <p>NSO - All access to Cloud SaaS are via web services and/or API. The device accessed from or whether via wired or wireless connection is out of scope. Regardless of device accessed from, must utilize approved remote access methods (AC-17), secure communication with strong encryption (SC-13), key management (SC-12), and multi-factor authentication for privileged access (IA-2[1]).</p>
             </part>
          </add>
       </alter>
@@ -438,11 +594,7 @@
          <add position="ending">
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
-               <p>NSO - All access to Cloud SaaS are via web service and/or API. The device accessed
-                  from is out of the scope. Regardless of device accessed from, must utilize
-                  approved remote access methods (AC-17), secure communication with strong
-                  encryption (SC-13), key management (SC-12), and multi-factor authentication for
-                  privileged access (IA-2 [1]).</p>
+               <p>NSO - All access to Cloud SaaS are via web service and/or API. The device accessed from is out of the scope. Regardless of device accessed from, must utilize approved remote access methods (AC-17), secure communication with strong encryption (SC-13), key management (SC-12), and multi-factor authentication for privileged access (IA-2 [1]).</p>
             </part>
          </add>
       </alter>
@@ -525,8 +677,7 @@
          <add position="ending">
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
-               <p>NSO - Loss of availability of the audit data has been determined to have little or
-                  no impact to government business/mission needs.</p>
+               <p>NSO - Loss of availability of the audit data has been determined to have little or no impact to government business/mission needs.</p>
             </part>
          </add>
       </alter>
@@ -569,8 +720,7 @@
          <add position="ending">
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
-               <p>NSO - Loss of availability of the audit data has been determined as little or no
-                  impact to government business/mission needs.</p>
+               <p>NSO - Loss of availability of the audit data has been determined as little or no impact to government business/mission needs.</p>
             </part>
          </add>
       </alter>
@@ -600,10 +750,8 @@
                <title>CA-2 Additional FedRAMP Requirements and Guidance</title>
                <part id="ca-2_fr_gdn.1" name="guidance">
                   <prop name="label">Guidance:</prop>
-                  <p>See the FedRAMP Documents page under Key Cloud Service Provider (CSP)
-                     Documents, Annual Assessment Guidance <a
-                        href="https://www.fedramp.gov/documents/"
-                        >https://www.fedramp.gov/documents/</a></p>
+                  <p>See the FedRAMP Documents page under Key Cloud Service Provider (CSP) Documents, Annual Assessment Guidance <a href="https://www.fedramp.gov/documents/">https://www.fedramp.gov/documents/</a>
+                  </p>
                </part>
             </part>
          </add>
@@ -623,10 +771,7 @@
          <add position="ending">
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
-               <p>Condition: There are connection(s) to external systems. Connections (if any) shall
-                  be authorized and must: 1) Identify the interface/connection. 2) Detail what data
-                  is involved and its sensitivity. 3) Determine whether the connection is one-way or
-                  bi-directional. 4) Identify how the connection is secured.</p>
+               <p>Condition: There are connection(s) to external systems. Connections (if any) shall be authorized and must: 1) Identify the interface/connection. 2) Detail what data is involved and its sensitivity. 3) Determine whether the connection is one-way or bi-directional. 4) Identify how the connection is secured.</p>
             </part>
          </add>
       </alter>
@@ -637,8 +782,7 @@
          <add position="ending">
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
-               <p>Attestation - for compliance with FedRAMP Tailored LI-SaaS Continuous Monitoring
-                  Requirements.</p>
+               <p>Attestation - for compliance with FedRAMP Tailored LI-SaaS Continuous Monitoring Requirements.</p>
             </part>
          </add>
       </alter>
@@ -652,11 +796,7 @@
                <title>CA-6(c) Additional FedRAMP Requirements and Guidance</title>
                <part id="ca-6_fr_gdn.1" name="guidance">
                   <prop name="label">Guidance:</prop>
-                  <p>Significant change is defined in NIST Special Publication 800-37 Revision 1,
-                     Appendix F. The service provider describes the types of changes to the
-                     information system or the environment of operations that would impact the risk
-                     posture. The types of changes are approved and accepted by the Authorizing
-                     Official.</p>
+                  <p>Significant change is defined in NIST Special Publication 800-37 Revision 1, Appendix F. The service provider describes the types of changes to the information system or the environment of operations that would impact the risk posture. The types of changes are approved and accepted by the Authorizing Official.</p>
                </part>
             </part>
          </add>
@@ -671,15 +811,12 @@
                <title>CA-7 Additional FedRAMP Requirements and Guidance</title>
                <part id="ca-7_fr_gdn.1" name="guidance">
                   <prop name="label">Guidance:</prop>
-                  <p>CSPs must provide evidence of closure and remediation of high vulnerabilities
-                     within the timeframe for standard POA&amp;M updates.</p>
+                  <p>CSPs must provide evidence of closure and remediation of high vulnerabilities within the timeframe for standard POA&amp;M updates.</p>
                </part>
                <part id="ca-7_fr_gdn.2" name="guidance">
                   <prop name="label">Guidance:</prop>
-                  <p>See the FedRAMP Documents page under Key Cloud Service Provider (CSP)
-                     Documents, Continuous Monitoring Strategy Guide <a
-                        href="https://www.fedramp.gov/documents/"
-                        >https://www.fedramp.gov/documents/</a></p>
+                  <p>See the FedRAMP Documents page under Key Cloud Service Provider (CSP) Documents, Continuous Monitoring Strategy Guide <a href="https://www.fedramp.gov/documents/">https://www.fedramp.gov/documents/</a>
+                  </p>
                </part>
             </part>
          </add>
@@ -691,10 +828,7 @@
          <add position="ending">
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
-               <p>Condition: There are connection(s) to external systems. Connections (if any) shall
-                  be authorized and must: 1) Identify the interface/connection. 2) Detail what data
-                  is involved and its sensitivity. 3) Determine whether the connection is one-way or
-                  bi-directional. 4) Identify how the connection is secured.</p>
+               <p>Condition: There are connection(s) to external systems. Connections (if any) shall be authorized and must: 1) Identify the interface/connection. 2) Detail what data is involved and its sensitivity. 3) Determine whether the connection is one-way or bi-directional. 4) Identify how the connection is secured.</p>
             </part>
          </add>
       </alter>
@@ -735,22 +869,15 @@
                <title>CM-6(a) Additional FedRAMP Requirements and Guidance</title>
                <part id="cm-6_fr_smt.1" name="item">
                   <prop name="label">Requirement 1:</prop>
-                  <p>The service provider shall use the Center for Internet Security guidelines
-                     (Level 1) to establish configuration settings or establishes its own
-                     configuration settings if USGCB is not available. </p>
+                  <p>The service provider shall use the Center for Internet Security guidelines (Level 1) to establish configuration settings or establishes its own configuration settings if USGCB is not available.</p>
                </part>
                <part id="cm-6_fr_smt.2" name="item">
                   <prop name="label">Requirement 2:</prop>
-                  <p>The service provider shall ensure that checklists for configuration settings
-                     are Security Content Automation Protocol (SCAP) (<a
-                        href="http://scap.nist.gov/">http://scap.nist.gov/</a>) validated or SCAP
-                     compatible (if validated checklists are not available).</p>
+                  <p>The service provider shall ensure that checklists for configuration settings are Security Content Automation Protocol (SCAP) (<a href="http://scap.nist.gov/">http://scap.nist.gov/</a>) validated or SCAP compatible (if validated checklists are not available).</p>
                </part>
                <part id="cm-6_fr_gdn.1" name="guidance">
                   <prop name="label">Guidance:</prop>
-                  <p>Information on the USGCB checklists can be found at: <a
-                        href="https://csrc.nist.gov/Projects/United-States-Government-Configuration-Baseline"
-                        >https://csrc.nist.gov/Projects/United-States-Government-Configuration-Baseline</a>.</p>
+                  <p>Information on the USGCB checklists can be found at: <a href="https://csrc.nist.gov/Projects/United-States-Government-Configuration-Baseline">https://csrc.nist.gov/Projects/United-States-Government-Configuration-Baseline</a>.</p>
                </part>
             </part>
          </add>
@@ -796,10 +923,7 @@
          <add position="ending">
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
-               <p>NSO - Boundary is specific to SaaS environment; all access is via web services;
-                  users' machine or internal network are not contemplated. External services (SA-9),
-                  internal connection (CA-9), remote access (AC-17), and secure access (SC-12 and
-                  SC-13), and privileged authentication (IA-2[1]) are considerations.</p>
+               <p>NSO - Boundary is specific to SaaS environment; all access is via web services; users' machine or internal network are not contemplated. External services (SA-9), internal connection (CA-9), remote access (AC-17), and secure access (SC-12 and SC-13), and privileged authentication (IA-2[1]) are considerations.</p>
             </part>
          </add>
       </alter>
@@ -818,8 +942,7 @@
          <add position="ending">
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
-               <p>NSO - Loss of availability of the SaaS has been determined as little or no impact
-                  to government business/mission needs.</p>
+               <p>NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.</p>
             </part>
          </add>
       </alter>
@@ -830,8 +953,7 @@
          <add position="ending">
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
-               <p>NSO - Loss of availability of the SaaS has been determined as little or no impact
-                  to government business/mission needs.</p>
+               <p>NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.</p>
             </part>
          </add>
       </alter>
@@ -842,8 +964,7 @@
          <add position="ending">
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
-               <p>NSO - Loss of availability of the SaaS has been determined as little or no impact
-                  to government business/mission needs.</p>
+               <p>NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.</p>
             </part>
          </add>
       </alter>
@@ -857,26 +978,19 @@
                <title>CP-9 Additional FedRAMP Requirements and Guidance</title>
                <part id="cp-9_fr_smt.1" name="item">
                   <prop name="label">Requirement:</prop>
-                  <p>The service provider shall determine what elements of the cloud environment
-                     require the Information System Backup control. The service provider shall
-                     determine how Information System Backup is going to be verified and appropriate
-                     periodicity of the check.</p>
+                  <p>The service provider shall determine what elements of the cloud environment require the Information System Backup control. The service provider shall determine how Information System Backup is going to be verified and appropriate periodicity of the check.</p>
                </part>
                <part id="cp-9_fr_smt.a" name="item">
                   <prop name="label">CP-9(a) Requirement:</prop>
-                  <p>The service provider maintains at least three backup copies of user-level
-                     information (at least one of which is available online).</p>
+                  <p>The service provider maintains at least three backup copies of user-level information (at least one of which is available online).</p>
                </part>
                <part id="cp-9_fr_smt.b" name="item">
                   <prop name="label">CP-9(b)Requirement:</prop>
-                  <p>The service provider maintains at least three backup copies of system-level
-                     information (at least one of which is available online).</p>
+                  <p>The service provider maintains at least three backup copies of system-level information (at least one of which is available online).</p>
                </part>
                <part id="cp-9_fr_smt.c" name="item">
                   <prop name="label">CP-9(c)Requirement:</prop>
-                  <p>The service provider maintains at least three backup copies of information
-                     system documentation including security information (at least one of which is
-                     available online).</p>
+                  <p>The service provider maintains at least three backup copies of information system documentation including security information (at least one of which is available online).</p>
                </part>
             </part>
          </add>
@@ -888,8 +1002,7 @@
          <add position="ending">
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
-               <p>NSO - Loss of availability of the SaaS has been determined as little or no impact
-                  to government business/mission needs.</p>
+               <p>NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.</p>
             </part>
          </add>
       </alter>
@@ -909,9 +1022,7 @@
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
-               <p>NSO for non-privileged users. Attestation for privileged users related to
-                  multi-factor identification and authentication - specifically include description
-                  of management of service accounts.</p>
+               <p>NSO for non-privileged users. Attestation for privileged users related to multi-factor identification and authentication - specifically include description of management of service accounts.</p>
             </part>
          </add>
       </alter>
@@ -930,18 +1041,13 @@
          <add position="ending">
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
-               <p>Condition: Must document and assess for privileged users. May attest to this
-                  control for non-privileged users. FedRAMP requires a minimum of multi-factor
-                  authentication for all Federal privileged users, if acceptance of PIV credentials
-                  is not supported. The implementation status and details of how this control is
-                  implemented must be clearly defined by the CSP.</p>
+               <p>Condition: Must document and assess for privileged users. May attest to this control for non-privileged users. FedRAMP requires a minimum of multi-factor authentication for all Federal privileged users, if acceptance of PIV credentials is not supported. The implementation status and details of how this control is implemented must be clearly defined by the CSP.</p>
             </part>
             <part id="ia-2.12_fr" name="item">
                <title>IA-2 (12) Additional FedRAMP Requirements and Guidance</title>
                <part id="ia-2.12_fr_gdn.1" name="guidance">
                   <prop name="label">Guidance:</prop>
-                  <p>Include Common Access Card (CAC), i.e., the DoD technical implementation of
-                     PIV/FIPS 201/HSPD-12.</p>
+                  <p>Include Common Access Card (CAC), i.e., the DoD technical implementation of PIV/FIPS 201/HSPD-12.</p>
                </part>
             </part>
          </add>
@@ -978,8 +1084,7 @@
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">FED</prop>
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
-               <p>FED - for Federal privileged users. Condition - Must document and assess for
-                  privileged users. May attest to this control for non-privileged users.</p>
+               <p>FED - for Federal privileged users. Condition - Must document and assess for privileged users. May attest to this control for non-privileged users.</p>
             </part>
          </add>
       </alter>
@@ -1014,11 +1119,7 @@
          <add position="ending">
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
-               <p>Condition: Must document and assess for privileged users. May attest to this
-                  control for non-privileged users. FedRAMP requires a minimum of multi-factor
-                  authentication for all Federal privileged users, if acceptance of PIV credentials
-                  is not supported. The implementation status and details of how this control is
-                  implemented must be clearly defined by the CSP.</p>
+               <p>Condition: Must document and assess for privileged users. May attest to this control for non-privileged users. FedRAMP requires a minimum of multi-factor authentication for all Federal privileged users, if acceptance of PIV credentials is not supported. The implementation status and details of how this control is implemented must be clearly defined by the CSP.</p>
             </part>
          </add>
       </alter>
@@ -1029,11 +1130,7 @@
          <add position="ending">
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
-               <p>Condition: Must document and assess for privileged users. May attest to this
-                  control for non-privileged users. FedRAMP requires a minimum of multi-factor
-                  authentication for all Federal privileged users, if acceptance of PIV credentials
-                  is not supported. The implementation status and details of how this control is
-                  implemented must be clearly defined by the CSP.</p>
+               <p>Condition: Must document and assess for privileged users. May attest to this control for non-privileged users. FedRAMP requires a minimum of multi-factor authentication for all Federal privileged users, if acceptance of PIV credentials is not supported. The implementation status and details of how this control is implemented must be clearly defined by the CSP.</p>
             </part>
          </add>
       </alter>
@@ -1079,10 +1176,7 @@
                <title>IR-4 Additional FedRAMP Requirements and Guidance</title>
                <part id="ir-4_fr_smt.1" name="item">
                   <prop name="label">Requirement:</prop>
-                  <p>The service provider ensures that individuals conducting incident handling meet
-                     personnel security requirements commensurate with the criticality/sensitivity
-                     of the information being processed, stored, and transmitted by the information
-                     system.</p>
+                  <p>The service provider ensures that individuals conducting incident handling meet personnel security requirements commensurate with the criticality/sensitivity of the information being processed, stored, and transmitted by the information system.</p>
                </part>
             </part>
          </add>
@@ -1105,8 +1199,7 @@
                <title>IR-6 Additional FedRAMP Requirements and Guidance</title>
                <part id="ir-6_fr_smt.1" name="item">
                   <prop name="label">Requirement:</prop>
-                  <p>Report security incident information according to FedRAMP Incident
-                     Communications Procedure.</p>
+                  <p>Report security incident information according to FedRAMP Incident Communications Procedure.</p>
                </part>
             </part>
          </add>
@@ -1307,8 +1400,7 @@
                <title>PE-14(a) Additional FedRAMP Requirements and Guidance</title>
                <part id="pe-14_fr_smt.a" name="item">
                   <prop name="label">(a) Requirement:</prop>
-                  <p>The service provider measures temperature at server inlets and humidity levels
-                     by dew point.</p>
+                  <p>The service provider measures temperature at server inlets and humidity levels by dew point.</p>
                </part>
             </part>
          </add>
@@ -1414,8 +1506,7 @@
          <add position="ending">
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
-               <p>Attestation - Specifically stating that any third-party security personnel are
-                  treated as CSP employees.</p>
+               <p>Attestation - Specifically stating that any third-party security personnel are treated as CSP employees.</p>
             </part>
          </add>
       </alter>
@@ -1453,13 +1544,11 @@
                <title>RA-3 Additional FedRAMP Requirements and Guidance</title>
                <part id="ra-3_fr_gdn.1" name="guidance">
                   <prop name="label">Guidance:</prop>
-                  <p>Significant change is defined in NIST Special Publication 800-37 Revision 1,
-                     Appendix F</p>
+                  <p>Significant change is defined in NIST Special Publication 800-37 Revision 1, Appendix F</p>
                </part>
                <part id="ra-3_fr_smt.d" name="item">
                   <prop name="label">RA-3 (d) Requirement:</prop>
-                  <p>Include all Authorizing Officials; for JAB authorizations to include
-                     FedRAMP.</p>
+                  <p>Include all Authorizing Officials; for JAB authorizations to include FedRAMP.</p>
                </part>
             </part>
          </add>
@@ -1473,23 +1562,19 @@
             <part id="ra-5_fr_smt.a" name="item">
                <title>RA-5(a) Additional FedRAMP Requirements and Guidance</title>
                <prop name="label">RA-5 (a)Requirement:</prop>
-               <p>An accredited independent assessor scans operating systems/infrastructure, web
-                  applications, and databases once annually.</p>
+               <p>An accredited independent assessor scans operating systems/infrastructure, web applications, and databases once annually.</p>
             </part>
             <part id="ra-5_fr_smt.e" name="item">
                <title>RA-5(e) Additional FedRAMP Requirements and Guidance</title>
                <prop name="label">RA-5 (e)Requirement:</prop>
-               <p>To include all Authorizing Officials; for JAB authorizations to include
-                  FedRAMP.</p>
+               <p>To include all Authorizing Officials; for JAB authorizations to include FedRAMP.</p>
             </part>
             <part id="ra-5_fr" name="item">
                <title>RA-5 Additional FedRAMP Requirements and Guidance</title>
                <part id="ra-5_fr_gdn.1" name="guidance">
                   <prop name="label">Guidance:</prop>
-                  <p><strong>See the FedRAMP Documents page under Key Cloud Service Provider (CSP)
-                        Documents> Vulnerability Scanning Requirements</strong> (<a
-                        href="https://www.FedRAMP.gov/documents/"
-                        >https://www.FedRAMP.gov/documents/</a>)</p>
+                  <p>
+                     <strong>See the FedRAMP Documents page under Key Cloud Service Provider (CSP) Documents&gt; Vulnerability Scanning Requirements</strong> (<a href="https://www.FedRAMP.gov/documents/">https://www.FedRAMP.gov/documents/</a>)</p>
                </part>
             </part>
          </add>
@@ -1565,8 +1650,7 @@
          <add position="ending">
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
-               <p>Condition: If availability is a requirement, define protections in place as per
-                  control requirement.</p>
+               <p>Condition: If availability is a requirement, define protections in place as per control requirement.</p>
             </part>
          </add>
       </alter>
@@ -1694,8 +1778,7 @@
          <add position="ending">
             <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
-               <p>Attestation - Specifically related to US-CERT and FedRAMP communications
-                  procedures.</p>
+               <p>Attestation - Specifically related to US-CERT and FedRAMP communications procedures.</p>
             </part>
          </add>
       </alter>
@@ -1706,20 +1789,16 @@
          <title>FedRAMP Applicable Laws and Regulations</title>
          <prop name="conformity" ns="https://fedramp.gov/ns/oscal">fedramp-citations</prop>
          <prop name="keep">always</prop>
-         <rlink
-            href="https://www.fedramp.gov/assets/resources/templates/SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx"
-         />
+         <rlink href="https://www.fedramp.gov/assets/resources/templates/SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx"/>
       </resource>
       <resource uuid="1a23a771-d481-4594-9a1a-71d584fa4123">
          <title>FedRAMP Master Acronym and Glossary</title>
          <prop name="conformity" ns="https://fedramp.gov/ns/oscal">fedramp-acronyms</prop>
          <prop name="keep">always</prop>
-         <rlink
-            href="https://www.fedramp.gov/assets/resources/documents/FedRAMP_Master_Acronym_and_Glossary.pdf"
-         />
+         <rlink href="https://www.fedramp.gov/assets/resources/documents/FedRAMP_Master_Acronym_and_Glossary.pdf"/>
       </resource>
       <resource uuid="a2381e87-3d04-4108-a30b-b4d2f36d001f">
-         <desc>FedRAMP Logo</desc>
+         <description>FedRAMP Logo</description>
          <prop name="conformity" ns="https://fedramp.gov/ns/oscal">fedramp-logo</prop>
          <prop name="keep">always</prop>
          <rlink href="https://www.fedramp.gov/assets/img/logo-main-fedramp.png"/>
@@ -1728,7 +1807,8 @@
          <title>NIST Special Publication (SP) 800-53</title>
          <prop name="version" ns="https://fedramp.gov/ns/oscal">Revision 4</prop>
          <prop name="keep">always</prop>
-         <rlink media-type="application/xml" href="../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_catalog.xml"/>
+         <rlink media-type="application/xml"
+                href="../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_catalog.xml"/>
       </resource>
    </back-matter>
 </profile>

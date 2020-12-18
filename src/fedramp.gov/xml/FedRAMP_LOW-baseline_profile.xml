@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="4678df89-bdc1-4804-bdfd-0bb1fc5bba1a">
-   
+<!-- Modified again 2020-12-18-05:00 to conform with RC1 schema with updated link representations. -->
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
+         uuid="b10b2ea4-db23-421d-bd47-11f7874c60ab">
    <metadata>
       <title>FedRAMP Low Baseline</title>
       <published>2020-06-01T00:00:00.000-04:00</published>
-      <last-modified>2020-06-01T10:00:00.000-04:00</last-modified>
+      <last-modified>2020-12-18T16:38:40.37-05:00</last-modified>
       <version>1.2</version>
-      <oscal-version>1.0.0-milestone3</oscal-version>
+      <oscal-version>1.0.0-rc1</oscal-version>
       <role id="parpared-by">
          <title>Document creator</title>
       </role>
@@ -18,11 +19,11 @@
          <title>The FedRAMP Joint Authorization Board (JAB)</title>
          <short-name>CSP</short-name>
       </role>
-      
       <party uuid="8cc0b8e5-9650-4d5f-9796-316f05fa9a2d" type="organization">
-         <party-name>Federal Risk and Authorization Management Program: Program Management Office</party-name>
+         <name>Federal Risk and Authorization Management Program: Program Management Office</name>
          <short-name>FedRAMP PMO</short-name>
-         <link href="https://fedramp.gov" rel="homepage" />
+         <link href="https://fedramp.gov" rel="homepage"/>
+         <email-address>info@fedramp.gov</email-address>
          <address type="work">
             <addr-line>1800 F St. NW</addr-line>
             <addr-line/>
@@ -31,13 +32,11 @@
             <postal-code/>
             <country>US</country>
          </address>
-         <email>info@fedramp.gov</email>
       </party>
       <party uuid="ca9ba80e-1342-4bfd-b32a-abac468c24b4" type="organization">
-         <party-name>Federal Risk and Authorization Management Program: Joint Authorization Board</party-name>
+         <name>Federal Risk and Authorization Management Program: Joint Authorization Board</name>
          <short-name>FedRAMP JAB</short-name>
       </party>
-      
       <responsible-party role-id="prepared-by">
          <party-uuid>4aa7b203-318b-4cde-96cf-feaeffc3a4b7</party-uuid>
       </responsible-party>
@@ -183,346 +182,802 @@
    </merge>
    <modify>
       <set-parameter param-id="ac-1_prm_2">
-         <constraint>at least every 3 years</constraint>
+         <constraint>
+            <description>
+               <p>at least every 3 years</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ac-1_prm_3">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ac-2_prm_4">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ac-7_prm_1">
-         <constraint>not more than three (3)</constraint>
+         <constraint>
+            <description>
+               <p>not more than three (3)</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ac-7_prm_2">
-         <constraint>fifteen (15) minutes</constraint>
+         <constraint>
+            <description>
+               <p>fifteen (15) minutes</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ac-7_prm_4">
-         <constraint>thirty (30) minutes</constraint>
+         <constraint>
+            <description>
+               <p>thirty (30) minutes</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ac-8_prm_1">
-         <constraint>see additional Requirements and Guidance</constraint>
+         <constraint>
+            <description>
+               <p>see additional Requirements and Guidance</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ac-8_prm_2">
-         <constraint>see additional Requirements and Guidance</constraint>
+         <constraint>
+            <description>
+               <p>see additional Requirements and Guidance</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ac-22_prm_1">
-         <constraint>at least quarterly</constraint>
+         <constraint>
+            <description>
+               <p>at least quarterly</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="at-1_prm_2">
-         <constraint>at least every 3 years</constraint>
+         <constraint>
+            <description>
+               <p>at least every 3 years</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="at-1_prm_3">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="at-2_prm_1">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="at-3_prm_1">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="at-4_prm_1">
-         <constraint>At least one year</constraint>
+         <constraint>
+            <description>
+               <p>At least one year</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="au-1_prm_2">
-         <constraint>at least every 3 years</constraint>
+         <constraint>
+            <description>
+               <p>at least every 3 years</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="au-1_prm_3">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="au-2_prm_1">
-         <constraint>Successful and unsuccessful account logon events, account management events, object access, policy change, privilege functions, process tracking, and system events For Web applications: all administrator activity, authentication checks, authorization checks, data deletions, data access, data changes, and permission changes</constraint>
+         <constraint>
+            <description>
+               <p>Successful and unsuccessful account logon events, account management events, object access, policy change, privilege functions, process tracking, and system events For Web applications: all administrator activity, authentication checks, authorization checks, data deletions, data access, data changes, and permission changes</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="au-2_prm_2">
-         <constraint>organization-defined subset of the auditable events defined in AU-2 a to be audited continually for each identified event</constraint>
+         <constraint>
+            <description>
+               <p>organization-defined subset of the auditable events defined in AU-2 a to be audited continually for each identified event</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="au-5_prm_2">
-         <constraint>organization-defined actions to be taken (overwrite oldest record)</constraint>
+         <constraint>
+            <description>
+               <p>organization-defined actions to be taken (overwrite oldest record)</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="au-6_prm_1">
-         <constraint>at least weekly</constraint>
+         <constraint>
+            <description>
+               <p>at least weekly</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="au-11_prm_1">
-         <constraint>at least ninety days</constraint>
+         <constraint>
+            <description>
+               <p>at least ninety days</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="au-12_prm_1">
-         <constraint>all information system and network components where audit capability is deployed/available</constraint>
+         <constraint>
+            <description>
+               <p>all information system and network components where audit capability is deployed/available</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ca-1_prm_2">
-         <constraint>at least every 3 years</constraint>
+         <constraint>
+            <description>
+               <p>at least every 3 years</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ca-1_prm_3">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ca-2_prm_1">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ca-2_prm_2">
-         <constraint>individuals or roles to include FedRAMP PMO</constraint>
+         <constraint>
+            <description>
+               <p>individuals or roles to include FedRAMP PMO</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ca-3_prm_1">
-         <constraint>at least annually and on input from FedRAMP</constraint>
+         <constraint>
+            <description>
+               <p>at least annually and on input from FedRAMP</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ca-5_prm_1">
-         <constraint>at least monthly</constraint>
+         <constraint>
+            <description>
+               <p>at least monthly</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ca-6_prm_1">
-         <constraint>at least every three years or when a significant change occurs</constraint>
+         <constraint>
+            <description>
+               <p>at least every three years or when a significant change occurs</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ca-7_prm_4">
-         <constraint>to meet Federal and FedRAMP requirements (See additional guidance)</constraint>
+         <constraint>
+            <description>
+               <p>to meet Federal and FedRAMP requirements (See additional guidance)</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ca-7_prm_5">
-         <constraint>to meet Federal and FedRAMP requirements (See additional guidance)</constraint>
+         <constraint>
+            <description>
+               <p>to meet Federal and FedRAMP requirements (See additional guidance)</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="cm-1_prm_2">
-         <constraint>at least every 3 years</constraint>
+         <constraint>
+            <description>
+               <p>at least every 3 years</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="cm-1_prm_3">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="cm-6_prm_1">
-         <constraint>United States Government Configuration Baseline (USGCB)</constraint>
+         <constraint>
+            <description>
+               <p>United States Government Configuration Baseline (USGCB)</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="cm-7_prm_1">
-         <constraint>United States Government Configuration Baseline (USGCB)</constraint>
+         <constraint>
+            <description>
+               <p>United States Government Configuration Baseline (USGCB)</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="cm-8_prm_2">
-         <constraint>at least monthly</constraint>
+         <constraint>
+            <description>
+               <p>at least monthly</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="cm-11_prm_3">
-         <constraint>Continuously (via CM-7 (5))</constraint>
+         <constraint>
+            <description>
+               <p>Continuously (via CM-7 (5))</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="cp-1_prm_2">
-         <constraint>at least every 3 years</constraint>
+         <constraint>
+            <description>
+               <p>at least every 3 years</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="cp-1_prm_3">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="cp-2_prm_3">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="cp-3_prm_1">
-         <constraint>ten (10) days</constraint>
+         <constraint>
+            <description>
+               <p>ten (10) days</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="cp-3_prm_2">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="cp-4_prm_1">
-         <constraint>at least every three years</constraint>
+         <constraint>
+            <description>
+               <p>at least every three years</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="cp-4_prm_2">
-         <constraint>classroom exercises/table top written tests</constraint>
+         <constraint>
+            <description>
+               <p>classroom exercises/table top written tests</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="cp-9_prm_1">
-         <constraint>daily incremental; weekly full</constraint>
+         <constraint>
+            <description>
+               <p>daily incremental; weekly full</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="cp-9_prm_2">
-         <constraint>daily incremental; weekly full</constraint>
+         <constraint>
+            <description>
+               <p>daily incremental; weekly full</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="cp-9_prm_3">
-         <constraint>daily incremental; weekly full</constraint>
+         <constraint>
+            <description>
+               <p>daily incremental; weekly full</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ia-1_prm_2">
-         <constraint>at least every 3 years</constraint>
+         <constraint>
+            <description>
+               <p>at least every 3 years</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ia-1_prm_3">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ia-4_prm_2">
-         <constraint>IA-4 (d) [at least two years]</constraint>
+         <constraint>
+            <description>
+               <p>IA-4 (d) [at least two years]</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ia-4_prm_3">
-         <constraint>ninety days for user identifiers (See additional requirements and guidance)</constraint>
+         <constraint>
+            <description>
+               <p>ninety days for user identifiers (See additional requirements and guidance)</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ia-5.1_prm_2">
-         <constraint>at least one</constraint>
+         <constraint>
+            <description>
+               <p>at least one</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ia-5.1_prm_4">
-         <constraint>twenty four</constraint>
+         <constraint>
+            <description>
+               <p>twenty four</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ir-1_prm_2">
-         <constraint>at least every 3 years</constraint>
+         <constraint>
+            <description>
+               <p>at least every 3 years</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ir-1_prm_3">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ir-2_prm_2">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ir-6_prm_1">
-         <constraint>US-CERT incident reporting timelines as specified in NIST Special Publication 800-61 (as amended)</constraint>
+         <constraint>
+            <description>
+               <p>US-CERT incident reporting timelines as specified in NIST Special Publication 800-61 (as amended)</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ir-8_prm_2">
-         <constraint>see additional FedRAMP Requirements and Guidance</constraint>
+         <constraint>
+            <description>
+               <p>see additional FedRAMP Requirements and Guidance</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ir-8_prm_3">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ir-8_prm_4">
-         <constraint>see additional FedRAMP Requirements and Guidance</constraint>
+         <constraint>
+            <description>
+               <p>see additional FedRAMP Requirements and Guidance</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ma-1_prm_2">
-         <constraint>at least every 3 years</constraint>
+         <constraint>
+            <description>
+               <p>at least every 3 years</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ma-1_prm_3">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="mp-1_prm_2">
-         <constraint>at least every 3 years</constraint>
+         <constraint>
+            <description>
+               <p>at least every 3 years</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="mp-1_prm_3">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pe-1_prm_2">
-         <constraint>at least every 3 years</constraint>
+         <constraint>
+            <description>
+               <p>at least every 3 years</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pe-1_prm_3">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pe-2_prm_1">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pe-3_prm_2">
-         <constraint>CSP defined physical access control systems/devices AND guards</constraint>
+         <constraint>
+            <description>
+               <p>CSP defined physical access control systems/devices AND guards</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pe-3_prm_3">
-         <constraint>CSP defined physical access control systems/devices</constraint>
+         <constraint>
+            <description>
+               <p>CSP defined physical access control systems/devices</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pe-3_prm_6">
-         <constraint>in all circumstances within restricted access area where the information system resides</constraint>
+         <constraint>
+            <description>
+               <p>in all circumstances within restricted access area where the information system resides</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pe-3_prm_8">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pe-3_prm_9">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pe-6_prm_1">
-         <constraint>at least monthly</constraint>
+         <constraint>
+            <description>
+               <p>at least monthly</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pe-8_prm_1">
-         <constraint>for a minimum of one (1) year</constraint>
+         <constraint>
+            <description>
+               <p>for a minimum of one (1) year</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pe-8_prm_2">
-         <constraint>at least monthly</constraint>
+         <constraint>
+            <description>
+               <p>at least monthly</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pe-14_prm_1">
-         <constraint>consistent with American Society of Heating, Refrigerating and Air-conditioning Engineers (ASHRAE) document entitled Thermal Guidelines for Data Processing Environments</constraint>
+         <constraint>
+            <description>
+               <p>consistent with American Society of Heating, Refrigerating and Air-conditioning Engineers (ASHRAE) document entitled Thermal Guidelines for Data Processing Environments</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pe-14_prm_2">
-         <constraint>continuously</constraint>
+         <constraint>
+            <description>
+               <p>continuously</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pe-16_prm_1">
-         <constraint>all information system components</constraint>
+         <constraint>
+            <description>
+               <p>all information system components</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pl-1_prm_2">
-         <constraint>at least every 3 years</constraint>
+         <constraint>
+            <description>
+               <p>at least every 3 years</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pl-1_prm_3">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pl-2_prm_2">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="pl-4_prm_1">
-         <constraint>At least every 3 years</constraint>
+         <constraint>
+            <description>
+               <p>At least every 3 years</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ps-1_prm_2">
-         <constraint>at least every 3 years</constraint>
+         <constraint>
+            <description>
+               <p>at least every 3 years</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ps-1_prm_3">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ps-2_prm_1">
-         <constraint>at least every three years</constraint>
+         <constraint>
+            <description>
+               <p>at least every three years</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ps-3_prm_1">
-         <constraint>For national security clearances; a reinvestigation is required during the 5th year for top secret security clearance, the 10th year for secret security clearance, and 15th year for confidential security clearance. For moderate risk law enforcement and high impact public trust level, a reinvestigation is required during the 5th year. There is no reinvestigation for other moderate risk positions or any low risk positions.</constraint>
+         <constraint>
+            <description>
+               <p>For national security clearances; a reinvestigation is required during the 5th year for top secret security clearance, the 10th year for secret security clearance, and 15th year for confidential security clearance. For moderate risk law enforcement and high impact public trust level, a reinvestigation is required during the 5th year. There is no reinvestigation for other moderate risk positions or any low risk positions.</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ps-4_prm_1">
-         <constraint>same day</constraint>
+         <constraint>
+            <description>
+               <p>same day</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ps-5_prm_4">
-         <constraint>five days of the time period following the formal transfer action (DoD 24 hours)</constraint>
+         <constraint>
+            <description>
+               <p>five days of the time period following the formal transfer action (DoD 24 hours)</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ps-6_prm_1">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ps-6_prm_2">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ps-7_prm_2">
-         <constraint>organization-defined time period - same day</constraint>
+         <constraint>
+            <description>
+               <p>organization-defined time period - same day</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ra-1_prm_2">
-         <constraint>at least every 3 years</constraint>
+         <constraint>
+            <description>
+               <p>at least every 3 years</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ra-1_prm_3">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ra-3_prm_2">
-         <constraint>security assessment report</constraint>
+         <constraint>
+            <description>
+               <p>security assessment report</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ra-3_prm_3">
-         <constraint>at least every three (3) years or when a significant change occurs</constraint>
+         <constraint>
+            <description>
+               <p>at least every three (3) years or when a significant change occurs</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ra-3_prm_5">
-         <constraint>at least every three (3) years or when a significant change occurs</constraint>
+         <constraint>
+            <description>
+               <p>at least every three (3) years or when a significant change occurs</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ra-5_prm_1">
-         <constraint>monthly operating system/infrastructure; monthly web applications and databases</constraint>
+         <constraint>
+            <description>
+               <p>monthly operating system/infrastructure; monthly web applications and databases</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="ra-5_prm_2">
-         <constraint>[high-risk vulnerabilities mitigated within thirty days from date of discovery; moderate-risk vulnerabilities mitigated within ninety days from date of discovery; low risk vulnerabilities mitigated within one hundred and eighty (180) days from date of discovery.</constraint>
+         <constraint>
+            <description>
+               <p>[high-risk vulnerabilities mitigated within thirty days from date of discovery; moderate-risk vulnerabilities mitigated within ninety days from date of discovery; low risk vulnerabilities mitigated within one hundred and eighty (180) days from date of discovery.</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="sa-1_prm_2">
-         <constraint>at least every 3 years</constraint>
+         <constraint>
+            <description>
+               <p>at least every 3 years</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="sa-1_prm_3">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="sa-9_prm_1">
-         <constraint>FedRAMP Security Controls Baseline(s) if Federal information is processed or stored within the external system</constraint>
+         <constraint>
+            <description>
+               <p>FedRAMP Security Controls Baseline(s) if Federal information is processed or stored within the external system</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="sa-9_prm_2">
-         <constraint>Federal/FedRAMP Continuous Monitoring requirements must be met for external systems where Federal information is processed or stored</constraint>
+         <constraint>
+            <description>
+               <p>Federal/FedRAMP Continuous Monitoring requirements must be met for external systems where Federal information is processed or stored</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="sc-1_prm_2">
-         <constraint>at least every 3 years</constraint>
+         <constraint>
+            <description>
+               <p>at least every 3 years</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="sc-1_prm_3">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="sc-13_prm_1">
-         <constraint>FIPS-validated or NSA-approved cryptography</constraint>
+         <constraint>
+            <description>
+               <p>FIPS-validated or NSA-approved cryptography</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="sc-15_prm_1">
-         <constraint>no exceptions</constraint>
+         <constraint>
+            <description>
+               <p>no exceptions</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="si-1_prm_2">
-         <constraint>at least every 3 years</constraint>
+         <constraint>
+            <description>
+               <p>at least every 3 years</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="si-1_prm_3">
-         <constraint>at least annually</constraint>
+         <constraint>
+            <description>
+               <p>at least annually</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="si-2_prm_1">
-         <constraint>within 30 days of release of updates</constraint>
+         <constraint>
+            <description>
+               <p>within 30 days of release of updates</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="si-3_prm_1">
-         <constraint>at least weekly</constraint>
+         <constraint>
+            <description>
+               <p>at least weekly</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="si-3_prm_2">
-         <constraint>to include endpoints</constraint>
+         <constraint>
+            <description>
+               <p>to include endpoints</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="si-3_prm_3">
-         <constraint>to include alerting administrator or defined security personnel</constraint>
+         <constraint>
+            <description>
+               <p>to include alerting administrator or defined security personnel</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="si-5_prm_1">
-         <constraint>to include US-CERT</constraint>
+         <constraint>
+            <description>
+               <p>to include US-CERT</p>
+            </description>
+         </constraint>
       </set-parameter>
       <set-parameter param-id="si-5_prm_2">
-         <constraint>to include system security personnel and administrators with configuration/patch-management responsibilities</constraint>
+         <constraint>
+            <description>
+               <p>to include system security personnel and administrators with configuration/patch-management responsibilities</p>
+            </description>
+         </constraint>
       </set-parameter>
       <alter control-id="ac-1">
          <add position="starting" id-ref="ac-1">
@@ -1644,7 +2099,7 @@
                <title>CM-6(a) Additional FedRAMP Requirements and Guidance</title>
                <part id="cm-6_fr_smt.1" name="item">
                   <prop name="label">Requirement 1:</prop>
-                  <p>The service provider shall use the Center for Internet Security guidelines (Level 1) to establish configuration settings or establishes its own configuration settings if USGCB is not available. </p>
+                  <p>The service provider shall use the Center for Internet Security guidelines (Level 1) to establish configuration settings or establishes its own configuration settings if USGCB is not available.</p>
                </part>
                <part id="cm-6_fr_smt.2" name="item">
                   <prop name="label">Requirement 2:</prop>
@@ -1719,8 +2174,7 @@
                </part>
                <part id="cm-7_fr_gdn.1" name="guidance">
                   <prop name="label">Guidance:</prop>
-                  <p>Information on the USGCB checklists can be found at: <a href="http://usgcb.nist.gov/usgcb_faq.html#usgcbfaq_usgcbfdcc">http://usgcb.nist.gov/usgcb_faq.html#usgcbfaq_usgcbfdcc</a>
-							Partially derived from AC-17(8).</p>
+                  <p>Information on the USGCB checklists can be found at: <a href="http://usgcb.nist.gov/usgcb_faq.html#usgcbfaq_usgcbfdcc">http://usgcb.nist.gov/usgcb_faq.html#usgcbfaq_usgcbfdcc</a> Partially derived from AC-17(8).</p>
                </part>
             </part>
          </add>
@@ -2594,11 +3048,11 @@
                <title>IR-8 Additional FedRAMP Requirements and Guidance</title>
                <part id="ir-8_fr_smt.b" name="item">
                   <prop name="label">(b) Requirement:</prop>
-                  <p>The service provider defines a list of incident response personnel (identified by name and/or by role) and organizational elements.  The incident response list includes designated FedRAMP personnel.</p>
+                  <p>The service provider defines a list of incident response personnel (identified by name and/or by role) and organizational elements. The incident response list includes designated FedRAMP personnel.</p>
                </part>
                <part id="ir-8_fr_smt.e" name="item">
                   <prop name="label">(e) Requirement:</prop>
-                  <p>The service provider defines a list of incident response personnel (identified by name and/or by role) and organizational elements.  The incident response list includes designated FedRAMP personnel.</p>
+                  <p>The service provider defines a list of incident response personnel (identified by name and/or by role) and organizational elements. The incident response list includes designated FedRAMP personnel.</p>
                </part>
             </part>
          </add>
@@ -4608,7 +5062,7 @@
          <rlink href="https://www.fedramp.gov/assets/resources/documents/FedRAMP_Master_Acronym_and_Glossary.pdf"/>
       </resource>
       <resource uuid="a2381e87-3d04-4108-a30b-b4d2f36d001f">
-         <desc>FedRAMP Logo</desc>
+         <description>FedRAMP Logo</description>
          <prop name="conformity" ns="https://fedramp.gov/ns/oscal">fedramp-logo</prop>
          <prop name="keep">always</prop>
          <rlink href="https://www.fedramp.gov/assets/img/logo-main-fedramp.png"/>
@@ -4617,7 +5071,8 @@
          <title>NIST Special Publication (SP) 800-53</title>
          <prop name="version" ns="https://fedramp.gov/ns/oscal">Revision 4</prop>
          <prop name="keep">always</prop>
-         <rlink media-type="application/xml" href="../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_catalog.xml"/>
+         <rlink media-type="application/xml"
+                href="../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_catalog.xml"/>
       </resource>
    </back-matter>
 </profile>
