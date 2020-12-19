@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Modified again 2020-12-18-05:00 to conform with RC1 schema with updated link representations. -->
-<catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 ../../../../oscal/xml/schema/oscal_catalog_schema.xsd"
+<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
          uuid="edaf664a-e984-4dbf-85ec-1104186fc12f">
    <metadata>
       <title>Sample Security Catalog</title>

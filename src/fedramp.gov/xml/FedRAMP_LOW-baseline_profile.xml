@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Modified again 2020-12-18-05:00 to conform with RC1 schema with updated link representations. -->
-<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="b10b2ea4-db23-421d-bd47-11f7874c60ab">
+<?xml version="1.0" encoding="UTF-8"?><!-- Modified again 2020-12-18-05:00 to conform with RC1 schema with updated link representations. -->
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="b10b2ea4-db23-421d-bd47-11f7874c60ab">
    <metadata>
       <title>FedRAMP Low Baseline</title>
       <published>2020-06-01T00:00:00.000-04:00</published>
@@ -5062,7 +5060,7 @@
          <rlink href="https://www.fedramp.gov/assets/resources/documents/FedRAMP_Master_Acronym_and_Glossary.pdf"/>
       </resource>
       <resource uuid="a2381e87-3d04-4108-a30b-b4d2f36d001f">
-         <description>FedRAMP Logo</description>
+         <description><p>FedRAMP Logo</p></description>
          <prop name="conformity" ns="https://fedramp.gov/ns/oscal">fedramp-logo</prop>
          <prop name="keep">always</prop>
          <rlink href="https://www.fedramp.gov/assets/img/logo-main-fedramp.png"/>
@@ -5071,8 +5069,7 @@
          <title>NIST Special Publication (SP) 800-53</title>
          <prop name="version" ns="https://fedramp.gov/ns/oscal">Revision 4</prop>
          <prop name="keep">always</prop>
-         <rlink media-type="application/xml"
-                href="../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_catalog.xml"/>
+         <rlink media-type="application/xml" href="../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_catalog.xml"/>
       </resource>
    </back-matter>
 </profile>
