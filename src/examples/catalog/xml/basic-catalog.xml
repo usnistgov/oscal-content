@@ -3,7 +3,7 @@
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
          uuid="edaf664a-e984-4dbf-85ec-1104186fc12f">
    <metadata>
-      <title>Sample Security Catalog</title>
+      <title>Sample Security Catalog <em>for Demonstration</em> and Testing</title>
       <published>2020-02-02T11:01:04.736-04:00</published>
       <last-modified>2020-12-18T16:23:23.811-05:00</last-modified>
       <version>1.0</version>
@@ -23,9 +23,21 @@
          </part>
          <control id="s1.1.1">
             <title>Information security roles and responsibilities</title>
+            <param id="s1.1.1-prm1">
+               <label>a choice from a selection</label>
+               <select how-many="one or more">
+                  <choice>initiating a device lock after <insert param-id="s1.1.1-prm_2"/> of inactivity</choice>
+                  <choice>requiring the user to initiate a device lock before leaving the system unattended</choice>
+               </select>
+            </param>
+            <param id="s1.1.1-prm_2">
+               <label>a duration</label>
+            </param>
             <prop name="label">1.1.1</prop>
             <part id="s1.1.1_stm" name="statement">
                <p>All information security responsibilities should be defined and allocated.</p>
+               <p>A value has been assigned to <insert param-id="s1.1.1-prm11"/>.</p>
+               <p>A cross link has been established with a choppy syntax: <a href="#s1.2">(choppy)</a>.</p>
             </part>
             <part id="s1.1.1_gdn" name="guidance">
                <part id="s1.1.1_gdn.1" name="item">
