@@ -1,24 +1,23 @@
 {
-    "$schema": "../../../json/schema/oscal_component_schema.json",
     "component-definition": {
+        "uuid": "1d7f1968-1240-4a4d-9863-40219d654d83",
         "metadata": {
             "title": "Test Component Defintion",
             "last-modified": "2019-08-21T15:24:24.389Z",
             "version": "20200723",
-            "oscal-version": "1.0.0-milestone2",
+            "oscal-version": "1.0.0-rc1",
             "parties": [{
                 "uuid": "ee47836c-877c-4007-bbf3-c9d9bd805a9a",
-                "party-name": "Test Vendor",
+                "name": "Test Vendor",
                 "type": "organization"
             }]
         },
         "components": {
             "component-1": {
-                "name": "test component 1",
-                "component-type": "software",
+                "type": "software",
                 "title": "test component 1",
                 "description": "This is a software component that implements basic authentication mechanisms.",
-                "responsible-parties": {
+                "responsible-roles": {
                     "supplier": {
                         "party-uuids": [ "ee47836c-877c-4007-bbf3-c9d9bd805a9a" ]
                     }
@@ -48,8 +47,9 @@
                         "source": "../../../content/fedramp.gov/json/FedRAMP_HIGH-baseline_profile.json",
                         "description": "This is a partial implementation of the FedRAMP High profile, focusing on the control enhancement AC-2 (2).",
                         "implemented-requirements": [
-                            {"uuid": "65e30b37-0640-4844-9f42-b2a7ae944bb1",
-                            "control-id": "ac-2.2"
+                            { "uuid": "65e30b37-0640-4844-9f42-b2a7ae944bb1",
+                            "control-id": "ac-2.2",
+                            "description": "This is a summary of the control implementation."
                             }
                             ]
                     }
