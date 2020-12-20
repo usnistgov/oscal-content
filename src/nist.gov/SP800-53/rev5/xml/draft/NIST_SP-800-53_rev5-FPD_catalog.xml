@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Modified by conversion XSLT 2020-06-01T15:03:10.188-04:00 - UUIDs refreshed -->
-<!-- XML produced by extraction/mapping from NVD XML :2020-03-16T13:24:48.668-04:00 -->
-<!-- Valid against the OSCAL catalog schema (project path schema/xml/oscal-catalog-schema.xsd) -->
-<!-- Modified again 2020-12-18-05:00 to conform with RC1 schema with updated link representations. -->
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
          uuid="52ffd9ef-1ea5-4673-83a3-e905b083e2d8">
    <metadata>
-      <title>NIST Special Publication 800-53: Security and Privacy Controls for Federal Information
-         Systems and Organizations, Revision 5 Final Public Draft</title>
-      <last-modified>2020-12-18T16:32:02.784-05:00</last-modified>
+      <title>NIST Special Publication 800-53: Security and Privacy Controls for Federal Information Systems and Organizations, Revision 5 Final Public Draft</title>
+      <last-modified>2020-12-20T14:47:43.075-05:00</last-modified>
       <version>Revision 5</version>
       <oscal-version>1.0.0-rc1</oscal-version>
       <prop name="keywords">assurance, availability, computer security, confidentiality, control,
@@ -2840,7 +2835,7 @@
             </part>
          </control>
          <control class="SP800-53-enhancement" id="ac-20.3">
-            <title>Non-organizationally Owned Systems  — Restricted Use</title>
+            <title>Non-organizationally Owned Systems — Restricted Use</title>
             <param id="ac-20.3_prm_1">
                <label>organization-defined restrictions</label>
             </param>
@@ -15538,7 +15533,7 @@
          </control>
       </control>
       <control class="SP800-53" id="pt-8">
-         <title>Specific  Categories of Personally Identifiable Information</title>
+         <title>Specific Categories of Personally Identifiable Information</title>
          <param id="pt-8_prm_1">
             <label>organization-defined processing conditions</label>
          </param>

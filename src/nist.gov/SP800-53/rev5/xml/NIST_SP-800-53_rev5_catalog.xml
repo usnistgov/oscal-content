@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- XML produced by extraction/mapping from docx via XSweet++: 2020-11-30T09:56:24.443-05:00 -->
-<!-- Modified again 2020-12-18-05:00 to conform with RC1 schema with updated link representations. -->
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
          uuid="e45862b8-b0de-4e40-8b95-026a502aa2ec">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Federal Information Systems and Organizations</title>
-      <last-modified>2020-12-18T16:32:04.127-05:00</last-modified>
+      <last-modified>2020-12-20T14:47:48.623-05:00</last-modified>
       <version>Revision 5</version>
       <oscal-version>1.0.0-rc1</oscal-version>
       <prop name="keywords">assurance; availability; computer security; confidentiality; control; cybersecurity; FISMA; information security; information system; integrity; personally identifiable information; Privacy Act; privacy controls; privacy functions; privacy requirements; Risk Management Framework; security controls; security functions; security requirements; system; system security.</prop>
@@ -2113,7 +2111,7 @@
             <link rel="required" href="#ac-11"/>
             <part name="statement" id="ac-11.1_smt">
                <p>
-                  <b>Conceal, via the device lock, information previously visible on the display with a publicly viewable image</b>.</p>
+                  <strong>Conceal, via the device lock, information previously visible on the display with a publicly viewable image</strong>.</p>
             </part>
             <part name="guidance" id="ac-11.1_gdn">
                <p>The pattern-hiding display can include static or dynamic images, such as patterns used with screen savers, photographic images, solid colors, clock, battery life indicator, or a blank screen with the caveat that controlled unclassified information is not displayed.</p>
@@ -23931,8 +23929,10 @@
          <link rel="related" href="#sr-9"/>
          <link rel="related" href="#sr-10"/>
          <part name="statement" id="si-4_smt">
-            <p>1. Strategically within the system to collect organization-determined essential information; and</p>
-            <p>2. At ad hoc locations within the system to track specific types of transactions of interest to the organization;</p>
+            <ol>
+               <li>Strategically within the system to collect organization-determined essential information; and</li>
+               <li>At ad hoc locations within the system to track specific types of transactions of interest to the organization;</li>
+            </ol>
             <part name="item" id="si-4_smt.a">
                <prop name="label">a.</prop>
                <p>Monitor the system to detect:</p>
@@ -26695,7 +26695,7 @@
       <resource uuid="91f992fb-f668-4c91-a50f-0f05b95ccee3">
          <title>[32 CFR 2002]</title>
          <citation>
-            <text>Code of Federal Regulations, Title 32, <i>Controlled Unclassified Information</i> (32 C.F.R. 2002).</text>
+            <text>Code of Federal Regulations, Title 32, <em>Controlled Unclassified Information</em> (32 C.F.R. 2002).</text>
          </citation>
          <rlink href="https://www.federalregister.gov/documents/2016/09/14/2016-21665/controlled-unclassified-information"/>
       </resource>
@@ -26710,7 +26710,7 @@
       <resource uuid="a5ef5e56-5c1a-4911-b419-37dddc1b3581">
          <title>[5 CFR 731]</title>
          <citation>
-            <text>Code of Federal Regulations, Title 5, <i>Administrative Personnel</i>, Section 731.106, <i>Designation of Public Trust Positions and Investigative Requirements</i> (5 C.F.R. 731.106).</text>
+            <text>Code of Federal Regulations, Title 5, <em>Administrative Personnel</em>, Section 731.106, <em>Designation of Public Trust Positions and Investigative Requirements</em> (5 C.F.R. 731.106).</text>
          </citation>
          <rlink href="https://www.govinfo.gov/content/pkg/CFR-2012-title5-vol2/pdf/CFR-2012-title5-vol2-sec731-106.pdf"/>
       </resource>
@@ -26731,119 +26731,119 @@
       <resource uuid="031cc4b7-9adf-4835-98f1-f1ca493519cf">
          <title>[CNSSD 505]</title>
          <citation>
-            <text>Committee on National Security Systems Directive No. 505, <i>Supply Chain Risk Management (SCRM)</i>, August 2017.</text>
+            <text>Committee on National Security Systems Directive No. 505, <em>Supply Chain Risk Management (SCRM)</em>, August 2017.</text>
          </citation>
          <rlink href="https://www.cnss.gov/CNSS/issuances/Directives.cfm"/>
       </resource>
       <resource uuid="4e4fbc93-333d-45e6-a875-de36b878b6b9">
          <title>[CNSSI 1253]</title>
          <citation>
-            <text>Committee on National Security Systems Instruction No. 1253, <i>Security Categorization and Control Selection for National Security Systems</i>, March 2014.</text>
+            <text>Committee on National Security Systems Instruction No. 1253, <em>Security Categorization and Control Selection for National Security Systems</em>, March 2014.</text>
          </citation>
          <rlink href="https://www.cnss.gov/CNSS/issuances/Instructions.cfm"/>
       </resource>
       <resource uuid="6f63a36d-24bb-44f3-885a-5a50b5e1ada0">
          <title>[CNSSI 4009]</title>
          <citation>
-            <text>Committee on National Security Systems Instruction No. 4009, <i>Committee on National Security Systems (CNSS) Glossary</i>, April 2015.</text>
+            <text>Committee on National Security Systems Instruction No. 4009, <em>Committee on National Security Systems (CNSS) Glossary</em>, April 2015.</text>
          </citation>
          <rlink href="https://www.cnss.gov/CNSS/issuances/Instructions.cfm"/>
       </resource>
       <resource uuid="8a687894-cdab-423d-b95b-8d9475e4b51e">
          <title>[CNSSP 22]</title>
          <citation>
-            <text>Committee on National Security Systems Policy No. 22, <i>Cybersecurity Risk Management Policy</i>, August 2016.</text>
+            <text>Committee on National Security Systems Policy No. 22, <em>Cybersecurity Risk Management Policy</em>, August 2016.</text>
          </citation>
          <rlink href="https://www.cnss.gov/CNSS/issuances/Policies.cfm"/>
       </resource>
       <resource uuid="b9951d04-6385-478c-b1a3-ab68c19d9041">
          <title>[DHS NIPP]</title>
          <citation>
-            <text>Department of Homeland Security, <i>National Infrastructure Protection Plan (NIPP)</i>, 2009.</text>
+            <text>Department of Homeland Security, <em>National Infrastructure Protection Plan (NIPP)</em>, 2009.</text>
          </citation>
          <rlink href="https://www.dhs.gov/xlibrary/assets/NIPP_Plan.pdf"/>
       </resource>
       <resource uuid="4f42ee6e-86cc-403b-a51f-76c2b4f81b54">
          <title>[DHS TIC]</title>
          <citation>
-            <text>Department of Homeland Security, <i>Trusted Internet Connections (TIC)</i>.</text>
+            <text>Department of Homeland Security, <em>Trusted Internet Connections (TIC)</em>.</text>
          </citation>
          <rlink href="https://www.dhs.gov/trusted-internet-connections"/>
       </resource>
       <resource uuid="aa66e14f-e7cb-4a37-99d2-07578dfd4608">
          <title>[DOD STIG]</title>
          <citation>
-            <text>Defense Information Systems Agency, <i>Security Technical Implementation Guides (STIG)</i>.</text>
+            <text>Defense Information Systems Agency, <em>Security Technical Implementation Guides (STIG)</em>.</text>
          </citation>
          <rlink href="https://public.cyber.mil/stigs"/>
       </resource>
       <resource uuid="d6f8ff7f-4b71-47ba-b61b-a5ee3ffd3af0">
          <title>[DODI 8510.01]</title>
          <citation>
-            <text>Department of Defense Instruction 8510.01, <i>Risk Management Framework (RMF) for DoD Information Technology (IT)</i>, March 2014.</text>
+            <text>Department of Defense Instruction 8510.01, <em>Risk Management Framework (RMF) for DoD Information Technology (IT)</em>, March 2014.</text>
          </citation>
          <rlink href="https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/851001p.pdf?ver=2019-02-26-101520-300"/>
       </resource>
       <resource uuid="1c861e8c-cb40-463e-9cf2-693554107693">
          <title>[DODTERMS]</title>
          <citation>
-            <text>Department of Defense, <i>Dictionary of Military and Associated Terms</i>.</text>
+            <text>Department of Defense, <em>Dictionary of Military and Associated Terms</em>.</text>
          </citation>
          <rlink href="http://www.dtic.mil/dtic/tr/fulltext/u2/a485800.pdf"/>
       </resource>
       <resource uuid="00db708b-4704-4fcb-b854-b66d1d756a58">
          <title>[DSB 2017]</title>
          <citation>
-            <text>Department of Defense, Defense Science Board, <i>Task Force on Cyber Deterrence</i>, February 2017.</text>
+            <text>Department of Defense, Defense Science Board, <em>Task Force on Cyber Deterrence</em>, February 2017.</text>
          </citation>
          <rlink href="https://dsb.cto.mil/reports/2010s/DSB-CyberDeterrenceReport_02-28-17_Final.pdf"/>
       </resource>
       <resource uuid="7b0b9634-741a-4335-b6fa-161228c3a76e">
          <title>[EGOV]</title>
          <citation>
-            <text>E-Government Act [includes FISMA] (P.L. 107-347), December 2002. </text>
+            <text>E-Government Act [includes FISMA] (P.L. 107-347), December 2002.</text>
          </citation>
          <rlink href="https://www.congress.gov/107/plaws/publ347/PLAW-107publ347.pdf"/>
       </resource>
       <resource uuid="55b0c93a-5e48-457a-baa6-5ce81c239c49">
          <title>[EO 13526]</title>
          <citation>
-            <text>Executive Order 13526, <i>Classified National Security Information</i>, December 2009.</text>
+            <text>Executive Order 13526, <em>Classified National Security Information</em>, December 2009.</text>
          </citation>
          <rlink href="https://www.archives.gov/isoo/policy-documents/cnsi-eo.html"/>
       </resource>
       <resource uuid="34a5571f-e252-4309-a8a1-2fdb2faefbcd">
          <title>[EO 13556]</title>
          <citation>
-            <text>Executive Order 13556, <i>Controlled Unclassified Information</i>, November 2010.</text>
+            <text>Executive Order 13556, <em>Controlled Unclassified Information</em>, November 2010.</text>
          </citation>
          <rlink href="https://obamawhitehouse.archives.gov/the-press-office/2010/11/04/executive-order-13556-controlled-unclassified-information"/>
       </resource>
       <resource uuid="0af071a6-cf8e-48ee-8c82-fe91efa20f94">
          <title>[EO 13587]</title>
          <citation>
-            <text>Executive Order 13587, <i>Structural Reforms to Improve the Security of Classified Networks and the Responsible Sharing and Safeguarding of Classified Information</i>, October 2011.</text>
+            <text>Executive Order 13587, <em>Structural Reforms to Improve the Security of Classified Networks and the Responsible Sharing and Safeguarding of Classified Information</em>, October 2011.</text>
          </citation>
          <rlink href="https://obamawhitehouse.archives.gov/the-press-office/2011/10/07/executive-order-13587-structural-reforms-improve-security-classified-net"/>
       </resource>
       <resource uuid="3406fdc0-d61c-44a9-a5ca-84180544c83a">
          <title>[EO 13636]</title>
          <citation>
-            <text>Executive Order 13636, <i>Improving Critical Infrastructure Cybersecurity</i>, February 2013.</text>
+            <text>Executive Order 13636, <em>Improving Critical Infrastructure Cybersecurity</em>, February 2013.</text>
          </citation>
          <rlink href="https://obamawhitehouse.archives.gov/the-press-office/2013/02/12/executive-order-improving-critical-infrastructure-cybersecurity"/>
       </resource>
       <resource uuid="09afa3a7-e564-4c5f-865f-2679049563b0">
          <title>[EO 13800]</title>
          <citation>
-            <text>Executive Order 13800, <i>Strengthening the Cybersecurity of Federal Networks and Critical Infrastructure</i>, May 2017.</text>
+            <text>Executive Order 13800, <em>Strengthening the Cybersecurity of Federal Networks and Critical Infrastructure</em>, May 2017.</text>
          </citation>
          <rlink href="https://www.whitehouse.gov/presidential-actions/presidential-executive-order-strengthening-cybersecurity-federal-networks-critical-infrastructure"/>
       </resource>
       <resource uuid="21caa535-1154-4369-ba7b-32c309fee0f7">
          <title>[EO 13873]</title>
          <citation>
-            <text>Executive Order 13873, <i>Executive Order on Securing the Information and Communications Technology and Services Supply Chain</i>, May 2019.</text>
+            <text>Executive Order 13873, <em>Executive Order on Securing the Information and Communications Technology and Services Supply Chain</em>, May 2019.</text>
          </citation>
          <rlink href="https://www.whitehouse.gov/presidential-actions/executive-order-securing-information-communications-technology-services-supply-chain"/>
       </resource>
@@ -26864,14 +26864,14 @@
       <resource uuid="a1555677-2b9d-4868-a97b-a1363aff32f5">
          <title>[FED PKI]</title>
          <citation>
-            <text>General Services Administration, <i>Federal Public Key Infrastructure</i>.</text>
+            <text>General Services Administration, <em>Federal Public Key Infrastructure</em>.</text>
          </citation>
          <rlink href="https://www.idmanagement.gov/topics/fpki"/>
       </resource>
       <resource uuid="678e3d6c-150b-4393-aec5-6e3481eb1e00">
          <title>[FIPS 140-3]</title>
          <citation>
-            <text>National Institute of Standards and Technology (2019) Security Requirements for Cryptographic Modules. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 140-3. </text>
+            <text>National Institute of Standards and Technology (2019) Security Requirements for Cryptographic Modules. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 140-3.</text>
          </citation>
          <rlink href="https://doi.org/10.6028/NIST.FIPS.140-3"/>
       </resource>
@@ -26955,28 +26955,28 @@
       <resource uuid="488d6934-00b2-4252-bf23-1b3c2d71eb13">
          <title>[HSPD 7]</title>
          <citation>
-            <text>Homeland Security Presidential Directive 7, <i>Critical Infrastructure Identification, Prioritization, and Protection</i>, December 2003.</text>
+            <text>Homeland Security Presidential Directive 7, <em>Critical Infrastructure Identification, Prioritization, and Protection</em>, December 2003.</text>
          </citation>
          <rlink href="https://www.dhs.gov/homeland-security-presidential-directive-7"/>
       </resource>
       <resource uuid="7623635e-1a92-4250-a829-4a5c8a4da2bc">
          <title>[IETF 4949]</title>
          <citation>
-            <text>Internet Engineering Task Force (IETF), Request for Comments: 4949, <i>Internet Security Glossary, Version 2</i>, August 2007.</text>
+            <text>Internet Engineering Task Force (IETF), Request for Comments: 4949, <em>Internet Security Glossary, Version 2</em>, August 2007.</text>
          </citation>
          <rlink href="https://tools.ietf.org/html/rfc4949"/>
       </resource>
       <resource uuid="e4d37285-1e79-4029-8b6a-42df39cace30">
          <title>[IETF 5905]</title>
          <citation>
-            <text>Internet Engineering Task Force (IETF), Request for Comments: 5905, <i>Network Time Protocol Version 4: Protocol and Algorithms Specification</i>, June 2010.</text>
+            <text>Internet Engineering Task Force (IETF), Request for Comments: 5905, <em>Network Time Protocol Version 4: Protocol and Algorithms Specification</em>, June 2010.</text>
          </citation>
          <rlink href="https://tools.ietf.org/pdf/rfc5905.pdf"/>
       </resource>
       <resource uuid="15dc76ff-b17a-4eeb-8948-8ea8de3ccc2c">
          <title>[IR 7539]</title>
          <citation>
-            <text>Cooper DA, MacGregor WI (2008) Symmetric Key Injection onto Smart Cards.<i/>(National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 7539.</text>
+            <text>Cooper DA, MacGregor WI (2008) Symmetric Key Injection onto Smart Cards.<em/>(National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 7539.</text>
          </citation>
          <rlink href="https://doi.org/10.6028/NIST.IR.7539"/>
       </resource>
@@ -27088,126 +27088,126 @@
       <resource uuid="81aeb0a3-d0ee-4e44-b842-6bf28d2bd7f5">
          <title>[IR 8040]</title>
          <citation>
-            <text>Greene KK, Kelsey JM, Franklin JM (2016) Measuring the Usability and Security of Permuted Passwords on Mobile Platforms.<i/>(National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8040.</text>
+            <text>Greene KK, Kelsey JM, Franklin JM (2016) Measuring the Usability and Security of Permuted Passwords on Mobile Platforms.<em/>(National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8040.</text>
          </citation>
          <rlink href="https://doi.org/10.6028/NIST.IR.8040"/>
       </resource>
       <resource uuid="98d415ca-7281-4064-9931-0c366637e324">
          <title>[IR 8062]</title>
          <citation>
-            <text>Brooks S, Garcia M, Lefkovitz N, Lightman S, Nadeau E (2017) An Introduction to Privacy Engineering and Risk Management in Federal Systems.<i/>(National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8062.</text>
+            <text>Brooks S, Garcia M, Lefkovitz N, Lightman S, Nadeau E (2017) An Introduction to Privacy Engineering and Risk Management in Federal Systems.<em/>(National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8062.</text>
          </citation>
          <rlink href="https://doi.org/10.6028/NIST.IR.8062"/>
       </resource>
       <resource uuid="a2590922-82f3-4277-83c0-ca5bee06dba4">
          <title>[IR 8112]</title>
          <citation>
-            <text>Grassi P, Lefkovitz N, Nadeau E, Galluzzo R, Dinh, A (2018) Attribute Metadata: A Proposed Schema for Evaluating Federated Attributes.<i/>(National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8112.</text>
+            <text>Grassi P, Lefkovitz N, Nadeau E, Galluzzo R, Dinh, A (2018) Attribute Metadata: A Proposed Schema for Evaluating Federated Attributes.<em/>(National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8112.</text>
          </citation>
          <rlink href="https://doi.org/10.6028/NIST.IR.8112"/>
       </resource>
       <resource uuid="d4296805-2dca-4c63-a95f-eeccaa826aec">
          <title>[IR 8179]</title>
          <citation>
-            <text>Paulsen C, Boyens JM, Bartol N, Winkler K (2018) Criticality Analysis Process Model: Prioritizing Systems and Components.<i/>(National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8179.</text>
+            <text>Paulsen C, Boyens JM, Bartol N, Winkler K (2018) Criticality Analysis Process Model: Prioritizing Systems and Components.<em/>(National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8179.</text>
          </citation>
          <rlink href="https://doi.org/10.6028/NIST.IR.8179"/>
       </resource>
       <resource uuid="38ff38f0-1366-4f50-a4c9-26a39aacee16">
          <title>[IR 8272]</title>
          <citation>
-            <text>Paulsen C, Winkler K, Boyens JM, Ng J, Gimbi J (2020) Impact Analysis Tool for Interdependent Cyber Supply Chain Risks.<i/>(National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8272.</text>
+            <text>Paulsen C, Winkler K, Boyens JM, Ng J, Gimbi J (2020) Impact Analysis Tool for Interdependent Cyber Supply Chain Risks.<em/>(National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8272.</text>
          </citation>
          <rlink href="https://doi.org/10.6028/NIST.IR.8272"/>
       </resource>
       <resource uuid="0c559766-0df1-468f-a499-3577bb6dfa46">
          <title>[ISO 15026-1]</title>
          <citation>
-            <text>International Organization for Standardization/International Electrotechnical Commission (ISO/IEC) 15026-1:2013, <i>Systems and software engineering — Systems and software assurance — Part 1: Concepts and vocabulary</i>, November 2013.</text>
+            <text>International Organization for Standardization/International Electrotechnical Commission (ISO/IEC) 15026-1:2013, <em>Systems and software engineering — Systems and software assurance — Part 1: Concepts and vocabulary</em>, November 2013.</text>
          </citation>
          <rlink href="https://www.iso.org/standard/62526.html"/>
       </resource>
       <resource uuid="7d8ec7b7-dba0-4a17-981c-c959dbcc6c68">
          <title>[ISO 15288]</title>
          <citation>
-            <text>International Organization for Standardization/International Electrotechnical Commission/Institute of Electrical and Electronics Engineers (ISO/IEC/IEEE) 15288:2015, <i>Systems and software engineering —Systems life cycle processes</i>, May 2015.</text>
+            <text>International Organization for Standardization/International Electrotechnical Commission/Institute of Electrical and Electronics Engineers (ISO/IEC/IEEE) 15288:2015, <em>Systems and software engineering —Systems life cycle processes</em>, May 2015.</text>
          </citation>
          <rlink href="https://www.iso.org/standard/63711.html"/>
       </resource>
       <resource uuid="6afc1b04-c9d6-4023-adbc-f8fbe33a3c73">
          <title>[ISO 15408-1]</title>
          <citation>
-            <text>International Organization for Standardization/International Electrotechnical Commission 15408-1:2009, <i>Information technology —Security techniques — Evaluation criteria for IT security — Part 1: Introduction and general model</i>, April 2017.</text>
+            <text>International Organization for Standardization/International Electrotechnical Commission 15408-1:2009, <em>Information technology —Security techniques — Evaluation criteria for IT security — Part 1: Introduction and general model</em>, April 2017.</text>
          </citation>
          <rlink href="https://www.commoncriteriaportal.org/files/ccfiles/CCPART1V3.1R5.pdf"/>
       </resource>
       <resource uuid="87087451-2af5-43d4-88c1-d66ad850f614">
          <title>[ISO 15408-2]</title>
          <citation>
-            <text>International Organization for Standardization/International Electrotechnical Commission 15408-2:2008, <i>Information technology —Security techniques — Evaluation criteria for IT security — Part 2: Security functional requirements</i>, April 2017.</text>
+            <text>International Organization for Standardization/International Electrotechnical Commission 15408-2:2008, <em>Information technology —Security techniques — Evaluation criteria for IT security — Part 2: Security functional requirements</em>, April 2017.</text>
          </citation>
          <rlink href="https://www.commoncriteriaportal.org/files/ccfiles/CCPART2V3.1R5.pdf"/>
       </resource>
       <resource uuid="4452efc0-e79e-47b8-aa30-b54f3ef61c2f">
          <title>[ISO 15408-3]</title>
          <citation>
-            <text>International Organization for Standardization/International Electrotechnical Commission 15408-3:2008, <i>Information technology—Security techniques — Evaluation criteria for IT security — Part 3: Security assurance requirements</i>, April 2017.</text>
+            <text>International Organization for Standardization/International Electrotechnical Commission 15408-3:2008, <em>Information technology—Security techniques — Evaluation criteria for IT security — Part 3: Security assurance requirements</em>, April 2017.</text>
          </citation>
          <rlink href="https://www.commoncriteriaportal.org/files/ccfiles/CCPART3V3.1R5.pdf"/>
       </resource>
       <resource uuid="15a95e24-65b6-4686-bc18-90855a10457d">
          <title>[ISO 20243]</title>
          <citation>
-            <text>International Organization for Standardization/International Electrotechnical Commission 20243-1:2018, <i>Information technology — Open Trusted Technology Provider<sup>TM</sup> Standard (O-TTPS) — Mitigating maliciously tainted and counterfeit products — Part 1: Requirements and recommendations</i>,<i/>February 2018.</text>
+            <text>International Organization for Standardization/International Electrotechnical Commission 20243-1:2018, <em>Information technology — Open Trusted Technology Provider™ Standard (O-TTPS) — Mitigating maliciously tainted and counterfeit products — Part 1: Requirements and recommendations</em>, February 2018.</text>
          </citation>
          <rlink href="https://www.iso.org/standard/74399.html"/>
       </resource>
       <resource uuid="c22d2905-4087-4397-b574-c534b9e808c8">
          <title>[ISO 25237]</title>
          <citation>
-            <text>International Organization for Standardization/International Electrotechnical Commission 25237:2017, <i>Health informatics —Pseudonymization</i>, January 2017.</text>
+            <text>International Organization for Standardization/International Electrotechnical Commission 25237:2017, <em>Health informatics —Pseudonymization</em>, January 2017.</text>
          </citation>
          <rlink href="https://www.iso.org/standard/63553.html"/>
       </resource>
       <resource uuid="863caf2a-978a-4260-9e8d-4a8929bce40c">
          <title>[ISO 27036]</title>
          <citation>
-            <text>International Organization for Standardization/International Electrotechnical Commission 27036-1:2014, <i>Information technology—Security techniques—Information security for supplier relationships, Part 1: Overview and concepts</i>, April 2014.</text>
+            <text>International Organization for Standardization/International Electrotechnical Commission 27036-1:2014, <em>Information technology—Security techniques—Information security for supplier relationships, Part 1: Overview and concepts</em>, April 2014.</text>
          </citation>
          <rlink href="https://www.iso.org/standard/59648.html"/>
       </resource>
       <resource uuid="a8d25172-1e7e-4d2f-8270-fdceb4e59a7e">
          <title>[ISO 28001]</title>
          <citation>
-            <text>International Organization for Standardization/International Electrotechnical Commission 28001:2007, <i>Security management systems for the supply chain—Best practices for implementing supply chain security, assessments and plans—Requirements and guidance</i>, October 2007.</text>
+            <text>International Organization for Standardization/International Electrotechnical Commission 28001:2007, <em>Security management systems for the supply chain—Best practices for implementing supply chain security, assessments and plans—Requirements and guidance</em>, October 2007.</text>
          </citation>
          <rlink href="https://www.iso.org/standard/45654.html"/>
       </resource>
       <resource uuid="094ad8c9-960f-4091-acff-8c99a390f08d">
          <title>[ISO 29100]</title>
          <citation>
-            <text>International Organization for Standardization/International Electrotechnical Commission 29100:2011, <i>Information technology—Security techniques—Privacy framework</i>, December 2011.</text>
+            <text>International Organization for Standardization/International Electrotechnical Commission 29100:2011, <em>Information technology—Security techniques—Privacy framework</em>, December 2011.</text>
          </citation>
          <rlink href="https://www.iso.org/standard/45123.html"/>
       </resource>
       <resource uuid="8df72805-2e5c-4731-a73e-81db0f0318d0">
          <title>[ISO 29147]</title>
          <citation>
-            <text>International Organization for Standardization/International Electrotechnical Commission 29147:2018, <i>Information technology—Security techniques—Vulnerability disclosure</i>, October 2018.</text>
+            <text>International Organization for Standardization/International Electrotechnical Commission 29147:2018, <em>Information technology—Security techniques—Vulnerability disclosure</em>, October 2018.</text>
          </citation>
          <rlink href="https://www.iso.org/standard/72311.html"/>
       </resource>
       <resource uuid="06ce9216-bd54-4054-a422-94f358b50a5d">
          <title>[ISO 29148]</title>
          <citation>
-            <text>International Organization for Standardization/International Electrotechnical Commission/Institute of Electrical and Electronics Engineers (ISO/IEC/IEEE) 29148:2011, <i>Systems and software engineering—Life cycle processes—Requirements engineering</i>, December 2011.</text>
+            <text>International Organization for Standardization/International Electrotechnical Commission/Institute of Electrical and Electronics Engineers (ISO/IEC/IEEE) 29148:2011, <em>Systems and software engineering—Life cycle processes—Requirements engineering</em>, December 2011.</text>
          </citation>
          <rlink href="https://www.iso.org/standard/45171.html"/>
       </resource>
       <resource uuid="d1cdab13-4218-400d-91a9-c3818dfa5ec8">
          <title>[LAMPSON73]</title>
          <citation>
-            <text>B. W. Lampson, <i>A Note on the Confinement Problem</i>, Communications of the ACM 16, 10, pp. 613-615, October 1973.</text>
+            <text>B. W. Lampson, <em>A Note on the Confinement Problem</em>, Communications of the ACM 16, 10, pp. 613-615, October 1973.</text>
          </citation>
       </resource>
       <resource uuid="c28ae9a8-1121-42a9-a85e-00cfcc9b9a94">
@@ -27220,7 +27220,7 @@
       <resource uuid="d744d9a3-73eb-4085-b9ff-79e82e9e2d6e">
          <title>[NCPR]</title>
          <citation>
-            <text>National Institute of Standards and Technology (2020) <i>National Checklist Program Repository</i>. Available at</text>
+            <text>National Institute of Standards and Technology (2020) <em>National Checklist Program Repository</em>. Available at</text>
          </citation>
          <rlink href="https://nvd.nist.gov/ncp/repository"/>
       </resource>
@@ -27228,28 +27228,28 @@
          <title>[NEUM04]</title>
          <citation>
             <text>
-               <i>Principled Assuredly Trustworthy Composable Architectures</i>, P. Neumann, CDRL A001 Final Report, SRI International, December 2004.</text>
+               <em>Principled Assuredly Trustworthy Composable Architectures</em>, P. Neumann, CDRL A001 Final Report, SRI International, December 2004.</text>
          </citation>
          <rlink href="http://www.csl.sri.com/users/neumann/chats4.pdf"/>
       </resource>
       <resource uuid="795aff72-3e6c-4b6b-a80a-b14d84b7f544">
          <title>[NIAP CCEVS]</title>
          <citation>
-            <text>National Information Assurance Partnership, <i>Common Criteria Evaluation and Validation Scheme</i>.</text>
+            <text>National Information Assurance Partnership, <em>Common Criteria Evaluation and Validation Scheme</em>.</text>
          </citation>
          <rlink href="https://www.niap-ccevs.org"/>
       </resource>
       <resource uuid="84dc1b0c-acb7-4269-84c4-00dbabacd78c">
          <title>[NIST CAVP]</title>
          <citation>
-            <text>National Institute of Standards and Technology (2020) <i>Cryptographic Algorithm Validation Program</i>. Available at</text>
+            <text>National Institute of Standards and Technology (2020) <em>Cryptographic Algorithm Validation Program</em>. Available at</text>
          </citation>
          <rlink href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program"/>
       </resource>
       <resource uuid="1acdc775-aafb-4d11-9341-dc6a822e9d38">
          <title>[NIST CMVP]</title>
          <citation>
-            <text>National Institute of Standards and Technology (2020) <i>Cryptographic Module Validation Program</i>. Available at</text>
+            <text>National Institute of Standards and Technology (2020) <em>Cryptographic Module Validation Program</em>. Available at</text>
          </citation>
          <rlink href="https://csrc.nist.gov/projects/cryptographic-module-validation-program"/>
       </resource>
@@ -27270,28 +27270,28 @@
       <resource uuid="528135e3-c65b-461a-93d3-46513610f792">
          <title>[NITP12]</title>
          <citation>
-            <text>Presidential Memorandum for the Heads of Executive Departments and Agencies, <i>National Insider Threat Policy and Minimum Standards for Executive Branch Insider Threat Programs</i>, November 2012.</text>
+            <text>Presidential Memorandum for the Heads of Executive Departments and Agencies, <em>National Insider Threat Policy and Minimum Standards for Executive Branch Insider Threat Programs</em>, November 2012.</text>
          </citation>
          <rlink href="https://obamawhitehouse.archives.gov/the-press-office/2012/11/21/presidential-memorandum-national-insider-threat-policy-and-minimum-stand"/>
       </resource>
       <resource uuid="3d575737-98cb-459d-b41c-d7e82b73ad78">
          <title>[NSA CSFC]</title>
          <citation>
-            <text>National Security Agency, <i>Commercial Solutions for Classified Program (CSfC)</i>.</text>
+            <text>National Security Agency, <em>Commercial Solutions for Classified Program (CSfC)</em>.</text>
          </citation>
          <rlink href="https://www.nsa.gov/resources/everyone/csfc"/>
       </resource>
       <resource uuid="df9f87e9-71e7-4c74-9ac3-3cabd4e92f21">
          <title>[NSA MEDIA]</title>
          <citation>
-            <text>National Security Agency, <i>Media Destruction Guidance</i>.</text>
+            <text>National Security Agency, <em>Media Destruction Guidance</em>.</text>
          </citation>
          <rlink href="https://www.nsa.gov/resources/everyone/media-destruction"/>
       </resource>
       <resource uuid="782a8c6d-39a4-45df-a6db-ad0b9226fa38">
          <title>[NVD 800-53]</title>
          <citation>
-            <text>National Institute of Standards and Technology (2020) <i>National Vulnerability Database: NIST Special Publication 800-53 [database of controls].</i> Available at</text>
+            <text>National Institute of Standards and Technology (2020) <em>National Vulnerability Database: NIST Special Publication 800-53 [database of controls].</em> Available at</text>
          </citation>
          <rlink href="https://nvd.nist.gov/800-53"/>
       </resource>
@@ -27305,7 +27305,7 @@
       <resource uuid="06d74ea9-2178-449c-a9c5-b2980f804ac8">
          <title>[ODNI NITP]</title>
          <citation>
-            <text>Office of the Director National Intelligence, <i>National Insider Threat Policy</i>
+            <text>Office of the Director National Intelligence, <em>National Insider Threat Policy</em>
             </text>
          </citation>
          <rlink href="https://www.dni.gov/files/NCSC/documents/nittf/National_Insider_Threat_Policy.pdf"/>
@@ -27313,21 +27313,21 @@
       <resource uuid="3671ff20-c17c-44d6-8a88-7de203fa74aa">
          <title>[OMB A-108]</title>
          <citation>
-            <text>Office of Management and Budget Memorandum Circular A-108, <i>Federal Agency Responsibilities for Review, Reporting, and Publication under the Privacy Act</i>, December 2016.</text>
+            <text>Office of Management and Budget Memorandum Circular A-108, <em>Federal Agency Responsibilities for Review, Reporting, and Publication under the Privacy Act</em>, December 2016.</text>
          </citation>
          <rlink href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/circulars/A108/omb_circular_a-108.pdf"/>
       </resource>
       <resource uuid="27847491-5ce1-4f6a-a1e4-9e483782f0ef">
          <title>[OMB A-130]</title>
          <citation>
-            <text>Office of Management and Budget Memorandum Circular A-130, <i>Managing Information as a Strategic Resource</i>, July 2016.</text>
+            <text>Office of Management and Budget Memorandum Circular A-130, <em>Managing Information as a Strategic Resource</em>, July 2016.</text>
          </citation>
          <rlink href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/circulars/A130/a130revised.pdf"/>
       </resource>
       <resource uuid="d229ae60-51dd-4d7b-a8bf-1f7195cc7561">
          <title>[OMB M-03-22]</title>
          <citation>
-            <text>Office of Management and Budget Memorandum M-03-22, <i>OMB Guidance for Implementing the Privacy Provisions of the E-Government Act of 2002</i>, September 2003.<a href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2003/m03_22.pdf">https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2003/m03_22.pdf</a>
+            <text>Office of Management and Budget Memorandum M-03-22, <em>OMB Guidance for Implementing the Privacy Provisions of the E-Government Act of 2002</em>, September 2003.<a href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2003/m03_22.pdf">https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2003/m03_22.pdf</a>
             </text>
          </citation>
          <rlink href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2003/m03_22.pdf"/>
@@ -27335,56 +27335,56 @@
       <resource uuid="047b041a-b4b0-4537-ab2d-2b36283eeda0">
          <title>[OMB M-08-05]</title>
          <citation>
-            <text>Office of Management and Budget Memorandum M-08-05, <i>Implementation of Trusted Internet Connections (TIC)</i>, November 2007.</text>
+            <text>Office of Management and Budget Memorandum M-08-05, <em>Implementation of Trusted Internet Connections (TIC)</em>, November 2007.</text>
          </citation>
          <rlink href="https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/omb/memoranda/fy2008/m08-05.pdf"/>
       </resource>
       <resource uuid="206a3284-6a7e-423c-8ea9-25b22542541d">
          <title>[OMB M-17-06]</title>
          <citation>
-            <text>Office of Management and Budget Memorandum M-17-06, <i>Policies for Federal Agency Public Websites and Digital Services</i>, November 2016.</text>
+            <text>Office of Management and Budget Memorandum M-17-06, <em>Policies for Federal Agency Public Websites and Digital Services</em>, November 2016.</text>
          </citation>
          <rlink href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2017/m-17-06.pdf"/>
       </resource>
       <resource uuid="5f4705ac-8d17-438c-b23a-ac7f12362ae4">
          <title>[OMB M-17-12]</title>
          <citation>
-            <text>Office of Management and Budget Memorandum M-17-12, <i>Preparing for and Responding to a Breach of Personally Identifiable Information</i>, January 2017.</text>
+            <text>Office of Management and Budget Memorandum M-17-12, <em>Preparing for and Responding to a Breach of Personally Identifiable Information</em>, January 2017.</text>
          </citation>
          <rlink href="https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2017/m-17-12_0.pdf"/>
       </resource>
       <resource uuid="81c44706-0227-4258-a920-620a4d259990">
          <title>[OMB M-17-25]</title>
          <citation>
-            <text>Office of Management and Budget Memorandum M-17-25, <i>Reporting Guidance for Executive Order on Strengthening the Cybersecurity of Federal Networks and Critical Infrastructure</i>, May 2017.</text>
+            <text>Office of Management and Budget Memorandum M-17-25, <em>Reporting Guidance for Executive Order on Strengthening the Cybersecurity of Federal Networks and Critical Infrastructure</em>, May 2017.</text>
          </citation>
          <rlink href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2017/M-17-25.pdf"/>
       </resource>
       <resource uuid="c5e11048-1d38-4af3-b00b-0d88dc26860c">
          <title>[OMB M-19-03]</title>
          <citation>
-            <text>Office of Management and Budget Memorandum M-19-03, <i>Strengthening the Cybersecurity of Federal Agencies by Enhancing the High Value Asset Program</i>, December 2018.</text>
+            <text>Office of Management and Budget Memorandum M-19-03, <em>Strengthening the Cybersecurity of Federal Agencies by Enhancing the High Value Asset Program</em>, December 2018.</text>
          </citation>
          <rlink href="https://www.whitehouse.gov/wp-content/uploads/2018/12/M-19-03.pdf"/>
       </resource>
       <resource uuid="227063d4-431e-435f-9e8f-009b6dbc20f4">
          <title>[OMB M-19-15]</title>
          <citation>
-            <text>Office of Management and Budget Memorandum M-19-15, <i>Improving Implementation of the Information Quality Act</i>, April 2019.</text>
+            <text>Office of Management and Budget Memorandum M-19-15, <em>Improving Implementation of the Information Quality Act</em>, April 2019.</text>
          </citation>
          <rlink href="https://www.whitehouse.gov/wp-content/uploads/2019/04/M-19-15.pdf"/>
       </resource>
       <resource uuid="d886c141-c832-4ad7-ac6d-4b94f4b550d3">
          <title>[OMB M-19-23]</title>
          <citation>
-            <text>Office of Management and Budget Memorandum M-19-23, <i>Phase 1 Implementation of the Foundations for Evidence-Based Policymaking Act of 2018: Learning Agendas, Personnel, and Planning Guidance</i>, July 2019.</text>
+            <text>Office of Management and Budget Memorandum M-19-23, <em>Phase 1 Implementation of the Foundations for Evidence-Based Policymaking Act of 2018: Learning Agendas, Personnel, and Planning Guidance</em>, July 2019.</text>
          </citation>
          <rlink href="https://www.whitehouse.gov/wp-content/uploads/2019/07/M-19-23.pdf"/>
       </resource>
       <resource uuid="79453f84-26a4-4995-8257-d32d37aefea3">
          <title>[POPEK74]</title>
          <citation>
-            <text>G. Popek, <i>The Principle of Kernel Design</i>, in 1974 NCC, AFIPS Cong. Proc., Vol. 43, pp. 977-978.</text>
+            <text>G. Popek, <em>The Principle of Kernel Design</em>, in 1974 NCC, AFIPS Cong. Proc., Vol. 43, pp. 977-978.</text>
          </citation>
       </resource>
       <resource uuid="18e71fec-c6fd-475a-925a-5d8495cf8455">
@@ -27397,7 +27397,7 @@
       <resource uuid="c9495d6e-ef64-4090-8509-e58c3b9009ff">
          <title>[SALTZER75]</title>
          <citation>
-            <text>J. Saltzer and M. Schroeder, <i>The Protection of Information in Computer Systems</i>, in Proceedings of the IEEE 63(9), September 1975, pp. 1278-1308.</text>
+            <text>J. Saltzer and M. Schroeder, <em>The Protection of Information in Computer Systems</em>, in Proceedings of the IEEE 63(9), September 1975, pp. 1278-1308.</text>
          </citation>
       </resource>
       <resource uuid="4c0ec2ee-a0d6-428a-9043-4504bc3ade6f">
@@ -27634,7 +27634,7 @@
       <resource uuid="c15bfc12-a61e-4ca5-bf35-fa9ce3ccb5d2">
          <title>[SP 800-188]</title>
          <citation>
-            <text>Garfinkel S (2016) De-Identifying Government Datasets.<i/>(National Institute of Standards and Technology, Gaithersburg, MD), Second Draft NIST Special Publication (SP) 800-188.</text>
+            <text>Garfinkel S (2016) De-Identifying Government Datasets.<em/>(National Institute of Standards and Technology, Gaithersburg, MD), Second Draft NIST Special Publication (SP) 800-188.</text>
          </citation>
          <rlink href="https://csrc.nist.gov/publications/detail/sp/800-188/draft"/>
       </resource>
@@ -28006,7 +28006,7 @@
       <resource uuid="e922fc50-b1f9-469f-92ef-ed7d9803611c">
          <title>[USC 2901]</title>
          <citation>
-            <text>United States Code, 2008 Edition, Title 44 - <i>Public Printing and Documents</i>, Chapters 29, 31, and 33, January 2012.</text>
+            <text>United States Code, 2008 Edition, Title 44 - <em>Public Printing and Documents</em>, Chapters 29, 31, and 33, January 2012.</text>
          </citation>
          <rlink href="https://www.govinfo.gov/content/pkg/USCODE-2011-title44/pdf/USCODE-2011-title44-chap29-sec2901.pdf"/>
       </resource>
@@ -28021,31 +28021,31 @@
       <resource uuid="ef3550b5-60a0-4489-8d4e-08223a929c7a">
          <title>[USC 552]</title>
          <citation>
-            <text>United States Code, 2006 Edition, Supplement 4, Title 5 - <i>Government Organization and Employees</i>, January 2011.</text>
+            <text>United States Code, 2006 Edition, Supplement 4, Title 5 - <em>Government Organization and Employees</em>, January 2011.</text>
          </citation>
          <rlink href="https://www.govinfo.gov/content/pkg/USCODE-2010-title5/pdf/USCODE-2010-title5-partI-chap5-subchapII-sec552a.pdf"/>
       </resource>
       <resource uuid="40b78258-c892-480e-9af8-77ac36648301">
          <title>[USCERT IR]</title>
          <citation>
-            <text>Department of Homeland Security, <i>US-CERT Federal Incident Notification Guidelines</i>, April 2017.</text>
+            <text>Department of Homeland Security, <em>US-CERT Federal Incident Notification Guidelines</em>, April 2017.</text>
          </citation>
          <rlink href="https://us-cert.cisa.gov/incident-notification-guidelines"/>
       </resource>
       <resource uuid="98498928-3ca3-44b3-8b1e-f48685373087">
          <title>[USGCB]</title>
          <citation>
-            <text>National Institute of Standards and Technology (2020) <i>United States Government Configuration Baseline</i>. Available at</text>
+            <text>National Institute of Standards and Technology (2020) <em>United States Government Configuration Baseline</em>. Available at</text>
          </citation>
          <rlink href="https://csrc.nist.gov/projects/united-states-government-configuration-baseline"/>
       </resource>
       <resource uuid="c3397cc9-83c6-4459-adb2-836739dc1b94">
-         <title>NIST Special Publication 800-53, Revision 5: <i> Security and Privacy Controls for Information Systems and Organizations</i> (PDF)</title>
+         <title>NIST Special Publication 800-53, Revision 5: <em>Security and Privacy Controls for Information Systems and Organizations</em> (PDF)</title>
          <rlink media-type="application/pdf"
                 href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf"/>
       </resource>
       <resource uuid="f7cf488d-bc64-4a91-a994-810e153ee481">
-         <title>NIST Special Publication 800-53, Revision 5: <i> Security and Privacy Controls for Information Systems and Organizations</i> (DOI link)</title>
+         <title>NIST Special Publication 800-53, Revision 5: <em>Security and Privacy Controls for Information Systems and Organizations</em> (DOI link)</title>
          <rlink media-type="application/pdf"
                 href="https://doi.org/10.6028/NIST.SP.800-53r5"/>
       </resource>
