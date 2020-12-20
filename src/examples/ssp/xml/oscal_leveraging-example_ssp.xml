@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Modified again 2020-12-18-05:00 to conform with RC1 schema with updated link representations. -->
 <system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0"
                       uuid="9b5c7544-1202-4f70-8fe5-6227b804d503">
    <metadata>
       <title>Leveraging SaaS System Security Plan</title>
-      <last-modified>2020-12-18T16:40:24.185-05:00</last-modified>
+      <last-modified>2020-12-20T17:40:57.346-05:00</last-modified>
       <version>0.1</version>
       <oscal-version>1.0.0-rc1</oscal-version>
       <role id="admin">
@@ -125,7 +124,7 @@ Cust-A    Cust-B    Cust-C
       </component>
       <component uuid="22222222-0000-4000-9001-000000000001" type="this-system">
          <title>
-            <b>THIS SYSTEM (SaaS)</b>
+            <strong>THIS SYSTEM (SaaS)</strong>
          </title>
          <description>
             <p>This Leveraging SaaS.</p>
@@ -136,7 +135,7 @@ Cust-A    Cust-B    Cust-C
       </component>
       <component uuid="22222222-0000-4000-9001-000000000002" type="leveraged-system">
          <title>
-            <b>LEVERAGED SYSTEM (IaaS)</b>
+            <strong>LEVERAGED SYSTEM (IaaS)</strong>
          </title>
          <description>
             <p>If the leveraged system owner provides a UUID for their system (such as in an OSCAL-based CRM), it should be used as the UUID for this component.</p>
@@ -207,7 +206,7 @@ Cust-A    Cust-B    Cust-C
                           component-uuid="22222222-0000-4000-9001-000000000003">
                <description>
                   <p>
-                     <i>duplicated/tailored description of what was inherited, and description of what was configured.</i>
+                     <em>duplicated/tailored description of what was inherited, and description of what was configured.</em>
                   </p>
                   <p>Consumer-appropriate description of what may be inherited.</p>
                   <p>In the context of the application component in satisfaction of AC-2, part a.</p>
@@ -217,7 +216,7 @@ Cust-A    Cust-B    Cust-C
                   <description>
                      <p>Optional description.</p>
                      <p>
-                        <i>Possibly duplicated description of what was inherited.</i>
+                        <em>Possibly duplicated description of what was inherited.</em>
                      </p>
                      <p>Consumer-appropriate description of what may be inherited.</p>
                      <p>In the context of the application component in satisfaction of AC-2, part a.</p>

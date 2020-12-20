@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Modified by conversion XSLT 2020-06-01T15:02:07.981-04:00 - UUIDs refreshed -->
-<!-- XML produced by extraction/mapping from NVD XML 2018-11-02T16:55:46.916-04:00 -->
-<!-- Subsequently updated by hand (2018-12-10, 2019-05-16, 2019-05-29, 2019-08-17, 2019-08-23, 2019-09-13, 2019-09-23) -->
-<!-- Valid against the OSCAL catalog schema (project path /xml/schema/oscal-catalog-schema.xsd) -->
-<!-- Modified by conversion XSLT 2020-02-04T14:55:16.051-05:00 - Milestone 2 OSCAL becomes Milestone 3 OSCAL  - -->
-<!-- Modified again 2020-12-18-05:00 to conform with RC1 schema with updated link representations. -->
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
          uuid="779d39d7-7f4c-4c82-b8ff-b126f0520ff8">
    <metadata>
-      <title>NIST Special Publication 800-53 Revision 4: Security and Privacy Controls for Federal
-         Information Systems and Organizations</title>
-      <last-modified>2020-12-18T16:32:00.363-05:00</last-modified>
+      <title>NIST Special Publication 800-53 Revision 4: Security and Privacy Controls for Federal Information Systems and Organizations</title>
+      <last-modified>2020-12-20T14:47:37.312-05:00</last-modified>
       <version>2015-01-22</version>
       <oscal-version>1.0.0-rc1</oscal-version>
       <prop name="keywords">Assurance, computer security, FISMA, Privacy Act, Risk Management Framework, security controls, security requirements</prop>
@@ -764,8 +757,7 @@
          <control class="SP800-53-enhancement" id="ac-2.5">
             <title>Inactivity Logout</title>
             <param id="ac-2.5_prm_1">
-               <label>organization-defined time-period of expected inactivity or description of when
-                  to log out</label>
+               <label>organization-defined time-period of expected inactivity or description of when to log out</label>
             </param>
             <prop name="label">AC-2(5)</prop>
             <prop name="sort-id">ac-02.05</prop>
@@ -1344,8 +1336,7 @@
          <control class="SP800-53-enhancement" id="ac-3.2">
             <title>Dual Authorization</title>
             <param id="ac-3.2_prm_1">
-               <label>organization-defined privileged commands and/or other organization-defined
-                  actions</label>
+               <label>organization-defined privileged commands and/or other organization-defined actions</label>
             </param>
             <prop name="label">AC-3(2)</prop>
             <prop name="sort-id">ac-03.02</prop>
@@ -1812,8 +1803,7 @@
          <control class="SP800-53-enhancement" id="ac-3.8">
             <title>Revocation of Access Authorizations</title>
             <param id="ac-3.8_prm_1">
-               <label>organization-defined rules governing the timing of revocations of access
-                  authorizations</label>
+               <label>organization-defined rules governing the timing of revocations of access authorizations</label>
             </param>
             <prop name="label">AC-3(8)</prop>
             <prop name="sort-id">ac-03.08</prop>
@@ -2252,8 +2242,7 @@
                <select how-many="one or more">
                   <choice>decrypting the information</choice>
                   <choice>blocking the flow of the encrypted information</choice>
-                  <choice>terminating communications sessions attempting to pass encrypted
-                     information</choice>
+                  <choice>terminating communications sessions attempting to pass encrypted information</choice>
                   <choice>
                      <insert param-id="ac-4.4_prm_2"/>
                   </choice>
@@ -3398,8 +3387,7 @@
          <control class="SP800-53-enhancement" id="ac-6.1">
             <title>Authorize Access to Security Functions</title>
             <param id="ac-6.1_prm_1">
-               <label>organization-defined security functions (deployed in hardware, software, and
-                  firmware) and security-relevant information</label>
+               <label>organization-defined security functions (deployed in hardware, software, and firmware) and security-relevant information</label>
             </param>
             <prop name="label">AC-6(1)</prop>
             <prop name="sort-id">ac-06.01</prop>
@@ -3476,8 +3464,7 @@
          <control class="SP800-53-enhancement" id="ac-6.2">
             <title>Non-privileged Access for Nonsecurity Functions</title>
             <param id="ac-6.2_prm_1">
-               <label>organization-defined security functions or security-relevant
-                  information</label>
+               <label>organization-defined security functions or security-relevant information</label>
             </param>
             <prop name="label">AC-6(2)</prop>
             <prop name="sort-id">ac-06.02</prop>
@@ -4427,8 +4414,7 @@
          <control class="SP800-53-enhancement" id="ac-9.3">
             <title>Notification of Account Changes</title>
             <param id="ac-9.3_prm_1">
-               <label>organization-defined security-related characteristics/parameters of the user’s
-                  account</label>
+               <label>organization-defined security-related characteristics/parameters of the user’s account</label>
             </param>
             <param id="ac-9.3_prm_2">
                <label>organization-defined time period</label>
@@ -4482,8 +4468,7 @@
          <control class="SP800-53-enhancement" id="ac-9.4">
             <title>Additional Logon Information</title>
             <param id="ac-9.4_prm_1">
-               <label>organization-defined information to be included in addition to the date and
-                  time of the last logon (access)</label>
+               <label>organization-defined information to be included in addition to the date and time of the last logon (access)</label>
             </param>
             <prop name="label">AC-9(4)</prop>
             <prop name="sort-id">ac-09.04</prop>
@@ -4698,8 +4683,7 @@
       <control class="SP800-53" id="ac-12">
          <title>Session Termination</title>
          <param id="ac-12_prm_1">
-            <label>organization-defined conditions or trigger events requiring session
-               disconnect</label>
+            <label>organization-defined conditions or trigger events requiring session disconnect</label>
          </param>
          <prop name="label">AC-12</prop>
          <prop name="sort-id">ac-12</prop>
@@ -5262,8 +5246,7 @@
          <control class="SP800-53-enhancement" id="ac-16.5">
             <title>Attribute Displays for Output Devices</title>
             <param id="ac-16.5_prm_1">
-               <label>organization-identified special dissemination, handling, or distribution
-                  instructions</label>
+               <label>organization-identified special dissemination, handling, or distribution instructions</label>
             </param>
             <param id="ac-16.5_prm_2">
                <label>organization-identified human-readable, standard naming conventions</label>
@@ -6833,8 +6816,7 @@
       <control class="SP800-53" id="ac-21">
          <title>Information Sharing</title>
          <param id="ac-21_prm_1">
-            <label>organization-defined information sharing circumstances where user discretion is
-               required</label>
+            <label>organization-defined information sharing circumstances where user discretion is required</label>
          </param>
          <param id="ac-21_prm_2">
             <label>organization-defined automated mechanisms or manual processes</label>
@@ -8225,9 +8207,7 @@
             <label>organization-defined auditable events</label>
          </param>
          <param id="au-2_prm_2">
-            <label>organization-defined audited events (the subset of the auditable events defined
-               in AU-2 a.) along with the frequency of (or situation requiring) auditing for each
-               identified event</label>
+            <label>organization-defined audited events (the subset of the auditable events defined in AU-2 a.) along with the frequency of (or situation requiring) auditing for each identified event</label>
          </param>
          <prop name="label">AU-2</prop>
          <prop name="sort-id">au-02</prop>
@@ -8692,8 +8672,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="au-5_prm_2">
-            <label>organization-defined actions to be taken (e.g., shut down information system,
-               overwrite oldest audit records, stop generating audit records)</label>
+            <label>organization-defined actions to be taken (e.g., shut down information system, overwrite oldest audit records, stop generating audit records)</label>
          </param>
          <prop name="label">AU-5</prop>
          <prop name="sort-id">au-05</prop>
@@ -8997,8 +8976,7 @@
                <select>
                   <choice>full system shutdown</choice>
                   <choice>partial system shutdown</choice>
-                  <choice>degraded operational mode with limited mission/business functionality
-                     available</choice>
+                  <choice>degraded operational mode with limited mission/business functionality available</choice>
                </select>
             </param>
             <param id="au-5.4_prm_2">
@@ -10984,8 +10962,7 @@
                <label>organization-defined information system components</label>
             </param>
             <param id="au-12.1_prm_2">
-               <label>organization-defined level of tolerance for the relationship between time
-                  stamps of individual records in the audit trail</label>
+               <label>organization-defined level of tolerance for the relationship between time stamps of individual records in the audit trail</label>
             </param>
             <prop name="label">AU-12(1)</prop>
             <prop name="sort-id">au-12.01</prop>
@@ -13261,8 +13238,7 @@
       <control class="SP800-53" id="ca-9">
          <title>Internal System Connections</title>
          <param id="ca-9_prm_1">
-            <label>organization-defined information system components or classes of
-               components</label>
+            <label>organization-defined information system components or classes of components</label>
          </param>
          <prop name="label">CA-9</prop>
          <prop name="sort-id">ca-09</prop>
@@ -13754,8 +13730,7 @@
          <control class="SP800-53-enhancement" id="cm-2.3">
             <title>Retention of Previous Configurations</title>
             <param id="cm-2.3_prm_1">
-               <label>organization-defined previous versions of baseline configurations of the
-                  information system</label>
+               <label>organization-defined previous versions of baseline configurations of the information system</label>
             </param>
             <prop name="label">CM-2(3)</prop>
             <prop name="sort-id">cm-02.03</prop>
@@ -13864,8 +13839,7 @@
          <control class="SP800-53-enhancement" id="cm-2.7">
             <title>Configure Systems, Components, or Devices for High-risk Areas</title>
             <param id="cm-2.7_prm_1">
-               <label>organization-defined information systems, system components, or
-                  devices</label>
+               <label>organization-defined information systems, system components, or devices</label>
             </param>
             <param id="cm-2.7_prm_2">
                <label>organization-defined configurations</label>
@@ -13957,8 +13931,7 @@
             <label>organization-defined time period</label>
          </param>
          <param id="cm-3_prm_2">
-            <label>organization-defined configuration change control element (e.g., committee,
-               board)</label>
+            <label>organization-defined configuration change control element (e.g., committee, board)</label>
          </param>
          <param id="cm-3_prm_3">
             <select how-many="one or more">
@@ -14943,8 +14916,7 @@
          <control class="SP800-53-enhancement" id="cm-5.4">
             <title>Dual Authorization</title>
             <param id="cm-5.4_prm_1">
-               <label>organization-defined information system components and system-level
-                  information</label>
+               <label>organization-defined information system components and system-level information</label>
             </param>
             <prop name="label">CM-5(4)</prop>
             <prop name="sort-id">cm-05.04</prop>
@@ -15446,8 +15418,7 @@
       <control class="SP800-53" id="cm-7">
          <title>Least Functionality</title>
          <param id="cm-7_prm_1">
-            <label>organization-defined prohibited or restricted functions, ports, protocols, and/or
-               services</label>
+            <label>organization-defined prohibited or restricted functions, ports, protocols, and/or services</label>
          </param>
          <prop name="label">CM-7</prop>
          <prop name="sort-id">cm-07</prop>
@@ -15555,8 +15526,7 @@
                <label>organization-defined frequency</label>
             </param>
             <param id="cm-7.1_prm_2">
-               <label>organization-defined functions, ports, protocols, and services within the
-                  information system deemed to be unnecessary and/or nonsecure</label>
+               <label>organization-defined functions, ports, protocols, and services within the information system deemed to be unnecessary and/or nonsecure</label>
             </param>
             <prop name="label">CM-7(1)</prop>
             <prop name="sort-id">cm-07.01</prop>
@@ -15707,13 +15677,11 @@
                   <choice>
                      <insert param-id="cm-7.2_prm_2"/>
                   </choice>
-                  <choice>rules authorizing the terms and conditions of software program
-                     usage</choice>
+                  <choice>rules authorizing the terms and conditions of software program usage</choice>
                </select>
             </param>
             <param id="cm-7.2_prm_2" depends-on="cm-7.2_prm_1">
-               <label>organization-defined policies regarding software program usage and
-                  restrictions</label>
+               <label>organization-defined policies regarding software program usage and restrictions</label>
             </param>
             <prop name="label">CM-7(2)</prop>
             <prop name="sort-id">cm-07.02</prop>
@@ -15779,8 +15747,7 @@
          <control class="SP800-53-enhancement" id="cm-7.3">
             <title>Registration Compliance</title>
             <param id="cm-7.3_prm_1">
-               <label>organization-defined registration requirements for functions, ports,
-                  protocols, and services</label>
+               <label>organization-defined registration requirements for functions, ports, protocols, and services</label>
             </param>
             <prop name="label">CM-7(3)</prop>
             <prop name="sort-id">cm-07.03</prop>
@@ -15864,8 +15831,7 @@
          <control class="SP800-53-enhancement" id="cm-7.4">
             <title>Unauthorized Software / Blacklisting</title>
             <param id="cm-7.4_prm_1">
-               <label>organization-defined software programs not authorized to execute on the
-                  information system</label>
+               <label>organization-defined software programs not authorized to execute on the information system</label>
             </param>
             <param id="cm-7.4_prm_2">
                <label>organization-defined frequency</label>
@@ -15954,8 +15920,7 @@
          <control class="SP800-53-enhancement" id="cm-7.5">
             <title>Authorized Software / Whitelisting</title>
             <param id="cm-7.5_prm_1">
-               <label>organization-defined software programs authorized to execute on the
-                  information system</label>
+               <label>organization-defined software programs authorized to execute on the information system</label>
             </param>
             <param id="cm-7.5_prm_2">
                <label>organization-defined frequency</label>
@@ -16049,8 +16014,7 @@
       <control class="SP800-53" id="cm-8">
          <title>Information System Component Inventory</title>
          <param id="cm-8_prm_1">
-            <label>organization-defined information deemed necessary to achieve effective
-               information system component accountability</label>
+            <label>organization-defined information deemed necessary to achieve effective information system component accountability</label>
          </param>
          <param id="cm-8_prm_2">
             <label>organization-defined frequency</label>
@@ -17359,15 +17323,13 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="cp-2_prm_2">
-            <label>organization-defined key contingency personnel (identified by name and/or by
-               role) and organizational elements</label>
+            <label>organization-defined key contingency personnel (identified by name and/or by role) and organizational elements</label>
          </param>
          <param id="cp-2_prm_3">
             <label>organization-defined frequency</label>
          </param>
          <param id="cp-2_prm_4">
-            <label>organization-defined key contingency personnel (identified by name and/or by
-               role) and organizational elements</label>
+            <label>organization-defined key contingency personnel (identified by name and/or by role) and organizational elements</label>
          </param>
          <prop name="label">CP-2</prop>
          <prop name="sort-id">cp-02</prop>
@@ -18579,8 +18541,7 @@
             <label>organization-defined information system operations</label>
          </param>
          <param id="cp-7_prm_2">
-            <label>organization-defined time period consistent with recovery time and recovery point
-               objectives</label>
+            <label>organization-defined time period consistent with recovery time and recovery point objectives</label>
          </param>
          <prop name="label">CP-7</prop>
          <prop name="sort-id">cp-07</prop>
@@ -19175,16 +19136,13 @@
       <control class="SP800-53" id="cp-9">
          <title>Information System Backup</title>
          <param id="cp-9_prm_1">
-            <label>organization-defined frequency consistent with recovery time and recovery point
-               objectives</label>
+            <label>organization-defined frequency consistent with recovery time and recovery point objectives</label>
          </param>
          <param id="cp-9_prm_2">
-            <label>organization-defined frequency consistent with recovery time and recovery point
-               objectives</label>
+            <label>organization-defined frequency consistent with recovery time and recovery point objectives</label>
          </param>
          <param id="cp-9_prm_3">
-            <label>organization-defined frequency consistent with recovery time and recovery point
-               objectives</label>
+            <label>organization-defined frequency consistent with recovery time and recovery point objectives</label>
          </param>
          <prop name="label">CP-9</prop>
          <prop name="sort-id">cp-09</prop>
@@ -19376,8 +19334,7 @@
          <control class="SP800-53-enhancement" id="cp-9.3">
             <title>Separate Storage for Critical Information</title>
             <param id="cp-9.3_prm_1">
-               <label>organization-defined critical information system software and other
-                  security-related information</label>
+               <label>organization-defined critical information system software and other security-related information</label>
             </param>
             <prop name="label">CP-9(3)</prop>
             <prop name="sort-id">cp-09.03</prop>
@@ -19438,8 +19395,7 @@
          <control class="SP800-53-enhancement" id="cp-9.5">
             <title>Transfer to Alternate Storage Site</title>
             <param id="cp-9.5_prm_1">
-               <label>organization-defined time period and transfer rate consistent with the
-                  recovery time and recovery point objectives</label>
+               <label>organization-defined time period and transfer rate consistent with the recovery time and recovery point objectives</label>
             </param>
             <prop name="label">CP-9(5)</prop>
             <prop name="sort-id">cp-09.05</prop>
@@ -21909,9 +21865,7 @@
          <control class="SP800-53-enhancement" id="ia-5.1">
             <title>Password-based Authentication</title>
             <param id="ia-5.1_prm_1">
-               <label>organization-defined requirements for case sensitivity, number of characters,
-                  mix of upper-case letters, lower-case letters, numbers, and special characters,
-                  including minimum requirements for each type</label>
+               <label>organization-defined requirements for case sensitivity, number of characters, mix of upper-case letters, lower-case letters, numbers, and special characters, including minimum requirements for each type</label>
             </param>
             <param id="ia-5.1_prm_2">
                <label>organization-defined number</label>
@@ -23469,8 +23423,7 @@
       <control class="SP800-53" id="ia-11">
          <title>Re-authentication</title>
          <param id="ia-11_prm_1">
-            <label>organization-defined circumstances or situations requiring
-               re-authentication</label>
+            <label>organization-defined circumstances or situations requiring re-authentication</label>
          </param>
          <prop name="label">IA-11</prop>
          <prop name="sort-id">ia-11</prop>
@@ -24219,8 +24172,7 @@
                <label>organization-defined classes of incidents</label>
             </param>
             <param id="ir-4.3_prm_2">
-               <label>organization-defined actions to take in response to classes of
-                  incidents</label>
+               <label>organization-defined actions to take in response to classes of incidents</label>
             </param>
             <prop name="label">IR-4(3)</prop>
             <prop name="sort-id">ir-04.03</prop>
@@ -25083,15 +25035,13 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="ir-8_prm_2">
-            <label>organization-defined incident response personnel (identified by name and/or by
-               role) and organizational elements</label>
+            <label>organization-defined incident response personnel (identified by name and/or by role) and organizational elements</label>
          </param>
          <param id="ir-8_prm_3">
             <label>organization-defined frequency</label>
          </param>
          <param id="ir-8_prm_4">
-            <label>organization-defined incident response personnel (identified by name and/or by
-               role) and organizational elements</label>
+            <label>organization-defined incident response personnel (identified by name and/or by role) and organizational elements</label>
          </param>
          <prop name="label">IR-8</prop>
          <prop name="sort-id">ir-08</prop>
@@ -28406,8 +28356,7 @@
          <control class="SP800-53-enhancement" id="mp-6.3">
             <title>Nondestructive Techniques</title>
             <param id="mp-6.3_prm_1">
-               <label>organization-defined circumstances requiring sanitization of portable storage
-                  devices</label>
+               <label>organization-defined circumstances requiring sanitization of portable storage devices</label>
             </param>
             <prop name="label">MP-6(3)</prop>
             <prop name="sort-id">mp-06.03</prop>
@@ -28534,8 +28483,7 @@
          <control class="SP800-53-enhancement" id="mp-6.8">
             <title>Remote Purging / Wiping of Information</title>
             <param id="mp-6.8_prm_1">
-               <label>organization-defined information systems, system components, or
-                  devices</label>
+               <label>organization-defined information systems, system components, or devices</label>
             </param>
             <param id="mp-6.8_prm_2">
                <label>organization-defined conditions</label>
@@ -29417,10 +29365,8 @@
             <title>Restrict Unescorted Access</title>
             <param id="pe-2.3_prm_1">
                <select how-many="one or more">
-                  <choice>security clearances for all information contained within the
-                     system</choice>
-                  <choice>formal access authorizations for all information contained within the
-                     system</choice>
+                  <choice>security clearances for all information contained within the system</choice>
+                  <choice>formal access authorizations for all information contained within the system</choice>
                   <choice>need for access to all information contained within the system</choice>
                   <choice>
                      <insert param-id="pe-2.3_prm_2"/>
@@ -29500,8 +29446,7 @@
       <control class="SP800-53" id="pe-3">
          <title>Physical Access Control</title>
          <param id="pe-3_prm_1">
-            <label>organization-defined entry/exit points to the facility where the information
-               system resides</label>
+            <label>organization-defined entry/exit points to the facility where the information system resides</label>
          </param>
          <param id="pe-3_prm_2">
             <select how-many="one or more">
@@ -29521,8 +29466,7 @@
             <label>organization-defined security safeguards</label>
          </param>
          <param id="pe-3_prm_6">
-            <label>organization-defined circumstances requiring visitor escorts and
-               monitoring</label>
+            <label>organization-defined circumstances requiring visitor escorts and monitoring</label>
          </param>
          <param id="pe-3_prm_7">
             <label>organization-defined physical access devices</label>
@@ -29770,8 +29714,7 @@
          <control class="SP800-53-enhancement" id="pe-3.1">
             <title>Information System Access</title>
             <param id="pe-3.1_prm_1">
-               <label>organization-defined physical spaces containing one or more components of the
-                  information system</label>
+               <label>organization-defined physical spaces containing one or more components of the information system</label>
             </param>
             <prop name="label">PE-3(1)</prop>
             <prop name="sort-id">pe-03.01</prop>
@@ -30116,8 +30059,7 @@
       <control class="SP800-53" id="pe-4">
          <title>Access Control for Transmission Medium</title>
          <param id="pe-4_prm_1">
-            <label>organization-defined information system distribution and transmission
-               lines</label>
+            <label>organization-defined information system distribution and transmission lines</label>
          </param>
          <param id="pe-4_prm_2">
             <label>organization-defined security safeguards</label>
@@ -30656,8 +30598,7 @@
          <control class="SP800-53-enhancement" id="pe-6.4">
             <title>Monitoring Physical Access to Information Systems</title>
             <param id="pe-6.4_prm_1">
-               <label>organization-defined physical spaces containing one or more components of the
-                  information system</label>
+               <label>organization-defined physical spaces containing one or more components of the information system</label>
             </param>
             <prop name="label">PE-6(4)</prop>
             <prop name="sort-id">pe-06.04</prop>
@@ -33536,8 +33477,7 @@
       <control class="SP800-53" id="ps-3">
          <title>Personnel Screening</title>
          <param id="ps-3_prm_1">
-            <label>organization-defined conditions requiring rescreening and, where rescreening is
-               so indicated, the frequency of such rescreening</label>
+            <label>organization-defined conditions requiring rescreening and, where rescreening is so indicated, the frequency of such rescreening</label>
          </param>
          <prop name="label">PS-3</prop>
          <prop name="sort-id">ps-03</prop>
@@ -34941,8 +34881,7 @@
       <control class="SP800-53" id="ra-5">
          <title>Vulnerability Scanning</title>
          <param id="ra-5_prm_1">
-            <label>organization-defined frequency and/or randomly in accordance with
-               organization-defined process</label>
+            <label>organization-defined frequency and/or randomly in accordance with organization-defined process</label>
          </param>
          <param id="ra-5_prm_2">
             <label>organization-defined response times</label>
@@ -36259,9 +36198,7 @@
          <control class="SP800-53-enhancement" id="sa-4.3">
             <title>Development Methods / Techniques / Practices</title>
             <param id="sa-4.3_prm_1">
-               <label>organization-defined state-of-the-practice system/security engineering
-                  methods, software development methods, testing/evaluation/validation techniques,
-                  and quality control processes</label>
+               <label>organization-defined state-of-the-practice system/security engineering methods, software development methods, testing/evaluation/validation techniques, and quality control processes</label>
             </param>
             <prop name="label">SA-4(3)</prop>
             <prop name="sort-id">sa-04.03</prop>
@@ -37248,8 +37185,7 @@
          <control class="SP800-53-enhancement" id="sa-9.3">
             <title>Establish / Maintain Trust Relationship with Providers</title>
             <param id="sa-9.3_prm_1">
-               <label>organization-defined security requirements, properties, factors, or conditions
-                  defining acceptable trust relationships</label>
+               <label>organization-defined security requirements, properties, factors, or conditions defining acceptable trust relationships</label>
             </param>
             <prop name="label">SA-9(3)</prop>
             <prop name="sort-id">sa-09.03</prop>
@@ -38615,8 +38551,7 @@
          <control class="SP800-53-enhancement" id="sa-12.1">
             <title>Acquisition Strategies / Tools / Methods</title>
             <param id="sa-12.1_prm_1">
-               <label>organization-defined tailored acquisition strategies, contract tools, and
-                  procurement methods</label>
+               <label>organization-defined tailored acquisition strategies, contract tools, and procurement methods</label>
             </param>
             <prop name="label">SA-12(1)</prop>
             <prop name="sort-id">sa-12.01</prop>
@@ -39017,8 +38952,7 @@
             <title>Penetration Testing / Analysis of Elements, Processes, and Actors</title>
             <param id="sa-12.11_prm_1">
                <select how-many="one or more">
-                  <choice>organizational analysis, independent third-party analysis, organizational
-                     penetration testing, independent third-party penetration testing</choice>
+                  <choice>organizational analysis, independent third-party analysis, organizational penetration testing, independent third-party penetration testing</choice>
                </select>
             </param>
             <param id="sa-12.11_prm_2">
@@ -39312,8 +39246,7 @@
       <control class="SP800-53" id="sa-13">
          <title>Trustworthiness</title>
          <param id="sa-13_prm_1">
-            <label>organization-defined information system, information system component, or
-               information system service</label>
+            <label>organization-defined information system, information system component, or information system service</label>
          </param>
          <param id="sa-13_prm_2">
             <label>organization-defined assurance overlay</label>
@@ -39395,8 +39328,7 @@
       <control class="SP800-53" id="sa-14">
          <title>Criticality Analysis</title>
          <param id="sa-14_prm_1">
-            <label>organization-defined information systems, information system components, or
-               information system services</label>
+            <label>organization-defined information systems, information system components, or information system services</label>
          </param>
          <param id="sa-14_prm_2">
             <label>organization-defined decision points in the system development life cycle</label>
@@ -39739,8 +39671,7 @@
                <label>organization-defined breadth/depth</label>
             </param>
             <param id="sa-15.3_prm_2">
-               <label>organization-defined decision points in the system development life
-                  cycle</label>
+               <label>organization-defined decision points in the system development life cycle</label>
             </param>
             <prop name="label">SA-15(3)</prop>
             <prop name="sort-id">sa-15.03</prop>
@@ -39810,8 +39741,7 @@
                <label>organization-defined breadth/depth</label>
             </param>
             <param id="sa-15.4_prm_2">
-               <label>organization-defined information concerning impact, environment of operations,
-                  known or assumed threats, and acceptable risk levels</label>
+               <label>organization-defined information concerning impact, environment of operations, known or assumed threats, and acceptable risk levels</label>
             </param>
             <param id="sa-15.4_prm_3">
                <label>organization-defined tools and methods</label>
@@ -40644,8 +40574,7 @@
             <title>Informal Correspondence</title>
             <param id="sa-17.4_prm_1">
                <select>
-                  <choice>informal demonstration, convincing argument with formal methods as
-                     feasible</choice>
+                  <choice>informal demonstration, convincing argument with formal methods as feasible</choice>
                </select>
             </param>
             <prop name="label">SA-17(4)</prop>
@@ -40994,8 +40923,7 @@
          <control class="SP800-53-enhancement" id="sa-18.2">
             <title>Inspection of Information Systems, Components, or Devices</title>
             <param id="sa-18.2_prm_1">
-               <label>organization-defined information systems, system components, or
-                  devices</label>
+               <label>organization-defined information systems, system components, or devices</label>
             </param>
             <param id="sa-18.2_prm_2">
                <select how-many="one or more">
@@ -41451,8 +41379,7 @@
       <control class="SP800-53" id="sa-21">
          <title>Developer Screening</title>
          <param id="sa-21_prm_1">
-            <label>organization-defined information system, system component, or information system
-               service</label>
+            <label>organization-defined information system, system component, or information system service</label>
          </param>
          <param id="sa-21_prm_2">
             <label>organization-defined official government duties</label>
@@ -42337,8 +42264,7 @@
       <control class="SP800-53" id="sc-5">
          <title>Denial of Service Protection</title>
          <param id="sc-5_prm_1">
-            <label>organization-defined types of denial of service attacks or references to sources
-               for such information</label>
+            <label>organization-defined types of denial of service attacks or references to sources for such information</label>
          </param>
          <param id="sc-5_prm_2">
             <label>organization-defined security safeguards</label>
@@ -43338,8 +43264,7 @@
          <control class="SP800-53-enhancement" id="sc-7.13">
             <title>Isolation of Security Tools / Mechanisms / Support Components</title>
             <param id="sc-7.13_prm_1">
-               <label>organization-defined information security tools, mechanisms, and support
-                  components</label>
+               <label>organization-defined information security tools, mechanisms, and support components</label>
             </param>
             <prop name="label">SC-7(13)</prop>
             <prop name="sort-id">sc-07.13</prop>
@@ -44257,8 +44182,7 @@
       <control class="SP800-53" id="sc-11">
          <title>Trusted Path</title>
          <param id="sc-11_prm_1">
-            <label>organization-defined security functions to include at a minimum, information
-               system authentication and re-authentication</label>
+            <label>organization-defined security functions to include at a minimum, information system authentication and re-authentication</label>
          </param>
          <prop name="label">SC-11</prop>
          <prop name="sort-id">sc-11</prop>
@@ -44362,8 +44286,7 @@
       <control class="SP800-53" id="sc-12">
          <title>Cryptographic Key Establishment and Management</title>
          <param id="sc-12_prm_1">
-            <label>organization-defined requirements for key generation, distribution, storage,
-               access, and destruction</label>
+            <label>organization-defined requirements for key generation, distribution, storage, access, and destruction</label>
          </param>
          <prop name="label">SC-12</prop>
          <prop name="sort-id">sc-12</prop>
@@ -44531,10 +44454,8 @@
             <param id="sc-12.3_prm_1">
                <select>
                   <choice>NSA-approved key management technology and processes</choice>
-                  <choice>approved PKI Class 3 certificates or prepositioned keying
-                     material</choice>
-                  <choice>approved PKI Class 3 or Class 4 certificates and hardware security tokens
-                     that protect the user’s private key</choice>
+                  <choice>approved PKI Class 3 certificates or prepositioned keying material</choice>
+                  <choice>approved PKI Class 3 or Class 4 certificates and hardware security tokens that protect the user’s private key</choice>
                </select>
             </param>
             <prop name="label">SC-12(3)</prop>
@@ -44605,8 +44526,7 @@
       <control class="SP800-53" id="sc-13">
          <title>Cryptographic Protection</title>
          <param id="sc-13_prm_1">
-            <label>organization-defined cryptographic uses and type of cryptography required for
-               each use</label>
+            <label>organization-defined cryptographic uses and type of cryptography required for each use</label>
          </param>
          <prop name="label">SC-13</prop>
          <prop name="sort-id">sc-13</prop>
@@ -44845,8 +44765,7 @@
          <control class="SP800-53-enhancement" id="sc-15.3">
             <title>Disabling / Removal in Secure Work Areas</title>
             <param id="sc-15.3_prm_1">
-               <label>organization-defined information systems or information system
-                  components</label>
+               <label>organization-defined information systems or information system components</label>
             </param>
             <param id="sc-15.3_prm_2">
                <label>organization-defined secure work areas</label>
@@ -47638,8 +47557,7 @@
             <label>organization-defined out-of-band channels</label>
          </param>
          <param id="sc-37_prm_2">
-            <label>organization-defined information, information system components, or
-               devices</label>
+            <label>organization-defined information, information system components, or devices</label>
          </param>
          <param id="sc-37_prm_3">
             <label>organization-defined individuals or information systems</label>
@@ -47726,8 +47644,7 @@
                <label>organization-defined individuals or information systems</label>
             </param>
             <param id="sc-37.1_prm_3">
-               <label>organization-defined information, information system components, or
-                  devices</label>
+               <label>organization-defined information, information system components, or devices</label>
             </param>
             <prop name="label">SC-37(1)</prop>
             <prop name="sort-id">sc-37.01</prop>
@@ -47997,8 +47914,7 @@
             <label>organization-defined wireless links</label>
          </param>
          <param id="sc-40_prm_2">
-            <label>organization-defined types of signal parameter attacks or references to sources
-               for such attacks</label>
+            <label>organization-defined types of signal parameter attacks or references to sources for such attacks</label>
          </param>
          <prop name="label">SC-40</prop>
          <prop name="sort-id">sc-40</prop>
@@ -48357,8 +48273,7 @@
       <control class="SP800-53" id="sc-42">
          <title>Sensor Capability and Data</title>
          <param id="sc-42_prm_1">
-            <label>organization-defined exceptions where remote activation of sensors is
-               allowed</label>
+            <label>organization-defined exceptions where remote activation of sensors is allowed</label>
          </param>
          <param id="sc-42_prm_2">
             <label>organization-defined class of users</label>
@@ -50563,12 +50478,10 @@
          <control class="SP800-53-enhancement" id="si-4.7">
             <title>Automated Response to Suspicious Events</title>
             <param id="si-4.7_prm_1">
-               <label>organization-defined incident response personnel (identified by name and/or by
-                  role)</label>
+               <label>organization-defined incident response personnel (identified by name and/or by role)</label>
             </param>
             <param id="si-4.7_prm_2">
-               <label>organization-defined least-disruptive actions to terminate suspicious
-                  events</label>
+               <label>organization-defined least-disruptive actions to terminate suspicious events</label>
             </param>
             <prop name="label">SI-4(7)</prop>
             <prop name="sort-id">si-04.07</prop>
@@ -50757,8 +50670,7 @@
          <control class="SP800-53-enhancement" id="si-4.11">
             <title>Analyze Communications Traffic Anomalies</title>
             <param id="si-4.11_prm_1">
-               <label>organization-defined interior points within the system (e.g., subnetworks,
-                  subsystems)</label>
+               <label>organization-defined interior points within the system (e.g., subnetworks, subsystems)</label>
             </param>
             <prop name="label">SI-4(11)</prop>
             <prop name="sort-id">si-04.11</prop>
@@ -51161,8 +51073,7 @@
          <control class="SP800-53-enhancement" id="si-4.18">
             <title>Analyze Traffic / Covert Exfiltration</title>
             <param id="si-4.18_prm_1">
-               <label>organization-defined interior points within the system (e.g., subsystems,
-                  subnetworks)</label>
+               <label>organization-defined interior points within the system (e.g., subsystems, subnetworks)</label>
             </param>
             <prop name="label">SI-4(18)</prop>
             <prop name="sort-id">si-04.18</prop>
@@ -52505,8 +52416,7 @@
          <control class="SP800-53-enhancement" id="si-7.7">
             <title>Integration of Detection and Response</title>
             <param id="si-7.7_prm_1">
-               <label>organization-defined security-relevant changes to the information
-                  system</label>
+               <label>organization-defined security-relevant changes to the information system</label>
             </param>
             <prop name="label">SI-7(7)</prop>
             <prop name="sort-id">si-07.07</prop>
@@ -55644,9 +55554,7 @@
       <resource uuid="0c97e60b-325a-4efa-ba2b-90f20ccd5abc">
          <title>5 C.F.R. 731.106</title>
          <citation>
-            <text>Code of Federal Regulations, Title 5, Administrative Personnel, Section 731.106,
-               Designation of Public Trust Positions and Investigative Requirements (5 C.F.R.
-               731.106).</text>
+            <text>Code of Federal Regulations, Title 5, Administrative Personnel, Section 731.106, Designation of Public Trust Positions and Investigative Requirements (5 C.F.R. 731.106).</text>
          </citation>
          <rlink href="http://www.gpo.gov/fdsys/granule/CFR-2012-title5-vol2/CFR-2012-title5-vol2-sec731-106/content-detail.html"/>
       </resource>
@@ -56454,11 +56362,9 @@
          <rlink href="http://www.whitehouse.gov/sites/default/files/omb/memoranda/2011/m11-33.pdf"/>
       </resource>
       <resource uuid="dd2f5acd-08f1-435a-9837-f8203088dc1a">
-         <title>Personal Identity Verification (PIV) in Enterprise Physical Access Control System
-            (E-PACS)</title>
+         <title>Personal Identity Verification (PIV) in Enterprise Physical Access Control System (E-PACS)</title>
          <citation>
-            <text>Personal Identity Verification (PIV) in Enterprise Physical Access Control System
-               (E-PACS)</text>
+            <text>Personal Identity Verification (PIV) in Enterprise Physical Access Control System (E-PACS)</text>
          </citation>
       </resource>
       <resource uuid="8ade2fbe-e468-4ca8-9a40-54d7f23c32bb">

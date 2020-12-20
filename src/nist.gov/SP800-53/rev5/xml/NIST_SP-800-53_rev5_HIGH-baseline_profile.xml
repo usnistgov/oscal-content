@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Produced by SP800-53-profile-extract.xsl 2020-11-09-05:00; runtime parameter settings: $baseline='HIGH'-->
-<!-- Modified again 2020-12-18-05:00 to conform with RC1 schema with updated link representations. -->
 <profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
          uuid="6145b8a2-5860-4803-bbb5-f0c6495c6f9a">
    <metadata>
