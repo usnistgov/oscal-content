@@ -1,10 +1,10 @@
 profile: 
-  uuid:     68170819-54c8-4385-9649-3388f967da59
+  uuid:     a4c905d7-3bf4-477d-a3e5-f4943b06fa5a
   metadata: 
     title:               NIST Special Publication 800-53 Revision 5 PRIVACY BASELINE
-    last-modified:       2020-11-09T15:39:11.548-05:00
+    last-modified:       2020-12-18T16:38:47.895-05:00
     version:             Final
-    oscal-version:       1.0.0-milestone3
+    oscal-version:       1.0.0-rc1
     roles: 
       - 
         id:    creator
@@ -16,14 +16,14 @@ profile:
       - 
         uuid:            892cdf79-ce18-4c98-b7d7-721bb6a8de1c
         type:            organization
-        party-name:      Joint Task Force, Transformation Initiative
+        name:            Joint Task Force, Transformation Initiative
+        email-addresses: sec-cert@nist.gov
         addresses: 
           - 
-            postal-address: National Institute of Standards and Technology,Attn: Computer Security Division,Information Technology Laboratory,100 Bureau Drive (Mail Stop 8930)
-            city:           Gaithersburg
-            state:          MD
-            postal-code:    20899-8930
-        email-addresses: sec-cert@nist.gov
+            addr-lines:  National Institute of Standards and Technology,Attn: Computer Security Division,Information Technology Laboratory,100 Bureau Drive (Mail Stop 8930)
+            city:        Gaithersburg
+            state:       MD
+            postal-code: 20899-8930
     responsible-parties: 
       creator: 
         party-uuids: 892cdf79-ce18-4c98-b7d7-721bb6a8de1c
@@ -33,7 +33,7 @@ profile:
     - 
       href:    NIST_SP-800-53_rev5_catalog.xml
       include: 
-        id-selectors: 
+        calls: 
           - 
             control-id: ac-1
           - 

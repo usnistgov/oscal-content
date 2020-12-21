@@ -1,11 +1,11 @@
 {
   "profile": {
-    "uuid": "212514a9-026e-44fd-b046-a0f8bc393a6e",
+    "uuid": "6145b8a2-5860-4803-bbb5-f0c6495c6f9a",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 5 HIGH IMPACT BASELINE",
-      "last-modified": "2020-11-09T15:39:11.685-05:00",
+      "last-modified": "2020-12-18T16:38:46.076-05:00",
       "version": "Final",
-      "oscal-version": "1.0.0-milestone3",
+      "oscal-version": "1.0.0-rc1",
       "roles": [
         {
           "id": "creator",
@@ -20,10 +20,13 @@
         {
           "uuid": "fcabc5cf-15ed-456e-bba5-34f95f144c7d",
           "type": "organization",
-          "party-name": "Joint Task Force, Transformation Initiative",
+          "name": "Joint Task Force, Transformation Initiative",
+          "email-addresses": [
+            "sec-cert@nist.gov"
+          ],
           "addresses": [
             {
-              "postal-address": [
+              "addr-lines": [
                 "National Institute of Standards and Technology",
                 "Attn: Computer Security Division",
                 "Information Technology Laboratory",
@@ -33,9 +36,6 @@
               "state": "MD",
               "postal-code": "20899-8930"
             }
-          ],
-          "email-addresses": [
-            "sec-cert@nist.gov"
           ]
         }
       ],
@@ -56,7 +56,7 @@
       {
         "href": "NIST_SP-800-53_rev5_catalog.xml",
         "include": {
-          "id-selectors": [
+          "calls": [
             {
               "control-id": "ac-1"
             },

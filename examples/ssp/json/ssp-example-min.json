@@ -5,7 +5,7 @@
             "title": "Enterprise Logging and Auditing System Security Plan",
             "last-modified": "2019-09-23T18:14:50.591Z",
             "version": "1.0",
-            "oscal-version": "1.0.0-milestone3",
+            "oscal-version": "1.0.0-rc1",
             "roles": [
                 {
                     "id": "legal-officer",
@@ -16,27 +16,27 @@
                 {
                     "uuid": "3b2a5599-cc37-403f-ae36-5708fa804b27",
                     "type": "organization",
-                    "party-name": "Enterprise Asset Owners"
+                    "name": "Enterprise Asset Owners"
                 },
                 {
                     "uuid": "833ac398-5c9a-4e6b-acba-2a9c11399da0",
                     "type": "organization",
-                    "party-name": "Enterprise Asset Administrators"
+                    "name": "Enterprise Asset Administrators"
                 },
                 {
                     "uuid": "ec485dcf-2519-43f5-8e7d-014cc315332d",
                     "type": "organization",
-                    "party-name": "Legal Department"
+                    "name": "Legal Department"
                 },
                 {
                     "uuid": "0f0c15ed-565e-4ce9-8670-b54853d0bf03",
                     "type": "organization",
-                    "party-name": "IT Department"
+                    "name": "IT Department"
                 },
                 {
                     "uuid": "96c362ee-a012-4e07-92f3-486ab303b0e7",
                     "type": "organization",
-                    "party-name": "Acme Corp"
+                    "name": "Acme Corp"
                 }
             ]
         },
@@ -56,9 +56,11 @@
                     {
                         "uuid": "7d28ac6e-5970-4f4c-a508-5a3715f0f02b",
                         "title": "System and Network Monitoring",
-                        "information-type-ids": {
-                            "https://doi.org/10.6028/NIST.SP.800-60v2r1": {"id": "C.3.5.8"}
-                        },
+                        "categorizations": [
+                            {"system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+                            "information-type-ids": ["C.3.5.8"]
+                            }
+                        ],
                         "description": "This system maintains historical logging and auditing information for all client devices connected to this system.",
                         "confidentiality-impact": {"base": "fips-199-moderate"},
                         "integrity-impact": {"base": "fips-199-moderate"},
@@ -126,7 +128,7 @@
                     "title": "Logging Server",
                     "description": "Provides a means for hosts to publish logged events to a central server.",
                     "status": {"state": "operational"},
-                    "component-type": "software",
+                    "type": "software",
                     "responsible-roles": {
                         "provider": {
                             "party-uuids": ["96c362ee-a012-4e07-92f3-486ab303b0e7"]
@@ -141,10 +143,10 @@
                 },
                 "795533ab-9427-4abe-820f-0b571bacfe6d": {
                     "title": "Enterprise Logging, Monitoring, and Alerting Policy",
-                    "component-type": "policy",
+                    "type": "policy",
                     "description": "Requires all components to send logs to the enterprise logging solution\n\u2014 Requires all components synchronize their time with the appropriate enterprise time service, and at what frequency.\n\u2014 Identifies the events that must be captured\n\u2014 Identifies who is responsible/accountable for performing these functions",
                     "status": {"state": "operational"},
-                    "properties": [
+                    "props": [
                         {
                             "name": "version",
                             "value": "2.1"
@@ -162,10 +164,10 @@
                 },
                 "941e2a87-46f4-4b3e-9e87-bbd187091ca1": {
                     "title": "System Integration Process",
-                    "component-type": "process",
+                    "type": "process",
                     "description": "Ensures proper integration into the enterprise as new systems are brought into production.",
                     "status": {"state": "operational"},
-                    "properties": [
+                    "props": [
                         {
                             "name": "last-modified-date",
                             "value": "20181015"
@@ -186,10 +188,10 @@
                 },
                 "fa39eb84-3014-46b4-b6bc-7da10527c262": {
                     "title": "Inventory Management Process",
-                    "component-type": "process",
+                    "type": "process",
                     "description": "Describes how new components are introduced into the system - ensures monitoring teams know about every asset that should be producing logs, thus should be monitored.",
                     "status": {"state": "operational"},
-                    "properties": [
+                    "props": [
                         {
                             "name": "last-modified-date",
                             "value": "20181015"
@@ -210,10 +212,10 @@
                 },
                 "4938767c-dd8b-4ea4-b74a-fafffd48ac99": {
                     "title": "Configuration Management Guidance",
-                    "component-type": "guidance",
+                    "type": "guidance",
                     "description": "Describes how to configure a component to ensure its logs are transmitted to Splunk in the appropriate format. Also describes how to configure time synchronization.",
                     "status": {"state": "operational"},
-                    "properties": [
+                    "props": [
                         {
                             "name": "last-modified-date",
                             "value": "20181015"
@@ -233,26 +235,28 @@
                     ]
                 }
             },
-            "system-inventory": {
-                "inventory-items": {
-                    "c9c32657-a0eb-4cf2-b5c1-20928983063c": {
-                        "description": "The logging server.",
-                        "asset-id": "asset-id-logging-server",
-                        "responsible-parties": {
-                            "asset-administrator": {
-                                "party-uuids": ["833ac398-5c9a-4e6b-acba-2a9c11399da0"]
-                            },
-                            "asset-owner": {
-                                "party-uuids": ["3b2a5599-cc37-403f-ae36-5708fa804b27"]
-                            }
-                        },
-                        "implemented-components": {
-                            "e00acdcf-911b-437d-a42f-b0b558cc4f03": {"use": "runs-software"},
-                            "795533ab-9427-4abe-820f-0b571bacfe6d": {"use": "enforces-policy"}
-                        }
+            "inventory-items": [ {
+                "uuid": "c9c32657-a0eb-4cf2-b5c1-20928983063c",
+                "description": "The logging server.",
+                "props": [
+                    {
+                        "name": "asset-id",
+                        "value": "asset-id-logging-server"
                     }
-                }
-            }
+                ],
+                "responsible-parties": {
+                    "asset-administrator": {
+                        "party-uuids": ["833ac398-5c9a-4e6b-acba-2a9c11399da0"]
+                    },
+                    "asset-owner": {
+                        "party-uuids": ["3b2a5599-cc37-403f-ae36-5708fa804b27"]
+                    }
+                },
+                "implemented-components": [ {
+                    "component-uuid": "e00acdcf-911b-437d-a42f-b0b558cc4f03" },
+                    { "component-uuid": "795533ab-9427-4abe-820f-0b571bacfe6d" }
+                 ]
+            }]
         },
         "control-implementation": {
             "description": "This is the control implementation for the system.",
@@ -271,28 +275,28 @@
                                     "uuid": "a74681b2-fbcb-46eb-90fd-0d55aa74ac7b",
                                     "description": "The legal department develops, documents, and disseminates this policy to all staff and contractors within the organization.",
                                     "parameter-settings": {
-                                        "au-1_prm_1": {"value": "all staff and contractors within the organization"}
+                                        "au-1_prm_1": {"values": [ "all staff and contractors within the organization" ]}
                                     }
                                 },
                                 "941e2a87-46f4-4b3e-9e87-bbd187091ca1": {
                                     "uuid": "4f873ce6-dd49-4a46-bd4a-5041c22665f1",
                                     "description": "The IT department created and maintains this procedure. This department disseminates it to all IT staff who administer this system when the staff member is assigned and annually through training.",
                                     "parameter-settings": {
-                                        "au-1_prm_1": {"value": "all IT staff who administer this system when the staff member is assigned and annually through training"}
+                                        "au-1_prm_1": {"values": [ "all IT staff who administer this system when the staff member is assigned and annually through training"]}
                                     }
                                 },
                                 "fa39eb84-3014-46b4-b6bc-7da10527c262": {
                                     "uuid": "ea85a624-cd21-4c63-abe0-f66087e97241",
                                     "description": "The IT department created and maintains this procedure. This department disseminates it to all IT staff who administer this system when the staff member is assigned and annually through training.",
                                     "parameter-settings": {
-                                        "au-1_prm_1": {"value": "all IT staff who administer this system when the staff member is assigned and annually through training"}
+                                        "au-1_prm_1": {"values": [ "all IT staff who administer this system when the staff member is assigned and annually through training"]}
                                     }
                                 },
                                 "4938767c-dd8b-4ea4-b74a-fafffd48ac99": {
                                     "uuid": "b5e5823a-844f-4306-a5ab-7e110679e0d5",
                                     "description": "The IT department created and maintains this procedure. This department disseminates it to all IT staff who administer this system when the staff member is assigned and annually through training.",
                                     "parameter-settings": {
-                                        "au-1_prm_1": {"value": "all IT staff who administer this system when the staff member is assigned and annually through training"}
+                                        "au-1_prm_1": {"values": [ "all IT staff who administer this system when the staff member is assigned and annually through training"]}
                                     }
                                 }
                             }
@@ -333,7 +337,7 @@
                                 "795533ab-9427-4abe-820f-0b571bacfe6d": {
                                     "uuid": "23903c59-1327-46f0-9c28-09ec7f144214",
                                     "parameter-settings": {
-                                        "au-1_prm_2": {"value": "annually, and other times as necessary in response to regulatory or organizational changes"}
+                                        "au-1_prm_2": {"values": ["annually, and other times as necessary in response to regulatory or organizational changes"]}
                                     },
                                     "description": "The legal department reviews this policy annually, and other times as necessary in response to regulatory or organizational changes. The legal department updates the policy as needed based on these reviews."
                                 }
@@ -345,21 +349,21 @@
                                 "941e2a87-46f4-4b3e-9e87-bbd187091ca1": {
                                     "uuid": "0c45b6e2-f85b-4656-a6cc-2a302d184720",
                                     "parameter-settings": {
-                                        "au-1_prm_3": {"value": "annually, and other times as necessary in response to regulatory or organizational changes"}
+                                        "au-1_prm_3": {"values": [ "annually, and other times as necessary in response to regulatory or organizational changes"]}
                                     },
                                     "description": "The IT department reviews this process annually, and other times as necessary in response to regulatory or organizational changes. The IT department updates the policy as needed based on these reviews."
                                 },
                                 "fa39eb84-3014-46b4-b6bc-7da10527c262": {
                                     "uuid": "094f02ce-4b7a-405c-90a5-ab4d95133f74",
                                     "parameter-settings": {
-                                        "au-1_prm_3": {"value": "annually, and other times as necessary in response to regulatory or organizational changes"}
+                                        "au-1_prm_3": {"values": [ "annually, and other times as necessary in response to regulatory or organizational changes"]}
                                     },
                                     "description": "The IT department reviews this process annually, and other times as necessary in response to regulatory or organizational changes. The IT department updates the policy as needed based on these reviews."
                                 },
                                 "4938767c-dd8b-4ea4-b74a-fafffd48ac99": {
                                     "uuid": "7ec8b7ec-d931-4055-ac74-6d288d636787",
                                     "parameter-settings": {
-                                        "au-1_prm_3": {"value": "annually, and other times as necessary in response to regulatory or organizational changes"}
+                                        "au-1_prm_3": {"values": [ "annually, and other times as necessary in response to regulatory or organizational changes"]}
                                     },
                                     "description": "The IT department reviews this process annually, and other times as necessary in response to regulatory or organizational changes. The IT department updates the policy as needed based on these reviews"
                                 }

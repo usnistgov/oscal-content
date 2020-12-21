@@ -1,30 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component-definition xmlns="http://csrc.nist.gov/ns/oscal/1.0">
+<component-definition xmlns="http://csrc.nist.gov/ns/oscal/1.0"
+                      uuid="aabcfa61-c6eb-4979-851f-35b461f6a0ef">
    <metadata>
       <title>Test Component Defintion</title>
       <last-modified>2020-08-31T20:45:24.389Z</last-modified>
       <version>20200723</version>
-      <oscal-version>1.0.0-milestone3</oscal-version>
+      <oscal-version>1.0.0-rc1</oscal-version>
       <party uuid="ee47836c-877c-4007-bbf3-c9d9bd805a9a" type="organization">
-         <party-name>Test Vendor</party-name>
+         <name>Test Vendor</name>
       </party>
    </metadata>
-   <component uuid="b036a6ac-6cff-4066-92bc-74ddfd9ad6fa"
-              name="test component 1"
-              component-type="software">
+   <component uuid="b036a6ac-6cff-4066-92bc-74ddfd9ad6fa" type="software">
       <title>test component 1</title>
       <description>
          <p>This is a software component that implements basic authentication mechanisms.</p>
       </description>
-      <responsible-party role-id="supplier">
+      <responsible-role role-id="supplier">
          <party-uuid>ee47836c-877c-4007-bbf3-c9d9bd805a9a</party-uuid>
-      </responsible-party>
+      </responsible-role>
       <control-implementation uuid="cfcdd674-8595-4f98-a9d1-3ac70825c49f"
                               source="../../../content/nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_catalog.xml">
          <description>
-            <p>This is a partial implementation of the SP 800-53 rev4 catalog, focusing on the control enhancement AC-2 (2).</p>
+            <p>This is a partial implementation of the SP 800-53 rev4 catalog, focusing on the control enhancement AC-2 (3).</p>
          </description>
-         <implemented-requirement uuid="d1016df0-9b5c-4839-86cd-f9c1d113077b" control-id="ac-2.2">
+         <implemented-requirement uuid="d1016df0-9b5c-4839-86cd-f9c1d113077b" control-id="ac-2.3">
             <description>
                <p>Inactive accounts are automatically disabled based on the duration specified by the duration parameter. Disabled accounts are expected to be reviewed and removed when appropriate.</p>
             </description>
@@ -33,9 +32,13 @@
       <control-implementation uuid="22dbff65-9729-449f-9dfc-4e5fee0906de"
                               source="../../../content/fedramp.gov/xml/FedRAMP_HIGH-baseline_profile.xml">
          <description>
-            <p>This is a partial implementation of the FedRAMP High profile, focusing on the control enhancement AC-2 (2).</p>
+            <p>This is a partial implementation of the FedRAMP High profile, focusing on the control enhancement AC-2 (3).</p>
          </description>
-         <implemented-requirement uuid="65e30b37-0640-4844-9f42-b2a7ae944bb1" control-id="ac-2.2"/>
+         <implemented-requirement uuid="65e30b37-0640-4844-9f42-b2a7ae944bb1" control-id="ac-2.3">
+            <description>
+               <p>An alternate narative for FedRAMP..</p>
+            </description>
+         </implemented-requirement>
       </control-implementation>
    </component>
 </component-definition>

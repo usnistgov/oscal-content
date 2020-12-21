@@ -1,11 +1,11 @@
 {
   "profile": {
-    "uuid": "8dad6815-8cd6-4747-b1c0-b25d77e45d48",
+    "uuid": "f2a82c5a-1d13-4caa-9563-08053890f0e8",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 5 LOW IMPACT BASELINE",
-      "last-modified": "2020-11-09T15:39:11.596-05:00",
+      "last-modified": "2020-12-18T16:38:46.677-05:00",
       "version": "Final",
-      "oscal-version": "1.0.0-milestone3",
+      "oscal-version": "1.0.0-rc1",
       "roles": [
         {
           "id": "creator",
@@ -20,10 +20,13 @@
         {
           "uuid": "d6de2cc9-5a07-4b86-8f61-1d72fa632b67",
           "type": "organization",
-          "party-name": "Joint Task Force, Transformation Initiative",
+          "name": "Joint Task Force, Transformation Initiative",
+          "email-addresses": [
+            "sec-cert@nist.gov"
+          ],
           "addresses": [
             {
-              "postal-address": [
+              "addr-lines": [
                 "National Institute of Standards and Technology",
                 "Attn: Computer Security Division",
                 "Information Technology Laboratory",
@@ -33,9 +36,6 @@
               "state": "MD",
               "postal-code": "20899-8930"
             }
-          ],
-          "email-addresses": [
-            "sec-cert@nist.gov"
           ]
         }
       ],
@@ -56,7 +56,7 @@
       {
         "href": "NIST_SP-800-53_rev5_catalog.xml",
         "include": {
-          "id-selectors": [
+          "calls": [
             {
               "control-id": "ac-1"
             },

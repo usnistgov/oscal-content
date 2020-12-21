@@ -1,11 +1,11 @@
 {
   "profile": {
-    "uuid": "3ae6cabe-4976-43e4-b921-11c34b432b51",
+    "uuid": "fc53d6a3-d889-4776-8851-1d8e63b68d0e",
     "metadata": {
       "title": "SP800-53 HIGH IMPACT BASELINE",
-      "last-modified": "2020-09-25T12:02:00.000-04:00",
+      "last-modified": "2020-12-18T16:38:43.675-05:00",
       "version": "FPD",
-      "oscal-version": "1.0.0-milestone3",
+      "oscal-version": "1.0.0-rc1",
       "roles": [
         {
           "id": "creator",
@@ -20,10 +20,13 @@
         {
           "uuid": "a90f4235-ab3c-4bf1-ba0a-865bbc833346",
           "type": "organization",
-          "party-name": "Joint Task Force, Transformation Initiative",
+          "name": "Joint Task Force, Transformation Initiative",
+          "email-addresses": [
+            "sec-cert@nist.gov"
+          ],
           "addresses": [
             {
-              "postal-address": [
+              "addr-lines": [
                 "National Institute of Standards and Technology",
                 "Attn: Computer Security Division",
                 "Information Technology Laboratory",
@@ -33,9 +36,6 @@
               "state": "MD",
               "postal-code": "20899-8930"
             }
-          ],
-          "email-addresses": [
-            "sec-cert@nist.gov"
           ]
         }
       ],
@@ -56,7 +56,7 @@
       {
         "href": "NIST_SP-800-53_rev5-FINAL_catalog.xml",
         "include": {
-          "id-selectors": [
+          "calls": [
             {
               "control-id": "ac-1"
             },
