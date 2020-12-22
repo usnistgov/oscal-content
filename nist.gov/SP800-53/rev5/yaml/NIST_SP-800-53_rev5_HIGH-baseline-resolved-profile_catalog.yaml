@@ -1,5 +1,5 @@
 catalog: 
-  uuid:        7d5ee375-5856-400a-95db-2c073c0717c1
+  uuid:        9d41adb6-60b9-49ee-860d-8c2d5a634090
   metadata: 
     title:               NIST Special Publication 800-53 Revision 5 HIGH IMPACT BASELINE
     last-modified:       2020-12-18T16:38:46.076-05:00
@@ -8,7 +8,7 @@ catalog:
     props: 
       - 
         name:  resolution-timestamp
-        value: 2020-12-20T23:08:58.03424-05:00
+        value: 2020-12-22T00:55:08.534825-05:00
     links: 
       - 
         href: NIST_SP-800-53_rev5_HIGH-baseline_profile.xml

@@ -1,6 +1,6 @@
 {
   "catalog": {
-    "uuid": "94ee9143-8ad1-44f3-b8db-57acf78067af",
+    "uuid": "e1e3b4ba-67db-4411-9d14-ce18710aaa68",
     "metadata": {
       "title": "SP800-53 LOW IMPACT BASELINE",
       "last-modified": "2020-12-18T16:38:44.28-05:00",
@@ -9,7 +9,7 @@
       "props": [
         {
           "name": "resolution-timestamp",
-          "value": "2020-12-20T23:09:56.45804-05:00"
+          "value": "2020-12-22T00:56:06.836521-05:00"
         }
       ],
       "links": [

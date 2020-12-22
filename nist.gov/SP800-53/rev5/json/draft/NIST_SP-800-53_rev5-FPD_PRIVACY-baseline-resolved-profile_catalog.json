@@ -1,6 +1,6 @@
 {
   "catalog": {
-    "uuid": "073f2d01-049d-45b7-9e90-eaf8bc95b864",
+    "uuid": "bdc5ef3a-27de-4f6e-8d23-6cc327caef6f",
     "metadata": {
       "title": "SP800-53 PRIVACY BASELINE",
       "last-modified": "2020-12-18T16:38:45.497-05:00",
@@ -9,7 +9,7 @@
       "props": [
         {
           "name": "resolution-timestamp",
-          "value": "2020-12-20T23:10:12.760635-05:00"
+          "value": "2020-12-22T00:56:22.49848-05:00"
         }
       ],
       "links": [
