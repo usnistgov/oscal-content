@@ -1,11 +1,11 @@
 {
   "profile": {
-    "uuid": "13172679-d468-4a88-8d7f-3afdeffedff8",
+    "uuid": "0497e93f-92c7-41cd-960d-ff5508d3ca17",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 4 LOW IMPACT BASELINE",
-      "last-modified": "2020-05-29T23:29:27.272-04:00",
+      "last-modified": "2020-12-18T16:38:42.466-05:00",
       "version": "2015-01-22",
-      "oscal-version": "1.0.0-milestone3",
+      "oscal-version": "1.0.0-rc1",
       "roles": [
         {
           "id": "creator",
@@ -20,10 +20,13 @@
         {
           "uuid": "96310e12-f661-41a7-bed9-842b6a931875",
           "type": "organization",
-          "party-name": "Joint Task Force, Transformation Initiative",
+          "name": "Joint Task Force, Transformation Initiative",
+          "email-addresses": [
+            "sec-cert@nist.gov"
+          ],
           "addresses": [
             {
-              "postal-address": [
+              "addr-lines": [
                 "National Institute of Standards and Technology",
                 "Attn: Computer Security Division",
                 "Information Technology Laboratory",
@@ -33,9 +36,6 @@
               "state": "MD",
               "postal-code": "20899-8930"
             }
-          ],
-          "email-addresses": [
-            "sec-cert@nist.gov"
           ]
         }
       ],
@@ -56,7 +56,7 @@
       {
         "href": "#31dbc4f2-c0e6-4e85-9cf4-b5d4843a32e8",
         "include": {
-          "id-selectors": [
+          "calls": [
             {
               "control-id": "ac-1"
             },
@@ -437,13 +437,13 @@
       "as-is": true
     },
     "modify": {
-      "alterations": [
+      "alters": [
         {
           "control-id": "ac-1",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -454,10 +454,10 @@
         },
         {
           "control-id": "ac-2",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -468,10 +468,10 @@
         },
         {
           "control-id": "ac-3",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -482,10 +482,10 @@
         },
         {
           "control-id": "ac-7",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P2"
@@ -496,10 +496,10 @@
         },
         {
           "control-id": "ac-8",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -510,10 +510,10 @@
         },
         {
           "control-id": "ac-14",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P3"
@@ -524,10 +524,10 @@
         },
         {
           "control-id": "ac-17",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -538,10 +538,10 @@
         },
         {
           "control-id": "ac-18",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -552,10 +552,10 @@
         },
         {
           "control-id": "ac-19",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -566,10 +566,10 @@
         },
         {
           "control-id": "ac-20",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -580,10 +580,10 @@
         },
         {
           "control-id": "ac-22",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P3"
@@ -594,10 +594,10 @@
         },
         {
           "control-id": "at-1",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -608,10 +608,10 @@
         },
         {
           "control-id": "at-2",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -622,10 +622,10 @@
         },
         {
           "control-id": "at-3",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -636,10 +636,10 @@
         },
         {
           "control-id": "at-4",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P3"
@@ -650,10 +650,10 @@
         },
         {
           "control-id": "au-1",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -664,10 +664,10 @@
         },
         {
           "control-id": "au-2",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -678,10 +678,10 @@
         },
         {
           "control-id": "au-3",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -692,10 +692,10 @@
         },
         {
           "control-id": "au-4",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -706,10 +706,10 @@
         },
         {
           "control-id": "au-5",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -720,10 +720,10 @@
         },
         {
           "control-id": "au-6",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -734,10 +734,10 @@
         },
         {
           "control-id": "au-8",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -748,10 +748,10 @@
         },
         {
           "control-id": "au-9",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -762,10 +762,10 @@
         },
         {
           "control-id": "au-11",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P3"
@@ -776,10 +776,10 @@
         },
         {
           "control-id": "au-12",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -790,10 +790,10 @@
         },
         {
           "control-id": "ca-1",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -804,10 +804,10 @@
         },
         {
           "control-id": "ca-2",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P2"
@@ -818,10 +818,10 @@
         },
         {
           "control-id": "ca-3",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -832,10 +832,10 @@
         },
         {
           "control-id": "ca-5",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P3"
@@ -846,10 +846,10 @@
         },
         {
           "control-id": "ca-6",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P2"
@@ -860,10 +860,10 @@
         },
         {
           "control-id": "ca-7",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P2"
@@ -874,10 +874,10 @@
         },
         {
           "control-id": "ca-9",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P2"
@@ -888,10 +888,10 @@
         },
         {
           "control-id": "cm-1",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -902,10 +902,10 @@
         },
         {
           "control-id": "cm-2",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -916,10 +916,10 @@
         },
         {
           "control-id": "cm-4",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P2"
@@ -930,10 +930,10 @@
         },
         {
           "control-id": "cm-6",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -944,10 +944,10 @@
         },
         {
           "control-id": "cm-7",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -958,10 +958,10 @@
         },
         {
           "control-id": "cm-8",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -972,10 +972,10 @@
         },
         {
           "control-id": "cm-10",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P2"
@@ -986,10 +986,10 @@
         },
         {
           "control-id": "cm-11",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1000,10 +1000,10 @@
         },
         {
           "control-id": "cp-1",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1014,10 +1014,10 @@
         },
         {
           "control-id": "cp-2",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1028,10 +1028,10 @@
         },
         {
           "control-id": "cp-3",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P2"
@@ -1042,10 +1042,10 @@
         },
         {
           "control-id": "cp-4",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P2"
@@ -1056,10 +1056,10 @@
         },
         {
           "control-id": "cp-9",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1070,10 +1070,10 @@
         },
         {
           "control-id": "cp-10",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1084,10 +1084,10 @@
         },
         {
           "control-id": "ia-1",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1098,10 +1098,10 @@
         },
         {
           "control-id": "ia-2",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1112,10 +1112,10 @@
         },
         {
           "control-id": "ia-4",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1126,10 +1126,10 @@
         },
         {
           "control-id": "ia-5",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1140,10 +1140,10 @@
         },
         {
           "control-id": "ia-6",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P2"
@@ -1154,10 +1154,10 @@
         },
         {
           "control-id": "ia-7",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1168,10 +1168,10 @@
         },
         {
           "control-id": "ia-8",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1182,10 +1182,10 @@
         },
         {
           "control-id": "ir-1",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1196,10 +1196,10 @@
         },
         {
           "control-id": "ir-2",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P2"
@@ -1210,10 +1210,10 @@
         },
         {
           "control-id": "ir-4",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1224,10 +1224,10 @@
         },
         {
           "control-id": "ir-5",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1238,10 +1238,10 @@
         },
         {
           "control-id": "ir-6",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1252,10 +1252,10 @@
         },
         {
           "control-id": "ir-7",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P2"
@@ -1266,10 +1266,10 @@
         },
         {
           "control-id": "ir-8",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1280,10 +1280,10 @@
         },
         {
           "control-id": "ma-1",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1294,10 +1294,10 @@
         },
         {
           "control-id": "ma-2",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P2"
@@ -1308,10 +1308,10 @@
         },
         {
           "control-id": "ma-4",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P2"
@@ -1322,10 +1322,10 @@
         },
         {
           "control-id": "ma-5",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P2"
@@ -1336,10 +1336,10 @@
         },
         {
           "control-id": "mp-1",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1350,10 +1350,10 @@
         },
         {
           "control-id": "mp-2",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1364,10 +1364,10 @@
         },
         {
           "control-id": "mp-6",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1378,10 +1378,10 @@
         },
         {
           "control-id": "mp-7",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1392,10 +1392,10 @@
         },
         {
           "control-id": "pe-1",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1406,10 +1406,10 @@
         },
         {
           "control-id": "pe-2",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1420,10 +1420,10 @@
         },
         {
           "control-id": "pe-3",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1434,10 +1434,10 @@
         },
         {
           "control-id": "pe-6",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1448,10 +1448,10 @@
         },
         {
           "control-id": "pe-8",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P3"
@@ -1462,10 +1462,10 @@
         },
         {
           "control-id": "pe-12",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1476,10 +1476,10 @@
         },
         {
           "control-id": "pe-13",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1490,10 +1490,10 @@
         },
         {
           "control-id": "pe-14",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1504,10 +1504,10 @@
         },
         {
           "control-id": "pe-15",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1518,10 +1518,10 @@
         },
         {
           "control-id": "pe-16",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P2"
@@ -1532,10 +1532,10 @@
         },
         {
           "control-id": "pl-1",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1546,10 +1546,10 @@
         },
         {
           "control-id": "pl-2",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1560,10 +1560,10 @@
         },
         {
           "control-id": "pl-4",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P2"
@@ -1574,10 +1574,10 @@
         },
         {
           "control-id": "ps-1",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1588,10 +1588,10 @@
         },
         {
           "control-id": "ps-2",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1602,10 +1602,10 @@
         },
         {
           "control-id": "ps-3",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1616,10 +1616,10 @@
         },
         {
           "control-id": "ps-4",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1630,10 +1630,10 @@
         },
         {
           "control-id": "ps-5",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P2"
@@ -1644,10 +1644,10 @@
         },
         {
           "control-id": "ps-6",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P3"
@@ -1658,10 +1658,10 @@
         },
         {
           "control-id": "ps-7",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1672,10 +1672,10 @@
         },
         {
           "control-id": "ps-8",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P3"
@@ -1686,10 +1686,10 @@
         },
         {
           "control-id": "ra-1",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1700,10 +1700,10 @@
         },
         {
           "control-id": "ra-2",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1714,10 +1714,10 @@
         },
         {
           "control-id": "ra-3",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1728,10 +1728,10 @@
         },
         {
           "control-id": "ra-5",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1742,10 +1742,10 @@
         },
         {
           "control-id": "sa-1",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1756,10 +1756,10 @@
         },
         {
           "control-id": "sa-2",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1770,10 +1770,10 @@
         },
         {
           "control-id": "sa-3",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1784,10 +1784,10 @@
         },
         {
           "control-id": "sa-4",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1798,10 +1798,10 @@
         },
         {
           "control-id": "sa-5",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P2"
@@ -1812,10 +1812,10 @@
         },
         {
           "control-id": "sa-9",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1826,10 +1826,10 @@
         },
         {
           "control-id": "sc-1",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1840,10 +1840,10 @@
         },
         {
           "control-id": "sc-5",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1854,10 +1854,10 @@
         },
         {
           "control-id": "sc-7",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1868,10 +1868,10 @@
         },
         {
           "control-id": "sc-12",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1882,10 +1882,10 @@
         },
         {
           "control-id": "sc-13",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1896,10 +1896,10 @@
         },
         {
           "control-id": "sc-15",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1910,10 +1910,10 @@
         },
         {
           "control-id": "sc-20",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1924,10 +1924,10 @@
         },
         {
           "control-id": "sc-21",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1938,10 +1938,10 @@
         },
         {
           "control-id": "sc-22",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1952,10 +1952,10 @@
         },
         {
           "control-id": "sc-39",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1966,10 +1966,10 @@
         },
         {
           "control-id": "si-1",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1980,10 +1980,10 @@
         },
         {
           "control-id": "si-2",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -1994,10 +1994,10 @@
         },
         {
           "control-id": "si-3",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -2008,10 +2008,10 @@
         },
         {
           "control-id": "si-4",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -2022,10 +2022,10 @@
         },
         {
           "control-id": "si-5",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P1"
@@ -2036,10 +2036,10 @@
         },
         {
           "control-id": "si-12",
-          "additions": [
+          "adds": [
             {
               "position": "starting",
-              "properties": [
+              "props": [
                 {
                   "name": "priority",
                   "value": "P2"
@@ -2054,7 +2054,7 @@
       "resources": [
         {
           "uuid": "31dbc4f2-c0e6-4e85-9cf4-b5d4843a32e8",
-          "desc": "NIST Special Publication 800-53 Revision 4: Security and Privacy Controls for Federal\n            Information Systems and Organizations",
+          "description": "NIST Special Publication 800-53 Revision 4: Security and Privacy Controls for Federal Information Systems and Organizations",
           "rlinks": [
             {
               "href": "NIST_SP-800-53_rev4_catalog.xml",

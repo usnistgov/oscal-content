@@ -1,7 +1,8 @@
 # path to source|format of source|model of source|format(s) to convert to
-src/ssp-example/json/ssp-example.json|json|ssp|xml
-src/ssp-example/xml/*.xml|xml|ssp|json
-src/components/json/example-component.json|json|component|xml
+src/examples/catalog/xml/*.xml|xml|catalog|json
+src/examples/ssp/xml/*.xml|xml|ssp|json
+src/examples/ssp/json/ssp-example.json|json|ssp|xml
+src/examples/component-definition/json/example-component.json|json|component|xml
 src/fedramp.gov/xml/*profile.xml|xml|profile|json
 src/nist.gov/SP800-53/rev4/xml/*catalog.xml|xml|catalog|json
 src/nist.gov/SP800-53/rev4/xml/*profile.xml|xml|profile|json

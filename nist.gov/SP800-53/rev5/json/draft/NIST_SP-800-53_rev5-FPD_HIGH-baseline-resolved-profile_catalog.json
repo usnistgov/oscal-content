@@ -1,22 +1,21 @@
 {
   "catalog": {
-    "uuid": "da06dcba-63d2-474b-991d-7d85479ee2d6",
+    "uuid": "824f2c6a-f386-4365-ad23-55d650ba5f95",
     "metadata": {
       "title": "SP800-53 HIGH IMPACT BASELINE",
-      "last-modified": "2020-09-25T12:02:00.000-04:00",
+      "last-modified": "2020-12-18T16:38:43.675-05:00",
       "version": "FPD",
-      "oscal-version": "1.0.0-milestone3",
-      "properties": [
+      "oscal-version": "1.0.0-rc1",
+      "props": [
         {
           "name": "resolution-timestamp",
-          "value": "2020-12-07T16:29:26.644497Z"
+          "value": "2020-12-20T23:09:48.473021-05:00"
         }
       ],
       "links": [
         {
           "href": "NIST_SP-800-53_rev5-FPD_HIGH-baseline_profile.xml",
-          "rel": "resolution-source",
-          "text": "SP800-53 HIGH IMPACT BASELINE"
+          "rel": "resolution-source"
         }
       ],
       "roles": [
@@ -33,10 +32,13 @@
         {
           "uuid": "a90f4235-ab3c-4bf1-ba0a-865bbc833346",
           "type": "organization",
-          "party-name": "Joint Task Force, Transformation Initiative",
+          "name": "Joint Task Force, Transformation Initiative",
+          "email-addresses": [
+            "sec-cert@nist.gov"
+          ],
           "addresses": [
             {
-              "postal-address": [
+              "addr-lines": [
                 "National Institute of Standards and Technology",
                 "Attn: Computer Security Division",
                 "Information Technology Laboratory",
@@ -46,9 +48,6 @@
               "state": "MD",
               "postal-code": "20899-8930"
             }
-          ],
-          "email-addresses": [
-            "sec-cert@nist.gov"
           ]
         }
       ],
