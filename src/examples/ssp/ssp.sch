@@ -13,7 +13,7 @@
 
   <sch:pattern>
     <sch:rule context="json:string[@key='role-id']">
-      <sch:assert test="exists(key('roles',.))">Referenced role-id not defined in this document: <sch:value-of select="."/>. Must be one of: <sch:value-of select="ancestor::json:map[@key='system-security-plan']/json:map[@key='metadata']/(json:map[@key='roles']|json:array[@key='roles']/json:map)/json:string[@key='id'e]"/></sch:assert>
+      <sch:assert test="exists(key('roles',.))">Referenced role-id not defined in this document: <sch:value-of select="."/>. Must be one of: <sch:value-of select="ancestor::json:map[@key='system-security-plan']/json:map[@key='metadata']/(json:map[@key='roles']|json:array[@key='roles']/json:map)/json:string[@key='id']"/></sch:assert>
     </sch:rule>
     <sch:rule context="json:map[@key='metadata']/json:map[@key='parties'] | json:map[@key='metadata']/json:array[@key='parties']/json:map">
       <sch:assert test="not(json:string[@key='id']) or
