@@ -1,20 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!-- Produced by SP800-53-profile-extract.xsl 2020-12-31-05:00; runtime parameter settings: $baseline='MODERATE'-->
 <profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="8bfc6a00-cb50-44aa-aaf4-1c21025355fb">
+         uuid="3d0b8e82-9703-40d7-b2ab-68d595d95f3a">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 5 MODERATE IMPACT BASELINE</title>
-      <last-modified>2020-12-18T16:38:47.269-05:00</last-modified>
+      <last-modified>2020-12-31T10:20:42.789-05:00</last-modified>
       <version>Final</version>
-      <oscal-version>1.0.0-rc1</oscal-version>
+      <oscal-version>1.0.0-milestone3</oscal-version>
       <role id="creator">
          <title>Document Creator</title>
       </role>
       <role id="contact">
          <title>Contact</title>
       </role>
-      <party uuid="0ae2bfc4-f011-499e-8215-ccb7d7429b62" type="organization">
-         <name>Joint Task Force, Transformation Initiative</name>
-         <email-address>sec-cert@nist.gov</email-address>
+      <party uuid="335a4c29-56c1-40e9-883e-28fae0eae753" type="organization">
+         <party-name>Joint Task Force, Transformation Initiative</party-name>
          <address>
             <addr-line>National Institute of Standards and Technology</addr-line>
             <addr-line>Attn: Computer Security Division</addr-line>
@@ -24,12 +23,13 @@
             <state>MD</state>
             <postal-code>20899-8930</postal-code>
          </address>
+         <email>sec-cert@nist.gov</email>
       </party>
       <responsible-party role-id="creator">
-         <party-uuid>0ae2bfc4-f011-499e-8215-ccb7d7429b62</party-uuid>
+         <party-uuid>335a4c29-56c1-40e9-883e-28fae0eae753</party-uuid>
       </responsible-party>
       <responsible-party role-id="contact">
-         <party-uuid>0ae2bfc4-f011-499e-8215-ccb7d7429b62</party-uuid>
+         <party-uuid>335a4c29-56c1-40e9-883e-28fae0eae753</party-uuid>
       </responsible-party>
    </metadata>
    <import href="NIST_SP-800-53_rev5_catalog.xml">
