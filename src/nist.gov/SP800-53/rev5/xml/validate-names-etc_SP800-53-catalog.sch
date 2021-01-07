@@ -212,9 +212,13 @@
         <sch:rule context="o:p|o:li">
             <sch:report test="matches(.,'^\s*\d')"><sch:name/> starts with a numeral</sch:report>
         </sch:rule>
+        <sch:rule context="o:b | o:i | o:u | o:a | o:code | o:q">
+            <sch:assert test="matches(.,'\S')"><sch:name/> appears without content</sch:assert>
+        </sch:rule>
         <sch:rule context="*[exists(text()[matches(.,'\S')])]">
             <sch:report test="matches(string(.),'\[Assign')">Check text for dropped paramater ("[Assign")</sch:report>
         </sch:rule>
+        
     </sch:pattern>
 
     
