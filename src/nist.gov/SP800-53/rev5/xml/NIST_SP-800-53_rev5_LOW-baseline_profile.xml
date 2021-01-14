@@ -1,18 +1,18 @@
-<!-- Produced by SP800-53-profile-extract.xsl 2020-12-31-05:00; runtime parameter settings: $baseline='LOW'-->
+<!-- Produced by SP800-53-profile-extract.xsl 2021-01-14-05:00; runtime parameter settings: $baseline='LOW'-->
 <profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="7e742a90-7978-4e74-b383-d3474c6b43d8">
+         uuid="d8ed99d1-443f-424c-b5b6-6240d963c088">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 5 LOW IMPACT BASELINE</title>
-      <last-modified>2020-12-31T10:48:57.877-05:00</last-modified>
+      <last-modified>2021-01-14T09:04:29.242-05:00</last-modified>
       <version>Final</version>
-      <oscal-version>1.0.0-milestone3</oscal-version>
+      <oscal-version>1.0.0-rc1</oscal-version>
       <role id="creator">
          <title>Document Creator</title>
       </role>
       <role id="contact">
          <title>Contact</title>
       </role>
-      <party uuid="613ebf7c-784f-4889-b187-69d985972227" type="organization">
+      <party uuid="984e6c07-b5b6-4ab6-b22b-283609c325e6" type="organization">
          <name>Joint Task Force, Transformation Initiative</name>
          <email-address>sec-cert@nist.gov</email-address>
          <address>
@@ -26,10 +26,10 @@
          </address>
       </party>
       <responsible-party role-id="creator">
-         <party-uuid>613ebf7c-784f-4889-b187-69d985972227</party-uuid>
+         <party-uuid>984e6c07-b5b6-4ab6-b22b-283609c325e6</party-uuid>
       </responsible-party>
       <responsible-party role-id="contact">
-         <party-uuid>613ebf7c-784f-4889-b187-69d985972227</party-uuid>
+         <party-uuid>984e6c07-b5b6-4ab6-b22b-283609c325e6</party-uuid>
       </responsible-party>
    </metadata>
    <import href="NIST_SP-800-53_rev5_catalog.xml">
