@@ -1,9 +1,9 @@
 {
   "profile": {
-    "uuid": "f2a82c5a-1d13-4caa-9563-08053890f0e8",
+    "uuid": "d8ed99d1-443f-424c-b5b6-6240d963c088",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 5 LOW IMPACT BASELINE",
-      "last-modified": "2020-12-18T16:38:46.677-05:00",
+      "last-modified": "2021-01-14T09:04:29.242-05:00",
       "version": "Final",
       "oscal-version": "1.0.0-rc1",
       "roles": [
@@ -18,7 +18,7 @@
       ],
       "parties": [
         {
-          "uuid": "d6de2cc9-5a07-4b86-8f61-1d72fa632b67",
+          "uuid": "984e6c07-b5b6-4ab6-b22b-283609c325e6",
           "type": "organization",
           "name": "Joint Task Force, Transformation Initiative",
           "email-addresses": [
@@ -42,12 +42,12 @@
       "responsible-parties": {
         "creator": {
           "party-uuids": [
-            "d6de2cc9-5a07-4b86-8f61-1d72fa632b67"
+            "984e6c07-b5b6-4ab6-b22b-283609c325e6"
           ]
         },
         "contact": {
           "party-uuids": [
-            "d6de2cc9-5a07-4b86-8f61-1d72fa632b67"
+            "984e6c07-b5b6-4ab6-b22b-283609c325e6"
           ]
         }
       }

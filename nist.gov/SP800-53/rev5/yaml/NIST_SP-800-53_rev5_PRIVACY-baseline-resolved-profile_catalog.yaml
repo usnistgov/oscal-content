@@ -1,14 +1,14 @@
 catalog: 
-  uuid:        44e0956d-0022-40d6-bf9a-c6bb34cdbfec
+  uuid:        42b9d219-7d1f-4018-8ee7-8b89830822fa
   metadata: 
     title:               NIST Special Publication 800-53 Revision 5 PRIVACY BASELINE
-    last-modified:       2020-12-18T16:38:47.895-05:00
+    last-modified:       2021-01-14T09:04:29.16-05:00
     version:             Final
     oscal-version:       1.0.0-rc1
     props: 
       - 
         name:  resolution-timestamp
-        value: 2020-12-22T00:55:41.939284-05:00
+        value: 2021-01-25T16:11:49.109231Z
     links: 
       - 
         href: NIST_SP-800-53_rev5_PRIVACY-baseline_profile.xml
@@ -22,7 +22,7 @@ catalog:
         title: Contact
     parties: 
       - 
-        uuid:            892cdf79-ce18-4c98-b7d7-721bb6a8de1c
+        uuid:            11f1de66-89ba-499d-903e-56418e95af9d
         type:            organization
         name:            Joint Task Force, Transformation Initiative
         email-addresses: sec-cert@nist.gov
@@ -34,9 +34,9 @@ catalog:
             postal-code: 20899-8930
     responsible-parties: 
       creator: 
-        party-uuids: 892cdf79-ce18-4c98-b7d7-721bb6a8de1c
+        party-uuids: 11f1de66-89ba-499d-903e-56418e95af9d
       contact: 
-        party-uuids: 892cdf79-ce18-4c98-b7d7-721bb6a8de1c
+        party-uuids: 11f1de66-89ba-499d-903e-56418e95af9d
   groups: 
     - 
       id:       ac
@@ -55,7 +55,7 @@ catalog:
               id:     ac-1_prm_2
               select: 
                 how-many: one or more
-                choice:   organization-level,mission/business process-level,system-level
+                choice:   Organization-level,Mission/business process-level,System-level
             - 
               id:    ac-1_prm_3
               label: organization-defined official
@@ -195,7 +195,7 @@ catalog:
             - 
               id:    ac-1_gdn
               name:  guidance
-              prose: Access control policy and procedures address the controls in the AC family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of access control policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies reflecting the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to access control policy and procedures include assessment or audit findings, security or privacy incidents, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
+              prose: Access control policy and procedures address the controls in the AC family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of access control policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies reflecting the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to access control policy and procedures include assessment or audit findings, security incidents or breaches, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
     - 
       id:       at
       class:    family
@@ -213,7 +213,7 @@ catalog:
               id:     at-1_prm_2
               select: 
                 how-many: one or more
-                choice:   organization-level,mission/business process-level,system-level
+                choice:   Organization-level,Mission/business process-level,System-level
             - 
               id:    at-1_prm_3
               label: organization-defined official
@@ -347,7 +347,7 @@ catalog:
             - 
               id:    at-1_gdn
               name:  guidance
-              prose: Awareness and training policy and procedures address the controls in the AT family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of awareness and training policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to awareness and training policy and procedures include assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
+              prose: Awareness and training policy and procedures address the controls in the AT family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of awareness and training policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to awareness and training policy and procedures include assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
         - 
           id:     at-2
           class:  SP800-53
@@ -495,7 +495,7 @@ catalog:
                     - 
                       name:  label
                       value: d.
-                  prose: Incorporate lessons learned from internal or external security or privacy incidents into literacy training and awareness techniques.
+                  prose: Incorporate lessons learned from internal or external security incidents or breaches into literacy training and awareness techniques.
             - 
               id:    at-2_gdn
               name:  guidance
@@ -503,7 +503,7 @@ catalog:
                 """
                   Organizations provide basic and advanced levels of literacy training to system users, including measures to test the knowledge level of users. Organizations determine the content of literacy training and awareness based on specific organizational requirements, the systems to which personnel have authorized access, and work environments (e.g., telework). The content includes an understanding of the need for security and privacy as well as actions by users to maintain security and personal privacy and to respond to suspected incidents. The content addresses the need for operations security and the handling of personally identifiable information.
                   
-                  Awareness techniques include displaying posters, offering supplies inscribed with security and privacy reminders, displaying logon screen messages, generating email advisories or notices from organizational officials, and conducting awareness events. Literacy training after the initial training described in [AT-2a.1](#at-2_smt.a.1) is conducted at a minimum frequency consistent with applicable laws, directives, regulations, and policies. Subsequent literacy training may be satisfied by one or more short ad hoc sessions and include topical information on recent attack schemes, changes to organizational security and privacy policies, revised security and privacy expectations, or a subset of topics from the initial training. Updating literacy training and awareness content on a regular basis helps to ensure that the content remains relevant. Events that may precipitate an update to literacy training and awareness content include, but are not limited to, assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines.
+                  Awareness techniques include displaying posters, offering supplies inscribed with security and privacy reminders, displaying logon screen messages, generating email advisories or notices from organizational officials, and conducting awareness events. Literacy training after the initial training described in [AT-2a.1](#at-2_smt.a.1) is conducted at a minimum frequency consistent with applicable laws, directives, regulations, and policies. Subsequent literacy training may be satisfied by one or more short ad hoc sessions and include topical information on recent attack schemes, changes to organizational security and privacy policies, revised security and privacy expectations, or a subset of topics from the initial training. Updating literacy training and awareness content on a regular basis helps to ensure that the content remains relevant. Events that may precipitate an update to literacy training and awareness content include, but are not limited to, assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines.
                 """
         - 
           id:       at-3
@@ -561,13 +561,13 @@ catalog:
               href: #ir-2
               rel:  related
             - 
+              href: #ir-4
+              rel:  related
+            - 
               href: #ir-7
               rel:  related
             - 
               href: #ir-9
-              rel:  related
-            - 
-              href: #ir-10
               rel:  related
             - 
               href: #pl-4
@@ -650,7 +650,7 @@ catalog:
                     - 
                       name:  label
                       value: c.
-                  prose: Incorporate lessons learned from internal or external security or privacy incidents into role-based training.
+                  prose: Incorporate lessons learned from internal or external security incidents or breaches into role-based training.
             - 
               id:    at-3_gdn
               name:  guidance
@@ -658,7 +658,7 @@ catalog:
                 """
                   Organizations determine the content of training based on the assigned roles and responsibilities of individuals as well as the security and privacy requirements of organizations and the systems to which personnel have authorized access, including technical training specifically tailored for assigned duties. Roles that may require role-based training include senior leaders or management officials (e.g., head of agency/chief executive officer, chief information officer, senior accountable official for risk management, senior agency information security officer, senior agency official for privacy), system owners; authorizing officials; system security officers; privacy officers; acquisition and procurement officials; enterprise architects; systems engineers; software developers; systems security engineers; privacy engineers; system, network, and database administrators; auditors; personnel conducting configuration management activities; personnel performing verification and validation activities; personnel with access to system-level software; control assessors; personnel with contingency planning and incident response duties; personnel with privacy management responsibilities; and personnel with access to personally identifiable information.
                   
-                  Comprehensive role-based training addresses management, operational, and technical roles and responsibilities covering physical, personnel, and technical controls. Role-based training also includes policies, procedures, tools, methods, and artifacts for the security and privacy roles defined. Organizations provide the training necessary for individuals to fulfill their responsibilities related to operations and supply chain risk management within the context of organizational security and privacy programs. Role-based training also applies to contractors who provide services to federal agencies. Types of training include web-based and computer-based training, classroom-style training, and hands-on training (including micro-training). Updating role-based training on a regular basis helps to ensure that the content remains relevant and effective. Events that may precipitate an update to role-based training content include, but are not limited to, assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines.
+                  Comprehensive role-based training addresses management, operational, and technical roles and responsibilities covering physical, personnel, and technical controls. Role-based training also includes policies, procedures, tools, methods, and artifacts for the security and privacy roles defined. Organizations provide the training necessary for individuals to fulfill their responsibilities related to operations and supply chain risk management within the context of organizational security and privacy programs. Role-based training also applies to contractors who provide services to federal agencies. Types of training include web-based and computer-based training, classroom-style training, and hands-on training (including micro-training). Updating role-based training on a regular basis helps to ensure that the content remains relevant and effective. Events that may precipitate an update to role-based training content include, but are not limited to, assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines.
                 """
           controls: 
             - 
@@ -708,11 +708,11 @@ catalog:
                 - 
                   id:    at-3.5_smt
                   name:  statement
-                  prose: Provide {{ at-3.5_prm_1 }} with initial and {{ at-3.5_prm_2 }} training in the employment and operation of personally identifiable information processing and transparency controls.
+                  prose: Provide {{ at-3.5_prm_1 }} with initial and {{ at-3.5_prm_2 }} training in the employment and operation of personally identifiable information processing and transparency controls. 
                 - 
                   id:    at-3.5_gdn
                   name:  guidance
-                  prose: Personally identifiable information processing and transparency controls include the organization’s authority to process personally identifiable information and personally identifiable information processing purposes. Role-based training for federal agencies addresses the types of information that may constitute personally identifiable information and the risks, considerations, and obligations associated with its processing. Such training also considers the authority to process personally identifiable information documented in privacy policies and notices, system of records notices, computer matching agreements and notices, privacy impact assessments, [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) statements, contracts, information sharing agreements, memoranda of understanding, and/or other documentation.
+                  prose: Personally identifiable information processing and transparency controls include the organization’s authority to process personally identifiable information and personally identifiable information processing purposes. Role-based training for federal agencies addresses the types of information that may constitute personally identifiable information and the risks, considerations, and obligations associated with its processing. Such training also considers the authority to process personally identifiable information documented in privacy policies and notices, system of records notices, computer matching agreements and notices, privacy impact assessments, [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) statements, contracts, information sharing agreements, memoranda of understanding, and/or other documentation. 
         - 
           id:     at-4
           class:  SP800-53
@@ -792,7 +792,7 @@ catalog:
               id:     au-1_prm_2
               select: 
                 how-many: one or more
-                choice:   organization-level,mission/business process-level,system-level
+                choice:   Organization-level,Mission/business process-level,System-level
             - 
               id:    au-1_prm_3
               label: organization-defined official
@@ -920,7 +920,7 @@ catalog:
             - 
               id:    au-1_gdn
               name:  guidance
-              prose: Audit and accountability policy and procedures address the controls in the AU family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of audit and accountability policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to audit and accountability policy and procedures include assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
+              prose: Audit and accountability policy and procedures address the controls in the AU family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of audit and accountability policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to audit and accountability policy and procedures include assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
         - 
           id:     au-2
           class:  SP800-53
@@ -1179,7 +1179,7 @@ catalog:
               id:     ca-1_prm_2
               select: 
                 how-many: one or more
-                choice:   organization-level,mission/business process-level,system-level
+                choice:   Organization-level,Mission/business process-level,System-level
             - 
               id:    ca-1_prm_3
               label: organization-defined official
@@ -1226,6 +1226,9 @@ catalog:
               rel:  reference
             - 
               href: #067223d8-1ec7-45c5-b21b-c848da6de8fb
+              rel:  reference
+            - 
+              href: #62ea77ca-e450-4323-b210-e0d75390e785
               rel:  reference
             - 
               href: #98d415ca-7281-4064-9931-0c366637e324
@@ -1322,7 +1325,7 @@ catalog:
             - 
               id:    ca-1_gdn
               name:  guidance
-              prose: Assessment, authorization, and monitoring policy and procedures address the controls in the CA family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of assessment, authorization, and monitoring policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to assessment, authorization, and monitoring policy and procedures include assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
+              prose: Assessment, authorization, and monitoring policy and procedures address the controls in the CA family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of assessment, authorization, and monitoring policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to assessment, authorization, and monitoring policy and procedures include assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
         - 
           id:     ca-2
           class:  SP800-53
@@ -1966,7 +1969,7 @@ catalog:
                 """
                   Continuous monitoring at the system level facilitates ongoing awareness of the system security and privacy posture to support organizational risk management decisions. The terms "continuous" and "ongoing" imply that organizations assess and monitor their controls and risks at a frequency sufficient to support risk-based decisions. Different types of controls may require different monitoring frequencies. The results of continuous monitoring generate risk response actions by organizations. When monitoring the effectiveness of multiple controls that have been grouped into capabilities, a root-cause analysis may be needed to determine the specific control that has failed. Continuous monitoring programs allow organizations to maintain the authorizations of systems and common controls in highly dynamic environments of operation with changing mission and business needs, threats, vulnerabilities, and technologies. Having access to security and privacy information on a continuing basis through reports and dashboards gives organizational officials the ability to make effective and timely risk management decisions, including ongoing authorization decisions.
                   
-                  Automation supports more frequent updates to hardware, software, and firmware inventories, authorization packages, and other system information. Effectiveness is further enhanced when continuous monitoring outputs are formatted to provide information that is specific, measurable, actionable, relevant, and timely. Continuous monitoring activities are scaled in accordance with the security categories of systems. Monitoring requirements, including the need for specific monitoring, may be referenced in other controls and control enhancements, such as [AC-2g](#ac-2_smt.g), [AC-2(7)](#ac-2.7), [AC-2(12)(a)](#ac-2.12_smt.a), [AC-2(7)(b)](#ac-2.7_smt.b), [AC-2(7)(c)](#ac-2.7_smt.c), [AC-17(1)](#ac-17.1), [AT-4a](#at-4_smt.a), [AU-13](#au-13), [AU-13(1)](#au-13.1), [AU-13(2)](#au-13.2), [CM-3f](#cm-3_smt.f), [CM-6d](#cm-6_smt.d), [CM-11c](#cm-11_smt.c), [IR-5](#ir-5), [MA-2b](#ma-2_smt.b), [MA-3a](#ma-3_smt.a), [MA-4a](#ma-4_smt.a), [PE-3d](#pe-3_smt.d), [PE-6](#pe-6), [PE-14b](#pe-14_smt.b), [PE-16](#pe-16), [PE-20](#pe-20), [PM-6](#pm-6), [PM-23](#pm-23), [PM-31](#pm-31), [PS-7e](#ps-7_smt.e), [SA-9c](#sa-9_smt.c), [SR-4](#sr-4), [SC-5(3)(b)](#sc-5.3_smt.b), [SC-7a](#sc-7_smt.a), [SC-7(24)(b)](#sc-7.24_smt.b), SC-18c, [SC-43b](#sc-43_smt.b), and [SI-4](#si-4).
+                  Automation supports more frequent updates to hardware, software, and firmware inventories, authorization packages, and other system information. Effectiveness is further enhanced when continuous monitoring outputs are formatted to provide information that is specific, measurable, actionable, relevant, and timely. Continuous monitoring activities are scaled in accordance with the security categories of systems. Monitoring requirements, including the need for specific monitoring, may be referenced in other controls and control enhancements, such as [AC-2g](#ac-2_smt.g), [AC-2(7)](#ac-2.7), [AC-2(12)(a)](#ac-2.12_smt.a), [AC-2(7)(b)](#ac-2.7_smt.b), [AC-2(7)(c)](#ac-2.7_smt.c), [AC-17(1)](#ac-17.1), [AT-4a](#at-4_smt.a), [AU-13](#au-13), [AU-13(1)](#au-13.1), [AU-13(2)](#au-13.2), [CM-3f](#cm-3_smt.f), [CM-6d](#cm-6_smt.d), [CM-11c](#cm-11_smt.c), [IR-5](#ir-5), [MA-2b](#ma-2_smt.b), [MA-3a](#ma-3_smt.a), [MA-4a](#ma-4_smt.a), [PE-3d](#pe-3_smt.d), [PE-6](#pe-6), [PE-14b](#pe-14_smt.b), [PE-16](#pe-16), [PE-20](#pe-20), [PM-6](#pm-6), [PM-23](#pm-23), [PM-31](#pm-31), [PS-7e](#ps-7_smt.e), [SA-9c](#sa-9_smt.c), [SR-4](#sr-4), [SC-5(3)(b)](#sc-5.3_smt.b), [SC-7a](#sc-7_smt.a), [SC-7(24)(b)](#sc-7.24_smt.b), [SC-18b](#sc-18_smt.b), [SC-43b](#sc-43_smt.b), and [SI-4](#si-4).
                 """
           controls: 
             - 
@@ -2035,7 +2038,7 @@ catalog:
               id:     cm-1_prm_2
               select: 
                 how-many: one or more
-                choice:   organization-level,mission/business process-level,system-level
+                choice:   Organization-level,Mission/business process-level,System-level
             - 
               id:    cm-1_prm_3
               label: organization-defined official
@@ -2169,7 +2172,7 @@ catalog:
             - 
               id:    cm-1_gdn
               name:  guidance
-              prose: Configuration management policy and procedures address the controls in the CM family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of configuration management policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission/business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to configuration management policy and procedures include, but are not limited to, assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
+              prose: Configuration management policy and procedures address the controls in the CM family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of configuration management policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission/business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to configuration management policy and procedures include, but are not limited to, assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
         - 
           id:    cm-4
           class: SP800-53
@@ -2247,7 +2250,7 @@ catalog:
               id:     ir-1_prm_2
               select: 
                 how-many: one or more
-                choice:   organization-level,mission/business process-level,system-level
+                choice:   Organization-level,Mission/business process-level,System-level
             - 
               id:    ir-1_prm_3
               label: organization-defined official
@@ -2387,11 +2390,11 @@ catalog:
             - 
               id:    ir-1_gdn
               name:  guidance
-              prose: Incident response policy and procedures address the controls in the IR family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of incident response policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to incident response policy and procedures include assessment or audit findings, security or privacy incidents, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
+              prose: Incident response policy and procedures address the controls in the IR family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of incident response policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to incident response policy and procedures include assessment or audit findings, security incidents or breaches, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
         - 
-          id:     ir-2
-          class:  SP800-53
-          title:  Incident Response Training
+          id:       ir-2
+          class:    SP800-53
+          title:    Incident Response Training
           params: 
             - 
               id:    ir-2_prm_1
@@ -2493,6 +2496,37 @@ catalog:
               id:    ir-2_gdn
               name:  guidance
               prose: Incident response training is associated with the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail are included in such training. For example, users may only need to know who to call or how to recognize an incident; system administrators may require additional training on how to handle incidents; and incident responders may receive more specific training on forensics, data collection techniques, reporting, system recovery, and system restoration. Incident response training includes user training in identifying and reporting suspicious activities from external and internal sources. Incident response training for users may be provided as part of [AT-2](#at-2) or [AT-3](#at-3). Events that may precipitate an update to incident response training content include, but are not limited to, incident response plan testing or response to an actual incident (lessons learned), assessment or audit findings, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines.
+          controls: 
+            - 
+              id:    ir-2.3
+              class: SP800-53-enhancement
+              title: Breach
+              props: 
+                - 
+                  name:  label
+                  value: IR-2(3)
+                - 
+                  name:  sort-id
+                  value: ir-02.03
+              links: 
+                - 
+                  href: #ir-2
+                  rel:  required
+                - 
+                  href: #5f4705ac-8d17-438c-b23a-ac7f12362ae4
+                  rel:  reference
+                - 
+                  href: #511f6832-23ca-49a3-8c0f-ce493373cab8
+                  rel:  reference
+              parts: 
+                - 
+                  id:    ir-2.3_smt
+                  name:  statement
+                  prose: Provide incident response training on how to identify and respond to a breach, including the organization’s process for reporting a breach.
+                - 
+                  id:    ir-2.3_gdn
+                  name:  guidance
+                  prose: For federal agencies, an incident that involves personally identifiable information is considered a breach. A breach results in the loss of control, compromise, unauthorized disclosure, unauthorized acquisition, or a similar occurrence where a person other than an authorized user accesses or potentially accesses personally identifiable information or an authorized user accesses or potentially accesses such information for other than authorized purposes. The incident response training emphasizes the obligation of individuals to report both confirmed and suspected breaches involving information in any medium or form, including paper, oral, and electronic. Incident response training includes tabletop exercises that simulate a breach. See [IR-2(1)](#ir-2.1).
         - 
           id:     ir-3
           class:  SP800-53
@@ -2618,6 +2652,9 @@ catalog:
               href: #ir-3
               rel:  related
             - 
+              href: #ir-5
+              rel:  related
+            - 
               href: #ir-6
               rel:  related
             - 
@@ -2711,6 +2748,12 @@ catalog:
               rel:  related
             - 
               href: #au-7
+              rel:  related
+            - 
+              href: #ir-4
+              rel:  related
+            - 
+              href: #ir-6
               rel:  related
             - 
               href: #ir-8
@@ -2868,7 +2911,7 @@ catalog:
             - 
               id:    ir-7_smt
               name:  statement
-              prose: Provide an incident response support resource, integral to the organizational incident response capability, that offers advice and assistance to users of the system for the handling and reporting of incidents.
+              prose: Provide an incident response support resource, integral to the organizational incident response capability, that offers advice and assistance to users of the system for the handling and reporting of incidents. 
             - 
               id:    ir-7_gdn
               name:  guidance
@@ -3145,7 +3188,7 @@ catalog:
                         - 
                           name:  label
                           value: (c)
-                      prose: Identification of applicable privacy requirements.
+                      prose: Identification of applicable privacy requirements. 
                 - 
                   id:    ir-8.1_gdn
                   name:  guidance
@@ -3167,7 +3210,7 @@ catalog:
               id:     mp-1_prm_2
               select: 
                 how-many: one or more
-                choice:   organization-level,mission/business process-level,system-level
+                choice:   Organization-level,Mission/business process-level,System-level
             - 
               id:    mp-1_prm_3
               label: organization-defined official
@@ -3298,7 +3341,7 @@ catalog:
             - 
               id:    mp-1_gdn
               name:  guidance
-              prose: Media protection policy and procedures address the controls in the MP family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of media protection policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to media protection policy and procedures include assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
+              prose: Media protection policy and procedures address the controls in the MP family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of media protection policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to media protection policy and procedures include assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
         - 
           id:     mp-6
           class:  SP800-53
@@ -3426,7 +3469,7 @@ catalog:
               id:     pl-1_prm_2
               select: 
                 how-many: one or more
-                choice:   organization-level,mission/business process-level,system-level
+                choice:   Organization-level,Mission/business process-level,System-level
             - 
               id:    pl-1_prm_3
               label: organization-defined official
@@ -3560,7 +3603,7 @@ catalog:
             - 
               id:    pl-1_gdn
               name:  guidance
-              prose: Planning policy and procedures for the controls in the PL family implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on their development. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission level or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission/business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to planning policy and procedures include, but are not limited to, assessment or audit findings, security or privacy incidents, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
+              prose: Planning policy and procedures for the controls in the PL family implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on their development. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission level or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission/business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to planning policy and procedures include, but are not limited to, assessment or audit findings, security incidents or breaches, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
         - 
           id:     pl-2
           class:  SP800-53
@@ -3778,7 +3821,7 @@ catalog:
                         - 
                           name:  label
                           value: 7.
-                      prose: Describe any specific threats to the system that are of concern to the organization;
+                      prose: Describe any specific threats to the system that are of concern to the organization; 
                     - 
                       id:    pl-2_smt.a.8
                       name:  item
@@ -3858,7 +3901,7 @@ catalog:
                     - 
                       name:  label
                       value: c.
-                  prose: Review the plans {{ pl-2_prm_3 }};
+                  prose: Review the plans {{ pl-2_prm_3 }}; 
                 - 
                   id:    pl-2_smt.d
                   name:  item
@@ -4515,7 +4558,7 @@ catalog:
             - 
               id:    pm-7_smt
               name:  statement
-              prose: Develop and maintain an enterprise architecture with consideration for information security, privacy, and the resulting risk to organizational operations and assets, individuals, other organizations, and the Nation.
+              prose: Develop and maintain an enterprise architecture with consideration for information security, privacy, and the resulting risk to organizational operations and assets, individuals, other organizations, and the Nation. 
             - 
               id:    pm-7_gdn
               name:  guidance
@@ -4532,6 +4575,9 @@ catalog:
               name:  sort-id
               value: pm-08
           links: 
+            - 
+              href: #3406fdc0-d61c-44a9-a5ca-84180544c83a
+              rel:  reference
             - 
               href: #27847491-5ce1-4f6a-a1e4-9e483782f0ef
               rel:  reference
@@ -4572,7 +4618,7 @@ catalog:
             - 
               id:    pm-8_smt
               name:  statement
-              prose: Address information security and privacy issues in the development, documentation, and updating of a critical infrastructure and key resources protection plan.
+              prose: Address information security and privacy issues in the development, documentation, and updating of a critical infrastructure and key resources protection plan. 
             - 
               id:    pm-8_gdn
               name:  guidance
@@ -4791,6 +4837,9 @@ catalog:
               href: #cec037f3-8aba-4c97-84b4-4082f9e515d2
               rel:  reference
             - 
+              href: #276bd50a-7e58-48e5-a405-8c8cb91d7a5f
+              rel:  reference
+            - 
               href: #ca-6
               rel:  related
             - 
@@ -4883,6 +4932,9 @@ catalog:
               rel:  related
             - 
               href: #ra-3
+              rel:  related
+            - 
+              href: #ra-9
               rel:  related
             - 
               href: #sa-2
@@ -5069,6 +5121,9 @@ catalog:
               href: #7dbd6d9f-29d6-4d1d-9766-f2d77ff3c849
               rel:  reference
             - 
+              href: #f26af0d0-6d72-4a9d-8ecd-01bc21fd4f0e
+              rel:  reference
+            - 
               href: #c28ae9a8-1121-42a9-a85e-00cfcc9b9a94
               rel:  reference
             - 
@@ -5194,7 +5249,7 @@ catalog:
                         - 
                           name:  label
                           value: 6.
-                      prose: Is approved by a senior official with responsibility and accountability for the privacy risk being incurred to organizational operations (including mission, functions, image, and reputation), organizational assets, individuals, other organizations, and the Nation; and
+                      prose: Is approved by a senior official with responsibility and accountability for the privacy risk being incurred to organizational operations (including mission, functions, image, and reputation), organizational assets, individuals, other organizations, and the Nation; and 
                 - 
                   id:    pm-18_smt.b
                   name:  item
@@ -5242,6 +5297,9 @@ catalog:
               rel:  related
             - 
               href: #pm-24
+              rel:  related
+            - 
+              href: #pm-27
               rel:  related
           parts: 
             - 
@@ -5379,7 +5437,7 @@ catalog:
                         - 
                           name:  label
                           value: (c)
-                      prose: Are updated whenever the organization makes a substantive change to the practices it describes and includes a time/date stamp to inform the public of the date of the most recent changes.
+                      prose: Are updated whenever the organization makes a substantive change to the practices it describes and includes a time/date stamp to inform the public of the date of the most recent changes. 
                 - 
                   id:    pm-20.1_gdn
                   name:  guidance
@@ -5482,6 +5540,9 @@ catalog:
               href: #27847491-5ce1-4f6a-a1e4-9e483782f0ef
               rel:  reference
             - 
+              href: #227063d4-431e-435f-9e8f-009b6dbc20f4
+              rel:  reference
+            - 
               href: #c15bfc12-a61e-4ca5-bf35-fa9ce3ccb5d2
               rel:  reference
             - 
@@ -5503,7 +5564,7 @@ catalog:
                     - 
                       name:  label
                       value: a.
-                  prose: Reviewing for the accuracy, relevance, timeliness, and completeness of personally identifiable information across the information life cycle;
+                  prose: Reviewing for the accuracy, relevance, timeliness, and completeness of personally identifiable information across the information life cycle; 
                 - 
                   id:    pm-22_smt.b
                   name:  item
@@ -5533,9 +5594,9 @@ catalog:
               name:  guidance
               prose: 
                 """
-                  Personally identifiable information quality management includes steps that organizations take to confirm the accuracy and relevance of personally identifiable information throughout the information life cycle. The information life cycle includes the creation, collection, use, processing, storage, maintenance, dissemination, disclosure, and disposition of personally identifiable information. Organizational policies and procedures for personally identifiable information quality management are important because inaccurate or outdated personally identifiable information maintained by organizations may cause problems for individuals. Organizations consider the quality of personally identifiable information involved in business functions where inaccurate information may result in adverse decisions or the denial of benefits and services, or the disclosure of the information may cause stigmatization. Correct information, in certain circumstances, can cause problems for individuals that outweigh the benefits of organizations maintaining the information. Organizations consider creating policies and procedures for the removal of such information.
+                  Personally identifiable information quality management includes steps that organizations take to confirm the accuracy and relevance of personally identifiable information throughout the information life cycle. The information life cycle includes the creation, collection, use, processing, storage, maintenance, dissemination, disclosure, and disposition of personally identifiable information. Organizational policies and procedures for personally identifiable information quality management are important because inaccurate or outdated personally identifiable information maintained by organizations may cause problems for individuals. Organizations consider the quality of personally identifiable information involved in business functions where inaccurate information may result in adverse decisions or the denial of benefits and services, or the disclosure of the information may cause stigmatization. Correct information, in certain circumstances, can cause problems for individuals that outweigh the benefits of organizations maintaining the information. Organizations consider creating policies and procedures for the removal of such information. 
                   
-                  The senior agency official for privacy ensures that practical means and mechanisms exist and are accessible for individuals or their authorized representatives to seek the correction or deletion of personally identifiable information. Processes for correcting or deleting data are clearly defined and publicly available. Organizations use discretion in determining whether data is to be deleted or corrected based on the scope of requests, the changes sought, and the impact of the changes. Additionally, processes include the provision of responses to individuals of decisions to deny requests for correction or deletion. The responses include the reasons for the decisions, a means to record individual objections to the decisions, and a means of requesting reviews of the initial determinations.
+                  The senior agency official for privacy ensures that practical means and mechanisms exist and are accessible for individuals or their authorized representatives to seek the correction or deletion of personally identifiable information. Processes for correcting or deleting data are clearly defined and publicly available. Organizations use discretion in determining whether data is to be deleted or corrected based on the scope of requests, the changes sought, and the impact of the changes. Additionally, processes include the provision of responses to individuals of decisions to deny requests for correction or deletion. The responses include the reasons for the decisions, a means to record individual objections to the decisions, and a means of requesting reviews of the initial determinations. 
                   
                   Organizations notify individuals or their designated representatives when their personally identifiable information is corrected or deleted to provide transparency and confirm the completed action. Due to the complexity of data flows and storage, other entities may need to be informed of the correction or deletion. Notice supports the consistent correction and deletion of personally identifiable information across the data ecosystem.
                 """
@@ -5568,6 +5629,9 @@ catalog:
               rel:  related
             - 
               href: #pm-23
+              rel:  related
+            - 
+              href: #pt-2
               rel:  related
             - 
               href: #pt-8
@@ -5628,6 +5692,9 @@ catalog:
               rel:  related
             - 
               href: #sa-8
+              rel:  related
+            - 
+              href: #si-12
               rel:  related
           parts: 
             - 
@@ -5980,6 +6047,9 @@ catalog:
               href: #067223d8-1ec7-45c5-b21b-c848da6de8fb
               rel:  reference
             - 
+              href: #62ea77ca-e450-4323-b210-e0d75390e785
+              rel:  reference
+            - 
               href: #ac-2
               rel:  related
             - 
@@ -6186,7 +6256,7 @@ catalog:
             - 
               id:    pm-31_gdn
               name:  guidance
-              prose: Continuous monitoring at the organization level facilitates ongoing awareness of the security and privacy posture across the organization to support organizational risk management decisions. The terms "continuous" and "ongoing" imply that organizations assess and monitor their controls and risks at a frequency sufficient to support risk-based decisions. Different types of controls may require different monitoring frequencies. The results of continuous monitoring guide and inform risk response actions by organizations. Continuous monitoring programs allow organizations to maintain the authorizations of systems and common controls in highly dynamic environments of operation with changing mission and business needs, threats, vulnerabilities, and technologies. Having access to security- and privacy-related information on a continuing basis through reports and dashboards gives organizational officials the capability to make effective, timely, and informed risk management decisions, including ongoing authorization decisions. To further facilitate security and privacy risk management, organizations consider aligning organization-defined monitoring metrics with organizational risk tolerance as defined in the risk management strategy. Monitoring requirements, including the need for monitoring, may be referenced in other controls and control enhancements such as, [AC-2g](#ac-2_smt.g), [AC-2(7)](#ac-2.7), [AC-2(12)(a)](#ac-2.12_smt.a), [AC-2(7)(b)](#ac-2.7_smt.b), [AC-2(7)(c)](#ac-2.7_smt.c), [AC-17(1)](#ac-17.1), [AT-4a](#at-4_smt.a), [AU-13](#au-13), [AU-13(1)](#au-13.1), [AU-13(2)](#au-13.2), [CA-7](#ca-7), [CM-3f](#cm-3_smt.f), [CM-6d](#cm-6_smt.d), [CM-11c](#cm-11_smt.c), [IR-5](#ir-5), [MA-2b](#ma-2_smt.b), [MA-3a](#ma-3_smt.a), [MA-4a](#ma-4_smt.a), [PE-3d](#pe-3_smt.d), [PE-6](#pe-6), [PE-14b](#pe-14_smt.b), [PE-16](#pe-16), [PE-20](#pe-20), [PM-6](#pm-6), [PM-23](#pm-23), [PS-7e](#ps-7_smt.e), [SA-9c](#sa-9_smt.c), [SC-5(3)(b)](#sc-5.3_smt.b), [SC-7a](#sc-7_smt.a), [SC-7(24)(b)](#sc-7.24_smt.b), SC-18c, [SC-43b](#sc-43_smt.b), [SI-4](#si-4).
+              prose: Continuous monitoring at the organization level facilitates ongoing awareness of the security and privacy posture across the organization to support organizational risk management decisions. The terms "continuous" and "ongoing" imply that organizations assess and monitor their controls and risks at a frequency sufficient to support risk-based decisions. Different types of controls may require different monitoring frequencies. The results of continuous monitoring guide and inform risk response actions by organizations. Continuous monitoring programs allow organizations to maintain the authorizations of systems and common controls in highly dynamic environments of operation with changing mission and business needs, threats, vulnerabilities, and technologies. Having access to security- and privacy-related information on a continuing basis through reports and dashboards gives organizational officials the capability to make effective, timely, and informed risk management decisions, including ongoing authorization decisions. To further facilitate security and privacy risk management, organizations consider aligning organization-defined monitoring metrics with organizational risk tolerance as defined in the risk management strategy. Monitoring requirements, including the need for monitoring, may be referenced in other controls and control enhancements such as, [AC-2g](#ac-2_smt.g), [AC-2(7)](#ac-2.7), [AC-2(12)(a)](#ac-2.12_smt.a), [AC-2(7)(b)](#ac-2.7_smt.b), [AC-2(7)(c)](#ac-2.7_smt.c), [AC-17(1)](#ac-17.1), [AT-4a](#at-4_smt.a), [AU-13](#au-13), [AU-13(1)](#au-13.1), [AU-13(2)](#au-13.2), [CA-7](#ca-7), [CM-3f](#cm-3_smt.f), [CM-6d](#cm-6_smt.d), [CM-11c](#cm-11_smt.c), [IR-5](#ir-5), [MA-2b](#ma-2_smt.b), [MA-3a](#ma-3_smt.a), [MA-4a](#ma-4_smt.a), [PE-3d](#pe-3_smt.d), [PE-6](#pe-6), [PE-14b](#pe-14_smt.b), [PE-16](#pe-16), [PE-20](#pe-20), [PM-6](#pm-6), [PM-23](#pm-23), [PS-7e](#ps-7_smt.e), [SA-9c](#sa-9_smt.c), [SC-5(3)(b)](#sc-5.3_smt.b), [SC-7a](#sc-7_smt.a), [SC-7(24)(b)](#sc-7.24_smt.b), [SC-18b](#sc-18_smt.b), [SC-43b](#sc-43_smt.b), [SI-4](#si-4).
     - 
       id:       ps
       class:    family
@@ -6269,7 +6339,7 @@ catalog:
                     - 
                       name:  label
                       value: c.
-                  prose: Verify that individuals requiring access to organizational information and systems:
+                  prose: Verify that individuals requiring access to organizational information and systems: 
                   parts: 
                     - 
                       id:    ps-6_smt.c.1
@@ -6308,7 +6378,7 @@ catalog:
               id:     pt-1_prm_2
               select: 
                 how-many: one or more
-                choice:   organization-level,mission/business process-level,system-level
+                choice:   Organization-level,Mission/business process-level,System-level
             - 
               id:    pt-1_prm_3
               label: organization-defined official
@@ -6418,7 +6488,7 @@ catalog:
             - 
               id:    pt-1_gdn
               name:  guidance
-              prose: Personally identifiable information processing and transparency policy and procedures address the controls in the PT family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of personally identifiable information processing and transparency policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to personally identifiable information processing and transparency policy and procedures include assessment or audit findings, privacy breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
+              prose: Personally identifiable information processing and transparency policy and procedures address the controls in the PT family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of personally identifiable information processing and transparency policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to personally identifiable information processing and transparency policy and procedures include assessment or audit findings, breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
         - 
           id:     pt-2
           class:  SP800-53
@@ -6518,9 +6588,9 @@ catalog:
               name:  guidance
               prose: 
                 """
-                  The processing of personally identifiable information is an operation or set of operations that the information system or organization performs with respect to personally identifiable information across the information life cycle. Processing includes but is not limited to creation, collection, use, processing, storage, maintenance, dissemination, disclosure, and disposal. Processing operations also include logging, generation, and transformation, as well as analysis techniques, such as data mining.
+                  The processing of personally identifiable information is an operation or set of operations that the information system or organization performs with respect to personally identifiable information across the information life cycle. Processing includes but is not limited to creation, collection, use, processing, storage, maintenance, dissemination, disclosure, and disposal. Processing operations also include logging, generation, and transformation, as well as analysis techniques, such as data mining. 
                   
-                  Organizations may be subject to laws, executive orders, directives, regulations, or policies that establish the organization’s authority and thereby limit certain types of processing of personally identifiable information or establish other requirements related to the processing. Organizational personnel consult with the senior agency official for privacy and legal counsel regarding such authority, particularly if the organization is subject to multiple jurisdictions or sources of authority. For organizations whose processing is not determined according to legal authorities, the organization’s policies and determinations govern how they process personally identifiable information. While processing of personally identifiable information may be legally permissible, privacy risks may still arise. Privacy risk assessments can identify the privacy risks associated with the authorized processing of personally identifiable information and support solutions to manage such risks.
+                  Organizations may be subject to laws, executive orders, directives, regulations, or policies that establish the organization’s authority and thereby limit certain types of processing of personally identifiable information or establish other requirements related to the processing. Organizational personnel consult with the senior agency official for privacy and legal counsel regarding such authority, particularly if the organization is subject to multiple jurisdictions or sources of authority. For organizations whose processing is not determined according to legal authorities, the organization’s policies and determinations govern how they process personally identifiable information. While processing of personally identifiable information may be legally permissible, privacy risks may still arise. Privacy risk assessments can identify the privacy risks associated with the authorized processing of personally identifiable information and support solutions to manage such risks. 
                   
                   Organizations consider applicable requirements and organizational policies to determine how to document this authority. For federal agencies, the authority to process personally identifiable information is documented in privacy policies and notices, system of records notices, privacy impact assessments, [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) statements, computer matching agreements and notices, contracts, information sharing agreements, memoranda of understanding, and other documentation.
                   
@@ -6625,7 +6695,7 @@ catalog:
                     - 
                       name:  label
                       value: b.
-                  prose: Describe the purpose(s) in the public privacy notices and policies of the organization;
+                  prose: Describe the purpose(s) in the public privacy notices and policies of the organization; 
                 - 
                   id:    pt-3_smt.c
                   name:  item
@@ -6633,7 +6703,7 @@ catalog:
                     - 
                       name:  label
                       value: c.
-                  prose: Restrict the {{ pt-3_prm_2 }} of personally identifiable information to only that which is compatible with the identified purpose(s); and
+                  prose: Restrict the {{ pt-3_prm_2 }} of personally identifiable information to only that which is compatible with the identified purpose(s); and 
                 - 
                   id:    pt-3_smt.d
                   name:  item
@@ -6651,7 +6721,7 @@ catalog:
                   
                   Organizations take steps to help ensure that personally identifiable information is processed only for identified purposes, including training organizational personnel and monitoring and auditing organizational processing of personally identifiable information.
                   
-                  Organizations monitor for changes in personally identifiable information processing. Organizational personnel consult with the senior agency official for privacy and legal counsel to ensure that any new purposes that arise from changes in processing are compatible with the purpose for which the information was collected, or if the new purpose is not compatible, implement mechanisms in accordance with defined requirements to allow for the new processing, if appropriate. Mechanisms may include obtaining consent from individuals, revising privacy policies, or other measures to manage privacy risks that arise from changes in personally identifiable information processing purposes.
+                  Organizations monitor for changes in personally identifiable information processing. Organizational personnel consult with the senior agency official for privacy and legal counsel to ensure that any new purposes that arise from changes in processing are compatible with the purpose for which the information was collected, or if the new purpose is not compatible, implement mechanisms in accordance with defined requirements to allow for the new processing, if appropriate. Mechanisms may include obtaining consent from individuals, revising privacy policies, or other measures to manage privacy risks that arise from changes in personally identifiable information processing purposes. 
                 """
         - 
           id:     pt-4
@@ -6695,7 +6765,7 @@ catalog:
             - 
               id:    pt-4_gdn
               name:  guidance
-              prose: Consent allows individuals to participate in making decisions about the processing of their information and transfers some of the risk that arises from the processing of personally identifiable information from the organization to an individual. Consent may be required by applicable laws, executive orders, directives, regulations, policies, standards, or guidelines. Otherwise, when selecting consent as a control, organizations consider whether individuals can be reasonably expected to understand and accept the privacy risks that arise from their authorization. Organizations consider whether other controls may more effectively mitigate privacy risk either alone or in conjunction with consent. Organizations also consider any demographic or contextual factors that may influence the understanding or behavior of individuals with respect to the processing carried out by the system or organization. When soliciting consent from individuals, organizations consider the appropriate mechanism for obtaining consent, including the type of consent (e.g., opt-in, opt-out), how to properly authenticate and identity proof individuals and how to obtain consent through electronic means. In addition, organizations consider providing a mechanism for individuals to revoke consent once it has been provided, as appropriate. Finally, organizations consider usability factors to help individuals understand the risks being accepted when providing consent, including the use of plain language and avoiding technical jargon.
+              prose: Consent allows individuals to participate in making decisions about the processing of their information and transfers some of the risk that arises from the processing of personally identifiable information from the organization to an individual. Consent may be required by applicable laws, executive orders, directives, regulations, policies, standards, or guidelines. Otherwise, when selecting consent as a control, organizations consider whether individuals can be reasonably expected to understand and accept the privacy risks that arise from their authorization. Organizations consider whether other controls may more effectively mitigate privacy risk either alone or in conjunction with consent. Organizations also consider any demographic or contextual factors that may influence the understanding or behavior of individuals with respect to the processing carried out by the system or organization. When soliciting consent from individuals, organizations consider the appropriate mechanism for obtaining consent, including the type of consent (e.g., opt-in, opt-out), how to properly authenticate and identity proof individuals and how to obtain consent through electronic means. In addition, organizations consider providing a mechanism for individuals to revoke consent once it has been provided, as appropriate. Finally, organizations consider usability factors to help individuals understand the risks being accepted when providing consent, including the use of plain language and avoiding technical jargon. 
         - 
           id:       pt-5
           class:    SP800-53
@@ -6744,6 +6814,9 @@ catalog:
               rel:  related
             - 
               href: #ra-3
+              rel:  related
+            - 
+              href: #sc-42
               rel:  related
             - 
               href: #si-18
@@ -6801,7 +6874,7 @@ catalog:
                 """
                   Privacy notices help inform individuals about how their personally identifiable information is being processed by the system or organization. Organizations use privacy notices to inform individuals about how, under what authority, and for what purpose their personally identifiable information is processed, as well as other information such as choices individuals might have with respect to that processing and other parties with whom information is shared. Laws, executive orders, directives, regulations, or policies may require that privacy notices include specific elements or be provided in specific formats. Federal agency personnel consult with the senior agency official for privacy and legal counsel regarding when and where to provide privacy notices, as well as elements to include in privacy notices and required formats. In circumstances where laws or government-wide policies do not require privacy notices, organizational policies and determinations may require privacy notices and may serve as a source of the elements to include in privacy notices.
                   
-                  Privacy risk assessments identify the privacy risks associated with the processing of personally identifiable information and may help organizations determine appropriate elements to include in a privacy notice to manage such risks. To help individuals understand how their information is being processed, organizations write materials in plain language and avoid technical jargon.
+                  Privacy risk assessments identify the privacy risks associated with the processing of personally identifiable information and may help organizations determine appropriate elements to include in a privacy notice to manage such risks. To help individuals understand how their information is being processed, organizations write materials in plain language and avoid technical jargon. 
                 """
           controls: 
             - 
@@ -7001,6 +7074,9 @@ catalog:
               href: #3671ff20-c17c-44d6-8a88-7de203fa74aa
               rel:  reference
             - 
+              href: #c28ae9a8-1121-42a9-a85e-00cfcc9b9a94
+              rel:  reference
+            - 
               href: #ir-9
               rel:  related
             - 
@@ -7016,7 +7092,7 @@ catalog:
             - 
               id:    pt-7_smt
               name:  statement
-              prose: Apply {{ pt-7_prm_1 }} for specific categories of personally identifiable information.
+              prose: Apply {{ pt-7_prm_1 }} for specific categories of personally identifiable information. 
             - 
               id:    pt-7_gdn
               name:  guidance
@@ -7073,7 +7149,7 @@ catalog:
                 - 
                   id:    pt-7.1_gdn
                   name:  guidance
-                  prose: Federal law and policy establish specific requirements for organizations’ processing of Social Security numbers. Organizations take steps to eliminate unnecessary uses of Social Security numbers and other sensitive information and observe any particular requirements that apply.
+                  prose: Federal law and policy establish specific requirements for organizations’ processing of Social Security numbers. Organizations take steps to eliminate unnecessary uses of Social Security numbers and other sensitive information and observe any particular requirements that apply. 
             - 
               id:    pt-7.2
               class: SP800-53-enhancement
@@ -7098,6 +7174,9 @@ catalog:
                 - 
                   href: #3671ff20-c17c-44d6-8a88-7de203fa74aa
                   rel:  reference
+                - 
+                  href: #c28ae9a8-1121-42a9-a85e-00cfcc9b9a94
+                  rel:  reference
               parts: 
                 - 
                   id:    pt-7.2_smt
@@ -7121,6 +7200,9 @@ catalog:
           links: 
             - 
               href: #18e71fec-c6fd-475a-925a-5d8495cf8455
+              rel:  reference
+            - 
+              href: #94c64e1a-456c-457f-86da-83ac0dfc85ac
               rel:  reference
             - 
               href: #27847491-5ce1-4f6a-a1e4-9e483782f0ef
@@ -7180,7 +7262,7 @@ catalog:
             - 
               id:    pt-8_gdn
               name:  guidance
-              prose: The [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) establishes requirements for federal and non-federal agencies if they engage in a matching program. In general, a matching program is a computerized comparison of records from two or more automated [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) systems of records or an automated system of records and automated records maintained by a non-federal agency (or agent thereof). A matching program either pertains to federal benefit programs or federal personnel or payroll records. A federal benefit match is performed to determine or verify eligibility for payments under federal benefit programs or to recoup payments or delinquent debts under federal benefit programs. A matching program involves not just the matching activity itself but also the investigative follow-up and ultimate action, if any.
+              prose: The [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) establishes requirements for federal and non-federal agencies if they engage in a matching program. In general, a matching program is a computerized comparison of records from two or more automated [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) systems of records or an automated system of records and automated records maintained by a non-federal agency (or agent thereof). A matching program either pertains to federal benefit programs or federal personnel or payroll records. A federal benefit match is performed to determine or verify eligibility for payments under federal benefit programs or to recoup payments or delinquent debts under federal benefit programs. A matching program involves not just the matching activity itself but also the investigative follow-up and ultimate action, if any. 
     - 
       id:       ra
       class:    family
@@ -7198,7 +7280,7 @@ catalog:
               id:     ra-1_prm_2
               select: 
                 how-many: one or more
-                choice:   organization-level,mission/business process-level,system-level
+                choice:   Organization-level,Mission/business process-level,System-level
             - 
               id:    ra-1_prm_3
               label: organization-defined official
@@ -7329,7 +7411,7 @@ catalog:
             - 
               id:    ra-1_gdn
               name:  guidance
-              prose: Risk assessment policy and procedures address the controls in the RA family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of risk assessment policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies reflecting the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to risk assessment policy and procedures include assessment or audit findings, security or privacy incidents, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
+              prose: Risk assessment policy and procedures address the controls in the RA family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of risk assessment policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies reflecting the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to risk assessment policy and procedures include assessment or audit findings, security incidents or breaches, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
         - 
           id:     ra-3
           class:  SP800-53
@@ -7431,6 +7513,9 @@ catalog:
               rel:  related
             - 
               href: #pm-28
+              rel:  related
+            - 
+              href: #pt-2
               rel:  related
             - 
               href: #pt-7
@@ -7723,7 +7808,7 @@ catalog:
               id:     sa-1_prm_2
               select: 
                 how-many: one or more
-                choice:   organization-level,mission/business process-level,system-level
+                choice:   Organization-level,Mission/business process-level,System-level
             - 
               id:    sa-1_prm_3
               label: organization-defined official
@@ -7860,7 +7945,7 @@ catalog:
             - 
               id:    sa-1_gdn
               name:  guidance
-              prose: System and services acquisition policy and procedures address the controls in the SA family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of system and services acquisition policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to system and services acquisition policy and procedures include assessment or audit findings, security or privacy incidents, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
+              prose: System and services acquisition policy and procedures address the controls in the SA family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of system and services acquisition policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to system and services acquisition policy and procedures include assessment or audit findings, security incidents or breaches, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
         - 
           id:    sa-2
           class: SP800-53
@@ -7875,6 +7960,9 @@ catalog:
           links: 
             - 
               href: #27847491-5ce1-4f6a-a1e4-9e483782f0ef
+              rel:  reference
+            - 
+              href: #482e4c99-9dc4-41ad-bba8-0f3f0032c1f8
               rel:  reference
             - 
               href: #e3cc0520-a366-4fc9-abc2-5272db7e3564
@@ -8048,7 +8136,7 @@ catalog:
               name:  guidance
               prose: 
                 """
-                  A system development life cycle process provides the foundation for the successful development, implementation, and operation of organizational systems. The integration of security and privacy considerations early in the system development life cycle is a foundational principle of systems security engineering and privacy engineering. To apply the required controls within the system development life cycle requires a basic understanding of information security and privacy, threats, vulnerabilities, adverse impacts, and risk to critical mission and business functions. The security engineering principles in [SA-8](#sa-8) help individuals properly design, code, and test systems and system components. Organizations include qualified personnel (e.g., senior agency information security officers, senior agency officials for privacy, security and privacy architects, and security and privacy engineers) in system development life cycle processes to ensure that established security and privacy requirements are incorporated into organizational systems. Role-based security and privacy training programs can ensure that individuals with key security and privacy roles and responsibilities have the experience, skills, and expertise to conduct assigned system development life cycle activities.
+                  A system development life cycle process provides the foundation for the successful development, implementation, and operation of organizational systems. The integration of security and privacy considerations early in the system development life cycle is a foundational principle of systems security engineering and privacy engineering. To apply the required controls within the system development life cycle requires a basic understanding of information security and privacy, threats, vulnerabilities, adverse impacts, and risk to critical mission and business functions. The security engineering principles in [SA-8](#sa-8) help individuals properly design, code, and test systems and system components. Organizations include qualified personnel (e.g., senior agency information security officers, senior agency officials for privacy, security and privacy architects, and security and privacy engineers) in system development life cycle processes to ensure that established security and privacy requirements are incorporated into organizational systems. Role-based security and privacy training programs can ensure that individuals with key security and privacy roles and responsibilities have the experience, skills, and expertise to conduct assigned system development life cycle activities. 
                   
                   The effective integration of security and privacy requirements into enterprise architecture also helps to ensure that important security and privacy considerations are addressed throughout the system life cycle and that those considerations are directly related to organizational mission and business processes. This process also facilitates the integration of the information security and privacy architectures into the enterprise architecture, consistent with the risk management strategy of the organization. Because the system development life cycle involves multiple organizations, (e.g., external suppliers, developers, integrators, service providers), acquisition and supply chain risk management functions and controls play significant roles in the effective management of the system during the life cycle.
                 """
@@ -8088,6 +8176,9 @@ catalog:
               rel:  reference
             - 
               href: #4452efc0-e79e-47b8-aa30-b54f3ef61c2f
+              rel:  reference
+            - 
+              href: #06ce9216-bd54-4054-a422-94f358b50a5d
               rel:  reference
             - 
               href: #678e3d6c-150b-4393-aec5-6e3481eb1e00
@@ -8459,7 +8550,7 @@ catalog:
                     - 
                       name:  label
                       value: a.
-                  prose: Develop and implement a plan for ongoing security and privacy assessments;
+                  prose: Develop and implement a plan for ongoing security and privacy control assessments;
                 - 
                   id:    sa-11_smt.b
                   name:  item
@@ -8518,7 +8609,7 @@ catalog:
               id:     si-1_prm_2
               select: 
                 how-many: one or more
-                choice:   organization-level,mission/business process-level,system-level
+                choice:   Organization-level,Mission/business process-level,System-level
             - 
               id:    si-1_prm_3
               label: organization-defined official
@@ -8646,7 +8737,7 @@ catalog:
             - 
               id:    si-1_gdn
               name:  guidance
-              prose: System and information integrity policy and procedures address the controls in the SI family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of system and information integrity policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to system and information integrity policy and procedures include assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
+              prose: System and information integrity policy and procedures address the controls in the SI family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of system and information integrity policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to system and information integrity policy and procedures include assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
         - 
           id:       si-12
           class:    SP800-53
@@ -8665,66 +8756,6 @@ catalog:
             - 
               href: #27847491-5ce1-4f6a-a1e4-9e483782f0ef
               rel:  reference
-            - 
-              href: #ac-1
-              rel:  related
-            - 
-              href: #at-1
-              rel:  related
-            - 
-              href: #au-1
-              rel:  related
-            - 
-              href: #ca-1
-              rel:  related
-            - 
-              href: #cm-1
-              rel:  related
-            - 
-              href: #cp-1
-              rel:  related
-            - 
-              href: #ia-1
-              rel:  related
-            - 
-              href: #ir-1
-              rel:  related
-            - 
-              href: #ma-1
-              rel:  related
-            - 
-              href: #mp-1
-              rel:  related
-            - 
-              href: #pe-1
-              rel:  related
-            - 
-              href: #pl-1
-              rel:  related
-            - 
-              href: #pm-1
-              rel:  related
-            - 
-              href: #ps-1
-              rel:  related
-            - 
-              href: #pt-1
-              rel:  related
-            - 
-              href: #ra-1
-              rel:  related
-            - 
-              href: #sa-1
-              rel:  related
-            - 
-              href: #sc-1
-              rel:  related
-            - 
-              href: #si-1
-              rel:  related
-            - 
-              href: #sr-1
-              rel:  related
             - 
               href: #ac-16
               rel:  related
@@ -8826,7 +8857,7 @@ catalog:
             - 
               id:    si-12_gdn
               name:  guidance
-              prose: Information management and retention requirements cover the full life cycle of information, in some cases extending beyond system disposal. Information to be retained may also include policies, procedures, plans, reports, data output from control implementation, and other types of administrative information. The National Archives and Records Administration (NARA) provides federal policy and guidance on records retention and schedules. If organizations have a records management office, consider coordinating with records management personnel. Records produced from the output of implemented controls that may require management and retention include, but are not limited to: All XX-1 ([AC-1](ac-1) [AT-1](at-1) [AU-1](au-1) [CA-1](ca-1) [CM-1](cm-1) [CP-1](cp-1) [IA-1](ia-1) [IR-1](ir-1) [MA-1](ma-1) [MP-1](mp-1) [PE-1](pe-1) [PL-1](pl-1) [PM-1](pm-1) [PS-1](ps-1) [PT-1](pt-1) [RA-1](ra-1) [SA-1](sa-1) [SC-1](sc-1) [SI-1](si-1) [SR-1](sr-1)), [AC-6(9)](#ac-6.9), [AT-4](#at-4), [AU-12](#au-12), [CA-2](#ca-2), [CA-3](#ca-3), [CA-5](#ca-5), [CA-6](#ca-6), [CA-7](#ca-7), [CA-8](#ca-8), [CA-9](#ca-9), [CM-2](#cm-2), [CM-3](#cm-3), [CM-4](#cm-4), [CM-6](#cm-6), [CM-8](#cm-8), [CM-9](#cm-9), [CM-12](#cm-12), [CM-13](#cm-13), [CP-2](#cp-2), [IR-6](#ir-6), [IR-8](#ir-8), [MA-2](#ma-2), [MA-4](#ma-4), [PE-2](#pe-2), [PE-8](#pe-8), [PE-16](#pe-16), [PE-17](#pe-17), [PL-2](#pl-2), [PL-4](#pl-4), [PL-7](#pl-7), [PL-8](#pl-8), [PM-5](#pm-5), [PM-8](#pm-8), [PM-9](#pm-9), [PM-18](#pm-18), [PM-21](#pm-21), [PM-27](#pm-27), [PM-28](#pm-28), [PM-30](#pm-30), [PM-31](#pm-31), [PS-2](#ps-2), [PS-6](#ps-6), [PS-7](#ps-7), [PT-2](#pt-2), [PT-3](#pt-3), [PT-7](#pt-7), [RA-2](#ra-2), [RA-3](#ra-3), [RA-5](#ra-5), [RA-8](#ra-8), [SA-4](#sa-4), [SA-5](#sa-5), [SA-8](#sa-8), [SA-10](#sa-10), [SI-4](#si-4), [SR-2](#sr-2), [SR-4](#sr-4), [SR-8](#sr-8).
+              prose: Information management and retention requirements cover the full life cycle of information, in some cases extending beyond system disposal. Information to be retained may also include policies, procedures, plans, reports, data output from control implementation, and other types of administrative information. The National Archives and Records Administration (NARA) provides federal policy and guidance on records retention and schedules. If organizations have a records management office, consider coordinating with records management personnel. Records produced from the output of implemented controls that may require management and retention include, but are not limited to: All XX-1, [AC-6(9)](#ac-6.9), [AT-4](#at-4), [AU-12](#au-12), [CA-2](#ca-2), [CA-3](#ca-3), [CA-5](#ca-5), [CA-6](#ca-6), [CA-7](#ca-7), [CA-8](#ca-8), [CA-9](#ca-9), [CM-2](#cm-2), [CM-3](#cm-3), [CM-4](#cm-4), [CM-6](#cm-6), [CM-8](#cm-8), [CM-9](#cm-9), [CM-12](#cm-12), [CM-13](#cm-13), [CP-2](#cp-2), [IR-6](#ir-6), [IR-8](#ir-8), [MA-2](#ma-2), [MA-4](#ma-4), [PE-2](#pe-2), [PE-8](#pe-8), [PE-16](#pe-16), [PE-17](#pe-17), [PL-2](#pl-2), [PL-4](#pl-4), [PL-7](#pl-7), [PL-8](#pl-8), [PM-5](#pm-5), [PM-8](#pm-8), [PM-9](#pm-9), [PM-18](#pm-18), [PM-21](#pm-21), [PM-27](#pm-27), [PM-28](#pm-28), [PM-30](#pm-30), [PM-31](#pm-31), [PS-2](#ps-2), [PS-6](#ps-6), [PS-7](#ps-7), [PT-2](#pt-2), [PT-3](#pt-3), [PT-7](#pt-7), [RA-2](#ra-2), [RA-3](#ra-3), [RA-5](#ra-5), [RA-8](#ra-8), [SA-4](#sa-4), [SA-5](#sa-5), [SA-8](#sa-8), [SA-10](#sa-10), [SI-4](#si-4), [SR-2](#sr-2), [SR-4](#sr-4), [SR-8](#sr-8).
           controls: 
             - 
               id:     si-12.1
@@ -8850,20 +8881,11 @@ catalog:
                 - 
                   href: #pm-25
                   rel:  related
-                - 
-                  href: #pt-2
-                  rel:  related
-                - 
-                  href: #pt-3
-                  rel:  related
-                - 
-                  href: #ra-3
-                  rel:  related
               parts: 
                 - 
                   id:    si-12.1_smt
                   name:  statement
-                  prose: Limit personally identifiable information being processed in the information life cycle to the following elements of PII: {{ si-12.1_prm_1 }}.
+                  prose: Limit personally identifiable information being processed in the information life cycle to the following elements of personally identifiable information: {{ si-12.1_prm_1 }}.
                 - 
                   id:    si-12.1_gdn
                   name:  guidance
@@ -8930,14 +8952,11 @@ catalog:
                 - 
                   href: #27847491-5ce1-4f6a-a1e4-9e483782f0ef
                   rel:  reference
-                - 
-                  href: #mp-6
-                  rel:  related
               parts: 
                 - 
                   id:    si-12.3_smt
                   name:  statement
-                  prose: Use the following techniques to dispose of, destroy, or erase information following the retention period: {{ si-12.3_prm_1 }}.
+                  prose: Use the following techniques to dispose of, destroy, or erase information following the retention period: {{ si-12.3_prm_1 }}. 
                 - 
                   id:    si-12.3_gdn
                   name:  guidance
@@ -8959,6 +8978,9 @@ catalog:
               value: si-18
           links: 
             - 
+              href: #227063d4-431e-435f-9e8f-009b6dbc20f4
+              rel:  reference
+            - 
               href: #c15bfc12-a61e-4ca5-bf35-fa9ce3ccb5d2
               rel:  reference
             - 
@@ -8969,6 +8991,9 @@ catalog:
               rel:  related
             - 
               href: #pm-24
+              rel:  related
+            - 
+              href: #pt-2
               rel:  related
             - 
               href: #si-4
@@ -9014,9 +9039,6 @@ catalog:
                 - 
                   href: #si-18
                   rel:  required
-                - 
-                  href: #pm-22
-                  rel:  related
               parts: 
                 - 
                   id:    si-18.4_smt
@@ -9098,7 +9120,7 @@ catalog:
     resources: 
       - 
         uuid:     91f992fb-f668-4c91-a50f-0f05b95ccee3
-        title:    [32 CFR 2002]
+        title:    32 CFR 2002
         citation: 
           text: Code of Federal Regulations, Title 32, *Controlled Unclassified Information* (32 C.F.R. 2002).
         rlinks: 
@@ -9106,15 +9128,23 @@ catalog:
             href: https://www.federalregister.gov/documents/2016/09/14/2016-21665/controlled-unclassified-information
       - 
         uuid:     0f963c17-ab5a-432a-a867-91eac550309b
-        title:    [41 CFR 201]
+        title:    41 CFR 201
         citation: 
           text:  "Federal Acquisition Supply Chain Security Act; Rule," 85 Federal Register 54263 (September 1, 2020), pp 54263-54271.
         rlinks: 
           - 
             href: https://www.federalregister.gov/d/2020-18939
       - 
+        uuid:     94c64e1a-456c-457f-86da-83ac0dfc85ac
+        title:    CMPPA
+        citation: 
+          text: Computer Matching and Privacy Protection Act of 1988 (P.L. 100-503), October 1988.
+        rlinks: 
+          - 
+            href: https://www.govinfo.gov/content/pkg/STATUTE-102/pdf/STATUTE-102-Pg2507.pdf
+      - 
         uuid:     b9951d04-6385-478c-b1a3-ab68c19d9041
-        title:    [DHS NIPP]
+        title:    DHS NIPP
         citation: 
           text: Department of Homeland Security, *National Infrastructure Protection Plan (NIPP)*, 2009.
         rlinks: 
@@ -9122,15 +9152,23 @@ catalog:
             href: https://www.dhs.gov/xlibrary/assets/NIPP_Plan.pdf
       - 
         uuid:     7b0b9634-741a-4335-b6fa-161228c3a76e
-        title:    [EGOV]
+        title:    EGOV
         citation: 
-          text: E-Government Act [includes FISMA] (P.L. 107-347), December 2002.
+          text: E-Government Act [includes FISMA] (P.L. 107-347), December 2002. 
         rlinks: 
           - 
             href: https://www.congress.gov/107/plaws/publ347/PLAW-107publ347.pdf
       - 
+        uuid:     3406fdc0-d61c-44a9-a5ca-84180544c83a
+        title:    EO 13636
+        citation: 
+          text: Executive Order 13636, *Improving Critical Infrastructure Cybersecurity*, February 2013.
+        rlinks: 
+          - 
+            href: https://obamawhitehouse.archives.gov/the-press-office/2013/02/12/executive-order-improving-critical-infrastructure-cybersecurity
+      - 
         uuid:     4ff10ed3-d8fe-4246-99e3-443045e27482
-        title:    [FASC18]
+        title:    FASC18
         citation: 
           text: Secure Technology Act [includes Federal Acquisition Supply Chain Security Act] (P.L. 115-390), December 2018.
         rlinks: 
@@ -9138,15 +9176,15 @@ catalog:
             href: https://www.congress.gov/bill/115th-congress/senate-bill/3085
       - 
         uuid:     678e3d6c-150b-4393-aec5-6e3481eb1e00
-        title:    [FIPS 140-3]
+        title:    FIPS 140-3
         citation: 
-          text: National Institute of Standards and Technology (2019) Security Requirements for Cryptographic Modules. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 140-3.
+          text: National Institute of Standards and Technology (2019) Security Requirements for Cryptographic Modules. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 140-3. 
         rlinks: 
           - 
             href: https://doi.org/10.6028/NIST.FIPS.140-3
       - 
         uuid:     628d22a1-6a11-4784-bc59-5cd9497b5445
-        title:    [FIPS 199]
+        title:    FIPS 199
         citation: 
           text: National Institute of Standards and Technology (2004) Standards for Security Categorization of Federal Information and Information Systems. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 199.
         rlinks: 
@@ -9154,7 +9192,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.FIPS.199
       - 
         uuid:     599fb53d-5041-444e-a7fe-640d6d30ad05
-        title:    [FIPS 200]
+        title:    FIPS 200
         citation: 
           text: National Institute of Standards and Technology (2006) Minimum Security Requirements for Federal Information and Information Systems. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 200.
         rlinks: 
@@ -9162,7 +9200,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.FIPS.200
       - 
         uuid:     7ba1d91c-3934-4d5a-8532-b32f864ad34c
-        title:    [FIPS 201-2]
+        title:    FIPS 201-2
         citation: 
           text: National Institute of Standards and Technology (2013) Personal Identity Verification (PIV) of Federal Employees and Contractors. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 201-2.
         rlinks: 
@@ -9170,7 +9208,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.FIPS.201-2
       - 
         uuid:     0c67b2a9-bede-43d2-b86d-5f35b8be36e9
-        title:    [FISMA]
+        title:    FISMA
         citation: 
           text: Federal Information Security Modernization Act (P.L. 113-283), December 2014.
         rlinks: 
@@ -9178,7 +9216,7 @@ catalog:
             href: https://www.congress.gov/113/plaws/publ283/PLAW-113publ283.pdf
       - 
         uuid:     488d6934-00b2-4252-bf23-1b3c2d71eb13
-        title:    [HSPD 7]
+        title:    HSPD 7
         citation: 
           text: Homeland Security Presidential Directive 7, *Critical Infrastructure Identification, Prioritization, and Protection*, December 2003.
         rlinks: 
@@ -9186,15 +9224,15 @@ catalog:
             href: https://www.dhs.gov/homeland-security-presidential-directive-7
       - 
         uuid:     15dc76ff-b17a-4eeb-8948-8ea8de3ccc2c
-        title:    [IR 7539]
+        title:    IR 7539
         citation: 
-          text: Cooper DA, MacGregor WI (2008) Symmetric Key Injection onto Smart Cards.**(National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 7539.
+          text: Cooper DA, MacGregor WI (2008) Symmetric Key Injection onto Smart Cards. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 7539.
         rlinks: 
           - 
             href: https://doi.org/10.6028/NIST.IR.7539
       - 
         uuid:     2be7b163-e50a-435c-8906-f1162f2a457a
-        title:    [IR 7559]
+        title:    IR 7559
         citation: 
           text: Singhal A, Gunestas M, Wijesekera D (2010) Forensics Web Services (FWS). (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 7559.
         rlinks: 
@@ -9202,7 +9240,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.IR.7559
       - 
         uuid:     e24b06cc-9129-4998-a76a-65c3d7a576ba
-        title:    [IR 7622]
+        title:    IR 7622
         citation: 
           text: Boyens JM, Paulsen C, Bartol N, Shankles S, Moorthy R (2012) Notional Supply Chain Risk Management Practices for Federal Information Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 7622.
         rlinks: 
@@ -9210,7 +9248,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.IR.7622
       - 
         uuid:     4b38e961-1125-4a5b-aa35-1d6c02846dad
-        title:    [IR 7676]
+        title:    IR 7676
         citation: 
           text: Cooper DA (2010) Maintaining and Using Key History on Personal Identity Verification (PIV) Cards. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 7676.
         rlinks: 
@@ -9218,7 +9256,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.IR.7676
       - 
         uuid:     604774da-9e1d-48eb-9c62-4e959dc80737
-        title:    [IR 7870]
+        title:    IR 7870
         citation: 
           text: Cooper DA (2012) NIST Test Personal Identity Verification (PIV) Cards. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 7870.
         rlinks: 
@@ -9226,7 +9264,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.IR.7870
       - 
         uuid:     7f473f21-fdbf-4a6c-81a1-0ab95919609d
-        title:    [IR 7874]
+        title:    IR 7874
         citation: 
           text: Hu VC, Scarfone KA (2012) Guidelines for Access Control System Evaluation Metrics. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 7874.
         rlinks: 
@@ -9234,7 +9272,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.IR.7874
       - 
         uuid:     bbac9fc2-df5b-4f2d-bf99-90d0ade45349
-        title:    [IR 8011-1]
+        title:    IR 8011-1
         citation: 
           text: Dempsey KL, Eavy P, Moore G (2017) Automation Support for Security Control Assessments: Volume 1: Overview. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8011, Volume 1.
         rlinks: 
@@ -9242,7 +9280,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.IR.8011-1
       - 
         uuid:     4c501da5-9d79-4cb6-ba80-97260e1ce327
-        title:    [IR 8023]
+        title:    IR 8023
         citation: 
           text: Dempsey KL, Paulsen C (2015) Risk Management for Replication Devices. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8023.
         rlinks: 
@@ -9250,31 +9288,31 @@ catalog:
             href: https://doi.org/10.6028/NIST.IR.8023
       - 
         uuid:     98d415ca-7281-4064-9931-0c366637e324
-        title:    [IR 8062]
+        title:    IR 8062
         citation: 
-          text: Brooks S, Garcia M, Lefkovitz N, Lightman S, Nadeau E (2017) An Introduction to Privacy Engineering and Risk Management in Federal Systems.**(National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8062.
+          text: Brooks S, Garcia M, Lefkovitz N, Lightman S, Nadeau E (2017) An Introduction to Privacy Engineering and Risk Management in Federal Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8062.
         rlinks: 
           - 
             href: https://doi.org/10.6028/NIST.IR.8062
       - 
         uuid:     a2590922-82f3-4277-83c0-ca5bee06dba4
-        title:    [IR 8112]
+        title:    IR 8112
         citation: 
-          text: Grassi P, Lefkovitz N, Nadeau E, Galluzzo R, Dinh, A (2018) Attribute Metadata: A Proposed Schema for Evaluating Federated Attributes.**(National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8112.
+          text: Grassi P, Lefkovitz N, Nadeau E, Galluzzo R, Dinh, A (2018) Attribute Metadata: A Proposed Schema for Evaluating Federated Attributes. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8112.
         rlinks: 
           - 
             href: https://doi.org/10.6028/NIST.IR.8112
       - 
         uuid:     38ff38f0-1366-4f50-a4c9-26a39aacee16
-        title:    [IR 8272]
+        title:    IR 8272
         citation: 
-          text: Paulsen C, Winkler K, Boyens JM, Ng J, Gimbi J (2020) Impact Analysis Tool for Interdependent Cyber Supply Chain Risks.**(National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8272.
+          text: Paulsen C, Winkler K, Boyens JM, Ng J, Gimbi J (2020) Impact Analysis Tool for Interdependent Cyber Supply Chain Risks. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8272.
         rlinks: 
           - 
             href: https://doi.org/10.6028/NIST.IR.8272
       - 
         uuid:     6afc1b04-c9d6-4023-adbc-f8fbe33a3c73
-        title:    [ISO 15408-1]
+        title:    ISO 15408-1
         citation: 
           text: International Organization for Standardization/International Electrotechnical Commission 15408-1:2009, *Information technology —Security techniques — Evaluation criteria for IT security — Part 1: Introduction and general model*, April 2017.
         rlinks: 
@@ -9282,7 +9320,7 @@ catalog:
             href: https://www.commoncriteriaportal.org/files/ccfiles/CCPART1V3.1R5.pdf
       - 
         uuid:     87087451-2af5-43d4-88c1-d66ad850f614
-        title:    [ISO 15408-2]
+        title:    ISO 15408-2
         citation: 
           text: International Organization for Standardization/International Electrotechnical Commission 15408-2:2008, *Information technology —Security techniques — Evaluation criteria for IT security — Part 2: Security functional requirements*, April 2017.
         rlinks: 
@@ -9290,15 +9328,23 @@ catalog:
             href: https://www.commoncriteriaportal.org/files/ccfiles/CCPART2V3.1R5.pdf
       - 
         uuid:     4452efc0-e79e-47b8-aa30-b54f3ef61c2f
-        title:    [ISO 15408-3]
+        title:    ISO 15408-3
         citation: 
           text: International Organization for Standardization/International Electrotechnical Commission 15408-3:2008, *Information technology—Security techniques — Evaluation criteria for IT security — Part 3: Security assurance requirements*, April 2017.
         rlinks: 
           - 
             href: https://www.commoncriteriaportal.org/files/ccfiles/CCPART3V3.1R5.pdf
       - 
+        uuid:     06ce9216-bd54-4054-a422-94f358b50a5d
+        title:    ISO 29148
+        citation: 
+          text: International Organization for Standardization/International Electrotechnical Commission/Institute of Electrical and Electronics Engineers (ISO/IEC/IEEE) 29148:2018, *Systems and software engineering—Life cycle processes—Requirements engineering*, November 2018.
+        rlinks: 
+          - 
+            href: https://www.iso.org/standard/72089.html
+      - 
         uuid:     c28ae9a8-1121-42a9-a85e-00cfcc9b9a94
-        title:    [NARA CUI]
+        title:    NARA CUI
         citation: 
           text: National Archives and Records Administration, Controlled Unclassified Information (CUI) Registry.
         rlinks: 
@@ -9306,7 +9352,7 @@ catalog:
             href: https://www.archives.gov/cui
       - 
         uuid:     795aff72-3e6c-4b6b-a80a-b14d84b7f544
-        title:    [NIAP CCEVS]
+        title:    NIAP CCEVS
         citation: 
           text: National Information Assurance Partnership, *Common Criteria Evaluation and Validation Scheme*.
         rlinks: 
@@ -9314,7 +9360,7 @@ catalog:
             href: https://www.niap-ccevs.org
       - 
         uuid:     3d575737-98cb-459d-b41c-d7e82b73ad78
-        title:    [NSA CSFC]
+        title:    NSA CSFC
         citation: 
           text: National Security Agency, *Commercial Solutions for Classified Program (CSfC)*.
         rlinks: 
@@ -9322,7 +9368,7 @@ catalog:
             href: https://www.nsa.gov/resources/everyone/csfc
       - 
         uuid:     df9f87e9-71e7-4c74-9ac3-3cabd4e92f21
-        title:    [NSA MEDIA]
+        title:    NSA MEDIA
         citation: 
           text: National Security Agency, *Media Destruction Guidance*.
         rlinks: 
@@ -9330,7 +9376,7 @@ catalog:
             href: https://www.nsa.gov/resources/everyone/media-destruction
       - 
         uuid:     89f2a08d-fc49-46d0-856e-bf974c9b1573
-        title:    [ODNI CTF]
+        title:    ODNI CTF
         citation: 
           text: Office of the Director of National Intelligence (ODNI) Cyber Threat Framework.
         rlinks: 
@@ -9338,7 +9384,7 @@ catalog:
             href: https://www.dni.gov/index.php/cyber-threat-framework
       - 
         uuid:     3671ff20-c17c-44d6-8a88-7de203fa74aa
-        title:    [OMB A-108]
+        title:    OMB A-108
         citation: 
           text: Office of Management and Budget Memorandum Circular A-108, *Federal Agency Responsibilities for Review, Reporting, and Publication under the Privacy Act*, December 2016.
         rlinks: 
@@ -9346,7 +9392,7 @@ catalog:
             href: https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/circulars/A108/omb_circular_a-108.pdf
       - 
         uuid:     27847491-5ce1-4f6a-a1e4-9e483782f0ef
-        title:    [OMB A-130]
+        title:    OMB A-130
         citation: 
           text: Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource*, July 2016.
         rlinks: 
@@ -9354,7 +9400,7 @@ catalog:
             href: https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/circulars/A130/a130revised.pdf
       - 
         uuid:     d229ae60-51dd-4d7b-a8bf-1f7195cc7561
-        title:    [OMB M-03-22]
+        title:    OMB M-03-22
         citation: 
           text: Office of Management and Budget Memorandum M-03-22, *OMB Guidance for Implementing the Privacy Provisions of the E-Government Act of 2002*, September 2003.[https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2003/m03_22.pdf](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2003/m03_22.pdf) 
         rlinks: 
@@ -9362,7 +9408,7 @@ catalog:
             href: https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2003/m03_22.pdf
       - 
         uuid:     206a3284-6a7e-423c-8ea9-25b22542541d
-        title:    [OMB M-17-06]
+        title:    OMB M-17-06
         citation: 
           text: Office of Management and Budget Memorandum M-17-06, *Policies for Federal Agency Public Websites and Digital Services*, November 2016.
         rlinks: 
@@ -9370,7 +9416,7 @@ catalog:
             href: https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2017/m-17-06.pdf
       - 
         uuid:     5f4705ac-8d17-438c-b23a-ac7f12362ae4
-        title:    [OMB M-17-12]
+        title:    OMB M-17-12
         citation: 
           text: Office of Management and Budget Memorandum M-17-12, *Preparing for and Responding to a Breach of Personally Identifiable Information*, January 2017.
         rlinks: 
@@ -9378,15 +9424,23 @@ catalog:
             href: https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2017/m-17-12_0.pdf
       - 
         uuid:     c5e11048-1d38-4af3-b00b-0d88dc26860c
-        title:    [OMB M-19-03]
+        title:    OMB M-19-03
         citation: 
           text: Office of Management and Budget Memorandum M-19-03, *Strengthening the Cybersecurity of Federal Agencies by Enhancing the High Value Asset Program*, December 2018.
         rlinks: 
           - 
             href: https://www.whitehouse.gov/wp-content/uploads/2018/12/M-19-03.pdf
       - 
+        uuid:     227063d4-431e-435f-9e8f-009b6dbc20f4
+        title:    OMB M-19-15
+        citation: 
+          text: Office of Management and Budget Memorandum M-19-15, *Improving Implementation of the Information Quality Act*, April 2019.
+        rlinks: 
+          - 
+            href: https://www.whitehouse.gov/wp-content/uploads/2019/04/M-19-15.pdf
+      - 
         uuid:     18e71fec-c6fd-475a-925a-5d8495cf8455
-        title:    [PRIVACT]
+        title:    PRIVACT
         citation: 
           text: Privacy Act (P.L. 93-579), December 1974.
         rlinks: 
@@ -9394,7 +9448,7 @@ catalog:
             href: https://www.govinfo.gov/content/pkg/STATUTE-88/pdf/STATUTE-88-Pg1896.pdf
       - 
         uuid:     4c0ec2ee-a0d6-428a-9043-4504bc3ade6f
-        title:    [SP 800-100]
+        title:    SP 800-100
         citation: 
           text: Bowen P, Hash J, Wilson M (2006) Information Security Handbook: A Guide for Managers. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-100, Includes updates as of March 7, 2007.
         rlinks: 
@@ -9402,7 +9456,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-100
       - 
         uuid:     10cf2fad-a216-41f9-bb1a-531b7e3119e3
-        title:    [SP 800-101]
+        title:    SP 800-101
         citation: 
           text: Ayers RP, Brothers S, Jansen W (2014) Guidelines on Mobile Device Forensics. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-101, Rev. 1.
         rlinks: 
@@ -9410,7 +9464,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-101r1
       - 
         uuid:     122177fa-c4ed-485d-8345-3082c0fb9a06
-        title:    [SP 800-115]
+        title:    SP 800-115
         citation: 
           text: Scarfone KA, Souppaya MP, Cody A, Orebaugh AD (2008) Technical Guide to Information Security Testing and Assessment. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-115.
         rlinks: 
@@ -9418,7 +9472,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-115
       - 
         uuid:     0f66be67-85e7-4ca6-bd19-39453e9f4394
-        title:    [SP 800-124]
+        title:    SP 800-124
         citation: 
           text: Souppaya MP, Scarfone KA (2013) Guidelines for Managing the Security of Mobile Devices in the Enterprise. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-124, Rev. 1.
         rlinks: 
@@ -9426,7 +9480,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-124r1
       - 
         uuid:     20db4e66-e257-450c-b2e4-2bb9a62a2c88
-        title:    [SP 800-128]
+        title:    SP 800-128
         citation: 
           text: Johnson LA, Dempsey KL, Ross RS, Gupta S, Bailey D (2011) Guide for Security-Focused Configuration Management of Information Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-128, Includes updates as of October 10, 2019.
         rlinks: 
@@ -9434,15 +9488,23 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-128
       - 
         uuid:     c7ac44e8-10db-4b64-b2b9-9e32ec1efed0
-        title:    [SP 800-12]
+        title:    SP 800-12
         citation: 
           text: Nieles M, Pillitteri VY, Dempsey KL (2017) An Introduction to Information Security. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-12, Rev. 1.
         rlinks: 
           - 
             href: https://doi.org/10.6028/NIST.SP.800-12r1
       - 
+        uuid:     62ea77ca-e450-4323-b210-e0d75390e785
+        title:    SP 800-137A
+        citation: 
+          text: Dempsey KL, Pillitteri VY, Baer C, Niemeyer R, Rudman R, Urban S (2020) Assessing Information Security Continuous Monitoring (ISCM) Programs: Developing an ISCM Program Assessment. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-137A.
+        rlinks: 
+          - 
+            href: https://doi.org/10.6028/NIST.SP.800-137A
+      - 
         uuid:     067223d8-1ec7-45c5-b21b-c848da6de8fb
-        title:    [SP 800-137]
+        title:    SP 800-137
         citation: 
           text: Dempsey KL, Chawla NS, Johnson LA, Johnston R, Jones AC, Orebaugh AD, Scholl MA, Stine KM (2011) Information Security Continuous Monitoring (ISCM) for Federal Information Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-137.
         rlinks: 
@@ -9450,7 +9512,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-137
       - 
         uuid:     9ef4b43c-42a4-4316-87dc-ffaf528bc05c
-        title:    [SP 800-150]
+        title:    SP 800-150
         citation: 
           text: Johnson CS, Waltermire DA, Badger ML, Skorupka C, Snyder J (2016) Guide to Cyber Threat Information Sharing. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-150.
         rlinks: 
@@ -9458,7 +9520,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-150
       - 
         uuid:     708b94e1-3d5e-4b22-ab43-1c69f3a97e37
-        title:    [SP 800-154]
+        title:    SP 800-154
         citation: 
           text: Souppaya MP, Scarfone KA (2016) Guide to Data-Centric System Threat Modeling. (National Institute of Standards and Technology, Gaithersburg, MD), Draft NIST Special Publication (SP) 800-154.
         rlinks: 
@@ -9466,7 +9528,7 @@ catalog:
             href: https://csrc.nist.gov/publications/detail/sp/800-154/draft
       - 
         uuid:     e3cc0520-a366-4fc9-abc2-5272db7e3564
-        title:    [SP 800-160-1]
+        title:    SP 800-160-1
         citation: 
           text: Ross RS, Oren JC, McEvilley M (2016) Systems Security Engineering: Considerations for a Multidisciplinary Approach in the Engineering of Trustworthy Secure Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-160, Vol. 1, Includes updates as of March 21, 2018.
         rlinks: 
@@ -9474,7 +9536,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-160v1
       - 
         uuid:     61ccf0f4-d3e7-42db-9796-ce6cb1c85989
-        title:    [SP 800-160-2]
+        title:    SP 800-160-2
         citation: 
           text: Ross RS, Pillitteri VY, Graubart R, Bodeau D, McQuaid R (2019) Developing Cyber Resilient Systems: A Systems Security Engineering Approach. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-160, Vol. 2.
         rlinks: 
@@ -9482,7 +9544,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-160v2
       - 
         uuid:     e8e84963-14fc-4c3a-be05-b412a5d37cd2
-        title:    [SP 800-161]
+        title:    SP 800-161
         citation: 
           text: Boyens JM, Paulsen C, Moorthy R, Bartol N (2015) Supply Chain Risk Management Practices for Federal Information Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-161.
         rlinks: 
@@ -9490,7 +9552,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-161
       - 
         uuid:     7dbd6d9f-29d6-4d1d-9766-f2d77ff3c849
-        title:    [SP 800-171]
+        title:    SP 800-171
         citation: 
           text: Ross RS, Pillitteri VY, Dempsey KL, Riddle M, Guissanie G (2020) Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-171, Rev. 2.
         rlinks: 
@@ -9498,7 +9560,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-171r2
       - 
         uuid:     f26af0d0-6d72-4a9d-8ecd-01bc21fd4f0e
-        title:    [SP 800-172]
+        title:    SP 800-172
         citation: 
           text: Ross RS, Pillitteri VY, Graubart RD, Guissanie G, Wagner R, Bodeau D (2020) Enhanced Security Requirements for Protecting Controlled Unclassified Information: A Supplement to NIST Special Publication 800-171 (Final Public Draft). (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-172.
         rlinks: 
@@ -9506,15 +9568,15 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-172-draft
       - 
         uuid:     276bd50a-7e58-48e5-a405-8c8cb91d7a5f
-        title:    [SP 800-181]
+        title:    SP 800-181
         citation: 
-          text: Newhouse WD, Witte GA, Scribner B, Keith S (2017) National Initiative for Cybersecurity Education (NICE) Cybersecurity Workforce Framework. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-181.
+          text: Petersen R, Santos D, Smith MC, Wetzel KA, Witte G (2020) Workforce Framework for Cybersecurity (NICE Framework). (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-181, Rev. 1.
         rlinks: 
           - 
-            href: https://doi.org/10.6028/NIST.SP.800-181
+            href: https://doi.org/10.6028/NIST.SP.800-181r1
       - 
         uuid:     31ae65ab-3f26-46b7-9d64-f25a4dac5778
-        title:    [SP 800-184]
+        title:    SP 800-184
         citation: 
           text: Bartock M, Scarfone KA, Smith MC, Witte GA, Cichonski JA, Souppaya MP (2016) Guide for Cybersecurity Event Recovery. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-184.
         rlinks: 
@@ -9522,15 +9584,15 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-184
       - 
         uuid:     c15bfc12-a61e-4ca5-bf35-fa9ce3ccb5d2
-        title:    [SP 800-188]
+        title:    SP 800-188
         citation: 
-          text: Garfinkel S (2016) De-Identifying Government Datasets.**(National Institute of Standards and Technology, Gaithersburg, MD), Second Draft NIST Special Publication (SP) 800-188.
+          text: Garfinkel S (2016) De-Identifying Government Datasets. (National Institute of Standards and Technology, Gaithersburg, MD), Second Draft NIST Special Publication (SP) 800-188.
         rlinks: 
           - 
             href: https://csrc.nist.gov/publications/detail/sp/800-188/draft
       - 
         uuid:     30eb758a-2707-4bca-90ad-949a74d4eb16
-        title:    [SP 800-18]
+        title:    SP 800-18
         citation: 
           text: Swanson MA, Hash J, Bowen P (2006) Guide for Developing Security Plans for Federal Information Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-18, Rev. 1.
         rlinks: 
@@ -9538,7 +9600,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-18r1
       - 
         uuid:     08b07465-dbdc-48d6-8a0b-37279602ac16
-        title:    [SP 800-30]
+        title:    SP 800-30
         citation: 
           text: Joint Task Force Transformation Initiative (2012) Guide for Conducting Risk Assessments. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-30, Rev. 1.
         rlinks: 
@@ -9546,7 +9608,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-30r1
       - 
         uuid:     77faf0bc-c394-44ad-9154-bbac3b79c8ad
-        title:    [SP 800-35]
+        title:    SP 800-35
         citation: 
           text: Grance T, Hash J, Stevens M, O'Neal K, Bartol N (2003) Guide to Information Technology Security Services. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-35.
         rlinks: 
@@ -9554,7 +9616,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-35
       - 
         uuid:     482e4c99-9dc4-41ad-bba8-0f3f0032c1f8
-        title:    [SP 800-37]
+        title:    SP 800-37
         citation: 
           text: Joint Task Force (2018) Risk Management Framework for Information Systems and Organizations: A System Life Cycle Approach for Security and Privacy. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-37, Rev. 2.
         rlinks: 
@@ -9562,7 +9624,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-37r2
       - 
         uuid:     cec037f3-8aba-4c97-84b4-4082f9e515d2
-        title:    [SP 800-39]
+        title:    SP 800-39
         citation: 
           text: Joint Task Force Transformation Initiative (2011) Managing Information Security Risk: Organization, Mission, and Information System View. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-39.
         rlinks: 
@@ -9570,7 +9632,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-39
       - 
         uuid:     511f6832-23ca-49a3-8c0f-ce493373cab8
-        title:    [SP 800-50]
+        title:    SP 800-50
         citation: 
           text: Wilson M, Hash J (2003) Building an Information Technology Security Awareness and Training Program. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-50.
         rlinks: 
@@ -9578,7 +9640,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-50
       - 
         uuid:     a21aef46-7330-48a0-b2e1-c5bb8b2dd11d
-        title:    [SP 800-53A]
+        title:    SP 800-53A
         citation: 
           text: Joint Task Force Transformation Initiative (2014) Assessing Security and Privacy Controls in Federal Information Systems and Organizations: Building Effective Assessment Plans. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-53A, Rev. 4, Includes updates as of December 18, 2014.
         rlinks: 
@@ -9586,15 +9648,15 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-53Ar4
       - 
         uuid:     46d9e201-840e-440e-987c-2c773333c752
-        title:    [SP 800-53B]
+        title:    SP 800-53B
         citation: 
-          text: Joint Task Force (2020) Control Baselines and Tailoring Guidance for Federal Information Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), Draft NIST Special Publication (SP) 800-53B.
+          text: Joint Task Force (2020) Control Baselines and Tailoring Guidance for Federal Information Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-53B.
         rlinks: 
           - 
-            href: https://doi.org/10.6028/NIST.SP.800-53B-draft
+            href: https://doi.org/10.6028/NIST.SP.800-53B
       - 
         uuid:     7798067b-4ed0-4adc-a505-79dad4741693
-        title:    [SP 800-55]
+        title:    SP 800-55
         citation: 
           text: Chew E, Swanson MA, Stine KM, Bartol N, Brown A, Robinson W (2008) Performance Measurement Guide for Information Security. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-55, Rev. 1.
         rlinks: 
@@ -9602,7 +9664,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-55r1
       - 
         uuid:     e72fde0b-6fc2-497e-a9db-d8fce5a11b8a
-        title:    [SP 800-60-1]
+        title:    SP 800-60-1
         citation: 
           text: Stine KM, Kissel RL, Barker WC, Fahlsing J, Gulick J (2008) Guide for Mapping Types of Information and Information Systems to Security Categories. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-60, Vol. 1, Rev. 1.
         rlinks: 
@@ -9610,7 +9672,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-60v1r1
       - 
         uuid:     9be5d661-421f-41ad-854e-86f98b811891
-        title:    [SP 800-60-2]
+        title:    SP 800-60-2
         citation: 
           text: Stine KM, Kissel RL, Barker WC, Lee A, Fahlsing J (2008) Guide for Mapping Types of Information and Information Systems to Security Categories: Appendices. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-60, Vol. 2, Rev. 1.
         rlinks: 
@@ -9618,7 +9680,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-60v2r1
       - 
         uuid:     49b8aa2d-a88c-4bff-9f20-876ccb8f7dcb
-        title:    [SP 800-61]
+        title:    SP 800-61
         citation: 
           text: Cichonski PR, Millar T, Grance T, Scarfone KA (2012) Computer Security Incident Handling Guide. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-61, Rev. 2.
         rlinks: 
@@ -9626,7 +9688,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-61r2
       - 
         uuid:     737513fa-6758-403f-831d-5ddab5e23cb3
-        title:    [SP 800-63-3]
+        title:    SP 800-63-3
         citation: 
           text: Grassi PA, Garcia ME, Fenton JL (2017) Digital Identity Guidelines. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-63-3, Includes updates as of March 2, 2020.
         rlinks: 
@@ -9634,7 +9696,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-63-3
       - 
         uuid:     4895b4cd-34c5-4667-bf8a-27d443c12047
-        title:    [SP 800-70]
+        title:    SP 800-70
         citation: 
           text: Quinn SD, Souppaya MP, Cook MR, Scarfone KA (2018) National Checklist Program for IT Products: Guidelines for Checklist Users and Developers. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-70, Rev. 4.
         rlinks: 
@@ -9642,7 +9704,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-70r4
       - 
         uuid:     858705be-3c1f-48aa-a328-0ce398d95ef0
-        title:    [SP 800-73-4]
+        title:    SP 800-73-4
         citation: 
           text: Cooper DA, Ferraiolo H, Mehta KL, Francomacaro S, Chandramouli R, Mohler J (2015) Interfaces for Personal Identity Verification. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-73-4, Includes updates as of February 8, 2016.
         rlinks: 
@@ -9650,7 +9712,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-73-4
       - 
         uuid:     3dd249b0-f57d-44ba-a03e-c3eab1b835ff
-        title:    [SP 800-83]
+        title:    SP 800-83
         citation: 
           text: Souppaya MP, Scarfone KA (2013) Guide to Malware Incident Prevention and Handling for Desktops and Laptops. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-83, Rev. 1.
         rlinks: 
@@ -9658,7 +9720,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-83r1
       - 
         uuid:     53be2fcf-cfd1-4bcb-896b-9a3b65c22098
-        title:    [SP 800-84]
+        title:    SP 800-84
         citation: 
           text: Grance T, Nolan T, Burke K, Dudley R, White G, Good T (2006) Guide to Test, Training, and Exercise Programs for IT Plans and Capabilities. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-84.
         rlinks: 
@@ -9666,7 +9728,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-84
       - 
         uuid:     cfdb1858-c473-46b3-89f9-a700308d0be2
-        title:    [SP 800-86]
+        title:    SP 800-86
         citation: 
           text: Kent K, Chevalier S, Grance T, Dang H (2006) Guide to Integrating Forensic Techniques into Incident Response. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-86.
         rlinks: 
@@ -9674,7 +9736,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-86
       - 
         uuid:     a5b1d18d-e670-4586-9e6d-4a88b7ba3df6
-        title:    [SP 800-88]
+        title:    SP 800-88
         citation: 
           text: Kissel RL, Regenscheid AR, Scholl MA, Stine KM (2014) Guidelines for Media Sanitization. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-88, Rev. 1.
         rlinks: 
@@ -9682,7 +9744,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-88r1
       - 
         uuid:     5eee45d8-3313-4fdc-8d54-1742092bbdd6
-        title:    [SP 800-92]
+        title:    SP 800-92
         citation: 
           text: Kent K, Souppaya MP (2006) Guide to Computer Security Log Management. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-92.
         rlinks: 
@@ -9690,7 +9752,7 @@ catalog:
             href: https://doi.org/10.6028/NIST.SP.800-92
       - 
         uuid:     e922fc50-b1f9-469f-92ef-ed7d9803611c
-        title:    [USC 2901]
+        title:    USC 2901
         citation: 
           text: United States Code, 2008 Edition, Title 44 - *Public Printing and Documents*, Chapters 29, 31, and 33, January 2012.
         rlinks: 
@@ -9698,7 +9760,7 @@ catalog:
             href: https://www.govinfo.gov/content/pkg/USCODE-2011-title44/pdf/USCODE-2011-title44-chap29-sec2901.pdf
       - 
         uuid:     40b78258-c892-480e-9af8-77ac36648301
-        title:    [USCERT IR]
+        title:    USCERT IR
         citation: 
           text: Department of Homeland Security, *US-CERT Federal Incident Notification Guidelines*, April 2017.
         rlinks: 
@@ -9706,7 +9768,7 @@ catalog:
             href: https://us-cert.cisa.gov/incident-notification-guidelines
       - 
         uuid:   c3397cc9-83c6-4459-adb2-836739dc1b94
-        title:  NIST Special Publication 800-53, Revision 5: *Security and Privacy Controls for Information Systems and Organizations* (PDF)
+        title:  NIST Special Publication 800-53, Revision 5: * Security and Privacy Controls for Information Systems and Organizations* (PDF)
         rlinks: 
           - 
             href:       https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf

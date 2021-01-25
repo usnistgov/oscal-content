@@ -1,9 +1,9 @@
 {
   "profile": {
-    "uuid": "8bfc6a00-cb50-44aa-aaf4-1c21025355fb",
+    "uuid": "bed9a12f-da27-4a04-9ef2-8bd57fab5736",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 5 MODERATE IMPACT BASELINE",
-      "last-modified": "2020-12-18T16:38:47.269-05:00",
+      "last-modified": "2021-01-14T09:04:29.297-05:00",
       "version": "Final",
       "oscal-version": "1.0.0-rc1",
       "roles": [
@@ -18,7 +18,7 @@
       ],
       "parties": [
         {
-          "uuid": "0ae2bfc4-f011-499e-8215-ccb7d7429b62",
+          "uuid": "cde369ce-57f8-4ec1-847f-2681a9a881e7",
           "type": "organization",
           "name": "Joint Task Force, Transformation Initiative",
           "email-addresses": [
@@ -42,12 +42,12 @@
       "responsible-parties": {
         "creator": {
           "party-uuids": [
-            "0ae2bfc4-f011-499e-8215-ccb7d7429b62"
+            "cde369ce-57f8-4ec1-847f-2681a9a881e7"
           ]
         },
         "contact": {
           "party-uuids": [
-            "0ae2bfc4-f011-499e-8215-ccb7d7429b62"
+            "cde369ce-57f8-4ec1-847f-2681a9a881e7"
           ]
         }
       }

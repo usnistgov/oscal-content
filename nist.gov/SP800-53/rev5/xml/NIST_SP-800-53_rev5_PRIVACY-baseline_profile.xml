@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!-- Produced by SP800-53-profile-extract.xsl 2021-01-14-05:00; runtime parameter settings: $baseline='PRIVACY'-->
 <profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="a4c905d7-3bf4-477d-a3e5-f4943b06fa5a">
+         uuid="26d2beac-d3d8-4316-8c3c-5ff7414386e3">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 5 PRIVACY BASELINE</title>
-      <last-modified>2020-12-18T16:38:47.895-05:00</last-modified>
+      <last-modified>2021-01-14T09:04:29.16-05:00</last-modified>
       <version>Final</version>
       <oscal-version>1.0.0-rc1</oscal-version>
       <role id="creator">
@@ -12,7 +12,7 @@
       <role id="contact">
          <title>Contact</title>
       </role>
-      <party uuid="892cdf79-ce18-4c98-b7d7-721bb6a8de1c" type="organization">
+      <party uuid="11f1de66-89ba-499d-903e-56418e95af9d" type="organization">
          <name>Joint Task Force, Transformation Initiative</name>
          <email-address>sec-cert@nist.gov</email-address>
          <address>
@@ -26,10 +26,10 @@
          </address>
       </party>
       <responsible-party role-id="creator">
-         <party-uuid>892cdf79-ce18-4c98-b7d7-721bb6a8de1c</party-uuid>
+         <party-uuid>11f1de66-89ba-499d-903e-56418e95af9d</party-uuid>
       </responsible-party>
       <responsible-party role-id="contact">
-         <party-uuid>892cdf79-ce18-4c98-b7d7-721bb6a8de1c</party-uuid>
+         <party-uuid>11f1de66-89ba-499d-903e-56418e95af9d</party-uuid>
       </responsible-party>
    </metadata>
    <import href="NIST_SP-800-53_rev5_catalog.xml">
@@ -55,6 +55,7 @@
          <call control-id="cm-4"/>
          <call control-id="ir-1"/>
          <call control-id="ir-2"/>
+         <call control-id="ir-2.3"/>
          <call control-id="ir-3"/>
          <call control-id="ir-4"/>
          <call control-id="ir-5"/>

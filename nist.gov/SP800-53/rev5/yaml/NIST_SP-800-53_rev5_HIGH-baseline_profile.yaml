@@ -1,8 +1,8 @@
 profile: 
-  uuid:     6145b8a2-5860-4803-bbb5-f0c6495c6f9a
+  uuid:     c8cb6790-3b95-4300-9aed-570e71092cbe
   metadata: 
     title:               NIST Special Publication 800-53 Revision 5 HIGH IMPACT BASELINE
-    last-modified:       2020-12-18T16:38:46.076-05:00
+    last-modified:       2021-01-14T09:04:29.356-05:00
     version:             Final
     oscal-version:       1.0.0-rc1
     roles: 
@@ -14,7 +14,7 @@ profile:
         title: Contact
     parties: 
       - 
-        uuid:            fcabc5cf-15ed-456e-bba5-34f95f144c7d
+        uuid:            c748c806-1d77-4695-bb40-e117b2afa82e
         type:            organization
         name:            Joint Task Force, Transformation Initiative
         email-addresses: sec-cert@nist.gov
@@ -26,9 +26,9 @@ profile:
             postal-code: 20899-8930
     responsible-parties: 
       creator: 
-        party-uuids: fcabc5cf-15ed-456e-bba5-34f95f144c7d
+        party-uuids: c748c806-1d77-4695-bb40-e117b2afa82e
       contact: 
-        party-uuids: fcabc5cf-15ed-456e-bba5-34f95f144c7d
+        party-uuids: c748c806-1d77-4695-bb40-e117b2afa82e
   imports: 
     - 
       href:    NIST_SP-800-53_rev5_catalog.xml
