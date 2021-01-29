@@ -1,8 +1,8 @@
-<!-- XML produced by extraction/mapping from docx via XSweet++: 2021-01-07T12:23:19.102-05:00 -->
-<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="849dd8b6-bb97-4c68-af17-f0c9315d07a2">
+<!-- XML produced by extraction/mapping from docx via XSweet++: 2021-01-29T17:39:20.301-05:00 -->
+<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="8344f4b4-66ce-4995-8766-0a52642b4a08">
   <metadata>
     <title>NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Federal Information Systems and Organizations</title>
-    <last-modified>2021-01-07T12:23:18.582-05:00</last-modified>
+    <last-modified>2021-01-29T17:39:19.851-05:00</last-modified>
     <version>Revision 5</version>
     <oscal-version>1.0.0-rc1</oscal-version>
     <prop name="keywords">assurance; availability; computer security; confidentiality; control; cybersecurity; FISMA; information security; information system; integrity; personally identifiable information; Privacy Act; privacy controls; privacy functions; privacy requirements; Risk Management Framework; security controls; security functions; security requirements; system; system security.</prop>
@@ -520,9 +520,6 @@
         <prop name="label">AC-2(13)</prop>
         <prop name="sort-id">ac-02.13</prop>
         <link rel="required" href="#ac-2"/>
-        <link rel="reference" href="#2956e175-f674-43f4-b1b9-e074ad9fc39c"/>
-        <link rel="reference" href="#388a3aa2-5d85-4bad-b8a3-77db80d63c4f"/>
-        <link rel="reference" href="#53df282b-8b3f-483a-bad1-6a8b8ac00114"/>
         <link rel="related" href="#au-6"/>
         <link rel="related" href="#si-4"/>
         <part name="statement" id="ac-2.13_smt">
@@ -916,14 +913,6 @@
         <prop name="label">AC-3(15)</prop>
         <prop name="sort-id">ac-03.15</prop>
         <link rel="required" href="#ac-3"/>
-        <link rel="reference" href="#18e71fec-c6fd-475a-925a-5d8495cf8455"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#110e26af-4765-49e1-8740-6750f83fcda1"/>
-        <link rel="reference" href="#e7942589-e267-4a5a-a3d9-f39a7aae81f0"/>
-        <link rel="reference" href="#8306620b-1920-4d73-8b21-12008528595f"/>
-        <link rel="reference" href="#2956e175-f674-43f4-b1b9-e074ad9fc39c"/>
-        <link rel="reference" href="#388a3aa2-5d85-4bad-b8a3-77db80d63c4f"/>
-        <link rel="reference" href="#7f473f21-fdbf-4a6c-81a1-0ab95919609d"/>
         <link rel="related" href="#sc-2"/>
         <link rel="related" href="#sc-3"/>
         <link rel="related" href="#ac-4"/>
@@ -1397,7 +1386,7 @@
         <link rel="required" href="#ac-4"/>
         <link rel="related" href="#mp-6"/>
         <part name="statement" id="ac-4.25_smt">
-          <p>When transferring information between different security domains, sanitize data to minimize <insert param-id="ac-4.25_prm_1"/> in accordance with <insert param-id="ac-4.25_prm_2"/>].</p>
+          <p>When transferring information between different security domains, sanitize data to minimize <insert param-id="ac-4.25_prm_1"/> in accordance with <insert param-id="ac-4.25_prm_2"/>.</p>
         </part>
         <part name="guidance" id="ac-4.25_gdn">
           <p>Data sanitization is the process of irreversibly removing or destroying data stored on a memory device (e.g., hard drives, flash memory/solid state drives, mobile devices, CDs, and DVDs) or in hard copy form.</p>
@@ -1494,10 +1483,6 @@
         <prop name="label">AC-4(32)</prop>
         <prop name="sort-id">ac-04.32</prop>
         <link rel="required" href="#ac-4"/>
-        <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
-        <link rel="reference" href="#2956e175-f674-43f4-b1b9-e074ad9fc39c"/>
-        <link rel="reference" href="#388a3aa2-5d85-4bad-b8a3-77db80d63c4f"/>
-        <link rel="reference" href="#a2590922-82f3-4277-83c0-ca5bee06dba4"/>
         <part name="statement" id="ac-4.32_smt">
           <p>When transferring information between different security domains, the process that transfers information between filter pipelines:</p>
           <part name="item" id="ac-4.32_smt.a">
@@ -1885,8 +1870,6 @@
         <prop name="label">AC-7(4)</prop>
         <prop name="sort-id">ac-07.04</prop>
         <link rel="required" href="#ac-7"/>
-        <link rel="reference" href="#737513fa-6758-403f-831d-5ddab5e23cb3"/>
-        <link rel="reference" href="#0f66be67-85e7-4ca6-bd19-39453e9f4394"/>
         <link rel="related" href="#ia-3"/>
         <part name="statement" id="ac-7.4_smt">
           <part name="item" id="ac-7.4_smt.a">
@@ -2439,11 +2422,6 @@
         <prop name="label">AC-16(10)</prop>
         <prop name="sort-id">ac-16.10</prop>
         <link rel="required" href="#ac-16"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#678e3d6c-150b-4393-aec5-6e3481eb1e00"/>
-        <link rel="reference" href="#7c37a38d-21d7-40d8-bc3d-b5e27eac17e1"/>
-        <link rel="reference" href="#2956e175-f674-43f4-b1b9-e074ad9fc39c"/>
-        <link rel="reference" href="#388a3aa2-5d85-4bad-b8a3-77db80d63c4f"/>
         <part name="statement" id="ac-16.10_smt">
           <p>Provide authorized individuals the capability to define or change the type and value of security and privacy attributes available for association with subjects and objects.</p>
         </part>
@@ -2625,12 +2603,6 @@
         <prop name="label">AC-17(10)</prop>
         <prop name="sort-id">ac-17.10</prop>
         <link rel="required" href="#ac-17"/>
-        <link rel="reference" href="#83b9d63b-66b1-467c-9f3b-3a0b108771e9"/>
-        <link rel="reference" href="#d4d7c760-2907-403b-8b2a-767ca5370ecd"/>
-        <link rel="reference" href="#6bc4d137-aece-42a8-8081-9ecb1ebe9fb4"/>
-        <link rel="reference" href="#42e37e51-7cc0-4ffa-81c9-0ac942da7e99"/>
-        <link rel="reference" href="#d17ebd7a-ffab-499d-bfff-e705bbb01fa6"/>
-        <link rel="reference" href="#3915a084-b87b-4f02-83d4-c369e746292f"/>
         <link rel="related" href="#sc-12"/>
         <link rel="related" href="#sc-13"/>
         <link rel="related" href="#sc-23"/>
@@ -2733,8 +2705,6 @@
         <prop name="label">AC-18(5)</prop>
         <prop name="sort-id">ac-18.05</prop>
         <link rel="required" href="#ac-18"/>
-        <link rel="reference" href="#25e3e57b-dc2f-4934-af9b-050b020c6f0e"/>
-        <link rel="reference" href="#03fb73bc-1b12-4182-bd96-e5719254ea61"/>
         <link rel="related" href="#pe-19"/>
         <part name="statement" id="ac-18.5_smt">
           <p>Select radio antennas and calibrate transmission power levels to reduce the probability that signals from wireless access points can be received outside of organization-controlled boundaries.</p>
@@ -2869,8 +2839,6 @@
         <prop name="label">AC-19(5)</prop>
         <prop name="sort-id">ac-19.05</prop>
         <link rel="required" href="#ac-19"/>
-        <link rel="reference" href="#42e37e51-7cc0-4ffa-81c9-0ac942da7e99"/>
-        <link rel="reference" href="#0f66be67-85e7-4ca6-bd19-39453e9f4394"/>
         <link rel="related" href="#sc-12"/>
         <link rel="related" href="#sc-13"/>
         <link rel="related" href="#sc-28"/>
@@ -3009,9 +2977,6 @@
         <prop name="label">AC-20(5)</prop>
         <prop name="sort-id">ac-20.05</prop>
         <link rel="required" href="#ac-20"/>
-        <link rel="reference" href="#628d22a1-6a11-4784-bc59-5cd9497b5445"/>
-        <link rel="reference" href="#7dbd6d9f-29d6-4d1d-9766-f2d77ff3c849"/>
-        <link rel="reference" href="#f26af0d0-6d72-4a9d-8ecd-01bc21fd4f0e"/>
         <link rel="related" href="#mp-7"/>
         <link rel="related" href="#pl-4"/>
         <link rel="related" href="#ps-6"/>
@@ -3080,9 +3045,6 @@
         <prop name="label">AC-21(2)</prop>
         <prop name="sort-id">ac-21.02</prop>
         <link rel="required" href="#ac-21"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#9ef4b43c-42a4-4316-87dc-ffaf528bc05c"/>
-        <link rel="reference" href="#98d415ca-7281-4064-9931-0c366637e324"/>
         <part name="statement" id="ac-21.2_smt">
           <p>Implement information search and retrieval services that enforce <insert param-id="ac-21.2_prm_1"/>.</p>
         </part>
@@ -3200,8 +3162,6 @@
         <prop name="label">AC-24(2)</prop>
         <prop name="sort-id">ac-24.02</prop>
         <link rel="required" href="#ac-24"/>
-        <link rel="reference" href="#2956e175-f674-43f4-b1b9-e074ad9fc39c"/>
-        <link rel="reference" href="#388a3aa2-5d85-4bad-b8a3-77db80d63c4f"/>
         <part name="statement" id="ac-24.2_smt">
           <p>Enforce access control decisions based on <insert param-id="ac-24.2_prm_1"/> that do not include the identity of the user or process acting on behalf of the user.</p>
         </part>
@@ -3459,11 +3419,6 @@
         <prop name="label">AT-2(6)</prop>
         <prop name="sort-id">at-02.06</prop>
         <link rel="required" href="#at-2"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#511f6832-23ca-49a3-8c0f-ce493373cab8"/>
-        <link rel="reference" href="#61ccf0f4-d3e7-42db-9796-ce6cb1c85989"/>
-        <link rel="reference" href="#276bd50a-7e58-48e5-a405-8c8cb91d7a5f"/>
-        <link rel="reference" href="#89f2a08d-fc49-46d0-856e-bf974c9b1573"/>
         <link rel="related" href="#ra-3"/>
         <part name="statement" id="at-2.6_smt">
           <part name="item" id="at-2.6_smt.a">
@@ -3621,9 +3576,6 @@
         <prop name="label">AT-3(5)</prop>
         <prop name="sort-id">at-03.05</prop>
         <link rel="required" href="#at-3"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#511f6832-23ca-49a3-8c0f-ce493373cab8"/>
-        <link rel="reference" href="#276bd50a-7e58-48e5-a405-8c8cb91d7a5f"/>
         <link rel="related" href="#pt-2"/>
         <link rel="related" href="#pt-3"/>
         <link rel="related" href="#pt-5"/>
@@ -3872,8 +3824,6 @@
         <prop name="sort-id">au-02.04</prop>
         <prop name="status">withdrawn</prop>
         <link rel="incorporated-into" href="#ac-6.9"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#5eee45d8-3313-4fdc-8d54-1742092bbdd6"/>
       </control>
     </control>
     <control class="SP800-53" id="au-3">
@@ -3951,8 +3901,6 @@
         <prop name="label">AU-3(3)</prop>
         <prop name="sort-id">au-03.03</prop>
         <link rel="required" href="#au-3"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#98d415ca-7281-4064-9931-0c366637e324"/>
         <link rel="related" href="#ra-3"/>
         <part name="statement" id="au-3.3_smt">
           <p>Limit personally identifiable information contained in audit records to the following elements identified in the privacy risk assessment: <insert param-id="au-3.3_prm_1"/>.</p>
@@ -4339,8 +4287,6 @@
         <prop name="sort-id">au-06.10</prop>
         <prop name="status">withdrawn</prop>
         <link rel="incorporated-into" href="#au-6"/>
-        <link rel="reference" href="#cfdb1858-c473-46b3-89f9-a700308d0be2"/>
-        <link rel="reference" href="#10cf2fad-a216-41f9-bb1a-531b7e3119e3"/>
       </control>
     </control>
     <control class="SP800-53" id="au-7">
@@ -4577,9 +4523,6 @@
         <prop name="label">AU-9(7)</prop>
         <prop name="sort-id">au-09.07</prop>
         <link rel="required" href="#au-9"/>
-        <link rel="reference" href="#678e3d6c-150b-4393-aec5-6e3481eb1e00"/>
-        <link rel="reference" href="#eea3c092-42ed-4382-a6f4-1adadef01b9d"/>
-        <link rel="reference" href="#a295ca19-8c75-4b4c-8800-98024732e181"/>
         <link rel="related" href="#au-4"/>
         <link rel="related" href="#au-5"/>
         <link rel="related" href="#au-11"/>
@@ -4718,11 +4661,6 @@
         <prop name="sort-id">au-10.05</prop>
         <prop name="status">withdrawn</prop>
         <link rel="incorporated-into" href="#si-7"/>
-        <link rel="reference" href="#678e3d6c-150b-4393-aec5-6e3481eb1e00"/>
-        <link rel="reference" href="#eea3c092-42ed-4382-a6f4-1adadef01b9d"/>
-        <link rel="reference" href="#7c37a38d-21d7-40d8-bc3d-b5e27eac17e1"/>
-        <link rel="reference" href="#a295ca19-8c75-4b4c-8800-98024732e181"/>
-        <link rel="reference" href="#1c71b420-2bd9-4e52-9fc8-390f58b85b59"/>
       </control>
     </control>
     <control class="SP800-53" id="au-11">
@@ -4756,7 +4694,6 @@
         <prop name="label">AU-11(1)</prop>
         <prop name="sort-id">au-11.01</prop>
         <link rel="required" href="#au-11"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
         <part name="statement" id="au-11.1_smt">
           <p>Employ <insert param-id="au-11.1_prm_1"/> to ensure that long-term audit records generated by the system can be retrieved.</p>
         </part>
@@ -5353,16 +5290,6 @@
         <prop name="label">CA-2(3)</prop>
         <prop name="sort-id">ca-02.03</prop>
         <link rel="required" href="#ca-2"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#628d22a1-6a11-4784-bc59-5cd9497b5445"/>
-        <link rel="reference" href="#30eb758a-2707-4bca-90ad-949a74d4eb16"/>
-        <link rel="reference" href="#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8"/>
-        <link rel="reference" href="#cec037f3-8aba-4c97-84b4-4082f9e515d2"/>
-        <link rel="reference" href="#a21aef46-7330-48a0-b2e1-c5bb8b2dd11d"/>
-        <link rel="reference" href="#122177fa-c4ed-485d-8345-3082c0fb9a06"/>
-        <link rel="reference" href="#067223d8-1ec7-45c5-b21b-c848da6de8fb"/>
-        <link rel="reference" href="#bbac9fc2-df5b-4f2d-bf99-90d0ade45349"/>
-        <link rel="reference" href="#98d415ca-7281-4064-9931-0c366637e324"/>
         <link rel="related" href="#sa-4"/>
         <part name="statement" id="ca-2.3_smt">
           <p>Leverage the results of control assessments performed by <insert param-id="ca-2.3_prm_1"/> on <insert param-id="ca-2.3_prm_2"/> when the assessment meets <insert param-id="ca-2.3_prm_3"/>.</p>
@@ -5481,9 +5408,6 @@
         <prop name="label">CA-3(7)</prop>
         <prop name="sort-id">ca-03.07</prop>
         <link rel="required" href="#ca-3"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#628d22a1-6a11-4784-bc59-5cd9497b5445"/>
-        <link rel="reference" href="#c3a76872-e160-4267-99e8-6952de967d04"/>
         <link rel="related" href="#sc-7"/>
         <part name="statement" id="ca-3.7_smt">
           <part name="item" id="ca-3.7_smt.a">
@@ -5544,8 +5468,6 @@
         <prop name="label">CA-5(1)</prop>
         <prop name="sort-id">ca-05.01</prop>
         <link rel="required" href="#ca-5"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8"/>
         <part name="statement" id="ca-5.1_smt">
           <p>Ensure the accuracy, currency, and availability of the plan of action and milestones for the system using <insert param-id="ca-5.1_prm_1"/>.</p>
         </part>
@@ -5624,9 +5546,6 @@
         <prop name="label">CA-6(2)</prop>
         <prop name="sort-id">ca-06.02</prop>
         <link rel="required" href="#ca-6"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8"/>
-        <link rel="reference" href="#067223d8-1ec7-45c5-b21b-c848da6de8fb"/>
         <link rel="related" href="#ac-6"/>
         <part name="statement" id="ca-6.2_smt">
           <p>Employ a joint authorization process for the system that includes multiple authorizing officials with at least one authorizing official from an organization external to the organization conducting the authorization.</p>
@@ -5827,14 +5746,6 @@
         <prop name="label">CA-7(6)</prop>
         <prop name="sort-id">ca-07.06</prop>
         <link rel="required" href="#ca-7"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8"/>
-        <link rel="reference" href="#cec037f3-8aba-4c97-84b4-4082f9e515d2"/>
-        <link rel="reference" href="#a21aef46-7330-48a0-b2e1-c5bb8b2dd11d"/>
-        <link rel="reference" href="#122177fa-c4ed-485d-8345-3082c0fb9a06"/>
-        <link rel="reference" href="#067223d8-1ec7-45c5-b21b-c848da6de8fb"/>
-        <link rel="reference" href="#bbac9fc2-df5b-4f2d-bf99-90d0ade45349"/>
-        <link rel="reference" href="#98d415ca-7281-4064-9931-0c366637e324"/>
         <part name="statement" id="ca-7.6_smt">
           <p>Ensure the accuracy, currency, and availability of monitoring results for the system using <insert param-id="ca-7.6_prm_1"/>.</p>
         </part>
@@ -5966,8 +5877,6 @@
         <prop name="label">CA-9(1)</prop>
         <prop name="sort-id">ca-09.01</prop>
         <link rel="required" href="#ca-9"/>
-        <link rel="reference" href="#0f66be67-85e7-4ca6-bd19-39453e9f4394"/>
-        <link rel="reference" href="#4c501da5-9d79-4cb6-ba80-97260e1ce327"/>
         <link rel="related" href="#cm-6"/>
         <part name="statement" id="ca-9.1_smt">
           <p>Perform security and privacy compliance checks on constituent system components prior to the establishment of the internal connection.</p>
@@ -6199,8 +6108,6 @@
         <prop name="label">CM-2(7)</prop>
         <prop name="sort-id">cm-02.07</prop>
         <link rel="required" href="#cm-2"/>
-        <link rel="reference" href="#0f66be67-85e7-4ca6-bd19-39453e9f4394"/>
-        <link rel="reference" href="#20db4e66-e257-450c-b2e4-2bb9a62a2c88"/>
         <link rel="related" href="#mp-4"/>
         <link rel="related" href="#mp-5"/>
         <part name="statement" id="cm-2.7_smt">
@@ -6452,9 +6359,6 @@
         <prop name="label">CM-3(8)</prop>
         <prop name="sort-id">cm-03.08</prop>
         <link rel="required" href="#cm-3"/>
-        <link rel="reference" href="#0f66be67-85e7-4ca6-bd19-39453e9f4394"/>
-        <link rel="reference" href="#20db4e66-e257-450c-b2e4-2bb9a62a2c88"/>
-        <link rel="reference" href="#98d415ca-7281-4064-9931-0c366637e324"/>
         <part name="statement" id="cm-3.8_smt">
           <p>Prevent or restrict changes to the configuration of the system under the following circumstances: <insert param-id="cm-3.8_prm_1"/>.</p>
         </part>
@@ -6505,7 +6409,6 @@
         <prop name="label">CM-4(2)</prop>
         <prop name="sort-id">cm-04.02</prop>
         <link rel="required" href="#cm-4"/>
-        <link rel="reference" href="#20db4e66-e257-450c-b2e4-2bb9a62a2c88"/>
         <link rel="related" href="#sa-11"/>
         <link rel="related" href="#sc-3"/>
         <link rel="related" href="#si-6"/>
@@ -6642,8 +6545,6 @@
         <prop name="sort-id">cm-05.07</prop>
         <prop name="status">withdrawn</prop>
         <link rel="incorporated-into" href="#si-7"/>
-        <link rel="reference" href="#678e3d6c-150b-4393-aec5-6e3481eb1e00"/>
-        <link rel="reference" href="#7c37a38d-21d7-40d8-bc3d-b5e27eac17e1"/>
       </control>
     </control>
     <control class="SP800-53" id="cm-6">
@@ -6769,12 +6670,6 @@
         <prop name="sort-id">cm-06.04</prop>
         <prop name="status">withdrawn</prop>
         <link rel="incorporated-into" href="#cm-4"/>
-        <link rel="reference" href="#4895b4cd-34c5-4667-bf8a-27d443c12047"/>
-        <link rel="reference" href="#8016d2ed-d30f-4416-9c45-0f42c7aa3232"/>
-        <link rel="reference" href="#20db4e66-e257-450c-b2e4-2bb9a62a2c88"/>
-        <link rel="reference" href="#98498928-3ca3-44b3-8b1e-f48685373087"/>
-        <link rel="reference" href="#d744d9a3-73eb-4085-b9ff-79e82e9e2d6e"/>
-        <link rel="reference" href="#aa66e14f-e7cb-4a37-99d2-07578dfd4608"/>
       </control>
     </control>
     <control class="SP800-53" id="cm-7">
@@ -7035,11 +6930,6 @@
         <prop name="label">CM-7(9)</prop>
         <prop name="sort-id">cm-07.09</prop>
         <link rel="required" href="#cm-7"/>
-        <link rel="reference" href="#678e3d6c-150b-4393-aec5-6e3481eb1e00"/>
-        <link rel="reference" href="#eea3c092-42ed-4382-a6f4-1adadef01b9d"/>
-        <link rel="reference" href="#7c37a38d-21d7-40d8-bc3d-b5e27eac17e1"/>
-        <link rel="reference" href="#a295ca19-8c75-4b4c-8800-98024732e181"/>
-        <link rel="reference" href="#38f39739-1ebd-43b1-8b8c-00f591d89ebd"/>
         <part name="statement" id="cm-7.9_smt">
           <part name="item" id="cm-7.9_smt.a">
             <prop name="label">(a)</prop>
@@ -7273,13 +7163,6 @@
         <prop name="label">CM-8(9)</prop>
         <prop name="sort-id">cm-08.09</prop>
         <link rel="required" href="#cm-8"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#110e26af-4765-49e1-8740-6750f83fcda1"/>
-        <link rel="reference" href="#e7942589-e267-4a5a-a3d9-f39a7aae81f0"/>
-        <link rel="reference" href="#8306620b-1920-4d73-8b21-12008528595f"/>
-        <link rel="reference" href="#20db4e66-e257-450c-b2e4-2bb9a62a2c88"/>
-        <link rel="reference" href="#70402863-5078-43af-9a6c-e11b0f3ec370"/>
-        <link rel="reference" href="#996241f8-f692-42d5-91f1-ce8b752e39e6"/>
         <part name="statement" id="cm-8.9_smt">
           <part name="item" id="cm-8.9_smt.a">
             <prop name="label">(a)</prop>
@@ -7345,7 +7228,6 @@
         <prop name="label">CM-9(1)</prop>
         <prop name="sort-id">cm-09.01</prop>
         <link rel="required" href="#cm-9"/>
-        <link rel="reference" href="#20db4e66-e257-450c-b2e4-2bb9a62a2c88"/>
         <part name="statement" id="cm-9.1_smt">
           <p>Assign responsibility for developing the configuration management process to organizational personnel that are not directly involved in system development.</p>
         </part>
@@ -7530,9 +7412,6 @@
         <prop name="label">CM-12(1)</prop>
         <prop name="sort-id">cm-12.01</prop>
         <link rel="required" href="#cm-12"/>
-        <link rel="reference" href="#628d22a1-6a11-4784-bc59-5cd9497b5445"/>
-        <link rel="reference" href="#e72fde0b-6fc2-497e-a9db-d8fce5a11b8a"/>
-        <link rel="reference" href="#9be5d661-421f-41ad-854e-86f98b811891"/>
         <part name="statement" id="cm-12.1_smt">
           <p>Use automated tools to identify <insert param-id="cm-12.1_prm_1"/> on <insert param-id="cm-12.1_prm_2"/> to ensure controls are in place to protect organizational information and individual privacy.</p>
         </part>
@@ -7890,8 +7769,6 @@
         <prop name="label">CP-2(8)</prop>
         <prop name="sort-id">cp-02.08</prop>
         <link rel="required" href="#cp-2"/>
-        <link rel="reference" href="#bc39f179-c735-4da2-b7a7-b2b622119755"/>
-        <link rel="reference" href="#d4296805-2dca-4c63-a95f-eeccaa826aec"/>
         <link rel="related" href="#cm-8"/>
         <link rel="related" href="#ra-9"/>
         <part name="statement" id="cp-2.8_smt">
@@ -7970,7 +7847,6 @@
         <prop name="label">CP-3(2)</prop>
         <prop name="sort-id">cp-03.02</prop>
         <link rel="required" href="#cp-3"/>
-        <link rel="reference" href="#511f6832-23ca-49a3-8c0f-ce493373cab8"/>
         <part name="statement" id="cp-3.2_smt">
           <p>Employ mechanisms used in operations to provide a more thorough and realistic contingency training environment.</p>
         </part>
@@ -8095,10 +7971,6 @@
         <prop name="label">CP-4(5)</prop>
         <prop name="sort-id">cp-04.05</prop>
         <link rel="required" href="#cp-4"/>
-        <link rel="reference" href="#628d22a1-6a11-4784-bc59-5cd9497b5445"/>
-        <link rel="reference" href="#bc39f179-c735-4da2-b7a7-b2b622119755"/>
-        <link rel="reference" href="#53be2fcf-cfd1-4bcb-896b-9a3b65c22098"/>
-        <link rel="reference" href="#61ccf0f4-d3e7-42db-9796-ce6cb1c85989"/>
         <part name="statement" id="cp-4.5_smt">
           <p>Employ <insert param-id="cp-4.5_prm_1"/> to <insert param-id="cp-4.5_prm_2"/> to disrupt and adversely affect the system or system component.</p>
         </part>
@@ -8172,7 +8044,6 @@
         <prop name="label">CP-6(3)</prop>
         <prop name="sort-id">cp-06.03</prop>
         <link rel="required" href="#cp-6"/>
-        <link rel="reference" href="#bc39f179-c735-4da2-b7a7-b2b622119755"/>
         <link rel="related" href="#ra-3"/>
         <part name="statement" id="cp-6.3_smt">
           <p>Identify potential accessibility problems to the alternate storage site in the event of an area-wide disruption or disaster and outline explicit mitigation actions.</p>
@@ -8287,7 +8158,6 @@
         <prop name="label">CP-7(6)</prop>
         <prop name="sort-id">cp-07.06</prop>
         <link rel="required" href="#cp-7"/>
-        <link rel="reference" href="#bc39f179-c735-4da2-b7a7-b2b622119755"/>
         <part name="statement" id="cp-7.6_smt">
           <p>Plan and prepare for circumstances that preclude returning to the primary processing site.</p>
         </part>
@@ -8397,7 +8267,6 @@
         <prop name="label">CP-8(5)</prop>
         <prop name="sort-id">cp-08.05</prop>
         <link rel="required" href="#cp-8"/>
-        <link rel="reference" href="#bc39f179-c735-4da2-b7a7-b2b622119755"/>
         <link rel="related" href="#cp-3"/>
         <part name="statement" id="cp-8.5_smt">
           <p>Test alternate telecommunication services <insert param-id="cp-8.5_prm_1"/>.</p>
@@ -8571,11 +8440,6 @@
         <prop name="label">CP-9(8)</prop>
         <prop name="sort-id">cp-09.08</prop>
         <link rel="required" href="#cp-9"/>
-        <link rel="reference" href="#678e3d6c-150b-4393-aec5-6e3481eb1e00"/>
-        <link rel="reference" href="#7c37a38d-21d7-40d8-bc3d-b5e27eac17e1"/>
-        <link rel="reference" href="#bc39f179-c735-4da2-b7a7-b2b622119755"/>
-        <link rel="reference" href="#3653e316-8923-430e-8943-b3b2b2562fc6"/>
-        <link rel="reference" href="#2494df28-9049-4196-b233-540e7440993f"/>
         <link rel="related" href="#sc-12"/>
         <link rel="related" href="#sc-13"/>
         <link rel="related" href="#sc-28"/>
@@ -8664,7 +8528,6 @@
         <prop name="label">CP-10(6)</prop>
         <prop name="sort-id">cp-10.06</prop>
         <link rel="required" href="#cp-10"/>
-        <link rel="reference" href="#bc39f179-c735-4da2-b7a7-b2b622119755"/>
         <link rel="related" href="#ac-3"/>
         <link rel="related" href="#ac-6"/>
         <link rel="related" href="#mp-2"/>
@@ -9040,23 +8903,6 @@
         <prop name="label">IA-2(13)</prop>
         <prop name="sort-id">ia-02.13</prop>
         <link rel="required" href="#ia-2"/>
-        <link rel="reference" href="#678e3d6c-150b-4393-aec5-6e3481eb1e00"/>
-        <link rel="reference" href="#7ba1d91c-3934-4d5a-8532-b32f864ad34c"/>
-        <link rel="reference" href="#a295ca19-8c75-4b4c-8800-98024732e181"/>
-        <link rel="reference" href="#737513fa-6758-403f-831d-5ddab5e23cb3"/>
-        <link rel="reference" href="#858705be-3c1f-48aa-a328-0ce398d95ef0"/>
-        <link rel="reference" href="#7af2e6ec-9f7e-4232-ad3f-09888eb0793a"/>
-        <link rel="reference" href="#828856bd-d7c4-427b-8b51-815517ec382d"/>
-        <link rel="reference" href="#10963761-58fc-4b20-b3d6-b44a54daba03"/>
-        <link rel="reference" href="#d9e036ba-6eec-46a6-9340-b0bf1fea23b4"/>
-        <link rel="reference" href="#e8552d48-cf41-40aa-8b06-f45f7fb4706c"/>
-        <link rel="reference" href="#15dc76ff-b17a-4eeb-8948-8ea8de3ccc2c"/>
-        <link rel="reference" href="#4b38e961-1125-4a5b-aa35-1d6c02846dad"/>
-        <link rel="reference" href="#91701292-8bcd-4d2e-a5bd-59ab61e34b3c"/>
-        <link rel="reference" href="#4f5f51ac-2b8d-4b90-a3c7-46f56e967617"/>
-        <link rel="reference" href="#604774da-9e1d-48eb-9c62-4e959dc80737"/>
-        <link rel="reference" href="#7f473f21-fdbf-4a6c-81a1-0ab95919609d"/>
-        <link rel="reference" href="#3915a084-b87b-4f02-83d4-c369e746292f"/>
         <link rel="related" href="#ia-10"/>
         <link rel="related" href="#ia-11"/>
         <link rel="related" href="#sc-37"/>
@@ -9332,11 +9178,6 @@
         <prop name="label">IA-4(9)</prop>
         <prop name="sort-id">ia-04.09</prop>
         <link rel="required" href="#ia-4"/>
-        <link rel="reference" href="#7ba1d91c-3934-4d5a-8532-b32f864ad34c"/>
-        <link rel="reference" href="#737513fa-6758-403f-831d-5ddab5e23cb3"/>
-        <link rel="reference" href="#858705be-3c1f-48aa-a328-0ce398d95ef0"/>
-        <link rel="reference" href="#7af2e6ec-9f7e-4232-ad3f-09888eb0793a"/>
-        <link rel="reference" href="#828856bd-d7c4-427b-8b51-815517ec382d"/>
         <part name="statement" id="ia-4.9_smt">
           <p>Maintain the attributes for each uniquely identified individual, device, or service in <insert param-id="ia-4.9_prm_1"/>.</p>
         </part>
@@ -9728,19 +9569,6 @@
         <prop name="label">IA-5(18)</prop>
         <prop name="sort-id">ia-05.18</prop>
         <link rel="required" href="#ia-5"/>
-        <link rel="reference" href="#678e3d6c-150b-4393-aec5-6e3481eb1e00"/>
-        <link rel="reference" href="#eea3c092-42ed-4382-a6f4-1adadef01b9d"/>
-        <link rel="reference" href="#7ba1d91c-3934-4d5a-8532-b32f864ad34c"/>
-        <link rel="reference" href="#a295ca19-8c75-4b4c-8800-98024732e181"/>
-        <link rel="reference" href="#737513fa-6758-403f-831d-5ddab5e23cb3"/>
-        <link rel="reference" href="#858705be-3c1f-48aa-a328-0ce398d95ef0"/>
-        <link rel="reference" href="#7af2e6ec-9f7e-4232-ad3f-09888eb0793a"/>
-        <link rel="reference" href="#828856bd-d7c4-427b-8b51-815517ec382d"/>
-        <link rel="reference" href="#15dc76ff-b17a-4eeb-8948-8ea8de3ccc2c"/>
-        <link rel="reference" href="#91701292-8bcd-4d2e-a5bd-59ab61e34b3c"/>
-        <link rel="reference" href="#4f5f51ac-2b8d-4b90-a3c7-46f56e967617"/>
-        <link rel="reference" href="#604774da-9e1d-48eb-9c62-4e959dc80737"/>
-        <link rel="reference" href="#81aeb0a3-d0ee-4e44-b842-6bf28d2bd7f5"/>
         <part name="statement" id="ia-5.18_smt">
           <part name="item" id="ia-5.18_smt.a">
             <prop name="label">(a)</prop>
@@ -9894,13 +9722,6 @@
         <prop name="label">IA-8(6)</prop>
         <prop name="sort-id">ia-08.06</prop>
         <link rel="required" href="#ia-8"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#a1555677-2b9d-4868-a97b-a1363aff32f5"/>
-        <link rel="reference" href="#7ba1d91c-3934-4d5a-8532-b32f864ad34c"/>
-        <link rel="reference" href="#737513fa-6758-403f-831d-5ddab5e23cb3"/>
-        <link rel="reference" href="#10963761-58fc-4b20-b3d6-b44a54daba03"/>
-        <link rel="reference" href="#2100332a-16a5-4598-bacf-7261baea9711"/>
-        <link rel="reference" href="#98d415ca-7281-4064-9931-0c366637e324"/>
         <part name="statement" id="ia-8.6_smt">
           <p>Implement the following measures to disassociate user attributes or identifier assertion relationships among individuals, credential service providers, and relying parties: <insert param-id="ia-8.6_prm_1"/>.</p>
         </part>
@@ -10092,10 +9913,6 @@
         <prop name="label">IA-12(6)</prop>
         <prop name="sort-id">ia-12.06</prop>
         <link rel="required" href="#ia-12"/>
-        <link rel="reference" href="#7ba1d91c-3934-4d5a-8532-b32f864ad34c"/>
-        <link rel="reference" href="#737513fa-6758-403f-831d-5ddab5e23cb3"/>
-        <link rel="reference" href="#9099ed2c-922a-493d-bcb4-d896192243ff"/>
-        <link rel="reference" href="#10963761-58fc-4b20-b3d6-b44a54daba03"/>
         <link rel="related" href="#ia-3"/>
         <link rel="related" href="#ia-4"/>
         <link rel="related" href="#ia-5"/>
@@ -10276,8 +10093,6 @@
         <prop name="label">IR-2(3)</prop>
         <prop name="sort-id">ir-02.03</prop>
         <link rel="required" href="#ir-2"/>
-        <link rel="reference" href="#5f4705ac-8d17-438c-b23a-ac7f12362ae4"/>
-        <link rel="reference" href="#511f6832-23ca-49a3-8c0f-ce493373cab8"/>
         <part name="statement" id="ir-2.3_smt">
           <p>Provide incident response training on how to identify and respond to a breach, including the organization’s process for reporting a breach.</p>
         </part>
@@ -10343,9 +10158,6 @@
         <prop name="label">IR-3(3)</prop>
         <prop name="sort-id">ir-03.03</prop>
         <link rel="required" href="#ir-3"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#53be2fcf-cfd1-4bcb-896b-9a3b65c22098"/>
-        <link rel="reference" href="#122177fa-c4ed-485d-8345-3082c0fb9a06"/>
         <part name="statement" id="ir-3.3_smt">
           <p>Use qualitative and quantitative data from testing to:</p>
           <part name="item" id="ir-3.3_smt.a">
@@ -10642,16 +10454,6 @@
         <prop name="label">IR-4(15)</prop>
         <prop name="sort-id">ir-04.15</prop>
         <link rel="required" href="#ir-4"/>
-        <link rel="reference" href="#4ff10ed3-d8fe-4246-99e3-443045e27482"/>
-        <link rel="reference" href="#0f963c17-ab5a-432a-a867-91eac550309b"/>
-        <link rel="reference" href="#5f4705ac-8d17-438c-b23a-ac7f12362ae4"/>
-        <link rel="reference" href="#49b8aa2d-a88c-4bff-9f20-876ccb8f7dcb"/>
-        <link rel="reference" href="#cfdb1858-c473-46b3-89f9-a700308d0be2"/>
-        <link rel="reference" href="#10cf2fad-a216-41f9-bb1a-531b7e3119e3"/>
-        <link rel="reference" href="#9ef4b43c-42a4-4316-87dc-ffaf528bc05c"/>
-        <link rel="reference" href="#61ccf0f4-d3e7-42db-9796-ce6cb1c85989"/>
-        <link rel="reference" href="#31ae65ab-3f26-46b7-9d64-f25a4dac5778"/>
-        <link rel="reference" href="#2be7b163-e50a-435c-8906-f1162f2a457a"/>
         <part name="statement" id="ir-4.15_smt">
           <part name="item" id="ir-4.15_smt.a">
             <prop name="label">(a)</prop>
@@ -10698,7 +10500,6 @@
         <prop name="label">IR-5(1)</prop>
         <prop name="sort-id">ir-05.01</prop>
         <link rel="required" href="#ir-5"/>
-        <link rel="reference" href="#49b8aa2d-a88c-4bff-9f20-876ccb8f7dcb"/>
         <part name="statement" id="ir-5.1_smt">
           <p>Track incidents and collect and analyze incident information using <insert param-id="ir-5.1_prm_1"/>.</p>
         </part>
@@ -10776,10 +10577,6 @@
         <prop name="label">IR-6(3)</prop>
         <prop name="sort-id">ir-06.03</prop>
         <link rel="required" href="#ir-6"/>
-        <link rel="reference" href="#4ff10ed3-d8fe-4246-99e3-443045e27482"/>
-        <link rel="reference" href="#0f963c17-ab5a-432a-a867-91eac550309b"/>
-        <link rel="reference" href="#40b78258-c892-480e-9af8-77ac36648301"/>
-        <link rel="reference" href="#49b8aa2d-a88c-4bff-9f20-876ccb8f7dcb"/>
         <link rel="related" href="#sr-8"/>
         <part name="statement" id="ir-6.3_smt">
           <p>Provide incident information to the provider of the product or service and other organizations involved in the supply chain or supply chain governance for systems or system components related to the incident.</p>
@@ -10830,8 +10627,6 @@
         <prop name="label">IR-7(2)</prop>
         <prop name="sort-id">ir-07.02</prop>
         <link rel="required" href="#ir-7"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#2be7b163-e50a-435c-8906-f1162f2a457a"/>
         <part name="statement" id="ir-7.2_smt">
           <part name="item" id="ir-7.2_smt.a">
             <prop name="label">(a)</prop>
@@ -10950,9 +10745,6 @@
         <prop name="label">IR-8(1)</prop>
         <prop name="sort-id">ir-08.01</prop>
         <link rel="required" href="#ir-8"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#49b8aa2d-a88c-4bff-9f20-876ccb8f7dcb"/>
-        <link rel="reference" href="#5f4705ac-8d17-438c-b23a-ac7f12362ae4"/>
         <link rel="related" href="#pt-1"/>
         <link rel="related" href="#pt-2"/>
         <link rel="related" href="#pt-3"/>
@@ -11251,8 +11043,6 @@
         <prop name="label">MA-2(2)</prop>
         <prop name="sort-id">ma-02.02</prop>
         <link rel="required" href="#ma-2"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#4c501da5-9d79-4cb6-ba80-97260e1ce327"/>
         <link rel="related" href="#ma-3"/>
         <part name="statement" id="ma-2.2_smt">
           <part name="item" id="ma-2.2_smt.a">
@@ -11384,7 +11174,6 @@
         <prop name="label">MA-3(6)</prop>
         <prop name="sort-id">ma-03.06</prop>
         <link rel="required" href="#ma-3"/>
-        <link rel="reference" href="#a5b1d18d-e670-4586-9e6d-4a88b7ba3df6"/>
         <link rel="related" href="#ac-3"/>
         <link rel="related" href="#ac-6"/>
         <part name="statement" id="ma-3.6_smt">
@@ -11577,11 +11366,6 @@
         <prop name="label">MA-4(7)</prop>
         <prop name="sort-id">ma-04.07</prop>
         <link rel="required" href="#ma-4"/>
-        <link rel="reference" href="#678e3d6c-150b-4393-aec5-6e3481eb1e00"/>
-        <link rel="reference" href="#736d6310-e403-4b57-a79d-9967970c66d7"/>
-        <link rel="reference" href="#7ba1d91c-3934-4d5a-8532-b32f864ad34c"/>
-        <link rel="reference" href="#737513fa-6758-403f-831d-5ddab5e23cb3"/>
-        <link rel="reference" href="#a5b1d18d-e670-4586-9e6d-4a88b7ba3df6"/>
         <link rel="related" href="#ac-12"/>
         <part name="statement" id="ma-4.7_smt">
           <p>Verify session and network connection termination after the completion of nonlocal maintenance and diagnostic sessions.</p>
@@ -11941,9 +11725,6 @@
         <prop name="sort-id">mp-02.02</prop>
         <prop name="status">withdrawn</prop>
         <link rel="incorporated-into" href="#sc-28.1"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#628d22a1-6a11-4784-bc59-5cd9497b5445"/>
-        <link rel="reference" href="#22f2d4f0-4365-4e88-a30d-275c1f5473ea"/>
       </control>
     </control>
     <control class="SP800-53" id="mp-3">
@@ -12038,14 +11819,6 @@
         <prop name="label">MP-4(2)</prop>
         <prop name="sort-id">mp-04.02</prop>
         <link rel="required" href="#mp-4"/>
-        <link rel="reference" href="#628d22a1-6a11-4784-bc59-5cd9497b5445"/>
-        <link rel="reference" href="#20957dbb-6a1e-40a2-b38a-66f67d33ac2e"/>
-        <link rel="reference" href="#0d083d8a-5cc6-46f1-8d79-3081d42bcb75"/>
-        <link rel="reference" href="#eef62b16-c796-4554-955c-505824135b8a"/>
-        <link rel="reference" href="#110e26af-4765-49e1-8740-6750f83fcda1"/>
-        <link rel="reference" href="#e7942589-e267-4a5a-a3d9-f39a7aae81f0"/>
-        <link rel="reference" href="#8306620b-1920-4d73-8b21-12008528595f"/>
-        <link rel="reference" href="#22f2d4f0-4365-4e88-a30d-275c1f5473ea"/>
         <link rel="related" href="#ac-3"/>
         <link rel="related" href="#au-2"/>
         <link rel="related" href="#au-6"/>
@@ -12138,9 +11911,6 @@
         <prop name="sort-id">mp-05.04</prop>
         <prop name="status">withdrawn</prop>
         <link rel="incorporated-into" href="#sc-28.1"/>
-        <link rel="reference" href="#628d22a1-6a11-4784-bc59-5cd9497b5445"/>
-        <link rel="reference" href="#e72fde0b-6fc2-497e-a9db-d8fce5a11b8a"/>
-        <link rel="reference" href="#9be5d661-421f-41ad-854e-86f98b811891"/>
       </control>
     </control>
     <control class="SP800-53" id="mp-6">
@@ -12285,16 +12055,6 @@
         <prop name="label">MP-6(8)</prop>
         <prop name="sort-id">mp-06.08</prop>
         <link rel="required" href="#mp-6"/>
-        <link rel="reference" href="#91f992fb-f668-4c91-a50f-0f05b95ccee3"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#c28ae9a8-1121-42a9-a85e-00cfcc9b9a94"/>
-        <link rel="reference" href="#628d22a1-6a11-4784-bc59-5cd9497b5445"/>
-        <link rel="reference" href="#e72fde0b-6fc2-497e-a9db-d8fce5a11b8a"/>
-        <link rel="reference" href="#9be5d661-421f-41ad-854e-86f98b811891"/>
-        <link rel="reference" href="#a5b1d18d-e670-4586-9e6d-4a88b7ba3df6"/>
-        <link rel="reference" href="#0f66be67-85e7-4ca6-bd19-39453e9f4394"/>
-        <link rel="reference" href="#4c501da5-9d79-4cb6-ba80-97260e1ce327"/>
-        <link rel="reference" href="#df9f87e9-71e7-4c74-9ac3-3cabd4e92f21"/>
         <part name="statement" id="mp-6.8_smt">
           <p>Provide the capability to purge or wipe information from <insert param-id="mp-6.8_prm_1"/> <insert param-id="mp-6.8_prm_2"/>.</p>
         </part>
@@ -12355,8 +12115,6 @@
         <prop name="label">MP-7(2)</prop>
         <prop name="sort-id">mp-07.02</prop>
         <link rel="required" href="#mp-7"/>
-        <link rel="reference" href="#628d22a1-6a11-4784-bc59-5cd9497b5445"/>
-        <link rel="reference" href="#22f2d4f0-4365-4e88-a30d-275c1f5473ea"/>
         <link rel="related" href="#mp-6"/>
         <part name="statement" id="mp-7.2_smt">
           <p>Prohibit the use of sanitization-resistant media in organizational systems.</p>
@@ -12443,8 +12201,6 @@
         <prop name="label">MP-8(4)</prop>
         <prop name="sort-id">mp-08.04</prop>
         <link rel="required" href="#mp-8"/>
-        <link rel="reference" href="#91f992fb-f668-4c91-a50f-0f05b95ccee3"/>
-        <link rel="reference" href="#df9f87e9-71e7-4c74-9ac3-3cabd4e92f21"/>
         <part name="statement" id="mp-8.4_smt">
           <p>Downgrade system media containing classified information prior to release to individuals without required access authorizations.</p>
         </part>
@@ -12630,10 +12386,6 @@
         <prop name="label">PE-2(3)</prop>
         <prop name="sort-id">pe-02.03</prop>
         <link rel="required" href="#pe-2"/>
-        <link rel="reference" href="#7ba1d91c-3934-4d5a-8532-b32f864ad34c"/>
-        <link rel="reference" href="#858705be-3c1f-48aa-a328-0ce398d95ef0"/>
-        <link rel="reference" href="#7af2e6ec-9f7e-4232-ad3f-09888eb0793a"/>
-        <link rel="reference" href="#828856bd-d7c4-427b-8b51-815517ec382d"/>
         <link rel="related" href="#ps-2"/>
         <link rel="related" href="#ps-6"/>
         <part name="statement" id="pe-2.3_smt">
@@ -12866,11 +12618,6 @@
         <prop name="label">PE-3(8)</prop>
         <prop name="sort-id">pe-03.08</prop>
         <link rel="required" href="#pe-3"/>
-        <link rel="reference" href="#7ba1d91c-3934-4d5a-8532-b32f864ad34c"/>
-        <link rel="reference" href="#858705be-3c1f-48aa-a328-0ce398d95ef0"/>
-        <link rel="reference" href="#7af2e6ec-9f7e-4232-ad3f-09888eb0793a"/>
-        <link rel="reference" href="#828856bd-d7c4-427b-8b51-815517ec382d"/>
-        <link rel="reference" href="#2100332a-16a5-4598-bacf-7261baea9711"/>
         <part name="statement" id="pe-3.8_smt">
           <p>Employ access control vestibules at <insert param-id="pe-3.8_prm_1"/>.</p>
         </part>
@@ -12949,7 +12696,6 @@
         <prop name="sort-id">pe-05.03</prop>
         <prop name="status">withdrawn</prop>
         <link rel="incorporated-into" href="#pe-22"/>
-        <link rel="reference" href="#4c501da5-9d79-4cb6-ba80-97260e1ce327"/>
       </control>
     </control>
     <control class="SP800-53" id="pe-6">
@@ -13618,7 +13364,6 @@
         <prop name="label">PE-19(1)</prop>
         <prop name="sort-id">pe-19.01</prop>
         <link rel="required" href="#pe-19"/>
-        <link rel="reference" href="#628d22a1-6a11-4784-bc59-5cd9497b5445"/>
         <part name="statement" id="pe-19.1_smt">
           <p>Protect system components, associated data communications, and networks in accordance with national Emissions Security policies and procedures based on the security category or classification of the information.</p>
         </part>
@@ -13958,11 +13703,6 @@
         <prop name="sort-id">pl-02.03</prop>
         <prop name="status">withdrawn</prop>
         <link rel="incorporated-into" href="#pl-2"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#30eb758a-2707-4bca-90ad-949a74d4eb16"/>
-        <link rel="reference" href="#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8"/>
-        <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
-        <link rel="reference" href="#61ccf0f4-d3e7-42db-9796-ce6cb1c85989"/>
       </control>
     </control>
     <control class="SP800-53" id="pl-3">
@@ -14035,8 +13775,6 @@
         <prop name="label">PL-4(1)</prop>
         <prop name="sort-id">pl-04.01</prop>
         <link rel="required" href="#pl-4"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#30eb758a-2707-4bca-90ad-949a74d4eb16"/>
         <link rel="related" href="#ac-22"/>
         <link rel="related" href="#au-13"/>
         <part name="statement" id="pl-4.1_smt">
@@ -14198,9 +13936,6 @@
         <prop name="label">PL-8(2)</prop>
         <prop name="sort-id">pl-08.02</prop>
         <link rel="required" href="#pl-8"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
-        <link rel="reference" href="#61ccf0f4-d3e7-42db-9796-ce6cb1c85989"/>
         <link rel="related" href="#sc-29"/>
         <link rel="related" href="#sr-3"/>
         <part name="statement" id="pl-8.2_smt">
@@ -14450,8 +14185,6 @@
         <prop name="label">PM-5(1)</prop>
         <prop name="sort-id">pm-05.01</prop>
         <link rel="required" href="#pm-5"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#98d415ca-7281-4064-9931-0c366637e324"/>
         <link rel="related" href="#ac-3"/>
         <link rel="related" href="#cm-8"/>
         <link rel="related" href="#cm-12"/>
@@ -14519,11 +14252,6 @@
         <prop name="label">PM-7(1)</prop>
         <prop name="sort-id">pm-07.01</prop>
         <link rel="required" href="#pm-7"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8"/>
-        <link rel="reference" href="#cec037f3-8aba-4c97-84b4-4082f9e515d2"/>
-        <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
-        <link rel="reference" href="#61ccf0f4-d3e7-42db-9796-ce6cb1c85989"/>
         <link rel="related" href="#sa-8"/>
         <part name="statement" id="pm-7.1_smt">
           <p>Offload <insert param-id="pm-7.1_prm_1"/> to other systems, system components, or an external provider.</p>
@@ -14975,9 +14703,6 @@
         <prop name="label">PM-20(1)</prop>
         <prop name="sort-id">pm-20.01</prop>
         <link rel="required" href="#pm-20"/>
-        <link rel="reference" href="#18e71fec-c6fd-475a-925a-5d8495cf8455"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#206a3284-6a7e-423c-8ea9-25b22542541d"/>
         <part name="statement" id="pm-20.1_smt">
           <p>Develop and post privacy policies on all external-facing websites, mobile applications, and other digital services, that:</p>
           <part name="item" id="pm-20.1_smt.a">
@@ -15371,17 +15096,6 @@
         <prop name="label">PM-30(1)</prop>
         <prop name="sort-id">pm-30.01</prop>
         <link rel="required" href="#pm-30"/>
-        <link rel="reference" href="#18e71fec-c6fd-475a-925a-5d8495cf8455"/>
-        <link rel="reference" href="#4ff10ed3-d8fe-4246-99e3-443045e27482"/>
-        <link rel="reference" href="#21caa535-1154-4369-ba7b-32c309fee0f7"/>
-        <link rel="reference" href="#0f963c17-ab5a-432a-a867-91eac550309b"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#206a3284-6a7e-423c-8ea9-25b22542541d"/>
-        <link rel="reference" href="#031cc4b7-9adf-4835-98f1-f1ca493519cf"/>
-        <link rel="reference" href="#863caf2a-978a-4260-9e8d-4a8929bce40c"/>
-        <link rel="reference" href="#15a95e24-65b6-4686-bc18-90855a10457d"/>
-        <link rel="reference" href="#e8e84963-14fc-4c3a-be05-b412a5d37cd2"/>
-        <link rel="reference" href="#38ff38f0-1366-4f50-a4c9-26a39aacee16"/>
         <link rel="related" href="#ra-3"/>
         <link rel="related" href="#sr-6"/>
         <part name="statement" id="pm-30.1_smt">
@@ -15734,15 +15448,6 @@
         <prop name="label">PS-3(4)</prop>
         <prop name="sort-id">ps-03.04</prop>
         <link rel="required" href="#ps-3"/>
-        <link rel="reference" href="#55b0c93a-5e48-457a-baa6-5ce81c239c49"/>
-        <link rel="reference" href="#0af071a6-cf8e-48ee-8c82-fe91efa20f94"/>
-        <link rel="reference" href="#628d22a1-6a11-4784-bc59-5cd9497b5445"/>
-        <link rel="reference" href="#7ba1d91c-3934-4d5a-8532-b32f864ad34c"/>
-        <link rel="reference" href="#e72fde0b-6fc2-497e-a9db-d8fce5a11b8a"/>
-        <link rel="reference" href="#9be5d661-421f-41ad-854e-86f98b811891"/>
-        <link rel="reference" href="#858705be-3c1f-48aa-a328-0ce398d95ef0"/>
-        <link rel="reference" href="#7af2e6ec-9f7e-4232-ad3f-09888eb0793a"/>
-        <link rel="reference" href="#828856bd-d7c4-427b-8b51-815517ec382d"/>
         <part name="statement" id="ps-3.4_smt">
           <p>Verify that individuals accessing a system processing, storing, or transmitting <insert param-id="ps-3.4_prm_1"/> meet <insert param-id="ps-3.4_prm_2"/>.</p>
         </part>
@@ -16226,9 +15931,6 @@
         <prop name="label">PT-2(2)</prop>
         <prop name="sort-id">pt-02.02</prop>
         <link rel="required" href="#pt-2"/>
-        <link rel="reference" href="#18e71fec-c6fd-475a-925a-5d8495cf8455"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#a2590922-82f3-4277-83c0-ca5bee06dba4"/>
         <link rel="related" href="#ca-6"/>
         <link rel="related" href="#cm-12"/>
         <link rel="related" href="#pm-5"/>
@@ -16339,9 +16041,6 @@
         <prop name="label">PT-3(2)</prop>
         <prop name="sort-id">pt-03.02</prop>
         <link rel="required" href="#pt-3"/>
-        <link rel="reference" href="#18e71fec-c6fd-475a-925a-5d8495cf8455"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#a2590922-82f3-4277-83c0-ca5bee06dba4"/>
         <link rel="related" href="#ca-6"/>
         <link rel="related" href="#cm-12"/>
         <link rel="related" href="#pm-5"/>
@@ -16424,9 +16123,6 @@
         <prop name="label">PT-4(3)</prop>
         <prop name="sort-id">pt-04.03</prop>
         <link rel="required" href="#pt-4"/>
-        <link rel="reference" href="#18e71fec-c6fd-475a-925a-5d8495cf8455"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#737513fa-6758-403f-831d-5ddab5e23cb3"/>
         <link rel="related" href="#pt-2"/>
         <part name="statement" id="pt-4.3_smt">
           <p>Implement <insert param-id="pt-4.3_prm_1"/> for individuals to revoke consent to the processing of their personally identifiable information. </p>
@@ -16506,9 +16202,6 @@
         <prop name="label">PT-5(2)</prop>
         <prop name="sort-id">pt-05.02</prop>
         <link rel="required" href="#pt-5"/>
-        <link rel="reference" href="#18e71fec-c6fd-475a-925a-5d8495cf8455"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#3671ff20-c17c-44d6-8a88-7de203fa74aa"/>
         <link rel="related" href="#pt-6"/>
         <part name="statement" id="pt-5.2_smt">
           <p>Include Privacy Act statements on forms that collect information that will be maintained in a Privacy Act system of records, or provide Privacy Act statements on separate forms that can be retained by individuals.</p>
@@ -16571,8 +16264,6 @@
         <prop name="label">PT-6(2)</prop>
         <prop name="sort-id">pt-06.02</prop>
         <link rel="required" href="#pt-6"/>
-        <link rel="reference" href="#18e71fec-c6fd-475a-925a-5d8495cf8455"/>
-        <link rel="reference" href="#3671ff20-c17c-44d6-8a88-7de203fa74aa"/>
         <part name="statement" id="pt-6.2_smt">
           <p>Review all Privacy Act exemptions claimed for the system of records at <insert param-id="pt-6.2_prm_1"/> to ensure they remain appropriate and necessary in accordance with law, that they have been promulgated as regulations, and that they are accurately described in the system of records notice.</p>
         </part>
@@ -16632,10 +16323,6 @@
         <prop name="label">PT-7(2)</prop>
         <prop name="sort-id">pt-07.02</prop>
         <link rel="required" href="#pt-7"/>
-        <link rel="reference" href="#18e71fec-c6fd-475a-925a-5d8495cf8455"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#3671ff20-c17c-44d6-8a88-7de203fa74aa"/>
-        <link rel="reference" href="#c28ae9a8-1121-42a9-a85e-00cfcc9b9a94"/>
         <part name="statement" id="pt-7.2_smt">
           <p>Prohibit the processing of information describing how any individual exercises rights guaranteed by the First Amendment unless expressly authorized by statute or by the individual or unless pertinent to and within the scope of an authorized law enforcement activity.</p>
         </part>
@@ -16814,16 +16501,6 @@
         <prop name="label">RA-2(1)</prop>
         <prop name="sort-id">ra-02.01</prop>
         <link rel="required" href="#ra-2"/>
-        <link rel="reference" href="#628d22a1-6a11-4784-bc59-5cd9497b5445"/>
-        <link rel="reference" href="#599fb53d-5041-444e-a7fe-640d6d30ad05"/>
-        <link rel="reference" href="#08b07465-dbdc-48d6-8a0b-37279602ac16"/>
-        <link rel="reference" href="#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8"/>
-        <link rel="reference" href="#cec037f3-8aba-4c97-84b4-4082f9e515d2"/>
-        <link rel="reference" href="#e72fde0b-6fc2-497e-a9db-d8fce5a11b8a"/>
-        <link rel="reference" href="#9be5d661-421f-41ad-854e-86f98b811891"/>
-        <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
-        <link rel="reference" href="#4e4fbc93-333d-45e6-a875-de36b878b6b9"/>
-        <link rel="reference" href="#c28ae9a8-1121-42a9-a85e-00cfcc9b9a94"/>
         <part name="statement" id="ra-2.1_smt">
           <p>Conduct an impact-level prioritization of organizational systems to obtain additional granularity on system impact levels.</p>
         </part>
@@ -17000,13 +16677,6 @@
         <prop name="label">RA-3(4)</prop>
         <prop name="sort-id">ra-03.04</prop>
         <link rel="required" href="#ra-3"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#08b07465-dbdc-48d6-8a0b-37279602ac16"/>
-        <link rel="reference" href="#cec037f3-8aba-4c97-84b4-4082f9e515d2"/>
-        <link rel="reference" href="#e8e84963-14fc-4c3a-be05-b412a5d37cd2"/>
-        <link rel="reference" href="#4c501da5-9d79-4cb6-ba80-97260e1ce327"/>
-        <link rel="reference" href="#98d415ca-7281-4064-9931-0c366637e324"/>
-        <link rel="reference" href="#38ff38f0-1366-4f50-a4c9-26a39aacee16"/>
         <part name="statement" id="ra-3.4_smt">
           <p>Employ the following advanced automation and analytics capabilities to predict and identify risks to <insert param-id="ra-3.4_prm_1"/>: <insert param-id="ra-3.4_prm_2"/>.</p>
         </part>
@@ -17248,15 +16918,6 @@
         <prop name="label">RA-5(11)</prop>
         <prop name="sort-id">ra-05.11</prop>
         <link rel="required" href="#ra-5"/>
-        <link rel="reference" href="#8df72805-2e5c-4731-a73e-81db0f0318d0"/>
-        <link rel="reference" href="#155f941a-cba9-4afd-9ca6-5d040d697ba9"/>
-        <link rel="reference" href="#a21aef46-7330-48a0-b2e1-c5bb8b2dd11d"/>
-        <link rel="reference" href="#4895b4cd-34c5-4667-bf8a-27d443c12047"/>
-        <link rel="reference" href="#122177fa-c4ed-485d-8345-3082c0fb9a06"/>
-        <link rel="reference" href="#8016d2ed-d30f-4416-9c45-0f42c7aa3232"/>
-        <link rel="reference" href="#aa5d04e0-6090-4e17-84d4-b9963d55fc2c"/>
-        <link rel="reference" href="#d2ebec9b-f868-4ee1-a2bd-0b2282aed248"/>
-        <link rel="reference" href="#4c501da5-9d79-4cb6-ba80-97260e1ce327"/>
         <part name="statement" id="ra-5.11_smt">
           <p>Establish a public reporting channel for receiving reports of vulnerabilities in organizational systems and system components.</p>
         </part>
@@ -17632,12 +17293,6 @@
         <prop name="label">SA-3(3)</prop>
         <prop name="sort-id">sa-03.03</prop>
         <link rel="required" href="#sa-3"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#08b07465-dbdc-48d6-8a0b-37279602ac16"/>
-        <link rel="reference" href="#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8"/>
-        <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
-        <link rel="reference" href="#7dbd6d9f-29d6-4d1d-9766-f2d77ff3c849"/>
-        <link rel="reference" href="#f26af0d0-6d72-4a9d-8ecd-01bc21fd4f0e"/>
         <link rel="related" href="#ma-6"/>
         <part name="statement" id="sa-3.3_smt">
           <p>Plan for and implement a technology refresh schedule for the system throughout the system development life cycle.</p>
@@ -17785,11 +17440,17 @@
         </param>
         <param id="sa-4.3_prm_2">
           <select how-many="one or more">
-            <choice>systems security</choice>
-            <choice>privacy&lt;#:assign&gt; engineering methods</choice>
+            <choice><insert param-id="sa-4.3_prm_3"/></choice>
+            <choice><insert param-id="sa-4.3_prm_4"/></choice>
           </select>
         </param>
-        <param id="sa-4.3_prm_3">
+        <param id="sa-4.3_prm_3" depends-on="sa-4.3_prm_2">
+          <label>organization-defined systems security engineering methods</label>
+        </param>
+        <param id="sa-4.3_prm_4" depends-on="sa-4.3_prm_2">
+          <label>organization-defined privacy engineering methods</label>
+        </param>
+        <param id="sa-4.3_prm_5">
           <label>organization-defined software development methods; testing, evaluation, assessment, verification, and validation methods; and quality control processes</label>
         </param>
         <prop name="label">SA-4(3)</prop>
@@ -17803,11 +17464,11 @@
           </part>
           <part name="item" id="sa-4.3_smt.b">
             <prop name="label">(b)</prop>
-            <p>&lt;assign:#&gt;organization-defined <insert param-id="sa-4.3_prm_2"/>; and</p>
+            <p><insert param-id="sa-4.3_prm_2"/>; and</p>
           </part>
           <part name="item" id="sa-4.3_smt.c">
             <prop name="label">(c)</prop>
-            <p><insert param-id="sa-4.3_prm_3"/>.</p>
+            <p><insert param-id="sa-4.3_prm_5"/>.</p>
           </part>
         </part>
         <part name="guidance" id="sa-4.3_gdn">
@@ -17954,28 +17615,6 @@
         <prop name="label">SA-4(12)</prop>
         <prop name="sort-id">sa-04.12</prop>
         <link rel="required" href="#sa-4"/>
-        <link rel="reference" href="#18e71fec-c6fd-475a-925a-5d8495cf8455"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#6afc1b04-c9d6-4023-adbc-f8fbe33a3c73"/>
-        <link rel="reference" href="#87087451-2af5-43d4-88c1-d66ad850f614"/>
-        <link rel="reference" href="#4452efc0-e79e-47b8-aa30-b54f3ef61c2f"/>
-        <link rel="reference" href="#06ce9216-bd54-4054-a422-94f358b50a5d"/>
-        <link rel="reference" href="#678e3d6c-150b-4393-aec5-6e3481eb1e00"/>
-        <link rel="reference" href="#7ba1d91c-3934-4d5a-8532-b32f864ad34c"/>
-        <link rel="reference" href="#77faf0bc-c394-44ad-9154-bbac3b79c8ad"/>
-        <link rel="reference" href="#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8"/>
-        <link rel="reference" href="#4895b4cd-34c5-4667-bf8a-27d443c12047"/>
-        <link rel="reference" href="#858705be-3c1f-48aa-a328-0ce398d95ef0"/>
-        <link rel="reference" href="#067223d8-1ec7-45c5-b21b-c848da6de8fb"/>
-        <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
-        <link rel="reference" href="#e8e84963-14fc-4c3a-be05-b412a5d37cd2"/>
-        <link rel="reference" href="#15dc76ff-b17a-4eeb-8948-8ea8de3ccc2c"/>
-        <link rel="reference" href="#e24b06cc-9129-4998-a76a-65c3d7a576ba"/>
-        <link rel="reference" href="#4b38e961-1125-4a5b-aa35-1d6c02846dad"/>
-        <link rel="reference" href="#604774da-9e1d-48eb-9c62-4e959dc80737"/>
-        <link rel="reference" href="#98d415ca-7281-4064-9931-0c366637e324"/>
-        <link rel="reference" href="#795aff72-3e6c-4b6b-a80a-b14d84b7f544"/>
-        <link rel="reference" href="#3d575737-98cb-459d-b41c-d7e82b73ad78"/>
         <part name="statement" id="sa-4.12_smt">
           <part name="item" id="sa-4.12_smt.a">
             <prop name="label">(a)</prop>
@@ -18100,7 +17739,6 @@
         <prop name="sort-id">sa-05.05</prop>
         <prop name="status">withdrawn</prop>
         <link rel="incorporated-into" href="#sa-4.2"/>
-        <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
       </control>
     </control>
     <control class="SP800-53" id="sa-6">
@@ -18708,16 +18346,6 @@
         <prop name="label">SA-8(33)</prop>
         <prop name="sort-id">sa-08.33</prop>
         <link rel="required" href="#sa-8"/>
-        <link rel="reference" href="#18e71fec-c6fd-475a-925a-5d8495cf8455"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#628d22a1-6a11-4784-bc59-5cd9497b5445"/>
-        <link rel="reference" href="#599fb53d-5041-444e-a7fe-640d6d30ad05"/>
-        <link rel="reference" href="#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8"/>
-        <link rel="reference" href="#a21aef46-7330-48a0-b2e1-c5bb8b2dd11d"/>
-        <link rel="reference" href="#e72fde0b-6fc2-497e-a9db-d8fce5a11b8a"/>
-        <link rel="reference" href="#9be5d661-421f-41ad-854e-86f98b811891"/>
-        <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
-        <link rel="reference" href="#98d415ca-7281-4064-9931-0c366637e324"/>
         <link rel="related" href="#pe-8"/>
         <link rel="related" href="#pm-25"/>
         <link rel="related" href="#sc-42"/>
@@ -18910,11 +18538,6 @@
         <prop name="label">SA-9(8)</prop>
         <prop name="sort-id">sa-09.08</prop>
         <link rel="required" href="#sa-9"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#77faf0bc-c394-44ad-9154-bbac3b79c8ad"/>
-        <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
-        <link rel="reference" href="#e8e84963-14fc-4c3a-be05-b412a5d37cd2"/>
-        <link rel="reference" href="#7dbd6d9f-29d6-4d1d-9766-f2d77ff3c849"/>
         <link rel="related" href="#sa-5"/>
         <link rel="related" href="#sr-4"/>
         <part name="statement" id="sa-9.8_smt">
@@ -19076,11 +18699,6 @@
         <prop name="label">SA-10(7)</prop>
         <prop name="sort-id">sa-10.07</prop>
         <link rel="required" href="#sa-10"/>
-        <link rel="reference" href="#678e3d6c-150b-4393-aec5-6e3481eb1e00"/>
-        <link rel="reference" href="#eea3c092-42ed-4382-a6f4-1adadef01b9d"/>
-        <link rel="reference" href="#a295ca19-8c75-4b4c-8800-98024732e181"/>
-        <link rel="reference" href="#20db4e66-e257-450c-b2e4-2bb9a62a2c88"/>
-        <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
         <part name="statement" id="sa-10.7_smt">
           <p>Require <insert param-id="sa-10.7_prm_1"/> to be included in the <insert param-id="sa-10.7_prm_2"/>.</p>
         </part>
@@ -19328,11 +18946,6 @@
         <prop name="label">SA-11(9)</prop>
         <prop name="sort-id">sa-11.09</prop>
         <link rel="required" href="#sa-11"/>
-        <link rel="reference" href="#4452efc0-e79e-47b8-aa30-b54f3ef61c2f"/>
-        <link rel="reference" href="#08b07465-dbdc-48d6-8a0b-37279602ac16"/>
-        <link rel="reference" href="#a21aef46-7330-48a0-b2e1-c5bb8b2dd11d"/>
-        <link rel="reference" href="#708b94e1-3d5e-4b22-ab43-1c69f3a97e37"/>
-        <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
         <part name="statement" id="sa-11.9_smt">
           <p>Require the developer of the system, system component, or system service to employ interactive application security testing tools to identify flaws and document the results.</p>
         </part>
@@ -19728,8 +19341,6 @@
         <prop name="label">SA-15(12)</prop>
         <prop name="sort-id">sa-15.12</prop>
         <link rel="required" href="#sa-15"/>
-        <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
-        <link rel="reference" href="#d4296805-2dca-4c63-a95f-eeccaa826aec"/>
         <link rel="related" href="#pm-25"/>
         <link rel="related" href="#sa-3"/>
         <link rel="related" href="#sa-8"/>
@@ -19999,9 +19610,6 @@
         <prop name="label">SA-17(9)</prop>
         <prop name="sort-id">sa-17.09</prop>
         <link rel="required" href="#sa-17"/>
-        <link rel="reference" href="#87087451-2af5-43d4-88c1-d66ad850f614"/>
-        <link rel="reference" href="#4452efc0-e79e-47b8-aa30-b54f3ef61c2f"/>
-        <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
         <part name="statement" id="sa-17.9_smt">
           <p>Use different designs for <insert param-id="sa-17.9_prm_1"/> to satisfy a common set of requirements or to provide equivalent functionality.</p>
         </part>
@@ -20508,7 +20116,6 @@
         <prop name="label">SC-5(3)</prop>
         <prop name="sort-id">sc-05.03</prop>
         <link rel="required" href="#sc-5"/>
-        <link rel="reference" href="#f5edfe51-d1f2-422e-9b27-5d0e90b49c72"/>
         <link rel="related" href="#ca-7"/>
         <link rel="related" href="#si-4"/>
         <part name="statement" id="sc-5.3_smt">
@@ -21114,12 +20721,6 @@
         <prop name="label">SC-7(29)</prop>
         <prop name="sort-id">sc-07.29</prop>
         <link rel="required" href="#sc-7"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#628d22a1-6a11-4784-bc59-5cd9497b5445"/>
-        <link rel="reference" href="#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8"/>
-        <link rel="reference" href="#a7f0e897-29a3-45c4-bd88-40dfef0e034a"/>
-        <link rel="reference" href="#d4d7c760-2907-403b-8b2a-767ca5370ecd"/>
-        <link rel="reference" href="#f5edfe51-d1f2-422e-9b27-5d0e90b49c72"/>
         <part name="statement" id="sc-7.29_smt">
           <p>Implement <insert param-id="sc-7.29_prm_1"/> separate subnetworks to isolate the following critical system components and functions: <insert param-id="sc-7.29_prm_2"/>.</p>
         </part>
@@ -21254,14 +20855,6 @@
         <prop name="label">SC-8(5)</prop>
         <prop name="sort-id">sc-08.05</prop>
         <link rel="required" href="#sc-8"/>
-        <link rel="reference" href="#678e3d6c-150b-4393-aec5-6e3481eb1e00"/>
-        <link rel="reference" href="#736d6310-e403-4b57-a79d-9967970c66d7"/>
-        <link rel="reference" href="#7537638e-2837-407d-844b-40fb3fafdd99"/>
-        <link rel="reference" href="#d4d7c760-2907-403b-8b2a-767ca5370ecd"/>
-        <link rel="reference" href="#fe209006-bfd4-4033-a79a-9fee1adaf372"/>
-        <link rel="reference" href="#6bc4d137-aece-42a8-8081-9ecb1ebe9fb4"/>
-        <link rel="reference" href="#1c71b420-2bd9-4e52-9fc8-390f58b85b59"/>
-        <link rel="reference" href="#4c501da5-9d79-4cb6-ba80-97260e1ce327"/>
         <part name="statement" id="sc-8.5_smt">
           <p>Implement <insert param-id="sc-8.5_prm_1"/> to <insert param-id="sc-8.5_prm_2"/> during transmission.</p>
         </part>
@@ -21332,7 +20925,6 @@
         <prop name="label">SC-11(1)</prop>
         <prop name="sort-id">sc-11.01</prop>
         <link rel="required" href="#sc-11"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
         <part name="statement" id="sc-11.1_smt">
           <part name="item" id="sc-11.1_smt.a">
             <prop name="label">(a)</prop>
@@ -21460,16 +21052,6 @@
         <prop name="label">SC-12(6)</prop>
         <prop name="sort-id">sc-12.06</prop>
         <link rel="required" href="#sc-12"/>
-        <link rel="reference" href="#678e3d6c-150b-4393-aec5-6e3481eb1e00"/>
-        <link rel="reference" href="#20957dbb-6a1e-40a2-b38a-66f67d33ac2e"/>
-        <link rel="reference" href="#0d083d8a-5cc6-46f1-8d79-3081d42bcb75"/>
-        <link rel="reference" href="#eef62b16-c796-4554-955c-505824135b8a"/>
-        <link rel="reference" href="#110e26af-4765-49e1-8740-6750f83fcda1"/>
-        <link rel="reference" href="#e7942589-e267-4a5a-a3d9-f39a7aae81f0"/>
-        <link rel="reference" href="#8306620b-1920-4d73-8b21-12008528595f"/>
-        <link rel="reference" href="#737513fa-6758-403f-831d-5ddab5e23cb3"/>
-        <link rel="reference" href="#849b2358-683f-4d97-b111-1cc3d522ded5"/>
-        <link rel="reference" href="#3915a084-b87b-4f02-83d4-c369e746292f"/>
         <part name="statement" id="sc-12.6_smt">
           <p>Maintain physical control of cryptographic keys when stored information is encrypted by external service providers.</p>
         </part>
@@ -21557,7 +21139,6 @@
         <prop name="sort-id">sc-13.04</prop>
         <prop name="status">withdrawn</prop>
         <link rel="incorporated-into" href="#sc-13"/>
-        <link rel="reference" href="#678e3d6c-150b-4393-aec5-6e3481eb1e00"/>
       </control>
     </control>
     <control class="SP800-53" id="sc-14">
@@ -21710,7 +21291,6 @@
         <prop name="label">SC-16(3)</prop>
         <prop name="sort-id">sc-16.03</prop>
         <link rel="required" href="#sc-16"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
         <link rel="related" href="#ac-16"/>
         <link rel="related" href="#sc-12"/>
         <link rel="related" href="#sc-13"/>
@@ -21845,7 +21425,6 @@
         <prop name="label">SC-18(5)</prop>
         <prop name="sort-id">sc-18.05</prop>
         <link rel="required" href="#sc-18"/>
-        <link rel="reference" href="#f641309f-a3ad-48be-8c67-2b318648b2f5"/>
         <link rel="related" href="#sc-44"/>
         <link rel="related" href="#si-7"/>
         <part name="statement" id="sc-18.5_smt">
@@ -21900,9 +21479,6 @@
         <prop name="label">SC-20(2)</prop>
         <prop name="sort-id">sc-20.02</prop>
         <link rel="required" href="#sc-20"/>
-        <link rel="reference" href="#678e3d6c-150b-4393-aec5-6e3481eb1e00"/>
-        <link rel="reference" href="#7c37a38d-21d7-40d8-bc3d-b5e27eac17e1"/>
-        <link rel="reference" href="#fe209006-bfd4-4033-a79a-9fee1adaf372"/>
         <part name="statement" id="sc-20.2_smt">
           <p>Provide data origin and integrity protection artifacts for internal name/address resolution queries.</p>
         </part>
@@ -21930,7 +21506,6 @@
         <prop name="sort-id">sc-21.01</prop>
         <prop name="status">withdrawn</prop>
         <link rel="incorporated-into" href="#sc-21"/>
-        <link rel="reference" href="#fe209006-bfd4-4033-a79a-9fee1adaf372"/>
       </control>
     </control>
     <control class="SP800-53" id="sc-22">
@@ -22019,10 +21594,6 @@
         <prop name="label">SC-23(5)</prop>
         <prop name="sort-id">sc-23.05</prop>
         <link rel="required" href="#sc-23"/>
-        <link rel="reference" href="#7537638e-2837-407d-844b-40fb3fafdd99"/>
-        <link rel="reference" href="#d4d7c760-2907-403b-8b2a-767ca5370ecd"/>
-        <link rel="reference" href="#a6b9907a-2a14-4bb4-a142-d4c73026a8b4"/>
-        <link rel="reference" href="#6bc4d137-aece-42a8-8081-9ecb1ebe9fb4"/>
         <link rel="related" href="#sc-12"/>
         <link rel="related" href="#sc-13"/>
         <part name="statement" id="sc-23.5_smt">
@@ -22214,15 +21785,6 @@
         <prop name="label">SC-28(3)</prop>
         <prop name="sort-id">sc-28.03</prop>
         <link rel="required" href="#sc-28"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#20957dbb-6a1e-40a2-b38a-66f67d33ac2e"/>
-        <link rel="reference" href="#0d083d8a-5cc6-46f1-8d79-3081d42bcb75"/>
-        <link rel="reference" href="#eef62b16-c796-4554-955c-505824135b8a"/>
-        <link rel="reference" href="#110e26af-4765-49e1-8740-6750f83fcda1"/>
-        <link rel="reference" href="#e7942589-e267-4a5a-a3d9-f39a7aae81f0"/>
-        <link rel="reference" href="#8306620b-1920-4d73-8b21-12008528595f"/>
-        <link rel="reference" href="#22f2d4f0-4365-4e88-a30d-275c1f5473ea"/>
-        <link rel="reference" href="#0f66be67-85e7-4ca6-bd19-39453e9f4394"/>
         <link rel="related" href="#sc-12"/>
         <link rel="related" href="#sc-13"/>
         <part name="statement" id="sc-28.3_smt">
@@ -22484,8 +22046,6 @@
         <prop name="label">SC-32(1)</prop>
         <prop name="sort-id">sc-32.01</prop>
         <link rel="required" href="#sc-32"/>
-        <link rel="reference" href="#628d22a1-6a11-4784-bc59-5cd9497b5445"/>
-        <link rel="reference" href="#d4296805-2dca-4c63-a95f-eeccaa826aec"/>
         <part name="statement" id="sc-32.1_smt">
           <p>Partition privileged functions into separate physical domains.</p>
         </part>
@@ -22647,7 +22207,6 @@
         <prop name="label">SC-36(2)</prop>
         <prop name="sort-id">sc-36.02</prop>
         <link rel="required" href="#sc-36"/>
-        <link rel="reference" href="#61ccf0f4-d3e7-42db-9796-ce6cb1c85989"/>
         <link rel="related" href="#cp-9"/>
         <part name="statement" id="sc-36.2_smt">
           <p>Synchronize the following duplicate systems or system components: <insert param-id="sc-36.2_prm_1"/>.</p>
@@ -22705,9 +22264,6 @@
         <prop name="label">SC-37(1)</prop>
         <prop name="sort-id">sc-37.01</prop>
         <link rel="required" href="#sc-37"/>
-        <link rel="reference" href="#110e26af-4765-49e1-8740-6750f83fcda1"/>
-        <link rel="reference" href="#e7942589-e267-4a5a-a3d9-f39a7aae81f0"/>
-        <link rel="reference" href="#8306620b-1920-4d73-8b21-12008528595f"/>
         <part name="statement" id="sc-37.1_smt">
           <p>Employ <insert param-id="sc-37.1_prm_1"/> to ensure that only <insert param-id="sc-37.1_prm_2"/> receive the following information, system components, or devices: <insert param-id="sc-37.1_prm_3"/>.</p>
         </part>
@@ -22780,7 +22336,6 @@
         <prop name="label">SC-39(2)</prop>
         <prop name="sort-id">sc-39.02</prop>
         <link rel="required" href="#sc-39"/>
-        <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
         <part name="statement" id="sc-39.2_smt">
           <p>Maintain a separate execution domain for each thread in <insert param-id="sc-39.2_prm_1"/>.</p>
         </part>
@@ -23008,8 +22563,6 @@
         <prop name="label">SC-42(5)</prop>
         <prop name="sort-id">sc-42.05</prop>
         <link rel="required" href="#sc-42"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#0f66be67-85e7-4ca6-bd19-39453e9f4394"/>
         <link rel="related" href="#sa-8"/>
         <link rel="related" href="#si-12"/>
         <part name="statement" id="sc-42.5_smt">
@@ -23120,7 +22673,6 @@
         <prop name="label">SC-45(2)</prop>
         <prop name="sort-id">sc-45.02</prop>
         <link rel="required" href="#sc-45"/>
-        <link rel="reference" href="#e4d37285-1e79-4029-8b6a-42df39cace30"/>
         <part name="statement" id="sc-45.2_smt">
           <part name="item" id="sc-45.2_smt.a">
             <prop name="label">(a)</prop>
@@ -23212,7 +22764,6 @@
         <prop name="label">SC-48(1)</prop>
         <prop name="sort-id">sc-48.01</prop>
         <link rel="required" href="#sc-48"/>
-        <link rel="reference" href="#61ccf0f4-d3e7-42db-9796-ce6cb1c85989"/>
         <part name="statement" id="sc-48.1_smt">
           <p>Dynamically relocate <insert param-id="sc-48.1_prm_1"/> to <insert param-id="sc-48.1_prm_2"/> under the following conditions or circumstances: <insert param-id="sc-48.1_prm_3"/>.</p>
         </part>
@@ -23506,13 +23057,6 @@
         <prop name="label">SI-2(6)</prop>
         <prop name="sort-id">si-02.06</prop>
         <link rel="required" href="#si-2"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#678e3d6c-150b-4393-aec5-6e3481eb1e00"/>
-        <link rel="reference" href="#7c37a38d-21d7-40d8-bc3d-b5e27eac17e1"/>
-        <link rel="reference" href="#cec037f3-8aba-4c97-84b4-4082f9e515d2"/>
-        <link rel="reference" href="#155f941a-cba9-4afd-9ca6-5d040d697ba9"/>
-        <link rel="reference" href="#20db4e66-e257-450c-b2e4-2bb9a62a2c88"/>
-        <link rel="reference" href="#aa5d04e0-6090-4e17-84d4-b9963d55fc2c"/>
         <part name="statement" id="si-2.6_smt">
           <p>Remove previous versions of <insert param-id="si-2.6_prm_1"/> after updated versions have been installed.</p>
         </part>
@@ -23729,9 +23273,6 @@
         <prop name="label">SI-3(10)</prop>
         <prop name="sort-id">si-03.10</prop>
         <link rel="required" href="#si-3"/>
-        <link rel="reference" href="#3dd249b0-f57d-44ba-a03e-c3eab1b835ff"/>
-        <link rel="reference" href="#88660532-2dcf-442e-845c-03340ce48999"/>
-        <link rel="reference" href="#1c71b420-2bd9-4e52-9fc8-390f58b85b59"/>
         <part name="statement" id="si-3.10_smt">
           <part name="item" id="si-3.10_smt.a">
             <prop name="label">(a)</prop>
@@ -24286,13 +23827,6 @@
         <prop name="label">SI-4(25)</prop>
         <prop name="sort-id">si-04.25</prop>
         <link rel="required" href="#si-4"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#678e3d6c-150b-4393-aec5-6e3481eb1e00"/>
-        <link rel="reference" href="#49b8aa2d-a88c-4bff-9f20-876ccb8f7dcb"/>
-        <link rel="reference" href="#3dd249b0-f57d-44ba-a03e-c3eab1b835ff"/>
-        <link rel="reference" href="#5eee45d8-3313-4fdc-8d54-1742092bbdd6"/>
-        <link rel="reference" href="#25e3e57b-dc2f-4934-af9b-050b020c6f0e"/>
-        <link rel="reference" href="#067223d8-1ec7-45c5-b21b-c848da6de8fb"/>
         <part name="statement" id="si-4.25_smt">
           <p>Provide visibility into network traffic at external and key internal system interfaces to optimize the effectiveness of monitoring devices.  </p>
         </part>
@@ -24357,7 +23891,6 @@
         <prop name="label">SI-5(1)</prop>
         <prop name="sort-id">si-05.01</prop>
         <link rel="required" href="#si-5"/>
-        <link rel="reference" href="#155f941a-cba9-4afd-9ca6-5d040d697ba9"/>
         <part name="statement" id="si-5.1_smt">
           <p>Broadcast security alert and advisory information throughout the organization using <insert param-id="si-5.1_prm_1"/>.</p>
         </part>
@@ -24453,7 +23986,6 @@
         <prop name="label">SI-6(3)</prop>
         <prop name="sort-id">si-06.03</prop>
         <link rel="required" href="#si-6"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
         <link rel="related" href="#si-4"/>
         <link rel="related" href="#sr-4"/>
         <link rel="related" href="#sr-5"/>
@@ -24781,13 +24313,6 @@
         <prop name="label">SI-7(17)</prop>
         <prop name="sort-id">si-07.17</prop>
         <link rel="required" href="#si-7"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#678e3d6c-150b-4393-aec5-6e3481eb1e00"/>
-        <link rel="reference" href="#eea3c092-42ed-4382-a6f4-1adadef01b9d"/>
-        <link rel="reference" href="#7c37a38d-21d7-40d8-bc3d-b5e27eac17e1"/>
-        <link rel="reference" href="#a295ca19-8c75-4b4c-8800-98024732e181"/>
-        <link rel="reference" href="#4895b4cd-34c5-4667-bf8a-27d443c12047"/>
-        <link rel="reference" href="#e47ee630-9cbc-4133-880e-e013f83ccd51"/>
         <link rel="related" href="#si-16"/>
         <part name="statement" id="si-7.17_smt">
           <p>Implement <insert param-id="si-7.17_prm_1"/> for application self-protection at runtime.</p>
@@ -24849,8 +24374,6 @@
         <prop name="label">SI-8(3)</prop>
         <prop name="sort-id">si-08.03</prop>
         <link rel="required" href="#si-8"/>
-        <link rel="reference" href="#314e33cb-3681-4b50-a2a2-3fae9604accd"/>
-        <link rel="reference" href="#1c71b420-2bd9-4e52-9fc8-390f58b85b59"/>
         <part name="statement" id="si-8.3_smt">
           <p>Implement spam protection mechanisms with a learning capability to more effectively identify legitimate communications traffic.</p>
         </part>
@@ -24979,7 +24502,6 @@
         <prop name="label">SI-10(6)</prop>
         <prop name="sort-id">si-10.06</prop>
         <link rel="required" href="#si-10"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
         <link rel="related" href="#ac-3"/>
         <link rel="related" href="#ac-6"/>
         <part name="statement" id="si-10.6_smt">
@@ -25101,8 +24623,6 @@
         <prop name="label">SI-12(3)</prop>
         <prop name="sort-id">si-12.03</prop>
         <link rel="required" href="#si-12"/>
-        <link rel="reference" href="#e922fc50-b1f9-469f-92ef-ed7d9803611c"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
         <part name="statement" id="si-12.3_smt">
           <p>Use the following techniques to dispose of, destroy, or erase information following the retention period: <insert param-id="si-12.3_prm_1"/>. </p>
         </part>
@@ -25478,9 +24998,6 @@
         <prop name="label">SI-18(5)</prop>
         <prop name="sort-id">si-18.05</prop>
         <link rel="required" href="#si-18"/>
-        <link rel="reference" href="#227063d4-431e-435f-9e8f-009b6dbc20f4"/>
-        <link rel="reference" href="#c15bfc12-a61e-4ca5-bf35-fa9ce3ccb5d2"/>
-        <link rel="reference" href="#a2590922-82f3-4277-83c0-ca5bee06dba4"/>
         <part name="statement" id="si-18.5_smt">
           <p>Notify <insert param-id="si-18.5_prm_1"/> and individuals that the personally identifiable information has been corrected or deleted.</p>
         </part>
@@ -25613,8 +25130,6 @@
         <prop name="label">SI-19(8)</prop>
         <prop name="sort-id">si-19.08</prop>
         <link rel="required" href="#si-19"/>
-        <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-        <link rel="reference" href="#c15bfc12-a61e-4ca5-bf35-fa9ce3ccb5d2"/>
         <part name="statement" id="si-19.8_smt">
           <p>Perform a motivated intruder test on the de-identified dataset to determine if the identified data remains or if the de-identified data can be re-identified.</p>
         </part>
@@ -25867,17 +25382,6 @@
         <prop name="label">SR-2(1)</prop>
         <prop name="sort-id">sr-02.01</prop>
         <link rel="required" href="#sr-2"/>
-        <link rel="reference" href="#4ff10ed3-d8fe-4246-99e3-443045e27482"/>
-        <link rel="reference" href="#0f963c17-ab5a-432a-a867-91eac550309b"/>
-        <link rel="reference" href="#21caa535-1154-4369-ba7b-32c309fee0f7"/>
-        <link rel="reference" href="#031cc4b7-9adf-4835-98f1-f1ca493519cf"/>
-        <link rel="reference" href="#08b07465-dbdc-48d6-8a0b-37279602ac16"/>
-        <link rel="reference" href="#cec037f3-8aba-4c97-84b4-4082f9e515d2"/>
-        <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
-        <link rel="reference" href="#e8e84963-14fc-4c3a-be05-b412a5d37cd2"/>
-        <link rel="reference" href="#276bd50a-7e58-48e5-a405-8c8cb91d7a5f"/>
-        <link rel="reference" href="#e24b06cc-9129-4998-a76a-65c3d7a576ba"/>
-        <link rel="reference" href="#38ff38f0-1366-4f50-a4c9-26a39aacee16"/>
         <part name="statement" id="sr-2.1_smt">
           <p>Establish a supply chain risk management team consisting of <insert param-id="sr-2.1_prm_1"/> to lead and support the following SCRM activities: <insert param-id="sr-2.1_prm_2"/>.</p>
         </part>
@@ -25991,13 +25495,6 @@
         <prop name="label">SR-3(3)</prop>
         <prop name="sort-id">sr-03.03</prop>
         <link rel="required" href="#sr-3"/>
-        <link rel="reference" href="#4ff10ed3-d8fe-4246-99e3-443045e27482"/>
-        <link rel="reference" href="#0f963c17-ab5a-432a-a867-91eac550309b"/>
-        <link rel="reference" href="#21caa535-1154-4369-ba7b-32c309fee0f7"/>
-        <link rel="reference" href="#15a95e24-65b6-4686-bc18-90855a10457d"/>
-        <link rel="reference" href="#08b07465-dbdc-48d6-8a0b-37279602ac16"/>
-        <link rel="reference" href="#e8e84963-14fc-4c3a-be05-b412a5d37cd2"/>
-        <link rel="reference" href="#e24b06cc-9129-4998-a76a-65c3d7a576ba"/>
         <link rel="related" href="#sr-5"/>
         <link rel="related" href="#sr-8"/>
         <part name="statement" id="sr-3.3_smt">
@@ -26105,16 +25602,6 @@
         <prop name="label">SR-4(4)</prop>
         <prop name="sort-id">sr-04.04</prop>
         <link rel="required" href="#sr-4"/>
-        <link rel="reference" href="#4ff10ed3-d8fe-4246-99e3-443045e27482"/>
-        <link rel="reference" href="#0f963c17-ab5a-432a-a867-91eac550309b"/>
-        <link rel="reference" href="#21caa535-1154-4369-ba7b-32c309fee0f7"/>
-        <link rel="reference" href="#863caf2a-978a-4260-9e8d-4a8929bce40c"/>
-        <link rel="reference" href="#15a95e24-65b6-4686-bc18-90855a10457d"/>
-        <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
-        <link rel="reference" href="#e8e84963-14fc-4c3a-be05-b412a5d37cd2"/>
-        <link rel="reference" href="#e24b06cc-9129-4998-a76a-65c3d7a576ba"/>
-        <link rel="reference" href="#a2590922-82f3-4277-83c0-ca5bee06dba4"/>
-        <link rel="reference" href="#38ff38f0-1366-4f50-a4c9-26a39aacee16"/>
         <link rel="related" href="#ra-3"/>
         <part name="statement" id="sr-4.4_smt">
           <p>Employ <insert param-id="sr-4.4_prm_1"/> and conduct <insert param-id="sr-4.4_prm_2"/> to ensure the integrity of the system and system components by validating the internal composition and provenance of critical or mission-essential technologies, products, and services.</p>
@@ -26183,15 +25670,6 @@
         <prop name="label">SR-5(2)</prop>
         <prop name="sort-id">sr-05.02</prop>
         <link rel="required" href="#sr-5"/>
-        <link rel="reference" href="#4ff10ed3-d8fe-4246-99e3-443045e27482"/>
-        <link rel="reference" href="#0f963c17-ab5a-432a-a867-91eac550309b"/>
-        <link rel="reference" href="#21caa535-1154-4369-ba7b-32c309fee0f7"/>
-        <link rel="reference" href="#863caf2a-978a-4260-9e8d-4a8929bce40c"/>
-        <link rel="reference" href="#15a95e24-65b6-4686-bc18-90855a10457d"/>
-        <link rel="reference" href="#08b07465-dbdc-48d6-8a0b-37279602ac16"/>
-        <link rel="reference" href="#e8e84963-14fc-4c3a-be05-b412a5d37cd2"/>
-        <link rel="reference" href="#e24b06cc-9129-4998-a76a-65c3d7a576ba"/>
-        <link rel="reference" href="#38ff38f0-1366-4f50-a4c9-26a39aacee16"/>
         <link rel="related" href="#ca-8"/>
         <link rel="related" href="#ra-5"/>
         <link rel="related" href="#sa-11"/>
@@ -26248,19 +25726,6 @@
         <prop name="label">SR-6(1)</prop>
         <prop name="sort-id">sr-06.01</prop>
         <link rel="required" href="#sr-6"/>
-        <link rel="reference" href="#4ff10ed3-d8fe-4246-99e3-443045e27482"/>
-        <link rel="reference" href="#0f963c17-ab5a-432a-a867-91eac550309b"/>
-        <link rel="reference" href="#21caa535-1154-4369-ba7b-32c309fee0f7"/>
-        <link rel="reference" href="#863caf2a-978a-4260-9e8d-4a8929bce40c"/>
-        <link rel="reference" href="#15a95e24-65b6-4686-bc18-90855a10457d"/>
-        <link rel="reference" href="#678e3d6c-150b-4393-aec5-6e3481eb1e00"/>
-        <link rel="reference" href="#eea3c092-42ed-4382-a6f4-1adadef01b9d"/>
-        <link rel="reference" href="#7c37a38d-21d7-40d8-bc3d-b5e27eac17e1"/>
-        <link rel="reference" href="#a295ca19-8c75-4b4c-8800-98024732e181"/>
-        <link rel="reference" href="#08b07465-dbdc-48d6-8a0b-37279602ac16"/>
-        <link rel="reference" href="#e8e84963-14fc-4c3a-be05-b412a5d37cd2"/>
-        <link rel="reference" href="#e24b06cc-9129-4998-a76a-65c3d7a576ba"/>
-        <link rel="reference" href="#38ff38f0-1366-4f50-a4c9-26a39aacee16"/>
         <link rel="related" href="#ca-8"/>
         <link rel="related" href="#si-4"/>
         <part name="statement" id="sr-6.1_smt">
@@ -26348,7 +25813,6 @@
         <prop name="label">SR-9(1)</prop>
         <prop name="sort-id">sr-09.01</prop>
         <link rel="required" href="#sr-9"/>
-        <link rel="reference" href="#15a95e24-65b6-4686-bc18-90855a10457d"/>
         <link rel="related" href="#sa-3"/>
         <part name="statement" id="sr-9.1_smt">
           <p>Employ anti-tamper technologies, tools, and techniques throughout the system development life cycle.</p>
@@ -26473,7 +25937,6 @@
         <prop name="label">SR-11(3)</prop>
         <prop name="sort-id">sr-11.03</prop>
         <link rel="required" href="#sr-11"/>
-        <link rel="reference" href="#15a95e24-65b6-4686-bc18-90855a10457d"/>
         <link rel="related" href="#ra-5"/>
         <part name="statement" id="sr-11.3_smt">
           <p>Scan for counterfeit system components <insert param-id="sr-11.3_prm_1"/>.</p>
