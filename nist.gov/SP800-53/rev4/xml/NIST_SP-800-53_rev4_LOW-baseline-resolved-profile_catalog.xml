@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="2aa41a6d-cd45-45b5-be0b-19b4fc6a3aa5">
+         uuid="814fc75f-7dac-48ed-b2bc-04758a17daa0">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 4 LOW IMPACT BASELINE</title>
       <last-modified>2020-12-18T16:38:42.466-05:00</last-modified>
       <version>2015-01-22</version>
       <oscal-version>1.0.0-rc1</oscal-version>
-      <prop name="resolution-timestamp">2021-01-25T16:10:58.84593Z</prop>
+      <prop name="resolution-timestamp">2021-02-11T22:31:53.506149Z</prop>
       <link rel="resolution-source"
             href="NIST_SP-800-53_rev4_LOW-baseline_profile.xml"/>
       <role id="creator">

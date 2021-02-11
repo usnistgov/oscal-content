@@ -1,6 +1,6 @@
 {
   "catalog": {
-    "uuid": "2013176b-20d1-4fe8-9591-84faeb3badb7",
+    "uuid": "348f7e28-725c-42a0-8caa-f4dc4ef9eb0b",
     "metadata": {
       "title": "FedRAMP Low Baseline",
       "published": "2020-06-01T00:00:00.000-04:00",
@@ -10,7 +10,7 @@
       "props": [
         {
           "name": "resolution-timestamp",
-          "value": "2021-01-25T16:10:20.460243Z"
+          "value": "2021-02-11T22:30:59.051003Z"
         }
       ],
       "links": [
@@ -52,7 +52,6 @@
           ],
           "addresses": [
             {
-              "type": "work",
               "addr-lines": [
                 "1800 F St. NW",
                 ""
