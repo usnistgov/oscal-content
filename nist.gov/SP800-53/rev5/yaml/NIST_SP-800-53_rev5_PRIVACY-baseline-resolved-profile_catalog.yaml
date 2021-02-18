@@ -1,6 +1,6 @@
 ---
 catalog:
-  uuid: 317f3417-9ef3-4772-87ac-860751ba9d93
+  uuid: 6eae177f-5101-4f77-afb6-cd20c92cdbaf
   metadata:
     title: NIST Special Publication 800-53 Revision 5 PRIVACY BASELINE
     last-modified: 2021-01-14T09:04:29.16-05:00
@@ -8,7 +8,7 @@ catalog:
     oscal-version: 1.0.0-rc1
     props:
       - name: resolution-timestamp
-        value: 2021-02-11T22:33:03.377978Z
+        value: 2021-02-18T17:06:49.058489Z
     links:
       - href: NIST_SP-800-53_rev5_PRIVACY-baseline_profile.xml
         rel: resolution-source

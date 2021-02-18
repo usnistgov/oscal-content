@@ -1,6 +1,6 @@
 ---
 catalog:
-  uuid: c394d1ad-acd8-4d9b-99ed-1d7aff7bbc3a
+  uuid: 27b285d4-59bb-4b90-bdcd-fdf6a0cd7ca2
   metadata:
     title: FedRAMP Tailored Low Impact Software as a Service (LI-SaaS) Baseline
     published: 2020-02-02T00:00:00.000-05:00
@@ -9,7 +9,7 @@ catalog:
     oscal-version: 1.0.0-rc1
     props:
       - name: resolution-timestamp
-        value: 2021-02-11T22:30:46.138328Z
+        value: 2021-02-18T17:04:48.853772Z
     links:
       - href: FedRAMP_LI-SaaS-baseline_profile.xml
         rel: resolution-source

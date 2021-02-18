@@ -1,6 +1,6 @@
 ---
 catalog:
-  uuid: 348f7e28-725c-42a0-8caa-f4dc4ef9eb0b
+  uuid: 285e9d65-2a81-4490-a27e-490cabb2626d
   metadata:
     title: FedRAMP Low Baseline
     published: 2020-06-01T00:00:00.000-04:00
@@ -9,7 +9,7 @@ catalog:
     oscal-version: 1.0.0-rc1
     props:
       - name: resolution-timestamp
-        value: 2021-02-11T22:30:59.051003Z
+        value: 2021-02-18T17:05:00.38353Z
     links:
       - href: FedRAMP_LOW-baseline_profile.xml
         rel: resolution-source

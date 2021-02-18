@@ -1,6 +1,6 @@
 ---
 catalog:
-  uuid: 1b4979a0-a3ac-41ea-82f7-ecb6e6f2d608
+  uuid: 97111a3d-785c-42ff-be90-e50fd3d16808
   metadata:
     title: NIST Special Publication 800-53 Revision 5 MODERATE IMPACT BASELINE
     last-modified: 2021-01-14T09:04:29.297-05:00
@@ -8,7 +8,7 @@ catalog:
     oscal-version: 1.0.0-rc1
     props:
       - name: resolution-timestamp
-        value: 2021-02-11T22:32:51.35278Z
+        value: 2021-02-18T17:06:38.346366Z
     links:
       - href: NIST_SP-800-53_rev5_MODERATE-baseline_profile.xml
         rel: resolution-source
