@@ -1,8 +1,8 @@
-<!-- XML produced by extraction/mapping from docx via XSweet++: 2021-01-29T17:39:20.301-05:00 -->
-<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="8344f4b4-66ce-4995-8766-0a52642b4a08">
+<!-- XML produced by extraction/mapping from docx via XSweet++: 2021-02-18T13:01:19.687-05:00 -->
+<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="ae5ad0ba-bffd-4c67-8461-b7f94fdc8062">
   <metadata>
     <title>NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Federal Information Systems and Organizations</title>
-    <last-modified>2021-01-29T17:39:19.851-05:00</last-modified>
+    <last-modified>2021-02-18T13:01:19.199-05:00</last-modified>
     <version>Revision 5</version>
     <oscal-version>1.0.0-rc1</oscal-version>
     <prop name="keywords">assurance; availability; computer security; confidentiality; control; cybersecurity; FISMA; information security; information system; integrity; personally identifiable information; Privacy Act; privacy controls; privacy functions; privacy requirements; Risk Management Framework; security controls; security functions; security requirements; system; system security.</prop>
@@ -17439,18 +17439,12 @@
           <label>organization-defined systems engineering methods</label>
         </param>
         <param id="sa-4.3_prm_2">
-          <select how-many="one or more">
-            <choice><insert param-id="sa-4.3_prm_3"/></choice>
-            <choice><insert param-id="sa-4.3_prm_4"/></choice>
-          </select>
+          <label>organization-defined [Selection (one or more): systems security; privacy] engineering methods</label>
+          <remarks>
+            <p>The inner parameter is a qualifier, which does not follow the model of a traditional parameterized value in OSCAL. As a result, this inner parameter is treated as text in this OSCAL catalog.</p>
+          </remarks>
         </param>
-        <param id="sa-4.3_prm_3" depends-on="sa-4.3_prm_2">
-          <label>organization-defined systems security engineering methods</label>
-        </param>
-        <param id="sa-4.3_prm_4" depends-on="sa-4.3_prm_2">
-          <label>organization-defined privacy engineering methods</label>
-        </param>
-        <param id="sa-4.3_prm_5">
+        <param id="sa-4.3_prm_3">
           <label>organization-defined software development methods; testing, evaluation, assessment, verification, and validation methods; and quality control processes</label>
         </param>
         <prop name="label">SA-4(3)</prop>
@@ -17468,7 +17462,7 @@
           </part>
           <part name="item" id="sa-4.3_smt.c">
             <prop name="label">(c)</prop>
-            <p><insert param-id="sa-4.3_prm_5"/>.</p>
+            <p><insert param-id="sa-4.3_prm_3"/>.</p>
           </part>
         </part>
         <part name="guidance" id="sa-4.3_gdn">
