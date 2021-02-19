@@ -1,8 +1,8 @@
-<!-- XML produced by extraction/mapping from docx via XSweet++: 2021-02-18T13:01:19.687-05:00 -->
-<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="ae5ad0ba-bffd-4c67-8461-b7f94fdc8062">
+<!-- XML produced by extraction/mapping from docx via XSweet++: 2021-02-19T11:40:21.096-05:00 -->
+<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="7171f117-34e4-484f-acc6-b0c956d15e32">
   <metadata>
     <title>NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Federal Information Systems and Organizations</title>
-    <last-modified>2021-02-18T13:01:19.199-05:00</last-modified>
+    <last-modified>2021-02-19T11:40:20.11-05:00</last-modified>
     <version>Revision 5</version>
     <oscal-version>1.0.0-rc1</oscal-version>
     <prop name="keywords">assurance; availability; computer security; confidentiality; control; cybersecurity; FISMA; information security; information system; integrity; personally identifiable information; Privacy Act; privacy controls; privacy functions; privacy requirements; Risk Management Framework; security controls; security functions; security requirements; system; system security.</prop>
@@ -1853,7 +1853,7 @@
           <p>Limit the number of unsuccessful biometric logon attempts to <insert param-id="ac-7.3_prm_1"/>.</p>
         </part>
         <part name="guidance" id="ac-7.3_gdn">
-          <p>  Biometrics are probabilistic in nature. The ability to successfully authenticate can be impacted by many factors, including matching performance and presentation attack detection mechanisms. Organizations select the appropriate number of attempts for users based on organizationally-defined factors.</p>
+          <p>Biometrics are probabilistic in nature. The ability to successfully authenticate can be impacted by many factors, including matching performance and presentation attack detection mechanisms. Organizations select the appropriate number of attempts for users based on organizationally-defined factors.</p>
         </part>
       </control>
       <control class="SP800-53-enhancement" id="ac-7.4">
@@ -2082,7 +2082,7 @@
           <p><b>Conceal, via the device lock, information previously visible on the display with a publicly viewable image</b>.</p>
         </part>
         <part name="guidance" id="ac-11.1_gdn">
-          <p>The pattern-hiding display can include static or dynamic images, such as patterns used with screen savers, photographic images, solid colors, clock, battery life indicator, or a blank screen with the caveat that controlled unclassified information is not displayed.</p>
+          <p>The pattern-hiding display can include static or dynamic images, such as patterns used with screen savers, photographic images, solid colors, clock, battery life indicator, or a blank screen with the caveat that controlled unclassified information is not displayed.</p>
         </part>
       </control>
     </control>
@@ -2399,7 +2399,7 @@
           <p>Implement <insert param-id="ac-16.8_prm_1"/> in associating security and privacy attributes to information.</p>
         </part>
         <part name="guidance" id="ac-16.8_gdn">
-          <p>  The association of security and privacy attributes to information within systems is important for conducting automated access enforcement and flow enforcement actions. The association of such attributes to information (i.e., binding) can be accomplished with technologies and techniques that provide different levels of assurance. For example, systems can cryptographically bind attributes to information using digital signatures that support cryptographic keys protected by hardware devices (sometimes known as hardware roots of trust).</p>
+          <p>The association of security and privacy attributes to information within systems is important for conducting automated access enforcement and flow enforcement actions. The association of such attributes to information (i.e., binding) can be accomplished with technologies and techniques that provide different levels of assurance. For example, systems can cryptographically bind attributes to information using digital signatures that support cryptographic keys protected by hardware devices (sometimes known as hardware roots of trust).</p>
         </part>
       </control>
       <control class="SP800-53-enhancement" id="ac-16.9">
@@ -4897,10 +4897,10 @@
         <prop name="sort-id">au-13.03</prop>
         <link rel="required" href="#au-13"/>
         <part name="statement" id="au-13.3_smt">
-          <p>Employ discovery techniques, processes, and tools to determine if external entities are replicating organizational information in an unauthorized manner.</p>
+          <p>Employ discovery techniques, processes, and tools to determine if external entities are replicating organizational information in an unauthorized manner.</p>
         </part>
         <part name="guidance" id="au-13.3_gdn">
-          <p>The unauthorized use or replication of organizational information by external entities can cause adverse impacts on organizational operations and assets, including damage to reputation. Such activity can include the replication of an organizational website by an adversary or hostile threat actor who attempts to impersonate the web-hosting organization. Discovery tools, techniques, and processes used to determine if external entities are replicating organizational information in an unauthorized manner include scanning external websites, monitoring social media, and training staff to recognize the unauthorized use of organizational information.</p>
+          <p>The unauthorized use or replication of organizational information by external entities can cause adverse impacts on organizational operations and assets, including damage to reputation. Such activity can include the replication of an organizational website by an adversary or hostile threat actor who attempts to impersonate the web-hosting organization. Discovery tools, techniques, and processes used to determine if external entities are replicating organizational information in an unauthorized manner include scanning external websites, monitoring social media, and training staff to recognize the unauthorized use of organizational information.</p>
         </part>
       </control>
     </control>
@@ -7319,7 +7319,7 @@
         </part>
       </part>
       <part name="guidance" id="cm-11_gdn">
-        <p>If provided the necessary privileges, users can install software in organizational systems. To maintain control over the software installed, organizations identify permitted and prohibited actions regarding software installation. Permitted software installations include updates and security patches to existing software and downloading new applications from organization-approved <q>app stores.</q> Prohibited software installations include software with unknown or suspect pedigrees or software that organizations consider potentially malicious. Policies selected for governing user-installed software are organization-developed or provided by some external entity. Policy enforcement methods can include procedural methods and automated methods.</p>
+        <p>If provided the necessary privileges, users can install software in organizational systems. To maintain control over the software installed, organizations identify permitted and prohibited actions regarding software installation. Permitted software installations include updates and security patches to existing software and downloading new applications from organization-approved <q>app stores.</q> Prohibited software installations include software with unknown or suspect pedigrees or software that organizations consider potentially malicious. Policies selected for governing user-installed software are organization-developed or provided by some external entity. Policy enforcement methods can include procedural methods and automated methods.</p>
       </part>
       <control class="SP800-53-enhancement" id="cm-11.1">
         <title>Alerts for Unauthorized Installations</title>
@@ -7828,7 +7828,7 @@
         </part>
       </part>
       <part name="guidance" id="cp-3_gdn">
-        <p>Contingency training provided by organizations is linked to the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail is included in such training. For example, some individuals may only need to know when and where to report for duty during contingency operations and if normal duties are affected; system administrators may require additional training on how to establish systems at alternate processing and storage sites; and organizational officials may receive more specific training on how to conduct mission-essential functions in designated off-site locations and how to establish communications with other governmental entities for purposes of coordination on contingency-related activities. Training for contingency roles or responsibilities reflects the specific continuity requirements in the contingency plan. Events that may precipitate an update to contingency training content include, but are not limited to, contingency plan testing or an actual contingency (lessons learned), assessment or audit findings, security incidents or breaches, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. At the discretion of the organization, participation in a contingency plan test or exercise, including lessons learned sessions subsequent to the test or exercise, may satisfy contingency plan training requirements.</p>
+        <p>Contingency training provided by organizations is linked to the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail is included in such training. For example, some individuals may only need to know when and where to report for duty during contingency operations and if normal duties are affected; system administrators may require additional training on how to establish systems at alternate processing and storage sites; and organizational officials may receive more specific training on how to conduct mission-essential functions in designated off-site locations and how to establish communications with other governmental entities for purposes of coordination on contingency-related activities. Training for contingency roles or responsibilities reflects the specific continuity requirements in the contingency plan. Events that may precipitate an update to contingency training content include, but are not limited to, contingency plan testing or an actual contingency (lessons learned), assessment or audit findings, security incidents or breaches, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. At the discretion of the organization, participation in a contingency plan test or exercise, including lessons learned sessions subsequent to the test or exercise, may satisfy contingency plan training requirements.</p>
       </part>
       <control class="SP800-53-enhancement" id="cp-3.1">
         <title>Simulated Events</title>
@@ -9129,7 +9129,7 @@
           <p>Manage individual identifiers dynamically in accordance with <insert param-id="ia-4.5_prm_1"/>.</p>
         </part>
         <part name="guidance" id="ia-4.5_gdn">
-          <p>  In contrast to conventional approaches to identification that presume static accounts for preregistered users, many distributed systems establish identifiers at runtime for entities that were previously unknown. When identifiers are established at runtime for previously unknown entities, organizations can anticipate and provision for the dynamic establishment of identifiers. Pre-established trust relationships and mechanisms with appropriate authorities to validate credentials and related identifiers are essential.</p>
+          <p>In contrast to conventional approaches to identification that presume static accounts for preregistered users, many distributed systems establish identifiers at runtime for entities that were previously unknown. When identifiers are established at runtime for previously unknown entities, organizations can anticipate and provision for the dynamic establishment of identifiers. Pre-established trust relationships and mechanisms with appropriate authorities to validate credentials and related identifiers are essential.</p>
         </part>
       </control>
       <control class="SP800-53-enhancement" id="ia-4.6">
@@ -9593,7 +9593,7 @@
         <p>Obscure feedback of authentication information during the authentication process to protect the information from possible exploitation and use by unauthorized individuals.</p>
       </part>
       <part name="guidance" id="ia-6_gdn">
-        <p>Authentication feedback from systems does not provide information that would allow unauthorized individuals to compromise authentication mechanisms. For some types of systems, such as desktops or notebooks with relatively large monitors, the threat (referred to as shoulder surfing) may be significant. For other types of systems, such as mobile devices with small displays, the threat may be less significant and is balanced against the increased likelihood of typographic input errors due to small keyboards. Thus, the means for obscuring authentication feedback is selected accordingly. Obscuring authentication feedback includes displaying asterisks when users type passwords into input devices or displaying feedback for a very limited time before obscuring it.</p>
+        <p>Authentication feedback from systems does not provide information that would allow unauthorized individuals to compromise authentication mechanisms. For some types of systems, such as desktops or notebooks with relatively large monitors, the threat (referred to as shoulder surfing) may be significant. For other types of systems, such as mobile devices with small displays, the threat may be less significant and is balanced against the increased likelihood of typographic input errors due to small keyboards. Thus, the means for obscuring authentication feedback is selected accordingly. Obscuring authentication feedback includes displaying asterisks when users type passwords into input devices or displaying feedback for a very limited time before obscuring it.</p>
       </part>
     </control>
     <control class="SP800-53" id="ia-7">
@@ -10059,7 +10059,7 @@
         </part>
       </part>
       <part name="guidance" id="ir-2_gdn">
-        <p>Incident response training is associated with the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail are included in such training. For example, users may only need to know who to call or how to recognize an incident; system administrators may require additional training on how to handle incidents; and incident responders may receive more specific training on forensics, data collection techniques, reporting, system recovery, and system restoration. Incident response training includes user training in identifying and reporting suspicious activities from external and internal sources. Incident response training for users may be provided as part of <a href="#at-2">AT-2</a> or <a href="#at-3">AT-3</a>. Events that may precipitate an update to incident response training content include, but are not limited to, incident response plan testing or response to an actual incident (lessons learned), assessment or audit findings, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines.</p>
+        <p>Incident response training is associated with the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail are included in such training. For example, users may only need to know who to call or how to recognize an incident; system administrators may require additional training on how to handle incidents; and incident responders may receive more specific training on forensics, data collection techniques, reporting, system recovery, and system restoration. Incident response training includes user training in identifying and reporting suspicious activities from external and internal sources. Incident response training for users may be provided as part of <a href="#at-2">AT-2</a> or <a href="#at-3">AT-3</a>. Events that may precipitate an update to incident response training content include, but are not limited to, incident response plan testing or response to an actual incident (lessons learned), assessment or audit findings, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines.</p>
       </part>
       <control class="SP800-53-enhancement" id="ir-2.1">
         <title>Simulated Events</title>
@@ -13789,7 +13789,7 @@
           </part>
           <part name="item" id="pl-4.1_smt.c">
             <prop name="label">(c)</prop>
-            <p>Use of organization-provided identifiers (e.g., email addresses) and authentication secrets (e.g., passwords) for creating accounts on external sites/applications.</p>
+            <p>Use of organization-provided identifiers (e.g., email addresses) and authentication secrets (e.g., passwords) for creating accounts on external sites/applications.</p>
           </part>
         </part>
         <part name="guidance" id="pl-4.1_gdn">
@@ -19683,7 +19683,7 @@
         <p>Reimplement or custom develop the following critical system components: <insert param-id="sa-20_prm_1"/>.</p>
       </part>
       <part name="guidance" id="sa-20_gdn">
-        <p>Organizations determine that certain system components likely cannot be trusted due to specific threats to and vulnerabilities in those components for which there are no viable security controls to adequately mitigate risk. Reimplementation or custom development of such components may satisfy requirements for higher assurance and is carried out by initiating changes to system components (including hardware, software, and firmware) such that the standard attacks by adversaries are less likely to succeed. In situations where no alternative sourcing is available and organizations choose not to reimplement or custom develop critical system components, additional controls can be employed. Controls include enhanced auditing, restrictions on source code and system utility access, and protection from deletion of system and application files.</p>
+        <p>Organizations determine that certain system components likely cannot be trusted due to specific threats to and vulnerabilities in those components for which there are no viable security controls to adequately mitigate risk. Reimplementation or custom development of such components may satisfy requirements for higher assurance and is carried out by initiating changes to system components (including hardware, software, and firmware) such that the standard attacks by adversaries are less likely to succeed. In situations where no alternative sourcing is available and organizations choose not to reimplement or custom develop critical system components, additional controls can be employed. Controls include enhanced auditing, restrictions on source code and system utility access, and protection from deletion of system and application files.</p>
       </part>
     </control>
     <control class="SP800-53" id="sa-21">
@@ -24207,7 +24207,7 @@
           <p>Verify the integrity of the boot process of the following system components: <insert param-id="si-7.9_prm_1"/>.</p>
         </part>
         <part name="guidance" id="si-7.9_gdn">
-          <p>Ensuring the integrity of boot processes is critical to starting system components in known, trustworthy states. Integrity verification mechanisms provide a level of assurance that only trusted code is executed during boot processes.</p>
+          <p>Ensuring the integrity of boot processes is critical to starting system components in known, trustworthy states. Integrity verification mechanisms provide a level of assurance that only trusted code is executed during boot processes.</p>
         </part>
       </control>
       <control class="SP800-53-enhancement" id="si-7.10">
@@ -24312,7 +24312,7 @@
           <p>Implement <insert param-id="si-7.17_prm_1"/> for application self-protection at runtime.</p>
         </part>
         <part name="guidance" id="si-7.17_gdn">
-          <p>Runtime application self-protection employs runtime instrumentation to detect and block the exploitation of software vulnerabilities by taking advantage of information from the software in execution. Runtime exploit prevention differs from traditional perimeter-based protections such as guards and firewalls which can only detect and block attacks by using network information without contextual awareness. Runtime application self-protection technology can reduce the susceptibility of software to attacks by monitoring its inputs and blocking those inputs that could allow attacks. It can also help protect the runtime environment from unwanted changes and tampering. When a threat is detected, runtime application self-protection technology can prevent exploitation and take other actions (e.g., sending a warning message to the user, terminating the user's session, terminating the application, or sending an alert to organizational personnel). Runtime application self-protection solutions can be deployed in either a monitor or protection mode.</p>
+          <p>Runtime application self-protection employs runtime instrumentation to detect and block the exploitation of software vulnerabilities by taking advantage of information from the software in execution. Runtime exploit prevention differs from traditional perimeter-based protections such as guards and firewalls which can only detect and block attacks by using network information without contextual awareness. Runtime application self-protection technology can reduce the susceptibility of software to attacks by monitoring its inputs and blocking those inputs that could allow attacks. It can also help protect the runtime environment from unwanted changes and tampering. When a threat is detected, runtime application self-protection technology can prevent exploitation and take other actions (e.g., sending a warning message to the user, terminating the user's session, terminating the application, or sending an alert to organizational personnel). Runtime application self-protection solutions can be deployed in either a monitor or protection mode.</p>
         </part>
       </control>
     </control>
@@ -25362,7 +25362,7 @@
         </part>
       </part>
       <part name="guidance" id="sr-2_gdn">
-        <p>The dependence on products, systems, and services from external providers, as well as the nature of the relationships with those providers, present an increasing level of risk to an organization. Threat actions that may increase security or privacy risks include unauthorized production, the insertion or use of counterfeits, tampering, theft, insertion of malicious software and hardware, and poor manufacturing and development practices in the supply chain. Supply chain risks can be endemic or systemic within a system element or component, a system, an organization, a sector, or the Nation. Managing supply chain risk is a complex, multifaceted undertaking that requires a coordinated effort across an organization to build trust relationships and communicate with internal and external stakeholders. Supply chain risk management (SCRM) activities include identifying and assessing risks, determining appropriate risk response actions, developing SCRM plans to document response actions, and monitoring performance against plans. The SCRM plan (at the system-level) is implementation specific, providing policy implementation, requirements, constraints and implications. It can either be stand-alone, or incorporated into system security and privacy plans. The SCRM plan addresses managing, implementation, and monitoring of SCRM controls and the development/sustainment of systems across the SDLC to support mission and business functions.</p>
+        <p>The dependence on products, systems, and services from external providers, as well as the nature of the relationships with those providers, present an increasing level of risk to an organization. Threat actions that may increase security or privacy risks include unauthorized production, the insertion or use of counterfeits, tampering, theft, insertion of malicious software and hardware, and poor manufacturing and development practices in the supply chain. Supply chain risks can be endemic or systemic within a system element or component, a system, an organization, a sector, or the Nation. Managing supply chain risk is a complex, multifaceted undertaking that requires a coordinated effort across an organization to build trust relationships and communicate with internal and external stakeholders. Supply chain risk management (SCRM) activities include identifying and assessing risks, determining appropriate risk response actions, developing SCRM plans to document response actions, and monitoring performance against plans. The SCRM plan (at the system-level) is implementation specific, providing policy implementation, requirements, constraints and implications. It can either be stand-alone, or incorporated into system security and privacy plans. The SCRM plan addresses managing, implementation, and monitoring of SCRM controls and the development/sustainment of systems across the SDLC to support mission and business functions.</p>
         <p>Because supply chains can differ significantly across and within organizations, SCRM plans are tailored to the individual program, organizational, and operational contexts. Tailored SCRM plans provide the basis for determining whether a technology, service, system component, or system is fit for purpose, and as such, the controls need to be tailored accordingly. Tailored SCRM plans help organizations focus their resources on the most critical mission and business functions based on mission and business requirements and their risk environment. Supply chain risk management plans include an expression of the supply chain risk tolerance for the organization, acceptable supply chain risk mitigation strategies or controls, a process for consistently evaluating and monitoring supply chain risk, approaches for implementing and communicating the plan, a description of and justification for supply chain risk mitigation measures taken, and associated roles and responsibilities. Finally, supply chain risk management plans address requirements for developing trustworthy, secure, privacy-protective, and resilient system components and systems, including the application of the security design principles implemented as part of life cycle-based systems security engineering processes (see <a href="#sa-8">SA-8</a>).</p>
       </part>
       <control class="SP800-53-enhancement" id="sr-2.1">
@@ -26480,7 +26480,7 @@
     <resource uuid="d744d9a3-73eb-4085-b9ff-79e82e9e2d6e">
       <title>NCPR</title>
       <citation>
-        <text>National Institute of Standards and Technology (2020) <i>National Checklist Program Repository</i>. Available at</text>
+        <text>National Institute of Standards and Technology (2020) <i>National Checklist Program Repository</i>. Available at</text>
       </citation>
       <rlink href="https://nvd.nist.gov/ncp/repository"/>
     </resource>
@@ -26501,14 +26501,14 @@
     <resource uuid="84dc1b0c-acb7-4269-84c4-00dbabacd78c">
       <title>NIST CAVP</title>
       <citation>
-        <text>National Institute of Standards and Technology (2020) <i>Cryptographic Algorithm Validation Program</i>. Available at</text>
+        <text>National Institute of Standards and Technology (2020) <i>Cryptographic Algorithm Validation Program</i>. Available at</text>
       </citation>
       <rlink href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program"/>
     </resource>
     <resource uuid="1acdc775-aafb-4d11-9341-dc6a822e9d38">
       <title>NIST CMVP</title>
       <citation>
-        <text>National Institute of Standards and Technology (2020) <i>Cryptographic Module Validation Program</i>. Available at</text>
+        <text>National Institute of Standards and Technology (2020) <i>Cryptographic Module Validation Program</i>. Available at</text>
       </citation>
       <rlink href="https://csrc.nist.gov/projects/cryptographic-module-validation-program"/>
     </resource>
@@ -26550,7 +26550,7 @@
     <resource uuid="782a8c6d-39a4-45df-a6db-ad0b9226fa38">
       <title>NVD 800-53</title>
       <citation>
-        <text>National Institute of Standards and Technology (2020) <i>National Vulnerability Database: NIST Special Publication 800-53 [database of controls].</i> Available at</text>
+        <text>National Institute of Standards and Technology (2020) <i>National Vulnerability Database: NIST Special Publication 800-53 [database of controls].</i> Available at</text>
       </citation>
       <rlink href="https://nvd.nist.gov/800-53"/>
     </resource>
@@ -27283,7 +27283,7 @@
     <resource uuid="98498928-3ca3-44b3-8b1e-f48685373087">
       <title>USGCB</title>
       <citation>
-        <text>National Institute of Standards and Technology (2020) <i>United States Government Configuration Baseline</i>. Available at</text>
+        <text>National Institute of Standards and Technology (2020) <i>United States Government Configuration Baseline</i>. Available at</text>
       </citation>
       <rlink href="https://csrc.nist.gov/projects/united-states-government-configuration-baseline"/>
     </resource>
