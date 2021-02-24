@@ -1,8 +1,8 @@
-<!-- XML produced by extraction/mapping from docx via XSweet++: 2021-02-24T10:45:36.092-05:00 -->
-<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="b71103cd-9d6d-4df3-95fd-f40cbc486d62">
+<!-- XML produced by extraction/mapping from docx via XSweet++: 2021-02-24T16:43:11.049-05:00 -->
+<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="62f21617-b40f-4e89-bf3b-01b04b68f473">
   <metadata>
     <title>NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Federal Information Systems and Organizations</title>
-    <last-modified>2021-02-24T10:45:35.399-05:00</last-modified>
+    <last-modified>2021-02-24T16:43:10.691-05:00</last-modified>
     <version>Revision 5</version>
     <oscal-version>1.0.0-rc1</oscal-version>
     <prop name="keywords">assurance; availability; computer security; confidentiality; control; cybersecurity; FISMA; information security; information system; integrity; personally identifiable information; Privacy Act; privacy controls; privacy functions; privacy requirements; Risk Management Framework; security controls; security functions; security requirements; system; system security.</prop>
@@ -3563,7 +3563,7 @@
         <prop name="label">AT-3(4)</prop>
         <prop name="sort-id">at-03.04</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#at-2.4"/>
+        <link rel="moved-to" href="#at-2.4"/>
       </control>
       <control class="SP800-53-enhancement" id="at-3.5">
         <title>Processing Personally Identifiable Information</title>
@@ -4372,14 +4372,14 @@
         <prop name="label">AU-8(1)</prop>
         <prop name="sort-id">au-08.01</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sc-45.1"/>
+        <link rel="moved-to" href="#sc-45.1"/>
       </control>
       <control class="SP800-53-enhancement" id="au-8.2">
         <title>Secondary Authoritative Time Source</title>
         <prop name="label">AU-8(2)</prop>
         <prop name="sort-id">au-08.02</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sc-45.2"/>
+        <link rel="moved-to" href="#sc-45.2"/>
       </control>
     </control>
     <control class="SP800-53" id="au-9">
@@ -4983,7 +4983,7 @@
       <prop name="label">AU-15</prop>
       <prop name="sort-id">au-15</prop>
       <prop name="status">withdrawn</prop>
-      <link rel="incorporated-into" href="#au-5.5"/>
+      <link rel="moved-to" href="#au-5.5"/>
     </control>
     <control class="SP800-53" id="au-16">
       <title>Cross-organizational Audit Logging</title>
@@ -5358,35 +5358,35 @@
         <prop name="label">CA-3(1)</prop>
         <prop name="sort-id">ca-03.01</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sc-7.25"/>
+        <link rel="moved-to" href="#sc-7.25"/>
       </control>
       <control class="SP800-53-enhancement" id="ca-3.2">
         <title>Classified National Security System Connections</title>
         <prop name="label">CA-3(2)</prop>
         <prop name="sort-id">ca-03.02</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sc-7.26"/>
+        <link rel="moved-to" href="#sc-7.26"/>
       </control>
       <control class="SP800-53-enhancement" id="ca-3.3">
         <title>Unclassified Non-national Security System Connections</title>
         <prop name="label">CA-3(3)</prop>
         <prop name="sort-id">ca-03.03</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sc-7.27"/>
+        <link rel="moved-to" href="#sc-7.27"/>
       </control>
       <control class="SP800-53-enhancement" id="ca-3.4">
         <title>Connections to Public Networks</title>
         <prop name="label">CA-3(4)</prop>
         <prop name="sort-id">ca-03.04</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sc-7.28"/>
+        <link rel="moved-to" href="#sc-7.28"/>
       </control>
       <control class="SP800-53-enhancement" id="ca-3.5">
         <title>Restrictions on External System Connections</title>
         <prop name="label">CA-3(5)</prop>
         <prop name="sort-id">ca-03.05</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sc-7.5"/>
+        <link rel="moved-to" href="#sc-7.5"/>
       </control>
       <control class="SP800-53-enhancement" id="ca-3.6">
         <title>Transfer Authorizations</title>
@@ -6483,7 +6483,7 @@
         <prop name="label">CM-5(3)</prop>
         <prop name="sort-id">cm-05.03</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#cm-14"/>
+        <link rel="moved-to" href="#cm-14"/>
       </control>
       <control class="SP800-53-enhancement" id="cm-5.4">
         <title>Dual Authorization</title>
@@ -10891,7 +10891,7 @@
       <prop name="label">IR-10</prop>
       <prop name="sort-id">ir-10</prop>
       <prop name="status">withdrawn</prop>
-      <link rel="incorporated-into" href="#ir-4.11"/>
+      <link rel="moved-to" href="#ir-4.11"/>
     </control>
   </group>
   <group class="family" id="ma">
@@ -13345,7 +13345,7 @@
         <prop name="label">PE-18(1)</prop>
         <prop name="sort-id">pe-18.01</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#pe-23"/>
+        <link rel="moved-to" href="#pe-23"/>
       </control>
     </control>
     <control class="SP800-53" id="pe-19">
@@ -18962,14 +18962,14 @@
         <prop name="label">SA-12(1)</prop>
         <prop name="sort-id">sa-12.01</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sr-5"/>
+        <link rel="moved-to" href="#sr-5"/>
       </control>
       <control class="SP800-53-enhancement" id="sa-12.2">
         <title>Supplier Reviews</title>
         <prop name="label">SA-12(2)</prop>
         <prop name="sort-id">sa-12.02</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sr-6"/>
+        <link rel="moved-to" href="#sr-6"/>
       </control>
       <control class="SP800-53-enhancement" id="sa-12.3">
         <title>Trusted Shipping and Warehousing</title>
@@ -18983,14 +18983,14 @@
         <prop name="label">SA-12(4)</prop>
         <prop name="sort-id">sa-12.04</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sr-3.1"/>
+        <link rel="moved-to" href="#sr-3.1"/>
       </control>
       <control class="SP800-53-enhancement" id="sa-12.5">
         <title>Limitation of Harm</title>
         <prop name="label">SA-12(5)</prop>
         <prop name="sort-id">sa-12.05</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sr-3.2"/>
+        <link rel="moved-to" href="#sr-3.2"/>
       </control>
       <control class="SP800-53-enhancement" id="sa-12.6">
         <title>Minimizing Procurement Time</title>
@@ -19004,7 +19004,7 @@
         <prop name="label">SA-12(7)</prop>
         <prop name="sort-id">sa-12.07</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sr-5.2"/>
+        <link rel="moved-to" href="#sr-5.2"/>
       </control>
       <control class="SP800-53-enhancement" id="sa-12.8">
         <title>Use of All-source Intelligence</title>
@@ -19018,28 +19018,28 @@
         <prop name="label">SA-12(9)</prop>
         <prop name="sort-id">sa-12.09</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sr-7"/>
+        <link rel="moved-to" href="#sr-7"/>
       </control>
       <control class="SP800-53-enhancement" id="sa-12.10">
         <title>Validate as Genuine and Not Altered</title>
         <prop name="label">SA-12(10)</prop>
         <prop name="sort-id">sa-12.10</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sr-4.3"/>
+        <link rel="moved-to" href="#sr-4.3"/>
       </control>
       <control class="SP800-53-enhancement" id="sa-12.11">
         <title>Penetration Testing / Analysis of Elements, Processes, and Actors</title>
         <prop name="label">SA-12(11)</prop>
         <prop name="sort-id">sa-12.11</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sr-6.1"/>
+        <link rel="moved-to" href="#sr-6.1"/>
       </control>
       <control class="SP800-53-enhancement" id="sa-12.12">
         <title>Inter-organizational Agreements</title>
         <prop name="label">SA-12(12)</prop>
         <prop name="sort-id">sa-12.12</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sr-8"/>
+        <link rel="moved-to" href="#sr-8"/>
       </control>
       <control class="SP800-53-enhancement" id="sa-12.13">
         <title>Critical Information System Components</title>
@@ -19620,20 +19620,20 @@
       <prop name="label">SA-18</prop>
       <prop name="sort-id">sa-18</prop>
       <prop name="status">withdrawn</prop>
-      <link rel="incorporated-into" href="#sr-9"/>
+      <link rel="moved-to" href="#sr-9"/>
       <control class="SP800-53-enhancement" id="sa-18.1">
         <title>Multiple Phases of System Development Life Cycle</title>
         <prop name="label">SA-18(1)</prop>
         <prop name="sort-id">sa-18.01</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sr-9.1"/>
+        <link rel="moved-to" href="#sr-9.1"/>
       </control>
       <control class="SP800-53-enhancement" id="sa-18.2">
         <title>Inspection of Systems or Components</title>
         <prop name="label">SA-18(2)</prop>
         <prop name="sort-id">sa-18.02</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sr-10"/>
+        <link rel="moved-to" href="#sr-10"/>
       </control>
     </control>
     <control class="SP800-53" id="sa-19">
@@ -19641,34 +19641,34 @@
       <prop name="label">SA-19</prop>
       <prop name="sort-id">sa-19</prop>
       <prop name="status">withdrawn</prop>
-      <link rel="incorporated-into" href="#sr-11"/>
+      <link rel="moved-to" href="#sr-11"/>
       <control class="SP800-53-enhancement" id="sa-19.1">
         <title>Anti-counterfeit Training</title>
         <prop name="label">SA-19(1)</prop>
         <prop name="sort-id">sa-19.01</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sr-11.1"/>
+        <link rel="moved-to" href="#sr-11.1"/>
       </control>
       <control class="SP800-53-enhancement" id="sa-19.2">
         <title>Configuration Control for Component Service and Repair</title>
         <prop name="label">SA-19(2)</prop>
         <prop name="sort-id">sa-19.02</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sr-11.2"/>
+        <link rel="moved-to" href="#sr-11.2"/>
       </control>
       <control class="SP800-53-enhancement" id="sa-19.3">
         <title>Component Disposal</title>
         <prop name="label">SA-19(3)</prop>
         <prop name="sort-id">sa-19.03</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sr-12"/>
+        <link rel="moved-to" href="#sr-12"/>
       </control>
       <control class="SP800-53-enhancement" id="sa-19.4">
         <title>Anti-counterfeit Scanning</title>
         <prop name="label">SA-19(4)</prop>
         <prop name="sort-id">sa-19.04</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sr-11.3"/>
+        <link rel="moved-to" href="#sr-11.3"/>
       </control>
     </control>
     <control class="SP800-53" id="sa-20">
@@ -22130,7 +22130,7 @@
         <prop name="label">SC-34(3)</prop>
         <prop name="sort-id">sc-34.03</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#sc-51"/>
+        <link rel="moved-to" href="#sc-51"/>
       </control>
     </control>
     <control class="SP800-53" id="sc-35">
@@ -23263,7 +23263,7 @@
         <prop name="label">SI-3(9)</prop>
         <prop name="sort-id">si-03.09</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#ac-17.10"/>
+        <link rel="moved-to" href="#ac-17.10"/>
       </control>
       <control class="SP800-53-enhancement" id="si-3.10">
         <title>Malicious Code Analysis</title>
@@ -24240,7 +24240,7 @@
         <prop name="label">SI-7(11)</prop>
         <prop name="sort-id">si-07.11</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#cm-7.6"/>
+        <link rel="moved-to" href="#cm-7.6"/>
       </control>
       <control class="SP800-53-enhancement" id="si-7.12">
         <title>Integrity Verification</title>
@@ -24263,14 +24263,14 @@
         <prop name="label">SI-7(13)</prop>
         <prop name="sort-id">si-07.13</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#cm-7.7"/>
+        <link rel="moved-to" href="#cm-7.7"/>
       </control>
       <control class="SP800-53-enhancement" id="si-7.14">
         <title>Binary or Machine Executable Code</title>
         <prop name="label">SI-7(14)</prop>
         <prop name="sort-id">si-07.14</prop>
         <prop name="status">withdrawn</prop>
-        <link rel="incorporated-into" href="#cm-7.8"/>
+        <link rel="moved-to" href="#cm-7.8"/>
       </control>
       <control class="SP800-53-enhancement" id="si-7.15">
         <title>Code Authentication</title>
