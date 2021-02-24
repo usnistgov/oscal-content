@@ -1,8 +1,8 @@
-<!-- XML produced by extraction/mapping from docx via XSweet++: 2021-02-19T11:40:21.096-05:00 -->
-<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="7171f117-34e4-484f-acc6-b0c956d15e32">
+<!-- XML produced by extraction/mapping from docx via XSweet++: 2021-02-24T10:45:36.092-05:00 -->
+<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="b71103cd-9d6d-4df3-95fd-f40cbc486d62">
   <metadata>
     <title>NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Federal Information Systems and Organizations</title>
-    <last-modified>2021-02-19T11:40:20.11-05:00</last-modified>
+    <last-modified>2021-02-24T10:45:35.399-05:00</last-modified>
     <version>Revision 5</version>
     <oscal-version>1.0.0-rc1</oscal-version>
     <prop name="keywords">assurance; availability; computer security; confidentiality; control; cybersecurity; FISMA; information security; information system; integrity; personally identifiable information; Privacy Act; privacy controls; privacy functions; privacy requirements; Risk Management Framework; security controls; security functions; security requirements; system; system security.</prop>
@@ -8498,6 +8498,9 @@
         <prop name="label">CP-10(3)</prop>
         <prop name="sort-id">cp-10.03</prop>
         <prop name="status">withdrawn</prop>
+        <part name="statement" id="cp-10.3_smt">
+          <p>Addressed through tailoring.</p>
+        </part>
       </control>
       <control class="SP800-53-enhancement" id="cp-10.4">
         <title>Restore Within Time Period</title>
@@ -8881,7 +8884,7 @@
         <link rel="incorporated-into" href="#ia-2.6"/>
       </control>
       <control class="SP800-53-enhancement" id="ia-2.12">
-        <title>Acceptance of Piv Credentials</title>
+        <title>Acceptance of PIV Credentials</title>
         <prop name="label">IA-2(12)</prop>
         <prop name="sort-id">ia-02.12</prop>
         <link rel="required" href="#ia-2"/>
@@ -9494,7 +9497,7 @@
         </part>
       </control>
       <control class="SP800-53-enhancement" id="ia-5.14">
-        <title>Managing Content of Pki Trust Stores</title>
+        <title>Managing Content of PKI Trust Stores</title>
         <prop name="label">IA-5(14)</prop>
         <prop name="sort-id">ia-05.14</prop>
         <link rel="required" href="#ia-5"/>
@@ -9646,7 +9649,7 @@
         <p>Non-organizational users include system users other than organizational users explicitly covered by <a href="#ia-2">IA-2</a>. Non-organizational users are uniquely identified and authenticated for accesses other than those explicitly identified and documented in <a href="#ac-14">AC-14</a>. Identification and authentication of non-organizational users accessing federal systems may be required to protect federal, proprietary, or privacy-related information (with exceptions noted for national security systems). Organizations consider many factors—including security, privacy, scalability, and practicality—when balancing the need to ensure ease of use for access to federal information and systems with the need to protect and adequately mitigate risk.</p>
       </part>
       <control class="SP800-53-enhancement" id="ia-8.1">
-        <title>Acceptance of Piv Credentials from Other Agencies</title>
+        <title>Acceptance of PIV Credentials from Other Agencies</title>
         <prop name="label">IA-8(1)</prop>
         <prop name="sort-id">ia-08.01</prop>
         <link rel="required" href="#ia-8"/>
@@ -9700,7 +9703,7 @@
         </part>
       </control>
       <control class="SP800-53-enhancement" id="ia-8.5">
-        <title>Acceptance of Piv-i Credentials</title>
+        <title>Acceptance of PIV-I Credentials</title>
         <param id="ia-8.5_prm_1">
           <label>organization-defined policy</label>
         </param>
@@ -17571,7 +17574,7 @@
         </part>
       </control>
       <control class="SP800-53-enhancement" id="sa-4.10">
-        <title>Use of Approved Piv Products</title>
+        <title>Use of Approved PIV Products</title>
         <prop name="label">SA-4(10)</prop>
         <prop name="sort-id">sa-04.10</prop>
         <link rel="required" href="#sa-4"/>
@@ -21028,14 +21031,14 @@
         </part>
       </control>
       <control class="SP800-53-enhancement" id="sc-12.4">
-        <title>Pki Certificates</title>
+        <title>PKI Certificates</title>
         <prop name="label">SC-12(4)</prop>
         <prop name="sort-id">sc-12.04</prop>
         <prop name="status">withdrawn</prop>
         <link rel="incorporated-into" href="#sc-12.3"/>
       </control>
       <control class="SP800-53-enhancement" id="sc-12.5">
-        <title>Pki Certificates / Hardware Tokens</title>
+        <title>PKI Certificates / Hardware Tokens</title>
         <prop name="label">SC-12(5)</prop>
         <prop name="sort-id">sc-12.05</prop>
         <prop name="status">withdrawn</prop>
@@ -21434,6 +21437,9 @@
       <prop name="label">SC-19</prop>
       <prop name="sort-id">sc-19</prop>
       <prop name="status">withdrawn</prop>
+      <part name="statement" id="sc-19_smt">
+        <p>Technology-specific; addressed as any other technology or protocol.</p>
+      </part>
     </control>
     <control class="SP800-53" id="sc-20">
       <title>Secure Name/address Resolution Service (authoritative Source)</title>
