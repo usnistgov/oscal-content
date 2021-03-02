@@ -1,9 +1,9 @@
 {
   "catalog": {
-    "uuid": "849dd8b6-bb97-4c68-af17-f0c9315d07a2",
+    "uuid": "62f21617-b40f-4e89-bf3b-01b04b68f473",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Federal Information Systems and Organizations",
-      "last-modified": "2021-01-07T12:23:18.582-05:00",
+      "last-modified": "2021-02-24T16:43:10.691-05:00",
       "version": "Revision 5",
       "oscal-version": "1.0.0-rc1",
       "props": [
@@ -1381,18 +1381,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#2956e175-f674-43f4-b1b9-e074ad9fc39c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#388a3aa2-5d85-4bad-b8a3-77db80d63c4f",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#53df282b-8b3f-483a-bad1-6a8b8ac00114",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#au-6",
                     "rel": "related"
                   },
@@ -2530,38 +2518,6 @@
                   {
                     "href": "#ac-3",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#18e71fec-c6fd-475a-925a-5d8495cf8455",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#110e26af-4765-49e1-8740-6750f83fcda1",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e7942589-e267-4a5a-a3d9-f39a7aae81f0",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#8306620b-1920-4d73-8b21-12008528595f",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#2956e175-f674-43f4-b1b9-e074ad9fc39c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#388a3aa2-5d85-4bad-b8a3-77db80d63c4f",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7f473f21-fdbf-4a6c-81a1-0ab95919609d",
-                    "rel": "reference"
                   },
                   {
                     "href": "#sc-2",
@@ -3804,7 +3760,7 @@
                   {
                     "id": "ac-4.25_smt",
                     "name": "statement",
-                    "prose": "When transferring information between different security domains, sanitize data to minimize {{ ac-4.25_prm_1 }} in accordance with {{ ac-4.25_prm_2 }}]."
+                    "prose": "When transferring information between different security domains, sanitize data to minimize {{ ac-4.25_prm_1 }} in accordance with {{ ac-4.25_prm_2 }}."
                   },
                   {
                     "id": "ac-4.25_gdn",
@@ -4071,22 +4027,6 @@
                   {
                     "href": "#ac-4",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#e3cc0520-a366-4fc9-abc2-5272db7e3564",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#2956e175-f674-43f4-b1b9-e074ad9fc39c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#388a3aa2-5d85-4bad-b8a3-77db80d63c4f",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a2590922-82f3-4277-83c0-ca5bee06dba4",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -5137,7 +5077,7 @@
                   {
                     "id": "ac-7.3_gdn",
                     "name": "guidance",
-                    "prose": "  Biometrics are probabilistic in nature. The ability to successfully authenticate can be impacted by many factors, including matching performance and presentation attack detection mechanisms. Organizations select the appropriate number of attempts for users based on organizationally-defined factors."
+                    "prose": "Biometrics are probabilistic in nature. The ability to successfully authenticate can be impacted by many factors, including matching performance and presentation attack detection mechanisms. Organizations select the appropriate number of attempts for users based on organizationally-defined factors."
                   }
                 ]
               },
@@ -5173,14 +5113,6 @@
                   {
                     "href": "#ac-7",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#737513fa-6758-403f-831d-5ddab5e23cb3",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#0f66be67-85e7-4ca6-bd19-39453e9f4394",
-                    "rel": "reference"
                   },
                   {
                     "href": "#ia-3",
@@ -5751,7 +5683,7 @@
                   {
                     "id": "ac-11.1_gdn",
                     "name": "guidance",
-                    "prose": "The pattern-hiding display can include static or dynamic images, such as patterns used with screen savers, photographic images, solid colors, clock, battery life indicator, or a blank screen with the caveat that controlled unclassified information is not displayed."
+                    "prose": "The pattern-hiding display can include static or dynamic images, such as patterns used with screen savers, photographic images, solid colors, clock, battery life indicator, or a blank screen with the caveat that controlled unclassified information is not displayed."
                   }
                 ]
               }
@@ -6606,7 +6538,7 @@
                   {
                     "id": "ac-16.8_gdn",
                     "name": "guidance",
-                    "prose": "  The association of security and privacy attributes to information within systems is important for conducting automated access enforcement and flow enforcement actions. The association of such attributes to information (i.e., binding) can be accomplished with technologies and techniques that provide different levels of assurance. For example, systems can cryptographically bind attributes to information using digital signatures that support cryptographic keys protected by hardware devices (sometimes known as hardware roots of trust)."
+                    "prose": "The association of security and privacy attributes to information within systems is important for conducting automated access enforcement and flow enforcement actions. The association of such attributes to information (i.e., binding) can be accomplished with technologies and techniques that provide different levels of assurance. For example, systems can cryptographically bind attributes to information using digital signatures that support cryptographic keys protected by hardware devices (sometimes known as hardware roots of trust)."
                   }
                 ]
               },
@@ -6667,26 +6599,6 @@
                   {
                     "href": "#ac-16",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#678e3d6c-150b-4393-aec5-6e3481eb1e00",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7c37a38d-21d7-40d8-bc3d-b5e27eac17e1",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#2956e175-f674-43f4-b1b9-e074ad9fc39c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#388a3aa2-5d85-4bad-b8a3-77db80d63c4f",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -7250,30 +7162,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#83b9d63b-66b1-467c-9f3b-3a0b108771e9",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#d4d7c760-2907-403b-8b2a-767ca5370ecd",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#6bc4d137-aece-42a8-8081-9ecb1ebe9fb4",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#42e37e51-7cc0-4ffa-81c9-0ac942da7e99",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#d17ebd7a-ffab-499d-bfff-e705bbb01fa6",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#3915a084-b87b-4f02-83d4-c369e746292f",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#sc-12",
                     "rel": "related"
                   },
@@ -7587,14 +7475,6 @@
                   {
                     "href": "#ac-18",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#25e3e57b-dc2f-4934-af9b-050b020c6f0e",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#03fb73bc-1b12-4182-bd96-e5719254ea61",
-                    "rel": "reference"
                   },
                   {
                     "href": "#pe-19",
@@ -8005,14 +7885,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#42e37e51-7cc0-4ffa-81c9-0ac942da7e99",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#0f66be67-85e7-4ca6-bd19-39453e9f4394",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#sc-12",
                     "rel": "related"
                   },
@@ -8396,18 +8268,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#628d22a1-6a11-4784-bc59-5cd9497b5445",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7dbd6d9f-29d6-4d1d-9766-f2d77ff3c849",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#f26af0d0-6d72-4a9d-8ecd-01bc21fd4f0e",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#mp-7",
                     "rel": "related"
                   },
@@ -8604,18 +8464,6 @@
                   {
                     "href": "#ac-21",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#9ef4b43c-42a4-4316-87dc-ffaf528bc05c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#98d415ca-7281-4064-9931-0c366637e324",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -8919,14 +8767,6 @@
                   {
                     "href": "#ac-24",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#2956e175-f674-43f4-b1b9-e074ad9fc39c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#388a3aa2-5d85-4bad-b8a3-77db80d63c4f",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -9645,26 +9485,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#511f6832-23ca-49a3-8c0f-ce493373cab8",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#61ccf0f4-d3e7-42db-9796-ce6cb1c85989",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#276bd50a-7e58-48e5-a405-8c8cb91d7a5f",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#89f2a08d-fc49-46d0-856e-bf974c9b1573",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#ra-3",
                     "rel": "related"
                   }
@@ -10084,7 +9904,7 @@
                 "links": [
                   {
                     "href": "#at-2.4",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -10116,18 +9936,6 @@
                   {
                     "href": "#at-3",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#511f6832-23ca-49a3-8c0f-ce493373cab8",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#276bd50a-7e58-48e5-a405-8c8cb91d7a5f",
-                    "rel": "reference"
                   },
                   {
                     "href": "#pt-2",
@@ -10856,14 +10664,6 @@
                   {
                     "href": "#ac-6.9",
                     "rel": "incorporated-into"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#5eee45d8-3313-4fdc-8d54-1742092bbdd6",
-                    "rel": "reference"
                   }
                 ]
               }
@@ -11098,14 +10898,6 @@
                   {
                     "href": "#au-3",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#98d415ca-7281-4064-9931-0c366637e324",
-                    "rel": "reference"
                   },
                   {
                     "href": "#ra-3",
@@ -12179,14 +11971,6 @@
                   {
                     "href": "#au-6",
                     "rel": "incorporated-into"
-                  },
-                  {
-                    "href": "#cfdb1858-c473-46b3-89f9-a700308d0be2",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#10cf2fad-a216-41f9-bb1a-531b7e3119e3",
-                    "rel": "reference"
                   }
                 ]
               }
@@ -12458,7 +12242,7 @@
                 "links": [
                   {
                     "href": "#sc-45.1",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -12483,7 +12267,7 @@
                 "links": [
                   {
                     "href": "#sc-45.2",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               }
@@ -12903,18 +12687,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#678e3d6c-150b-4393-aec5-6e3481eb1e00",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#eea3c092-42ed-4382-a6f4-1adadef01b9d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a295ca19-8c75-4b4c-8800-98024732e181",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#au-4",
                     "rel": "related"
                   },
@@ -13322,26 +13094,6 @@
                   {
                     "href": "#si-7",
                     "rel": "incorporated-into"
-                  },
-                  {
-                    "href": "#678e3d6c-150b-4393-aec5-6e3481eb1e00",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#eea3c092-42ed-4382-a6f4-1adadef01b9d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7c37a38d-21d7-40d8-bc3d-b5e27eac17e1",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a295ca19-8c75-4b4c-8800-98024732e181",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#1c71b420-2bd9-4e52-9fc8-390f58b85b59",
-                    "rel": "reference"
                   }
                 ]
               }
@@ -13446,10 +13198,6 @@
                   {
                     "href": "#au-11",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -14010,12 +13758,12 @@
                   {
                     "id": "au-13.3_smt",
                     "name": "statement",
-                    "prose": "Employ discovery techniques, processes, and tools to determine if external entities are replicating organizational information in an unauthorized manner."
+                    "prose": "Employ discovery techniques, processes, and tools to determine if external entities are replicating organizational information in an unauthorized manner."
                   },
                   {
                     "id": "au-13.3_gdn",
                     "name": "guidance",
-                    "prose": "The unauthorized use or replication of organizational information by external entities can cause adverse impacts on organizational operations and assets, including damage to reputation. Such activity can include the replication of an organizational website by an adversary or hostile threat actor who attempts to impersonate the web-hosting organization. Discovery tools, techniques, and processes used to determine if external entities are replicating organizational information in an unauthorized manner include scanning external websites, monitoring social media, and training staff to recognize the unauthorized use of organizational information."
+                    "prose": "The unauthorized use or replication of organizational information by external entities can cause adverse impacts on organizational operations and assets, including damage to reputation. Such activity can include the replication of an organizational website by an adversary or hostile threat actor who attempts to impersonate the web-hosting organization. Discovery tools, techniques, and processes used to determine if external entities are replicating organizational information in an unauthorized manner include scanning external websites, monitoring social media, and training staff to recognize the unauthorized use of organizational information."
                   }
                 ]
               }
@@ -14253,7 +14001,7 @@
             "links": [
               {
                 "href": "#au-5.5",
-                "rel": "incorporated-into"
+                "rel": "moved-to"
               }
             ]
           },
@@ -15066,46 +14814,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#628d22a1-6a11-4784-bc59-5cd9497b5445",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#30eb758a-2707-4bca-90ad-949a74d4eb16",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#cec037f3-8aba-4c97-84b4-4082f9e515d2",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a21aef46-7330-48a0-b2e1-c5bb8b2dd11d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#122177fa-c4ed-485d-8345-3082c0fb9a06",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#067223d8-1ec7-45c5-b21b-c848da6de8fb",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#bbac9fc2-df5b-4f2d-bf99-90d0ade45349",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#98d415ca-7281-4064-9931-0c366637e324",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#sa-4",
                     "rel": "related"
                   }
@@ -15295,7 +15003,7 @@
                 "links": [
                   {
                     "href": "#sc-7.25",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -15320,7 +15028,7 @@
                 "links": [
                   {
                     "href": "#sc-7.26",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -15345,7 +15053,7 @@
                 "links": [
                   {
                     "href": "#sc-7.27",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -15370,7 +15078,7 @@
                 "links": [
                   {
                     "href": "#sc-7.28",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -15395,7 +15103,7 @@
                 "links": [
                   {
                     "href": "#sc-7.5",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -15462,18 +15170,6 @@
                   {
                     "href": "#ca-3",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#628d22a1-6a11-4784-bc59-5cd9497b5445",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#c3a76872-e160-4267-99e8-6952de967d04",
-                    "rel": "reference"
                   },
                   {
                     "href": "#sc-7",
@@ -15661,14 +15357,6 @@
                   {
                     "href": "#ca-5",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -15900,18 +15588,6 @@
                   {
                     "href": "#ca-6",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#067223d8-1ec7-45c5-b21b-c848da6de8fb",
-                    "rel": "reference"
                   },
                   {
                     "href": "#ac-6",
@@ -16521,38 +16197,6 @@
                   {
                     "href": "#ca-7",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#cec037f3-8aba-4c97-84b4-4082f9e515d2",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a21aef46-7330-48a0-b2e1-c5bb8b2dd11d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#122177fa-c4ed-485d-8345-3082c0fb9a06",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#067223d8-1ec7-45c5-b21b-c848da6de8fb",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#bbac9fc2-df5b-4f2d-bf99-90d0ade45349",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#98d415ca-7281-4064-9931-0c366637e324",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -16909,14 +16553,6 @@
                   {
                     "href": "#ca-9",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#0f66be67-85e7-4ca6-bd19-39453e9f4394",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#4c501da5-9d79-4cb6-ba80-97260e1ce327",
-                    "rel": "reference"
                   },
                   {
                     "href": "#cm-6",
@@ -17576,14 +17212,6 @@
                   {
                     "href": "#cm-2",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#0f66be67-85e7-4ca6-bd19-39453e9f4394",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#20db4e66-e257-450c-b2e4-2bb9a62a2c88",
-                    "rel": "reference"
                   },
                   {
                     "href": "#mp-4",
@@ -18268,18 +17896,6 @@
                   {
                     "href": "#cm-3",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#0f66be67-85e7-4ca6-bd19-39453e9f4394",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#20db4e66-e257-450c-b2e4-2bb9a62a2c88",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#98d415ca-7281-4064-9931-0c366637e324",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -18437,10 +18053,6 @@
                   {
                     "href": "#cm-4",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#20db4e66-e257-450c-b2e4-2bb9a62a2c88",
-                    "rel": "reference"
                   },
                   {
                     "href": "#sa-11",
@@ -18683,7 +18295,7 @@
                 "links": [
                   {
                     "href": "#cm-14",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -18863,14 +18475,6 @@
                   {
                     "href": "#si-7",
                     "rel": "incorporated-into"
-                  },
-                  {
-                    "href": "#678e3d6c-150b-4393-aec5-6e3481eb1e00",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7c37a38d-21d7-40d8-bc3d-b5e27eac17e1",
-                    "rel": "reference"
                   }
                 ]
               }
@@ -19249,30 +18853,6 @@
                   {
                     "href": "#cm-4",
                     "rel": "incorporated-into"
-                  },
-                  {
-                    "href": "#4895b4cd-34c5-4667-bf8a-27d443c12047",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#8016d2ed-d30f-4416-9c45-0f42c7aa3232",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#20db4e66-e257-450c-b2e4-2bb9a62a2c88",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#98498928-3ca3-44b3-8b1e-f48685373087",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#d744d9a3-73eb-4085-b9ff-79e82e9e2d6e",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#aa66e14f-e7cb-4a37-99d2-07578dfd4608",
-                    "rel": "reference"
                   }
                 ]
               }
@@ -20027,26 +19607,6 @@
                   {
                     "href": "#cm-7",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#678e3d6c-150b-4393-aec5-6e3481eb1e00",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#eea3c092-42ed-4382-a6f4-1adadef01b9d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7c37a38d-21d7-40d8-bc3d-b5e27eac17e1",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a295ca19-8c75-4b4c-8800-98024732e181",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#38f39739-1ebd-43b1-8b8c-00f591d89ebd",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -20711,34 +20271,6 @@
                   {
                     "href": "#cm-8",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#110e26af-4765-49e1-8740-6750f83fcda1",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e7942589-e267-4a5a-a3d9-f39a7aae81f0",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#8306620b-1920-4d73-8b21-12008528595f",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#20db4e66-e257-450c-b2e4-2bb9a62a2c88",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#70402863-5078-43af-9a6c-e11b0f3ec370",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#996241f8-f692-42d5-91f1-ce8b752e39e6",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -20929,10 +20461,6 @@
                   {
                     "href": "#cm-9",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#20db4e66-e257-450c-b2e4-2bb9a62a2c88",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -21199,7 +20727,7 @@
               {
                 "id": "cm-11_gdn",
                 "name": "guidance",
-                "prose": "If provided the necessary privileges, users can install software in organizational systems. To maintain control over the software installed, organizations identify permitted and prohibited actions regarding software installation. Permitted software installations include updates and security patches to existing software and downloading new applications from organization-approved \"app stores.\" Prohibited software installations include software with unknown or suspect pedigrees or software that organizations consider potentially malicious. Policies selected for governing user-installed software are organization-developed or provided by some external entity. Policy enforcement methods can include procedural methods and automated methods."
+                "prose": "If provided the necessary privileges, users can install software in organizational systems. To maintain control over the software installed, organizations identify permitted and prohibited actions regarding software installation. Permitted software installations include updates and security patches to existing software and downloading new applications from organization-approved \"app stores.\" Prohibited software installations include software with unknown or suspect pedigrees or software that organizations consider potentially malicious. Policies selected for governing user-installed software are organization-developed or provided by some external entity. Policy enforcement methods can include procedural methods and automated methods."
               }
             ],
             "controls": [
@@ -21483,18 +21011,6 @@
                   {
                     "href": "#cm-12",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#628d22a1-6a11-4784-bc59-5cd9497b5445",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e72fde0b-6fc2-497e-a9db-d8fce5a11b8a",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#9be5d661-421f-41ad-854e-86f98b811891",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -22489,14 +22005,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#bc39f179-c735-4da2-b7a7-b2b622119755",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#d4296805-2dca-4c63-a95f-eeccaa826aec",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#cm-8",
                     "rel": "related"
                   },
@@ -22661,7 +22169,7 @@
               {
                 "id": "cp-3_gdn",
                 "name": "guidance",
-                "prose": "Contingency training provided by organizations is linked to the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail is included in such training. For example, some individuals may only need to know when and where to report for duty during contingency operations and if normal duties are affected; system administrators may require additional training on how to establish systems at alternate processing and storage sites; and organizational officials may receive more specific training on how to conduct mission-essential functions in designated off-site locations and how to establish communications with other governmental entities for purposes of coordination on contingency-related activities. Training for contingency roles or responsibilities reflects the specific continuity requirements in the contingency plan. Events that may precipitate an update to contingency training content include, but are not limited to, contingency plan testing or an actual contingency (lessons learned), assessment or audit findings, security incidents or breaches, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. At the discretion of the organization, participation in a contingency plan test or exercise, including lessons learned sessions subsequent to the test or exercise, may satisfy contingency plan training requirements."
+                "prose": "Contingency training provided by organizations is linked to the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail is included in such training. For example, some individuals may only need to know when and where to report for duty during contingency operations and if normal duties are affected; system administrators may require additional training on how to establish systems at alternate processing and storage sites; and organizational officials may receive more specific training on how to conduct mission-essential functions in designated off-site locations and how to establish communications with other governmental entities for purposes of coordination on contingency-related activities. Training for contingency roles or responsibilities reflects the specific continuity requirements in the contingency plan. Events that may precipitate an update to contingency training content include, but are not limited to, contingency plan testing or an actual contingency (lessons learned), assessment or audit findings, security incidents or breaches, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. At the discretion of the organization, participation in a contingency plan test or exercise, including lessons learned sessions subsequent to the test or exercise, may satisfy contingency plan training requirements."
               }
             ],
             "controls": [
@@ -22716,10 +22224,6 @@
                   {
                     "href": "#cp-3",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#511f6832-23ca-49a3-8c0f-ce493373cab8",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -23076,22 +22580,6 @@
                   {
                     "href": "#cp-4",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#628d22a1-6a11-4784-bc59-5cd9497b5445",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#bc39f179-c735-4da2-b7a7-b2b622119755",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#53be2fcf-cfd1-4bcb-896b-9a3b65c22098",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#61ccf0f4-d3e7-42db-9796-ce6cb1c85989",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -23318,10 +22806,6 @@
                   {
                     "href": "#cp-6",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#bc39f179-c735-4da2-b7a7-b2b622119755",
-                    "rel": "reference"
                   },
                   {
                     "href": "#ra-3",
@@ -23663,10 +23147,6 @@
                   {
                     "href": "#cp-7",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#bc39f179-c735-4da2-b7a7-b2b622119755",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -23974,10 +23454,6 @@
                   {
                     "href": "#cp-8",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#bc39f179-c735-4da2-b7a7-b2b622119755",
-                    "rel": "reference"
                   },
                   {
                     "href": "#cp-3",
@@ -24476,26 +23952,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#678e3d6c-150b-4393-aec5-6e3481eb1e00",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7c37a38d-21d7-40d8-bc3d-b5e27eac17e1",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#bc39f179-c735-4da2-b7a7-b2b622119755",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#3653e316-8923-430e-8943-b3b2b2562fc6",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#2494df28-9049-4196-b233-540e7440993f",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#sc-12",
                     "rel": "related"
                   },
@@ -24673,6 +24129,13 @@
                     "name": "status",
                     "value": "withdrawn"
                   }
+                ],
+                "parts": [
+                  {
+                    "id": "cp-10.3_smt",
+                    "name": "statement",
+                    "prose": "Addressed through tailoring."
+                  }
                 ]
               },
               {
@@ -24765,10 +24228,6 @@
                   {
                     "href": "#cp-10",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#bc39f179-c735-4da2-b7a7-b2b622119755",
-                    "rel": "reference"
                   },
                   {
                     "href": "#ac-3",
@@ -25782,7 +25241,7 @@
               {
                 "id": "ia-2.12",
                 "class": "SP800-53-enhancement",
-                "title": "Acceptance of Piv Credentials",
+                "title": "Acceptance of PIV Credentials",
                 "props": [
                   {
                     "name": "label",
@@ -25840,74 +25299,6 @@
                   {
                     "href": "#ia-2",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#678e3d6c-150b-4393-aec5-6e3481eb1e00",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7ba1d91c-3934-4d5a-8532-b32f864ad34c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a295ca19-8c75-4b4c-8800-98024732e181",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#737513fa-6758-403f-831d-5ddab5e23cb3",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#858705be-3c1f-48aa-a328-0ce398d95ef0",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7af2e6ec-9f7e-4232-ad3f-09888eb0793a",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#828856bd-d7c4-427b-8b51-815517ec382d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#10963761-58fc-4b20-b3d6-b44a54daba03",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#d9e036ba-6eec-46a6-9340-b0bf1fea23b4",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e8552d48-cf41-40aa-8b06-f45f7fb4706c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#15dc76ff-b17a-4eeb-8948-8ea8de3ccc2c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#4b38e961-1125-4a5b-aa35-1d6c02846dad",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#91701292-8bcd-4d2e-a5bd-59ab61e34b3c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#4f5f51ac-2b8d-4b90-a3c7-46f56e967617",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#604774da-9e1d-48eb-9c62-4e959dc80737",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7f473f21-fdbf-4a6c-81a1-0ab95919609d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#3915a084-b87b-4f02-83d4-c369e746292f",
-                    "rel": "reference"
                   },
                   {
                     "href": "#ia-10",
@@ -26575,7 +25966,7 @@
                   {
                     "id": "ia-4.5_gdn",
                     "name": "guidance",
-                    "prose": "  In contrast to conventional approaches to identification that presume static accounts for preregistered users, many distributed systems establish identifiers at runtime for entities that were previously unknown. When identifiers are established at runtime for previously unknown entities, organizations can anticipate and provision for the dynamic establishment of identifiers. Pre-established trust relationships and mechanisms with appropriate authorities to validate credentials and related identifiers are essential."
+                    "prose": "In contrast to conventional approaches to identification that presume static accounts for preregistered users, many distributed systems establish identifiers at runtime for entities that were previously unknown. When identifiers are established at runtime for previously unknown entities, organizations can anticipate and provision for the dynamic establishment of identifiers. Pre-established trust relationships and mechanisms with appropriate authorities to validate credentials and related identifiers are essential."
                   }
                 ]
               },
@@ -26716,26 +26107,6 @@
                   {
                     "href": "#ia-4",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#7ba1d91c-3934-4d5a-8532-b32f864ad34c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#737513fa-6758-403f-831d-5ddab5e23cb3",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#858705be-3c1f-48aa-a328-0ce398d95ef0",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7af2e6ec-9f7e-4232-ad3f-09888eb0793a",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#828856bd-d7c4-427b-8b51-815517ec382d",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -27650,7 +27021,7 @@
               {
                 "id": "ia-5.14",
                 "class": "SP800-53-enhancement",
-                "title": "Managing Content of Pki Trust Stores",
+                "title": "Managing Content of PKI Trust Stores",
                 "props": [
                   {
                     "name": "label",
@@ -27838,58 +27209,6 @@
                   {
                     "href": "#ia-5",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#678e3d6c-150b-4393-aec5-6e3481eb1e00",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#eea3c092-42ed-4382-a6f4-1adadef01b9d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7ba1d91c-3934-4d5a-8532-b32f864ad34c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a295ca19-8c75-4b4c-8800-98024732e181",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#737513fa-6758-403f-831d-5ddab5e23cb3",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#858705be-3c1f-48aa-a328-0ce398d95ef0",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7af2e6ec-9f7e-4232-ad3f-09888eb0793a",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#828856bd-d7c4-427b-8b51-815517ec382d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#15dc76ff-b17a-4eeb-8948-8ea8de3ccc2c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#91701292-8bcd-4d2e-a5bd-59ab61e34b3c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#4f5f51ac-2b8d-4b90-a3c7-46f56e967617",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#604774da-9e1d-48eb-9c62-4e959dc80737",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#81aeb0a3-d0ee-4e44-b842-6bf28d2bd7f5",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -27959,7 +27278,7 @@
               {
                 "id": "ia-6_gdn",
                 "name": "guidance",
-                "prose": "Authentication feedback from systems does not provide information that would allow unauthorized individuals to compromise authentication mechanisms. For some types of systems, such as desktops or notebooks with relatively large monitors, the threat (referred to as shoulder surfing) may be significant. For other types of systems, such as mobile devices with small displays, the threat may be less significant and is balanced against the increased likelihood of typographic input errors due to small keyboards. Thus, the means for obscuring authentication feedback is selected accordingly. Obscuring authentication feedback includes displaying asterisks when users type passwords into input devices or displaying feedback for a very limited time before obscuring it."
+                "prose": "Authentication feedback from systems does not provide information that would allow unauthorized individuals to compromise authentication mechanisms. For some types of systems, such as desktops or notebooks with relatively large monitors, the threat (referred to as shoulder surfing) may be significant. For other types of systems, such as mobile devices with small displays, the threat may be less significant and is balanced against the increased likelihood of typographic input errors due to small keyboards. Thus, the means for obscuring authentication feedback is selected accordingly. Obscuring authentication feedback includes displaying asterisks when users type passwords into input devices or displaying feedback for a very limited time before obscuring it."
               }
             ]
           },
@@ -28136,7 +27455,7 @@
               {
                 "id": "ia-8.1",
                 "class": "SP800-53-enhancement",
-                "title": "Acceptance of Piv Credentials from Other Agencies",
+                "title": "Acceptance of PIV Credentials from Other Agencies",
                 "props": [
                   {
                     "name": "label",
@@ -28293,7 +27612,7 @@
               {
                 "id": "ia-8.5",
                 "class": "SP800-53-enhancement",
-                "title": "Acceptance of Piv-i Credentials",
+                "title": "Acceptance of PIV-I Credentials",
                 "params": [
                   {
                     "id": "ia-8.5_prm_1",
@@ -28353,34 +27672,6 @@
                   {
                     "href": "#ia-8",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a1555677-2b9d-4868-a97b-a1363aff32f5",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7ba1d91c-3934-4d5a-8532-b32f864ad34c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#737513fa-6758-403f-831d-5ddab5e23cb3",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#10963761-58fc-4b20-b3d6-b44a54daba03",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#2100332a-16a5-4598-bacf-7261baea9711",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#98d415ca-7281-4064-9931-0c366637e324",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -28934,22 +28225,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#7ba1d91c-3934-4d5a-8532-b32f864ad34c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#737513fa-6758-403f-831d-5ddab5e23cb3",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#9099ed2c-922a-493d-bcb4-d896192243ff",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#10963761-58fc-4b20-b3d6-b44a54daba03",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#ia-3",
                     "rel": "related"
                   },
@@ -29345,7 +28620,7 @@
               {
                 "id": "ir-2_gdn",
                 "name": "guidance",
-                "prose": "Incident response training is associated with the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail are included in such training. For example, users may only need to know who to call or how to recognize an incident; system administrators may require additional training on how to handle incidents; and incident responders may receive more specific training on forensics, data collection techniques, reporting, system recovery, and system restoration. Incident response training includes user training in identifying and reporting suspicious activities from external and internal sources. Incident response training for users may be provided as part of [AT-2](#at-2) or [AT-3](#at-3). Events that may precipitate an update to incident response training content include, but are not limited to, incident response plan testing or response to an actual incident (lessons learned), assessment or audit findings, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines."
+                "prose": "Incident response training is associated with the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail are included in such training. For example, users may only need to know who to call or how to recognize an incident; system administrators may require additional training on how to handle incidents; and incident responders may receive more specific training on forensics, data collection techniques, reporting, system recovery, and system restoration. Incident response training includes user training in identifying and reporting suspicious activities from external and internal sources. Incident response training for users may be provided as part of [AT-2](#at-2) or [AT-3](#at-3). Events that may precipitate an update to incident response training content include, but are not limited to, incident response plan testing or response to an actual incident (lessons learned), assessment or audit findings, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines."
               }
             ],
             "controls": [
@@ -29439,14 +28714,6 @@
                   {
                     "href": "#ir-2",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#5f4705ac-8d17-438c-b23a-ac7f12362ae4",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#511f6832-23ca-49a3-8c0f-ce493373cab8",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -29629,18 +28896,6 @@
                   {
                     "href": "#ir-3",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#53be2fcf-cfd1-4bcb-896b-9a3b65c22098",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#122177fa-c4ed-485d-8345-3082c0fb9a06",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -30477,46 +29732,6 @@
                   {
                     "href": "#ir-4",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#4ff10ed3-d8fe-4246-99e3-443045e27482",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#0f963c17-ab5a-432a-a867-91eac550309b",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#5f4705ac-8d17-438c-b23a-ac7f12362ae4",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#49b8aa2d-a88c-4bff-9f20-876ccb8f7dcb",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#cfdb1858-c473-46b3-89f9-a700308d0be2",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#10cf2fad-a216-41f9-bb1a-531b7e3119e3",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#9ef4b43c-42a4-4316-87dc-ffaf528bc05c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#61ccf0f4-d3e7-42db-9796-ce6cb1c85989",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#31ae65ab-3f26-46b7-9d64-f25a4dac5778",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#2be7b163-e50a-435c-8906-f1162f2a457a",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -30662,10 +29877,6 @@
                   {
                     "href": "#ir-5",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#49b8aa2d-a88c-4bff-9f20-876ccb8f7dcb",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -30887,22 +30098,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#4ff10ed3-d8fe-4246-99e3-443045e27482",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#0f963c17-ab5a-432a-a867-91eac550309b",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#40b78258-c892-480e-9af8-77ac36648301",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#49b8aa2d-a88c-4bff-9f20-876ccb8f7dcb",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#sr-8",
                     "rel": "related"
                   }
@@ -31052,14 +30247,6 @@
                   {
                     "href": "#ir-7",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#2be7b163-e50a-435c-8906-f1162f2a457a",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -31393,18 +30580,6 @@
                   {
                     "href": "#ir-8",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#49b8aa2d-a88c-4bff-9f20-876ccb8f7dcb",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#5f4705ac-8d17-438c-b23a-ac7f12362ae4",
-                    "rel": "reference"
                   },
                   {
                     "href": "#pt-1",
@@ -31816,7 +30991,7 @@
             "links": [
               {
                 "href": "#ir-4.11",
-                "rel": "incorporated-into"
+                "rel": "moved-to"
               }
             ]
           }
@@ -32248,14 +31423,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#4c501da5-9d79-4cb6-ba80-97260e1ce327",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#ma-3",
                     "rel": "related"
                   }
@@ -32635,10 +31802,6 @@
                   {
                     "href": "#ma-3",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#a5b1d18d-e670-4586-9e6d-4a88b7ba3df6",
-                    "rel": "reference"
                   },
                   {
                     "href": "#ac-3",
@@ -33218,26 +32381,6 @@
                   {
                     "href": "#ma-4",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#678e3d6c-150b-4393-aec5-6e3481eb1e00",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#736d6310-e403-4b57-a79d-9967970c66d7",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7ba1d91c-3934-4d5a-8532-b32f864ad34c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#737513fa-6758-403f-831d-5ddab5e23cb3",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a5b1d18d-e670-4586-9e6d-4a88b7ba3df6",
-                    "rel": "reference"
                   },
                   {
                     "href": "#ac-12",
@@ -34252,18 +33395,6 @@
                   {
                     "href": "#sc-28.1",
                     "rel": "incorporated-into"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#628d22a1-6a11-4784-bc59-5cd9497b5445",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#22f2d4f0-4365-4e88-a30d-275c1f5473ea",
-                    "rel": "reference"
                   }
                 ]
               }
@@ -34564,38 +33695,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#628d22a1-6a11-4784-bc59-5cd9497b5445",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#20957dbb-6a1e-40a2-b38a-66f67d33ac2e",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#0d083d8a-5cc6-46f1-8d79-3081d42bcb75",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#eef62b16-c796-4554-955c-505824135b8a",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#110e26af-4765-49e1-8740-6750f83fcda1",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e7942589-e267-4a5a-a3d9-f39a7aae81f0",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#8306620b-1920-4d73-8b21-12008528595f",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#22f2d4f0-4365-4e88-a30d-275c1f5473ea",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#ac-3",
                     "rel": "related"
                   },
@@ -34884,18 +33983,6 @@
                   {
                     "href": "#sc-28.1",
                     "rel": "incorporated-into"
-                  },
-                  {
-                    "href": "#628d22a1-6a11-4784-bc59-5cd9497b5445",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e72fde0b-6fc2-497e-a9db-d8fce5a11b8a",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#9be5d661-421f-41ad-854e-86f98b811891",
-                    "rel": "reference"
                   }
                 ]
               }
@@ -35322,46 +34409,6 @@
                   {
                     "href": "#mp-6",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#91f992fb-f668-4c91-a50f-0f05b95ccee3",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#c28ae9a8-1121-42a9-a85e-00cfcc9b9a94",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#628d22a1-6a11-4784-bc59-5cd9497b5445",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e72fde0b-6fc2-497e-a9db-d8fce5a11b8a",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#9be5d661-421f-41ad-854e-86f98b811891",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a5b1d18d-e670-4586-9e6d-4a88b7ba3df6",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#0f66be67-85e7-4ca6-bd19-39453e9f4394",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#4c501da5-9d79-4cb6-ba80-97260e1ce327",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#df9f87e9-71e7-4c74-9ac3-3cabd4e92f21",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -35529,14 +34576,6 @@
                   {
                     "href": "#mp-7",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#628d22a1-6a11-4784-bc59-5cd9497b5445",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#22f2d4f0-4365-4e88-a30d-275c1f5473ea",
-                    "rel": "reference"
                   },
                   {
                     "href": "#mp-6",
@@ -35773,14 +34812,6 @@
                   {
                     "href": "#mp-8",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#91f992fb-f668-4c91-a50f-0f05b95ccee3",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#df9f87e9-71e7-4c74-9ac3-3cabd4e92f21",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -36294,22 +35325,6 @@
                   {
                     "href": "#pe-2",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#7ba1d91c-3934-4d5a-8532-b32f864ad34c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#858705be-3c1f-48aa-a328-0ce398d95ef0",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7af2e6ec-9f7e-4232-ad3f-09888eb0793a",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#828856bd-d7c4-427b-8b51-815517ec382d",
-                    "rel": "reference"
                   },
                   {
                     "href": "#ps-2",
@@ -36946,26 +35961,6 @@
                   {
                     "href": "#pe-3",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#7ba1d91c-3934-4d5a-8532-b32f864ad34c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#858705be-3c1f-48aa-a328-0ce398d95ef0",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7af2e6ec-9f7e-4232-ad3f-09888eb0793a",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#828856bd-d7c4-427b-8b51-815517ec382d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#2100332a-16a5-4598-bacf-7261baea9711",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -37197,10 +36192,6 @@
                   {
                     "href": "#pe-22",
                     "rel": "incorporated-into"
-                  },
-                  {
-                    "href": "#4c501da5-9d79-4cb6-ba80-97260e1ce327",
-                    "rel": "reference"
                   }
                 ]
               }
@@ -38960,7 +37951,7 @@
                 "links": [
                   {
                     "href": "#pe-23",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               }
@@ -39029,10 +38020,6 @@
                   {
                     "href": "#pe-19",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#628d22a1-6a11-4784-bc59-5cd9497b5445",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -40004,26 +38991,6 @@
                   {
                     "href": "#pl-2",
                     "rel": "incorporated-into"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#30eb758a-2707-4bca-90ad-949a74d4eb16",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e3cc0520-a366-4fc9-abc2-5272db7e3564",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#61ccf0f4-d3e7-42db-9796-ce6cb1c85989",
-                    "rel": "reference"
                   }
                 ]
               }
@@ -40253,14 +39220,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#30eb758a-2707-4bca-90ad-949a74d4eb16",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#ac-22",
                     "rel": "related"
                   },
@@ -40306,7 +39265,7 @@
                             "value": "(c)"
                           }
                         ],
-                        "prose": "Use of organization-provided identifiers (e.g., email addresses) and authentication secrets (e.g., passwords) for creating accounts on external sites/applications."
+                        "prose": "Use of organization-provided identifiers (e.g., email addresses) and authentication secrets (e.g., passwords) for creating accounts on external sites/applications."
                       }
                     ]
                   },
@@ -40733,18 +39692,6 @@
                   {
                     "href": "#pl-8",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e3cc0520-a366-4fc9-abc2-5272db7e3564",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#61ccf0f4-d3e7-42db-9796-ce6cb1c85989",
-                    "rel": "reference"
                   },
                   {
                     "href": "#sc-29",
@@ -41481,14 +40428,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#98d415ca-7281-4064-9931-0c366637e324",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#ac-3",
                     "rel": "related"
                   },
@@ -41706,26 +40645,6 @@
                   {
                     "href": "#pm-7",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#cec037f3-8aba-4c97-84b4-4082f9e515d2",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e3cc0520-a366-4fc9-abc2-5272db7e3564",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#61ccf0f4-d3e7-42db-9796-ce6cb1c85989",
-                    "rel": "reference"
                   },
                   {
                     "href": "#sa-8",
@@ -43154,18 +42073,6 @@
                   {
                     "href": "#pm-20",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#18e71fec-c6fd-475a-925a-5d8495cf8455",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#206a3284-6a7e-423c-8ea9-25b22542541d",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -44326,50 +43233,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#18e71fec-c6fd-475a-925a-5d8495cf8455",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#4ff10ed3-d8fe-4246-99e3-443045e27482",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#21caa535-1154-4369-ba7b-32c309fee0f7",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#0f963c17-ab5a-432a-a867-91eac550309b",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#206a3284-6a7e-423c-8ea9-25b22542541d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#031cc4b7-9adf-4835-98f1-f1ca493519cf",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#863caf2a-978a-4260-9e8d-4a8929bce40c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#15a95e24-65b6-4686-bc18-90855a10457d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e8e84963-14fc-4c3a-be05-b412a5d37cd2",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#38ff38f0-1366-4f50-a4c9-26a39aacee16",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#ra-3",
                     "rel": "related"
                   },
@@ -45414,42 +44277,6 @@
                   {
                     "href": "#ps-3",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#55b0c93a-5e48-457a-baa6-5ce81c239c49",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#0af071a6-cf8e-48ee-8c82-fe91efa20f94",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#628d22a1-6a11-4784-bc59-5cd9497b5445",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7ba1d91c-3934-4d5a-8532-b32f864ad34c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e72fde0b-6fc2-497e-a9db-d8fce5a11b8a",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#9be5d661-421f-41ad-854e-86f98b811891",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#858705be-3c1f-48aa-a328-0ce398d95ef0",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7af2e6ec-9f7e-4232-ad3f-09888eb0793a",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#828856bd-d7c4-427b-8b51-815517ec382d",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -46799,18 +45626,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#18e71fec-c6fd-475a-925a-5d8495cf8455",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a2590922-82f3-4277-83c0-ca5bee06dba4",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#ca-6",
                     "rel": "related"
                   },
@@ -47135,18 +45950,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#18e71fec-c6fd-475a-925a-5d8495cf8455",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a2590922-82f3-4277-83c0-ca5bee06dba4",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#ca-6",
                     "rel": "related"
                   },
@@ -47377,18 +46180,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#18e71fec-c6fd-475a-925a-5d8495cf8455",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#737513fa-6758-403f-831d-5ddab5e23cb3",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#pt-2",
                     "rel": "related"
                   }
@@ -47615,18 +46406,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#18e71fec-c6fd-475a-925a-5d8495cf8455",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#3671ff20-c17c-44d6-8a88-7de203fa74aa",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#pt-6",
                     "rel": "related"
                   }
@@ -47801,14 +46580,6 @@
                   {
                     "href": "#pt-6",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#18e71fec-c6fd-475a-925a-5d8495cf8455",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#3671ff20-c17c-44d6-8a88-7de203fa74aa",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -47983,22 +46754,6 @@
                   {
                     "href": "#pt-7",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#18e71fec-c6fd-475a-925a-5d8495cf8455",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#3671ff20-c17c-44d6-8a88-7de203fa74aa",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#c28ae9a8-1121-42a9-a85e-00cfcc9b9a94",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -48510,46 +47265,6 @@
                   {
                     "href": "#ra-2",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#628d22a1-6a11-4784-bc59-5cd9497b5445",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#599fb53d-5041-444e-a7fe-640d6d30ad05",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#08b07465-dbdc-48d6-8a0b-37279602ac16",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#cec037f3-8aba-4c97-84b4-4082f9e515d2",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e72fde0b-6fc2-497e-a9db-d8fce5a11b8a",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#9be5d661-421f-41ad-854e-86f98b811891",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e3cc0520-a366-4fc9-abc2-5272db7e3564",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#4e4fbc93-333d-45e6-a875-de36b878b6b9",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#c28ae9a8-1121-42a9-a85e-00cfcc9b9a94",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -49049,34 +47764,6 @@
                   {
                     "href": "#ra-3",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#08b07465-dbdc-48d6-8a0b-37279602ac16",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#cec037f3-8aba-4c97-84b4-4082f9e515d2",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e8e84963-14fc-4c3a-be05-b412a5d37cd2",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#4c501da5-9d79-4cb6-ba80-97260e1ce327",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#98d415ca-7281-4064-9931-0c366637e324",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#38ff38f0-1366-4f50-a4c9-26a39aacee16",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -49762,42 +48449,6 @@
                   {
                     "href": "#ra-5",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#8df72805-2e5c-4731-a73e-81db0f0318d0",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#155f941a-cba9-4afd-9ca6-5d040d697ba9",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a21aef46-7330-48a0-b2e1-c5bb8b2dd11d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#4895b4cd-34c5-4667-bf8a-27d443c12047",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#122177fa-c4ed-485d-8345-3082c0fb9a06",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#8016d2ed-d30f-4416-9c45-0f42c7aa3232",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#aa5d04e0-6090-4e17-84d4-b9963d55fc2c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#d2ebec9b-f868-4ee1-a2bd-0b2282aed248",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#4c501da5-9d79-4cb6-ba80-97260e1ce327",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -50894,30 +49545,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#08b07465-dbdc-48d6-8a0b-37279602ac16",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e3cc0520-a366-4fc9-abc2-5272db7e3564",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7dbd6d9f-29d6-4d1d-9766-f2d77ff3c849",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#f26af0d0-6d72-4a9d-8ecd-01bc21fd4f0e",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#ma-6",
                     "rel": "related"
                   }
@@ -51325,13 +49952,8 @@
                   },
                   {
                     "id": "sa-4.3_prm_2",
-                    "select": {
-                      "how-many": "one or more",
-                      "choice": [
-                        "systems security",
-                        "privacy<#:assign> engineering methods"
-                      ]
-                    }
+                    "label": "organization-defined [Selection (one or more): systems security; privacy] engineering methods",
+                    "remarks": "The inner parameter is a qualifier, which does not follow the model of a traditional parameterized value in OSCAL. As a result, this inner parameter is treated as text in this OSCAL catalog."
                   },
                   {
                     "id": "sa-4.3_prm_3",
@@ -51380,7 +50002,7 @@
                             "value": "(b)"
                           }
                         ],
-                        "prose": "<assign:#>organization-defined {{ sa-4.3_prm_2 }}; and"
+                        "prose": "{{ sa-4.3_prm_2 }}; and"
                       },
                       {
                         "id": "sa-4.3_smt.c",
@@ -51707,7 +50329,7 @@
               {
                 "id": "sa-4.10",
                 "class": "SP800-53-enhancement",
-                "title": "Use of Approved Piv Products",
+                "title": "Use of Approved PIV Products",
                 "props": [
                   {
                     "name": "label",
@@ -51816,94 +50438,6 @@
                   {
                     "href": "#sa-4",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#18e71fec-c6fd-475a-925a-5d8495cf8455",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#6afc1b04-c9d6-4023-adbc-f8fbe33a3c73",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#87087451-2af5-43d4-88c1-d66ad850f614",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#4452efc0-e79e-47b8-aa30-b54f3ef61c2f",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#06ce9216-bd54-4054-a422-94f358b50a5d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#678e3d6c-150b-4393-aec5-6e3481eb1e00",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7ba1d91c-3934-4d5a-8532-b32f864ad34c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#77faf0bc-c394-44ad-9154-bbac3b79c8ad",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#4895b4cd-34c5-4667-bf8a-27d443c12047",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#858705be-3c1f-48aa-a328-0ce398d95ef0",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#067223d8-1ec7-45c5-b21b-c848da6de8fb",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e3cc0520-a366-4fc9-abc2-5272db7e3564",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e8e84963-14fc-4c3a-be05-b412a5d37cd2",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#15dc76ff-b17a-4eeb-8948-8ea8de3ccc2c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e24b06cc-9129-4998-a76a-65c3d7a576ba",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#4b38e961-1125-4a5b-aa35-1d6c02846dad",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#604774da-9e1d-48eb-9c62-4e959dc80737",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#98d415ca-7281-4064-9931-0c366637e324",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#795aff72-3e6c-4b6b-a80a-b14d84b7f544",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#3d575737-98cb-459d-b41c-d7e82b73ad78",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -52300,10 +50834,6 @@
                   {
                     "href": "#sa-4.2",
                     "rel": "incorporated-into"
-                  },
-                  {
-                    "href": "#e3cc0520-a366-4fc9-abc2-5272db7e3564",
-                    "rel": "reference"
                   }
                 ]
               }
@@ -53978,46 +52508,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#18e71fec-c6fd-475a-925a-5d8495cf8455",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#628d22a1-6a11-4784-bc59-5cd9497b5445",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#599fb53d-5041-444e-a7fe-640d6d30ad05",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a21aef46-7330-48a0-b2e1-c5bb8b2dd11d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e72fde0b-6fc2-497e-a9db-d8fce5a11b8a",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#9be5d661-421f-41ad-854e-86f98b811891",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e3cc0520-a366-4fc9-abc2-5272db7e3564",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#98d415ca-7281-4064-9931-0c366637e324",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#pe-8",
                     "rel": "related"
                   },
@@ -54561,26 +53051,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#77faf0bc-c394-44ad-9154-bbac3b79c8ad",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e3cc0520-a366-4fc9-abc2-5272db7e3564",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e8e84963-14fc-4c3a-be05-b412a5d37cd2",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7dbd6d9f-29d6-4d1d-9766-f2d77ff3c849",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#sa-5",
                     "rel": "related"
                   },
@@ -55027,26 +53497,6 @@
                   {
                     "href": "#sa-10",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#678e3d6c-150b-4393-aec5-6e3481eb1e00",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#eea3c092-42ed-4382-a6f4-1adadef01b9d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a295ca19-8c75-4b4c-8800-98024732e181",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#20db4e66-e257-450c-b2e4-2bb9a62a2c88",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e3cc0520-a366-4fc9-abc2-5272db7e3564",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -55725,26 +54175,6 @@
                   {
                     "href": "#sa-11",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#4452efc0-e79e-47b8-aa30-b54f3ef61c2f",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#08b07465-dbdc-48d6-8a0b-37279602ac16",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a21aef46-7330-48a0-b2e1-c5bb8b2dd11d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#708b94e1-3d5e-4b22-ab43-1c69f3a97e37",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e3cc0520-a366-4fc9-abc2-5272db7e3564",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -55808,7 +54238,7 @@
                 "links": [
                   {
                     "href": "#sr-5",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -55833,7 +54263,7 @@
                 "links": [
                   {
                     "href": "#sr-6",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -55883,7 +54313,7 @@
                 "links": [
                   {
                     "href": "#sr-3.1",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -55908,7 +54338,7 @@
                 "links": [
                   {
                     "href": "#sr-3.2",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -55958,7 +54388,7 @@
                 "links": [
                   {
                     "href": "#sr-5.2",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -56008,7 +54438,7 @@
                 "links": [
                   {
                     "href": "#sr-7",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -56033,7 +54463,7 @@
                 "links": [
                   {
                     "href": "#sr-4.3",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -56058,7 +54488,7 @@
                 "links": [
                   {
                     "href": "#sr-6.1",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -56083,7 +54513,7 @@
                 "links": [
                   {
                     "href": "#sr-8",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -56963,14 +55393,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#e3cc0520-a366-4fc9-abc2-5272db7e3564",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#d4296805-2dca-4c63-a95f-eeccaa826aec",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#pm-25",
                     "rel": "related"
                   },
@@ -57750,18 +56172,6 @@
                   {
                     "href": "#sa-17",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#87087451-2af5-43d4-88c1-d66ad850f614",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#4452efc0-e79e-47b8-aa30-b54f3ef61c2f",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e3cc0520-a366-4fc9-abc2-5272db7e3564",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -57800,7 +56210,7 @@
             "links": [
               {
                 "href": "#sr-9",
-                "rel": "incorporated-into"
+                "rel": "moved-to"
               }
             ],
             "controls": [
@@ -57825,7 +56235,7 @@
                 "links": [
                   {
                     "href": "#sr-9.1",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -57850,7 +56260,7 @@
                 "links": [
                   {
                     "href": "#sr-10",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               }
@@ -57877,7 +56287,7 @@
             "links": [
               {
                 "href": "#sr-11",
-                "rel": "incorporated-into"
+                "rel": "moved-to"
               }
             ],
             "controls": [
@@ -57902,7 +56312,7 @@
                 "links": [
                   {
                     "href": "#sr-11.1",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -57927,7 +56337,7 @@
                 "links": [
                   {
                     "href": "#sr-11.2",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -57952,7 +56362,7 @@
                 "links": [
                   {
                     "href": "#sr-12",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -57977,7 +56387,7 @@
                 "links": [
                   {
                     "href": "#sr-11.3",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               }
@@ -58030,7 +56440,7 @@
               {
                 "id": "sa-20_gdn",
                 "name": "guidance",
-                "prose": "Organizations determine that certain system components likely cannot be trusted due to specific threats to and vulnerabilities in those components for which there are no viable security controls to adequately mitigate risk. Reimplementation or custom development of such components may satisfy requirements for higher assurance and is carried out by initiating changes to system components (including hardware, software, and firmware) such that the standard attacks by adversaries are less likely to succeed. In situations where no alternative sourcing is available and organizations choose not to reimplement or custom develop critical system components, additional controls can be employed. Controls include enhanced auditing, restrictions on source code and system utility access, and protection from deletion of system and application files."
+                "prose": "Organizations determine that certain system components likely cannot be trusted due to specific threats to and vulnerabilities in those components for which there are no viable security controls to adequately mitigate risk. Reimplementation or custom development of such components may satisfy requirements for higher assurance and is carried out by initiating changes to system components (including hardware, software, and firmware) such that the standard attacks by adversaries are less likely to succeed. In situations where no alternative sourcing is available and organizations choose not to reimplement or custom develop critical system components, additional controls can be employed. Controls include enhanced auditing, restrictions on source code and system utility access, and protection from deletion of system and application files."
               }
             ]
           },
@@ -59217,10 +57627,6 @@
                   {
                     "href": "#sc-5",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#f5edfe51-d1f2-422e-9b27-5d0e90b49c72",
-                    "rel": "reference"
                   },
                   {
                     "href": "#ca-7",
@@ -60909,30 +59315,6 @@
                   {
                     "href": "#sc-7",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#628d22a1-6a11-4784-bc59-5cd9497b5445",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a7f0e897-29a3-45c4-bd88-40dfef0e034a",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#d4d7c760-2907-403b-8b2a-767ca5370ecd",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#f5edfe51-d1f2-422e-9b27-5d0e90b49c72",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -61309,38 +59691,6 @@
                   {
                     "href": "#sc-8",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#678e3d6c-150b-4393-aec5-6e3481eb1e00",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#736d6310-e403-4b57-a79d-9967970c66d7",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7537638e-2837-407d-844b-40fb3fafdd99",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#d4d7c760-2907-403b-8b2a-767ca5370ecd",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#fe209006-bfd4-4033-a79a-9fee1adaf372",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#6bc4d137-aece-42a8-8081-9ecb1ebe9fb4",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#1c71b420-2bd9-4e52-9fc8-390f58b85b59",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#4c501da5-9d79-4cb6-ba80-97260e1ce327",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -61537,10 +59887,6 @@
                   {
                     "href": "#sc-11",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -61859,7 +60205,7 @@
               {
                 "id": "sc-12.4",
                 "class": "SP800-53-enhancement",
-                "title": "Pki Certificates",
+                "title": "PKI Certificates",
                 "props": [
                   {
                     "name": "label",
@@ -61884,7 +60230,7 @@
               {
                 "id": "sc-12.5",
                 "class": "SP800-53-enhancement",
-                "title": "Pki Certificates / Hardware Tokens",
+                "title": "PKI Certificates / Hardware Tokens",
                 "props": [
                   {
                     "name": "label",
@@ -61924,46 +60270,6 @@
                   {
                     "href": "#sc-12",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#678e3d6c-150b-4393-aec5-6e3481eb1e00",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#20957dbb-6a1e-40a2-b38a-66f67d33ac2e",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#0d083d8a-5cc6-46f1-8d79-3081d42bcb75",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#eef62b16-c796-4554-955c-505824135b8a",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#110e26af-4765-49e1-8740-6750f83fcda1",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e7942589-e267-4a5a-a3d9-f39a7aae81f0",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#8306620b-1920-4d73-8b21-12008528595f",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#737513fa-6758-403f-831d-5ddab5e23cb3",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#849b2358-683f-4d97-b111-1cc3d522ded5",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#3915a084-b87b-4f02-83d4-c369e746292f",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -62256,10 +60562,6 @@
                   {
                     "href": "#sc-13",
                     "rel": "incorporated-into"
-                  },
-                  {
-                    "href": "#678e3d6c-150b-4393-aec5-6e3481eb1e00",
-                    "rel": "reference"
                   }
                 ]
               }
@@ -62705,10 +61007,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#ac-16",
                     "rel": "related"
                   },
@@ -63086,10 +61384,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#f641309f-a3ad-48be-8c67-2b318648b2f5",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#sc-44",
                     "rel": "related"
                   },
@@ -63129,6 +61423,13 @@
               {
                 "name": "status",
                 "value": "withdrawn"
+              }
+            ],
+            "parts": [
+              {
+                "id": "sc-19_smt",
+                "name": "statement",
+                "prose": "Technology-specific; addressed as any other technology or protocol."
               }
             ]
           },
@@ -63263,18 +61564,6 @@
                   {
                     "href": "#sc-20",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#678e3d6c-150b-4393-aec5-6e3481eb1e00",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7c37a38d-21d7-40d8-bc3d-b5e27eac17e1",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#fe209006-bfd4-4033-a79a-9fee1adaf372",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -63355,10 +61644,6 @@
                   {
                     "href": "#sc-21",
                     "rel": "incorporated-into"
-                  },
-                  {
-                    "href": "#fe209006-bfd4-4033-a79a-9fee1adaf372",
-                    "rel": "reference"
                   }
                 ]
               }
@@ -63632,22 +61917,6 @@
                   {
                     "href": "#sc-23",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#7537638e-2837-407d-844b-40fb3fafdd99",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#d4d7c760-2907-403b-8b2a-767ca5370ecd",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a6b9907a-2a14-4bb4-a142-d4c73026a8b4",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#6bc4d137-aece-42a8-8081-9ecb1ebe9fb4",
-                    "rel": "reference"
                   },
                   {
                     "href": "#sc-12",
@@ -64199,42 +62468,6 @@
                   {
                     "href": "#sc-28",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#20957dbb-6a1e-40a2-b38a-66f67d33ac2e",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#0d083d8a-5cc6-46f1-8d79-3081d42bcb75",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#eef62b16-c796-4554-955c-505824135b8a",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#110e26af-4765-49e1-8740-6750f83fcda1",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e7942589-e267-4a5a-a3d9-f39a7aae81f0",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#8306620b-1920-4d73-8b21-12008528595f",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#22f2d4f0-4365-4e88-a30d-275c1f5473ea",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#0f66be67-85e7-4ca6-bd19-39453e9f4394",
-                    "rel": "reference"
                   },
                   {
                     "href": "#sc-12",
@@ -64929,14 +63162,6 @@
                   {
                     "href": "#sc-32",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#628d22a1-6a11-4784-bc59-5cd9497b5445",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#d4296805-2dca-4c63-a95f-eeccaa826aec",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -65187,7 +63412,7 @@
                 "links": [
                   {
                     "href": "#sc-51",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               }
@@ -65402,10 +63627,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#61ccf0f4-d3e7-42db-9796-ce6cb1c85989",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#cp-9",
                     "rel": "related"
                   }
@@ -65560,18 +63781,6 @@
                   {
                     "href": "#sc-37",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#110e26af-4765-49e1-8740-6750f83fcda1",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e7942589-e267-4a5a-a3d9-f39a7aae81f0",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#8306620b-1920-4d73-8b21-12008528595f",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -65790,10 +63999,6 @@
                   {
                     "href": "#sc-39",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#e3cc0520-a366-4fc9-abc2-5272db7e3564",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -66393,14 +64598,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#0f66be67-85e7-4ca6-bd19-39453e9f4394",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#sa-8",
                     "rel": "related"
                   },
@@ -66722,10 +64919,6 @@
                   {
                     "href": "#sc-45",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#e4d37285-1e79-4029-8b6a-42df39cace30",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -66964,10 +65157,6 @@
                   {
                     "href": "#sc-48",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#61ccf0f4-d3e7-42db-9796-ce6cb1c85989",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -67778,34 +65967,6 @@
                   {
                     "href": "#si-2",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#678e3d6c-150b-4393-aec5-6e3481eb1e00",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7c37a38d-21d7-40d8-bc3d-b5e27eac17e1",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#cec037f3-8aba-4c97-84b4-4082f9e515d2",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#155f941a-cba9-4afd-9ca6-5d040d697ba9",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#20db4e66-e257-450c-b2e4-2bb9a62a2c88",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#aa5d04e0-6090-4e17-84d4-b9963d55fc2c",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -68401,7 +66562,7 @@
                 "links": [
                   {
                     "href": "#ac-17.10",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -68429,18 +66590,6 @@
                   {
                     "href": "#si-3",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#3dd249b0-f57d-44ba-a03e-c3eab1b835ff",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#88660532-2dcf-442e-845c-03340ce48999",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#1c71b420-2bd9-4e52-9fc8-390f58b85b59",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -69977,34 +68126,6 @@
                   {
                     "href": "#si-4",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#678e3d6c-150b-4393-aec5-6e3481eb1e00",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#49b8aa2d-a88c-4bff-9f20-876ccb8f7dcb",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#3dd249b0-f57d-44ba-a03e-c3eab1b835ff",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#5eee45d8-3313-4fdc-8d54-1742092bbdd6",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#25e3e57b-dc2f-4934-af9b-050b020c6f0e",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#067223d8-1ec7-45c5-b21b-c848da6de8fb",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -70168,10 +68289,6 @@
                   {
                     "href": "#si-5",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#155f941a-cba9-4afd-9ca6-5d040d697ba9",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -70416,10 +68533,6 @@
                   {
                     "href": "#si-6",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
                   },
                   {
                     "href": "#si-4",
@@ -71059,7 +69172,7 @@
                   {
                     "id": "si-7.9_gdn",
                     "name": "guidance",
-                    "prose": "Ensuring the integrity of boot processes is critical to starting system components in known, trustworthy states. Integrity verification mechanisms provide a level of assurance that only trusted code is executed during boot processes."
+                    "prose": "Ensuring the integrity of boot processes is critical to starting system components in known, trustworthy states. Integrity verification mechanisms provide a level of assurance that only trusted code is executed during boot processes."
                   }
                 ]
               },
@@ -71131,7 +69244,7 @@
                 "links": [
                   {
                     "href": "#cm-7.6",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -71199,7 +69312,7 @@
                 "links": [
                   {
                     "href": "#cm-7.7",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -71224,7 +69337,7 @@
                 "links": [
                   {
                     "href": "#cm-7.8",
-                    "rel": "incorporated-into"
+                    "rel": "moved-to"
                   }
                 ]
               },
@@ -71344,34 +69457,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#678e3d6c-150b-4393-aec5-6e3481eb1e00",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#eea3c092-42ed-4382-a6f4-1adadef01b9d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7c37a38d-21d7-40d8-bc3d-b5e27eac17e1",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a295ca19-8c75-4b4c-8800-98024732e181",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#4895b4cd-34c5-4667-bf8a-27d443c12047",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e47ee630-9cbc-4133-880e-e013f83ccd51",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#si-16",
                     "rel": "related"
                   }
@@ -71385,7 +69470,7 @@
                   {
                     "id": "si-7.17_gdn",
                     "name": "guidance",
-                    "prose": "Runtime application self-protection employs runtime instrumentation to detect and block the exploitation of software vulnerabilities by taking advantage of information from the software in execution. Runtime exploit prevention differs from traditional perimeter-based protections such as guards and firewalls which can only detect and block attacks by using network information without contextual awareness. Runtime application self-protection technology can reduce the susceptibility of software to attacks by monitoring its inputs and blocking those inputs that could allow attacks. It can also help protect the runtime environment from unwanted changes and tampering. When a threat is detected, runtime application self-protection technology can prevent exploitation and take other actions (e.g., sending a warning message to the user, terminating the user's session, terminating the application, or sending an alert to organizational personnel). Runtime application self-protection solutions can be deployed in either a monitor or protection mode."
+                    "prose": "Runtime application self-protection employs runtime instrumentation to detect and block the exploitation of software vulnerabilities by taking advantage of information from the software in execution. Runtime exploit prevention differs from traditional perimeter-based protections such as guards and firewalls which can only detect and block attacks by using network information without contextual awareness. Runtime application self-protection technology can reduce the susceptibility of software to attacks by monitoring its inputs and blocking those inputs that could allow attacks. It can also help protect the runtime environment from unwanted changes and tampering. When a threat is detected, runtime application self-protection technology can prevent exploitation and take other actions (e.g., sending a warning message to the user, terminating the user's session, terminating the application, or sending an alert to organizational personnel). Runtime application self-protection solutions can be deployed in either a monitor or protection mode."
                   }
                 ]
               }
@@ -71557,14 +69642,6 @@
                   {
                     "href": "#si-8",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#314e33cb-3681-4b50-a2a2-3fae9604accd",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#1c71b420-2bd9-4e52-9fc8-390f58b85b59",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -71921,10 +69998,6 @@
                   {
                     "href": "#si-10",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
                   },
                   {
                     "href": "#ac-3",
@@ -72307,14 +70380,6 @@
                   {
                     "href": "#si-12",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#e922fc50-b1f9-469f-92ef-ed7d9803611c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -73317,18 +71382,6 @@
                   {
                     "href": "#si-18",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#227063d4-431e-435f-9e8f-009b6dbc20f4",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#c15bfc12-a61e-4ca5-bf35-fa9ce3ccb5d2",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a2590922-82f3-4277-83c0-ca5bee06dba4",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -73705,14 +71758,6 @@
                   {
                     "href": "#si-19",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#c15bfc12-a61e-4ca5-bf35-fa9ce3ccb5d2",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -74365,7 +72410,7 @@
               {
                 "id": "sr-2_gdn",
                 "name": "guidance",
-                "prose": "The dependence on products, systems, and services from external providers, as well as the nature of the relationships with those providers, present an increasing level of risk to an organization. Threat actions that may increase security or privacy risks include unauthorized production, the insertion or use of counterfeits, tampering, theft, insertion of malicious software and hardware, and poor manufacturing and development practices in the supply chain. Supply chain risks can be endemic or systemic within a system element or component, a system, an organization, a sector, or the Nation. Managing supply chain risk is a complex, multifaceted undertaking that requires a coordinated effort across an organization to build trust relationships and communicate with internal and external stakeholders. Supply chain risk management (SCRM) activities include identifying and assessing risks, determining appropriate risk response actions, developing SCRM plans to document response actions, and monitoring performance against plans. The SCRM plan (at the system-level) is implementation specific, providing policy implementation, requirements, constraints and implications. It can either be stand-alone, or incorporated into system security and privacy plans. The SCRM plan addresses managing, implementation, and monitoring of SCRM controls and the development/sustainment of systems across the SDLC to support mission and business functions.\n\nBecause supply chains can differ significantly across and within organizations, SCRM plans are tailored to the individual program, organizational, and operational contexts. Tailored SCRM plans provide the basis for determining whether a technology, service, system component, or system is fit for purpose, and as such, the controls need to be tailored accordingly. Tailored SCRM plans help organizations focus their resources on the most critical mission and business functions based on mission and business requirements and their risk environment. Supply chain risk management plans include an expression of the supply chain risk tolerance for the organization, acceptable supply chain risk mitigation strategies or controls, a process for consistently evaluating and monitoring supply chain risk, approaches for implementing and communicating the plan, a description of and justification for supply chain risk mitigation measures taken, and associated roles and responsibilities. Finally, supply chain risk management plans address requirements for developing trustworthy, secure, privacy-protective, and resilient system components and systems, including the application of the security design principles implemented as part of life cycle-based systems security engineering processes (see [SA-8](#sa-8))."
+                "prose": "The dependence on products, systems, and services from external providers, as well as the nature of the relationships with those providers, present an increasing level of risk to an organization. Threat actions that may increase security or privacy risks include unauthorized production, the insertion or use of counterfeits, tampering, theft, insertion of malicious software and hardware, and poor manufacturing and development practices in the supply chain. Supply chain risks can be endemic or systemic within a system element or component, a system, an organization, a sector, or the Nation. Managing supply chain risk is a complex, multifaceted undertaking that requires a coordinated effort across an organization to build trust relationships and communicate with internal and external stakeholders. Supply chain risk management (SCRM) activities include identifying and assessing risks, determining appropriate risk response actions, developing SCRM plans to document response actions, and monitoring performance against plans. The SCRM plan (at the system-level) is implementation specific, providing policy implementation, requirements, constraints and implications. It can either be stand-alone, or incorporated into system security and privacy plans. The SCRM plan addresses managing, implementation, and monitoring of SCRM controls and the development/sustainment of systems across the SDLC to support mission and business functions.\n\nBecause supply chains can differ significantly across and within organizations, SCRM plans are tailored to the individual program, organizational, and operational contexts. Tailored SCRM plans provide the basis for determining whether a technology, service, system component, or system is fit for purpose, and as such, the controls need to be tailored accordingly. Tailored SCRM plans help organizations focus their resources on the most critical mission and business functions based on mission and business requirements and their risk environment. Supply chain risk management plans include an expression of the supply chain risk tolerance for the organization, acceptable supply chain risk mitigation strategies or controls, a process for consistently evaluating and monitoring supply chain risk, approaches for implementing and communicating the plan, a description of and justification for supply chain risk mitigation measures taken, and associated roles and responsibilities. Finally, supply chain risk management plans address requirements for developing trustworthy, secure, privacy-protective, and resilient system components and systems, including the application of the security design principles implemented as part of life cycle-based systems security engineering processes (see [SA-8](#sa-8))."
               }
             ],
             "controls": [
@@ -74397,50 +72442,6 @@
                   {
                     "href": "#sr-2",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#4ff10ed3-d8fe-4246-99e3-443045e27482",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#0f963c17-ab5a-432a-a867-91eac550309b",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#21caa535-1154-4369-ba7b-32c309fee0f7",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#031cc4b7-9adf-4835-98f1-f1ca493519cf",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#08b07465-dbdc-48d6-8a0b-37279602ac16",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#cec037f3-8aba-4c97-84b4-4082f9e515d2",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e3cc0520-a366-4fc9-abc2-5272db7e3564",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e8e84963-14fc-4c3a-be05-b412a5d37cd2",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#276bd50a-7e58-48e5-a405-8c8cb91d7a5f",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e24b06cc-9129-4998-a76a-65c3d7a576ba",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#38ff38f0-1366-4f50-a4c9-26a39aacee16",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -74768,34 +72769,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#4ff10ed3-d8fe-4246-99e3-443045e27482",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#0f963c17-ab5a-432a-a867-91eac550309b",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#21caa535-1154-4369-ba7b-32c309fee0f7",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#15a95e24-65b6-4686-bc18-90855a10457d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#08b07465-dbdc-48d6-8a0b-37279602ac16",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e8e84963-14fc-4c3a-be05-b412a5d37cd2",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e24b06cc-9129-4998-a76a-65c3d7a576ba",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#sr-5",
                     "rel": "related"
                   },
@@ -75113,46 +73086,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#4ff10ed3-d8fe-4246-99e3-443045e27482",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#0f963c17-ab5a-432a-a867-91eac550309b",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#21caa535-1154-4369-ba7b-32c309fee0f7",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#863caf2a-978a-4260-9e8d-4a8929bce40c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#15a95e24-65b6-4686-bc18-90855a10457d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e3cc0520-a366-4fc9-abc2-5272db7e3564",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e8e84963-14fc-4c3a-be05-b412a5d37cd2",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e24b06cc-9129-4998-a76a-65c3d7a576ba",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a2590922-82f3-4277-83c0-ca5bee06dba4",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#38ff38f0-1366-4f50-a4c9-26a39aacee16",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#ra-3",
                     "rel": "related"
                   }
@@ -75362,42 +73295,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#4ff10ed3-d8fe-4246-99e3-443045e27482",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#0f963c17-ab5a-432a-a867-91eac550309b",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#21caa535-1154-4369-ba7b-32c309fee0f7",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#863caf2a-978a-4260-9e8d-4a8929bce40c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#15a95e24-65b6-4686-bc18-90855a10457d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#08b07465-dbdc-48d6-8a0b-37279602ac16",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e8e84963-14fc-4c3a-be05-b412a5d37cd2",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e24b06cc-9129-4998-a76a-65c3d7a576ba",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#38ff38f0-1366-4f50-a4c9-26a39aacee16",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#ca-8",
                     "rel": "related"
                   },
@@ -75560,58 +73457,6 @@
                   {
                     "href": "#sr-6",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#4ff10ed3-d8fe-4246-99e3-443045e27482",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#0f963c17-ab5a-432a-a867-91eac550309b",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#21caa535-1154-4369-ba7b-32c309fee0f7",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#863caf2a-978a-4260-9e8d-4a8929bce40c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#15a95e24-65b6-4686-bc18-90855a10457d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#678e3d6c-150b-4393-aec5-6e3481eb1e00",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#eea3c092-42ed-4382-a6f4-1adadef01b9d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7c37a38d-21d7-40d8-bc3d-b5e27eac17e1",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a295ca19-8c75-4b4c-8800-98024732e181",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#08b07465-dbdc-48d6-8a0b-37279602ac16",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e8e84963-14fc-4c3a-be05-b412a5d37cd2",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e24b06cc-9129-4998-a76a-65c3d7a576ba",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#38ff38f0-1366-4f50-a4c9-26a39aacee16",
-                    "rel": "reference"
                   },
                   {
                     "href": "#ca-8",
@@ -75874,10 +73719,6 @@
                   {
                     "href": "#sr-9",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#15a95e24-65b6-4686-bc18-90855a10457d",
-                    "rel": "reference"
                   },
                   {
                     "href": "#sa-3",
@@ -76215,10 +74056,6 @@
                   {
                     "href": "#sr-11",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#15a95e24-65b6-4686-bc18-90855a10457d",
-                    "rel": "reference"
                   },
                   {
                     "href": "#ra-5",
@@ -77175,7 +75012,7 @@
           "uuid": "d744d9a3-73eb-4085-b9ff-79e82e9e2d6e",
           "title": "NCPR",
           "citation": {
-            "text": "National Institute of Standards and Technology (2020) *National Checklist Program Repository*. Available at"
+            "text": "National Institute of Standards and Technology (2020) *National Checklist Program Repository*. Available at"
           },
           "rlinks": [
             {
@@ -77211,7 +75048,7 @@
           "uuid": "84dc1b0c-acb7-4269-84c4-00dbabacd78c",
           "title": "NIST CAVP",
           "citation": {
-            "text": "National Institute of Standards and Technology (2020) *Cryptographic Algorithm Validation Program*. Available at"
+            "text": "National Institute of Standards and Technology (2020) *Cryptographic Algorithm Validation Program*. Available at"
           },
           "rlinks": [
             {
@@ -77223,7 +75060,7 @@
           "uuid": "1acdc775-aafb-4d11-9341-dc6a822e9d38",
           "title": "NIST CMVP",
           "citation": {
-            "text": "National Institute of Standards and Technology (2020) *Cryptographic Module Validation Program*. Available at"
+            "text": "National Institute of Standards and Technology (2020) *Cryptographic Module Validation Program*. Available at"
           },
           "rlinks": [
             {
@@ -77295,7 +75132,7 @@
           "uuid": "782a8c6d-39a4-45df-a6db-ad0b9226fa38",
           "title": "NVD 800-53",
           "citation": {
-            "text": "National Institute of Standards and Technology (2020) *National Vulnerability Database: NIST Special Publication 800-53 [database of controls].* Available at"
+            "text": "National Institute of Standards and Technology (2020) *National Vulnerability Database: NIST Special Publication 800-53 [database of controls].* Available at"
           },
           "rlinks": [
             {
@@ -78545,7 +76382,7 @@
           "uuid": "98498928-3ca3-44b3-8b1e-f48685373087",
           "title": "USGCB",
           "citation": {
-            "text": "National Institute of Standards and Technology (2020) *United States Government Configuration Baseline*. Available at"
+            "text": "National Institute of Standards and Technology (2020) *United States Government Configuration Baseline*. Available at"
           },
           "rlinks": [
             {

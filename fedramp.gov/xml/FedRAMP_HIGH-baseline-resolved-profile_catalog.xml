@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="1c6e611b-9cdd-445a-8208-483ce9e66050">
+         uuid="559f44c8-281f-40e7-8a64-70069f54fcdd">
    <metadata>
       <title>FedRAMP High Baseline</title>
       <published>2020-06-01T00:00:00.000-04:00</published>
       <last-modified>2020-12-18T16:38:38.366-05:00</last-modified>
       <version>1.2</version>
       <oscal-version>1.0.0-rc1</oscal-version>
-      <prop name="resolution-timestamp">2021-02-18T17:04:33.938495Z</prop>
+      <prop name="resolution-timestamp">2021-03-02T20:44:17.862251Z</prop>
       <link rel="resolution-source" href="FedRAMP_HIGH-baseline_profile.xml"/>
       <role id="parpared-by">
          <title>Document creator</title>

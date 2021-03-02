@@ -1,6 +1,6 @@
 ---
 catalog:
-  uuid: 1c6e611b-9cdd-445a-8208-483ce9e66050
+  uuid: 559f44c8-281f-40e7-8a64-70069f54fcdd
   metadata:
     title: FedRAMP High Baseline
     published: 2020-06-01T00:00:00.000-04:00
@@ -9,7 +9,7 @@ catalog:
     oscal-version: 1.0.0-rc1
     props:
       - name: resolution-timestamp
-        value: 2021-02-18T17:04:33.938495Z
+        value: 2021-03-02T20:44:17.862251Z
     links:
       - href: FedRAMP_HIGH-baseline_profile.xml
         rel: resolution-source

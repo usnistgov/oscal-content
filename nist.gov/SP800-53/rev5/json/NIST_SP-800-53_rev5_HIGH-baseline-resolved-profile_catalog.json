@@ -1,6 +1,6 @@
 {
   "catalog": {
-    "uuid": "a904f3f4-97bf-4826-bf73-6335ee4f90ca",
+    "uuid": "ea99baa3-497d-4c1a-bda5-b54b6e5e8757",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 5 HIGH IMPACT BASELINE",
       "last-modified": "2021-01-14T09:04:29.356-05:00",
@@ -9,7 +9,7 @@
       "props": [
         {
           "name": "resolution-timestamp",
-          "value": "2021-02-18T17:06:17.281727Z"
+          "value": "2021-03-02T20:46:09.464006Z"
         }
       ],
       "links": [
@@ -1136,18 +1136,6 @@
                   {
                     "href": "#ac-2",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#2956e175-f674-43f4-b1b9-e074ad9fc39c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#388a3aa2-5d85-4bad-b8a3-77db80d63c4f",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#53df282b-8b3f-483a-bad1-6a8b8ac00114",
-                    "rel": "reference"
                   },
                   {
                     "href": "#au-6",
@@ -2629,7 +2617,7 @@
                   {
                     "id": "ac-11.1_gdn",
                     "name": "guidance",
-                    "prose": "The pattern-hiding display can include static or dynamic images, such as patterns used with screen savers, photographic images, solid colors, clock, battery life indicator, or a blank screen with the caveat that controlled unclassified information is not displayed."
+                    "prose": "The pattern-hiding display can include static or dynamic images, such as patterns used with screen savers, photographic images, solid colors, clock, battery life indicator, or a blank screen with the caveat that controlled unclassified information is not displayed."
                   }
                 ]
               }
@@ -3374,14 +3362,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#25e3e57b-dc2f-4934-af9b-050b020c6f0e",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#03fb73bc-1b12-4182-bd96-e5719254ea61",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#pe-19",
                     "rel": "related"
                   }
@@ -3582,14 +3562,6 @@
                   {
                     "href": "#ac-19",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#42e37e51-7cc0-4ffa-81c9-0ac942da7e99",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#0f66be67-85e7-4ca6-bd19-39453e9f4394",
-                    "rel": "reference"
                   },
                   {
                     "href": "#sc-12",
@@ -9299,14 +9271,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#0f66be67-85e7-4ca6-bd19-39453e9f4394",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#20db4e66-e257-450c-b2e4-2bb9a62a2c88",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#mp-4",
                     "rel": "related"
                   },
@@ -9974,10 +9938,6 @@
                   {
                     "href": "#cm-4",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#20db4e66-e257-450c-b2e4-2bb9a62a2c88",
-                    "rel": "reference"
                   },
                   {
                     "href": "#sa-11",
@@ -11706,7 +11666,7 @@
               {
                 "id": "cm-11_gdn",
                 "name": "guidance",
-                "prose": "If provided the necessary privileges, users can install software in organizational systems. To maintain control over the software installed, organizations identify permitted and prohibited actions regarding software installation. Permitted software installations include updates and security patches to existing software and downloading new applications from organization-approved \"app stores.\" Prohibited software installations include software with unknown or suspect pedigrees or software that organizations consider potentially malicious. Policies selected for governing user-installed software are organization-developed or provided by some external entity. Policy enforcement methods can include procedural methods and automated methods."
+                "prose": "If provided the necessary privileges, users can install software in organizational systems. To maintain control over the software installed, organizations identify permitted and prohibited actions regarding software installation. Permitted software installations include updates and security patches to existing software and downloading new applications from organization-approved \"app stores.\" Prohibited software installations include software with unknown or suspect pedigrees or software that organizations consider potentially malicious. Policies selected for governing user-installed software are organization-developed or provided by some external entity. Policy enforcement methods can include procedural methods and automated methods."
               }
             ]
           },
@@ -11883,18 +11843,6 @@
                   {
                     "href": "#cm-12",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#628d22a1-6a11-4784-bc59-5cd9497b5445",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e72fde0b-6fc2-497e-a9db-d8fce5a11b8a",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#9be5d661-421f-41ad-854e-86f98b811891",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -12663,14 +12611,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#bc39f179-c735-4da2-b7a7-b2b622119755",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#d4296805-2dca-4c63-a95f-eeccaa826aec",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#cm-8",
                     "rel": "related"
                   },
@@ -12835,7 +12775,7 @@
               {
                 "id": "cp-3_gdn",
                 "name": "guidance",
-                "prose": "Contingency training provided by organizations is linked to the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail is included in such training. For example, some individuals may only need to know when and where to report for duty during contingency operations and if normal duties are affected; system administrators may require additional training on how to establish systems at alternate processing and storage sites; and organizational officials may receive more specific training on how to conduct mission-essential functions in designated off-site locations and how to establish communications with other governmental entities for purposes of coordination on contingency-related activities. Training for contingency roles or responsibilities reflects the specific continuity requirements in the contingency plan. Events that may precipitate an update to contingency training content include, but are not limited to, contingency plan testing or an actual contingency (lessons learned), assessment or audit findings, security incidents or breaches, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. At the discretion of the organization, participation in a contingency plan test or exercise, including lessons learned sessions subsequent to the test or exercise, may satisfy contingency plan training requirements."
+                "prose": "Contingency training provided by organizations is linked to the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail is included in such training. For example, some individuals may only need to know when and where to report for duty during contingency operations and if normal duties are affected; system administrators may require additional training on how to establish systems at alternate processing and storage sites; and organizational officials may receive more specific training on how to conduct mission-essential functions in designated off-site locations and how to establish communications with other governmental entities for purposes of coordination on contingency-related activities. Training for contingency roles or responsibilities reflects the specific continuity requirements in the contingency plan. Events that may precipitate an update to contingency training content include, but are not limited to, contingency plan testing or an actual contingency (lessons learned), assessment or audit findings, security incidents or breaches, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. At the discretion of the organization, participation in a contingency plan test or exercise, including lessons learned sessions subsequent to the test or exercise, may satisfy contingency plan training requirements."
               }
             ],
             "controls": [
@@ -13291,10 +13231,6 @@
                   {
                     "href": "#cp-6",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#bc39f179-c735-4da2-b7a7-b2b622119755",
-                    "rel": "reference"
                   },
                   {
                     "href": "#ra-3",
@@ -14227,26 +14163,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#678e3d6c-150b-4393-aec5-6e3481eb1e00",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#7c37a38d-21d7-40d8-bc3d-b5e27eac17e1",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#bc39f179-c735-4da2-b7a7-b2b622119755",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#3653e316-8923-430e-8943-b3b2b2562fc6",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#2494df28-9049-4196-b233-540e7440993f",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#sc-12",
                     "rel": "related"
                   },
@@ -14994,7 +14910,7 @@
               {
                 "id": "ia-2.12",
                 "class": "SP800-53-enhancement",
-                "title": "Acceptance of Piv Credentials",
+                "title": "Acceptance of PIV Credentials",
                 "props": [
                   {
                     "name": "label",
@@ -15891,7 +15807,7 @@
               {
                 "id": "ia-6_gdn",
                 "name": "guidance",
-                "prose": "Authentication feedback from systems does not provide information that would allow unauthorized individuals to compromise authentication mechanisms. For some types of systems, such as desktops or notebooks with relatively large monitors, the threat (referred to as shoulder surfing) may be significant. For other types of systems, such as mobile devices with small displays, the threat may be less significant and is balanced against the increased likelihood of typographic input errors due to small keyboards. Thus, the means for obscuring authentication feedback is selected accordingly. Obscuring authentication feedback includes displaying asterisks when users type passwords into input devices or displaying feedback for a very limited time before obscuring it."
+                "prose": "Authentication feedback from systems does not provide information that would allow unauthorized individuals to compromise authentication mechanisms. For some types of systems, such as desktops or notebooks with relatively large monitors, the threat (referred to as shoulder surfing) may be significant. For other types of systems, such as mobile devices with small displays, the threat may be less significant and is balanced against the increased likelihood of typographic input errors due to small keyboards. Thus, the means for obscuring authentication feedback is selected accordingly. Obscuring authentication feedback includes displaying asterisks when users type passwords into input devices or displaying feedback for a very limited time before obscuring it."
               }
             ]
           },
@@ -16068,7 +15984,7 @@
               {
                 "id": "ia-8.1",
                 "class": "SP800-53-enhancement",
-                "title": "Acceptance of Piv Credentials from Other Agencies",
+                "title": "Acceptance of PIV Credentials from Other Agencies",
                 "props": [
                   {
                     "name": "label",
@@ -16888,7 +16804,7 @@
               {
                 "id": "ir-2_gdn",
                 "name": "guidance",
-                "prose": "Incident response training is associated with the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail are included in such training. For example, users may only need to know who to call or how to recognize an incident; system administrators may require additional training on how to handle incidents; and incident responders may receive more specific training on forensics, data collection techniques, reporting, system recovery, and system restoration. Incident response training includes user training in identifying and reporting suspicious activities from external and internal sources. Incident response training for users may be provided as part of [AT-2](#at-2) or [AT-3](#at-3). Events that may precipitate an update to incident response training content include, but are not limited to, incident response plan testing or response to an actual incident (lessons learned), assessment or audit findings, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines."
+                "prose": "Incident response training is associated with the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail are included in such training. For example, users may only need to know who to call or how to recognize an incident; system administrators may require additional training on how to handle incidents; and incident responders may receive more specific training on forensics, data collection techniques, reporting, system recovery, and system restoration. Incident response training includes user training in identifying and reporting suspicious activities from external and internal sources. Incident response training for users may be provided as part of [AT-2](#at-2) or [AT-3](#at-3). Events that may precipitate an update to incident response training content include, but are not limited to, incident response plan testing or response to an actual incident (lessons learned), assessment or audit findings, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines."
               }
             ],
             "controls": [
@@ -17496,10 +17412,6 @@
                   {
                     "href": "#ir-5",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#49b8aa2d-a88c-4bff-9f20-876ccb8f7dcb",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -17680,22 +17592,6 @@
                   {
                     "href": "#ir-6",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#4ff10ed3-d8fe-4246-99e3-443045e27482",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#0f963c17-ab5a-432a-a867-91eac550309b",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#40b78258-c892-480e-9af8-77ac36648301",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#49b8aa2d-a88c-4bff-9f20-876ccb8f7dcb",
-                    "rel": "reference"
                   },
                   {
                     "href": "#sr-8",
@@ -18507,14 +18403,6 @@
                   {
                     "href": "#ma-2",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#4c501da5-9d79-4cb6-ba80-97260e1ce327",
-                    "rel": "reference"
                   },
                   {
                     "href": "#ma-3",
@@ -23183,14 +23071,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#30eb758a-2707-4bca-90ad-949a74d4eb16",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#ac-22",
                     "rel": "related"
                   },
@@ -23236,7 +23116,7 @@
                             "value": "(c)"
                           }
                         ],
-                        "prose": "Use of organization-provided identifiers (e.g., email addresses) and authentication secrets (e.g., passwords) for creating accounts on external sites/applications."
+                        "prose": "Use of organization-provided identifiers (e.g., email addresses) and authentication secrets (e.g., passwords) for creating accounts on external sites/applications."
                       }
                     ]
                   },
@@ -25913,42 +25793,6 @@
                   {
                     "href": "#ra-5",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#8df72805-2e5c-4731-a73e-81db0f0318d0",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#155f941a-cba9-4afd-9ca6-5d040d697ba9",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#a21aef46-7330-48a0-b2e1-c5bb8b2dd11d",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#4895b4cd-34c5-4667-bf8a-27d443c12047",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#122177fa-c4ed-485d-8345-3082c0fb9a06",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#8016d2ed-d30f-4416-9c45-0f42c7aa3232",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#aa5d04e0-6090-4e17-84d4-b9963d55fc2c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#d2ebec9b-f868-4ee1-a2bd-0b2282aed248",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#4c501da5-9d79-4cb6-ba80-97260e1ce327",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -27096,7 +26940,7 @@
               {
                 "id": "sa-4.10",
                 "class": "SP800-53-enhancement",
-                "title": "Use of Approved Piv Products",
+                "title": "Use of Approved PIV Products",
                 "props": [
                   {
                     "name": "label",
@@ -32755,10 +32599,6 @@
                   {
                     "href": "#si-5",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#155f941a-cba9-4afd-9ca6-5d040d697ba9",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -34207,7 +34047,7 @@
               {
                 "id": "sr-2_gdn",
                 "name": "guidance",
-                "prose": "The dependence on products, systems, and services from external providers, as well as the nature of the relationships with those providers, present an increasing level of risk to an organization. Threat actions that may increase security or privacy risks include unauthorized production, the insertion or use of counterfeits, tampering, theft, insertion of malicious software and hardware, and poor manufacturing and development practices in the supply chain. Supply chain risks can be endemic or systemic within a system element or component, a system, an organization, a sector, or the Nation. Managing supply chain risk is a complex, multifaceted undertaking that requires a coordinated effort across an organization to build trust relationships and communicate with internal and external stakeholders. Supply chain risk management (SCRM) activities include identifying and assessing risks, determining appropriate risk response actions, developing SCRM plans to document response actions, and monitoring performance against plans. The SCRM plan (at the system-level) is implementation specific, providing policy implementation, requirements, constraints and implications. It can either be stand-alone, or incorporated into system security and privacy plans. The SCRM plan addresses managing, implementation, and monitoring of SCRM controls and the development/sustainment of systems across the SDLC to support mission and business functions.\n\nBecause supply chains can differ significantly across and within organizations, SCRM plans are tailored to the individual program, organizational, and operational contexts. Tailored SCRM plans provide the basis for determining whether a technology, service, system component, or system is fit for purpose, and as such, the controls need to be tailored accordingly. Tailored SCRM plans help organizations focus their resources on the most critical mission and business functions based on mission and business requirements and their risk environment. Supply chain risk management plans include an expression of the supply chain risk tolerance for the organization, acceptable supply chain risk mitigation strategies or controls, a process for consistently evaluating and monitoring supply chain risk, approaches for implementing and communicating the plan, a description of and justification for supply chain risk mitigation measures taken, and associated roles and responsibilities. Finally, supply chain risk management plans address requirements for developing trustworthy, secure, privacy-protective, and resilient system components and systems, including the application of the security design principles implemented as part of life cycle-based systems security engineering processes (see [SA-8](#sa-8))."
+                "prose": "The dependence on products, systems, and services from external providers, as well as the nature of the relationships with those providers, present an increasing level of risk to an organization. Threat actions that may increase security or privacy risks include unauthorized production, the insertion or use of counterfeits, tampering, theft, insertion of malicious software and hardware, and poor manufacturing and development practices in the supply chain. Supply chain risks can be endemic or systemic within a system element or component, a system, an organization, a sector, or the Nation. Managing supply chain risk is a complex, multifaceted undertaking that requires a coordinated effort across an organization to build trust relationships and communicate with internal and external stakeholders. Supply chain risk management (SCRM) activities include identifying and assessing risks, determining appropriate risk response actions, developing SCRM plans to document response actions, and monitoring performance against plans. The SCRM plan (at the system-level) is implementation specific, providing policy implementation, requirements, constraints and implications. It can either be stand-alone, or incorporated into system security and privacy plans. The SCRM plan addresses managing, implementation, and monitoring of SCRM controls and the development/sustainment of systems across the SDLC to support mission and business functions.\n\nBecause supply chains can differ significantly across and within organizations, SCRM plans are tailored to the individual program, organizational, and operational contexts. Tailored SCRM plans provide the basis for determining whether a technology, service, system component, or system is fit for purpose, and as such, the controls need to be tailored accordingly. Tailored SCRM plans help organizations focus their resources on the most critical mission and business functions based on mission and business requirements and their risk environment. Supply chain risk management plans include an expression of the supply chain risk tolerance for the organization, acceptable supply chain risk mitigation strategies or controls, a process for consistently evaluating and monitoring supply chain risk, approaches for implementing and communicating the plan, a description of and justification for supply chain risk mitigation measures taken, and associated roles and responsibilities. Finally, supply chain risk management plans address requirements for developing trustworthy, secure, privacy-protective, and resilient system components and systems, including the application of the security design principles implemented as part of life cycle-based systems security engineering processes (see [SA-8](#sa-8))."
               }
             ],
             "controls": [
@@ -34239,50 +34079,6 @@
                   {
                     "href": "#sr-2",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#4ff10ed3-d8fe-4246-99e3-443045e27482",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#0f963c17-ab5a-432a-a867-91eac550309b",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#21caa535-1154-4369-ba7b-32c309fee0f7",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#031cc4b7-9adf-4835-98f1-f1ca493519cf",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#08b07465-dbdc-48d6-8a0b-37279602ac16",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#cec037f3-8aba-4c97-84b4-4082f9e515d2",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e3cc0520-a366-4fc9-abc2-5272db7e3564",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e8e84963-14fc-4c3a-be05-b412a5d37cd2",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#276bd50a-7e58-48e5-a405-8c8cb91d7a5f",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#e24b06cc-9129-4998-a76a-65c3d7a576ba",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#38ff38f0-1366-4f50-a4c9-26a39aacee16",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -34908,10 +34704,6 @@
                   {
                     "href": "#sr-9",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#15a95e24-65b6-4686-bc18-90855a10457d",
-                    "rel": "reference"
                   },
                   {
                     "href": "#sa-3",
@@ -35903,7 +35695,7 @@
           "uuid": "d744d9a3-73eb-4085-b9ff-79e82e9e2d6e",
           "title": "NCPR",
           "citation": {
-            "text": "National Institute of Standards and Technology (2020) *National Checklist Program Repository*. Available at"
+            "text": "National Institute of Standards and Technology (2020) *National Checklist Program Repository*. Available at"
           },
           "rlinks": [
             {
@@ -35927,7 +35719,7 @@
           "uuid": "84dc1b0c-acb7-4269-84c4-00dbabacd78c",
           "title": "NIST CAVP",
           "citation": {
-            "text": "National Institute of Standards and Technology (2020) *Cryptographic Algorithm Validation Program*. Available at"
+            "text": "National Institute of Standards and Technology (2020) *Cryptographic Algorithm Validation Program*. Available at"
           },
           "rlinks": [
             {
@@ -35939,7 +35731,7 @@
           "uuid": "1acdc775-aafb-4d11-9341-dc6a822e9d38",
           "title": "NIST CMVP",
           "citation": {
-            "text": "National Institute of Standards and Technology (2020) *Cryptographic Module Validation Program*. Available at"
+            "text": "National Institute of Standards and Technology (2020) *Cryptographic Module Validation Program*. Available at"
           },
           "rlinks": [
             {
@@ -37019,7 +36811,7 @@
           "uuid": "98498928-3ca3-44b3-8b1e-f48685373087",
           "title": "USGCB",
           "citation": {
-            "text": "National Institute of Standards and Technology (2020) *United States Government Configuration Baseline*. Available at"
+            "text": "National Institute of Standards and Technology (2020) *United States Government Configuration Baseline*. Available at"
           },
           "rlinks": [
             {

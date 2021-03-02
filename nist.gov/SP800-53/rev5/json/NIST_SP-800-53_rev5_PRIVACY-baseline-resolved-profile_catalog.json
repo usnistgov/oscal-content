@@ -1,6 +1,6 @@
 {
   "catalog": {
-    "uuid": "6eae177f-5101-4f77-afb6-cd20c92cdbaf",
+    "uuid": "06d72c69-b1a7-4041-abf9-1d1faddac0d5",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 5 PRIVACY BASELINE",
       "last-modified": "2021-01-14T09:04:29.16-05:00",
@@ -9,7 +9,7 @@
       "props": [
         {
           "name": "resolution-timestamp",
-          "value": "2021-02-18T17:06:49.058489Z"
+          "value": "2021-03-02T20:46:44.204223Z"
         }
       ],
       "links": [
@@ -942,18 +942,6 @@
                   {
                     "href": "#at-3",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#511f6832-23ca-49a3-8c0f-ce493373cab8",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#276bd50a-7e58-48e5-a405-8c8cb91d7a5f",
-                    "rel": "reference"
                   },
                   {
                     "href": "#pt-2",
@@ -3411,7 +3399,7 @@
               {
                 "id": "ir-2_gdn",
                 "name": "guidance",
-                "prose": "Incident response training is associated with the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail are included in such training. For example, users may only need to know who to call or how to recognize an incident; system administrators may require additional training on how to handle incidents; and incident responders may receive more specific training on forensics, data collection techniques, reporting, system recovery, and system restoration. Incident response training includes user training in identifying and reporting suspicious activities from external and internal sources. Incident response training for users may be provided as part of [AT-2](#at-2) or [AT-3](#at-3). Events that may precipitate an update to incident response training content include, but are not limited to, incident response plan testing or response to an actual incident (lessons learned), assessment or audit findings, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines."
+                "prose": "Incident response training is associated with the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail are included in such training. For example, users may only need to know who to call or how to recognize an incident; system administrators may require additional training on how to handle incidents; and incident responders may receive more specific training on forensics, data collection techniques, reporting, system recovery, and system restoration. Incident response training includes user training in identifying and reporting suspicious activities from external and internal sources. Incident response training for users may be provided as part of [AT-2](#at-2) or [AT-3](#at-3). Events that may precipitate an update to incident response training content include, but are not limited to, incident response plan testing or response to an actual incident (lessons learned), assessment or audit findings, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines."
               }
             ],
             "controls": [
@@ -3433,14 +3421,6 @@
                   {
                     "href": "#ir-2",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#5f4705ac-8d17-438c-b23a-ac7f12362ae4",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#511f6832-23ca-49a3-8c0f-ce493373cab8",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -4280,18 +4260,6 @@
                   {
                     "href": "#ir-8",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#49b8aa2d-a88c-4bff-9f20-876ccb8f7dcb",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#5f4705ac-8d17-438c-b23a-ac7f12362ae4",
-                    "rel": "reference"
                   },
                   {
                     "href": "#pt-1",
@@ -5577,14 +5545,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#30eb758a-2707-4bca-90ad-949a74d4eb16",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#ac-22",
                     "rel": "related"
                   },
@@ -5630,7 +5590,7 @@
                             "value": "(c)"
                           }
                         ],
-                        "prose": "Use of organization-provided identifiers (e.g., email addresses) and authentication secrets (e.g., passwords) for creating accounts on external sites/applications."
+                        "prose": "Use of organization-provided identifiers (e.g., email addresses) and authentication secrets (e.g., passwords) for creating accounts on external sites/applications."
                       }
                     ]
                   },
@@ -7350,18 +7310,6 @@
                   {
                     "href": "#pm-20",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#18e71fec-c6fd-475a-925a-5d8495cf8455",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#206a3284-6a7e-423c-8ea9-25b22542541d",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -9365,18 +9313,6 @@
                     "rel": "required"
                   },
                   {
-                    "href": "#18e71fec-c6fd-475a-925a-5d8495cf8455",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#3671ff20-c17c-44d6-8a88-7de203fa74aa",
-                    "rel": "reference"
-                  },
-                  {
                     "href": "#pt-6",
                     "rel": "related"
                   }
@@ -9551,14 +9487,6 @@
                   {
                     "href": "#pt-6",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#18e71fec-c6fd-475a-925a-5d8495cf8455",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#3671ff20-c17c-44d6-8a88-7de203fa74aa",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -9733,22 +9661,6 @@
                   {
                     "href": "#pt-7",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#18e71fec-c6fd-475a-925a-5d8495cf8455",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#3671ff20-c17c-44d6-8a88-7de203fa74aa",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#c28ae9a8-1121-42a9-a85e-00cfcc9b9a94",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [
@@ -12157,14 +12069,6 @@
                   {
                     "href": "#si-12",
                     "rel": "required"
-                  },
-                  {
-                    "href": "#e922fc50-b1f9-469f-92ef-ed7d9803611c",
-                    "rel": "reference"
-                  },
-                  {
-                    "href": "#27847491-5ce1-4f6a-a1e4-9e483782f0ef",
-                    "rel": "reference"
                   }
                 ],
                 "parts": [

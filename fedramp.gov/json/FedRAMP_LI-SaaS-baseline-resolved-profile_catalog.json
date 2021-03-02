@@ -1,6 +1,6 @@
 {
   "catalog": {
-    "uuid": "27b285d4-59bb-4b90-bdcd-fdf6a0cd7ca2",
+    "uuid": "bcb68055-5c5a-4079-b954-90ce7908cd54",
     "metadata": {
       "title": "FedRAMP Tailored Low Impact Software as a Service (LI-SaaS) Baseline",
       "published": "2020-02-02T00:00:00.000-05:00",
@@ -10,7 +10,7 @@
       "props": [
         {
           "name": "resolution-timestamp",
-          "value": "2021-02-18T17:04:48.853772Z"
+          "value": "2021-03-02T20:44:33.901788Z"
         }
       ],
       "links": [

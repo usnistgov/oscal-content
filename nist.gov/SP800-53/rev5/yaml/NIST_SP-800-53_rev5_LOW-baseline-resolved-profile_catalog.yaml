@@ -1,6 +1,6 @@
 ---
 catalog:
-  uuid: d87002d5-ac5b-4cad-a46f-417e3dfc5875
+  uuid: 2cc8884e-e1b2-4792-a9e7-652f6e0f6fdd
   metadata:
     title: NIST Special Publication 800-53 Revision 5 LOW IMPACT BASELINE
     last-modified: 2021-01-14T09:04:29.242-05:00
@@ -8,7 +8,7 @@ catalog:
     oscal-version: 1.0.0-rc1
     props:
       - name: resolution-timestamp
-        value: 2021-02-18T17:06:27.963254Z
+        value: 2021-03-02T20:46:21.208249Z
     links:
       - href: NIST_SP-800-53_rev5_LOW-baseline_profile.xml
         rel: resolution-source
@@ -4476,7 +4476,7 @@ catalog:
             - id: cm-11_gdn
               name: guidance
               prose: If provided the necessary privileges, users can install software in
-                organizational systems. To maintain control over the software
+                organizational systems. To maintain control over the software
                 installed, organizations identify permitted and prohibited
                 actions regarding software installation. Permitted software
                 installations include updates and security patches to existing
@@ -4918,7 +4918,7 @@ catalog:
                 such training. For example, some individuals may only need to
                 know when and where to report for duty during contingency
                 operations and if normal duties are affected; system
-                administrators may require additional training on how to
+                administrators may require additional training on how to
                 establish systems at alternate processing and storage sites; and
                 organizational officials may receive more specific training on
                 how to conduct mission-essential functions in designated
@@ -5552,7 +5552,7 @@ catalog:
                     synchronous or cryptographic authenticators.
             - id: ia-2.12
               class: SP800-53-enhancement
-              title: Acceptance of Piv Credentials
+              title: Acceptance of PIV Credentials
               props:
                 - name: label
                   value: IA-2(12)
@@ -5972,7 +5972,7 @@ catalog:
                 types of systems, such as mobile devices with small displays,
                 the threat may be less significant and is balanced against the
                 increased likelihood of typographic input errors due to small
-                keyboards. Thus, the means for obscuring authentication feedback
+                keyboards. Thus, the means for obscuring authentication feedback
                 is selected accordingly. Obscuring authentication feedback
                 includes displaying asterisks when users type passwords into
                 input devices or displaying feedback for a very limited time
@@ -6087,7 +6087,7 @@ catalog:
           controls:
             - id: ia-8.1
               class: SP800-53-enhancement
-              title: Acceptance of Piv Credentials from Other Agencies
+              title: Acceptance of PIV Credentials from Other Agencies
               props:
                 - name: label
                   value: IA-8(1)
@@ -6452,8 +6452,8 @@ catalog:
                 responsibilities of organizational personnel to ensure that the
                 appropriate content and level of detail are included in such
                 training. For example, users may only need to know who to call
-                or how to recognize an incident; system administrators may
-                require additional training on how to handle incidents; and
+                or how to recognize an incident; system administrators may
+                require additional training on how to handle incidents; and
                 incident responders may receive more specific training on
                 forensics, data collection techniques, reporting, system
                 recovery, and system restoration. Incident response training
@@ -9049,10 +9049,6 @@ catalog:
               links:
                 - href: "#pl-4"
                   rel: required
-                - href: "#27847491-5ce1-4f6a-a1e4-9e483782f0ef"
-                  rel: reference
-                - href: "#30eb758a-2707-4bca-90ad-949a74d4eb16"
-                  rel: reference
                 - href: "#ac-22"
                   rel: related
                 - href: "#au-13"
@@ -9080,7 +9076,7 @@ catalog:
                       props:
                         - name: label
                           value: (c)
-                      prose: Use of organization-provided identifiers (e.g., email addresses) and
+                      prose: Use of organization-provided identifiers (e.g., email addresses) and
                         authentication secrets (e.g., passwords) for creating
                         accounts on external sites/applications.
                 - id: pl-4.1_gdn
@@ -10671,24 +10667,6 @@ catalog:
               links:
                 - href: "#ra-5"
                   rel: required
-                - href: "#8df72805-2e5c-4731-a73e-81db0f0318d0"
-                  rel: reference
-                - href: "#155f941a-cba9-4afd-9ca6-5d040d697ba9"
-                  rel: reference
-                - href: "#a21aef46-7330-48a0-b2e1-c5bb8b2dd11d"
-                  rel: reference
-                - href: "#4895b4cd-34c5-4667-bf8a-27d443c12047"
-                  rel: reference
-                - href: "#122177fa-c4ed-485d-8345-3082c0fb9a06"
-                  rel: reference
-                - href: "#8016d2ed-d30f-4416-9c45-0f42c7aa3232"
-                  rel: reference
-                - href: "#aa5d04e0-6090-4e17-84d4-b9963d55fc2c"
-                  rel: reference
-                - href: "#d2ebec9b-f868-4ee1-a2bd-0b2282aed248"
-                  rel: reference
-                - href: "#4c501da5-9d79-4cb6-ba80-97260e1ce327"
-                  rel: reference
               parts:
                 - id: ra-5.11_smt
                   name: statement
@@ -11264,7 +11242,7 @@ catalog:
           controls:
             - id: sa-4.10
               class: SP800-53-enhancement
-              title: Use of Approved Piv Products
+              title: Use of Approved PIV Products
               props:
                 - name: label
                   value: SA-4(10)
@@ -13549,7 +13527,7 @@ catalog:
                 coordinated effort across an organization to build trust
                 relationships and communicate with internal and external
                 stakeholders. Supply chain risk management (SCRM) activities
-                include identifying and assessing risks, determining appropriate
+                include identifying and assessing risks, determining appropriate
                 risk response actions, developing SCRM plans to document
                 response actions, and monitoring performance against plans. The
                 SCRM plan (at the system-level) is implementation specific,
@@ -13579,28 +13557,6 @@ catalog:
               links:
                 - href: "#sr-2"
                   rel: required
-                - href: "#4ff10ed3-d8fe-4246-99e3-443045e27482"
-                  rel: reference
-                - href: "#0f963c17-ab5a-432a-a867-91eac550309b"
-                  rel: reference
-                - href: "#21caa535-1154-4369-ba7b-32c309fee0f7"
-                  rel: reference
-                - href: "#031cc4b7-9adf-4835-98f1-f1ca493519cf"
-                  rel: reference
-                - href: "#08b07465-dbdc-48d6-8a0b-37279602ac16"
-                  rel: reference
-                - href: "#cec037f3-8aba-4c97-84b4-4082f9e515d2"
-                  rel: reference
-                - href: "#e3cc0520-a366-4fc9-abc2-5272db7e3564"
-                  rel: reference
-                - href: "#e8e84963-14fc-4c3a-be05-b412a5d37cd2"
-                  rel: reference
-                - href: "#276bd50a-7e58-48e5-a405-8c8cb91d7a5f"
-                  rel: reference
-                - href: "#e24b06cc-9129-4998-a76a-65c3d7a576ba"
-                  rel: reference
-                - href: "#38ff38f0-1366-4f50-a4c9-26a39aacee16"
-                  rel: reference
               parts:
                 - id: sr-2.1_smt
                   name: statement
@@ -14539,7 +14495,7 @@ catalog:
       - uuid: d744d9a3-73eb-4085-b9ff-79e82e9e2d6e
         title: NCPR
         citation:
-          text: National Institute of Standards and Technology (2020) *National Checklist
+          text: National Institute of Standards and Technology (2020) *National Checklist
             Program Repository*. Available at
         rlinks:
           - href: https://nvd.nist.gov/ncp/repository
@@ -14553,14 +14509,14 @@ catalog:
       - uuid: 84dc1b0c-acb7-4269-84c4-00dbabacd78c
         title: NIST CAVP
         citation:
-          text: National Institute of Standards and Technology (2020) *Cryptographic
+          text: National Institute of Standards and Technology (2020) *Cryptographic
             Algorithm Validation Program*. Available at
         rlinks:
           - href: https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program
       - uuid: 1acdc775-aafb-4d11-9341-dc6a822e9d38
         title: NIST CMVP
         citation:
-          text: National Institute of Standards and Technology (2020) *Cryptographic
+          text: National Institute of Standards and Technology (2020) *Cryptographic
             Module Validation Program*. Available at
         rlinks:
           - href: https://csrc.nist.gov/projects/cryptographic-module-validation-program
@@ -15273,7 +15229,7 @@ catalog:
       - uuid: 98498928-3ca3-44b3-8b1e-f48685373087
         title: USGCB
         citation:
-          text: National Institute of Standards and Technology (2020) *United States
+          text: National Institute of Standards and Technology (2020) *United States
             Government Configuration Baseline*. Available at
         rlinks:
           - href: https://csrc.nist.gov/projects/united-states-government-configuration-baseline

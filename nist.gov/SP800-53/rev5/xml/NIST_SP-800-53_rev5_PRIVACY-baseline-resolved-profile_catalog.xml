@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="6eae177f-5101-4f77-afb6-cd20c92cdbaf">
+         uuid="06d72c69-b1a7-4041-abf9-1d1faddac0d5">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 5 PRIVACY BASELINE</title>
       <last-modified>2021-01-14T09:04:29.16-05:00</last-modified>
       <version>Final</version>
       <oscal-version>1.0.0-rc1</oscal-version>
-      <prop name="resolution-timestamp">2021-02-18T17:06:49.058489Z</prop>
+      <prop name="resolution-timestamp">2021-03-02T20:46:44.204223Z</prop>
       <link rel="resolution-source"
             href="NIST_SP-800-53_rev5_PRIVACY-baseline_profile.xml"/>
       <role id="creator">
@@ -354,9 +354,6 @@
             <prop name="label">AT-3(5)</prop>
             <prop name="sort-id">at-03.05</prop>
             <link rel="required" href="#at-3"/>
-            <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-            <link rel="reference" href="#511f6832-23ca-49a3-8c0f-ce493373cab8"/>
-            <link rel="reference" href="#276bd50a-7e58-48e5-a405-8c8cb91d7a5f"/>
             <link rel="related" href="#pt-2"/>
             <link rel="related" href="#pt-3"/>
             <link rel="related" href="#pt-5"/>
@@ -1213,15 +1210,13 @@
             </part>
          </part>
          <part name="guidance" id="ir-2_gdn">
-            <p>Incident response training is associated with the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail are included in such training. For example, users may only need to know who to call or how to recognize an incident; system administrators may require additional training on how to handle incidents; and incident responders may receive more specific training on forensics, data collection techniques, reporting, system recovery, and system restoration. Incident response training includes user training in identifying and reporting suspicious activities from external and internal sources. Incident response training for users may be provided as part of <a href="#at-2">AT-2</a> or <a href="#at-3">AT-3</a>. Events that may precipitate an update to incident response training content include, but are not limited to, incident response plan testing or response to an actual incident (lessons learned), assessment or audit findings, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines.</p>
+            <p>Incident response training is associated with the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail are included in such training. For example, users may only need to know who to call or how to recognize an incident; system administrators may require additional training on how to handle incidents; and incident responders may receive more specific training on forensics, data collection techniques, reporting, system recovery, and system restoration. Incident response training includes user training in identifying and reporting suspicious activities from external and internal sources. Incident response training for users may be provided as part of <a href="#at-2">AT-2</a> or <a href="#at-3">AT-3</a>. Events that may precipitate an update to incident response training content include, but are not limited to, incident response plan testing or response to an actual incident (lessons learned), assessment or audit findings, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines.</p>
          </part>
          <control class="SP800-53-enhancement" id="ir-2.3">
             <title>Breach</title>
             <prop name="label">IR-2(3)</prop>
             <prop name="sort-id">ir-02.03</prop>
             <link rel="required" href="#ir-2"/>
-            <link rel="reference" href="#5f4705ac-8d17-438c-b23a-ac7f12362ae4"/>
-            <link rel="reference" href="#511f6832-23ca-49a3-8c0f-ce493373cab8"/>
             <part name="statement" id="ir-2.3_smt">
                <p>Provide incident response training on how to identify and respond to a breach, including the organization’s process for reporting a breach.</p>
             </part>
@@ -1497,9 +1492,6 @@
             <prop name="label">IR-8(1)</prop>
             <prop name="sort-id">ir-08.01</prop>
             <link rel="required" href="#ir-8"/>
-            <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-            <link rel="reference" href="#49b8aa2d-a88c-4bff-9f20-876ccb8f7dcb"/>
-            <link rel="reference" href="#5f4705ac-8d17-438c-b23a-ac7f12362ae4"/>
             <link rel="related" href="#pt-1"/>
             <link rel="related" href="#pt-2"/>
             <link rel="related" href="#pt-3"/>
@@ -1948,8 +1940,6 @@
             <prop name="label">PL-4(1)</prop>
             <prop name="sort-id">pl-04.01</prop>
             <link rel="required" href="#pl-4"/>
-            <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-            <link rel="reference" href="#30eb758a-2707-4bca-90ad-949a74d4eb16"/>
             <link rel="related" href="#ac-22"/>
             <link rel="related" href="#au-13"/>
             <part name="statement" id="pl-4.1_smt">
@@ -1964,7 +1954,7 @@
                </part>
                <part name="item" id="pl-4.1_smt.c">
                   <prop name="label">(c)</prop>
-                  <p>Use of organization-provided identifiers (e.g., email addresses) and authentication secrets (e.g., passwords) for creating accounts on external sites/applications.</p>
+                  <p>Use of organization-provided identifiers (e.g., email addresses) and authentication secrets (e.g., passwords) for creating accounts on external sites/applications.</p>
                </part>
             </part>
             <part name="guidance" id="pl-4.1_gdn">
@@ -2522,9 +2512,6 @@
             <prop name="label">PM-20(1)</prop>
             <prop name="sort-id">pm-20.01</prop>
             <link rel="required" href="#pm-20"/>
-            <link rel="reference" href="#18e71fec-c6fd-475a-925a-5d8495cf8455"/>
-            <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-            <link rel="reference" href="#206a3284-6a7e-423c-8ea9-25b22542541d"/>
             <part name="statement" id="pm-20.1_smt">
                <p>Develop and post privacy policies on all external-facing websites, mobile applications, and other digital services, that:</p>
                <part name="item" id="pm-20.1_smt.a">
@@ -3226,9 +3213,6 @@
             <prop name="label">PT-5(2)</prop>
             <prop name="sort-id">pt-05.02</prop>
             <link rel="required" href="#pt-5"/>
-            <link rel="reference" href="#18e71fec-c6fd-475a-925a-5d8495cf8455"/>
-            <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-            <link rel="reference" href="#3671ff20-c17c-44d6-8a88-7de203fa74aa"/>
             <link rel="related" href="#pt-6"/>
             <part name="statement" id="pt-5.2_smt">
                <p>Include Privacy Act statements on forms that collect information that will be maintained in a Privacy Act system of records, or provide Privacy Act statements on separate forms that can be retained by individuals.</p>
@@ -3292,8 +3276,6 @@
             <prop name="label">PT-6(2)</prop>
             <prop name="sort-id">pt-06.02</prop>
             <link rel="required" href="#pt-6"/>
-            <link rel="reference" href="#18e71fec-c6fd-475a-925a-5d8495cf8455"/>
-            <link rel="reference" href="#3671ff20-c17c-44d6-8a88-7de203fa74aa"/>
             <part name="statement" id="pt-6.2_smt">
                <p>Review all Privacy Act exemptions claimed for the system of records at <insert param-id="pt-6.2_prm_1"/> to ensure they remain appropriate and necessary in accordance with law, that they have been promulgated as regulations, and that they are accurately described in the system of records notice.</p>
             </part>
@@ -3353,10 +3335,6 @@
             <prop name="label">PT-7(2)</prop>
             <prop name="sort-id">pt-07.02</prop>
             <link rel="required" href="#pt-7"/>
-            <link rel="reference" href="#18e71fec-c6fd-475a-925a-5d8495cf8455"/>
-            <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-            <link rel="reference" href="#3671ff20-c17c-44d6-8a88-7de203fa74aa"/>
-            <link rel="reference" href="#c28ae9a8-1121-42a9-a85e-00cfcc9b9a94"/>
             <part name="statement" id="pt-7.2_smt">
                <p>Prohibit the processing of information describing how any individual exercises rights guaranteed by the First Amendment unless expressly authorized by statute or by the individual or unless pertinent to and within the scope of an authorized law enforcement activity.</p>
             </part>
@@ -4189,8 +4167,6 @@
             <prop name="label">SI-12(3)</prop>
             <prop name="sort-id">si-12.03</prop>
             <link rel="required" href="#si-12"/>
-            <link rel="reference" href="#e922fc50-b1f9-469f-92ef-ed7d9803611c"/>
-            <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
             <part name="statement" id="si-12.3_smt">
                <p>Use the following techniques to dispose of, destroy, or erase information following the retention period: <insert param-id="si-12.3_prm_1"/>. </p>
             </part>

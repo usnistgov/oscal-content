@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="a904f3f4-97bf-4826-bf73-6335ee4f90ca">
+         uuid="ea99baa3-497d-4c1a-bda5-b54b6e5e8757">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 5 HIGH IMPACT BASELINE</title>
       <last-modified>2021-01-14T09:04:29.356-05:00</last-modified>
       <version>Final</version>
       <oscal-version>1.0.0-rc1</oscal-version>
-      <prop name="resolution-timestamp">2021-02-18T17:06:17.281727Z</prop>
+      <prop name="resolution-timestamp">2021-03-02T20:46:09.464006Z</prop>
       <link rel="resolution-source"
             href="NIST_SP-800-53_rev5_HIGH-baseline_profile.xml"/>
       <role id="creator">
@@ -439,9 +439,6 @@
             <prop name="label">AC-2(13)</prop>
             <prop name="sort-id">ac-02.13</prop>
             <link rel="required" href="#ac-2"/>
-            <link rel="reference" href="#2956e175-f674-43f4-b1b9-e074ad9fc39c"/>
-            <link rel="reference" href="#388a3aa2-5d85-4bad-b8a3-77db80d63c4f"/>
-            <link rel="reference" href="#53df282b-8b3f-483a-bad1-6a8b8ac00114"/>
             <link rel="related" href="#au-6"/>
             <link rel="related" href="#si-4"/>
             <part name="statement" id="ac-2.13_smt">
@@ -955,7 +952,7 @@
                   <b>Conceal, via the device lock, information previously visible on the display with a publicly viewable image</b>.</p>
             </part>
             <part name="guidance" id="ac-11.1_gdn">
-               <p>The pattern-hiding display can include static or dynamic images, such as patterns used with screen savers, photographic images, solid colors, clock, battery life indicator, or a blank screen with the caveat that controlled unclassified information is not displayed.</p>
+               <p>The pattern-hiding display can include static or dynamic images, such as patterns used with screen savers, photographic images, solid colors, clock, battery life indicator, or a blank screen with the caveat that controlled unclassified information is not displayed.</p>
             </part>
          </control>
       </control>
@@ -1197,8 +1194,6 @@
             <prop name="label">AC-18(5)</prop>
             <prop name="sort-id">ac-18.05</prop>
             <link rel="required" href="#ac-18"/>
-            <link rel="reference" href="#25e3e57b-dc2f-4934-af9b-050b020c6f0e"/>
-            <link rel="reference" href="#03fb73bc-1b12-4182-bd96-e5719254ea61"/>
             <link rel="related" href="#pe-19"/>
             <part name="statement" id="ac-18.5_smt">
                <p>Select radio antennas and calibrate transmission power levels to reduce the probability that signals from wireless access points can be received outside of organization-controlled boundaries.</p>
@@ -1265,8 +1260,6 @@
             <prop name="label">AC-19(5)</prop>
             <prop name="sort-id">ac-19.05</prop>
             <link rel="required" href="#ac-19"/>
-            <link rel="reference" href="#42e37e51-7cc0-4ffa-81c9-0ac942da7e99"/>
-            <link rel="reference" href="#0f66be67-85e7-4ca6-bd19-39453e9f4394"/>
             <link rel="related" href="#sc-12"/>
             <link rel="related" href="#sc-13"/>
             <link rel="related" href="#sc-28"/>
@@ -3271,8 +3264,6 @@
             <prop name="label">CM-2(7)</prop>
             <prop name="sort-id">cm-02.07</prop>
             <link rel="required" href="#cm-2"/>
-            <link rel="reference" href="#0f66be67-85e7-4ca6-bd19-39453e9f4394"/>
-            <link rel="reference" href="#20db4e66-e257-450c-b2e4-2bb9a62a2c88"/>
             <link rel="related" href="#mp-4"/>
             <link rel="related" href="#mp-5"/>
             <part name="statement" id="cm-2.7_smt">
@@ -3511,7 +3502,6 @@
             <prop name="label">CM-4(2)</prop>
             <prop name="sort-id">cm-04.02</prop>
             <link rel="required" href="#cm-4"/>
-            <link rel="reference" href="#20db4e66-e257-450c-b2e4-2bb9a62a2c88"/>
             <link rel="related" href="#sa-11"/>
             <link rel="related" href="#sc-3"/>
             <link rel="related" href="#si-6"/>
@@ -4101,7 +4091,7 @@
             </part>
          </part>
          <part name="guidance" id="cm-11_gdn">
-            <p>If provided the necessary privileges, users can install software in organizational systems. To maintain control over the software installed, organizations identify permitted and prohibited actions regarding software installation. Permitted software installations include updates and security patches to existing software and downloading new applications from organization-approved <q>app stores.</q> Prohibited software installations include software with unknown or suspect pedigrees or software that organizations consider potentially malicious. Policies selected for governing user-installed software are organization-developed or provided by some external entity. Policy enforcement methods can include procedural methods and automated methods.</p>
+            <p>If provided the necessary privileges, users can install software in organizational systems. To maintain control over the software installed, organizations identify permitted and prohibited actions regarding software installation. Permitted software installations include updates and security patches to existing software and downloading new applications from organization-approved <q>app stores.</q> Prohibited software installations include software with unknown or suspect pedigrees or software that organizations consider potentially malicious. Policies selected for governing user-installed software are organization-developed or provided by some external entity. Policy enforcement methods can include procedural methods and automated methods.</p>
          </part>
       </control>
       <control class="SP800-53" id="cm-12">
@@ -4158,9 +4148,6 @@
             <prop name="label">CM-12(1)</prop>
             <prop name="sort-id">cm-12.01</prop>
             <link rel="required" href="#cm-12"/>
-            <link rel="reference" href="#628d22a1-6a11-4784-bc59-5cd9497b5445"/>
-            <link rel="reference" href="#e72fde0b-6fc2-497e-a9db-d8fce5a11b8a"/>
-            <link rel="reference" href="#9be5d661-421f-41ad-854e-86f98b811891"/>
             <part name="statement" id="cm-12.1_smt">
                <p>Use automated tools to identify <insert param-id="cm-12.1_prm_1"/> on <insert param-id="cm-12.1_prm_2"/> to ensure controls are in place to protect organizational information and individual privacy.</p>
             </part>
@@ -4442,8 +4429,6 @@
             <prop name="label">CP-2(8)</prop>
             <prop name="sort-id">cp-02.08</prop>
             <link rel="required" href="#cp-2"/>
-            <link rel="reference" href="#bc39f179-c735-4da2-b7a7-b2b622119755"/>
-            <link rel="reference" href="#d4296805-2dca-4c63-a95f-eeccaa826aec"/>
             <link rel="related" href="#cm-8"/>
             <link rel="related" href="#ra-9"/>
             <part name="statement" id="cp-2.8_smt">
@@ -4504,7 +4489,7 @@
             </part>
          </part>
          <part name="guidance" id="cp-3_gdn">
-            <p>Contingency training provided by organizations is linked to the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail is included in such training. For example, some individuals may only need to know when and where to report for duty during contingency operations and if normal duties are affected; system administrators may require additional training on how to establish systems at alternate processing and storage sites; and organizational officials may receive more specific training on how to conduct mission-essential functions in designated off-site locations and how to establish communications with other governmental entities for purposes of coordination on contingency-related activities. Training for contingency roles or responsibilities reflects the specific continuity requirements in the contingency plan. Events that may precipitate an update to contingency training content include, but are not limited to, contingency plan testing or an actual contingency (lessons learned), assessment or audit findings, security incidents or breaches, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. At the discretion of the organization, participation in a contingency plan test or exercise, including lessons learned sessions subsequent to the test or exercise, may satisfy contingency plan training requirements.</p>
+            <p>Contingency training provided by organizations is linked to the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail is included in such training. For example, some individuals may only need to know when and where to report for duty during contingency operations and if normal duties are affected; system administrators may require additional training on how to establish systems at alternate processing and storage sites; and organizational officials may receive more specific training on how to conduct mission-essential functions in designated off-site locations and how to establish communications with other governmental entities for purposes of coordination on contingency-related activities. Training for contingency roles or responsibilities reflects the specific continuity requirements in the contingency plan. Events that may precipitate an update to contingency training content include, but are not limited to, contingency plan testing or an actual contingency (lessons learned), assessment or audit findings, security incidents or breaches, or changes in laws, executive orders, directives, regulations, policies, standards, and guidelines. At the discretion of the organization, participation in a contingency plan test or exercise, including lessons learned sessions subsequent to the test or exercise, may satisfy contingency plan training requirements.</p>
          </part>
          <control class="SP800-53-enhancement" id="cp-3.1">
             <title>Simulated Events</title>
@@ -4654,7 +4639,6 @@
             <prop name="label">CP-6(3)</prop>
             <prop name="sort-id">cp-06.03</prop>
             <link rel="required" href="#cp-6"/>
-            <link rel="reference" href="#bc39f179-c735-4da2-b7a7-b2b622119755"/>
             <link rel="related" href="#ra-3"/>
             <part name="statement" id="cp-6.3_smt">
                <p>Identify potential accessibility problems to the alternate storage site in the event of an area-wide disruption or disaster and outline explicit mitigation actions.</p>
@@ -4979,11 +4963,6 @@
             <prop name="label">CP-9(8)</prop>
             <prop name="sort-id">cp-09.08</prop>
             <link rel="required" href="#cp-9"/>
-            <link rel="reference" href="#678e3d6c-150b-4393-aec5-6e3481eb1e00"/>
-            <link rel="reference" href="#7c37a38d-21d7-40d8-bc3d-b5e27eac17e1"/>
-            <link rel="reference" href="#bc39f179-c735-4da2-b7a7-b2b622119755"/>
-            <link rel="reference" href="#3653e316-8923-430e-8943-b3b2b2562fc6"/>
-            <link rel="reference" href="#2494df28-9049-4196-b233-540e7440993f"/>
             <link rel="related" href="#sc-12"/>
             <link rel="related" href="#sc-13"/>
             <link rel="related" href="#sc-28"/>
@@ -5242,7 +5221,7 @@
             </part>
          </control>
          <control class="SP800-53-enhancement" id="ia-2.12">
-            <title>Acceptance of Piv Credentials</title>
+            <title>Acceptance of PIV Credentials</title>
             <prop name="label">IA-2(12)</prop>
             <prop name="sort-id">ia-02.12</prop>
             <link rel="required" href="#ia-2"/>
@@ -5546,7 +5525,7 @@
             <p>Obscure feedback of authentication information during the authentication process to protect the information from possible exploitation and use by unauthorized individuals.</p>
          </part>
          <part name="guidance" id="ia-6_gdn">
-            <p>Authentication feedback from systems does not provide information that would allow unauthorized individuals to compromise authentication mechanisms. For some types of systems, such as desktops or notebooks with relatively large monitors, the threat (referred to as shoulder surfing) may be significant. For other types of systems, such as mobile devices with small displays, the threat may be less significant and is balanced against the increased likelihood of typographic input errors due to small keyboards. Thus, the means for obscuring authentication feedback is selected accordingly. Obscuring authentication feedback includes displaying asterisks when users type passwords into input devices or displaying feedback for a very limited time before obscuring it.</p>
+            <p>Authentication feedback from systems does not provide information that would allow unauthorized individuals to compromise authentication mechanisms. For some types of systems, such as desktops or notebooks with relatively large monitors, the threat (referred to as shoulder surfing) may be significant. For other types of systems, such as mobile devices with small displays, the threat may be less significant and is balanced against the increased likelihood of typographic input errors due to small keyboards. Thus, the means for obscuring authentication feedback is selected accordingly. Obscuring authentication feedback includes displaying asterisks when users type passwords into input devices or displaying feedback for a very limited time before obscuring it.</p>
          </part>
       </control>
       <control class="SP800-53" id="ia-7">
@@ -5599,7 +5578,7 @@
             <p>Non-organizational users include system users other than organizational users explicitly covered by <a href="#ia-2">IA-2</a>. Non-organizational users are uniquely identified and authenticated for accesses other than those explicitly identified and documented in <a href="#ac-14">AC-14</a>. Identification and authentication of non-organizational users accessing federal systems may be required to protect federal, proprietary, or privacy-related information (with exceptions noted for national security systems). Organizations consider many factors—including security, privacy, scalability, and practicality—when balancing the need to ensure ease of use for access to federal information and systems with the need to protect and adequately mitigate risk.</p>
          </part>
          <control class="SP800-53-enhancement" id="ia-8.1">
-            <title>Acceptance of Piv Credentials from Other Agencies</title>
+            <title>Acceptance of PIV Credentials from Other Agencies</title>
             <prop name="label">IA-8(1)</prop>
             <prop name="sort-id">ia-08.01</prop>
             <link rel="required" href="#ia-8"/>
@@ -5894,7 +5873,7 @@
             </part>
          </part>
          <part name="guidance" id="ir-2_gdn">
-            <p>Incident response training is associated with the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail are included in such training. For example, users may only need to know who to call or how to recognize an incident; system administrators may require additional training on how to handle incidents; and incident responders may receive more specific training on forensics, data collection techniques, reporting, system recovery, and system restoration. Incident response training includes user training in identifying and reporting suspicious activities from external and internal sources. Incident response training for users may be provided as part of <a href="#at-2">AT-2</a> or <a href="#at-3">AT-3</a>. Events that may precipitate an update to incident response training content include, but are not limited to, incident response plan testing or response to an actual incident (lessons learned), assessment or audit findings, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines.</p>
+            <p>Incident response training is associated with the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail are included in such training. For example, users may only need to know who to call or how to recognize an incident; system administrators may require additional training on how to handle incidents; and incident responders may receive more specific training on forensics, data collection techniques, reporting, system recovery, and system restoration. Incident response training includes user training in identifying and reporting suspicious activities from external and internal sources. Incident response training for users may be provided as part of <a href="#at-2">AT-2</a> or <a href="#at-3">AT-3</a>. Events that may precipitate an update to incident response training content include, but are not limited to, incident response plan testing or response to an actual incident (lessons learned), assessment or audit findings, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines.</p>
          </part>
          <control class="SP800-53-enhancement" id="ir-2.1">
             <title>Simulated Events</title>
@@ -6094,7 +6073,6 @@
             <prop name="label">IR-5(1)</prop>
             <prop name="sort-id">ir-05.01</prop>
             <link rel="required" href="#ir-5"/>
-            <link rel="reference" href="#49b8aa2d-a88c-4bff-9f20-876ccb8f7dcb"/>
             <part name="statement" id="ir-5.1_smt">
                <p>Track incidents and collect and analyze incident information using <insert param-id="ir-5.1_prm_1"/>.</p>
             </part>
@@ -6157,10 +6135,6 @@
             <prop name="label">IR-6(3)</prop>
             <prop name="sort-id">ir-06.03</prop>
             <link rel="required" href="#ir-6"/>
-            <link rel="reference" href="#4ff10ed3-d8fe-4246-99e3-443045e27482"/>
-            <link rel="reference" href="#0f963c17-ab5a-432a-a867-91eac550309b"/>
-            <link rel="reference" href="#40b78258-c892-480e-9af8-77ac36648301"/>
-            <link rel="reference" href="#49b8aa2d-a88c-4bff-9f20-876ccb8f7dcb"/>
             <link rel="related" href="#sr-8"/>
             <part name="statement" id="ir-6.3_smt">
                <p>Provide incident information to the provider of the product or service and other organizations involved in the supply chain or supply chain governance for systems or system components related to the incident.</p>
@@ -6454,8 +6428,6 @@
             <prop name="label">MA-2(2)</prop>
             <prop name="sort-id">ma-02.02</prop>
             <link rel="required" href="#ma-2"/>
-            <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-            <link rel="reference" href="#4c501da5-9d79-4cb6-ba80-97260e1ce327"/>
             <link rel="related" href="#ma-3"/>
             <part name="statement" id="ma-2.2_smt">
                <part name="item" id="ma-2.2_smt.a">
@@ -8098,8 +8070,6 @@
             <prop name="label">PL-4(1)</prop>
             <prop name="sort-id">pl-04.01</prop>
             <link rel="required" href="#pl-4"/>
-            <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-            <link rel="reference" href="#30eb758a-2707-4bca-90ad-949a74d4eb16"/>
             <link rel="related" href="#ac-22"/>
             <link rel="related" href="#au-13"/>
             <part name="statement" id="pl-4.1_smt">
@@ -8114,7 +8084,7 @@
                </part>
                <part name="item" id="pl-4.1_smt.c">
                   <prop name="label">(c)</prop>
-                  <p>Use of organization-provided identifiers (e.g., email addresses) and authentication secrets (e.g., passwords) for creating accounts on external sites/applications.</p>
+                  <p>Use of organization-provided identifiers (e.g., email addresses) and authentication secrets (e.g., passwords) for creating accounts on external sites/applications.</p>
                </part>
             </part>
             <part name="guidance" id="pl-4.1_gdn">
@@ -9052,15 +9022,6 @@
             <prop name="label">RA-5(11)</prop>
             <prop name="sort-id">ra-05.11</prop>
             <link rel="required" href="#ra-5"/>
-            <link rel="reference" href="#8df72805-2e5c-4731-a73e-81db0f0318d0"/>
-            <link rel="reference" href="#155f941a-cba9-4afd-9ca6-5d040d697ba9"/>
-            <link rel="reference" href="#a21aef46-7330-48a0-b2e1-c5bb8b2dd11d"/>
-            <link rel="reference" href="#4895b4cd-34c5-4667-bf8a-27d443c12047"/>
-            <link rel="reference" href="#122177fa-c4ed-485d-8345-3082c0fb9a06"/>
-            <link rel="reference" href="#8016d2ed-d30f-4416-9c45-0f42c7aa3232"/>
-            <link rel="reference" href="#aa5d04e0-6090-4e17-84d4-b9963d55fc2c"/>
-            <link rel="reference" href="#d2ebec9b-f868-4ee1-a2bd-0b2282aed248"/>
-            <link rel="reference" href="#4c501da5-9d79-4cb6-ba80-97260e1ce327"/>
             <part name="statement" id="ra-5.11_smt">
                <p>Establish a public reporting channel for receiving reports of vulnerabilities in organizational systems and system components.</p>
             </part>
@@ -9463,7 +9424,7 @@
             </part>
          </control>
          <control class="SP800-53-enhancement" id="sa-4.10">
-            <title>Use of Approved Piv Products</title>
+            <title>Use of Approved PIV Products</title>
             <prop name="label">SA-4(10)</prop>
             <prop name="sort-id">sa-04.10</prop>
             <link rel="required" href="#sa-4"/>
@@ -11425,7 +11386,6 @@
             <prop name="label">SI-5(1)</prop>
             <prop name="sort-id">si-05.01</prop>
             <link rel="required" href="#si-5"/>
-            <link rel="reference" href="#155f941a-cba9-4afd-9ca6-5d040d697ba9"/>
             <part name="statement" id="si-5.1_smt">
                <p>Broadcast security alert and advisory information throughout the organization using <insert param-id="si-5.1_prm_1"/>.</p>
             </part>
@@ -11944,7 +11904,7 @@
             </part>
          </part>
          <part name="guidance" id="sr-2_gdn">
-            <p>The dependence on products, systems, and services from external providers, as well as the nature of the relationships with those providers, present an increasing level of risk to an organization. Threat actions that may increase security or privacy risks include unauthorized production, the insertion or use of counterfeits, tampering, theft, insertion of malicious software and hardware, and poor manufacturing and development practices in the supply chain. Supply chain risks can be endemic or systemic within a system element or component, a system, an organization, a sector, or the Nation. Managing supply chain risk is a complex, multifaceted undertaking that requires a coordinated effort across an organization to build trust relationships and communicate with internal and external stakeholders. Supply chain risk management (SCRM) activities include identifying and assessing risks, determining appropriate risk response actions, developing SCRM plans to document response actions, and monitoring performance against plans. The SCRM plan (at the system-level) is implementation specific, providing policy implementation, requirements, constraints and implications. It can either be stand-alone, or incorporated into system security and privacy plans. The SCRM plan addresses managing, implementation, and monitoring of SCRM controls and the development/sustainment of systems across the SDLC to support mission and business functions.</p>
+            <p>The dependence on products, systems, and services from external providers, as well as the nature of the relationships with those providers, present an increasing level of risk to an organization. Threat actions that may increase security or privacy risks include unauthorized production, the insertion or use of counterfeits, tampering, theft, insertion of malicious software and hardware, and poor manufacturing and development practices in the supply chain. Supply chain risks can be endemic or systemic within a system element or component, a system, an organization, a sector, or the Nation. Managing supply chain risk is a complex, multifaceted undertaking that requires a coordinated effort across an organization to build trust relationships and communicate with internal and external stakeholders. Supply chain risk management (SCRM) activities include identifying and assessing risks, determining appropriate risk response actions, developing SCRM plans to document response actions, and monitoring performance against plans. The SCRM plan (at the system-level) is implementation specific, providing policy implementation, requirements, constraints and implications. It can either be stand-alone, or incorporated into system security and privacy plans. The SCRM plan addresses managing, implementation, and monitoring of SCRM controls and the development/sustainment of systems across the SDLC to support mission and business functions.</p>
             <p>Because supply chains can differ significantly across and within organizations, SCRM plans are tailored to the individual program, organizational, and operational contexts. Tailored SCRM plans provide the basis for determining whether a technology, service, system component, or system is fit for purpose, and as such, the controls need to be tailored accordingly. Tailored SCRM plans help organizations focus their resources on the most critical mission and business functions based on mission and business requirements and their risk environment. Supply chain risk management plans include an expression of the supply chain risk tolerance for the organization, acceptable supply chain risk mitigation strategies or controls, a process for consistently evaluating and monitoring supply chain risk, approaches for implementing and communicating the plan, a description of and justification for supply chain risk mitigation measures taken, and associated roles and responsibilities. Finally, supply chain risk management plans address requirements for developing trustworthy, secure, privacy-protective, and resilient system components and systems, including the application of the security design principles implemented as part of life cycle-based systems security engineering processes (see <a href="#sa-8">SA-8</a>).</p>
          </part>
          <control class="SP800-53-enhancement" id="sr-2.1">
@@ -11958,17 +11918,6 @@
             <prop name="label">SR-2(1)</prop>
             <prop name="sort-id">sr-02.01</prop>
             <link rel="required" href="#sr-2"/>
-            <link rel="reference" href="#4ff10ed3-d8fe-4246-99e3-443045e27482"/>
-            <link rel="reference" href="#0f963c17-ab5a-432a-a867-91eac550309b"/>
-            <link rel="reference" href="#21caa535-1154-4369-ba7b-32c309fee0f7"/>
-            <link rel="reference" href="#031cc4b7-9adf-4835-98f1-f1ca493519cf"/>
-            <link rel="reference" href="#08b07465-dbdc-48d6-8a0b-37279602ac16"/>
-            <link rel="reference" href="#cec037f3-8aba-4c97-84b4-4082f9e515d2"/>
-            <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
-            <link rel="reference" href="#e8e84963-14fc-4c3a-be05-b412a5d37cd2"/>
-            <link rel="reference" href="#276bd50a-7e58-48e5-a405-8c8cb91d7a5f"/>
-            <link rel="reference" href="#e24b06cc-9129-4998-a76a-65c3d7a576ba"/>
-            <link rel="reference" href="#38ff38f0-1366-4f50-a4c9-26a39aacee16"/>
             <part name="statement" id="sr-2.1_smt">
                <p>Establish a supply chain risk management team consisting of <insert param-id="sr-2.1_prm_1"/> to lead and support the following SCRM activities: <insert param-id="sr-2.1_prm_2"/>.</p>
             </part>
@@ -12174,7 +12123,6 @@
             <prop name="label">SR-9(1)</prop>
             <prop name="sort-id">sr-09.01</prop>
             <link rel="required" href="#sr-9"/>
-            <link rel="reference" href="#15a95e24-65b6-4686-bc18-90855a10457d"/>
             <link rel="related" href="#sa-3"/>
             <part name="statement" id="sr-9.1_smt">
                <p>Employ anti-tamper technologies, tools, and techniques throughout the system development life cycle.</p>
@@ -12685,7 +12633,7 @@
       <resource uuid="d744d9a3-73eb-4085-b9ff-79e82e9e2d6e">
          <title>NCPR</title>
          <citation>
-            <text>National Institute of Standards and Technology (2020) <i>National Checklist Program Repository</i>. Available at</text>
+            <text>National Institute of Standards and Technology (2020) <i>National Checklist Program Repository</i>. Available at</text>
          </citation>
          <rlink href="https://nvd.nist.gov/ncp/repository"/>
       </resource>
@@ -12699,14 +12647,14 @@
       <resource uuid="84dc1b0c-acb7-4269-84c4-00dbabacd78c">
          <title>NIST CAVP</title>
          <citation>
-            <text>National Institute of Standards and Technology (2020) <i>Cryptographic Algorithm Validation Program</i>. Available at</text>
+            <text>National Institute of Standards and Technology (2020) <i>Cryptographic Algorithm Validation Program</i>. Available at</text>
          </citation>
          <rlink href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program"/>
       </resource>
       <resource uuid="1acdc775-aafb-4d11-9341-dc6a822e9d38">
          <title>NIST CMVP</title>
          <citation>
-            <text>National Institute of Standards and Technology (2020) <i>Cryptographic Module Validation Program</i>. Available at</text>
+            <text>National Institute of Standards and Technology (2020) <i>Cryptographic Module Validation Program</i>. Available at</text>
          </citation>
          <rlink href="https://csrc.nist.gov/projects/cryptographic-module-validation-program"/>
       </resource>
@@ -13336,7 +13284,7 @@
       <resource uuid="98498928-3ca3-44b3-8b1e-f48685373087">
          <title>USGCB</title>
          <citation>
-            <text>National Institute of Standards and Technology (2020) <i>United States Government Configuration Baseline</i>. Available at</text>
+            <text>National Institute of Standards and Technology (2020) <i>United States Government Configuration Baseline</i>. Available at</text>
          </citation>
          <rlink href="https://csrc.nist.gov/projects/united-states-government-configuration-baseline"/>
       </resource>
