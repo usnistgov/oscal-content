@@ -1,6 +1,6 @@
 {
   "catalog": {
-    "uuid": "06d72c69-b1a7-4041-abf9-1d1faddac0d5",
+    "uuid": "a53c1356-3f00-4fe0-906c-067cc9aeae10",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 5 PRIVACY BASELINE",
       "last-modified": "2021-01-14T09:04:29.16-05:00",
@@ -9,7 +9,7 @@
       "props": [
         {
           "name": "resolution-timestamp",
-          "value": "2021-03-02T20:46:44.204223Z"
+          "value": "2021-03-15T22:59:12.502085Z"
         }
       ],
       "links": [

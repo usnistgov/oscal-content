@@ -1,10 +1,10 @@
 {
   "catalog": {
-    "uuid": "62f21617-b40f-4e89-bf3b-01b04b68f473",
+    "uuid": "30ab38d6-586a-4d38-9881-c9367ba5267a",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Federal Information Systems and Organizations",
-      "last-modified": "2021-02-24T16:43:10.691-05:00",
-      "version": "Revision 5",
+      "last-modified": "2021-03-15T12:21:40.694-04:00",
+      "version": "5.0.1",
       "oscal-version": "1.0.0-rc1",
       "props": [
         {
@@ -43176,33 +43176,29 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Develop an organization-wide strategy for managing supply chain risks associated with the development, acquisition, maintenance, and disposal of systems, system components, and system services;",
-                    "parts": [
+                    "prose": "Develop an organization-wide strategy for managing supply chain risks associated with the development, acquisition, maintenance, and disposal of systems, system components, and system services;"
+                  },
+                  {
+                    "id": "pm-30_smt.b",
+                    "name": "item",
+                    "props": [
                       {
-                        "id": "pm-30_smt.a.1",
-                        "name": "item",
-                        "props": [
-                          {
-                            "name": "label",
-                            "value": "1."
-                          }
-                        ],
-                        "prose": "Implement the supply chain risk management strategy consistently across the organization; and",
-                        "parts": [
-                          {
-                            "id": "pm-30_smt.a.1.a",
-                            "name": "item",
-                            "props": [
-                              {
-                                "name": "label",
-                                "value": "(a)"
-                              }
-                            ],
-                            "prose": "Review and update the supply chain risk management strategy on {{ pm-30_prm_1 }} or as required, to address organizational changes."
-                          }
-                        ]
+                        "name": "label",
+                        "value": "b."
                       }
-                    ]
+                    ],
+                    "prose": "Implement the supply chain risk management strategy consistently across the organization; and"
+                  },
+                  {
+                    "id": "pm-30_smt.c",
+                    "name": "item",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "c."
+                      }
+                    ],
+                    "prose": "Review and update the supply chain risk management strategy on {{ pm-30_prm_1 }} or as required, to address organizational changes."
                   }
                 ]
               },
