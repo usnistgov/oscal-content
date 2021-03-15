@@ -113,7 +113,7 @@
             <!--<sch:assert test="o:part/@name='objective' or $withdrawn">control with name='SP800-53' must have a child 'part' with @name='objective'</sch:assert>-->
         </sch:rule>
         <sch:rule context="o:part[@name='item']">
-            <sch:assert test="o:prop/@name='label'">part with name='item' must have a child prop with @name='label'</sch:assert>
+            <sch:assert test="o:prop/@name='label'">part with name='item' must have a child prop with @name='label'</sch:assert>            <sch:assert test="exists(../o:part[@name='item'][2])" role="warning">Solitary item.</sch:assert>
         </sch:rule>
         <sch:rule context="o:part[@name='assessment']">
             <sch:assert test="o:prop/@name='method'">part with name='assessment' must have a child prop with @name='method'</sch:assert>
