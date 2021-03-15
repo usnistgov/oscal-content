@@ -1,9 +1,9 @@
-<!-- XML produced by extraction/mapping from docx via XSweet++: 2021-02-24T16:43:11.049-05:00 -->
-<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="62f21617-b40f-4e89-bf3b-01b04b68f473">
+<!-- XML produced by extraction/mapping from docx via XSweet++: 2021-03-15T12:09:43.615-04:00 -->
+<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="30ab38d6-586a-4d38-9881-c9367ba5267a">
   <metadata>
     <title>NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Federal Information Systems and Organizations</title>
-    <last-modified>2021-02-24T16:43:10.691-05:00</last-modified>
-    <version>Revision 5</version>
+    <last-modified>2021-03-15T12:21:40.694-04:00</last-modified>
+    <version>5.0.1</version>
     <oscal-version>1.0.0-rc1</oscal-version>
     <prop name="keywords">assurance; availability; computer security; confidentiality; control; cybersecurity; FISMA; information security; information system; integrity; personally identifiable information; Privacy Act; privacy controls; privacy functions; privacy requirements; Risk Management Framework; security controls; security functions; security requirements; system; system security.</prop>
     <link rel="alternate" href="#c3397cc9-83c6-4459-adb2-836739dc1b94"/>
@@ -15081,14 +15081,14 @@
         <part name="item" id="pm-30_smt.a">
           <prop name="label">a.</prop>
           <p>Develop an organization-wide strategy for managing supply chain risks associated with the development, acquisition, maintenance, and disposal of systems, system components, and system services;</p>
-          <part name="item" id="pm-30_smt.a.1">
-            <prop name="label">1.</prop>
-            <p>Implement the supply chain risk management strategy consistently across the organization; and</p>
-            <part name="item" id="pm-30_smt.a.1.a">
-              <prop name="label">(a)</prop>
-              <p>Review and update the supply chain risk management strategy on <insert param-id="pm-30_prm_1"/> or as required, to address organizational changes.</p>
-            </part>
-          </part>
+        </part>
+        <part name="item" id="pm-30_smt.b">
+          <prop name="label">b.</prop>
+          <p>Implement the supply chain risk management strategy consistently across the organization; and</p>
+        </part>
+        <part name="item" id="pm-30_smt.c">
+          <prop name="label">c.</prop>
+          <p>Review and update the supply chain risk management strategy on <insert param-id="pm-30_prm_1"/> or as required, to address organizational changes.</p>
         </part>
       </part>
       <part name="guidance" id="pm-30_gdn">
