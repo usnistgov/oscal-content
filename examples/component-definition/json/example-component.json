@@ -2,7 +2,7 @@
   "component-definition": {
     "uuid": "aabcfa61-c6eb-4979-851f-35b461f6a0ef",
     "metadata": {
-      "title": "Test Component Defintion",
+      "title": "Test Component Definition",
       "last-modified": "2020-08-31T20:45:24.389Z",
       "version": "20200723",
       "oscal-version": "1.0.0-rc1",
@@ -46,7 +46,7 @@
             "implemented-requirements": [
               {
                 "uuid": "65e30b37-0640-4844-9f42-b2a7ae944bb1",
-                "description": "An alternate narative for FedRAMP..",
+                "description": "An alternate narrative for FedRAMP..",
                 "control-id": "ac-2.3"
               }
             ]
