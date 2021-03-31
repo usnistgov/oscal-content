@@ -265,10 +265,10 @@
                     "uuid": "aaadb3ff-6ae8-4332-92db-211468c52af2",
                     "control-id": "au-1",
                     "statements": {
-                        "au-1smt": {
+                        "au-1_smt": {
                             "uuid": "7ad47329-dc55-4196-a19d-178a8fe7438d"
                         },
-                        "au-1smt.a": {
+                        "au-1_smt.a": {
                             "uuid": "f3887a91-9ed3-425c-b305-21e4634a1c34",
                             "by-components": {
                                 "795533ab-9427-4abe-820f-0b571bacfe6d": {
@@ -301,7 +301,7 @@
                                 }
                             }
                         },
-                        "au-1smt.a.1": {
+                        "au-1_smt.a.1": {
                             "uuid": "6fe632bd-33aa-4eea-a507-a37f0d212085",
                             "by-components": {
                                 "795533ab-9427-4abe-820f-0b571bacfe6d": {
@@ -310,7 +310,7 @@
                                 }
                             }
                         },
-                        "au-1smt.a.2": {
+                        "au-1_smt.a.2": {
                             "uuid": "dbe9af68-1cd9-4ff1-965b-8f887351d411",
                             "by-components": {
                                 "941e2a87-46f4-4b3e-9e87-bbd187091ca1": {

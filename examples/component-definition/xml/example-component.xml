@@ -2,7 +2,7 @@
 <component-definition xmlns="http://csrc.nist.gov/ns/oscal/1.0"
                       uuid="aabcfa61-c6eb-4979-851f-35b461f6a0ef">
    <metadata>
-      <title>Test Component Defintion</title>
+      <title>Test Component Definition</title>
       <last-modified>2020-08-31T20:45:24.389Z</last-modified>
       <version>20200723</version>
       <oscal-version>1.0.0-rc1</oscal-version>
@@ -36,7 +36,7 @@
          </description>
          <implemented-requirement uuid="65e30b37-0640-4844-9f42-b2a7ae944bb1" control-id="ac-2.3">
             <description>
-               <p>An alternate narative for FedRAMP..</p>
+               <p>An alternate narrative for FedRAMP..</p>
             </description>
          </implemented-requirement>
       </control-implementation>

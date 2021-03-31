@@ -183,8 +183,8 @@
          <p>This is the control implementation for the system.</p>
       </description>
       <implemented-requirement uuid="aaadb3ff-6ae8-4332-92db-211468c52af2" control-id="au-1">
-         <statement statement-id="au-1smt" uuid="7ad47329-dc55-4196-a19d-178a8fe7438d"/>
-         <statement statement-id="au-1smt.a" uuid="f3887a91-9ed3-425c-b305-21e4634a1c34">
+         <statement statement-id="au-1_smt" uuid="7ad47329-dc55-4196-a19d-178a8fe7438d"/>
+         <statement statement-id="au-1_smt.a" uuid="f3887a91-9ed3-425c-b305-21e4634a1c34">
             <by-component component-uuid="795533ab-9427-4abe-820f-0b571bacfe6d"
                           uuid="a74681b2-fbcb-46eb-90fd-0d55aa74ac7b">
                <description>
@@ -222,7 +222,7 @@
                </set-parameter>
             </by-component>
          </statement>
-         <statement statement-id="au-1smt.a.1" uuid="6fe632bd-33aa-4eea-a507-a37f0d212085">
+         <statement statement-id="au-1_smt.a.1" uuid="6fe632bd-33aa-4eea-a507-a37f0d212085">
             <by-component component-uuid="795533ab-9427-4abe-820f-0b571bacfe6d"
                           uuid="2d0a7b08-da7f-4691-b99c-8fd9df02b25c">
                <description>
@@ -230,7 +230,7 @@
                </description>
             </by-component>
          </statement>
-         <statement statement-id="au-1smt.a.2" uuid="dbe9af68-1cd9-4ff1-965b-8f887351d411">
+         <statement statement-id="au-1_smt.a.2" uuid="dbe9af68-1cd9-4ff1-965b-8f887351d411">
             <by-component component-uuid="941e2a87-46f4-4b3e-9e87-bbd187091ca1"
                           uuid="dd4fd380-7a2a-4fba-9e98-933ba5cfc04d">
                <description>
