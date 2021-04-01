@@ -39,7 +39,7 @@ Cust-A    Cust-B    Cust-C
             </pre>
          <p>In this example, the IaaS SSP specifies customer responsibilities for certain controls.</p>
          <p>The SaaS must address these for the control to be fully satisfied.</p>
-         <p>The SaaS provider may either implement these directly, or pass the responsiblity on to their customers. Both may be necessary.</p>
+         <p>The SaaS provider may either implement these directly or pass the responsibility on to their customers. Both may be necessary.</p>
          <p>For any given control, the Leveraged IaaS SSP must describe:</p>
          <ol>
             <li>HOW the IaaS is directly satisfying the control</li>
