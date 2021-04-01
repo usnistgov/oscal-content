@@ -21,7 +21,9 @@
                 "description": "This is a software component that implements basic authentication mechanisms.",
                 "responsible-roles": {
                     "supplier": {
-                        "party-uuids": ["ee47836c-877c-4007-bbf3-c9d9bd805a9a"]
+            "party-uuids": [
+              "ee47836c-877c-4007-bbf3-c9d9bd805a9a"
+            ]
                     }
                 },
                 "control-implementations": [
