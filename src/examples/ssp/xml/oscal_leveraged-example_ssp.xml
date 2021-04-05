@@ -17,7 +17,7 @@
       </role>
       <party type="person" uuid="11111111-0000-4000-9000-100000000001"/>
    </metadata>
-   <import-profile href="../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_LOW-baseline_profile.xml"/>
+   <import-profile href="../../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_LOW-baseline_profile.xml"/>
    <system-characteristics>
       <system-id>csp_iaas_system</system-id>
       <system-name>Leveraged IaaS System</system-name>
