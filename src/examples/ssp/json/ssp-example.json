@@ -40,7 +40,7 @@
                 }
             ]
         },
-        "import-profile": {"href": "../../nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_MODERATE-baseline_profile.json"},
+        "import-profile": {"href": "../../../nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_MODERATE-baseline_profile.json"},
         "system-characteristics": {
             "system-name": "Enterprise Logging and Auditing System",
             "description": "This is an example of a system that provides enterprise logging and log auditing capabilities.",

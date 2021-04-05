@@ -16,7 +16,7 @@
          </remarks>
       </party>
    </metadata>
-   <import-profile href="../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_LOW-baseline_profile.xml"/>
+   <import-profile href="../../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_LOW-baseline_profile.xml"/>
    <system-characteristics>
       <system-id>saas_system_iaas_customer</system-id>
       <system-name>Leveraging SaaS System</system-name>
