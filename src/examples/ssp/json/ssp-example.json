@@ -273,7 +273,7 @@
                             "by-components": {
                                 "795533ab-9427-4abe-820f-0b571bacfe6d": {
                                     "uuid": "a74681b2-fbcb-46eb-90fd-0d55aa74ac7b",
-                                    "description": "The legal department develops, documents, and disseminates this policy to all staff and contractors within the organization.",
+                                    "description": "The legal department develops, documents and disseminates this policy to all staff and contractors within the organization.",
                                     "parameter-settings": {
                                         "au-1_prm_1": {"values": [ "all staff and contractors within the organization" ]}
                                     }
