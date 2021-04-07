@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Modified by conversion XSLT 2021-04-07T12:46:40.458-04:00 - RC2 OSCAL becomes RC3 OSCAL -->
+<!-- Modified by the OSCAL 1.0.0 RC1 to OSCAL 1.0.0 RC2 conversion XSLT on 2021-04-07T12:50:13.228-04:00 -->
 <profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="104f0129-c66d-4ac1-b951-8a656a7ca11c">
+         uuid="ea9b0284-7719-4810-a29e-3644eaf843f5">
    <metadata>
       <title>FedRAMP High Baseline</title>
       <published>2020-06-01T00:00:00.000-04:00</published>
-      <last-modified>2021-04-07T12:46:40.458-04:00</last-modified>
+      <last-modified>2021-04-07T12:50:13.228-04:00</last-modified>
       <version>1.2</version>
       <oscal-version>1.0.0-rc2</oscal-version>
       <role id="prepared-by">
