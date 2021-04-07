@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Modified by conversion XSLT 2021-04-07T12:36:01.132-04:00 - RC2 OSCAL becomes RC3 OSCAL -->
 <system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-                      uuid="9b5c7544-1202-4f70-8fe5-6227b804d503">
+                      uuid="d2bcb155-ce45-4eac-acf2-2c6b140c9b36">
    <metadata>
       <title>Leveraging SaaS System Security Plan</title>
-      <last-modified>2020-12-20T17:40:57.346-05:00</last-modified>
+      <last-modified>2021-04-07T12:36:01.132-04:00</last-modified>
       <version>0.1</version>
-      <oscal-version>1.0.0-rc1</oscal-version>
+      <oscal-version>1.0.0-rc2</oscal-version>
       <role id="admin">
          <title>Administrator</title>
       </role>
@@ -130,7 +131,7 @@ Cust-A    Cust-B    Cust-C
             <p>This Leveraging SaaS.</p>
             <p>The entire system as depicted in the system authorization boundary</p>
          </description>
-         <prop name="implementation-point">system</prop>
+         <prop value="system" name="implementation-point"/>
          <status state="operational"/>
       </component>
       <component uuid="22222222-0000-4000-9001-000000000002" type="leveraged-system">
@@ -140,9 +141,10 @@ Cust-A    Cust-B    Cust-C
          <description>
             <p>If the leveraged system owner provides a UUID for their system (such as in an OSCAL-based CRM), it should be used as the UUID for this component.</p>
          </description>
-         <prop name="implementation-point">external</prop>
-         <prop name="leveraged-authorization-uuid">22222222-0000-4000-9000-300000000001</prop>
-         <prop name="inherited-uuid">11111111-0000-4000-9001-000000000001</prop>
+         <prop value="external" name="implementation-point"/>
+         <prop value="22222222-0000-4000-9000-300000000001"
+               name="leveraged-authorization-uuid"/>
+         <prop value="11111111-0000-4000-9001-000000000001" name="inherited-uuid"/>
          <status state="operational"/>
       </component>
       <component uuid="22222222-0000-4000-9001-000000000003" type="appliance">
@@ -150,8 +152,8 @@ Cust-A    Cust-B    Cust-C
          <description>
             <p>An access control virtual appliance, wich performs XYZ functions.</p>
          </description>
-         <prop name="implementation-point">internal</prop>
-         <prop name="virtual">yes</prop>
+         <prop value="internal" name="implementation-point"/>
+         <prop value="yes" name="virtual"/>
          <status state="operational"/>
       </component>
       <component uuid="22222222-0000-4000-9001-000000000004" type="application">
@@ -159,9 +161,10 @@ Cust-A    Cust-B    Cust-C
          <description>
             <p>Inherited from underlying IaaS.</p>
          </description>
-         <prop name="implementation-point">external</prop>
-         <prop name="leveraged-authorization-uuid">22222222-0000-4000-9000-300000000001</prop>
-         <prop name="inherited-uuid">11111111-0000-4000-9001-000000000002</prop>
+         <prop value="external" name="implementation-point"/>
+         <prop value="22222222-0000-4000-9000-300000000001"
+               name="leveraged-authorization-uuid"/>
+         <prop value="11111111-0000-4000-9001-000000000002" name="inherited-uuid"/>
          <status state="operational"/>
       </component>
    </system-implementation>
@@ -187,7 +190,7 @@ Cust-A    Cust-B    Cust-C
                   <p>Response for the "This System" component.</p>
                   <p>Overall description of how "This System" satisfies AC-2, Part a.</p>
                </description>
-               <annotation name="responsibility" value="provider"/>
+               <prop value="provider" name="responsibility"/>
             </by-component>
             <by-component uuid="22222222-0000-4000-9009-002001002000"
                           component-uuid="22222222-0000-4000-9001-000000000002">

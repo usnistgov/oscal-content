@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Modified by conversion XSLT 2021-04-07T12:36:00.689-04:00 - RC2 OSCAL becomes RC3 OSCAL -->
 <system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-                      uuid="ff9e8381-4e14-48f4-88e2-fedf27ecb4d3">
+                      uuid="076ae651-28cb-4077-a929-f4317ace7b8d">
    <metadata>
       <title>CSP IaaS System Security Plan</title>
-      <last-modified>2020-12-20T17:40:56.781-05:00</last-modified>
+      <last-modified>2021-04-07T12:36:00.689-04:00</last-modified>
       <version>0.1</version>
-      <oscal-version>1.0.0-rc1</oscal-version>
+      <oscal-version>1.0.0-rc2</oscal-version>
       <role id="admin">
          <title>Administrator</title>
       </role>
@@ -133,7 +134,7 @@ Cust-A    Cust-B    Cust-C
             <p>The Leveraging SaaS maintains aspects of their assigned portion of the application.</p>
             <p>The customers of the Leveraging SaaS maintain aspects of their sub-assigned portions of the application.</p>
          </description>
-         <prop name="implementation-point">system</prop>
+         <prop value="system" name="implementation-point"/>
          <status state="operational"/>
          <responsible-role role-id="admin">
             <party-uuid>11111111-0000-4000-9000-100000000001</party-uuid>

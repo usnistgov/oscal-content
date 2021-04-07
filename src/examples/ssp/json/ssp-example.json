@@ -77,7 +77,7 @@
                 "state": "other",
                 "remarks": "This is an example, and is not intended to be implemented as a system"
             },
-            "annotations": [
+            "props": [
                 {
                     "name": "deployment-model",
                     "value": "private"
@@ -95,7 +95,7 @@
                 "9824089b-322c-456f-86c4-4111c4200f69": {
                     "title": "System Administrator",
                     "role-ids": ["asset-administrator"],
-                    "annotations": [
+                    "props": [
                         {
                             "name": "type",
                             "value": "internal"
@@ -105,7 +105,7 @@
                 "ae8de94c-835d-4303-83b1-114b6a117a07": {
                     "title": "Audit Team",
                     "role-ids": ["asset-owner"],
-                    "annotations": [
+                    "props": [
                         {
                             "name": "type",
                             "value": "internal"
@@ -115,7 +115,7 @@
                 "372ce7a3-92b0-437e-a98c-24d29f9bfab8": {
                     "title": "Legal Department",
                     "role-ids": ["legal-officer"],
-                    "annotations": [
+                    "props": [
                         {
                             "name": "type",
                             "value": "internal"
