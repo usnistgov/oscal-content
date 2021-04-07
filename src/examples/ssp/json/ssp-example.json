@@ -1,11 +1,11 @@
 {
     "system-security-plan": {
-        "uuid": "66c2a1c8-5830-48bd-8fdd-55a1c3a52888",
+        "uuid": "cff8385f-108e-40a5-8f7a-82f3dc0eaba8",
         "metadata": {
             "title": "Enterprise Logging and Auditing System Security Plan",
-            "last-modified": "2019-09-23T18:14:50.591Z",
+            "last-modified": "2021-04-07T12:50:10.241-04:00",
             "version": "1.0",
-            "oscal-version": "1.0.0-rc1",
+            "oscal-version": "1.0.0-rc2",
             "roles": [
                 {
                     "id": "legal-officer",
