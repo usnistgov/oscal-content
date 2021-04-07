@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Modified by conversion XSLT 2021-04-07T12:46:37.328-04:00 - RC2 OSCAL becomes RC3 OSCAL -->
+<!-- Modified by the OSCAL 1.0.0 RC1 to OSCAL 1.0.0 RC2 conversion XSLT on 2021-04-07T12:50:10.241-04:00 -->
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="7d5c6040-daf0-4918-b62b-7e3c97ecf210">
+         uuid="22054d80-252f-4ab8-ae9c-5bf69c9109a9">
    <metadata>
       <title>Sample Security Catalog <em>for Demonstration</em> and Testing</title>
       <published>2020-02-02T11:01:04.736-04:00</published>
-      <last-modified>2021-04-07T12:46:37.328-04:00</last-modified>
+      <last-modified>2021-04-07T12:50:10.241-04:00</last-modified>
       <version>1.0</version>
       <oscal-version>1.0.0-rc2</oscal-version>
       <remarks>
