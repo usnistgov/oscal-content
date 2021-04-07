@@ -1,11 +1,12 @@
-<!-- Produced by SP800-53-profile-extract.xsl 2021-01-14-05:00; runtime parameter settings: $baseline='PRIVACY'-->
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Modified by conversion XSLT 2021-04-07T12:36:00.202-04:00 - RC2 OSCAL becomes RC3 OSCAL -->
 <profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="26d2beac-d3d8-4316-8c3c-5ff7414386e3">
+         uuid="85626c6d-d1b4-405a-9561-2d7029ad9e10">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 5 PRIVACY BASELINE</title>
-      <last-modified>2021-01-14T09:04:29.16-05:00</last-modified>
+      <last-modified>2021-04-07T12:36:00.202-04:00</last-modified>
       <version>Final</version>
-      <oscal-version>1.0.0-rc1</oscal-version>
+      <oscal-version>1.0.0-rc2</oscal-version>
       <role id="creator">
          <title>Document Creator</title>
       </role>
@@ -33,104 +34,104 @@
       </responsible-party>
    </metadata>
    <import href="NIST_SP-800-53_rev5_catalog.xml">
-      <include>
-         <call control-id="ac-1"/>
-         <call control-id="ac-3.14"/>
-         <call control-id="at-1"/>
-         <call control-id="at-2"/>
-         <call control-id="at-3"/>
-         <call control-id="at-3.5"/>
-         <call control-id="at-4"/>
-         <call control-id="au-1"/>
-         <call control-id="au-2"/>
-         <call control-id="au-3.3"/>
-         <call control-id="au-11"/>
-         <call control-id="ca-1"/>
-         <call control-id="ca-2"/>
-         <call control-id="ca-5"/>
-         <call control-id="ca-6"/>
-         <call control-id="ca-7"/>
-         <call control-id="ca-7.4"/>
-         <call control-id="cm-1"/>
-         <call control-id="cm-4"/>
-         <call control-id="ir-1"/>
-         <call control-id="ir-2"/>
-         <call control-id="ir-2.3"/>
-         <call control-id="ir-3"/>
-         <call control-id="ir-4"/>
-         <call control-id="ir-5"/>
-         <call control-id="ir-6"/>
-         <call control-id="ir-7"/>
-         <call control-id="ir-8"/>
-         <call control-id="ir-8.1"/>
-         <call control-id="mp-1"/>
-         <call control-id="mp-6"/>
-         <call control-id="pe-8.3"/>
-         <call control-id="pl-1"/>
-         <call control-id="pl-2"/>
-         <call control-id="pl-4"/>
-         <call control-id="pl-4.1"/>
-         <call control-id="pl-8"/>
-         <call control-id="pl-9"/>
-         <call control-id="pm-3"/>
-         <call control-id="pm-4"/>
-         <call control-id="pm-5.1"/>
-         <call control-id="pm-6"/>
-         <call control-id="pm-7"/>
-         <call control-id="pm-8"/>
-         <call control-id="pm-9"/>
-         <call control-id="pm-10"/>
-         <call control-id="pm-11"/>
-         <call control-id="pm-13"/>
-         <call control-id="pm-14"/>
-         <call control-id="pm-17"/>
-         <call control-id="pm-18"/>
-         <call control-id="pm-19"/>
-         <call control-id="pm-20"/>
-         <call control-id="pm-20.1"/>
-         <call control-id="pm-21"/>
-         <call control-id="pm-22"/>
-         <call control-id="pm-24"/>
-         <call control-id="pm-25"/>
-         <call control-id="pm-26"/>
-         <call control-id="pm-27"/>
-         <call control-id="pm-28"/>
-         <call control-id="pm-31"/>
-         <call control-id="ps-6"/>
-         <call control-id="pt-1"/>
-         <call control-id="pt-2"/>
-         <call control-id="pt-3"/>
-         <call control-id="pt-4"/>
-         <call control-id="pt-5"/>
-         <call control-id="pt-5.2"/>
-         <call control-id="pt-6"/>
-         <call control-id="pt-6.1"/>
-         <call control-id="pt-6.2"/>
-         <call control-id="pt-7"/>
-         <call control-id="pt-7.1"/>
-         <call control-id="pt-7.2"/>
-         <call control-id="pt-8"/>
-         <call control-id="ra-1"/>
-         <call control-id="ra-3"/>
-         <call control-id="ra-7"/>
-         <call control-id="ra-8"/>
-         <call control-id="sa-1"/>
-         <call control-id="sa-2"/>
-         <call control-id="sa-3"/>
-         <call control-id="sa-4"/>
-         <call control-id="sa-8.33"/>
-         <call control-id="sa-9"/>
-         <call control-id="sa-11"/>
-         <call control-id="sc-7.24"/>
-         <call control-id="si-1"/>
-         <call control-id="si-12"/>
-         <call control-id="si-12.1"/>
-         <call control-id="si-12.2"/>
-         <call control-id="si-12.3"/>
-         <call control-id="si-18"/>
-         <call control-id="si-18.4"/>
-         <call control-id="si-19"/>
-      </include>
+      <include-controls>
+         <with-id>ac-1</with-id>
+         <with-id>ac-3.14</with-id>
+         <with-id>at-1</with-id>
+         <with-id>at-2</with-id>
+         <with-id>at-3</with-id>
+         <with-id>at-3.5</with-id>
+         <with-id>at-4</with-id>
+         <with-id>au-1</with-id>
+         <with-id>au-2</with-id>
+         <with-id>au-3.3</with-id>
+         <with-id>au-11</with-id>
+         <with-id>ca-1</with-id>
+         <with-id>ca-2</with-id>
+         <with-id>ca-5</with-id>
+         <with-id>ca-6</with-id>
+         <with-id>ca-7</with-id>
+         <with-id>ca-7.4</with-id>
+         <with-id>cm-1</with-id>
+         <with-id>cm-4</with-id>
+         <with-id>ir-1</with-id>
+         <with-id>ir-2</with-id>
+         <with-id>ir-2.3</with-id>
+         <with-id>ir-3</with-id>
+         <with-id>ir-4</with-id>
+         <with-id>ir-5</with-id>
+         <with-id>ir-6</with-id>
+         <with-id>ir-7</with-id>
+         <with-id>ir-8</with-id>
+         <with-id>ir-8.1</with-id>
+         <with-id>mp-1</with-id>
+         <with-id>mp-6</with-id>
+         <with-id>pe-8.3</with-id>
+         <with-id>pl-1</with-id>
+         <with-id>pl-2</with-id>
+         <with-id>pl-4</with-id>
+         <with-id>pl-4.1</with-id>
+         <with-id>pl-8</with-id>
+         <with-id>pl-9</with-id>
+         <with-id>pm-3</with-id>
+         <with-id>pm-4</with-id>
+         <with-id>pm-5.1</with-id>
+         <with-id>pm-6</with-id>
+         <with-id>pm-7</with-id>
+         <with-id>pm-8</with-id>
+         <with-id>pm-9</with-id>
+         <with-id>pm-10</with-id>
+         <with-id>pm-11</with-id>
+         <with-id>pm-13</with-id>
+         <with-id>pm-14</with-id>
+         <with-id>pm-17</with-id>
+         <with-id>pm-18</with-id>
+         <with-id>pm-19</with-id>
+         <with-id>pm-20</with-id>
+         <with-id>pm-20.1</with-id>
+         <with-id>pm-21</with-id>
+         <with-id>pm-22</with-id>
+         <with-id>pm-24</with-id>
+         <with-id>pm-25</with-id>
+         <with-id>pm-26</with-id>
+         <with-id>pm-27</with-id>
+         <with-id>pm-28</with-id>
+         <with-id>pm-31</with-id>
+         <with-id>ps-6</with-id>
+         <with-id>pt-1</with-id>
+         <with-id>pt-2</with-id>
+         <with-id>pt-3</with-id>
+         <with-id>pt-4</with-id>
+         <with-id>pt-5</with-id>
+         <with-id>pt-5.2</with-id>
+         <with-id>pt-6</with-id>
+         <with-id>pt-6.1</with-id>
+         <with-id>pt-6.2</with-id>
+         <with-id>pt-7</with-id>
+         <with-id>pt-7.1</with-id>
+         <with-id>pt-7.2</with-id>
+         <with-id>pt-8</with-id>
+         <with-id>ra-1</with-id>
+         <with-id>ra-3</with-id>
+         <with-id>ra-7</with-id>
+         <with-id>ra-8</with-id>
+         <with-id>sa-1</with-id>
+         <with-id>sa-2</with-id>
+         <with-id>sa-3</with-id>
+         <with-id>sa-4</with-id>
+         <with-id>sa-8.33</with-id>
+         <with-id>sa-9</with-id>
+         <with-id>sa-11</with-id>
+         <with-id>sc-7.24</with-id>
+         <with-id>si-1</with-id>
+         <with-id>si-12</with-id>
+         <with-id>si-12.1</with-id>
+         <with-id>si-12.2</with-id>
+         <with-id>si-12.3</with-id>
+         <with-id>si-18</with-id>
+         <with-id>si-18.4</with-id>
+         <with-id>si-19</with-id>
+      </include-controls>
    </import>
    <merge>
       <as-is>true</as-is>
