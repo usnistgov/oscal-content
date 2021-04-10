@@ -1,5 +1,5 @@
 # OSCAL Implementation Layer - FedRAMP System Security Plan (SSP) Modeling
-This defines the data fields to express a FedRAMP SSP in machine redable format. The intent is to translate this to XML and JSON for adoption as part of the Open OSCAL Implementation Layer specification.
+This defines the data fields to express a FedRAMP SSP in machine readable format. The intent is to translate this to XML and JSON for adoption as part of the Open OSCAL Implementation Layer specification.
 This is part of the NIST OSCAL effort as covered by [Issue #246](https://github.com/usnistgov/OSCAL/issues/246).
 
 ---
@@ -17,7 +17,7 @@ https://hackmd.io/UPEc5ya7Sfmu3wcg2UzGzw
 --- is all appropriate content provided?
  (i.e. every control has an implementation status? were any controls incorrectly omitted?; was the system owerner identified?)
 --- does the content correlate? 
-(i.e. if a control indicates inheritence, were details provided about the underlying system in the appropriate section?; if FIPS 140-2 validated modules are indicated, were the certificate numbers provided? If a role was specified for a control, was the role described in the appropriate section?)
+(i.e. if a control indicates inheritance, were details provided about the underlying system in the appropriate section?; if FIPS 140-2 validated modules are indicated, were the certificate numbers provided? If a role was specified for a control, was the role described in the appropriate section?)
 --- can external references be validated? 
 (i.e. can the indicated FIPS 140-2 validation certificate numbers be found in the NIST Labs Database; are all attachments and external references accessible?)
 -- **review tracking;**
@@ -40,9 +40,9 @@ Relevant Links:
 
 The information requires for High, Moderate, and Low SSPs are identical from a data modeling perspective. The front-matter (Title page through chapter 12) of each is essentially identical, and contains a significant amount of structured data. The fundamental difference between these three SSP templates is the specific controls required in each baseline.
 
-When complete, these templates include attachments and diagrams. Some attachments are also based on FedRAMP templates, such as for system inventory and the privacy impact analysis. Some of these attachments are highly structured and easily modled. Others are not. All are assessed and addressed following the core SSP content.
+When complete, these templates include attachments and diagrams. Some attachments are also based on FedRAMP templates, such as for system inventory and the privacy impact analysis. Some of these attachments are highly structured and easily modelled. Others are not. All are assessed and addressed following the core SSP content.
 
-The structure of the FedRAMP Tailored for LI-SaaS template provides for a sub-set of the typical FedRAMP SSP data, as well as a place to capture assessment details in an attmept to keep that package lgiht-weight. Anything we model for the High/Moderate/Low SSP templates above will work for for the LI-SaaS template with the exception that much of the required content from these SSP templates becomes optional for the LI-SaaS template.
+The structure of the FedRAMP Tailored for LI-SaaS template provides for a sub-set of the typical FedRAMP SSP data, as well as a place to capture assessment details in an attempt to keep that package light-weight. Anything we model for the High/Moderate/Low SSP templates above will work for for the LI-SaaS template with the exception that much of the required content from these SSP templates becomes optional for the LI-SaaS template.
 
 ## Proto-model
 
@@ -118,8 +118,8 @@ publication_attachments:
     attachment_date
     attachment_version
     attachment_type
-    attachment_href (either this or base64_embeded is required, but not both)
-    attachment_base64_embeded (either this or href is required, but not both)
+    attachment_href (either this or base64_embedded is required, but not both)
+    attachment_base64_embedded (either this or href is required, but not both)
         attachment_base64_filename
 ```
 
@@ -128,7 +128,7 @@ FedRAMP requires the following information about the system. Much of this inform
 
 ```yaml=
 
-    # Chararacteristics and meta-data about the system itself
+    # Characteristics and meta-data about the system itself
     # Cardinality: 1
     system_information:
         # Table 1-1: Information System Name and Title
@@ -200,7 +200,7 @@ FedRAMP requires the following information about the system. Much of this inform
             - under_development
             - major_modification
             - other
-            other_description: if deployment_status = "other", this contains an explamantion
+            other_description: if deployment_status = "other", this contains an explanation
 
         # Table 8-1: Service Layers Represented
         # FedRAMP limits values to "SaaS", "PaaS", "IaaS", and/or "other"; however, outside of FedRAMP, this field may be used more broadly
@@ -210,7 +210,7 @@ FedRAMP requires the following information about the system. Much of this inform
             - paas
             - iaas
             - other
-            other_description: if deployment_model = "other", this contains an explamantion
+            other_description: if deployment_model = "other", this contains an explanation
         
         # Table 8-2: Cloud Deployment Model Represented in this SSP
         # FedRAMP limits values to "Public", "Private", "Government Only Community", and/or "other"; however, outside of FedRAMP, this field may be used more broadly
@@ -220,7 +220,7 @@ FedRAMP requires the following information about the system. Much of this inform
             - private
             - government_only_community
             - other
-            other_description: if service_model = "other", this contains an explamantion
+            other_description: if service_model = "other", this contains an explanation
         
         # Table 8-3: Leveraged Authorizations
         # The Leveraged Authorizations table details the pre-existing FedRAMP Authorizations being leveraged by this Information System
@@ -374,7 +374,7 @@ Although this is part of CA-3, it may not be part of the standard set of element
         system_owner_name: Who is the main system owner
         system_owner_title: What is their title within their organization
         system_owner_organization: What organization does the system owner work with
-        system_owner_address: What is the organization street adress
+        system_owner_address: What is the organization street address
         system_owner_city: What city is the organization based out of
         system_owner_state: What state is the organization based out of
         system_owner_zip: What is the zip code for the organization
@@ -388,7 +388,7 @@ Although this is part of CA-3, it may not be part of the standard set of element
     # Cardinality: 1 or more
     authorizing_official: The Authorizing Official is determined by the path that the CSP is using to gain authorization
         jab_or_agency: Is the CSP going through the JAB P-ATO process or direct Agency Authorization
-        authorizing_offical_name: The name of the authorizing official
+        authorizing_official_name: The name of the authorizing official
         authorizing_official_title: The title of the authorizing official
         authorizing_official_organization: The organization that the authorizing official belongs to
         authorizing_official_email: The email address of the authorizing official
@@ -403,7 +403,7 @@ Although this is part of CA-3, it may not be part of the standard set of element
         system_management_name: Who is the system management POC
         system_management_title: What is their title within their organization
         system_management_organization: What organization does the system management POC work with
-        system_management_address: What is the organization street adress
+        system_management_address: What is the organization street address
         system_management_city: What city is the organization based out of
         system_management_state: What state is the organization based out of
         system_management_zip: What is the zip code for the organization
@@ -420,7 +420,7 @@ Although this is part of CA-3, it may not be part of the standard set of element
         system_technical_name: Who is the system technical POC
         system_technical_title: What is their title within their organization
         system_technical_organization: What organization does the system technical POC work with
-        system_technical_address: What is the organization street adress
+        system_technical_address: What is the organization street address
         system_technical_city: What city is the organization based out of
         system_technical_state: What state is the organization based out of
         system_technical_zip: What is the zip code for the organization
@@ -437,7 +437,7 @@ Although this is part of CA-3, it may not be part of the standard set of element
         system_additional_name: Who is the system additional POC
         system_additional_title: What is their title within their organization
         system_additional_organization: What organization does the system additional POC work with
-        system_additional_address: What is the organization street adress
+        system_additional_address: What is the organization street address
         system_additional_city: What city is the organization based out of
         system_additional_state: What state is the organization based out of
         system_additional_zip: What is the zip code for the organization
@@ -493,7 +493,7 @@ For example AC-2 appears in the FedRAMP Moderate Profile, which references the N
         
     # Cardinality: zero or more
     # Validation: one for each parameter
-    parameter-value: The actual value of the paramter supplied by the system owner to complete the requirement statement.
+    parameter-value: The actual value of the parameter supplied by the system owner to complete the requirement statement.
         parameter_id: The ID of the parameter as it appears in the appropriate profile or catalog.
 
     # Cardinality: one or more
@@ -502,11 +502,11 @@ For example AC-2 appears in the FedRAMP Moderate Profile, which references the N
     
     # Cardinality: one
     implementation_status: The status of the control (Implemented, Partially Implemented, Planned, Alternative Implementation, N/A)
-        # Cardinality: one if marked Planned or Partialy Implemented above. Zero otherwise
+        # Cardinality: one if marked Planned or Partially Implemented above. Zero otherwise
         planned_implementation_date
         
     # Cardinality: one or more
-    control_origination: The origina of the control (Service Provicder Corporate, Service Provider System Specific, Configured by Customer, Provided by Customer, Inherited)
+    control_origination: The origin of the control (Service Provider Corporate, Service Provider System Specific, Configured by Customer, Provided by Customer, Inherited)
         # Cardinality: one if marked Configured by Customer or provided by Customer above. Zero otherwise.
         customer_responsibility: 
         # Cardinality: one if marked Inherited above. Zero otherwise.
@@ -521,9 +521,9 @@ For example AC-2 appears in the FedRAMP Moderate Profile, which references the N
 
 
 ```yaml=
-    # Need a list of all crpytography used within 
+    # Need a list of all cryptography used within 
     # within the system, along with the NIST Labs
-    # certifiate number and supporting details
+    # certificate number and supporting details
     # for FIPS 140-2 validation
 
     cryptography:
@@ -558,11 +558,11 @@ For example AC-2 appears in the FedRAMP Moderate Profile, which references the N
 ```
 
 ### Attachment 4a: Privay Threshold Analysis
-- Table 15-6 Privacy POC is simply another system role that will be addressed in the OSCAL SSP content with all other system roles (Approver, ISSO, Managemet POC, etc.)
+- Table 15-6 Privacy POC is simply another system role that will be addressed in the OSCAL SSP content with all other system roles (Approver, ISSO, Management POC, etc.)
 - Table 15-7 Laws and Regulations and Table 15-8 Standards and Guidance are addressed in the OSCAL SSP content with the other Laws, Regulations, Standards, and Guidance. That content will have an attribute to flag it as privacy-related.
 - This is structured information, and will appear in in the OSCAL SSP structure as follows:
 ```yaml=
-    # Attachment 4: Privay Threshold Analysis
+    # Attachment 4: Privacy Threshold Analysis
     # Cardinality 4
     # FedRAMP has four (4) yes/no questions, that must be present and answered. Answering any one "yes" requires the PIA
     pta_question: 
@@ -571,7 +571,7 @@ For example AC-2 appears in the FedRAMP Moderate Profile, which references the N
 ```
 
 ### Attachment 4b: Privacy Impact Assessment
-- Attachment Table 1-1 Privacy POC is simply another system role that will be addressed in the OSCAL SSP content with all other system roles (Approver, ISSO, Managemet POC, etc.)
+- Attachment Table 1-1 Privacy POC is simply another system role that will be addressed in the OSCAL SSP content with all other system roles (Approver, ISSO, Management POC, etc.)
 - Attachment Table 1-2 Laws and Regulations is addressed in the OSCAL SSP content with the other Laws, Regulations, Standards, and Guidance. That content will have an attribute to flag it as privacy-related. 
 
 **Privacy Designation**
@@ -601,7 +601,7 @@ For example AC-2 appears in the FedRAMP Moderate Profile, which references the N
         # Cardinality 1
         question_text: The FedRAMP question
 
-        # Cardinality 1 or more (one quesiton has a yes/no, and a text response if yes, which requires two responses in that case. All others are a single text field response.)
+        # Cardinality 1 or more (one question has a yes/no, and a text response if yes, which requires two responses in that case. All others are a single text field response.)
         response_type: typically "text" or "boolean" - indicates the type of response required.
         response_text: The response provided by the CSP
 
