@@ -2,12 +2,12 @@
 What follows is an example of a FedRAMP SSP expressed in OSCAL-compliant XML. It is part of the NIST OSCAL effort as covered by [Issue #246](https://github.com/usnistgov/OSCAL/issues/246).
 
 ## XML Now. JSON Next.
-If you are JSON fan, fret-not. As with all OSCAL content, the final specification allows for both XML and JSON. We had to start somewhere.
+If you are a JSON fan, fret-not. As with all OSCAL content, the final specification allows for both XML and JSON. We had to start somewhere.
 
 ## Intended Next Steps
 Once this mock-up is complete:
 1. The OSCAL Team will peer-review it, adjust for OSCAL alignment, and consider any community input.
-2. The OSCAL Team will also reach concensus as to which portions of the mock-up become part of the official OSCAL specification, and which are handled as a FedRAMP-specific extension.
+2. The OSCAL Team will also reach consensus as to which portions of the mock-up become part of the official OSCAL specification, and which are handled as a FedRAMP-specific extension.
 3. The OSCAL Team will develop the specification details, and document the relevant syntax.
 4. In cooperation with the OSCAL Team, the FedRAMP PMO will develop the specification for any FedRAMP-specific extensions as a parallel effort.
 
@@ -19,7 +19,7 @@ https://hackmd.io/dATVzahrQludJILDJH675g
 
 This mock-up below exists in two parts:
 - **Higher Level SSP Elements:** There is no content here, just the tags. View this to understand the suggested elements.
-- **The Full Example:** Fully populated ficticious content. View this to understand how the tags might be used in practice.
+- **The Full Example:** Fully populated fictitious content. View this to understand how the tags might be used in practice.
 
 
 ## Higher Level SSP Elements (No Content)
@@ -484,7 +484,7 @@ All SSP page, section, and table references are based on the FedRAMP SSP High BA
             <leveraged_authorization id="la-01">
                 <leveraged_authorization_name>A Big IaaS (ABI)</leveraged_authorization_name>
                 <leveraged_authorization_service_provider>A Big IaaS Provider (ABIP)</leveraged_authorization_service_provider>
-                <leveraged_authorization_date_granted iso-date="iso-date3">2016-09-09</leveraged_authorization_date_grantved>
+                <leveraged_authorization_date_granted iso-date="iso-date3">2016-09-09</leveraged_authorization_date_granted>
             </leveraged_authorization>
         </leveraged_authorizations>
 
@@ -876,7 +876,7 @@ All SSP page, section, and table references are based on the FedRAMP SSP High BA
         </ref>
     </references>
 
-    <!-- Table 15-1 Mames of Provided Attachments -->
+    <!-- Table 15-1 Names of Provided Attachments -->
     <attachments>
         <attachment id="att-001" href="./attachments/rob.docx">
             <name>Rules of Behavior</name>
@@ -887,7 +887,7 @@ All SSP page, section, and table references are based on the FedRAMP SSP High BA
             <type>MS Word</type>
         </attachment>
 
-        <attachment id="att-101" href="./attachments/policies/01_a_csp_access_cotrol_policy.docx">
+        <attachment id="att-101" href="./attachments/policies/01_a_csp_access_control_policy.docx">
             <name>A-CSP Access Control Policy</name>
             <description>Corporate A-CSP Access Control Policy</description>
             <format>.docx</format>
@@ -896,7 +896,7 @@ All SSP page, section, and table references are based on the FedRAMP SSP High BA
             <type>MS Word</type>
         </attachment>
 
-        <attachment id="att-102" href="./attachments/policies/01_a_saas_access_cotrol_policy.docx">
+        <attachment id="att-102" href="./attachments/policies/01_a_saas_access_control_policy.docx">
             <name>A-SaaS Access Control Policy</name>
             <description>System-specific A-SaaS Access Control Policy</description>
             <format>.docx</format>
@@ -905,7 +905,7 @@ All SSP page, section, and table references are based on the FedRAMP SSP High BA
             <type>MS Word</type>
         </attachment>
 
-        <attachment id="att-103" href="./attachments/policies/01_a_saas_access_cotrol_process.docx">
+        <attachment id="att-103" href="./attachments/policies/01_a_saas_access_control_process.docx">
             <name>A-SaaS Access Control Process</name>
             <description>System-specific A-SaaS Access Control Process</description>
             <format>.docx</format>
