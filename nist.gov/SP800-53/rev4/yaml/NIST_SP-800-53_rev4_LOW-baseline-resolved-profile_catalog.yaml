@@ -1,6 +1,6 @@
 ---
 catalog:
-  uuid: 40b9f3dd-e094-440b-a76d-0267420301bc
+  uuid: f98f3f56-09f2-442c-8991-3baff2728c43
   metadata:
     title: NIST Special Publication 800-53 Revision 4 LOW IMPACT BASELINE
     last-modified: 2020-12-18T16:38:42.466-05:00
@@ -8,7 +8,7 @@ catalog:
     oscal-version: 1.0.0-rc1
     props:
       - name: resolution-timestamp
-        value: 2021-03-15T22:58:06.24346Z
+        value: 2021-04-12T18:55:54.672655Z
     links:
       - href: NIST_SP-800-53_rev4_LOW-baseline_profile.xml
         rel: resolution-source

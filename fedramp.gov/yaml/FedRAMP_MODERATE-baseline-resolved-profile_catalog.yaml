@@ -1,6 +1,6 @@
 ---
 catalog:
-  uuid: 4ab56226-be6a-4cb8-8f8b-ef07b4a80c21
+  uuid: f432a5e7-782d-4427-95d4-d69f03c0847c
   metadata:
     title: FedRAMP Moderate Baseline
     published: 2020-06-01T00:00:00.000-04:00
@@ -9,7 +9,7 @@ catalog:
     oscal-version: 1.0.0-rc1
     props:
       - name: resolution-timestamp
-        value: 2021-03-15T22:57:27.875367Z
+        value: 2021-04-12T18:55:13.169932Z
     links:
       - href: FedRAMP_MODERATE-baseline_profile.xml
         rel: resolution-source
