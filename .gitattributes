@@ -1,0 +1,21 @@
+# default
+* text=auto
+
+# structured formats
+*.js    text eol=lf
+*.json  text eol=lf
+*.xml   text eol=lf
+*.yaml  text eol=lf
+*.yml   text eol=lf
+
+# markdown
+*.md text eol=lf
+
+# script files
+*.sh text eol=lf
+/build/ci-cd/config/* text eol=lf
+
+# other binary files
+*.png binary
+*.jpg binary
+
