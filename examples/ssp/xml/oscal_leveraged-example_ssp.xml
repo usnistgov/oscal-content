@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Modified by the OSCAL 1.0.0 RC1 to OSCAL 1.0.0 RC2 conversion XSLT on 2021-04-07T12:50:18.902-04:00 -->
 <system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-                      uuid="ff9e8381-4e14-48f4-88e2-fedf27ecb4d3">
+                      uuid="fb1cf6e8-5ebe-48ba-847d-fcfa5ccc0e96">
    <metadata>
       <title>CSP IaaS System Security Plan</title>
-      <last-modified>2020-12-20T17:40:56.781-05:00</last-modified>
+      <last-modified>2021-04-07T12:50:18.902-04:00</last-modified>
       <version>0.1</version>
-      <oscal-version>1.0.0-rc1</oscal-version>
+      <oscal-version>1.0.0-rc2</oscal-version>
       <role id="admin">
          <title>Administrator</title>
       </role>
@@ -17,7 +18,7 @@
       </role>
       <party type="person" uuid="11111111-0000-4000-9000-100000000001"/>
    </metadata>
-   <import-profile href="../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_LOW-baseline_profile.xml"/>
+   <import-profile href="../../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_LOW-baseline_profile.xml"/>
    <system-characteristics>
       <system-id>csp_iaas_system</system-id>
       <system-name>Leveraged IaaS System</system-name>
@@ -40,7 +41,7 @@ Cust-A    Cust-B    Cust-C
             </pre>
          <p>In this example, the IaaS SSP specifies customer responsibilities for certain controls.</p>
          <p>The SaaS must address these for the control to be fully satisfied.</p>
-         <p>The SaaS provider may either implement these directly, or pass the responsiblity on to their customers. Both may be necessary.</p>
+         <p>The SaaS provider may either implement these directly or pass the responsibility on to their customers. Both may be necessary.</p>
          <p>For any given control, the Leveraged IaaS SSP must describe:</p>
          <ol>
             <li>HOW the IaaS is directly satisfying the control</li>
@@ -133,7 +134,7 @@ Cust-A    Cust-B    Cust-C
             <p>The Leveraging SaaS maintains aspects of their assigned portion of the application.</p>
             <p>The customers of the Leveraging SaaS maintain aspects of their sub-assigned portions of the application.</p>
          </description>
-         <prop name="implementation-point">system</prop>
+         <prop name="implementation-point" value="system"/>
          <status state="operational"/>
          <responsible-role role-id="admin">
             <party-uuid>11111111-0000-4000-9000-100000000001</party-uuid>
@@ -178,7 +179,7 @@ Cust-A    Cust-B    Cust-C
             <by-component uuid="11111111-0000-4000-9009-002001002000"
                           component-uuid="11111111-0000-4000-9001-000000000002">
                <description>
-                  <p>Describes how the applicaiton satisfies AC-2, Part a.</p>
+                  <p>Describes how the application satisfies AC-2, Part a.</p>
                </description>
                <export>
                   <description>

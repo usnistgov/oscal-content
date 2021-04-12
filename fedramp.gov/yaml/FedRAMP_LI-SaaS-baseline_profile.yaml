@@ -1,14 +1,14 @@
 ---
 profile:
-  uuid: 30f110be-eb28-476a-a3aa-dc99248b2731
+  uuid: 50403d76-08f4-4673-8a31-5ae163fd7b15
   metadata:
     title: FedRAMP Tailored Low Impact Software as a Service (LI-SaaS) Baseline
     published: 2020-02-02T00:00:00.000-05:00
-    last-modified: 2020-12-18T16:38:39.798-05:00
+    last-modified: 2021-04-07T12:50:13.596-04:00
     version: "1.2"
-    oscal-version: 1.0.0-rc1
+    oscal-version: 1.0.0-rc2
     roles:
-      - id: parpared-by
+      - id: prepared-by
         title: Document creator
       - id: fedramp-pmo
         title: The FedRAMP Program Management Office (PMO)
@@ -28,7 +28,8 @@ profile:
         email-addresses:
           - info@fedramp.gov
         addresses:
-          - addr-lines:
+          - type: work
+            addr-lines:
               - 1800 F St. NW
               - ""
             city: Washington
@@ -52,134 +53,134 @@ profile:
           - ca9ba80e-1342-4bfd-b32a-abac468c24b4
   imports:
     - href: "#ad005eae-cc63-4e64-9109-3905a9a825e4"
-      include:
-        calls:
-          - control-id: ac-1
-          - control-id: ac-2
-          - control-id: ac-3
-          - control-id: ac-7
-          - control-id: ac-8
-          - control-id: ac-14
-          - control-id: ac-17
-          - control-id: ac-18
-          - control-id: ac-19
-          - control-id: ac-20
-          - control-id: ac-22
-          - control-id: at-1
-          - control-id: at-2
-          - control-id: at-3
-          - control-id: at-4
-          - control-id: au-1
-          - control-id: au-2
-          - control-id: au-3
-          - control-id: au-4
-          - control-id: au-5
-          - control-id: au-6
-          - control-id: au-8
-          - control-id: au-9
-          - control-id: au-11
-          - control-id: au-12
-          - control-id: ca-1
-          - control-id: ca-2
-          - control-id: ca-2.1
-          - control-id: ca-3
-          - control-id: ca-5
-          - control-id: ca-6
-          - control-id: ca-7
-          - control-id: ca-9
-          - control-id: cm-1
-          - control-id: cm-2
-          - control-id: cm-4
-          - control-id: cm-6
-          - control-id: cm-7
-          - control-id: cm-8
-          - control-id: cm-10
-          - control-id: cm-11
-          - control-id: cp-1
-          - control-id: cp-2
-          - control-id: cp-3
-          - control-id: cp-4
-          - control-id: cp-9
-          - control-id: cp-10
-          - control-id: ia-1
-          - control-id: ia-2
-          - control-id: ia-2.1
-          - control-id: ia-2.12
-          - control-id: ia-4
-          - control-id: ia-5
-          - control-id: ia-5.1
-          - control-id: ia-5.11
-          - control-id: ia-6
-          - control-id: ia-7
-          - control-id: ia-8
-          - control-id: ia-8.1
-          - control-id: ia-8.2
-          - control-id: ia-8.3
-          - control-id: ia-8.4
-          - control-id: ir-1
-          - control-id: ir-2
-          - control-id: ir-4
-          - control-id: ir-5
-          - control-id: ir-6
-          - control-id: ir-7
-          - control-id: ir-8
-          - control-id: ir-9
-          - control-id: ma-1
-          - control-id: ma-2
-          - control-id: ma-4
-          - control-id: ma-5
-          - control-id: mp-1
-          - control-id: mp-2
-          - control-id: mp-6
-          - control-id: mp-7
-          - control-id: pe-1
-          - control-id: pe-2
-          - control-id: pe-3
-          - control-id: pe-6
-          - control-id: pe-8
-          - control-id: pe-12
-          - control-id: pe-13
-          - control-id: pe-14
-          - control-id: pe-15
-          - control-id: pe-16
-          - control-id: pl-1
-          - control-id: pl-2
-          - control-id: pl-4
-          - control-id: ps-1
-          - control-id: ps-2
-          - control-id: ps-3
-          - control-id: ps-4
-          - control-id: ps-5
-          - control-id: ps-6
-          - control-id: ps-7
-          - control-id: ps-8
-          - control-id: ra-1
-          - control-id: ra-2
-          - control-id: ra-3
-          - control-id: ra-5
-          - control-id: sa-1
-          - control-id: sa-2
-          - control-id: sa-3
-          - control-id: sa-4
-          - control-id: sa-4.10
-          - control-id: sa-5
-          - control-id: sa-9
-          - control-id: sc-1
-          - control-id: sc-5
-          - control-id: sc-7
-          - control-id: sc-12
-          - control-id: sc-13
-          - control-id: sc-15
-          - control-id: sc-20
-          - control-id: sc-21
-          - control-id: sc-22
-          - control-id: sc-39
-          - control-id: si-1
-          - control-id: si-2
-          - control-id: si-3
-          - control-id: si-4
-          - control-id: si-5
-          - control-id: si-12
+      include-controls:
+        - with-ids:
+            - ac-1
+            - ac-2
+            - ac-3
+            - ac-7
+            - ac-8
+            - ac-14
+            - ac-17
+            - ac-18
+            - ac-19
+            - ac-20
+            - ac-22
+            - at-1
+            - at-2
+            - at-3
+            - at-4
+            - au-1
+            - au-2
+            - au-3
+            - au-4
+            - au-5
+            - au-6
+            - au-8
+            - au-9
+            - au-11
+            - au-12
+            - ca-1
+            - ca-2
+            - ca-2.1
+            - ca-3
+            - ca-5
+            - ca-6
+            - ca-7
+            - ca-9
+            - cm-1
+            - cm-2
+            - cm-4
+            - cm-6
+            - cm-7
+            - cm-8
+            - cm-10
+            - cm-11
+            - cp-1
+            - cp-2
+            - cp-3
+            - cp-4
+            - cp-9
+            - cp-10
+            - ia-1
+            - ia-2
+            - ia-2.1
+            - ia-2.12
+            - ia-4
+            - ia-5
+            - ia-5.1
+            - ia-5.11
+            - ia-6
+            - ia-7
+            - ia-8
+            - ia-8.1
+            - ia-8.2
+            - ia-8.3
+            - ia-8.4
+            - ir-1
+            - ir-2
+            - ir-4
+            - ir-5
+            - ir-6
+            - ir-7
+            - ir-8
+            - ir-9
+            - ma-1
+            - ma-2
+            - ma-4
+            - ma-5
+            - mp-1
+            - mp-2
+            - mp-6
+            - mp-7
+            - pe-1
+            - pe-2
+            - pe-3
+            - pe-6
+            - pe-8
+            - pe-12
+            - pe-13
+            - pe-14
+            - pe-15
+            - pe-16
+            - pl-1
+            - pl-2
+            - pl-4
+            - ps-1
+            - ps-2
+            - ps-3
+            - ps-4
+            - ps-5
+            - ps-6
+            - ps-7
+            - ps-8
+            - ra-1
+            - ra-2
+            - ra-3
+            - ra-5
+            - sa-1
+            - sa-2
+            - sa-3
+            - sa-4
+            - sa-4.10
+            - sa-5
+            - sa-9
+            - sc-1
+            - sc-5
+            - sc-7
+            - sc-12
+            - sc-13
+            - sc-15
+            - sc-20
+            - sc-21
+            - sc-22
+            - sc-39
+            - si-1
+            - si-2
+            - si-3
+            - si-4
+            - si-5
+            - si-12
   merge:
     combine:
       method: keep
@@ -335,8 +336,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ac-2
         removes:
           - id-ref: ac-2_smt.b
@@ -352,8 +353,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - id: ac-2_fr
                 name: item
@@ -374,8 +375,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ac-7
         removes:
           - name-ref: objective
@@ -384,11 +385,11 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: NSO
-              - name: method
                 class: FedRAMP-Tailored-LI-SaaS
+              - name: method
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -402,8 +403,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: FED
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -416,8 +417,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: FED
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -430,8 +431,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ac-18
         removes:
           - name-ref: objective
@@ -440,8 +441,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: NSO
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -460,8 +461,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: NSO
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -479,8 +480,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ac-22
         removes:
           - name-ref: objective
@@ -489,8 +490,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: at-1
         removes:
           - name-ref: objective
@@ -499,8 +500,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: at-2
         removes:
           - name-ref: objective
@@ -509,8 +510,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: at-3
         removes:
           - name-ref: objective
@@ -519,8 +520,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: at-4
         removes:
           - name-ref: objective
@@ -529,8 +530,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: au-1
         removes:
           - name-ref: objective
@@ -539,8 +540,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: au-2
         removes:
           - name-ref: objective
@@ -549,8 +550,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: au-3
         removes:
           - name-ref: objective
@@ -559,8 +560,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: au-4
         removes:
           - name-ref: objective
@@ -569,8 +570,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: NSO
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -584,8 +585,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: au-6
         removes:
           - name-ref: objective
@@ -594,8 +595,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: au-8
         removes:
           - name-ref: objective
@@ -604,8 +605,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: au-9
         removes:
           - name-ref: objective
@@ -614,8 +615,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: au-11
         removes:
           - name-ref: objective
@@ -624,8 +625,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: NSO
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -639,8 +640,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ca-1
         removes:
           - name-ref: objective
@@ -649,8 +650,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ca-2
         removes:
           - name-ref: objective
@@ -659,8 +660,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - id: ca-2_fr
                 name: item
@@ -683,8 +684,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ca-3
         removes:
           - name-ref: objective
@@ -693,8 +694,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: CONDITIONAL
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -711,8 +712,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -726,8 +727,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - id: ca-6_fr
                 name: item
@@ -752,8 +753,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - id: ca-7_fr
                 name: item
@@ -784,8 +785,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: CONDITIONAL
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -802,8 +803,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: cm-2
         removes:
           - name-ref: objective
@@ -812,8 +813,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: cm-4
         removes:
           - name-ref: objective
@@ -822,8 +823,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: cm-6
         removes:
           - name-ref: objective
@@ -832,8 +833,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -878,8 +879,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: cm-8
         removes:
           - name-ref: objective
@@ -888,8 +889,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - id: cm-8_fr
                 name: item
@@ -909,8 +910,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: NSO
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -923,8 +924,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: NSO
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -942,8 +943,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: cp-2
         removes:
           - name-ref: objective
@@ -952,8 +953,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: NSO
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -967,8 +968,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: NSO
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -982,8 +983,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: NSO
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -997,8 +998,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - id: cp-9_fr
                 name: item
@@ -1045,8 +1046,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: NSO
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1060,8 +1061,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ia-2
         removes:
           - name-ref: objective
@@ -1070,11 +1071,11 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: NSO
-              - name: method
                 class: FedRAMP-Tailored-LI-SaaS
+              - name: method
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1089,8 +1090,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ia-2.12
         removes:
           - name-ref: objective
@@ -1099,8 +1100,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: CONDITIONAL
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1129,8 +1130,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ia-5
         removes:
           - name-ref: objective
@@ -1139,8 +1140,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ia-5.1
         removes:
           - name-ref: objective
@@ -1149,8 +1150,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ia-5.11
         removes:
           - name-ref: objective
@@ -1159,11 +1160,11 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: FED
-              - name: method
                 class: FedRAMP-Tailored-LI-SaaS
+              - name: method
                 value: CONDITIONAL
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1178,8 +1179,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ia-7
         removes:
           - name-ref: objective
@@ -1188,8 +1189,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ia-8
         removes:
           - name-ref: objective
@@ -1198,8 +1199,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ia-8.1
         removes:
           - name-ref: objective
@@ -1208,8 +1209,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: CONDITIONAL
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1227,8 +1228,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: CONDITIONAL
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1246,8 +1247,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ia-8.4
         removes:
           - name-ref: objective
@@ -1256,8 +1257,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ir-1
         removes:
           - name-ref: objective
@@ -1266,8 +1267,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ir-2
         removes:
           - name-ref: objective
@@ -1276,8 +1277,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ir-4
         removes:
           - name-ref: objective
@@ -1286,8 +1287,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - id: ir-4_fr
                 name: item
@@ -1311,8 +1312,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ir-6
         removes:
           - name-ref: objective
@@ -1321,8 +1322,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - id: ir-6_fr
                 name: item
@@ -1343,8 +1344,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ir-8
         removes:
           - name-ref: objective
@@ -1353,8 +1354,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1367,8 +1368,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1382,8 +1383,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ma-2
         removes:
           - name-ref: objective
@@ -1392,8 +1393,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: CONDITIONAL
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1407,8 +1408,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ma-5
         removes:
           - name-ref: objective
@@ -1417,8 +1418,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: CONDITIONAL
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1432,8 +1433,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: mp-2
         removes:
           - name-ref: objective
@@ -1442,8 +1443,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: CONDITIONAL
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1457,8 +1458,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: CONDITIONAL
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1472,8 +1473,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: CONDITIONAL
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1487,8 +1488,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: pe-2
         removes:
           - name-ref: objective
@@ -1497,8 +1498,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: CONDITIONAL
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1512,8 +1513,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: CONDITIONAL
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1527,8 +1528,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: CONDITIONAL
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1542,8 +1543,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: CONDITIONAL
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1557,8 +1558,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: CONDITIONAL
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1572,8 +1573,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: CONDITIONAL
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1587,8 +1588,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: CONDITIONAL
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1613,8 +1614,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: CONDITIONAL
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1628,8 +1629,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: CONDITIONAL
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1643,8 +1644,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: pl-2
         removes:
           - name-ref: objective
@@ -1653,8 +1654,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: pl-4
         removes:
           - name-ref: objective
@@ -1663,8 +1664,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ps-1
         removes:
           - name-ref: objective
@@ -1673,8 +1674,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ps-2
         removes:
           - name-ref: objective
@@ -1683,8 +1684,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: FED
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ps-3
         removes:
           - name-ref: objective
@@ -1693,8 +1694,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ps-4
         removes:
           - name-ref: objective
@@ -1703,8 +1704,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ps-5
         removes:
           - name-ref: objective
@@ -1713,8 +1714,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ps-6
         removes:
           - name-ref: objective
@@ -1723,8 +1724,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ps-7
         removes:
           - name-ref: objective
@@ -1733,8 +1734,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1748,8 +1749,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ra-1
         removes:
           - name-ref: objective
@@ -1758,8 +1759,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ra-2
         removes:
           - name-ref: objective
@@ -1768,8 +1769,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: ra-3
         removes:
           - name-ref: objective
@@ -1778,8 +1779,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - id: ra-3_fr
                 name: item
@@ -1806,8 +1807,8 @@ profile:
         adds:
           - props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - id: ra-5_fr_smt.a
                 name: item
@@ -1847,8 +1848,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: sa-2
         removes:
           - name-ref: objective
@@ -1857,8 +1858,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: sa-3
         removes:
           - name-ref: objective
@@ -1867,8 +1868,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: sa-4
         removes:
           - name-ref: objective
@@ -1877,8 +1878,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: sa-4.10
         removes:
           - name-ref: objective
@@ -1887,8 +1888,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: sa-5
         removes:
           - name-ref: objective
@@ -1897,8 +1898,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: sa-9
         removes:
           - name-ref: objective
@@ -1907,8 +1908,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: sc-1
         removes:
           - name-ref: objective
@@ -1917,8 +1918,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: sc-5
         removes:
           - name-ref: objective
@@ -1927,8 +1928,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: CONDITIONAL
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1942,8 +1943,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: sc-12
         removes:
           - name-ref: objective
@@ -1952,8 +1953,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - id: sc-12_fr
                 name: item
@@ -1973,8 +1974,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: CONDITIONAL
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -1988,8 +1989,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: NSO
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS
@@ -2002,8 +2003,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: sc-21
         removes:
           - name-ref: objective
@@ -2012,8 +2013,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: sc-22
         removes:
           - name-ref: objective
@@ -2022,8 +2023,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: sc-39
         removes:
           - name-ref: objective
@@ -2032,8 +2033,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: si-1
         removes:
           - name-ref: objective
@@ -2042,8 +2043,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: si-2
         removes:
           - name-ref: objective
@@ -2052,8 +2053,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: si-3
         removes:
           - name-ref: objective
@@ -2062,8 +2063,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: si-4
         removes:
           - name-ref: objective
@@ -2072,8 +2073,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ASSESS
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: si-5
         removes:
           - name-ref: objective
@@ -2082,8 +2083,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
       - control-id: si-12
         removes:
           - name-ref: objective
@@ -2092,8 +2093,8 @@ profile:
           - position: ending
             props:
               - name: method
-                class: FedRAMP-Tailored-LI-SaaS
                 value: ATTEST
+                class: FedRAMP-Tailored-LI-SaaS
             parts:
               - name: guidance
                 class: FedRAMP-Tailored-LI-SaaS

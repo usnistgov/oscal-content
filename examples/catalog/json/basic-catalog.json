@@ -1,12 +1,12 @@
 {
   "catalog": {
-    "uuid": "edaf664a-e984-4dbf-85ec-1104186fc12f",
+    "uuid": "22054d80-252f-4ab8-ae9c-5bf69c9109a9",
     "metadata": {
       "title": "Sample Security Catalog *for Demonstration* and Testing",
       "published": "2020-02-02T11:01:04.736-04:00",
-      "last-modified": "2020-12-18T16:23:23.811-05:00",
+      "last-modified": "2021-04-07T12:50:10.241-04:00",
       "version": "1.0",
-      "oscal-version": "1.0.0-rc1",
+      "oscal-version": "1.0.0-rc2",
       "remarks": "The following is a short excerpt from [ISO/IEC 27002:2013](https://www.iso.org/standard/54533.html), *Information technology — Security techniques — Code of practice for information security controls*. This work is provided here under copyright \"fair use\" for non-profit, educational purposes only. Copyrights for this work are held by the publisher, the International Organization for Standardization (ISO)."
     },
     "groups": [
@@ -47,7 +47,7 @@
                     "select": {
                       "how-many": "one or more",
                       "choice": [
-                        "initiating a device lock after {{ s1.1.1-prm_2 }} of inactivity",
+                        "initiating a device lock after {{ insert: param, s1.1.1-prm_2 }} of inactivity",
                         "requiring the user to initiate a device lock before leaving the system unattended"
                       ]
                     }
@@ -67,7 +67,7 @@
                   {
                     "id": "s1.1.1_stm",
                     "name": "statement",
-                    "prose": "All information security responsibilities should be defined and allocated.\n\nA value has been assigned to {{ s1.1.1-prm11 }}.\n\nA cross link has been established with a choppy syntax: [(choppy)](#s1.2)."
+                    "prose": "All information security responsibilities should be defined and allocated.\n\nA value has been assigned to {{ insert: param, s1.1.1-prm11 }}.\n\nA cross link has been established with a choppy syntax: [(choppy)](#s1.2)."
                   },
                   {
                     "id": "s1.1.1_gdn",
@@ -209,7 +209,7 @@
                       {
                         "id": "s2.1.1_gdn.4",
                         "name": "item",
-                        "prose": "The policy should take account of the following:\n\n1. security requirements of business applications;\n1. policies for information dissemination and authorization, e.g. the need-to-know principle and information security levels and classification of information;\n1. consistency between the access rights and information classification policies of systems and networks;\n1. relevant legislation and any contractual obligations regarding limitation of access to data or services;\n1. management of access rights in a distributed and networked environment which recognizes all types of connections availabel;\n1. segregation of access control roles, e.g. access request, access authorization, access administration;\n1. requirements for formal authorization of access requests;\n1. requirements for periodic review of access rights;\n1. removal of access rights;\n1. archiving of records of all significant events concerning the use and management of user identities and secret authentication information;,\n1. roles with privileged access.\n"
+                        "prose": "The policy should take account of the following:\n\n1. security requirements of business applications;\n1. policies for information dissemination and authorization, e.g. the need-to-know principle and information security levels and classification of information;\n1. consistency between the access rights and information classification policies of systems and networks;\n1. relevant legislation and any contractual obligations regarding limitation of access to data or services;\n1. management of access rights in a distributed and networked environment which recognizes all types of connections available;\n1. segregation of access control roles, e.g. access request, access authorization, access administration;\n1. requirements for formal authorization of access requests;\n1. requirements for periodic review of access rights;\n1. removal of access rights;\n1. archiving of records of all significant events concerning the use and management of user identities and secret authentication information;,\n1. roles with privileged access.\n"
                       }
                     ]
                   },

@@ -1,11 +1,11 @@
 ---
 system-security-plan:
-  uuid: 66c2a1c8-5830-48bd-8fdd-55a1c3a52888
+  uuid: cff8385f-108e-40a5-8f7a-82f3dc0eaba8
   metadata:
     title: Enterprise Logging and Auditing System Security Plan
-    last-modified: 2019-09-23T18:14:50.591Z
+    last-modified: 2021-04-07T12:50:10.241-04:00
     version: "1.0"
-    oscal-version: 1.0.0-rc1
+    oscal-version: 1.0.0-rc2
     roles:
       - id: legal-officer
         title: Legal Officer
@@ -26,7 +26,7 @@ system-security-plan:
         type: organization
         name: Acme Corp
   import-profile:
-    href: ../../nist.gov/SP800-53/rev4/yaml/NIST_SP-800-53_rev4_MODERATE-baseline_profile.yaml
+    href: ../../../nist.gov/SP800-53/rev4/yaml/NIST_SP-800-53_rev4_MODERATE-baseline_profile.yaml
   system-characteristics:
     system-name: Enterprise Logging and Auditing System
     description: This is an example of a system that provides enterprise logging and
@@ -58,7 +58,7 @@ system-security-plan:
     status:
       state: other
       remarks: This is an example, and is not intended to be implemented as a system
-    annotations:
+    props:
       - name: deployment-model
         value: private
       - name: service-models
@@ -73,21 +73,21 @@ system-security-plan:
         title: System Administrator
         role-ids:
           - asset-administrator
-        annotations:
+        props:
           - name: type
             value: internal
       ae8de94c-835d-4303-83b1-114b6a117a07:
         title: Audit Team
         role-ids:
           - asset-owner
-        annotations:
+        props:
           - name: type
             value: internal
       372ce7a3-92b0-437e-a98c-24d29f9bfab8:
         title: Legal Department
         role-ids:
           - legal-officer
-        annotations:
+        props:
           - name: type
             value: internal
     components:
@@ -213,14 +213,14 @@ system-security-plan:
       - uuid: aaadb3ff-6ae8-4332-92db-211468c52af2
         control-id: au-1
         statements:
-          au-1smt:
+          au-1_smt:
             uuid: 7ad47329-dc55-4196-a19d-178a8fe7438d
-          au-1smt.a:
+          au-1_smt.a:
             uuid: f3887a91-9ed3-425c-b305-21e4634a1c34
             by-components:
               795533ab-9427-4abe-820f-0b571bacfe6d:
                 uuid: a74681b2-fbcb-46eb-90fd-0d55aa74ac7b
-                description: The legal department develops, documents, and disseminates this
+                description: The legal department develops, documents and disseminates this
                   policy to all staff and contractors within the organization.
                 parameter-settings:
                   au-1_prm_1:
@@ -259,7 +259,7 @@ system-security-plan:
                     values:
                       - all IT staff who administer this system when the staff
                         member is assigned and annually through training
-          au-1smt.a.1:
+          au-1_smt.a.1:
             uuid: 6fe632bd-33aa-4eea-a507-a37f0d212085
             by-components:
               795533ab-9427-4abe-820f-0b571bacfe6d:
@@ -270,7 +270,7 @@ system-security-plan:
                   organizational coordination. Management commitment and
                   compliance statements are made in the board’s directive memo
                   dated January 1, 2012.
-          au-1smt.a.2:
+          au-1_smt.a.2:
             uuid: dbe9af68-1cd9-4ff1-965b-8f887351d411
             by-components:
               941e2a87-46f4-4b3e-9e87-bbd187091ca1:

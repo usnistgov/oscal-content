@@ -1,14 +1,11 @@
 ---
 catalog:
-  uuid: d327d08f-7bd7-4da0-9773-729f92ffa02e
+  uuid: 9337eb16-7168-46a5-acd2-c8cad23eb6d0
   metadata:
     title: SP800-53 MODERATE IMPACT BASELINE
-    last-modified: 2020-12-18T16:38:44.907-05:00
+    last-modified: 2021-04-12T20:14:49.350677Z
     version: FPD
-    oscal-version: 1.0.0-rc1
-    props:
-      - name: resolution-timestamp
-        value: 2021-04-12T18:57:42.647212Z
+    oscal-version: 1.0.0-rc2
     links:
       - href: NIST_SP-800-53_rev5-FPD_MODERATE-baseline_profile.xml
         rel: resolution-source

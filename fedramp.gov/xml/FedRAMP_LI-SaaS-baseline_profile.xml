@@ -1,12 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><!-- Modified again 2020-12-18-05:00 to conform with RC1 schema with updated link representations. -->
-<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="30f110be-eb28-476a-a3aa-dc99248b2731">
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Modified by the OSCAL 1.0.0 RC1 to OSCAL 1.0.0 RC2 conversion XSLT on 2021-04-07T12:50:13.596-04:00 -->
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
+         uuid="50403d76-08f4-4673-8a31-5ae163fd7b15">
    <metadata>
       <title>FedRAMP Tailored Low Impact Software as a Service (LI-SaaS) Baseline</title>
       <published>2020-02-02T00:00:00.000-05:00</published>
-      <last-modified>2020-12-18T16:38:39.798-05:00</last-modified>
+      <last-modified>2021-04-07T12:50:13.596-04:00</last-modified>
       <version>1.2</version>
-      <oscal-version>1.0.0-rc1</oscal-version>
-      <role id="parpared-by">
+      <oscal-version>1.0.0-rc2</oscal-version>
+      <role id="prepared-by">
          <title>Document creator</title>
       </role>
       <role id="fedramp-pmo">
@@ -46,134 +48,134 @@
       </responsible-party>
    </metadata>
    <import href="#ad005eae-cc63-4e64-9109-3905a9a825e4">
-      <include>
-         <call control-id="ac-1"/>
-         <call control-id="ac-2"/>
-         <call control-id="ac-3"/>
-         <call control-id="ac-7"/>
-         <call control-id="ac-8"/>
-         <call control-id="ac-14"/>
-         <call control-id="ac-17"/>
-         <call control-id="ac-18"/>
-         <call control-id="ac-19"/>
-         <call control-id="ac-20"/>
-         <call control-id="ac-22"/>
-         <call control-id="at-1"/>
-         <call control-id="at-2"/>
-         <call control-id="at-3"/>
-         <call control-id="at-4"/>
-         <call control-id="au-1"/>
-         <call control-id="au-2"/>
-         <call control-id="au-3"/>
-         <call control-id="au-4"/>
-         <call control-id="au-5"/>
-         <call control-id="au-6"/>
-         <call control-id="au-8"/>
-         <call control-id="au-9"/>
-         <call control-id="au-11"/>
-         <call control-id="au-12"/>
-         <call control-id="ca-1"/>
-         <call control-id="ca-2"/>
-         <call control-id="ca-2.1"/>
-         <call control-id="ca-3"/>
-         <call control-id="ca-5"/>
-         <call control-id="ca-6"/>
-         <call control-id="ca-7"/>
-         <call control-id="ca-9"/>
-         <call control-id="cm-1"/>
-         <call control-id="cm-2"/>
-         <call control-id="cm-4"/>
-         <call control-id="cm-6"/>
-         <call control-id="cm-7"/>
-         <call control-id="cm-8"/>
-         <call control-id="cm-10"/>
-         <call control-id="cm-11"/>
-         <call control-id="cp-1"/>
-         <call control-id="cp-2"/>
-         <call control-id="cp-3"/>
-         <call control-id="cp-4"/>
-         <call control-id="cp-9"/>
-         <call control-id="cp-10"/>
-         <call control-id="ia-1"/>
-         <call control-id="ia-2"/>
-         <call control-id="ia-2.1"/>
-         <call control-id="ia-2.12"/>
-         <call control-id="ia-4"/>
-         <call control-id="ia-5"/>
-         <call control-id="ia-5.1"/>
-         <call control-id="ia-5.11"/>
-         <call control-id="ia-6"/>
-         <call control-id="ia-7"/>
-         <call control-id="ia-8"/>
-         <call control-id="ia-8.1"/>
-         <call control-id="ia-8.2"/>
-         <call control-id="ia-8.3"/>
-         <call control-id="ia-8.4"/>
-         <call control-id="ir-1"/>
-         <call control-id="ir-2"/>
-         <call control-id="ir-4"/>
-         <call control-id="ir-5"/>
-         <call control-id="ir-6"/>
-         <call control-id="ir-7"/>
-         <call control-id="ir-8"/>
-         <call control-id="ir-9"/>
-         <call control-id="ma-1"/>
-         <call control-id="ma-2"/>
-         <call control-id="ma-4"/>
-         <call control-id="ma-5"/>
-         <call control-id="mp-1"/>
-         <call control-id="mp-2"/>
-         <call control-id="mp-6"/>
-         <call control-id="mp-7"/>
-         <call control-id="pe-1"/>
-         <call control-id="pe-2"/>
-         <call control-id="pe-3"/>
-         <call control-id="pe-6"/>
-         <call control-id="pe-8"/>
-         <call control-id="pe-12"/>
-         <call control-id="pe-13"/>
-         <call control-id="pe-14"/>
-         <call control-id="pe-15"/>
-         <call control-id="pe-16"/>
-         <call control-id="pl-1"/>
-         <call control-id="pl-2"/>
-         <call control-id="pl-4"/>
-         <call control-id="ps-1"/>
-         <call control-id="ps-2"/>
-         <call control-id="ps-3"/>
-         <call control-id="ps-4"/>
-         <call control-id="ps-5"/>
-         <call control-id="ps-6"/>
-         <call control-id="ps-7"/>
-         <call control-id="ps-8"/>
-         <call control-id="ra-1"/>
-         <call control-id="ra-2"/>
-         <call control-id="ra-3"/>
-         <call control-id="ra-5"/>
-         <call control-id="sa-1"/>
-         <call control-id="sa-2"/>
-         <call control-id="sa-3"/>
-         <call control-id="sa-4"/>
-         <call control-id="sa-4.10"/>
-         <call control-id="sa-5"/>
-         <call control-id="sa-9"/>
-         <call control-id="sc-1"/>
-         <call control-id="sc-5"/>
-         <call control-id="sc-7"/>
-         <call control-id="sc-12"/>
-         <call control-id="sc-13"/>
-         <call control-id="sc-15"/>
-         <call control-id="sc-20"/>
-         <call control-id="sc-21"/>
-         <call control-id="sc-22"/>
-         <call control-id="sc-39"/>
-         <call control-id="si-1"/>
-         <call control-id="si-2"/>
-         <call control-id="si-3"/>
-         <call control-id="si-4"/>
-         <call control-id="si-5"/>
-         <call control-id="si-12"/>
-      </include>
+      <include-controls>
+         <with-id>ac-1</with-id>
+         <with-id>ac-2</with-id>
+         <with-id>ac-3</with-id>
+         <with-id>ac-7</with-id>
+         <with-id>ac-8</with-id>
+         <with-id>ac-14</with-id>
+         <with-id>ac-17</with-id>
+         <with-id>ac-18</with-id>
+         <with-id>ac-19</with-id>
+         <with-id>ac-20</with-id>
+         <with-id>ac-22</with-id>
+         <with-id>at-1</with-id>
+         <with-id>at-2</with-id>
+         <with-id>at-3</with-id>
+         <with-id>at-4</with-id>
+         <with-id>au-1</with-id>
+         <with-id>au-2</with-id>
+         <with-id>au-3</with-id>
+         <with-id>au-4</with-id>
+         <with-id>au-5</with-id>
+         <with-id>au-6</with-id>
+         <with-id>au-8</with-id>
+         <with-id>au-9</with-id>
+         <with-id>au-11</with-id>
+         <with-id>au-12</with-id>
+         <with-id>ca-1</with-id>
+         <with-id>ca-2</with-id>
+         <with-id>ca-2.1</with-id>
+         <with-id>ca-3</with-id>
+         <with-id>ca-5</with-id>
+         <with-id>ca-6</with-id>
+         <with-id>ca-7</with-id>
+         <with-id>ca-9</with-id>
+         <with-id>cm-1</with-id>
+         <with-id>cm-2</with-id>
+         <with-id>cm-4</with-id>
+         <with-id>cm-6</with-id>
+         <with-id>cm-7</with-id>
+         <with-id>cm-8</with-id>
+         <with-id>cm-10</with-id>
+         <with-id>cm-11</with-id>
+         <with-id>cp-1</with-id>
+         <with-id>cp-2</with-id>
+         <with-id>cp-3</with-id>
+         <with-id>cp-4</with-id>
+         <with-id>cp-9</with-id>
+         <with-id>cp-10</with-id>
+         <with-id>ia-1</with-id>
+         <with-id>ia-2</with-id>
+         <with-id>ia-2.1</with-id>
+         <with-id>ia-2.12</with-id>
+         <with-id>ia-4</with-id>
+         <with-id>ia-5</with-id>
+         <with-id>ia-5.1</with-id>
+         <with-id>ia-5.11</with-id>
+         <with-id>ia-6</with-id>
+         <with-id>ia-7</with-id>
+         <with-id>ia-8</with-id>
+         <with-id>ia-8.1</with-id>
+         <with-id>ia-8.2</with-id>
+         <with-id>ia-8.3</with-id>
+         <with-id>ia-8.4</with-id>
+         <with-id>ir-1</with-id>
+         <with-id>ir-2</with-id>
+         <with-id>ir-4</with-id>
+         <with-id>ir-5</with-id>
+         <with-id>ir-6</with-id>
+         <with-id>ir-7</with-id>
+         <with-id>ir-8</with-id>
+         <with-id>ir-9</with-id>
+         <with-id>ma-1</with-id>
+         <with-id>ma-2</with-id>
+         <with-id>ma-4</with-id>
+         <with-id>ma-5</with-id>
+         <with-id>mp-1</with-id>
+         <with-id>mp-2</with-id>
+         <with-id>mp-6</with-id>
+         <with-id>mp-7</with-id>
+         <with-id>pe-1</with-id>
+         <with-id>pe-2</with-id>
+         <with-id>pe-3</with-id>
+         <with-id>pe-6</with-id>
+         <with-id>pe-8</with-id>
+         <with-id>pe-12</with-id>
+         <with-id>pe-13</with-id>
+         <with-id>pe-14</with-id>
+         <with-id>pe-15</with-id>
+         <with-id>pe-16</with-id>
+         <with-id>pl-1</with-id>
+         <with-id>pl-2</with-id>
+         <with-id>pl-4</with-id>
+         <with-id>ps-1</with-id>
+         <with-id>ps-2</with-id>
+         <with-id>ps-3</with-id>
+         <with-id>ps-4</with-id>
+         <with-id>ps-5</with-id>
+         <with-id>ps-6</with-id>
+         <with-id>ps-7</with-id>
+         <with-id>ps-8</with-id>
+         <with-id>ra-1</with-id>
+         <with-id>ra-2</with-id>
+         <with-id>ra-3</with-id>
+         <with-id>ra-5</with-id>
+         <with-id>sa-1</with-id>
+         <with-id>sa-2</with-id>
+         <with-id>sa-3</with-id>
+         <with-id>sa-4</with-id>
+         <with-id>sa-4.10</with-id>
+         <with-id>sa-5</with-id>
+         <with-id>sa-9</with-id>
+         <with-id>sc-1</with-id>
+         <with-id>sc-5</with-id>
+         <with-id>sc-7</with-id>
+         <with-id>sc-12</with-id>
+         <with-id>sc-13</with-id>
+         <with-id>sc-15</with-id>
+         <with-id>sc-20</with-id>
+         <with-id>sc-21</with-id>
+         <with-id>sc-22</with-id>
+         <with-id>sc-39</with-id>
+         <with-id>si-1</with-id>
+         <with-id>si-2</with-id>
+         <with-id>si-3</with-id>
+         <with-id>si-4</with-id>
+         <with-id>si-5</with-id>
+         <with-id>si-12</with-id>
+      </include-controls>
    </import>
    <merge>
       <combine method="keep"/>
@@ -499,7 +501,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - AC-2 - -  -->
@@ -514,11 +516,11 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
             <part id="ac-2_fr" name="item">
                <title>AC-2 Additional FedRAMP Requirements and Guidance</title>
                <part id="ac-2_fr_gdn.1" name="guidance">
-                  <prop name="label">Guidance:</prop>
+                  <prop name="label" value="Guidance:"/>
                   <p>Parts (b), (c), (d), (e), (i), (j), and (k) are excluded from FedRAMP Tailored for LI-SaaS.</p>
                </part>
             </part>
@@ -529,7 +531,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - AC-7 - -  -->
@@ -537,8 +539,8 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="NSO" class="FedRAMP-Tailored-LI-SaaS"/>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>NSO for non-privileged users. Attestation for privileged users related to multi-factor identification and authentication.</p>
             </part>
@@ -549,7 +551,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">FED</prop>
+            <prop name="method" value="FED" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>FED - This is related to agency data and agency policy solution.</p>
             </part>
@@ -560,7 +562,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">FED</prop>
+            <prop name="method" value="FED" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>FED - This is related to agency data and agency policy solution.</p>
             </part>
@@ -571,7 +573,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - AC-18 - -  -->
@@ -579,7 +581,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
+            <prop name="method" value="NSO" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>NSO - All access to Cloud SaaS are via web services and/or API. The device accessed from or whether via wired or wireless connection is out of scope. Regardless of device accessed from, must utilize approved remote access methods (AC-17), secure communication with strong encryption (SC-13), key management (SC-12), and multi-factor authentication for privileged access (IA-2[1]).</p>
             </part>
@@ -590,7 +592,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
+            <prop name="method" value="NSO" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>NSO - All access to Cloud SaaS are via web service and/or API. The device accessed from is out of the scope. Regardless of device accessed from, must utilize approved remote access methods (AC-17), secure communication with strong encryption (SC-13), key management (SC-12), and multi-factor authentication for privileged access (IA-2 [1]).</p>
             </part>
@@ -601,7 +603,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - AC-22 - -  -->
@@ -609,7 +611,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - AT-1 - -  -->
@@ -617,7 +619,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - AT-2 - -  -->
@@ -625,7 +627,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - AT-3 - -  -->
@@ -633,7 +635,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - AT-4 - -  -->
@@ -641,7 +643,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - AU-1 - -  -->
@@ -649,7 +651,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - AU-2 - -  -->
@@ -657,7 +659,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - AU-3 - -  -->
@@ -665,7 +667,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - AU-4 - -  -->
@@ -673,7 +675,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
+            <prop name="method" value="NSO" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>NSO - Loss of availability of the audit data has been determined to have little or no impact to government business/mission needs.</p>
             </part>
@@ -684,7 +686,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - AU-6 - -  -->
@@ -692,7 +694,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - AU-8 - -  -->
@@ -700,7 +702,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - AU-9 - -  -->
@@ -708,7 +710,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - AU-11 - -  -->
@@ -716,7 +718,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
+            <prop name="method" value="NSO" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>NSO - Loss of availability of the audit data has been determined as little or no impact to government business/mission needs.</p>
             </part>
@@ -727,7 +729,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - CA-1 - -  -->
@@ -735,7 +737,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - CA-2 - -  -->
@@ -743,11 +745,11 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
             <part id="ca-2_fr" name="item">
                <title>CA-2 Additional FedRAMP Requirements and Guidance</title>
                <part id="ca-2_fr_gdn.1" name="guidance">
-                  <prop name="label">Guidance:</prop>
+                  <prop name="label" value="Guidance:"/>
                   <p>See the FedRAMP Documents page under Key Cloud Service Provider (CSP) Documents, Annual Assessment Guidance <a href="https://www.fedramp.gov/documents/">https://www.fedramp.gov/documents/</a>
                   </p>
                </part>
@@ -759,7 +761,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - CA-3 - -  -->
@@ -767,7 +769,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
+            <prop name="method" value="CONDITIONAL" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Condition: There are connection(s) to external systems. Connections (if any) shall be authorized and must: 1) Identify the interface/connection. 2) Detail what data is involved and its sensitivity. 3) Determine whether the connection is one-way or bi-directional. 4) Identify how the connection is secured.</p>
             </part>
@@ -778,7 +780,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Attestation - for compliance with FedRAMP Tailored LI-SaaS Continuous Monitoring Requirements.</p>
             </part>
@@ -789,11 +791,11 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
             <part id="ca-6_fr" name="item">
                <title>CA-6(c) Additional FedRAMP Requirements and Guidance</title>
                <part id="ca-6_fr_gdn.1" name="guidance">
-                  <prop name="label">Guidance:</prop>
+                  <prop name="label" value="Guidance:"/>
                   <p>Significant change is defined in NIST Special Publication 800-37 Revision 1, Appendix F. The service provider describes the types of changes to the information system or the environment of operations that would impact the risk posture. The types of changes are approved and accepted by the Authorizing Official.</p>
                </part>
             </part>
@@ -804,15 +806,15 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
             <part id="ca-7_fr" name="item">
                <title>CA-7 Additional FedRAMP Requirements and Guidance</title>
                <part id="ca-7_fr_gdn.1" name="guidance">
-                  <prop name="label">Guidance:</prop>
+                  <prop name="label" value="Guidance:"/>
                   <p>CSPs must provide evidence of closure and remediation of high vulnerabilities within the timeframe for standard POA&amp;M updates.</p>
                </part>
                <part id="ca-7_fr_gdn.2" name="guidance">
-                  <prop name="label">Guidance:</prop>
+                  <prop name="label" value="Guidance:"/>
                   <p>See the FedRAMP Documents page under Key Cloud Service Provider (CSP) Documents, Continuous Monitoring Strategy Guide <a href="https://www.fedramp.gov/documents/">https://www.fedramp.gov/documents/</a>
                   </p>
                </part>
@@ -824,7 +826,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
+            <prop name="method" value="CONDITIONAL" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Condition: There are connection(s) to external systems. Connections (if any) shall be authorized and must: 1) Identify the interface/connection. 2) Detail what data is involved and its sensitivity. 3) Determine whether the connection is one-way or bi-directional. 4) Identify how the connection is secured.</p>
             </part>
@@ -835,7 +837,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - CM-2 - -  -->
@@ -843,7 +845,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - CM-4 - -  -->
@@ -851,7 +853,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - CM-6 - -  -->
@@ -859,22 +861,22 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Required - Specifically include details of least functionality.</p>
             </part>
             <part id="cm-6_fr" name="item">
                <title>CM-6(a) Additional FedRAMP Requirements and Guidance</title>
                <part id="cm-6_fr_smt.1" name="item">
-                  <prop name="label">Requirement 1:</prop>
+                  <prop name="label" value="Requirement 1:"/>
                   <p>The service provider shall use the Center for Internet Security guidelines (Level 1) to establish configuration settings or establishes its own configuration settings if USGCB is not available.</p>
                </part>
                <part id="cm-6_fr_smt.2" name="item">
-                  <prop name="label">Requirement 2:</prop>
+                  <prop name="label" value="Requirement 2:"/>
                   <p>The service provider shall ensure that checklists for configuration settings are Security Content Automation Protocol (SCAP) (<a href="http://scap.nist.gov/">http://scap.nist.gov/</a>) validated or SCAP compatible (if validated checklists are not available).</p>
                </part>
                <part id="cm-6_fr_gdn.1" name="guidance">
-                  <prop name="label">Guidance:</prop>
+                  <prop name="label" value="Guidance:"/>
                   <p>Information on the USGCB checklists can be found at: <a href="https://csrc.nist.gov/Projects/United-States-Government-Configuration-Baseline">https://csrc.nist.gov/Projects/United-States-Government-Configuration-Baseline</a>.</p>
                </part>
             </part>
@@ -885,7 +887,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - CM-8 - -  -->
@@ -893,11 +895,11 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
             <part id="cm-8_fr" name="item">
                <title>CM-8 Additional FedRAMP Requirements and Guidance</title>
                <part id="cm-8_fr_smt.1" name="item">
-                  <prop name="label">Requirement:</prop>
+                  <prop name="label" value="Requirement:"/>
                   <p>Must be provided at least monthly or when there is a change.</p>
                </part>
             </part>
@@ -908,7 +910,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
+            <prop name="method" value="NSO" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>NSO- Not directly related to protection of the data.</p>
             </part>
@@ -919,7 +921,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
+            <prop name="method" value="NSO" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>NSO - Boundary is specific to SaaS environment; all access is via web services; users' machine or internal network are not contemplated. External services (SA-9), internal connection (CA-9), remote access (AC-17), and secure access (SC-12 and SC-13), and privileged authentication (IA-2[1]) are considerations.</p>
             </part>
@@ -930,7 +932,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - CP-2 - -  -->
@@ -938,7 +940,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
+            <prop name="method" value="NSO" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.</p>
             </part>
@@ -949,7 +951,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
+            <prop name="method" value="NSO" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.</p>
             </part>
@@ -960,7 +962,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
+            <prop name="method" value="NSO" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.</p>
             </part>
@@ -971,23 +973,23 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
             <part id="cp-9_fr" name="item">
                <title>CP-9 Additional FedRAMP Requirements and Guidance</title>
                <part id="cp-9_fr_smt.1" name="item">
-                  <prop name="label">Requirement:</prop>
+                  <prop name="label" value="Requirement:"/>
                   <p>The service provider shall determine what elements of the cloud environment require the Information System Backup control. The service provider shall determine how Information System Backup is going to be verified and appropriate periodicity of the check.</p>
                </part>
                <part id="cp-9_fr_smt.a" name="item">
-                  <prop name="label">CP-9(a) Requirement:</prop>
+                  <prop name="label" value="CP-9(a) Requirement:"/>
                   <p>The service provider maintains at least three backup copies of user-level information (at least one of which is available online).</p>
                </part>
                <part id="cp-9_fr_smt.b" name="item">
-                  <prop name="label">CP-9(b)Requirement:</prop>
+                  <prop name="label" value="CP-9(b)Requirement:"/>
                   <p>The service provider maintains at least three backup copies of system-level information (at least one of which is available online).</p>
                </part>
                <part id="cp-9_fr_smt.c" name="item">
-                  <prop name="label">CP-9(c)Requirement:</prop>
+                  <prop name="label" value="CP-9(c)Requirement:"/>
                   <p>The service provider maintains at least three backup copies of information system documentation including security information (at least one of which is available online).</p>
                </part>
             </part>
@@ -998,7 +1000,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
+            <prop name="method" value="NSO" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>NSO - Loss of availability of the SaaS has been determined as little or no impact to government business/mission needs.</p>
             </part>
@@ -1009,7 +1011,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - IA-2 - -  -->
@@ -1017,8 +1019,8 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="NSO" class="FedRAMP-Tailored-LI-SaaS"/>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>NSO for non-privileged users. Attestation for privileged users related to multi-factor identification and authentication - specifically include description of management of service accounts.</p>
             </part>
@@ -1029,7 +1031,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - IA-2 (12) - -  -->
@@ -1037,14 +1039,14 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
+            <prop name="method" value="CONDITIONAL" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Condition: Must document and assess for privileged users. May attest to this control for non-privileged users. FedRAMP requires a minimum of multi-factor authentication for all Federal privileged users, if acceptance of PIV credentials is not supported. The implementation status and details of how this control is implemented must be clearly defined by the CSP.</p>
             </part>
             <part id="ia-2.12_fr" name="item">
                <title>IA-2 (12) Additional FedRAMP Requirements and Guidance</title>
                <part id="ia-2.12_fr_gdn.1" name="guidance">
-                  <prop name="label">Guidance:</prop>
+                  <prop name="label" value="Guidance:"/>
                   <p>Include Common Access Card (CAC), i.e., the DoD technical implementation of PIV/FIPS 201/HSPD-12.</p>
                </part>
             </part>
@@ -1055,7 +1057,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - IA-5 - -  -->
@@ -1063,7 +1065,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - IA-5 (1) - -  -->
@@ -1071,7 +1073,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - IA-5 (11) - -  -->
@@ -1079,8 +1081,8 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">FED</prop>
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
+            <prop name="method" value="FED" class="FedRAMP-Tailored-LI-SaaS"/>
+            <prop name="method" value="CONDITIONAL" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>FED - for Federal privileged users. Condition - Must document and assess for privileged users. May attest to this control for non-privileged users.</p>
             </part>
@@ -1091,7 +1093,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - IA-7 - -  -->
@@ -1099,7 +1101,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - IA-8 - -  -->
@@ -1107,7 +1109,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - IA-8 (1) - -  -->
@@ -1115,7 +1117,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
+            <prop name="method" value="CONDITIONAL" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Condition: Must document and assess for privileged users. May attest to this control for non-privileged users. FedRAMP requires a minimum of multi-factor authentication for all Federal privileged users, if acceptance of PIV credentials is not supported. The implementation status and details of how this control is implemented must be clearly defined by the CSP.</p>
             </part>
@@ -1126,7 +1128,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
+            <prop name="method" value="CONDITIONAL" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Condition: Must document and assess for privileged users. May attest to this control for non-privileged users. FedRAMP requires a minimum of multi-factor authentication for all Federal privileged users, if acceptance of PIV credentials is not supported. The implementation status and details of how this control is implemented must be clearly defined by the CSP.</p>
             </part>
@@ -1137,7 +1139,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - IA-8 (4) - -  -->
@@ -1145,7 +1147,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - IR-1 - -  -->
@@ -1153,7 +1155,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - IR-2 - -  -->
@@ -1161,7 +1163,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - IR-4 - -  -->
@@ -1169,11 +1171,11 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
             <part id="ir-4_fr" name="item">
                <title>IR-4 Additional FedRAMP Requirements and Guidance</title>
                <part id="ir-4_fr_smt.1" name="item">
-                  <prop name="label">Requirement:</prop>
+                  <prop name="label" value="Requirement:"/>
                   <p>The service provider ensures that individuals conducting incident handling meet personnel security requirements commensurate with the criticality/sensitivity of the information being processed, stored, and transmitted by the information system.</p>
                </part>
             </part>
@@ -1184,7 +1186,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - IR-6 - -  -->
@@ -1192,11 +1194,11 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
             <part id="ir-6_fr" name="item">
                <title>IR-6 Additional FedRAMP Requirements and Guidance</title>
                <part id="ir-6_fr_smt.1" name="item">
-                  <prop name="label">Requirement:</prop>
+                  <prop name="label" value="Requirement:"/>
                   <p>Report security incident information according to FedRAMP Incident Communications Procedure.</p>
                </part>
             </part>
@@ -1207,7 +1209,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - IR-8 - -  -->
@@ -1215,7 +1217,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Attestation - Specifically attest to US-CERT compliance.</p>
             </part>
@@ -1226,7 +1228,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Attestation - Specifically describe information spillage response processes.</p>
             </part>
@@ -1237,7 +1239,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - MA-2 - -  -->
@@ -1245,7 +1247,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
+            <prop name="method" value="CONDITIONAL" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.</p>
             </part>
@@ -1256,7 +1258,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - MA-5 - -  -->
@@ -1264,7 +1266,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
+            <prop name="method" value="CONDITIONAL" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.</p>
             </part>
@@ -1275,7 +1277,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - MP-2 - -  -->
@@ -1283,7 +1285,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
+            <prop name="method" value="CONDITIONAL" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.</p>
             </part>
@@ -1294,7 +1296,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
+            <prop name="method" value="CONDITIONAL" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.</p>
             </part>
@@ -1305,7 +1307,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
+            <prop name="method" value="CONDITIONAL" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.</p>
             </part>
@@ -1316,7 +1318,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - PE-2 - -  -->
@@ -1324,7 +1326,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
+            <prop name="method" value="CONDITIONAL" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.</p>
             </part>
@@ -1335,7 +1337,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
+            <prop name="method" value="CONDITIONAL" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.</p>
             </part>
@@ -1346,7 +1348,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
+            <prop name="method" value="CONDITIONAL" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.</p>
             </part>
@@ -1357,7 +1359,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
+            <prop name="method" value="CONDITIONAL" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.</p>
             </part>
@@ -1368,7 +1370,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
+            <prop name="method" value="CONDITIONAL" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.</p>
             </part>
@@ -1379,7 +1381,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
+            <prop name="method" value="CONDITIONAL" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.</p>
             </part>
@@ -1390,14 +1392,14 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
+            <prop name="method" value="CONDITIONAL" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.</p>
             </part>
             <part id="pe-14_fr" name="item">
                <title>PE-14(a) Additional FedRAMP Requirements and Guidance</title>
                <part id="pe-14_fr_smt.a" name="item">
-                  <prop name="label">(a) Requirement:</prop>
+                  <prop name="label" value="(a) Requirement:"/>
                   <p>The service provider measures temperature at server inlets and humidity levels by dew point.</p>
                </part>
             </part>
@@ -1408,7 +1410,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
+            <prop name="method" value="CONDITIONAL" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.</p>
             </part>
@@ -1419,7 +1421,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
+            <prop name="method" value="CONDITIONAL" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Condition: Control is not inherited from a FedRAMP-authorized PaaS or IaaS.</p>
             </part>
@@ -1430,7 +1432,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - PL-2 - -  -->
@@ -1438,7 +1440,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - PL-4 - -  -->
@@ -1446,7 +1448,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - PS-1 - -  -->
@@ -1454,7 +1456,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - PS-2 - -  -->
@@ -1462,7 +1464,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">FED</prop>
+            <prop name="method" value="FED" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - PS-3 - -  -->
@@ -1470,7 +1472,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - PS-4 - -  -->
@@ -1478,7 +1480,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - PS-5 - -  -->
@@ -1486,7 +1488,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - PS-6 - -  -->
@@ -1494,7 +1496,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - PS-7 - -  -->
@@ -1502,7 +1504,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Attestation - Specifically stating that any third-party security personnel are treated as CSP employees.</p>
             </part>
@@ -1513,7 +1515,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - RA-1 - -  -->
@@ -1521,7 +1523,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - RA-2 - -  -->
@@ -1529,7 +1531,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - RA-3 - -  -->
@@ -1537,15 +1539,15 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
             <part id="ra-3_fr" name="item">
                <title>RA-3 Additional FedRAMP Requirements and Guidance</title>
                <part id="ra-3_fr_gdn.1" name="guidance">
-                  <prop name="label">Guidance:</prop>
+                  <prop name="label" value="Guidance:"/>
                   <p>Significant change is defined in NIST Special Publication 800-37 Revision 1, Appendix F</p>
                </part>
                <part id="ra-3_fr_smt.d" name="item">
-                  <prop name="label">RA-3 (d) Requirement:</prop>
+                  <prop name="label" value="RA-3 (d) Requirement:"/>
                   <p>Include all Authorizing Officials; for JAB authorizations to include FedRAMP.</p>
                </part>
             </part>
@@ -1556,21 +1558,21 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add>
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
             <part id="ra-5_fr_smt.a" name="item">
                <title>RA-5(a) Additional FedRAMP Requirements and Guidance</title>
-               <prop name="label">RA-5 (a)Requirement:</prop>
+               <prop name="label" value="RA-5 (a)Requirement:"/>
                <p>An accredited independent assessor scans operating systems/infrastructure, web applications, and databases once annually.</p>
             </part>
             <part id="ra-5_fr_smt.e" name="item">
                <title>RA-5(e) Additional FedRAMP Requirements and Guidance</title>
-               <prop name="label">RA-5 (e)Requirement:</prop>
+               <prop name="label" value="RA-5 (e)Requirement:"/>
                <p>To include all Authorizing Officials; for JAB authorizations to include FedRAMP.</p>
             </part>
             <part id="ra-5_fr" name="item">
                <title>RA-5 Additional FedRAMP Requirements and Guidance</title>
                <part id="ra-5_fr_gdn.1" name="guidance">
-                  <prop name="label">Guidance:</prop>
+                  <prop name="label" value="Guidance:"/>
                   <p>
                      <strong>See the FedRAMP Documents page under Key Cloud Service Provider (CSP) Documents&gt; Vulnerability Scanning Requirements</strong> (<a href="https://www.FedRAMP.gov/documents/">https://www.FedRAMP.gov/documents/</a>)</p>
                </part>
@@ -1582,7 +1584,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - SA-2 - -  -->
@@ -1590,7 +1592,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - SA-3 - -  -->
@@ -1598,7 +1600,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - SA-4 - -  -->
@@ -1606,7 +1608,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - SA-4(10) - -  -->
@@ -1614,7 +1616,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - SA-5 - -  -->
@@ -1622,7 +1624,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - SA-9 - -  -->
@@ -1630,7 +1632,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - SC-1 - -  -->
@@ -1638,7 +1640,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - SC-5 - -  -->
@@ -1646,7 +1648,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
+            <prop name="method" value="CONDITIONAL" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Condition: If availability is a requirement, define protections in place as per control requirement.</p>
             </part>
@@ -1657,7 +1659,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - SC-12 - -  -->
@@ -1665,11 +1667,11 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
             <part id="sc-12_fr" name="item">
                <title>SC-12 Additional FedRAMP Requirements and Guidance</title>
                <part id="sc-12_fr_gdn.1" name="guidance">
-                  <prop name="label">Guidance:</prop>
+                  <prop name="label" value="Guidance:"/>
                   <p>Federally approved cryptography.</p>
                </part>
             </part>
@@ -1680,7 +1682,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">CONDITIONAL</prop>
+            <prop name="method" value="CONDITIONAL" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Condition: If implementing need to detail how they meet it or don't meet it.</p>
             </part>
@@ -1691,7 +1693,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">NSO</prop>
+            <prop name="method" value="NSO" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>NSO - Not directly related to the security of the SaaS.</p>
             </part>
@@ -1702,7 +1704,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - SC-21 - -  -->
@@ -1710,7 +1712,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - SC-22 - -  -->
@@ -1718,7 +1720,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - SC-39 - -  -->
@@ -1726,7 +1728,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - SI-1 - -  -->
@@ -1734,7 +1736,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - SI-2 - -  -->
@@ -1742,7 +1744,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - SI-3 - -  -->
@@ -1750,7 +1752,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - SI-4 - -  -->
@@ -1758,7 +1760,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ASSESS</prop>
+            <prop name="method" value="ASSESS" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - SI-5 - -  -->
@@ -1766,7 +1768,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
          </add>
       </alter>
       <!-- - - SI-12 - -  -->
@@ -1774,7 +1776,7 @@
          <remove name-ref="objective"/>
          <remove name-ref="assessment"/>
          <add position="ending">
-            <prop name="method" class="FedRAMP-Tailored-LI-SaaS">ATTEST</prop>
+            <prop name="method" value="ATTEST" class="FedRAMP-Tailored-LI-SaaS"/>
             <part name="guidance" class="FedRAMP-Tailored-LI-SaaS">
                <p>Attestation - Specifically related to US-CERT and FedRAMP communications procedures.</p>
             </part>
@@ -1785,27 +1787,36 @@
    <back-matter>
       <resource uuid="985475ee-d4d6-4581-8fdf-d84d3d8caa48">
          <title>FedRAMP Applicable Laws and Regulations</title>
-         <prop name="conformity" ns="https://fedramp.gov/ns/oscal">fedramp-citations</prop>
-         <prop name="keep">always</prop>
+         <prop ns="https://fedramp.gov/ns/oscal"
+               name="conformity"
+               value="fedramp-citations"/>
+         <prop name="keep" value="always"/>
          <rlink href="https://www.fedramp.gov/assets/resources/templates/SSP-A12-FedRAMP-Laws-and-Regulations-Template.xlsx"/>
       </resource>
       <resource uuid="1a23a771-d481-4594-9a1a-71d584fa4123">
          <title>FedRAMP Master Acronym and Glossary</title>
-         <prop name="conformity" ns="https://fedramp.gov/ns/oscal">fedramp-acronyms</prop>
-         <prop name="keep">always</prop>
+         <prop ns="https://fedramp.gov/ns/oscal"
+               name="conformity"
+               value="fedramp-acronyms"/>
+         <prop name="keep" value="always"/>
          <rlink href="https://www.fedramp.gov/assets/resources/documents/FedRAMP_Master_Acronym_and_Glossary.pdf"/>
       </resource>
       <resource uuid="a2381e87-3d04-4108-a30b-b4d2f36d001f">
-         <description><p>FedRAMP Logo</p></description>
-         <prop name="conformity" ns="https://fedramp.gov/ns/oscal">fedramp-logo</prop>
-         <prop name="keep">always</prop>
+         <description>
+            <p>FedRAMP Logo</p>
+         </description>
+         <prop ns="https://fedramp.gov/ns/oscal"
+               name="conformity"
+               value="fedramp-logo"/>
+         <prop name="keep" value="always"/>
          <rlink href="https://www.fedramp.gov/assets/img/logo-main-fedramp.png"/>
       </resource>
       <resource uuid="ad005eae-cc63-4e64-9109-3905a9a825e4">
          <title>NIST Special Publication (SP) 800-53</title>
-         <prop name="version" ns="https://fedramp.gov/ns/oscal">Revision 4</prop>
-         <prop name="keep">always</prop>
-         <rlink media-type="application/xml" href="../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_catalog.xml"/>
+         <prop ns="https://fedramp.gov/ns/oscal" name="version" value="Revision 4"/>
+         <prop name="keep" value="always"/>
+         <rlink media-type="application/xml"
+                href="../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_catalog.xml"/>
       </resource>
    </back-matter>
 </profile>

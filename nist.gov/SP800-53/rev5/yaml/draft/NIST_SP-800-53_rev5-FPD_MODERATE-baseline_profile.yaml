@@ -1,11 +1,11 @@
 ---
 profile:
-  uuid: 1730eec7-24a1-4703-96d3-f103ce056604
+  uuid: 8bd38335-b5e4-4e23-91d3-6b45ff66a680
   metadata:
     title: SP800-53 MODERATE IMPACT BASELINE
-    last-modified: 2020-12-18T16:38:44.907-05:00
+    last-modified: 2021-04-07T12:50:16.742-04:00
     version: FPD
-    oscal-version: 1.0.0-rc1
+    oscal-version: 1.0.0-rc2
     roles:
       - id: creator
         title: Document Creator
@@ -35,330 +35,330 @@ profile:
           - 2ef7cfec-cb8e-4571-a7a2-a5c609b4767a
   imports:
     - href: NIST_SP-800-53_rev5-FINAL_catalog.xml
-      include:
-        calls:
-          - control-id: ac-1
-          - control-id: ac-2
-          - control-id: ac-2.1
-          - control-id: ac-2.2
-          - control-id: ac-2.3
-          - control-id: ac-2.4
-          - control-id: ac-2.5
-          - control-id: ac-2.13
-          - control-id: ac-3
-          - control-id: ac-4
-          - control-id: ac-5
-          - control-id: ac-6
-          - control-id: ac-6.1
-          - control-id: ac-6.2
-          - control-id: ac-6.5
-          - control-id: ac-6.7
-          - control-id: ac-6.9
-          - control-id: ac-6.10
-          - control-id: ac-7
-          - control-id: ac-8
-          - control-id: ac-11
-          - control-id: ac-11.1
-          - control-id: ac-12
-          - control-id: ac-14
-          - control-id: ac-17
-          - control-id: ac-17.1
-          - control-id: ac-17.2
-          - control-id: ac-17.3
-          - control-id: ac-17.4
-          - control-id: ac-18
-          - control-id: ac-18.1
-          - control-id: ac-18.3
-          - control-id: ac-19
-          - control-id: ac-19.5
-          - control-id: ac-20
-          - control-id: ac-20.1
-          - control-id: ac-20.2
-          - control-id: ac-21
-          - control-id: ac-22
-          - control-id: at-1
-          - control-id: at-2
-          - control-id: at-2.2
-          - control-id: at-2.3
-          - control-id: at-3
-          - control-id: at-4
-          - control-id: au-1
-          - control-id: au-2
-          - control-id: au-3
-          - control-id: au-3.1
-          - control-id: au-4
-          - control-id: au-5
-          - control-id: au-6
-          - control-id: au-6.1
-          - control-id: au-6.3
-          - control-id: au-7
-          - control-id: au-7.1
-          - control-id: au-8
-          - control-id: au-8.1
-          - control-id: au-9
-          - control-id: au-9.4
-          - control-id: au-11
-          - control-id: au-12
-          - control-id: ca-1
-          - control-id: ca-2
-          - control-id: ca-2.1
-          - control-id: ca-3
-          - control-id: ca-5
-          - control-id: ca-6
-          - control-id: ca-7
-          - control-id: ca-7.1
-          - control-id: ca-7.4
-          - control-id: ca-9
-          - control-id: cm-1
-          - control-id: cm-2
-          - control-id: cm-2.2
-          - control-id: cm-2.3
-          - control-id: cm-2.7
-          - control-id: cm-3
-          - control-id: cm-3.2
-          - control-id: cm-3.4
-          - control-id: cm-4
-          - control-id: cm-4.2
-          - control-id: cm-5
-          - control-id: cm-6
-          - control-id: cm-7
-          - control-id: cm-7.1
-          - control-id: cm-7.2
-          - control-id: cm-7.5
-          - control-id: cm-8
-          - control-id: cm-8.1
-          - control-id: cm-8.3
-          - control-id: cm-9
-          - control-id: cm-10
-          - control-id: cm-11
-          - control-id: cm-12
-          - control-id: cm-12.1
-          - control-id: cp-1
-          - control-id: cp-2
-          - control-id: cp-2.1
-          - control-id: cp-2.3
-          - control-id: cp-2.8
-          - control-id: cp-3
-          - control-id: cp-4
-          - control-id: cp-4.1
-          - control-id: cp-6
-          - control-id: cp-6.1
-          - control-id: cp-6.3
-          - control-id: cp-7
-          - control-id: cp-7.1
-          - control-id: cp-7.2
-          - control-id: cp-7.3
-          - control-id: cp-8
-          - control-id: cp-8.1
-          - control-id: cp-8.2
-          - control-id: cp-9
-          - control-id: cp-9.1
-          - control-id: cp-9.8
-          - control-id: cp-10
-          - control-id: cp-10.2
-          - control-id: ia-1
-          - control-id: ia-2
-          - control-id: ia-2.1
-          - control-id: ia-2.2
-          - control-id: ia-2.8
-          - control-id: ia-2.12
-          - control-id: ia-3
-          - control-id: ia-4
-          - control-id: ia-4.4
-          - control-id: ia-5
-          - control-id: ia-5.1
-          - control-id: ia-5.2
-          - control-id: ia-5.6
-          - control-id: ia-6
-          - control-id: ia-7
-          - control-id: ia-8
-          - control-id: ia-8.1
-          - control-id: ia-8.2
-          - control-id: ia-8.4
-          - control-id: ia-11
-          - control-id: ia-12
-          - control-id: ia-12.2
-          - control-id: ia-12.3
-          - control-id: ia-12.5
-          - control-id: ir-1
-          - control-id: ir-2
-          - control-id: ir-3
-          - control-id: ir-3.2
-          - control-id: ir-4
-          - control-id: ir-4.1
-          - control-id: ir-5
-          - control-id: ir-6
-          - control-id: ir-6.1
-          - control-id: ir-6.3
-          - control-id: ir-7
-          - control-id: ir-7.1
-          - control-id: ir-8
-          - control-id: ma-1
-          - control-id: ma-2
-          - control-id: ma-3
-          - control-id: ma-3.1
-          - control-id: ma-3.2
-          - control-id: ma-3.3
-          - control-id: ma-4
-          - control-id: ma-5
-          - control-id: ma-6
-          - control-id: mp-1
-          - control-id: mp-2
-          - control-id: mp-3
-          - control-id: mp-4
-          - control-id: mp-5
-          - control-id: mp-6
-          - control-id: mp-7
-          - control-id: pe-1
-          - control-id: pe-2
-          - control-id: pe-3
-          - control-id: pe-4
-          - control-id: pe-5
-          - control-id: pe-6
-          - control-id: pe-6.1
-          - control-id: pe-8
-          - control-id: pe-9
-          - control-id: pe-10
-          - control-id: pe-11
-          - control-id: pe-12
-          - control-id: pe-13
-          - control-id: pe-13.1
-          - control-id: pe-14
-          - control-id: pe-15
-          - control-id: pe-16
-          - control-id: pe-17
-          - control-id: pl-1
-          - control-id: pl-2
-          - control-id: pl-4
-          - control-id: pl-4.1
-          - control-id: pl-8
-          - control-id: pl-10
-          - control-id: pl-11
-          - control-id: pm-1
-          - control-id: pm-2
-          - control-id: pm-3
-          - control-id: pm-4
-          - control-id: pm-5
-          - control-id: pm-5.1
-          - control-id: pm-6
-          - control-id: pm-7
-          - control-id: pm-7.1
-          - control-id: pm-8
-          - control-id: pm-9
-          - control-id: pm-10
-          - control-id: pm-11
-          - control-id: pm-12
-          - control-id: pm-13
-          - control-id: pm-14
-          - control-id: pm-15
-          - control-id: pm-16
-          - control-id: pm-16.1
-          - control-id: pm-17
-          - control-id: pm-18
-          - control-id: pm-19
-          - control-id: pm-20
-          - control-id: pm-21
-          - control-id: pm-22
-          - control-id: pm-23
-          - control-id: pm-24
-          - control-id: pm-25
-          - control-id: pm-26
-          - control-id: pm-27
-          - control-id: pm-28
-          - control-id: pm-29
-          - control-id: pm-30
-          - control-id: pm-31
-          - control-id: pm-32
-          - control-id: ps-1
-          - control-id: ps-2
-          - control-id: ps-3
-          - control-id: ps-4
-          - control-id: ps-5
-          - control-id: ps-6
-          - control-id: ps-7
-          - control-id: ps-8
-          - control-id: ra-1
-          - control-id: ra-2
-          - control-id: ra-3
-          - control-id: ra-3.1
-          - control-id: ra-5
-          - control-id: ra-5.2
-          - control-id: ra-5.5
-          - control-id: ra-7
-          - control-id: ra-9
-          - control-id: sa-1
-          - control-id: sa-2
-          - control-id: sa-3
-          - control-id: sa-4
-          - control-id: sa-4.1
-          - control-id: sa-4.2
-          - control-id: sa-4.9
-          - control-id: sa-4.10
-          - control-id: sa-5
-          - control-id: sa-8
-          - control-id: sa-9
-          - control-id: sa-9.2
-          - control-id: sa-10
-          - control-id: sa-11
-          - control-id: sa-15
-          - control-id: sa-15.3
-          - control-id: sa-22
-          - control-id: sc-1
-          - control-id: sc-2
-          - control-id: sc-4
-          - control-id: sc-5
-          - control-id: sc-7
-          - control-id: sc-7.3
-          - control-id: sc-7.4
-          - control-id: sc-7.5
-          - control-id: sc-7.7
-          - control-id: sc-7.8
-          - control-id: sc-8
-          - control-id: sc-8.1
-          - control-id: sc-10
-          - control-id: sc-12
-          - control-id: sc-13
-          - control-id: sc-15
-          - control-id: sc-17
-          - control-id: sc-18
-          - control-id: sc-20
-          - control-id: sc-21
-          - control-id: sc-22
-          - control-id: sc-23
-          - control-id: sc-28
-          - control-id: sc-28.1
-          - control-id: sc-39
-          - control-id: si-1
-          - control-id: si-2
-          - control-id: si-2.2
-          - control-id: si-3
-          - control-id: si-3.1
-          - control-id: si-4
-          - control-id: si-4.2
-          - control-id: si-4.4
-          - control-id: si-4.5
-          - control-id: si-5
-          - control-id: si-7
-          - control-id: si-7.1
-          - control-id: si-7.7
-          - control-id: si-8
-          - control-id: si-8.1
-          - control-id: si-8.2
-          - control-id: si-10
-          - control-id: si-11
-          - control-id: si-12
-          - control-id: si-16
-          - control-id: sr-1
-          - control-id: sr-2
-          - control-id: sr-2.1
-          - control-id: sr-3
-          - control-id: sr-5
-          - control-id: sr-6
-          - control-id: sr-8
-          - control-id: sr-10
-          - control-id: sr-11
-          - control-id: sr-11.1
-          - control-id: sr-11.2
-          - control-id: sr-11.3
+      include-controls:
+        - with-ids:
+            - ac-1
+            - ac-2
+            - ac-2.1
+            - ac-2.2
+            - ac-2.3
+            - ac-2.4
+            - ac-2.5
+            - ac-2.13
+            - ac-3
+            - ac-4
+            - ac-5
+            - ac-6
+            - ac-6.1
+            - ac-6.2
+            - ac-6.5
+            - ac-6.7
+            - ac-6.9
+            - ac-6.10
+            - ac-7
+            - ac-8
+            - ac-11
+            - ac-11.1
+            - ac-12
+            - ac-14
+            - ac-17
+            - ac-17.1
+            - ac-17.2
+            - ac-17.3
+            - ac-17.4
+            - ac-18
+            - ac-18.1
+            - ac-18.3
+            - ac-19
+            - ac-19.5
+            - ac-20
+            - ac-20.1
+            - ac-20.2
+            - ac-21
+            - ac-22
+            - at-1
+            - at-2
+            - at-2.2
+            - at-2.3
+            - at-3
+            - at-4
+            - au-1
+            - au-2
+            - au-3
+            - au-3.1
+            - au-4
+            - au-5
+            - au-6
+            - au-6.1
+            - au-6.3
+            - au-7
+            - au-7.1
+            - au-8
+            - au-8.1
+            - au-9
+            - au-9.4
+            - au-11
+            - au-12
+            - ca-1
+            - ca-2
+            - ca-2.1
+            - ca-3
+            - ca-5
+            - ca-6
+            - ca-7
+            - ca-7.1
+            - ca-7.4
+            - ca-9
+            - cm-1
+            - cm-2
+            - cm-2.2
+            - cm-2.3
+            - cm-2.7
+            - cm-3
+            - cm-3.2
+            - cm-3.4
+            - cm-4
+            - cm-4.2
+            - cm-5
+            - cm-6
+            - cm-7
+            - cm-7.1
+            - cm-7.2
+            - cm-7.5
+            - cm-8
+            - cm-8.1
+            - cm-8.3
+            - cm-9
+            - cm-10
+            - cm-11
+            - cm-12
+            - cm-12.1
+            - cp-1
+            - cp-2
+            - cp-2.1
+            - cp-2.3
+            - cp-2.8
+            - cp-3
+            - cp-4
+            - cp-4.1
+            - cp-6
+            - cp-6.1
+            - cp-6.3
+            - cp-7
+            - cp-7.1
+            - cp-7.2
+            - cp-7.3
+            - cp-8
+            - cp-8.1
+            - cp-8.2
+            - cp-9
+            - cp-9.1
+            - cp-9.8
+            - cp-10
+            - cp-10.2
+            - ia-1
+            - ia-2
+            - ia-2.1
+            - ia-2.2
+            - ia-2.8
+            - ia-2.12
+            - ia-3
+            - ia-4
+            - ia-4.4
+            - ia-5
+            - ia-5.1
+            - ia-5.2
+            - ia-5.6
+            - ia-6
+            - ia-7
+            - ia-8
+            - ia-8.1
+            - ia-8.2
+            - ia-8.4
+            - ia-11
+            - ia-12
+            - ia-12.2
+            - ia-12.3
+            - ia-12.5
+            - ir-1
+            - ir-2
+            - ir-3
+            - ir-3.2
+            - ir-4
+            - ir-4.1
+            - ir-5
+            - ir-6
+            - ir-6.1
+            - ir-6.3
+            - ir-7
+            - ir-7.1
+            - ir-8
+            - ma-1
+            - ma-2
+            - ma-3
+            - ma-3.1
+            - ma-3.2
+            - ma-3.3
+            - ma-4
+            - ma-5
+            - ma-6
+            - mp-1
+            - mp-2
+            - mp-3
+            - mp-4
+            - mp-5
+            - mp-6
+            - mp-7
+            - pe-1
+            - pe-2
+            - pe-3
+            - pe-4
+            - pe-5
+            - pe-6
+            - pe-6.1
+            - pe-8
+            - pe-9
+            - pe-10
+            - pe-11
+            - pe-12
+            - pe-13
+            - pe-13.1
+            - pe-14
+            - pe-15
+            - pe-16
+            - pe-17
+            - pl-1
+            - pl-2
+            - pl-4
+            - pl-4.1
+            - pl-8
+            - pl-10
+            - pl-11
+            - pm-1
+            - pm-2
+            - pm-3
+            - pm-4
+            - pm-5
+            - pm-5.1
+            - pm-6
+            - pm-7
+            - pm-7.1
+            - pm-8
+            - pm-9
+            - pm-10
+            - pm-11
+            - pm-12
+            - pm-13
+            - pm-14
+            - pm-15
+            - pm-16
+            - pm-16.1
+            - pm-17
+            - pm-18
+            - pm-19
+            - pm-20
+            - pm-21
+            - pm-22
+            - pm-23
+            - pm-24
+            - pm-25
+            - pm-26
+            - pm-27
+            - pm-28
+            - pm-29
+            - pm-30
+            - pm-31
+            - pm-32
+            - ps-1
+            - ps-2
+            - ps-3
+            - ps-4
+            - ps-5
+            - ps-6
+            - ps-7
+            - ps-8
+            - ra-1
+            - ra-2
+            - ra-3
+            - ra-3.1
+            - ra-5
+            - ra-5.2
+            - ra-5.5
+            - ra-7
+            - ra-9
+            - sa-1
+            - sa-2
+            - sa-3
+            - sa-4
+            - sa-4.1
+            - sa-4.2
+            - sa-4.9
+            - sa-4.10
+            - sa-5
+            - sa-8
+            - sa-9
+            - sa-9.2
+            - sa-10
+            - sa-11
+            - sa-15
+            - sa-15.3
+            - sa-22
+            - sc-1
+            - sc-2
+            - sc-4
+            - sc-5
+            - sc-7
+            - sc-7.3
+            - sc-7.4
+            - sc-7.5
+            - sc-7.7
+            - sc-7.8
+            - sc-8
+            - sc-8.1
+            - sc-10
+            - sc-12
+            - sc-13
+            - sc-15
+            - sc-17
+            - sc-18
+            - sc-20
+            - sc-21
+            - sc-22
+            - sc-23
+            - sc-28
+            - sc-28.1
+            - sc-39
+            - si-1
+            - si-2
+            - si-2.2
+            - si-3
+            - si-3.1
+            - si-4
+            - si-4.2
+            - si-4.4
+            - si-4.5
+            - si-5
+            - si-7
+            - si-7.1
+            - si-7.7
+            - si-8
+            - si-8.1
+            - si-8.2
+            - si-10
+            - si-11
+            - si-12
+            - si-16
+            - sr-1
+            - sr-2
+            - sr-2.1
+            - sr-3
+            - sr-5
+            - sr-6
+            - sr-8
+            - sr-10
+            - sr-11
+            - sr-11.1
+            - sr-11.2
+            - sr-11.3
   merge:
     as-is: true

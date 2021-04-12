@@ -1,17 +1,11 @@
 {
   "catalog": {
-    "uuid": "f98f3f56-09f2-442c-8991-3baff2728c43",
+    "uuid": "730d55ed-c738-4139-95e5-ebcd10e8d55d",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 4 LOW IMPACT BASELINE",
-      "last-modified": "2020-12-18T16:38:42.466-05:00",
+      "last-modified": "2021-04-12T20:12:57.302468Z",
       "version": "2015-01-22",
-      "oscal-version": "1.0.0-rc1",
-      "props": [
-        {
-          "name": "resolution-timestamp",
-          "value": "2021-04-12T18:55:54.672655Z"
-        }
-      ],
+      "oscal-version": "1.0.0-rc2",
       "links": [
         {
           "href": "NIST_SP-800-53_rev4_LOW-baseline_profile.xml",
@@ -127,7 +121,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Develops, documents, and disseminates to {{ ac-1_prm_1 }}:",
+                    "prose": "Develops, documents, and disseminates to {{ insert: param, ac-1_prm_1 }}:",
                     "parts": [
                       {
                         "id": "ac-1_smt.a.1",
@@ -173,7 +167,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": "Access control policy {{ ac-1_prm_2 }}; and"
+                        "prose": "Access control policy {{ insert: param, ac-1_prm_2 }}; and"
                       },
                       {
                         "id": "ac-1_smt.b.2",
@@ -184,7 +178,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": "Access control procedures {{ ac-1_prm_3 }}."
+                        "prose": "Access control procedures {{ insert: param, ac-1_prm_3 }}."
                       }
                     ]
                   }
@@ -552,7 +546,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Identifies and selects the following types of information system accounts to support organizational missions/business functions: {{ ac-2_prm_1 }};"
+                    "prose": "Identifies and selects the following types of information system accounts to support organizational missions/business functions: {{ insert: param, ac-2_prm_1 }};"
                   },
                   {
                     "id": "ac-2_smt.b",
@@ -596,7 +590,7 @@
                         "value": "e."
                       }
                     ],
-                    "prose": "Requires approvals by {{ ac-2_prm_2 }} for requests to create information system accounts;"
+                    "prose": "Requires approvals by {{ insert: param, ac-2_prm_2 }} for requests to create information system accounts;"
                   },
                   {
                     "id": "ac-2_smt.f",
@@ -607,7 +601,7 @@
                         "value": "f."
                       }
                     ],
-                    "prose": "Creates, enables, modifies, disables, and removes information system accounts in accordance with {{ ac-2_prm_3 }};"
+                    "prose": "Creates, enables, modifies, disables, and removes information system accounts in accordance with {{ insert: param, ac-2_prm_3 }};"
                   },
                   {
                     "id": "ac-2_smt.g",
@@ -721,7 +715,7 @@
                         "value": "j."
                       }
                     ],
-                    "prose": "Reviews accounts for compliance with account management requirements {{ ac-2_prm_4 }}; and"
+                    "prose": "Reviews accounts for compliance with account management requirements {{ insert: param, ac-2_prm_4 }}; and"
                   },
                   {
                     "id": "ac-2_smt.k",
@@ -1500,9 +1494,9 @@
                 "id": "ac-7_prm_3",
                 "select": {
                   "choice": [
-                    "locks the account/node for an {{ ac-7_prm_4 }} ",
+                    "locks the account/node for an {{ insert: param, ac-7_prm_4 }} ",
                     "locks the account/node until released by an administrator",
-                    "delays next logon prompt according to {{ ac-7_prm_5 }} "
+                    "delays next logon prompt according to {{ insert: param, ac-7_prm_5 }} "
                   ]
                 }
               },
@@ -1546,7 +1540,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Enforces a limit of {{ ac-7_prm_1 }} consecutive invalid logon attempts by a user during a {{ ac-7_prm_2 }}; and"
+                    "prose": "Enforces a limit of {{ insert: param, ac-7_prm_1 }} consecutive invalid logon attempts by a user during a {{ insert: param, ac-7_prm_2 }}; and"
                   },
                   {
                     "id": "ac-7_smt.b",
@@ -1557,7 +1551,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Automatically {{ ac-7_prm_3 }} when the maximum number of unsuccessful attempts is exceeded."
+                    "prose": "Automatically {{ insert: param, ac-7_prm_3 }} when the maximum number of unsuccessful attempts is exceeded."
                   }
                 ]
               },
@@ -1795,7 +1789,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Displays to users {{ ac-8_prm_1 }} before granting access to the system that provides privacy and security notices consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance and states that:",
+                    "prose": "Displays to users {{ insert: param, ac-8_prm_1 }} before granting access to the system that provides privacy and security notices consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance and states that:",
                     "parts": [
                       {
                         "id": "ac-8_smt.a.1",
@@ -1874,7 +1868,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": "Displays system use information {{ ac-8_prm_2 }}, before granting further access;"
+                        "prose": "Displays system use information {{ insert: param, ac-8_prm_2 }}, before granting further access;"
                       },
                       {
                         "id": "ac-8_smt.c.2",
@@ -2160,7 +2154,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Identifies {{ ac-14_prm_1 }} that can be performed on the information system without identification or authentication consistent with organizational missions/business functions; and"
+                    "prose": "Identifies {{ insert: param, ac-14_prm_1 }} that can be performed on the information system without identification or authentication consistent with organizational missions/business functions; and"
                   },
                   {
                     "id": "ac-14_smt.b",
@@ -3304,7 +3298,7 @@
                         "value": "d."
                       }
                     ],
-                    "prose": "Reviews the content on the publicly accessible information system for nonpublic information {{ ac-22_prm_1 }} and removes such information, if discovered."
+                    "prose": "Reviews the content on the publicly accessible information system for nonpublic information {{ insert: param, ac-22_prm_1 }} and removes such information, if discovered."
                   }
                 ]
               },
@@ -3539,7 +3533,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Develops, documents, and disseminates to {{ at-1_prm_1 }}:",
+                    "prose": "Develops, documents, and disseminates to {{ insert: param, at-1_prm_1 }}:",
                     "parts": [
                       {
                         "id": "at-1_smt.a.1",
@@ -3585,7 +3579,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": "Security awareness and training policy {{ at-1_prm_2 }}; and"
+                        "prose": "Security awareness and training policy {{ insert: param, at-1_prm_2 }}; and"
                       },
                       {
                         "id": "at-1_smt.b.2",
@@ -3596,7 +3590,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": "Security awareness and training procedures {{ at-1_prm_3 }}."
+                        "prose": "Security awareness and training procedures {{ insert: param, at-1_prm_3 }}."
                       }
                     ]
                   }
@@ -3988,7 +3982,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": " {{ at-2_prm_1 }} thereafter."
+                    "prose": " {{ insert: param, at-2_prm_1 }} thereafter."
                   }
                 ]
               },
@@ -4196,7 +4190,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": " {{ at-3_prm_1 }} thereafter."
+                    "prose": " {{ insert: param, at-3_prm_1 }} thereafter."
                   }
                 ]
               },
@@ -4395,7 +4389,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Retains individual training records for {{ at-4_prm_1 }}."
+                    "prose": "Retains individual training records for {{ insert: param, at-4_prm_1 }}."
                   }
                 ]
               },
@@ -4652,7 +4646,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Develops, documents, and disseminates to {{ au-1_prm_1 }}:",
+                    "prose": "Develops, documents, and disseminates to {{ insert: param, au-1_prm_1 }}:",
                     "parts": [
                       {
                         "id": "au-1_smt.a.1",
@@ -4698,7 +4692,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": "Audit and accountability policy {{ au-1_prm_2 }}; and"
+                        "prose": "Audit and accountability policy {{ insert: param, au-1_prm_2 }}; and"
                       },
                       {
                         "id": "au-1_smt.b.2",
@@ -4709,7 +4703,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": "Audit and accountability procedures {{ au-1_prm_3 }}."
+                        "prose": "Audit and accountability procedures {{ insert: param, au-1_prm_3 }}."
                       }
                     ]
                   }
@@ -5079,7 +5073,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Determines that the information system is capable of auditing the following events: {{ au-2_prm_1 }};"
+                    "prose": "Determines that the information system is capable of auditing the following events: {{ insert: param, au-2_prm_1 }};"
                   },
                   {
                     "id": "au-2_smt.b",
@@ -5112,7 +5106,7 @@
                         "value": "d."
                       }
                     ],
-                    "prose": "Determines that the following events are to be audited within the information system: {{ au-2_prm_2 }}."
+                    "prose": "Determines that the following events are to be audited within the information system: {{ insert: param, au-2_prm_2 }}."
                   }
                 ]
               },
@@ -5505,7 +5499,7 @@
               {
                 "id": "au-4_smt",
                 "name": "statement",
-                "prose": "The organization allocates audit record storage capacity in accordance with {{ au-4_prm_1 }}."
+                "prose": "The organization allocates audit record storage capacity in accordance with {{ insert: param, au-4_prm_1 }}."
               },
               {
                 "id": "au-4_gdn",
@@ -5657,7 +5651,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Alerts {{ au-5_prm_1 }} in the event of an audit processing failure; and"
+                    "prose": "Alerts {{ insert: param, au-5_prm_1 }} in the event of an audit processing failure; and"
                   },
                   {
                     "id": "au-5_smt.b",
@@ -5668,7 +5662,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Takes the following additional actions: {{ au-5_prm_2 }}."
+                    "prose": "Takes the following additional actions: {{ insert: param, au-5_prm_2 }}."
                   }
                 ]
               },
@@ -5856,7 +5850,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Reviews and analyzes information system audit records {{ au-6_prm_1 }} for indications of {{ au-6_prm_2 }}; and"
+                    "prose": "Reviews and analyzes information system audit records {{ insert: param, au-6_prm_1 }} for indications of {{ insert: param, au-6_prm_2 }}; and"
                   },
                   {
                     "id": "au-6_smt.b",
@@ -5867,7 +5861,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Reports findings to {{ au-6_prm_3 }}."
+                    "prose": "Reports findings to {{ insert: param, au-6_prm_3 }}."
                   }
                 ]
               },
@@ -6158,7 +6152,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Records time stamps for audit records that can be mapped to Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT) and meets {{ au-8_prm_1 }}."
+                    "prose": "Records time stamps for audit records that can be mapped to Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT) and meets {{ insert: param, au-8_prm_1 }}."
                   }
                 ]
               },
@@ -6520,7 +6514,7 @@
               {
                 "id": "au-11_smt",
                 "name": "statement",
-                "prose": "The organization retains audit records for {{ au-11_prm_1 }} to provide support for after-the-fact investigations of security incidents and to meet regulatory and organizational information retention requirements."
+                "prose": "The organization retains audit records for {{ insert: param, au-11_prm_1 }} to provide support for after-the-fact investigations of security incidents and to meet regulatory and organizational information retention requirements."
               },
               {
                 "id": "au-11_gdn",
@@ -6673,7 +6667,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Provides audit record generation capability for the auditable events defined in AU-2 a. at {{ au-12_prm_1 }};"
+                    "prose": "Provides audit record generation capability for the auditable events defined in AU-2 a. at {{ insert: param, au-12_prm_1 }};"
                   },
                   {
                     "id": "au-12_smt.b",
@@ -6684,7 +6678,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Allows {{ au-12_prm_2 }} to select which auditable events are to be audited by specific components of the information system; and"
+                    "prose": "Allows {{ insert: param, au-12_prm_2 }} to select which auditable events are to be audited by specific components of the information system; and"
                   },
                   {
                     "id": "au-12_smt.c",
@@ -6931,7 +6925,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Develops, documents, and disseminates to {{ ca-1_prm_1 }}:",
+                    "prose": "Develops, documents, and disseminates to {{ insert: param, ca-1_prm_1 }}:",
                     "parts": [
                       {
                         "id": "ca-1_smt.a.1",
@@ -6977,7 +6971,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": "Security assessment and authorization policy {{ ca-1_prm_2 }}; and"
+                        "prose": "Security assessment and authorization policy {{ insert: param, ca-1_prm_2 }}; and"
                       },
                       {
                         "id": "ca-1_smt.b.2",
@@ -6988,7 +6982,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": "Security assessment and authorization procedures {{ ca-1_prm_3 }}."
+                        "prose": "Security assessment and authorization procedures {{ insert: param, ca-1_prm_3 }}."
                       }
                     ]
                   }
@@ -7424,7 +7418,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Assesses the security controls in the information system and its environment of operation {{ ca-2_prm_1 }} to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security requirements;"
+                    "prose": "Assesses the security controls in the information system and its environment of operation {{ insert: param, ca-2_prm_1 }} to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security requirements;"
                   },
                   {
                     "id": "ca-2_smt.c",
@@ -7446,7 +7440,7 @@
                         "value": "d."
                       }
                     ],
-                    "prose": "Provides the results of the security control assessment to {{ ca-2_prm_2 }}."
+                    "prose": "Provides the results of the security control assessment to {{ insert: param, ca-2_prm_2 }}."
                   }
                 ]
               },
@@ -7773,7 +7767,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": "Reviews and updates Interconnection Security Agreements {{ ca-3_prm_1 }}."
+                    "prose": "Reviews and updates Interconnection Security Agreements {{ insert: param, ca-3_prm_1 }}."
                   }
                 ]
               },
@@ -8018,7 +8012,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Updates existing plan of action and milestones {{ ca-5_prm_1 }} based on the findings from security controls assessments, security impact analyses, and continuous monitoring activities."
+                    "prose": "Updates existing plan of action and milestones {{ insert: param, ca-5_prm_1 }} based on the findings from security controls assessments, security impact analyses, and continuous monitoring activities."
                   }
                 ]
               },
@@ -8282,7 +8276,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": "Updates the security authorization {{ ca-6_prm_1 }}."
+                    "prose": "Updates the security authorization {{ insert: param, ca-6_prm_1 }}."
                   }
                 ]
               },
@@ -8508,7 +8502,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Establishment of {{ ca-7_prm_1 }} to be monitored;"
+                    "prose": "Establishment of {{ insert: param, ca-7_prm_1 }} to be monitored;"
                   },
                   {
                     "id": "ca-7_smt.b",
@@ -8519,7 +8513,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Establishment of {{ ca-7_prm_2 }} for monitoring and {{ ca-7_prm_3 }} for assessments supporting such monitoring;"
+                    "prose": "Establishment of {{ insert: param, ca-7_prm_2 }} for monitoring and {{ insert: param, ca-7_prm_3 }} for assessments supporting such monitoring;"
                   },
                   {
                     "id": "ca-7_smt.c",
@@ -8574,7 +8568,7 @@
                         "value": "g."
                       }
                     ],
-                    "prose": "Reporting the security status of organization and the information system to {{ ca-7_prm_4 }} {{ ca-7_prm_5 }}."
+                    "prose": "Reporting the security status of organization and the information system to {{ insert: param, ca-7_prm_4 }} {{ insert: param, ca-7_prm_5 }}."
                   }
                 ]
               },
@@ -9019,7 +9013,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Authorizes internal connections of {{ ca-9_prm_1 }} to the information system; and"
+                    "prose": "Authorizes internal connections of {{ insert: param, ca-9_prm_1 }} to the information system; and"
                   },
                   {
                     "id": "ca-9_smt.b",
@@ -9268,7 +9262,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Develops, documents, and disseminates to {{ cm-1_prm_1 }}:",
+                    "prose": "Develops, documents, and disseminates to {{ insert: param, cm-1_prm_1 }}:",
                     "parts": [
                       {
                         "id": "cm-1_smt.a.1",
@@ -9314,7 +9308,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": "Configuration management policy {{ cm-1_prm_2 }}; and"
+                        "prose": "Configuration management policy {{ insert: param, cm-1_prm_2 }}; and"
                       },
                       {
                         "id": "cm-1_smt.b.2",
@@ -9325,7 +9319,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": "Configuration management procedures {{ cm-1_prm_3 }}."
+                        "prose": "Configuration management procedures {{ insert: param, cm-1_prm_3 }}."
                       }
                     ]
                   }
@@ -9985,7 +9979,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Establishes and documents configuration settings for information technology products employed within the information system using {{ cm-6_prm_1 }} that reflect the most restrictive mode consistent with operational requirements;"
+                    "prose": "Establishes and documents configuration settings for information technology products employed within the information system using {{ insert: param, cm-6_prm_1 }} that reflect the most restrictive mode consistent with operational requirements;"
                   },
                   {
                     "id": "cm-6_smt.b",
@@ -10007,7 +10001,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": "Identifies, documents, and approves any deviations from established configuration settings for {{ cm-6_prm_2 }} based on {{ cm-6_prm_3 }}; and"
+                    "prose": "Identifies, documents, and approves any deviations from established configuration settings for {{ insert: param, cm-6_prm_2 }} based on {{ insert: param, cm-6_prm_3 }}; and"
                   },
                   {
                     "id": "cm-6_smt.d",
@@ -10386,7 +10380,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Prohibits or restricts the use of the following functions, ports, protocols, and/or services: {{ cm-7_prm_1 }}."
+                    "prose": "Prohibits or restricts the use of the following functions, ports, protocols, and/or services: {{ insert: param, cm-7_prm_1 }}."
                   }
                 ]
               },
@@ -10701,7 +10695,7 @@
                             "value": "4."
                           }
                         ],
-                        "prose": "Includes {{ cm-8_prm_1 }}; and"
+                        "prose": "Includes {{ insert: param, cm-8_prm_1 }}; and"
                       }
                     ]
                   },
@@ -10714,7 +10708,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Reviews and updates the information system component inventory {{ cm-8_prm_2 }}."
+                    "prose": "Reviews and updates the information system component inventory {{ insert: param, cm-8_prm_2 }}."
                   }
                 ]
               },
@@ -11116,7 +11110,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Establishes {{ cm-11_prm_1 }} governing the installation of software by users;"
+                    "prose": "Establishes {{ insert: param, cm-11_prm_1 }} governing the installation of software by users;"
                   },
                   {
                     "id": "cm-11_smt.b",
@@ -11127,7 +11121,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Enforces software installation policies through {{ cm-11_prm_2 }}; and"
+                    "prose": "Enforces software installation policies through {{ insert: param, cm-11_prm_2 }}; and"
                   },
                   {
                     "id": "cm-11_smt.c",
@@ -11138,7 +11132,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": "Monitors policy compliance at {{ cm-11_prm_3 }}."
+                    "prose": "Monitors policy compliance at {{ insert: param, cm-11_prm_3 }}."
                   }
                 ]
               },
@@ -11405,7 +11399,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Develops, documents, and disseminates to {{ cp-1_prm_1 }}:",
+                    "prose": "Develops, documents, and disseminates to {{ insert: param, cp-1_prm_1 }}:",
                     "parts": [
                       {
                         "id": "cp-1_smt.a.1",
@@ -11451,7 +11445,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": "Contingency planning policy {{ cp-1_prm_2 }}; and"
+                        "prose": "Contingency planning policy {{ insert: param, cp-1_prm_2 }}; and"
                       },
                       {
                         "id": "cp-1_smt.b.2",
@@ -11462,7 +11456,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": "Contingency planning procedures {{ cp-1_prm_3 }}."
+                        "prose": "Contingency planning procedures {{ insert: param, cp-1_prm_3 }}."
                       }
                     ]
                   }
@@ -11906,7 +11900,7 @@
                             "value": "6."
                           }
                         ],
-                        "prose": "Is reviewed and approved by {{ cp-2_prm_1 }};"
+                        "prose": "Is reviewed and approved by {{ insert: param, cp-2_prm_1 }};"
                       }
                     ]
                   },
@@ -11919,7 +11913,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Distributes copies of the contingency plan to {{ cp-2_prm_2 }};"
+                    "prose": "Distributes copies of the contingency plan to {{ insert: param, cp-2_prm_2 }};"
                   },
                   {
                     "id": "cp-2_smt.c",
@@ -11941,7 +11935,7 @@
                         "value": "d."
                       }
                     ],
-                    "prose": "Reviews the contingency plan for the information system {{ cp-2_prm_3 }};"
+                    "prose": "Reviews the contingency plan for the information system {{ insert: param, cp-2_prm_3 }};"
                   },
                   {
                     "id": "cp-2_smt.e",
@@ -11963,7 +11957,7 @@
                         "value": "f."
                       }
                     ],
-                    "prose": "Communicates contingency plan changes to {{ cp-2_prm_4 }}; and"
+                    "prose": "Communicates contingency plan changes to {{ insert: param, cp-2_prm_4 }}; and"
                   },
                   {
                     "id": "cp-2_smt.g",
@@ -12477,7 +12471,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Within {{ cp-3_prm_1 }} of assuming a contingency role or responsibility;"
+                    "prose": "Within {{ insert: param, cp-3_prm_1 }} of assuming a contingency role or responsibility;"
                   },
                   {
                     "id": "cp-3_smt.b",
@@ -12499,7 +12493,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": " {{ cp-3_prm_2 }} thereafter."
+                    "prose": " {{ insert: param, cp-3_prm_2 }} thereafter."
                   }
                 ]
               },
@@ -12720,7 +12714,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Tests the contingency plan for the information system {{ cp-4_prm_1 }} using {{ cp-4_prm_2 }} to determine the effectiveness of the plan and the organizational readiness to execute the plan;"
+                    "prose": "Tests the contingency plan for the information system {{ insert: param, cp-4_prm_1 }} using {{ insert: param, cp-4_prm_2 }} to determine the effectiveness of the plan and the organizational readiness to execute the plan;"
                   },
                   {
                     "id": "cp-4_smt.b",
@@ -12939,7 +12933,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Conducts backups of user-level information contained in the information system {{ cp-9_prm_1 }};"
+                    "prose": "Conducts backups of user-level information contained in the information system {{ insert: param, cp-9_prm_1 }};"
                   },
                   {
                     "id": "cp-9_smt.b",
@@ -12950,7 +12944,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Conducts backups of system-level information contained in the information system {{ cp-9_prm_2 }};"
+                    "prose": "Conducts backups of system-level information contained in the information system {{ insert: param, cp-9_prm_2 }};"
                   },
                   {
                     "id": "cp-9_smt.c",
@@ -12961,7 +12955,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": "Conducts backups of information system documentation including security-related documentation {{ cp-9_prm_3 }}; and"
+                    "prose": "Conducts backups of information system documentation including security-related documentation {{ insert: param, cp-9_prm_3 }}; and"
                   },
                   {
                     "id": "cp-9_smt.d",
@@ -13473,7 +13467,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Develops, documents, and disseminates to {{ ia-1_prm_1 }}:",
+                    "prose": "Develops, documents, and disseminates to {{ insert: param, ia-1_prm_1 }}:",
                     "parts": [
                       {
                         "id": "ia-1_smt.a.1",
@@ -13519,7 +13513,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": "Identification and authentication policy {{ ia-1_prm_2 }}; and"
+                        "prose": "Identification and authentication policy {{ insert: param, ia-1_prm_2 }}; and"
                       },
                       {
                         "id": "ia-1_smt.b.2",
@@ -13530,7 +13524,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": "Identification and authentication procedures {{ ia-1_prm_3 }}."
+                        "prose": "Identification and authentication procedures {{ insert: param, ia-1_prm_3 }}."
                       }
                     ]
                   }
@@ -14272,7 +14266,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Receiving authorization from {{ ia-4_prm_1 }} to assign an individual, group, role, or device identifier;"
+                    "prose": "Receiving authorization from {{ insert: param, ia-4_prm_1 }} to assign an individual, group, role, or device identifier;"
                   },
                   {
                     "id": "ia-4_smt.b",
@@ -14305,7 +14299,7 @@
                         "value": "d."
                       }
                     ],
-                    "prose": "Preventing reuse of identifiers for {{ ia-4_prm_2 }}; and"
+                    "prose": "Preventing reuse of identifiers for {{ insert: param, ia-4_prm_2 }}; and"
                   },
                   {
                     "id": "ia-4_smt.e",
@@ -14316,7 +14310,7 @@
                         "value": "e."
                       }
                     ],
-                    "prose": "Disabling the identifier after {{ ia-4_prm_3 }}."
+                    "prose": "Disabling the identifier after {{ insert: param, ia-4_prm_3 }}."
                   }
                 ]
               },
@@ -14856,7 +14850,7 @@
                         "value": "g."
                       }
                     ],
-                    "prose": "Changing/refreshing authenticators {{ ia-5_prm_1 }};"
+                    "prose": "Changing/refreshing authenticators {{ insert: param, ia-5_prm_1 }};"
                   },
                   {
                     "id": "ia-5_smt.h",
@@ -15351,7 +15345,7 @@
                             "value": "(a)"
                           }
                         ],
-                        "prose": "Enforces minimum password complexity of {{ ia-5.1_prm_1 }};"
+                        "prose": "Enforces minimum password complexity of {{ insert: param, ia-5.1_prm_1 }};"
                       },
                       {
                         "id": "ia-5.1_smt.b",
@@ -15362,7 +15356,7 @@
                             "value": "(b)"
                           }
                         ],
-                        "prose": "Enforces at least the following number of changed characters when new passwords are created: {{ ia-5.1_prm_2 }};"
+                        "prose": "Enforces at least the following number of changed characters when new passwords are created: {{ insert: param, ia-5.1_prm_2 }};"
                       },
                       {
                         "id": "ia-5.1_smt.c",
@@ -15384,7 +15378,7 @@
                             "value": "(d)"
                           }
                         ],
-                        "prose": "Enforces password minimum and maximum lifetime restrictions of {{ ia-5.1_prm_3 }};"
+                        "prose": "Enforces password minimum and maximum lifetime restrictions of {{ insert: param, ia-5.1_prm_3 }};"
                       },
                       {
                         "id": "ia-5.1_smt.e",
@@ -15395,7 +15389,7 @@
                             "value": "(e)"
                           }
                         ],
-                        "prose": "Prohibits password reuse for {{ ia-5.1_prm_4 }} generations; and"
+                        "prose": "Prohibits password reuse for {{ insert: param, ia-5.1_prm_4 }} generations; and"
                       },
                       {
                         "id": "ia-5.1_smt.f",
@@ -15748,7 +15742,7 @@
                   {
                     "id": "ia-5.11_smt",
                     "name": "statement",
-                    "prose": "The information system, for hardware token-based authentication, employs mechanisms that satisfy {{ ia-5.11_prm_1 }}."
+                    "prose": "The information system, for hardware token-based authentication, employs mechanisms that satisfy {{ insert: param, ia-5.11_prm_1 }}."
                   },
                   {
                     "id": "ia-5.11_gdn",
@@ -16408,7 +16402,7 @@
                   {
                     "id": "ia-8.3_smt",
                     "name": "statement",
-                    "prose": "The organization employs only FICAM-approved information system components in {{ ia-8.3_prm_1 }} to accept third-party credentials."
+                    "prose": "The organization employs only FICAM-approved information system components in {{ insert: param, ia-8.3_prm_1 }} to accept third-party credentials."
                   },
                   {
                     "id": "ia-8.3_gdn",
@@ -16654,7 +16648,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Develops, documents, and disseminates to {{ ir-1_prm_1 }}:",
+                    "prose": "Develops, documents, and disseminates to {{ insert: param, ir-1_prm_1 }}:",
                     "parts": [
                       {
                         "id": "ir-1_smt.a.1",
@@ -16700,7 +16694,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": "Incident response policy {{ ir-1_prm_2 }}; and"
+                        "prose": "Incident response policy {{ insert: param, ir-1_prm_2 }}; and"
                       },
                       {
                         "id": "ir-1_smt.b.2",
@@ -16711,7 +16705,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": "Incident response procedures {{ ir-1_prm_3 }}."
+                        "prose": "Incident response procedures {{ insert: param, ir-1_prm_3 }}."
                       }
                     ]
                   }
@@ -17081,7 +17075,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Within {{ ir-2_prm_1 }} of assuming an incident response role or responsibility;"
+                    "prose": "Within {{ insert: param, ir-2_prm_1 }} of assuming an incident response role or responsibility;"
                   },
                   {
                     "id": "ir-2_smt.b",
@@ -17103,7 +17097,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": " {{ ir-2_prm_2 }} thereafter."
+                    "prose": " {{ insert: param, ir-2_prm_2 }} thereafter."
                   }
                 ]
               },
@@ -17807,7 +17801,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Requires personnel to report suspected security incidents to the organizational incident response capability within {{ ir-6_prm_1 }}; and"
+                    "prose": "Requires personnel to report suspected security incidents to the organizational incident response capability within {{ insert: param, ir-6_prm_1 }}; and"
                   },
                   {
                     "id": "ir-6_smt.b",
@@ -17818,7 +17812,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Reports security incident information to {{ ir-6_prm_2 }}."
+                    "prose": "Reports security incident information to {{ insert: param, ir-6_prm_2 }}."
                   }
                 ]
               },
@@ -18235,7 +18229,7 @@
                             "value": "8."
                           }
                         ],
-                        "prose": "Is reviewed and approved by {{ ir-8_prm_1 }};"
+                        "prose": "Is reviewed and approved by {{ insert: param, ir-8_prm_1 }};"
                       }
                     ]
                   },
@@ -18248,7 +18242,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Distributes copies of the incident response plan to {{ ir-8_prm_2 }};"
+                    "prose": "Distributes copies of the incident response plan to {{ insert: param, ir-8_prm_2 }};"
                   },
                   {
                     "id": "ir-8_smt.c",
@@ -18259,7 +18253,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": "Reviews the incident response plan {{ ir-8_prm_3 }};"
+                    "prose": "Reviews the incident response plan {{ insert: param, ir-8_prm_3 }};"
                   },
                   {
                     "id": "ir-8_smt.d",
@@ -18281,7 +18275,7 @@
                         "value": "e."
                       }
                     ],
-                    "prose": "Communicates incident response plan changes to {{ ir-8_prm_4 }}; and"
+                    "prose": "Communicates incident response plan changes to {{ insert: param, ir-8_prm_4 }}; and"
                   },
                   {
                     "id": "ir-8_smt.f",
@@ -18808,7 +18802,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Develops, documents, and disseminates to {{ ma-1_prm_1 }}:",
+                    "prose": "Develops, documents, and disseminates to {{ insert: param, ma-1_prm_1 }}:",
                     "parts": [
                       {
                         "id": "ma-1_smt.a.1",
@@ -18854,7 +18848,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": "System maintenance policy {{ ma-1_prm_2 }}; and"
+                        "prose": "System maintenance policy {{ insert: param, ma-1_prm_2 }}; and"
                       },
                       {
                         "id": "ma-1_smt.b.2",
@@ -18865,7 +18859,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": "System maintenance procedures {{ ma-1_prm_3 }}."
+                        "prose": "System maintenance procedures {{ insert: param, ma-1_prm_3 }}."
                       }
                     ]
                   }
@@ -19247,7 +19241,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": "Requires that {{ ma-2_prm_1 }} explicitly approve the removal of the information system or system components from organizational facilities for off-site maintenance or repairs;"
+                    "prose": "Requires that {{ insert: param, ma-2_prm_1 }} explicitly approve the removal of the information system or system components from organizational facilities for off-site maintenance or repairs;"
                   },
                   {
                     "id": "ma-2_smt.d",
@@ -19280,7 +19274,7 @@
                         "value": "f."
                       }
                     ],
-                    "prose": "Includes {{ ma-2_prm_2 }} in organizational maintenance records."
+                    "prose": "Includes {{ insert: param, ma-2_prm_2 }} in organizational maintenance records."
                   }
                 ]
               },
@@ -20278,7 +20272,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Develops, documents, and disseminates to {{ mp-1_prm_1 }}:",
+                    "prose": "Develops, documents, and disseminates to {{ insert: param, mp-1_prm_1 }}:",
                     "parts": [
                       {
                         "id": "mp-1_smt.a.1",
@@ -20324,7 +20318,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": "Media protection policy {{ mp-1_prm_2 }}; and"
+                        "prose": "Media protection policy {{ insert: param, mp-1_prm_2 }}; and"
                       },
                       {
                         "id": "mp-1_smt.b.2",
@@ -20335,7 +20329,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": "Media protection procedures {{ mp-1_prm_3 }}."
+                        "prose": "Media protection procedures {{ insert: param, mp-1_prm_3 }}."
                       }
                     ]
                   }
@@ -20694,7 +20688,7 @@
               {
                 "id": "mp-2_smt",
                 "name": "statement",
-                "prose": "The organization restricts access to {{ mp-2_prm_1 }} to {{ mp-2_prm_2 }}."
+                "prose": "The organization restricts access to {{ insert: param, mp-2_prm_1 }} to {{ insert: param, mp-2_prm_2 }}."
               },
               {
                 "id": "mp-2_gdn",
@@ -20875,7 +20869,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Sanitizes {{ mp-6_prm_1 }} prior to disposal, release out of organizational control, or release for reuse using {{ mp-6_prm_2 }} in accordance with applicable federal and organizational standards and policies; and"
+                    "prose": "Sanitizes {{ insert: param, mp-6_prm_1 }} prior to disposal, release out of organizational control, or release for reuse using {{ insert: param, mp-6_prm_2 }} in accordance with applicable federal and organizational standards and policies; and"
                   },
                   {
                     "id": "mp-6_smt.b",
@@ -21148,7 +21142,7 @@
               {
                 "id": "mp-7_smt",
                 "name": "statement",
-                "prose": "The organization {{ mp-7_prm_1 }} the use of {{ mp-7_prm_2 }} on {{ mp-7_prm_3 }} using {{ mp-7_prm_4 }}."
+                "prose": "The organization {{ insert: param, mp-7_prm_1 }} the use of {{ insert: param, mp-7_prm_2 }} on {{ insert: param, mp-7_prm_3 }} using {{ insert: param, mp-7_prm_4 }}."
               },
               {
                 "id": "mp-7_gdn",
@@ -21375,7 +21369,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Develops, documents, and disseminates to {{ pe-1_prm_1 }}:",
+                    "prose": "Develops, documents, and disseminates to {{ insert: param, pe-1_prm_1 }}:",
                     "parts": [
                       {
                         "id": "pe-1_smt.a.1",
@@ -21421,7 +21415,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": "Physical and environmental protection policy {{ pe-1_prm_2 }}; and"
+                        "prose": "Physical and environmental protection policy {{ insert: param, pe-1_prm_2 }}; and"
                       },
                       {
                         "id": "pe-1_smt.b.2",
@@ -21432,7 +21426,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": "Physical and environmental protection procedures {{ pe-1_prm_3 }}."
+                        "prose": "Physical and environmental protection procedures {{ insert: param, pe-1_prm_3 }}."
                       }
                     ]
                   }
@@ -21810,7 +21804,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": "Reviews the access list detailing authorized facility access by individuals {{ pe-2_prm_1 }}; and"
+                    "prose": "Reviews the access list detailing authorized facility access by individuals {{ insert: param, pe-2_prm_1 }}; and"
                   },
                   {
                     "id": "pe-2_smt.d",
@@ -22013,7 +22007,7 @@
                 "select": {
                   "how-many": "one or more",
                   "choice": [
-                    " {{ pe-3_prm_3 }} ",
+                    " {{ insert: param, pe-3_prm_3 }} ",
                     "guards"
                   ]
                 }
@@ -22123,7 +22117,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Enforces physical access authorizations at {{ pe-3_prm_1 }} by;",
+                    "prose": "Enforces physical access authorizations at {{ insert: param, pe-3_prm_1 }} by;",
                     "parts": [
                       {
                         "id": "pe-3_smt.a.1",
@@ -22145,7 +22139,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": "Controlling ingress/egress to the facility using {{ pe-3_prm_2 }};"
+                        "prose": "Controlling ingress/egress to the facility using {{ insert: param, pe-3_prm_2 }};"
                       }
                     ]
                   },
@@ -22158,7 +22152,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Maintains physical access audit logs for {{ pe-3_prm_4 }};"
+                    "prose": "Maintains physical access audit logs for {{ insert: param, pe-3_prm_4 }};"
                   },
                   {
                     "id": "pe-3_smt.c",
@@ -22169,7 +22163,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": "Provides {{ pe-3_prm_5 }} to control access to areas within the facility officially designated as publicly accessible;"
+                    "prose": "Provides {{ insert: param, pe-3_prm_5 }} to control access to areas within the facility officially designated as publicly accessible;"
                   },
                   {
                     "id": "pe-3_smt.d",
@@ -22180,7 +22174,7 @@
                         "value": "d."
                       }
                     ],
-                    "prose": "Escorts visitors and monitors visitor activity {{ pe-3_prm_6 }};"
+                    "prose": "Escorts visitors and monitors visitor activity {{ insert: param, pe-3_prm_6 }};"
                   },
                   {
                     "id": "pe-3_smt.e",
@@ -22202,7 +22196,7 @@
                         "value": "f."
                       }
                     ],
-                    "prose": "Inventories {{ pe-3_prm_7 }} every {{ pe-3_prm_8 }}; and"
+                    "prose": "Inventories {{ insert: param, pe-3_prm_7 }} every {{ insert: param, pe-3_prm_8 }}; and"
                   },
                   {
                     "id": "pe-3_smt.g",
@@ -22213,7 +22207,7 @@
                         "value": "g."
                       }
                     ],
-                    "prose": "Changes combinations and keys {{ pe-3_prm_9 }} and/or when keys are lost, combinations are compromised, or individuals are transferred or terminated."
+                    "prose": "Changes combinations and keys {{ insert: param, pe-3_prm_9 }} and/or when keys are lost, combinations are compromised, or individuals are transferred or terminated."
                   }
                 ]
               },
@@ -22782,7 +22776,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Reviews physical access logs {{ pe-6_prm_1 }} and upon occurrence of {{ pe-6_prm_2 }}; and"
+                    "prose": "Reviews physical access logs {{ insert: param, pe-6_prm_1 }} and upon occurrence of {{ insert: param, pe-6_prm_2 }}; and"
                   },
                   {
                     "id": "pe-6_smt.c",
@@ -22980,7 +22974,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Maintains visitor access records to the facility where the information system resides for {{ pe-8_prm_1 }}; and"
+                    "prose": "Maintains visitor access records to the facility where the information system resides for {{ insert: param, pe-8_prm_1 }}; and"
                   },
                   {
                     "id": "pe-8_smt.b",
@@ -22991,7 +22985,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Reviews visitor access records {{ pe-8_prm_2 }}."
+                    "prose": "Reviews visitor access records {{ insert: param, pe-8_prm_2 }}."
                   }
                 ]
               },
@@ -23385,7 +23379,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Maintains temperature and humidity levels within the facility where the information system resides at {{ pe-14_prm_1 }}; and"
+                    "prose": "Maintains temperature and humidity levels within the facility where the information system resides at {{ insert: param, pe-14_prm_1 }}; and"
                   },
                   {
                     "id": "pe-14_smt.b",
@@ -23396,7 +23390,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Monitors temperature and humidity levels {{ pe-14_prm_2 }}."
+                    "prose": "Monitors temperature and humidity levels {{ insert: param, pe-14_prm_2 }}."
                   }
                 ]
               },
@@ -23727,7 +23721,7 @@
               {
                 "id": "pe-16_smt",
                 "name": "statement",
-                "prose": "The organization authorizes, monitors, and controls {{ pe-16_prm_1 }} entering and exiting the facility and maintains records of those items."
+                "prose": "The organization authorizes, monitors, and controls {{ insert: param, pe-16_prm_1 }} entering and exiting the facility and maintains records of those items."
               },
               {
                 "id": "pe-16_gdn",
@@ -23977,7 +23971,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Develops, documents, and disseminates to {{ pl-1_prm_1 }}:",
+                    "prose": "Develops, documents, and disseminates to {{ insert: param, pl-1_prm_1 }}:",
                     "parts": [
                       {
                         "id": "pl-1_smt.a.1",
@@ -24023,7 +24017,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": "Security planning policy {{ pl-1_prm_2 }}; and"
+                        "prose": "Security planning policy {{ insert: param, pl-1_prm_2 }}; and"
                       },
                       {
                         "id": "pl-1_smt.b.2",
@@ -24034,7 +24028,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": "Security planning procedures {{ pl-1_prm_3 }}."
+                        "prose": "Security planning procedures {{ insert: param, pl-1_prm_3 }}."
                       }
                     ]
                   }
@@ -24512,7 +24506,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Distributes copies of the security plan and communicates subsequent changes to the plan to {{ pl-2_prm_1 }};"
+                    "prose": "Distributes copies of the security plan and communicates subsequent changes to the plan to {{ insert: param, pl-2_prm_1 }};"
                   },
                   {
                     "id": "pl-2_smt.c",
@@ -24523,7 +24517,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": "Reviews the security plan for the information system {{ pl-2_prm_2 }};"
+                    "prose": "Reviews the security plan for the information system {{ insert: param, pl-2_prm_2 }};"
                   },
                   {
                     "id": "pl-2_smt.d",
@@ -25034,7 +25028,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": "Reviews and updates the rules of behavior {{ pl-4_prm_1 }}; and"
+                    "prose": "Reviews and updates the rules of behavior {{ insert: param, pl-4_prm_1 }}; and"
                   },
                   {
                     "id": "pl-4_smt.d",
@@ -25336,7 +25330,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Develops, documents, and disseminates to {{ ps-1_prm_1 }}:",
+                    "prose": "Develops, documents, and disseminates to {{ insert: param, ps-1_prm_1 }}:",
                     "parts": [
                       {
                         "id": "ps-1_smt.a.1",
@@ -25382,7 +25376,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": "Personnel security policy {{ ps-1_prm_2 }}; and"
+                        "prose": "Personnel security policy {{ insert: param, ps-1_prm_2 }}; and"
                       },
                       {
                         "id": "ps-1_smt.b.2",
@@ -25393,7 +25387,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": "Personnel security procedures {{ ps-1_prm_3 }}."
+                        "prose": "Personnel security procedures {{ insert: param, ps-1_prm_3 }}."
                       }
                     ]
                   }
@@ -25777,7 +25771,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": "Reviews and updates position risk designations {{ ps-2_prm_1 }}."
+                    "prose": "Reviews and updates position risk designations {{ insert: param, ps-2_prm_1 }}."
                   }
                 ]
               },
@@ -25994,7 +25988,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Rescreens individuals according to {{ ps-3_prm_1 }}."
+                    "prose": "Rescreens individuals according to {{ insert: param, ps-3_prm_1 }}."
                   }
                 ]
               },
@@ -26182,7 +26176,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Disables information system access within {{ ps-4_prm_1 }};"
+                    "prose": "Disables information system access within {{ insert: param, ps-4_prm_1 }};"
                   },
                   {
                     "id": "ps-4_smt.b",
@@ -26204,7 +26198,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": "Conducts exit interviews that include a discussion of {{ ps-4_prm_2 }};"
+                    "prose": "Conducts exit interviews that include a discussion of {{ insert: param, ps-4_prm_2 }};"
                   },
                   {
                     "id": "ps-4_smt.d",
@@ -26237,7 +26231,7 @@
                         "value": "f."
                       }
                     ],
-                    "prose": "Notifies {{ ps-4_prm_3 }} within {{ ps-4_prm_4 }}."
+                    "prose": "Notifies {{ insert: param, ps-4_prm_3 }} within {{ insert: param, ps-4_prm_4 }}."
                   }
                 ]
               },
@@ -26530,7 +26524,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Initiates {{ ps-5_prm_1 }} within {{ ps-5_prm_2 }};"
+                    "prose": "Initiates {{ insert: param, ps-5_prm_1 }} within {{ insert: param, ps-5_prm_2 }};"
                   },
                   {
                     "id": "ps-5_smt.c",
@@ -26552,7 +26546,7 @@
                         "value": "d."
                       }
                     ],
-                    "prose": "Notifies {{ ps-5_prm_3 }} within {{ ps-5_prm_4 }}."
+                    "prose": "Notifies {{ insert: param, ps-5_prm_3 }} within {{ insert: param, ps-5_prm_4 }}."
                   }
                 ]
               },
@@ -26823,7 +26817,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Reviews and updates the access agreements {{ ps-6_prm_1 }}; and"
+                    "prose": "Reviews and updates the access agreements {{ insert: param, ps-6_prm_1 }}; and"
                   },
                   {
                     "id": "ps-6_smt.c",
@@ -26856,7 +26850,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": "Re-sign access agreements to maintain access to organizational information systems when access agreements have been updated or {{ ps-6_prm_2 }}."
+                        "prose": "Re-sign access agreements to maintain access to organizational information systems when access agreements have been updated or {{ insert: param, ps-6_prm_2 }}."
                       }
                     ]
                   }
@@ -27127,7 +27121,7 @@
                         "value": "d."
                       }
                     ],
-                    "prose": "Requires third-party providers to notify {{ ps-7_prm_1 }} of any personnel transfers or terminations of third-party personnel who possess organizational credentials and/or badges, or who have information system privileges within {{ ps-7_prm_2 }}; and"
+                    "prose": "Requires third-party providers to notify {{ insert: param, ps-7_prm_1 }} of any personnel transfers or terminations of third-party personnel who possess organizational credentials and/or badges, or who have information system privileges within {{ insert: param, ps-7_prm_2 }}; and"
                   },
                   {
                     "id": "ps-7_smt.e",
@@ -27374,7 +27368,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Notifies {{ ps-8_prm_1 }} within {{ ps-8_prm_2 }} when a formal employee sanctions process is initiated, identifying the individual sanctioned and the reason for the sanction."
+                    "prose": "Notifies {{ insert: param, ps-8_prm_1 }} within {{ insert: param, ps-8_prm_2 }} when a formal employee sanctions process is initiated, identifying the individual sanctioned and the reason for the sanction."
                   }
                 ]
               },
@@ -27571,7 +27565,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Develops, documents, and disseminates to {{ ra-1_prm_1 }}:",
+                    "prose": "Develops, documents, and disseminates to {{ insert: param, ra-1_prm_1 }}:",
                     "parts": [
                       {
                         "id": "ra-1_smt.a.1",
@@ -27617,7 +27611,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": "Risk assessment policy {{ ra-1_prm_2 }}; and"
+                        "prose": "Risk assessment policy {{ insert: param, ra-1_prm_2 }}; and"
                       },
                       {
                         "id": "ra-1_smt.b.2",
@@ -27628,7 +27622,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": "Risk assessment procedures {{ ra-1_prm_3 }}."
+                        "prose": "Risk assessment procedures {{ insert: param, ra-1_prm_3 }}."
                       }
                     ]
                   }
@@ -28143,7 +28137,7 @@
                   "choice": [
                     "security plan",
                     "risk assessment report",
-                    " {{ ra-3_prm_2 }} "
+                    " {{ insert: param, ra-3_prm_2 }} "
                   ]
                 }
               },
@@ -28223,7 +28217,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Documents risk assessment results in {{ ra-3_prm_1 }};"
+                    "prose": "Documents risk assessment results in {{ insert: param, ra-3_prm_1 }};"
                   },
                   {
                     "id": "ra-3_smt.c",
@@ -28234,7 +28228,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": "Reviews risk assessment results {{ ra-3_prm_3 }};"
+                    "prose": "Reviews risk assessment results {{ insert: param, ra-3_prm_3 }};"
                   },
                   {
                     "id": "ra-3_smt.d",
@@ -28245,7 +28239,7 @@
                         "value": "d."
                       }
                     ],
-                    "prose": "Disseminates risk assessment results to {{ ra-3_prm_4 }}; and"
+                    "prose": "Disseminates risk assessment results to {{ insert: param, ra-3_prm_4 }}; and"
                   },
                   {
                     "id": "ra-3_smt.e",
@@ -28256,7 +28250,7 @@
                         "value": "e."
                       }
                     ],
-                    "prose": "Updates the risk assessment {{ ra-3_prm_5 }} or whenever there are significant changes to the information system or environment of operation (including the identification of new threats and vulnerabilities), or other conditions that may impact the security state of the system."
+                    "prose": "Updates the risk assessment {{ insert: param, ra-3_prm_5 }} or whenever there are significant changes to the information system or environment of operation (including the identification of new threats and vulnerabilities), or other conditions that may impact the security state of the system."
                   }
                 ]
               },
@@ -28639,7 +28633,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Scans for vulnerabilities in the information system and hosted applications {{ ra-5_prm_1 }} and when new vulnerabilities potentially affecting the system/applications are identified and reported;"
+                    "prose": "Scans for vulnerabilities in the information system and hosted applications {{ insert: param, ra-5_prm_1 }} and when new vulnerabilities potentially affecting the system/applications are identified and reported;"
                   },
                   {
                     "id": "ra-5_smt.b",
@@ -28707,7 +28701,7 @@
                         "value": "d."
                       }
                     ],
-                    "prose": "Remediates legitimate vulnerabilities {{ ra-5_prm_2 }} in accordance with an organizational assessment of risk; and"
+                    "prose": "Remediates legitimate vulnerabilities {{ insert: param, ra-5_prm_2 }} in accordance with an organizational assessment of risk; and"
                   },
                   {
                     "id": "ra-5_smt.e",
@@ -28718,7 +28712,7 @@
                         "value": "e."
                       }
                     ],
-                    "prose": "Shares information obtained from the vulnerability scanning process and security control assessments with {{ ra-5_prm_3 }} to help eliminate similar vulnerabilities in other information systems (i.e., systemic weaknesses or deficiencies)."
+                    "prose": "Shares information obtained from the vulnerability scanning process and security control assessments with {{ insert: param, ra-5_prm_3 }} to help eliminate similar vulnerabilities in other information systems (i.e., systemic weaknesses or deficiencies)."
                   }
                 ]
               },
@@ -29211,7 +29205,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Develops, documents, and disseminates to {{ sa-1_prm_1 }}:",
+                    "prose": "Develops, documents, and disseminates to {{ insert: param, sa-1_prm_1 }}:",
                     "parts": [
                       {
                         "id": "sa-1_smt.a.1",
@@ -29257,7 +29251,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": "System and services acquisition policy {{ sa-1_prm_2 }}; and"
+                        "prose": "System and services acquisition policy {{ insert: param, sa-1_prm_2 }}; and"
                       },
                       {
                         "id": "sa-1_smt.b.2",
@@ -29268,7 +29262,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": "System and services acquisition procedures {{ sa-1_prm_3 }}."
+                        "prose": "System and services acquisition procedures {{ insert: param, sa-1_prm_3 }}."
                       }
                     ]
                   }
@@ -29836,7 +29830,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Manages the information system using {{ sa-3_prm_1 }} that incorporates information security considerations;"
+                    "prose": "Manages the information system using {{ insert: param, sa-3_prm_1 }} that incorporates information security considerations;"
                   },
                   {
                     "id": "sa-3_smt.b",
@@ -30595,7 +30589,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": "Documents attempts to obtain information system, system component, or information system service documentation when such documentation is either unavailable or nonexistent and takes {{ sa-5_prm_1 }} in response;"
+                    "prose": "Documents attempts to obtain information system, system component, or information system service documentation when such documentation is either unavailable or nonexistent and takes {{ insert: param, sa-5_prm_1 }} in response;"
                   },
                   {
                     "id": "sa-5_smt.d",
@@ -30617,7 +30611,7 @@
                         "value": "e."
                       }
                     ],
-                    "prose": "Distributes documentation to {{ sa-5_prm_2 }}."
+                    "prose": "Distributes documentation to {{ insert: param, sa-5_prm_2 }}."
                   }
                 ]
               },
@@ -31021,7 +31015,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Requires that providers of external information system services comply with organizational information security requirements and employ {{ sa-9_prm_1 }} in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance;"
+                    "prose": "Requires that providers of external information system services comply with organizational information security requirements and employ {{ insert: param, sa-9_prm_1 }} in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance;"
                   },
                   {
                     "id": "sa-9_smt.b",
@@ -31043,7 +31037,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": "Employs {{ sa-9_prm_2 }} to monitor security control compliance by external service providers on an ongoing basis."
+                    "prose": "Employs {{ insert: param, sa-9_prm_2 }} to monitor security control compliance by external service providers on an ongoing basis."
                   }
                 ]
               },
@@ -31297,7 +31291,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Develops, documents, and disseminates to {{ sc-1_prm_1 }}:",
+                    "prose": "Develops, documents, and disseminates to {{ insert: param, sc-1_prm_1 }}:",
                     "parts": [
                       {
                         "id": "sc-1_smt.a.1",
@@ -31343,7 +31337,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": "System and communications protection policy {{ sc-1_prm_2 }}; and"
+                        "prose": "System and communications protection policy {{ insert: param, sc-1_prm_2 }}; and"
                       },
                       {
                         "id": "sc-1_smt.b.2",
@@ -31354,7 +31348,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": "System and communications protection procedures {{ sc-1_prm_3 }}."
+                        "prose": "System and communications protection procedures {{ insert: param, sc-1_prm_3 }}."
                       }
                     ]
                   }
@@ -31703,7 +31697,7 @@
               {
                 "id": "sc-5_smt",
                 "name": "statement",
-                "prose": "The information system protects against or limits the effects of the following types of denial of service attacks: {{ sc-5_prm_1 }} by employing {{ sc-5_prm_2 }}."
+                "prose": "The information system protects against or limits the effects of the following types of denial of service attacks: {{ insert: param, sc-5_prm_1 }} by employing {{ insert: param, sc-5_prm_2 }}."
               },
               {
                 "id": "sc-5_gdn",
@@ -31876,7 +31870,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Implements subnetworks for publicly accessible system components that are {{ sc-7_prm_1 }} separated from internal organizational networks; and"
+                    "prose": "Implements subnetworks for publicly accessible system components that are {{ insert: param, sc-7_prm_1 }} separated from internal organizational networks; and"
                   },
                   {
                     "id": "sc-7_smt.c",
@@ -32128,7 +32122,7 @@
               {
                 "id": "sc-12_smt",
                 "name": "statement",
-                "prose": "The organization establishes and manages cryptographic keys for required cryptography employed within the information system in accordance with {{ sc-12_prm_1 }}."
+                "prose": "The organization establishes and manages cryptographic keys for required cryptography employed within the information system in accordance with {{ insert: param, sc-12_prm_1 }}."
               },
               {
                 "id": "sc-12_gdn",
@@ -32320,7 +32314,7 @@
               {
                 "id": "sc-13_smt",
                 "name": "statement",
-                "prose": "The information system implements {{ sc-13_prm_1 }} in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards."
+                "prose": "The information system implements {{ insert: param, sc-13_prm_1 }} in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards."
               },
               {
                 "id": "sc-13_gdn",
@@ -32535,7 +32529,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Prohibits remote activation of collaborative computing devices with the following exceptions: {{ sc-15_prm_1 }}; and"
+                    "prose": "Prohibits remote activation of collaborative computing devices with the following exceptions: {{ insert: param, sc-15_prm_1 }}; and"
                   },
                   {
                     "id": "sc-15_smt.b",
@@ -33300,7 +33294,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Develops, documents, and disseminates to {{ si-1_prm_1 }}:",
+                    "prose": "Develops, documents, and disseminates to {{ insert: param, si-1_prm_1 }}:",
                     "parts": [
                       {
                         "id": "si-1_smt.a.1",
@@ -33346,7 +33340,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": "System and information integrity policy {{ si-1_prm_2 }}; and"
+                        "prose": "System and information integrity policy {{ insert: param, si-1_prm_2 }}; and"
                       },
                       {
                         "id": "si-1_smt.b.2",
@@ -33357,7 +33351,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": "System and information integrity procedures {{ si-1_prm_3 }}."
+                        "prose": "System and information integrity procedures {{ insert: param, si-1_prm_3 }}."
                       }
                     ]
                   }
@@ -33745,7 +33739,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": "Installs security-relevant software and firmware updates within {{ si-2_prm_1 }} of the release of the updates; and"
+                    "prose": "Installs security-relevant software and firmware updates within {{ insert: param, si-2_prm_1 }} of the release of the updates; and"
                   },
                   {
                     "id": "si-2_smt.d",
@@ -34038,7 +34032,7 @@
                     "block malicious code",
                     "quarantine malicious code",
                     "send alert to administrator",
-                    " {{ si-3_prm_4 }} "
+                    " {{ insert: param, si-3_prm_4 }} "
                   ]
                 }
               },
@@ -34116,7 +34110,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": "Perform periodic scans of the information system {{ si-3_prm_1 }} and real-time scans of files from external sources at {{ si-3_prm_2 }} as the files are downloaded, opened, or executed in accordance with organizational security policy; and"
+                        "prose": "Perform periodic scans of the information system {{ insert: param, si-3_prm_1 }} and real-time scans of files from external sources at {{ insert: param, si-3_prm_2 }} as the files are downloaded, opened, or executed in accordance with organizational security policy; and"
                       },
                       {
                         "id": "si-3_smt.c.2",
@@ -34127,7 +34121,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": " {{ si-3_prm_3 }} in response to malicious code detection; and"
+                        "prose": " {{ insert: param, si-3_prm_3 }} in response to malicious code detection; and"
                       }
                     ]
                   },
@@ -34498,7 +34492,7 @@
                   "how-many": "one or more",
                   "choice": [
                     "as needed",
-                    " {{ si-4_prm_6 }} "
+                    " {{ insert: param, si-4_prm_6 }} "
                   ]
                 }
               },
@@ -34570,7 +34564,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": "Attacks and indicators of potential attacks in accordance with {{ si-4_prm_1 }}; and"
+                        "prose": "Attacks and indicators of potential attacks in accordance with {{ insert: param, si-4_prm_1 }}; and"
                       },
                       {
                         "id": "si-4_smt.a.2",
@@ -34594,7 +34588,7 @@
                         "value": "b."
                       }
                     ],
-                    "prose": "Identifies unauthorized use of the information system through {{ si-4_prm_2 }};"
+                    "prose": "Identifies unauthorized use of the information system through {{ insert: param, si-4_prm_2 }};"
                   },
                   {
                     "id": "si-4_smt.c",
@@ -34673,7 +34667,7 @@
                         "value": "g."
                       }
                     ],
-                    "prose": "Provides {{ si-4_prm_3 }} to {{ si-4_prm_4 }} {{ si-4_prm_5 }}."
+                    "prose": "Provides {{ insert: param, si-4_prm_3 }} to {{ insert: param, si-4_prm_4 }} {{ insert: param, si-4_prm_5 }}."
                   }
                 ]
               },
@@ -35157,9 +35151,9 @@
                 "select": {
                   "how-many": "one or more",
                   "choice": [
-                    " {{ si-5_prm_3 }} ",
-                    " {{ si-5_prm_4 }} ",
-                    " {{ si-5_prm_5 }} "
+                    " {{ insert: param, si-5_prm_3 }} ",
+                    " {{ insert: param, si-5_prm_4 }} ",
+                    " {{ insert: param, si-5_prm_5 }} "
                   ]
                 }
               },
@@ -35214,7 +35208,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": "Receives information system security alerts, advisories, and directives from {{ si-5_prm_1 }} on an ongoing basis;"
+                    "prose": "Receives information system security alerts, advisories, and directives from {{ insert: param, si-5_prm_1 }} on an ongoing basis;"
                   },
                   {
                     "id": "si-5_smt.b",
@@ -35236,7 +35230,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": "Disseminates security alerts, advisories, and directives to: {{ si-5_prm_2 }}; and"
+                    "prose": "Disseminates security alerts, advisories, and directives to: {{ insert: param, si-5_prm_2 }}; and"
                   },
                   {
                     "id": "si-5_smt.d",

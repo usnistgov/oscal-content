@@ -1,12 +1,12 @@
 ---
 catalog:
-  uuid: edaf664a-e984-4dbf-85ec-1104186fc12f
+  uuid: 22054d80-252f-4ab8-ae9c-5bf69c9109a9
   metadata:
     title: Sample Security Catalog *for Demonstration* and Testing
     published: 2020-02-02T11:01:04.736-04:00
-    last-modified: 2020-12-18T16:23:23.811-05:00
+    last-modified: 2021-04-07T12:50:10.241-04:00
     version: "1.0"
-    oscal-version: 1.0.0-rc1
+    oscal-version: 1.0.0-rc2
     remarks: The following is a short excerpt from [ISO/IEC
       27002:2013](https://www.iso.org/standard/54533.html), *Information
       technology — Security techniques — Code of practice for information
@@ -41,8 +41,8 @@ catalog:
                   select:
                     how-many: one or more
                     choice:
-                      - initiating a device lock after {{ s1.1.1-prm_2 }} of
-                        inactivity
+                      - "initiating a device lock after {{ insert: param,
+                        s1.1.1-prm_2 }} of inactivity"
                       - requiring the user to initiate a device lock before
                         leaving the system unattended
                 - id: s1.1.1-prm_2
@@ -58,7 +58,7 @@ catalog:
                     and allocated.
 
 
-                    A value has been assigned to {{ s1.1.1-prm11 }}.
+                    A value has been assigned to {{ insert: param, s1.1.1-prm11 }}.
 
 
                     A cross link has been established with a choppy syntax: [(choppy)](#s1.2).
@@ -206,7 +206,7 @@ catalog:
 
                         1. relevant legislation and any contractual obligations regarding limitation of access to data or services;
 
-                        1. management of access rights in a distributed and networked environment which recognizes all types of connections availabel;
+                        1. management of access rights in a distributed and networked environment which recognizes all types of connections available;
 
                         1. segregation of access control roles, e.g. access request, access authorization, access administration;
 

@@ -1,11 +1,11 @@
 ---
 system-security-plan:
-  uuid: 9b5c7544-1202-4f70-8fe5-6227b804d503
+  uuid: 3844a4b8-1407-44dd-a19e-5c612be48215
   metadata:
     title: Leveraging SaaS System Security Plan
-    last-modified: 2020-12-20T17:40:57.346-05:00
+    last-modified: 2021-04-07T12:50:19.238-04:00
     version: "0.1"
-    oscal-version: 1.0.0-rc1
+    oscal-version: 1.0.0-rc2
     roles:
       - id: admin
         title: Administrator
@@ -16,7 +16,7 @@ system-security-plan:
         type: person
         remarks: Leveraged Authorization POC
   import-profile:
-    href: ../nist.gov/SP800-53/rev4/yaml/NIST_SP-800-53_rev4_LOW-baseline_profile.yaml
+    href: ../../../nist.gov/SP800-53/rev4/yaml/NIST_SP-800-53_rev4_LOW-baseline_profile.yaml
   system-characteristics:
     system-ids:
       - id: saas_system_iaas_customer
@@ -53,7 +53,7 @@ system-security-plan:
       The SaaS must address these for the control to be fully satisfied.
 
 
-      The SaaS provider may either implement these directly, or pass the responsiblity on to their customers. Both may be necessary.
+      The SaaS provider may either implement these directly or pass the responsibility on to their customers. Both may be necessary.
 
 
       For any given control, the Leveraged IaaS SSP must describe:
@@ -224,7 +224,7 @@ system-security-plan:
 
 
                   Overall description of how \"This System\" satisfies AC-2, Part a.
-                annotations:
+                props:
                   - name: responsibility
                     value: provider
               22222222-0000-4000-9001-000000000002:
