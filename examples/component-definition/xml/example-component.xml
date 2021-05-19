@@ -30,7 +30,7 @@
          </implemented-requirement>
       </control-implementation>
       <control-implementation uuid="22dbff65-9729-449f-9dfc-4e5fee0906de"
-                              source="../../../content/fedramp.gov/xml/FedRAMP_HIGH-baseline_profile.xml">
+                              source="https://github.com/GSA/fedramp-automation/blob/master/baselines/rev4/xml/FedRAMP_rev4_HIGH-baseline_profile.xml">
          <description>
             <p>This is a partial implementation of the FedRAMP High profile, focusing on the control enhancement AC-2 (3).</p>
          </description>
