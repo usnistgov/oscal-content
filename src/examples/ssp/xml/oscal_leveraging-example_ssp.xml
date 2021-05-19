@@ -104,7 +104,7 @@ Cust-A    Cust-B    Cust-C
    <system-implementation>
       <leveraged-authorization uuid="22222222-0000-4000-9000-300000000001">
          <title>CSP IaaS [Leveraged System]</title>
-         <link href="./oscal_csp-example_ssp.xml" rel="OSCAL-SSP-XML"/>
+         <link href="./oscal_leveraged-example_ssp.xml" rel="OSCAL-SSP-XML"/>
          <party-uuid>22222222-0000-4000-9000-100000000002</party-uuid>
          <date-authorized>2018-01-01</date-authorized>
       </leveraged-authorization>
