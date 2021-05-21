@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-definition xmlns="http://csrc.nist.gov/ns/oscal/1.0" 
+    uuid="a7ba800c-a432-44cd-9075-0862cd66da6b" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 https://raw.githubusercontent.com/usnistgov/OSCAL/master/xml/schema/oscal_component_schema.xsd">
+	<metadata>
+		<title>MongoDB Component Definition Example</title>
+		<last-modified>2001-12-17T09:30:47Z</last-modified>
+		<version>20210507</version>
+		<oscal-version>1.0.0-rc2</oscal-version>
+		<role id="supplier">
+			<title>Supplier</title>
+		</role>
+		<location uuid="0db91129-35ed-474f-a25e-c3ff1e2cb9dc">
+			<address></address>
+			<url>https://www.mongodb.com</url>
+		</location>
+		<party uuid="ef7c799a-c50e-49ab-83e0-515e989e6df1" type="prepared-for">
+		    <name>MongoDB</name>
+		</party>
+	</metadata>
+	<component uuid="91f646c5-b1b6-4786-9ec3-2305a044e217" type="software">
+		<title>MongoDB</title>
+		<description>
+			<p>MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.</p>
+		</description>
+		<purpose>Backend NoSQL database</purpose>
+		<responsible-role role-id="supplier">
+			<party-uuid>ef7c799a-c50e-49ab-83e0-515e989e6df1</party-uuid>
+		</responsible-role>
+		<control-implementation uuid="49f0b690-ed9f-4f32-aae0-625b77aa6d27" source="../../../content/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_MODERATE-baseline_profile.xml">
+			<description>
+				<p>MongoDB control implementations for NIST SP 800-53rev5.</p>
+			</description>
+			<implemented-requirement uuid="cf8338c5-fb6e-4593-a4a8-b3c4946ee2a0" control-id="sc-8.1">
+				<description>
+					<p>MongoDB supports TLS 1.x to encrypt data in transit, preventing unauthorized disclosure or changes to information during transmission. To implement TLS, set the PEMKeyFile option in the configuration file /etc/mongod.conf to the certificate file's path and restart the the component.</p>
+				</description>
+			</implemented-requirement>
+		</control-implementation>
+	</component>
+	<component uuid="3e5c92b8-870c-4313-871a-f4307bf2eaf0" type="service">
+		<title>mongod</title>
+		<description>
+			<p>Mongo Daemon which runs the MongoDB database as a process.</p>
+		</description>
+		<purpose>Backend NoSQL database</purpose>
+		<responsible-role role-id="supplier">
+			<party-uuid>ef7c799a-c50e-49ab-83e0-515e989e6df1</party-uuid>
+		</responsible-role>
+		<protocol name="Transmission Control">
+			<title>MongoDB requires use of TCP.</title>
+			<port-range start="27017" end="27017" transport="TCP"/>
+			<port-range start="27018" end="27018" transport="TCP"/>
+			<port-range start="27019" end="27019" transport="TCP"/>
+		</protocol>
+		<control-implementation uuid="49f0b690-ed9f-4f32-aae0-625b77aa6d27" source="../../../content/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_MODERATE-baseline_profile.xml">
+			<description>
+				<p>The Mongo Daemon control implementations for NIST SP 800-53rev5.</p>
+			</description>
+			<implemented-requirement uuid="cf8338c5-fb6e-4593-a4a8-b3c4946ee2a0" control-id="sa-4.9">
+				<description>
+					<p>Acquisition Process | Functions, Ports, Protocols, and Services in Use.  Must ensure that MongoDB only listens for network connections on authorized interface by configuring the MongoDB configuration file to limit its exposure to only the network
+interfaces on which MongoDB instances should listen for incoming connections.  </p>
+				</description>
+			</implemented-requirement>
+		</control-implementation>
+	</component>
+</component-definition>
