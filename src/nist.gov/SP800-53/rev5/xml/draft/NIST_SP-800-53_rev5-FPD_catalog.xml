@@ -8,7 +8,7 @@
       <version>Revision 5</version>
       <oscal-version>1.0.0-rc2</oscal-version>
       <prop name="keywords"
-            value="assurance, availability, computer security, confidentiality, control,&#xA;         cybersecurity, FISMA, information security, information system, integrity, personally&#xA;         identifiable information, Privacy Act, privacy controls, privacy functions, privacy&#xA;         requirements, Risk Management Framework, security controls, security functions, security&#xA;         requirements, system, system security"/>
+            value="assurance, availability, computer security, confidentiality, control, cybersecurity, FISMA, information security, information system, integrity, personally identifiable information, Privacy Act, privacy controls, privacy functions, privacy requirements, Risk Management Framework, security controls, security functions, security requirements, system, system security"/>
       <link rel="alternate" href="#90ec1671-8dcf-4bcf-8efe-ac6d06a806f0"/>
       <link rel="canonical" href="#abe434a3-7630-4138-8699-2ab8c7a9aa6c"/>
       <role id="creator">
