@@ -11,13 +11,13 @@ component-definition:
         name: Test Vendor
         type: organization
   components:
-    b036a6ac-6cff-4066-92bc-74ddfd9ad6fa:
+    - uuid: b036a6ac-6cff-4066-92bc-74ddfd9ad6fa
       type: software
       title: test component 1
       description: This is a software component that implements basic authentication
         mechanisms.
       responsible-roles:
-        supplier:
+        - role-id: supplier
           party-uuids:
             - ee47836c-877c-4007-bbf3-c9d9bd805a9a
       control-implementations:
