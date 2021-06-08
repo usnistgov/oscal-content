@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Modified by the OSCAL 1.0.0 RC1 to OSCAL 1.0.0 RC2 conversion XSLT on 2021-04-07T12:50:17.406-04:00 -->
+<!-- Modified by the OSCAL 1.0.0 RC2 to OSCAL 1.0.0 conversion XSLT on 2021-06-08T13:57:33.585986-04:00 -->
 <profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="688cf359-dc65-4b85-95a3-4fe247718d09">
+         uuid="beade175-48ad-47c0-ac38-e9c2514cba22">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 5 HIGH IMPACT BASELINE</title>
-      <last-modified>2021-04-07T12:50:17.406-04:00</last-modified>
+      <last-modified>2021-06-08T13:57:33.585986-04:00</last-modified>
       <version>Final</version>
-      <oscal-version>1.0.0-rc2</oscal-version>
+      <oscal-version>1.0.0</oscal-version>
       <role id="creator">
          <title>Document Creator</title>
       </role>
