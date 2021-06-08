@@ -1,11 +1,11 @@
 ---
 catalog:
-  uuid: 0356802e-a5b5-4d1c-821e-4c19ff5022e0
+  uuid: 9fa7a97e-33dd-4dcd-8720-150254639ddc
   metadata:
     title: SP800-53 MODERATE IMPACT BASELINE
-    last-modified: 2021-05-18T18:47:58.811429Z
+    last-modified: 2021-06-08T18:25:26.289842Z
     version: FPD
-    oscal-version: 1.0.0-rc2
+    oscal-version: 1.0.0
     links:
       - href: NIST_SP-800-53_rev5-FPD_MODERATE-baseline_profile.xml
         rel: resolution-source
@@ -30,9 +30,9 @@ catalog:
             state: MD
             postal-code: 20899-8930
     responsible-parties:
-      creator:
+      - role-id: creator
         party-uuids:
           - 2ef7cfec-cb8e-4571-a7a2-a5c609b4767a
-      contact:
+      - role-id: contact
         party-uuids:
           - 2ef7cfec-cb8e-4571-a7a2-a5c609b4767a

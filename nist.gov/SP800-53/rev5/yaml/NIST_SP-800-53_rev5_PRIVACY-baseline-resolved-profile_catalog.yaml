@@ -1,11 +1,11 @@
 ---
 catalog:
-  uuid: 2430bb44-cd06-4e94-b506-4737e10ad87e
+  uuid: 5e8078f3-d6b2-4aa4-9d86-71e50f50556d
   metadata:
     title: NIST Special Publication 800-53 Revision 5 PRIVACY BASELINE
-    last-modified: 2021-05-18T18:47:25.966698Z
+    last-modified: 2021-06-08T18:24:58.983182Z
     version: Final
-    oscal-version: 1.0.0-rc2
+    oscal-version: 1.0.0
     links:
       - href: NIST_SP-800-53_rev5_PRIVACY-baseline_profile.xml
         rel: resolution-source
@@ -30,10 +30,10 @@ catalog:
             state: MD
             postal-code: 20899-8930
     responsible-parties:
-      creator:
+      - role-id: creator
         party-uuids:
           - 11f1de66-89ba-499d-903e-56418e95af9d
-      contact:
+      - role-id: contact
         party-uuids:
           - 11f1de66-89ba-499d-903e-56418e95af9d
   groups:
@@ -49,7 +49,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: ac-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -201,7 +201,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: at-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -635,10 +635,10 @@ catalog:
                   prose: "Provide {{ insert: param, at-3.5_prm_1 }} with initial and {{ insert:
                     param, at-3.5_prm_2 }} training in the employment and
                     operation of personally identifiable information processing
-                    and transparency controls. "
+                    and transparency controls."
                 - id: at-3.5_gdn
                   name: guidance
-                  prose: "Personally identifiable information processing and transparency controls
+                  prose: Personally identifiable information processing and transparency controls
                     include the organization’s authority to process personally
                     identifiable information and personally identifiable
                     information processing purposes. Role-based training for
@@ -652,7 +652,7 @@ catalog:
                     assessments,
                     [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) statements,
                     contracts, information sharing agreements, memoranda of
-                    understanding, and/or other documentation. "
+                    understanding, and/or other documentation.
         - id: at-4
           class: SP800-53
           title: Training Records
@@ -716,7 +716,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: au-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -1067,7 +1067,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: ca-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -1813,7 +1813,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: cm-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -2021,7 +2021,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: ir-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -2621,10 +2621,10 @@ catalog:
           parts:
             - id: ir-7_smt
               name: statement
-              prose: "Provide an incident response support resource, integral to the
+              prose: Provide an incident response support resource, integral to the
                 organizational incident response capability, that offers advice
                 and assistance to users of the system for the handling and
-                reporting of incidents. "
+                reporting of incidents.
             - id: ir-7_gdn
               name: guidance
               prose: Incident response support resources provided by organizations include
@@ -2852,7 +2852,7 @@ catalog:
                       props:
                         - name: label
                           value: (c)
-                      prose: "Identification of applicable privacy requirements. "
+                      prose: Identification of applicable privacy requirements.
                 - id: ir-8.1_gdn
                   name: guidance
                   prose: Organizations may be required by law, regulation, or policy to follow
@@ -2872,7 +2872,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: mp-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -3126,7 +3126,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: pl-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -3416,8 +3416,8 @@ catalog:
                       props:
                         - name: label
                           value: "7."
-                      prose: "Describe any specific threats to the system that are of concern to the
-                        organization; "
+                      prose: Describe any specific threats to the system that are of concern to the
+                        organization;
                     - id: pl-2_smt.a.8
                       name: item
                       props:
@@ -3487,7 +3487,7 @@ catalog:
                   props:
                     - name: label
                       value: c.
-                  prose: "Review the plans {{ insert: param, pl-2_prm_3 }}; "
+                  prose: "Review the plans {{ insert: param, pl-2_prm_3 }};"
                 - id: pl-2_smt.d
                   name: item
                   props:
@@ -3544,7 +3544,7 @@ catalog:
               label: organization-defined frequency
             - id: pl-4_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - " {{ insert: param, pl-4_prm_3 }} "
                   - when the rules are revised or updated
@@ -4111,10 +4111,10 @@ catalog:
           parts:
             - id: pm-7_smt
               name: statement
-              prose: "Develop and maintain an enterprise architecture with consideration for
+              prose: Develop and maintain an enterprise architecture with consideration for
                 information security, privacy, and the resulting risk to
                 organizational operations and assets, individuals, other
-                organizations, and the Nation. "
+                organizations, and the Nation.
             - id: pm-7_gdn
               name: guidance
               prose: The integration of security and privacy requirements and controls into
@@ -4174,9 +4174,9 @@ catalog:
           parts:
             - id: pm-8_smt
               name: statement
-              prose: "Address information security and privacy issues in the development,
+              prose: Address information security and privacy issues in the development,
                 documentation, and updating of a critical infrastructure and key
-                resources protection plan. "
+                resources protection plan.
             - id: pm-8_gdn
               name: guidance
               prose: Protection strategies are based on the prioritization of critical assets
@@ -4767,11 +4767,11 @@ catalog:
                       props:
                         - name: label
                           value: "6."
-                      prose: "Is approved by a senior official with responsibility and accountability
+                      prose: Is approved by a senior official with responsibility and accountability
                         for the privacy risk being incurred to organizational
                         operations (including mission, functions, image, and
                         reputation), organizational assets, individuals, other
-                        organizations, and the Nation; and "
+                        organizations, and the Nation; and
                 - id: pm-18_smt.b
                   name: item
                   props:
@@ -4947,10 +4947,10 @@ catalog:
                       props:
                         - name: label
                           value: (c)
-                      prose: "Are updated whenever the organization makes a substantive change to the
+                      prose: Are updated whenever the organization makes a substantive change to the
                         practices it describes and includes a time/date stamp to
                         inform the public of the date of the most recent
-                        changes. "
+                        changes.
                 - id: pm-20.1_gdn
                   name: guidance
                   prose: Organizations post privacy policies on all external-facing websites,
@@ -5072,9 +5072,9 @@ catalog:
                   props:
                     - name: label
                       value: a.
-                  prose: "Reviewing for the accuracy, relevance, timeliness, and completeness of
+                  prose: Reviewing for the accuracy, relevance, timeliness, and completeness of
                     personally identifiable information across the information
-                    life cycle; "
+                    life cycle;
                 - id: pm-22_smt.b
                   name: item
                   props:
@@ -5117,10 +5117,10 @@ catalog:
                 certain circumstances, can cause problems for individuals that
                 outweigh the benefits of organizations maintaining the
                 information. Organizations consider creating policies and
-                procedures for the removal of such information. 
+                procedures for the removal of such information.
 
 
-                The senior agency official for privacy ensures that practical means and mechanisms exist and are accessible for individuals or their authorized representatives to seek the correction or deletion of personally identifiable information. Processes for correcting or deleting data are clearly defined and publicly available. Organizations use discretion in determining whether data is to be deleted or corrected based on the scope of requests, the changes sought, and the impact of the changes. Additionally, processes include the provision of responses to individuals of decisions to deny requests for correction or deletion. The responses include the reasons for the decisions, a means to record individual objections to the decisions, and a means of requesting reviews of the initial determinations. 
+                The senior agency official for privacy ensures that practical means and mechanisms exist and are accessible for individuals or their authorized representatives to seek the correction or deletion of personally identifiable information. Processes for correcting or deleting data are clearly defined and publicly available. Organizations use discretion in determining whether data is to be deleted or corrected based on the scope of requests, the changes sought, and the impact of the changes. Additionally, processes include the provision of responses to individuals of decisions to deny requests for correction or deletion. The responses include the reasons for the decisions, a means to record individual objections to the decisions, and a means of requesting reviews of the initial determinations.
 
 
                 Organizations notify individuals or their designated representatives when their personally identifiable information is corrected or deleted to provide transparency and confirm the completed action. Due to the complexity of data flows and storage, other entities may need to be informed of the correction or deletion. Notice supports the consistent correction and deletion of personally identifiable information across the data ecosystem.
@@ -5778,7 +5778,7 @@ catalog:
                     - name: label
                       value: c.
                   prose: "Verify that individuals requiring access to organizational information
-                    and systems: "
+                    and systems:"
                   parts:
                     - id: ps-6_smt.c.1
                       name: item
@@ -5816,7 +5816,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: pt-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -6023,10 +6023,10 @@ catalog:
                 processing, storage, maintenance, dissemination, disclosure, and
                 disposal. Processing operations also include logging,
                 generation, and transformation, as well as analysis techniques,
-                such as data mining. 
+                such as data mining.
 
 
-                Organizations may be subject to laws, executive orders, directives, regulations, or policies that establish the organization’s authority and thereby limit certain types of processing of personally identifiable information or establish other requirements related to the processing. Organizational personnel consult with the senior agency official for privacy and legal counsel regarding such authority, particularly if the organization is subject to multiple jurisdictions or sources of authority. For organizations whose processing is not determined according to legal authorities, the organization’s policies and determinations govern how they process personally identifiable information. While processing of personally identifiable information may be legally permissible, privacy risks may still arise. Privacy risk assessments can identify the privacy risks associated with the authorized processing of personally identifiable information and support solutions to manage such risks. 
+                Organizations may be subject to laws, executive orders, directives, regulations, or policies that establish the organization’s authority and thereby limit certain types of processing of personally identifiable information or establish other requirements related to the processing. Organizational personnel consult with the senior agency official for privacy and legal counsel regarding such authority, particularly if the organization is subject to multiple jurisdictions or sources of authority. For organizations whose processing is not determined according to legal authorities, the organization’s policies and determinations govern how they process personally identifiable information. While processing of personally identifiable information may be legally permissible, privacy risks may still arise. Privacy risk assessments can identify the privacy risks associated with the authorized processing of personally identifiable information and support solutions to manage such risks.
 
 
                 Organizations consider applicable requirements and organizational policies to determine how to document this authority. For federal agencies, the authority to process personally identifiable information is documented in privacy policies and notices, system of records notices, privacy impact assessments, [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) statements, computer matching agreements and notices, contracts, information sharing agreements, memoranda of understanding, and other documentation.
@@ -6103,8 +6103,8 @@ catalog:
                   props:
                     - name: label
                       value: b.
-                  prose: "Describe the purpose(s) in the public privacy notices and policies of
-                    the organization; "
+                  prose: Describe the purpose(s) in the public privacy notices and policies of the
+                    organization;
                 - id: pt-3_smt.c
                   name: item
                   props:
@@ -6112,7 +6112,7 @@ catalog:
                       value: c.
                   prose: "Restrict the {{ insert: param, pt-3_prm_2 }} of personally identifiable
                     information to only that which is compatible with the
-                    identified purpose(s); and "
+                    identified purpose(s); and"
                 - id: pt-3_smt.d
                   name: item
                   props:
@@ -6149,7 +6149,7 @@ catalog:
                 Organizations take steps to help ensure that personally identifiable information is processed only for identified purposes, including training organizational personnel and monitoring and auditing organizational processing of personally identifiable information.
 
 
-                Organizations monitor for changes in personally identifiable information processing. Organizational personnel consult with the senior agency official for privacy and legal counsel to ensure that any new purposes that arise from changes in processing are compatible with the purpose for which the information was collected, or if the new purpose is not compatible, implement mechanisms in accordance with defined requirements to allow for the new processing, if appropriate. Mechanisms may include obtaining consent from individuals, revising privacy policies, or other measures to manage privacy risks that arise from changes in personally identifiable information processing purposes. 
+                Organizations monitor for changes in personally identifiable information processing. Organizational personnel consult with the senior agency official for privacy and legal counsel to ensure that any new purposes that arise from changes in processing are compatible with the purpose for which the information was collected, or if the new purpose is not compatible, implement mechanisms in accordance with defined requirements to allow for the new processing, if appropriate. Mechanisms may include obtaining consent from individuals, revising privacy policies, or other measures to manage privacy risks that arise from changes in personally identifiable information processing purposes.
         - id: pt-4
           class: SP800-53
           title: Consent
@@ -6183,7 +6183,7 @@ catalog:
                 decision-making."
             - id: pt-4_gdn
               name: guidance
-              prose: "Consent allows individuals to participate in making decisions about the
+              prose: Consent allows individuals to participate in making decisions about the
                 processing of their information and transfers some of the risk
                 that arises from the processing of personally identifiable
                 information from the organization to an individual. Consent may
@@ -6207,7 +6207,7 @@ catalog:
                 appropriate. Finally, organizations consider usability factors
                 to help individuals understand the risks being accepted when
                 providing consent, including the use of plain language and
-                avoiding technical jargon. "
+                avoiding technical jargon.
         - id: pt-5
           class: SP800-53
           title: Privacy Notice
@@ -6309,7 +6309,7 @@ catalog:
                 privacy notices.
 
 
-                Privacy risk assessments identify the privacy risks associated with the processing of personally identifiable information and may help organizations determine appropriate elements to include in a privacy notice to manage such risks. To help individuals understand how their information is being processed, organizations write materials in plain language and avoid technical jargon. 
+                Privacy risk assessments identify the privacy risks associated with the processing of personally identifiable information and may help organizations determine appropriate elements to include in a privacy notice to manage such risks. To help individuals understand how their information is being processed, organizations write materials in plain language and avoid technical jargon.
           controls:
             - id: pt-5.2
               class: SP800-53-enhancement
@@ -6530,7 +6530,7 @@ catalog:
             - id: pt-7_smt
               name: statement
               prose: "Apply {{ insert: param, pt-7_prm_1 }} for specific categories of
-                personally identifiable information. "
+                personally identifiable information."
             - id: pt-7_gdn
               name: guidance
               prose: Organizations apply any conditions or protections that may be necessary
@@ -6590,11 +6590,11 @@ catalog:
                         number is solicited, and what uses will be made of it.
                 - id: pt-7.1_gdn
                   name: guidance
-                  prose: "Federal law and policy establish specific requirements for
-                    organizations’ processing of Social Security numbers.
-                    Organizations take steps to eliminate unnecessary uses of
-                    Social Security numbers and other sensitive information and
-                    observe any particular requirements that apply. "
+                  prose: Federal law and policy establish specific requirements for organizations’
+                    processing of Social Security numbers. Organizations take
+                    steps to eliminate unnecessary uses of Social Security
+                    numbers and other sensitive information and observe any
+                    particular requirements that apply.
             - id: pt-7.2
               class: SP800-53-enhancement
               title: First Amendment Information
@@ -6683,7 +6683,7 @@ catalog:
                     findings before taking adverse action against an individual.
             - id: pt-8_gdn
               name: guidance
-              prose: "The [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) establishes
+              prose: The [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) establishes
                 requirements for federal and non-federal agencies if they engage
                 in a matching program. In general, a matching program is a
                 computerized comparison of records from two or more automated
@@ -6696,7 +6696,7 @@ catalog:
                 federal benefit programs or to recoup payments or delinquent
                 debts under federal benefit programs. A matching program
                 involves not just the matching activity itself but also the
-                investigative follow-up and ultimate action, if any. "
+                investigative follow-up and ultimate action, if any.
     - id: ra
       class: family
       title: Risk Assessment
@@ -6709,7 +6709,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: ra-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -7176,7 +7176,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: sa-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -7487,7 +7487,7 @@ catalog:
                 Role-based security and privacy training programs can ensure
                 that individuals with key security and privacy roles and
                 responsibilities have the experience, skills, and expertise to
-                conduct assigned system development life cycle activities. 
+                conduct assigned system development life cycle activities.
 
 
                 The effective integration of security and privacy requirements into enterprise architecture also helps to ensure that important security and privacy considerations are addressed throughout the system life cycle and that those considerations are directly related to organizational mission and business processes. This process also facilitates the integration of the information security and privacy architectures into the enterprise architecture, consistent with the risk management strategy of the organization. Because the system development life cycle involves multiple organizations, (e.g., external suppliers, developers, integrators, service providers), acquisition and supply chain risk management functions and controls play significant roles in the effective management of the system during the life cycle.
@@ -7497,7 +7497,7 @@ catalog:
           params:
             - id: sa-4_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - standardized contract language
                   - " {{ insert: param, sa-4_prm_2 }} "
@@ -7777,7 +7777,7 @@ catalog:
           params:
             - id: sa-11_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - unit
                   - integration
@@ -7903,7 +7903,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: si-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -8241,7 +8241,7 @@ catalog:
                   name: statement
                   prose: "Use the following techniques to dispose of, destroy, or erase
                     information following the retention period: {{ insert:
-                    param, si-12.3_prm_1 }}. "
+                    param, si-12.3_prm_1 }}."
                 - id: si-12.3_gdn
                   name: guidance
                   prose: Organizations can minimize both security and privacy risks by disposing

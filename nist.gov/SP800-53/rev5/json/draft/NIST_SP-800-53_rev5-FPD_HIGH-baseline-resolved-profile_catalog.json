@@ -1,11 +1,11 @@
 {
   "catalog": {
-    "uuid": "e2ca89e0-0927-4538-9a2c-31daab8078d7",
+    "uuid": "90d32ced-f053-4151-ab85-6c803212d7d3",
     "metadata": {
       "title": "SP800-53 HIGH IMPACT BASELINE",
-      "last-modified": "2021-05-18T18:47:42.207592Z",
+      "last-modified": "2021-06-08T18:25:12.402728Z",
       "version": "FPD",
-      "oscal-version": "1.0.0-rc2",
+      "oscal-version": "1.0.0",
       "links": [
         {
           "href": "NIST_SP-800-53_rev5-FPD_HIGH-baseline_profile.xml",
@@ -45,18 +45,20 @@
           ]
         }
       ],
-      "responsible-parties": {
-        "creator": {
+      "responsible-parties": [
+        {
+          "role-id": "creator",
           "party-uuids": [
             "a90f4235-ab3c-4bf1-ba0a-865bbc833346"
           ]
         },
-        "contact": {
+        {
+          "role-id": "contact",
           "party-uuids": [
             "a90f4235-ab3c-4bf1-ba0a-865bbc833346"
           ]
         }
-      }
+      ]
     }
   }
 }

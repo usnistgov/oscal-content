@@ -1,11 +1,11 @@
 ---
 profile:
-  uuid: 6809f3d2-28c8-4dbb-90e7-9517aa11b29c
+  uuid: 767c11dd-de88-4222-8241-acc2ba3865d0
   metadata:
     title: SP800-53 PRIVACY BASELINE
-    last-modified: 2021-04-07T12:50:17.065-04:00
+    last-modified: 2021-06-08T13:57:32.630978-04:00
     version: FPD
-    oscal-version: 1.0.0-rc2
+    oscal-version: 1.0.0
     roles:
       - id: creator
         title: Document Creator
@@ -27,10 +27,10 @@ profile:
             state: MD
             postal-code: 20899-8930
     responsible-parties:
-      creator:
+      - role-id: creator
         party-uuids:
           - d8bc8fc4-0f2e-4bfd-983f-e2ec9dc64696
-      contact:
+      - role-id: contact
         party-uuids:
           - d8bc8fc4-0f2e-4bfd-983f-e2ec9dc64696
   imports:

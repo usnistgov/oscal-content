@@ -1,11 +1,11 @@
 {
   "catalog": {
-    "uuid": "38eef94a-8150-4cb9-ae65-8ea248860f72",
+    "uuid": "2962a69b-50c3-4aae-9da5-faa96485a5e8",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 4 HIGH IMPACT BASELINE",
-      "last-modified": "2021-05-18T18:46:05.12089Z",
+      "last-modified": "2021-06-08T18:23:53.230188Z",
       "version": "2015-01-22",
-      "oscal-version": "1.0.0-rc2",
+      "oscal-version": "1.0.0",
       "links": [
         {
           "href": "NIST_SP-800-53_rev4_HIGH-baseline_profile.xml",
@@ -45,18 +45,20 @@
           ]
         }
       ],
-      "responsible-parties": {
-        "creator": {
+      "responsible-parties": [
+        {
+          "role-id": "creator",
           "party-uuids": [
             "31a5dd8f-978a-4558-8ade-846211607d40"
           ]
         },
-        "contact": {
+        {
+          "role-id": "contact",
           "party-uuids": [
             "31a5dd8f-978a-4558-8ade-846211607d40"
           ]
         }
-      }
+      ]
     },
     "groups": [
       {
@@ -6130,7 +6132,7 @@
                   {
                     "id": "ac-18.1_prm_1",
                     "select": {
-                      "how-many": "one or more",
+                      "how-many": "one-or-more",
                       "choice": [
                         "users",
                         "devices"
@@ -11333,7 +11335,7 @@
                   {
                     "id": "au-6.5_prm_1",
                     "select": {
-                      "how-many": "one or more",
+                      "how-many": "one-or-more",
                       "choice": [
                         "vulnerability scanning information",
                         "performance data",
@@ -14591,7 +14593,7 @@
                   {
                     "id": "ca-2.2_prm_3",
                     "select": {
-                      "how-many": "one or more",
+                      "how-many": "one-or-more",
                       "choice": [
                         "in-depth monitoring",
                         "vulnerability scanning",
@@ -17976,7 +17978,7 @@
               {
                 "id": "cm-3_prm_3",
                 "select": {
-                  "how-many": "one or more",
+                  "how-many": "one-or-more",
                   "choice": [
                     " {{ insert: param, cm-3_prm_4 }} ",
                     " {{ insert: param, cm-3_prm_5 }} "
@@ -21078,7 +21080,7 @@
                   {
                     "id": "cm-7.2_prm_1",
                     "select": {
-                      "how-many": "one or more",
+                      "how-many": "one-or-more",
                       "choice": [
                         " {{ insert: param, cm-7.2_prm_2 }} ",
                         "rules authorizing the terms and conditions of software program usage"
@@ -21995,7 +21997,7 @@
                   {
                     "id": "cm-8.3_prm_2",
                     "select": {
-                      "how-many": "one or more",
+                      "how-many": "one-or-more",
                       "choice": [
                         "disables network access by such components",
                         "isolates the components",
@@ -22335,7 +22337,7 @@
                   {
                     "id": "cm-8.4_prm_1",
                     "select": {
-                      "how-many": "one or more",
+                      "how-many": "one-or-more",
                       "choice": [
                         "name",
                         "position",
@@ -29734,7 +29736,7 @@
               {
                 "id": "ia-3_prm_2",
                 "select": {
-                  "how-many": "one or more",
+                  "how-many": "one-or-more",
                   "choice": [
                     "local",
                     "remote",
@@ -41644,7 +41646,7 @@
               {
                 "id": "pe-3_prm_2",
                 "select": {
-                  "how-many": "one or more",
+                  "how-many": "one-or-more",
                   "choice": [
                     " {{ insert: param, pe-3_prm_3 }} ",
                     "guards"
@@ -43677,7 +43679,7 @@
               {
                 "id": "pe-11_prm_1",
                 "select": {
-                  "how-many": "one or more",
+                  "how-many": "one-or-more",
                   "choice": [
                     "an orderly shutdown of the information system",
                     "transition of the information system to long-term alternate power"
@@ -51469,7 +51471,7 @@
                   {
                     "id": "ra-5.2_prm_1",
                     "select": {
-                      "how-many": "one or more",
+                      "how-many": "one-or-more",
                       "choice": [
                         " {{ insert: param, ra-5.2_prm_2 }} ",
                         "prior to a new scan",
@@ -53188,7 +53190,7 @@
                   {
                     "id": "sa-4.2_prm_1",
                     "select": {
-                      "how-many": "one or more",
+                      "how-many": "one-or-more",
                       "choice": [
                         "security-relevant external system interfaces",
                         "high-level design",
@@ -54693,7 +54695,7 @@
               {
                 "id": "sa-10_prm_1",
                 "select": {
-                  "how-many": "one or more",
+                  "how-many": "one-or-more",
                   "choice": [
                     "design",
                     "development",
@@ -55124,7 +55126,7 @@
               {
                 "id": "sa-11_prm_1",
                 "select": {
-                  "how-many": "one or more",
+                  "how-many": "one-or-more",
                   "choice": [
                     "unit",
                     "integration",
@@ -58398,7 +58400,7 @@
               {
                 "id": "sc-8_prm_1",
                 "select": {
-                  "how-many": "one or more",
+                  "how-many": "one-or-more",
                   "choice": [
                     "confidentiality",
                     "integrity"
@@ -58559,7 +58561,7 @@
                   {
                     "id": "sc-8.1_prm_1",
                     "select": {
-                      "how-many": "one or more",
+                      "how-many": "one-or-more",
                       "choice": [
                         "prevent unauthorized disclosure of information",
                         "detect changes to information"
@@ -60812,7 +60814,7 @@
               {
                 "id": "sc-28_prm_1",
                 "select": {
-                  "how-many": "one or more",
+                  "how-many": "one-or-more",
                   "choice": [
                     "confidentiality",
                     "integrity"
@@ -62130,7 +62132,7 @@
               {
                 "id": "si-3_prm_2",
                 "select": {
-                  "how-many": "one or more",
+                  "how-many": "one-or-more",
                   "choice": [
                     "endpoint",
                     "network entry/exit points"
@@ -62140,7 +62142,7 @@
               {
                 "id": "si-3_prm_3",
                 "select": {
-                  "how-many": "one or more",
+                  "how-many": "one-or-more",
                   "choice": [
                     "block malicious code",
                     "quarantine malicious code",
@@ -62774,7 +62776,7 @@
               {
                 "id": "si-4_prm_5",
                 "select": {
-                  "how-many": "one or more",
+                  "how-many": "one-or-more",
                   "choice": [
                     "as needed",
                     " {{ insert: param, si-4_prm_6 }} "
@@ -63800,7 +63802,7 @@
               {
                 "id": "si-5_prm_2",
                 "select": {
-                  "how-many": "one or more",
+                  "how-many": "one-or-more",
                   "choice": [
                     " {{ insert: param, si-5_prm_3 }} ",
                     " {{ insert: param, si-5_prm_4 }} ",
@@ -64222,7 +64224,7 @@
               {
                 "id": "si-6_prm_2",
                 "select": {
-                  "how-many": "one or more",
+                  "how-many": "one-or-more",
                   "choice": [
                     " {{ insert: param, si-6_prm_3 }} ",
                     "upon command by user with appropriate privilege",
@@ -64247,7 +64249,7 @@
               {
                 "id": "si-6_prm_6",
                 "select": {
-                  "how-many": "one or more",
+                  "how-many": "one-or-more",
                   "choice": [
                     "shuts the information system down",
                     "restarts the information system",
@@ -64833,7 +64835,7 @@
                   {
                     "id": "si-7.1_prm_2",
                     "select": {
-                      "how-many": "one or more",
+                      "how-many": "one-or-more",
                       "choice": [
                         "at startup",
                         "at {{ insert: param, si-7.1_prm_3 }} ",
@@ -65226,7 +65228,7 @@
                   {
                     "id": "si-7.5_prm_1",
                     "select": {
-                      "how-many": "one or more",
+                      "how-many": "one-or-more",
                       "choice": [
                         "shuts the information system down",
                         "restarts the information system",

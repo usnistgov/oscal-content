@@ -1,11 +1,11 @@
 {
   "profile": {
-    "uuid": "ec686714-bccd-4373-8121-8c455b328ac4",
+    "uuid": "46c593c4-d3fb-4407-85bf-12d5f0f970e0",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 4 HIGH IMPACT BASELINE",
-      "last-modified": "2021-04-07T12:50:14.801-04:00",
+      "last-modified": "2021-06-08T13:57:29.649957-04:00",
       "version": "2015-01-22",
-      "oscal-version": "1.0.0-rc2",
+      "oscal-version": "1.0.0",
       "roles": [
         {
           "id": "creator",
@@ -39,18 +39,20 @@
           ]
         }
       ],
-      "responsible-parties": {
-        "creator": {
+      "responsible-parties": [
+        {
+          "role-id": "creator",
           "party-uuids": [
             "31a5dd8f-978a-4558-8ade-846211607d40"
           ]
         },
-        "contact": {
+        {
+          "role-id": "contact",
           "party-uuids": [
             "31a5dd8f-978a-4558-8ade-846211607d40"
           ]
         }
-      }
+      ]
     },
     "imports": [
       {

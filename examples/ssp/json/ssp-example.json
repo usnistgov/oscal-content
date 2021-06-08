@@ -3,9 +3,9 @@
     "uuid": "cff8385f-108e-40a5-8f7a-82f3dc0eaba8",
     "metadata": {
       "title": "Enterprise Logging and Auditing System Security Plan",
-      "last-modified": "2021-04-07T12:50:10.241-04:00",
+      "last-modified": "2021-06-08T13:57:28.355446-04:00",
       "version": "1.0",
-      "oscal-version": "1.0.0-rc2",
+      "oscal-version": "1.0.0",
       "roles": [
         {
           "id": "legal-officer",
@@ -179,7 +179,7 @@
           "uuid": "795533ab-9427-4abe-820f-0b571bacfe6d",
           "title": "Enterprise Logging, Monitoring, and Alerting Policy",
           "type": "policy",
-          "description": "Requires all components to send logs to the enterprise logging solution\n— Requires all components synchronize their time with the appropriate enterprise time service, and at what frequency.\n— Identifies the events that must be captured\n— Identifies who is responsible/accountable for performing these functions",
+          "description": "Requires all components to send logs to the enterprise logging solution\n\n- Requires all components synchronize their time with the appropriate enterprise time service, and at what frequency.\n\n- Identifies the events that must be captured\n\n- Identifies who is responsible/accountable for performing these functions",
           "status": {
             "state": "operational"
           },

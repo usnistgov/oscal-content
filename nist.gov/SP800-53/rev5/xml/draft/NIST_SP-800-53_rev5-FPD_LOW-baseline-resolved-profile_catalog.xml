@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="66da37d5-6754-489f-bdb8-9da5d0815d47">
+         uuid="941989fb-f1e7-476f-bbf2-9121e171821a">
    <metadata>
       <title>SP800-53 LOW IMPACT BASELINE</title>
-      <last-modified>2021-06-07T17:19:39.004777-04:00</last-modified>
+      <last-modified>2021-06-08T18:25:19.36984Z</last-modified>
       <version>FPD</version>
-      <oscal-version>1.0.0-rc2</oscal-version>
+      <oscal-version>1.0.0</oscal-version>
       <link rel="resolution-source"
             href="NIST_SP-800-53_rev5-FPD_LOW-baseline_profile.xml"/>
       <role id="creator">

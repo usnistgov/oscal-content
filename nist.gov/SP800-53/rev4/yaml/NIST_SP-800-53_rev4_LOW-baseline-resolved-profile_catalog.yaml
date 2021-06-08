@@ -1,11 +1,11 @@
 ---
 catalog:
-  uuid: ecf6ce16-17d3-4063-b405-17fbca2e9c71
+  uuid: 2fbdea20-1d65-422d-83bd-239aceab414e
   metadata:
     title: NIST Special Publication 800-53 Revision 4 LOW IMPACT BASELINE
-    last-modified: 2021-05-18T18:46:19.070616Z
+    last-modified: 2021-06-08T18:24:04.357849Z
     version: 2015-01-22
-    oscal-version: 1.0.0-rc2
+    oscal-version: 1.0.0
     links:
       - href: NIST_SP-800-53_rev4_LOW-baseline_profile.xml
         rel: resolution-source
@@ -30,10 +30,10 @@ catalog:
             state: MD
             postal-code: 20899-8930
     responsible-parties:
-      creator:
+      - role-id: creator
         party-uuids:
           - fcde62b1-8cce-4a57-a26b-b07ad2865ae1
-      contact:
+      - role-id: contact
         party-uuids:
           - fcde62b1-8cce-4a57-a26b-b07ad2865ae1
   groups:
@@ -15764,7 +15764,7 @@ catalog:
                 information system resides
             - id: pe-3_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - " {{ insert: param, pe-3_prm_3 }} "
                   - guards
@@ -24243,13 +24243,13 @@ catalog:
               label: organization-defined frequency
             - id: si-3_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - endpoint
                   - network entry/exit points
             - id: si-3_prm_3
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - block malicious code
                   - quarantine malicious code
@@ -24607,7 +24607,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: si-4_prm_5
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - as needed
                   - " {{ insert: param, si-4_prm_6 }} "
@@ -25062,7 +25062,7 @@ catalog:
               label: organization-defined external organizations
             - id: si-5_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - " {{ insert: param, si-5_prm_3 }} "
                   - " {{ insert: param, si-5_prm_4 }} "

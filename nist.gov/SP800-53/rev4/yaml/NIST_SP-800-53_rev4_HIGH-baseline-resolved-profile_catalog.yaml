@@ -1,11 +1,11 @@
 ---
 catalog:
-  uuid: 38eef94a-8150-4cb9-ae65-8ea248860f72
+  uuid: 2962a69b-50c3-4aae-9da5-faa96485a5e8
   metadata:
     title: NIST Special Publication 800-53 Revision 4 HIGH IMPACT BASELINE
-    last-modified: 2021-05-18T18:46:05.12089Z
+    last-modified: 2021-06-08T18:23:53.230188Z
     version: 2015-01-22
-    oscal-version: 1.0.0-rc2
+    oscal-version: 1.0.0
     links:
       - href: NIST_SP-800-53_rev4_HIGH-baseline_profile.xml
         rel: resolution-source
@@ -30,10 +30,10 @@ catalog:
             state: MD
             postal-code: 20899-8930
     responsible-parties:
-      creator:
+      - role-id: creator
         party-uuids:
           - 31a5dd8f-978a-4558-8ade-846211607d40
-      contact:
+      - role-id: contact
         party-uuids:
           - 31a5dd8f-978a-4558-8ade-846211607d40
   groups:
@@ -4664,7 +4664,7 @@ catalog:
               params:
                 - id: ac-18.1_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - users
                       - devices
@@ -8624,7 +8624,7 @@ catalog:
               params:
                 - id: au-6.5_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - vulnerability scanning information
                       - performance data
@@ -11153,7 +11153,7 @@ catalog:
                       - unannounced
                 - id: ca-2.2_prm_3
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - in-depth monitoring
                       - vulnerability scanning
@@ -13729,7 +13729,7 @@ catalog:
                 committee, board)
             - id: cm-3_prm_3
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - " {{ insert: param, cm-3_prm_4 }} "
                   - " {{ insert: param, cm-3_prm_5 }} "
@@ -16219,7 +16219,7 @@ catalog:
               params:
                 - id: cm-7.2_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - " {{ insert: param, cm-7.2_prm_2 }} "
                       - rules authorizing the terms and conditions of software
@@ -16965,7 +16965,7 @@ catalog:
                   label: organization-defined frequency
                 - id: cm-8.3_prm_2
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - disables network access by such components
                       - isolates the components
@@ -17213,7 +17213,7 @@ catalog:
               params:
                 - id: cm-8.4_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - name
                       - position
@@ -23252,7 +23252,7 @@ catalog:
               label: organization-defined specific and/or types of devices
             - id: ia-3_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - local
                   - remote
@@ -32215,7 +32215,7 @@ catalog:
                 information system resides
             - id: pe-3_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - " {{ insert: param, pe-3_prm_3 }} "
                   - guards
@@ -33715,7 +33715,7 @@ catalog:
           params:
             - id: pe-11_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - an orderly shutdown of the information system
                   - transition of the information system to long-term alternate
@@ -39346,7 +39346,7 @@ catalog:
               params:
                 - id: ra-5.2_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - " {{ insert: param, ra-5.2_prm_2 }} "
                       - prior to a new scan
@@ -40693,7 +40693,7 @@ catalog:
               params:
                 - id: sa-4.2_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - security-relevant external system interfaces
                       - high-level design
@@ -41916,7 +41916,7 @@ catalog:
           params:
             - id: sa-10_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - design
                   - development
@@ -42241,7 +42241,7 @@ catalog:
           params:
             - id: sa-11_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - unit
                   - integration
@@ -44974,7 +44974,7 @@ catalog:
           params:
             - id: sc-8_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - confidentiality
                   - integrity
@@ -45107,7 +45107,7 @@ catalog:
               params:
                 - id: sc-8.1_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - prevent unauthorized disclosure of information
                       - detect changes to information
@@ -46875,7 +46875,7 @@ catalog:
           params:
             - id: sc-28_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - confidentiality
                   - integrity
@@ -47837,13 +47837,13 @@ catalog:
               label: organization-defined frequency
             - id: si-3_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - endpoint
                   - network entry/exit points
             - id: si-3_prm_3
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - block malicious code
                   - quarantine malicious code
@@ -48366,7 +48366,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: si-4_prm_5
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - as needed
                   - " {{ insert: param, si-4_prm_6 }} "
@@ -49175,7 +49175,7 @@ catalog:
               label: organization-defined external organizations
             - id: si-5_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - " {{ insert: param, si-5_prm_3 }} "
                   - " {{ insert: param, si-5_prm_4 }} "
@@ -49512,7 +49512,7 @@ catalog:
               label: organization-defined security functions
             - id: si-6_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - " {{ insert: param, si-6_prm_3 }} "
                   - upon command by user with appropriate privilege
@@ -49527,7 +49527,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: si-6_prm_6
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - shuts the information system down
                   - restarts the information system
@@ -49936,7 +49936,7 @@ catalog:
                   label: organization-defined software, firmware, and information
                 - id: si-7.1_prm_2
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - at startup
                       - "at {{ insert: param, si-7.1_prm_3 }} "
@@ -50235,7 +50235,7 @@ catalog:
               params:
                 - id: si-7.5_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - shuts the information system down
                       - restarts the information system

@@ -1,11 +1,11 @@
 ---
 profile:
-  uuid: acbc3351-b5be-4c7a-8423-3d3a1ae7a3d3
+  uuid: 1019f424-1556-4aa3-9df3-337b97c2c856
   metadata:
     title: NIST Special Publication 800-53 Revision 5 MODERATE IMPACT BASELINE
-    last-modified: 2021-04-07T12:50:18.125-04:00
+    last-modified: 2021-06-08T13:57:34.337491-04:00
     version: Final
-    oscal-version: 1.0.0-rc2
+    oscal-version: 1.0.0
     roles:
       - id: creator
         title: Document Creator
@@ -27,10 +27,10 @@ profile:
             state: MD
             postal-code: 20899-8930
     responsible-parties:
-      creator:
+      - role-id: creator
         party-uuids:
           - cde369ce-57f8-4ec1-847f-2681a9a881e7
-      contact:
+      - role-id: contact
         party-uuids:
           - cde369ce-57f8-4ec1-847f-2681a9a881e7
   imports:
