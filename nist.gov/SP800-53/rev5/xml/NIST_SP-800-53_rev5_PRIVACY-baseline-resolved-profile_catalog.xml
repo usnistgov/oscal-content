@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="2430bb44-cd06-4e94-b506-4737e10ad87e">
+         uuid="38086d97-a6ce-4b84-907e-6d159a31fbed">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 5 PRIVACY BASELINE</title>
-      <last-modified>2021-05-18T18:47:25.966698Z</last-modified>
+      <last-modified>2021-06-07T17:19:31.005129-04:00</last-modified>
       <version>Final</version>
       <oscal-version>1.0.0-rc2</oscal-version>
       <link rel="resolution-source"
@@ -42,7 +42,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="ac-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -128,7 +128,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="at-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -402,7 +402,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="au-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -585,7 +585,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="ca-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -974,7 +974,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="cm-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -1082,7 +1082,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="ir-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -1526,7 +1526,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="mp-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -1655,7 +1655,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="pl-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -1880,7 +1880,7 @@
             <label>organization-defined frequency</label>
          </param>
          <param id="pl-4_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>
                   <insert type="param" id-ref="pl-4_prm_3"/>
                </choice>
@@ -2966,7 +2966,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="pt-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -3387,7 +3387,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="ra-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -3638,7 +3638,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="sa-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -3798,7 +3798,7 @@
       <control class="SP800-53" id="sa-4">
          <title>Acquisition Process</title>
          <param id="sa-4_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>standardized contract language</choice>
                <choice>
                   <insert type="param" id-ref="sa-4_prm_2"/>
@@ -3938,7 +3938,7 @@
       <control class="SP800-53" id="sa-11">
          <title>Developer Testing and Evaluation</title>
          <param id="sa-11_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>unit</choice>
                <choice>integration</choice>
                <choice>system</choice>
@@ -4008,7 +4008,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="si-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>

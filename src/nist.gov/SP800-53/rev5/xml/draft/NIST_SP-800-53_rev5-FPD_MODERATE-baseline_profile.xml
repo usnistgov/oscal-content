@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Modified by the OSCAL 1.0.0 RC1 to OSCAL 1.0.0 RC2 conversion XSLT on 2021-04-07T12:50:16.742-04:00 -->
+<!-- Modified by the OSCAL 1.0.0 RC2 to OSCAL 1.0.0 conversion XSLT on 2021-06-08T13:57:32.277476-04:00 -->
 <profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="8bd38335-b5e4-4e23-91d3-6b45ff66a680">
+         uuid="3b5e4f70-153e-4a76-a6d1-215dbed4467d">
    <metadata>
       <title>SP800-53 MODERATE IMPACT BASELINE</title>
-      <last-modified>2021-04-07T12:50:16.742-04:00</last-modified>
+      <last-modified>2021-06-08T13:57:32.277476-04:00</last-modified>
       <version>FPD</version>
-      <oscal-version>1.0.0-rc2</oscal-version>
+      <oscal-version>1.0.0</oscal-version>
       <role id="creator">
          <title>Document Creator</title>
       </role>

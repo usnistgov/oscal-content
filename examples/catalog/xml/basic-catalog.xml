@@ -25,7 +25,7 @@
             <title>Information security roles and responsibilities</title>
             <param id="s1.1.1-prm1">
                <label>a choice from a selection</label>
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>initiating a device lock after <insert type="param" id-ref="s1.1.1-prm_2"/> of inactivity</choice>
                   <choice>requiring the user to initiate a device lock before leaving the system unattended</choice>
                </select>
