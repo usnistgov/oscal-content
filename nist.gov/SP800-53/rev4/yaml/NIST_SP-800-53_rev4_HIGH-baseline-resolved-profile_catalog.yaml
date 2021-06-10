@@ -1,9 +1,9 @@
 ---
 catalog:
-  uuid: 2962a69b-50c3-4aae-9da5-faa96485a5e8
+  uuid: a468e6d8-cc70-44c5-b243-174bcc65bdfa
   metadata:
     title: NIST Special Publication 800-53 Revision 4 HIGH IMPACT BASELINE
-    last-modified: 2021-06-08T18:23:53.230188Z
+    last-modified: 2021-06-10T17:33:59.193722Z
     version: 2015-01-22
     oscal-version: 1.0.0
     links:
