@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Modified by the OSCAL 1.0.0 RC1 to OSCAL 1.0.0 RC2 conversion XSLT on 2021-04-07T12:50:11.957-04:00 -->
+<!-- Modified by the OSCAL 1.0.0 RC2 to OSCAL 1.0.0 conversion XSLT on 2021-06-08T13:57:30.880464-04:00 -->
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="0eea0026-eb3f-48ff-8512-e4f7ec2c3c15">
+         uuid="3774332f-a28d-4e61-8c3e-31171abbe07c">
    <metadata>
       <title>NIST Special Publication 800-53: Security and Privacy Controls for Federal Information Systems and Organizations, Revision 5 Final Public Draft</title>
-      <last-modified>2021-04-07T12:50:11.957-04:00</last-modified>
+      <last-modified>2021-06-08T13:57:30.880464-04:00</last-modified>
       <version>Revision 5</version>
-      <oscal-version>1.0.0-rc2</oscal-version>
+      <oscal-version>1.0.0</oscal-version>
       <prop name="keywords"
-            value="assurance, availability, computer security, confidentiality, control,&#xA;         cybersecurity, FISMA, information security, information system, integrity, personally&#xA;         identifiable information, Privacy Act, privacy controls, privacy functions, privacy&#xA;         requirements, Risk Management Framework, security controls, security functions, security&#xA;         requirements, system, system security"/>
+            value="assurance, availability, computer security, confidentiality, control, cybersecurity, FISMA, information security, information system, integrity, personally identifiable information, Privacy Act, privacy controls, privacy functions, privacy requirements, Risk Management Framework, security controls, security functions, security requirements, system, system security"/>
       <link rel="alternate" href="#90ec1671-8dcf-4bcf-8efe-ac6d06a806f0"/>
       <link rel="canonical" href="#abe434a3-7630-4138-8699-2ab8c7a9aa6c"/>
       <role id="creator">
@@ -45,7 +45,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="ac-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>organization-level</choice>
                <choice>mission/business process-level</choice>
                <choice>system-level</choice>
@@ -512,7 +512,7 @@
          <control class="SP800-53-enhancement" id="ac-2.14">
             <title>Prohibit Specific Account Types</title>
             <param id="ac-2.14_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>shared</choice>
                   <choice>guest</choice>
                   <choice>anonymous</choice>
@@ -1000,7 +1000,7 @@
                <label>organization-defined information flow control mechanisms</label>
             </param>
             <param id="ac-4.4_prm_2">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>decrypting the information</choice>
                   <choice>blocking the flow of the encrypted information</choice>
                   <choice>terminating communications sessions attempting to pass encrypted information</choice>
@@ -1072,7 +1072,7 @@
                <label>organization-defined information flows</label>
             </param>
             <param id="ac-4.8_prm_3">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>block</choice>
                   <choice>strip</choice>
                   <choice>modify</choice>
@@ -1217,7 +1217,7 @@
          <control class="SP800-53-enhancement" id="ac-4.17">
             <title>Domain Authentication</title>
             <param id="ac-4.17_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>organization</choice>
                   <choice>system</choice>
                   <choice>application</choice>
@@ -1332,7 +1332,7 @@
          <control class="SP800-53-enhancement" id="ac-4.25">
             <title>Data Sanitization</title>
             <param id="ac-4.25_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>delivery of malicious content, command and control of malicious code, malicious code augmentation, and steganography encoded data</choice>
                   <choice>spillage of sensitive information</choice>
                </select>
@@ -1710,7 +1710,7 @@
             <label>organization-defined time-period</label>
          </param>
          <param id="ac-7_prm_3">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>lock the account or node for an <insert type="param" id-ref="ac-7_prm_4"/>
                </choice>
                <choice>lock the account or node until released by an administrator</choice>
@@ -1982,7 +1982,7 @@
       <control class="SP800-53" id="ac-11">
          <title>Device Lock</title>
          <param id="ac-11_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>initiating a device lock after <insert type="param" id-ref="ac-11_prm_2"/> of inactivity</choice>
                <choice>requiring the user to initiate a device lock before leaving the system unattended</choice>
             </select>
@@ -2559,7 +2559,7 @@
          <control class="SP800-53-enhancement" id="ac-18.1">
             <title>Authentication and Encryption</title>
             <param id="ac-18.1_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>users</choice>
                   <choice>devices</choice>
                </select>
@@ -2753,7 +2753,7 @@
       <control class="SP800-53" id="ac-20">
          <title>Use of External Systems</title>
          <param id="ac-20_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>
                   <insert type="param" id-ref="ac-20_prm_2"/>
                </choice>
@@ -3092,7 +3092,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="at-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>organization-level</choice>
                <choice>mission/business process-level</choice>
                <choice>system-level</choice>
@@ -3528,7 +3528,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="au-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>organization-level</choice>
                <choice>mission/business process-level</choice>
                <choice>system-level</choice>
@@ -4068,7 +4068,7 @@
          <control class="SP800-53-enhancement" id="au-6.5">
             <title>Integrated Analysis of Audit Records</title>
             <param id="au-6.5_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>vulnerability scanning information</choice>
                   <choice>performance data</choice>
                   <choice>system monitoring information</choice>
@@ -4105,7 +4105,7 @@
          <control class="SP800-53-enhancement" id="au-6.7">
             <title>Permitted Actions</title>
             <param id="au-6.7_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>system process</choice>
                   <choice>role</choice>
                   <choice>user</choice>
@@ -4367,7 +4367,7 @@
          <control class="SP800-53-enhancement" id="au-9.5">
             <title>Dual Authorization</title>
             <param id="au-9.5_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>movement</choice>
                   <choice>deletion</choice>
                </select>
@@ -4773,7 +4773,7 @@
             <label>organization-defined users or roles</label>
          </param>
          <param id="au-14_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>record</choice>
                <choice>view</choice>
                <choice>hear</choice>
@@ -4925,7 +4925,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="ca-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>organization-level</choice>
                <choice>mission/business process-level</choice>
                <choice>system-level</choice>
@@ -5088,7 +5088,7 @@
                </select>
             </param>
             <param id="ca-2.2_prm_3">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>in-depth monitoring</choice>
                   <choice>security instrumentation</choice>
                   <choice>automated security test cases</choice>
@@ -5139,7 +5139,7 @@
       <control class="SP800-53" id="ca-3">
          <title>Information Exchange</title>
          <param id="ca-3_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>interconnection security agreements</choice>
                <choice>information exchange security agreements</choice>
                <choice>memoranda of understanding or agreement</choice>
@@ -5701,7 +5701,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="cm-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>organization-level</choice>
                <choice>mission/business process-level</choice>
                <choice>system-level</choice>
@@ -5932,7 +5932,7 @@
             <label>organization-defined configuration change control element</label>
          </param>
          <param id="cm-3_prm_3">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>
                   <insert type="param" id-ref="cm-3_prm_4"/>
                </choice>
@@ -6536,7 +6536,7 @@
          <control class="SP800-53-enhancement" id="cm-7.2">
             <title>Prevent Program Execution</title>
             <param id="cm-7.2_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>
                      <insert type="param" id-ref="cm-7.2_prm_2"/>
                   </choice>
@@ -6797,7 +6797,7 @@
                <label>organization-defined frequency</label>
             </param>
             <param id="cm-8.3_prm_3">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>disable network access by such components</choice>
                   <choice>isolate the components</choice>
                   <choice>notify <insert type="param" id-ref="cm-8.3_prm_4"/>
@@ -6836,7 +6836,7 @@
          <control class="SP800-53-enhancement" id="cm-8.4">
             <title>Accountability Information</title>
             <param id="cm-8.4_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>name</choice>
                   <choice>position</choice>
                   <choice>role</choice>
@@ -7173,7 +7173,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="cp-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>organization-level</choice>
                <choice>mission/business process-level</choice>
                <choice>system-level</choice>
@@ -8256,7 +8256,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="ia-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>organization-level</choice>
                <choice>mission/business process-level</choice>
                <choice>system-level</choice>
@@ -8428,14 +8428,14 @@
          <control class="SP800-53-enhancement" id="ia-2.6">
             <title>Access to Accounts — Separate Device</title>
             <param id="ia-2.6_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>local</choice>
                   <choice>network</choice>
                   <choice>remote</choice>
                </select>
             </param>
             <param id="ia-2.6_prm_2">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>privileged accounts</choice>
                   <choice>non-privileged accounts</choice>
                </select>
@@ -8471,7 +8471,7 @@
          <control class="SP800-53-enhancement" id="ia-2.8">
             <title>Access to Accounts — Replay Resistant</title>
             <param id="ia-2.8_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>privileged accounts</choice>
                   <choice>non-privileged accounts</choice>
                </select>
@@ -8551,7 +8551,7 @@
             <label>organization-defined devices and/or types of devices</label>
          </param>
          <param id="ia-3_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>local</choice>
                <choice>remote</choice>
                <choice>network</choice>
@@ -8582,7 +8582,7 @@
                <label>organization-defined devices and/or types of devices</label>
             </param>
             <param id="ia-3.1_prm_2">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>local</choice>
                   <choice>remote</choice>
                   <choice>network</choice>
@@ -9486,7 +9486,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="ir-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>organization-level</choice>
                <choice>mission/business process-level</choice>
                <choice>system-level</choice>
@@ -10381,7 +10381,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="ma-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>organization-level</choice>
                <choice>mission/business process-level</choice>
                <choice>system-level</choice>
@@ -11055,7 +11055,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="mp-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>organization-level</choice>
                <choice>mission/business process-level</choice>
                <choice>system-level</choice>
@@ -11645,7 +11645,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="pe-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>organization-level</choice>
                <choice>mission/business process-level</choice>
                <choice>system-level</choice>
@@ -11793,7 +11793,7 @@
          <control class="SP800-53-enhancement" id="pe-2.3">
             <title>Restrict Unescorted Access</title>
             <param id="pe-2.3_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>security clearances for all information contained within the system</choice>
                   <choice>formal access authorizations for all information contained within the system</choice>
                   <choice>need for access to all information contained within the system</choice>
@@ -11823,7 +11823,7 @@
             <label>organization-defined entry and exit points to the facility where the system resides</label>
          </param>
          <param id="pe-3_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>
                   <insert type="param" id-ref="pe-3_prm_3"/>
                </choice>
@@ -11989,7 +11989,7 @@
                <label>organization-defined controls</label>
             </param>
             <param id="pe-3.5_prm_2">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>detect</choice>
                   <choice>prevent</choice>
                </select>
@@ -12378,7 +12378,7 @@
       <control class="SP800-53" id="pe-11">
          <title>Emergency Power</title>
          <param id="pe-11_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>an orderly shutdown of the system</choice>
                <choice>transition of the system to long-term alternate power</choice>
             </select>
@@ -12551,7 +12551,7 @@
       <control class="SP800-53" id="pe-14">
          <title>Environmental Controls</title>
          <param id="pe-14_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>temperature</choice>
                <choice>humidity</choice>
                <choice>pressure</choice>
@@ -12857,7 +12857,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="pl-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>organization-level</choice>
                <choice>mission/business process-level</choice>
                <choice>system-level</choice>
@@ -13093,7 +13093,7 @@
             <label>organization-defined frequency</label>
          </param>
          <param id="pl-4_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>
                   <insert type="param" id-ref="pl-4_prm_3"/>
                </choice>
@@ -14539,7 +14539,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="ps-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>organization-level</choice>
                <choice>mission/business process-level</choice>
                <choice>system-level</choice>
@@ -15069,7 +15069,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="pt-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>organization-level</choice>
                <choice>mission/business process-level</choice>
                <choice>system-level</choice>
@@ -15627,7 +15627,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="ra-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>organization-level</choice>
                <choice>mission/business process-level</choice>
                <choice>system-level</choice>
@@ -16006,7 +16006,7 @@
          <control class="SP800-53-enhancement" id="ra-5.2">
             <title>Update System Vulnerabilities</title>
             <param id="ra-5.2_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>
                      <insert type="param" id-ref="ra-5.2_prm_2"/>
                   </choice>
@@ -16150,7 +16150,7 @@
             <label>organization-defined locations</label>
          </param>
          <param id="ra-6_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>
                   <insert type="param" id-ref="ra-6_prm_3"/>
                </choice>
@@ -16305,7 +16305,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="sa-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>organization-level</choice>
                <choice>mission/business process-level</choice>
                <choice>system-level</choice>
@@ -16503,7 +16503,7 @@
       <control class="SP800-53" id="sa-4">
          <title>Acquisition Process</title>
          <param id="sa-4_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>standardized contract language</choice>
                <choice>
                   <insert type="param" id-ref="sa-4_prm_2"/>
@@ -16605,7 +16605,7 @@
          <control class="SP800-53-enhancement" id="sa-4.2">
             <title>Design and Implementation Information for Controls</title>
             <param id="sa-4.2_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>security-relevant external system interfaces</choice>
                   <choice>high-level design</choice>
                   <choice>low-level design</choice>
@@ -17593,7 +17593,7 @@
          <control class="SP800-53-enhancement" id="sa-9.5">
             <title>Processing, Storage, and Service Location</title>
             <param id="sa-9.5_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>information processing</choice>
                   <choice>information or data</choice>
                   <choice>system services</choice>
@@ -17659,7 +17659,7 @@
       <control class="SP800-53" id="sa-10">
          <title>Developer Configuration Management</title>
          <param id="sa-10_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>design</choice>
                <choice>development</choice>
                <choice>implementation</choice>
@@ -17793,7 +17793,7 @@
       <control class="SP800-53" id="sa-11">
          <title>Developer Testing and Evaluation</title>
          <param id="sa-11_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>unit</choice>
                <choice>integration</choice>
                <choice>system</choice>
@@ -18214,7 +18214,7 @@
          <control class="SP800-53-enhancement" id="sa-15.1">
             <title>Quality Metrics</title>
             <param id="sa-15.1_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>
                      <insert type="param" id-ref="sa-15.1_prm_2"/>
                   </choice>
@@ -18790,7 +18790,7 @@
       <control class="SP800-53" id="sa-22">
          <title>Unsupported System Components</title>
          <param id="sa-22_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>in-house support</choice>
                <choice>
                   <insert type="param" id-ref="sa-22_prm_2"/>
@@ -18828,7 +18828,7 @@
       <control class="SP800-53" id="sa-23">
          <title>Specialization</title>
          <param id="sa-23_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>design modification</choice>
                <choice>augmentation</choice>
                <choice>reconfiguration</choice>
@@ -18859,7 +18859,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="sc-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>organization-level</choice>
                <choice>mission/business process-level</choice>
                <choice>system-level</choice>
@@ -19178,7 +19178,7 @@
             <label>organization-defined resources</label>
          </param>
          <param id="sc-6_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>priority</choice>
                <choice>quota</choice>
                <choice>
@@ -19330,7 +19330,7 @@
          <control class="SP800-53-enhancement" id="sc-7.5">
             <title>Deny by Default — Allow by Exception</title>
             <param id="sc-7.5_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>at managed interfaces</choice>
                   <choice>for <insert type="param" id-ref="sc-7.5_prm_2"/>
                   </choice>
@@ -19738,7 +19738,7 @@
       <control class="SP800-53" id="sc-8">
          <title>Transmission Confidentiality and Integrity</title>
          <param id="sc-8_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>confidentiality</choice>
                <choice>integrity</choice>
             </select>
@@ -19777,7 +19777,7 @@
          <control class="SP800-53-enhancement" id="sc-8.1">
             <title>Cryptographic Protection</title>
             <param id="sc-8.1_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>prevent unauthorized disclosure of information</choice>
                   <choice>detect changes to information</choice>
                </select>
@@ -19795,7 +19795,7 @@
          <control class="SP800-53-enhancement" id="sc-8.2">
             <title>Pre- and Post-transmission Handling</title>
             <param id="sc-8.2_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>confidentiality</choice>
                   <choice>integrity</choice>
                </select>
@@ -19847,7 +19847,7 @@
                <label>organization-defined protected distribution system</label>
             </param>
             <param id="sc-8.5_prm_2">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>prevent unauthorized disclosure of information</choice>
                   <choice>detect changes to information</choice>
                </select>
@@ -20173,7 +20173,7 @@
          <control class="SP800-53-enhancement" id="sc-15.1">
             <title>Physical or Logical Disconnect</title>
             <param id="sc-15.1_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>physical</choice>
                   <choice>logical</choice>
                </select>
@@ -20653,7 +20653,7 @@
       <control class="SP800-53" id="sc-28">
          <title>Protection of Information at Rest</title>
          <param id="sc-28_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>confidentiality</choice>
                <choice>integrity</choice>
             </select>
@@ -20894,7 +20894,7 @@
       <control class="SP800-53" id="sc-31">
          <title>Covert Channel Analysis</title>
          <param id="sc-31_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>storage</choice>
                <choice>timing</choice>
             </select>
@@ -20932,7 +20932,7 @@
          <control class="SP800-53-enhancement" id="sc-31.2">
             <title>Maximum Bandwidth</title>
             <param id="sc-31.2_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>storage</choice>
                   <choice>timing</choice>
                </select>
@@ -21756,7 +21756,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="si-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>organization-level</choice>
                <choice>mission/business process-level</choice>
                <choice>system-level</choice>
@@ -21974,7 +21974,7 @@
       <control class="SP800-53" id="si-3">
          <title>Malicious Code Protection</title>
          <param id="si-3_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>signature based</choice>
                <choice>non-signature based</choice>
             </select>
@@ -21983,13 +21983,13 @@
             <label>organization-defined frequency</label>
          </param>
          <param id="si-3_prm_3">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>endpoint</choice>
                <choice>network entry/exit points</choice>
             </select>
          </param>
          <param id="si-3_prm_4">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>block malicious code</choice>
                <choice>quarantine malicious code</choice>
                <choice>take <insert type="param" id-ref="si-3_prm_5"/>
@@ -22140,7 +22140,7 @@
                <label>organization-defined unauthorized operating system commands</label>
             </param>
             <param id="si-3.8_prm_3">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>issue a warning</choice>
                   <choice>audit the command execution</choice>
                   <choice>prevent the execution of the command</choice>
@@ -22223,7 +22223,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="si-4_prm_5">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>as needed</choice>
                <choice>
                   <insert type="param" id-ref="si-4_prm_6"/>
@@ -22645,7 +22645,7 @@
                <label>organization-defined authorization or approval processes</label>
             </param>
             <param id="si-4.22_prm_2">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>audit</choice>
                   <choice>alert <insert type="param" id-ref="si-4.22_prm_3"/>
                   </choice>
@@ -22727,7 +22727,7 @@
             <label>organization-defined external organizations</label>
          </param>
          <param id="si-5_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>
                   <insert type="param" id-ref="si-5_prm_3"/>
                </choice>
@@ -22796,7 +22796,7 @@
             <label>organization-defined security and privacy functions</label>
          </param>
          <param id="si-6_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>
                   <insert type="param" id-ref="si-6_prm_3"/>
                </choice>
@@ -22816,7 +22816,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="si-6_prm_6">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Shut the system down</choice>
                <choice>Restart the system</choice>
                <choice>
@@ -22952,7 +22952,7 @@
                <label>organization-defined software, firmware, and information</label>
             </param>
             <param id="si-7.1_prm_2">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>at startup</choice>
                   <choice>at <insert type="param" id-ref="si-7.1_prm_3"/>
                   </choice>
@@ -23015,7 +23015,7 @@
          <control class="SP800-53-enhancement" id="si-7.5">
             <title>Automated Response to Integrity Violations</title>
             <param id="si-7.5_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>shut the system down</choice>
                   <choice>restart the system</choice>
                   <choice>implement <insert type="param" id-ref="si-7.5_prm_2"/>
@@ -23069,7 +23069,7 @@
          <control class="SP800-53-enhancement" id="si-7.8">
             <title>Auditing Capability for Significant Events</title>
             <param id="si-7.8_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>generate an audit record</choice>
                   <choice>alert current user</choice>
                   <choice>alert <insert type="param" id-ref="si-7.8_prm_2"/>
@@ -23609,7 +23609,7 @@
                <label>organization-defined time-period</label>
             </param>
             <param id="si-13.4_prm_2">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>Activate <insert type="param" id-ref="si-13.4_prm_3"/>
                   </choice>
                   <choice>Automatically shut down the system</choice>
@@ -23673,7 +23673,7 @@
             <label>organization-defined system components and services</label>
          </param>
          <param id="si-14_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>upon end of session of use</choice>
                <choice>periodically at <insert type="param" id-ref="si-14_prm_3"/>
                </choice>
@@ -24129,7 +24129,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="sr-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>organization-level</choice>
                <choice>mission/business process-level</choice>
                <choice>system-level</choice>
@@ -24518,7 +24518,7 @@
          <control class="SP800-53-enhancement" id="sr-6.1">
             <title>Penetration Testing and Analysis</title>
             <param id="sr-6.1_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>organizational analysis</choice>
                   <choice>independent third-party analysis</choice>
                   <choice>organizational penetration testing</choice>
@@ -24560,7 +24560,7 @@
       <control class="SP800-53" id="sr-8">
          <title>Notification Agreements</title>
          <param id="sr-8_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>notification of supply chain compromises</choice>
                <choice>results of assessments or audits</choice>
                <choice>
@@ -24622,7 +24622,7 @@
       <control class="SP800-53" id="sr-10">
          <title>Inspection of Systems or Components</title>
          <param id="sr-10_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>at random</choice>
                <choice>at <insert type="param" id-ref="sr-10_prm_2"/>, upon <insert type="param" id-ref="sr-10_prm_3"/>
                </choice>
@@ -24658,7 +24658,7 @@
       <control class="SP800-53" id="sr-11">
          <title>Component Authenticity</title>
          <param id="sr-11_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>source of counterfeit component</choice>
                <choice>
                   <insert type="param" id-ref="sr-11_prm_2"/>

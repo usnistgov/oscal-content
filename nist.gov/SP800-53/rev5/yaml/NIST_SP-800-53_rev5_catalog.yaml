@@ -1,12 +1,12 @@
 ---
 catalog:
-  uuid: 759bc696-630d-4b50-bfdf-cf93c7b1bf62
+  uuid: 613fca2d-704a-42e7-8e2b-b206fb92b456
   metadata:
     title: "NIST Special Publication 800-53 Revision 5: Security and Privacy
       Controls for Federal Information Systems and Organizations"
-    last-modified: 2021-04-07T12:50:12.522-04:00
+    last-modified: 2021-06-08T13:57:33.013981-04:00
     version: 5.0.1
-    oscal-version: 1.0.0-rc2
+    oscal-version: 1.0.0
     props:
       - name: keywords
         value: assurance; availability; computer security; confidentiality; control;
@@ -41,10 +41,10 @@ catalog:
             state: MD
             postal-code: 20899-8930
     responsible-parties:
-      creator:
+      - role-id: creator
         party-uuids:
           - 41a93829-b76b-43ec-b9e7-250553511549
-      contact:
+      - role-id: contact
         party-uuids:
           - 41a93829-b76b-43ec-b9e7-250553511549
   groups:
@@ -60,7 +60,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: ac-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -538,7 +538,7 @@ catalog:
                 - id: ac-2.3_smt
                   name: statement
                   prose: "Disable accounts within {{ insert: param, ac-2.3_prm_1 }} when the
-                    accounts: "
+                    accounts:"
                   parts:
                     - id: ac-2.3_smt.a
                       name: item
@@ -1088,14 +1088,14 @@ catalog:
                   prose: "Enforce dual authorization for {{ insert: param, ac-3.2_prm_1 }}."
                 - id: ac-3.2_gdn
                   name: guidance
-                  prose: "Dual authorization, also known as two-person control, reduces risk
+                  prose: Dual authorization, also known as two-person control, reduces risk
                     related to insider threats. Dual authorization mechanisms
                     require the approval of two authorized individuals to
                     execute. To reduce the risk of collusion, organizations
                     consider rotating dual authorization duties. Organizations
                     consider the risk associated with implementing dual
                     authorization mechanisms when immediate responses are
-                    necessary to ensure public and environmental safety. "
+                    necessary to ensure public and environmental safety.
             - id: ac-3.3
               class: SP800-53-enhancement
               title: Mandatory Access Control
@@ -1128,8 +1128,8 @@ catalog:
                       props:
                         - name: label
                           value: (a)
-                      prose: "Is uniformly enforced across the covered subjects and objects within the
-                        system; "
+                      prose: Is uniformly enforced across the covered subjects and objects within the
+                        system;
                     - id: ac-3.3_smt.b
                       name: item
                       props:
@@ -1149,7 +1149,7 @@ catalog:
                           props:
                             - name: label
                               value: (2)
-                          prose: "Granting its privileges to other subjects; "
+                          prose: Granting its privileges to other subjects;
                         - id: ac-3.3_smt.b.3
                           name: item
                           props:
@@ -1238,7 +1238,7 @@ catalog:
                       props:
                         - name: label
                           value: (b)
-                      prose: "Grant its privileges to other subjects; "
+                      prose: Grant its privileges to other subjects;
                     - id: ac-3.4_smt.c
                       name: item
                       props:
@@ -1607,11 +1607,11 @@ catalog:
                       prose: Approve access changes after initial installation of the application.
                 - id: ac-3.12_gdn
                   name: guidance
-                  prose: "Asserting and enforcing application access is intended to address
+                  prose: Asserting and enforcing application access is intended to address
                     applications that need to access existing system
                     applications and functions, including user contacts, global
                     positioning systems, cameras, keyboards, microphones,
-                    networks, phones, or other files. "
+                    networks, phones, or other files.
             - id: ac-3.13
               class: SP800-53-enhancement
               title: Attribute-based Access Control
@@ -1964,7 +1964,7 @@ catalog:
                   label: organization-defined information flow control mechanisms
                 - id: ac-4.4_prm_2
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - decrypting the information
                       - blocking the flow of the encrypted information
@@ -2095,7 +2095,7 @@ catalog:
                   label: organization-defined information flows
                 - id: ac-4.8_prm_3
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - Block
                       - Strip
@@ -2386,7 +2386,7 @@ catalog:
               params:
                 - id: ac-4.17_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - organization
                       - system
@@ -2616,7 +2616,7 @@ catalog:
               params:
                 - id: ac-4.25_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - delivery of malicious content, command and control of
                         malicious code, malicious code augmentation, and
@@ -2773,7 +2773,7 @@ catalog:
                         insert: param, ac-4.29_prm_1 }}."
                 - id: ac-4.29_gdn
                   name: guidance
-                  prose: "Content filtering is the process of inspecting information as it
+                  prose: Content filtering is the process of inspecting information as it
                     traverses a cross-domain solution and determines if the
                     information meets a predefined security policy. An
                     orchestration engine coordinates the sequencing of
@@ -2783,7 +2783,7 @@ catalog:
                     is not the same as a filter failing content due to
                     non-compliance with policy. Content filter reports are a
                     commonly used mechanism to ensure that expected filtering
-                    actions are completed successfully. "
+                    actions are completed successfully.
             - id: ac-4.30
               class: SP800-53-enhancement
               title: Filter Mechanisms Using Multiple Processes
@@ -3384,7 +3384,7 @@ catalog:
               label: organization-defined time period
             - id: ac-7_prm_3
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - "lock the account or node for an {{ insert: param,
                     ac-7_prm_4 }} "
@@ -3736,8 +3736,8 @@ catalog:
           parts:
             - id: ac-9_smt
               name: statement
-              prose: "Notify the user, upon successful logon to the system, of the date and
-                time of the last logon. "
+              prose: Notify the user, upon successful logon to the system, of the date and
+                time of the last logon.
             - id: ac-9_gdn
               name: guidance
               prose: Previous logon notification is applicable to system access via human user
@@ -3892,7 +3892,7 @@ catalog:
           params:
             - id: ac-11_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - "initiating a device lock after {{ insert: param,
                     ac-11_prm_2 }} of inactivity"
@@ -4082,10 +4082,10 @@ catalog:
                     end in {{ insert: param, ac-12.3_prm_1 }}."
                 - id: ac-12.3_gdn
                   name: guidance
-                  prose: "To increase usability, notify users of pending session termination and
+                  prose: To increase usability, notify users of pending session termination and
                     prompt users to continue the session. The pending session
                     termination time period is based on the parameters defined
-                    in the [AC-12](#ac-12) base control. "
+                    in the [AC-12](#ac-12) base control.
         - id: ac-13
           class: SP800-53
           title: Supervision and Review — Access Control
@@ -5096,7 +5096,7 @@ catalog:
               params:
                 - id: ac-18.1_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - users
                       - devices
@@ -5498,7 +5498,7 @@ catalog:
           params:
             - id: ac-20_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - "Establish {{ insert: param, ac-20_prm_2 }} "
                   - "Identify {{ insert: param, ac-20_prm_3 }} "
@@ -5696,7 +5696,7 @@ catalog:
                   name: statement
                   prose: "Restrict the use of non-organizationally owned systems or system
                     components to process, store, or transmit organizational
-                    information using {{ insert: param, ac-20.3_prm_1 }}. "
+                    information using {{ insert: param, ac-20.3_prm_1 }}."
                 - id: ac-20.3_gdn
                   name: guidance
                   prose: Non-organizationally owned systems or system components include systems
@@ -6210,7 +6210,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: at-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -6956,10 +6956,10 @@ catalog:
                   prose: "Provide {{ insert: param, at-3.5_prm_1 }} with initial and {{ insert:
                     param, at-3.5_prm_2 }} training in the employment and
                     operation of personally identifiable information processing
-                    and transparency controls. "
+                    and transparency controls."
                 - id: at-3.5_gdn
                   name: guidance
-                  prose: "Personally identifiable information processing and transparency controls
+                  prose: Personally identifiable information processing and transparency controls
                     include the organization’s authority to process personally
                     identifiable information and personally identifiable
                     information processing purposes. Role-based training for
@@ -6973,7 +6973,7 @@ catalog:
                     assessments,
                     [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) statements,
                     contracts, information sharing agreements, memoranda of
-                    understanding, and/or other documentation. "
+                    understanding, and/or other documentation.
         - id: at-4
           class: SP800-53
           title: Training Records
@@ -7079,7 +7079,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: au-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -7486,7 +7486,7 @@ catalog:
                   props:
                     - name: label
                       value: e.
-                  prose: "Outcome of the event; and "
+                  prose: Outcome of the event; and
                 - id: au-3_smt.f
                   name: item
                   props:
@@ -8125,7 +8125,7 @@ catalog:
               params:
                 - id: au-6.5_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - vulnerability scanning information
                       - performance data
@@ -8211,7 +8211,7 @@ catalog:
               params:
                 - id: au-6.7_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - system process
                       - role
@@ -8478,7 +8478,7 @@ catalog:
                     stamp."
             - id: au-8_gdn
               name: guidance
-              prose: "Time stamps generated by the system include date and time. Time is
+              prose: Time stamps generated by the system include date and time. Time is
                 commonly expressed in Coordinated Universal Time (UTC), a modern
                 continuation of Greenwich Mean Time (GMT), or local time with an
                 offset from UTC. Granularity of time measurements refers to the
@@ -8489,7 +8489,7 @@ catalog:
                 Time service can be critical to other security capabilities such
                 as access control and identification and authentication,
                 depending on the nature of the mechanisms used to support those
-                capabilities. "
+                capabilities.
           controls:
             - id: au-8.1
               class: SP800-53-enhancement
@@ -8731,7 +8731,7 @@ catalog:
               params:
                 - id: au-9.5_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - movement
                       - deletion
@@ -8814,10 +8814,10 @@ catalog:
                     system than the system or component being audited.
                 - id: au-9.7_gdn
                   name: guidance
-                  prose: "Storing auditing information on a system component running a different
+                  prose: Storing auditing information on a system component running a different
                     operating system reduces the risk of a vulnerability
                     specific to the system, resulting in a compromise of the
-                    audit records. "
+                    audit records.
         - id: au-10
           class: SP800-53
           title: Non-repudiation
@@ -9419,7 +9419,7 @@ catalog:
                       props:
                         - name: label
                           value: "1."
-                      prose: "Notify {{ insert: param, au-13_prm_3 }}; and "
+                      prose: "Notify {{ insert: param, au-13_prm_3 }}; and"
                     - id: au-13_smt.b.2
                       name: item
                       props:
@@ -9481,14 +9481,14 @@ catalog:
                     insert: param, au-13.2_prm_1 }}."
                 - id: au-13.2_gdn
                   name: guidance
-                  prose: "Reviewing the current list of open-source information sites being
+                  prose: Reviewing the current list of open-source information sites being
                     monitored on a regular basis helps to ensure that the
                     selected sites remain relevant. The review also provides the
                     opportunity to add new open-source information sites with
                     the potential to provide evidence of unauthorized disclosure
                     of organizational information. The list of sites monitored
                     can be guided and informed by threat intelligence of other
-                    credible sources of information. "
+                    credible sources of information.
             - id: au-13.3
               class: SP800-53-enhancement
               title: Unauthorized Replication of Information
@@ -9528,7 +9528,7 @@ catalog:
               label: organization-defined users or roles
             - id: au-14_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - record
                   - view
@@ -9618,10 +9618,10 @@ catalog:
                   prose: Initiate session audits automatically at system start-up.
                 - id: au-14.1_gdn
                   name: guidance
-                  prose: "The automatic initiation of session audits at startup helps to ensure
+                  prose: The automatic initiation of session audits at startup helps to ensure
                     that the information being captured on selected individuals
                     is complete and not subject to compromise through tampering
-                    by malicious threat actors. "
+                    by malicious threat actors.
             - id: au-14.2
               class: SP800-53-enhancement
               title: Capture and Record Content
@@ -9827,7 +9827,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: ca-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -10180,7 +10180,7 @@ catalog:
                       - unannounced
                 - id: ca-2.2_prm_3
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - in-depth monitoring
                       - security instrumentation
@@ -10286,7 +10286,7 @@ catalog:
           params:
             - id: ca-3_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - interconnection security agreements
                   - information exchange security agreements
@@ -10515,10 +10515,10 @@ catalog:
                       props:
                         - name: label
                           value: (b)
-                      prose: "Take measures to ensure that transitive (downstream) information
+                      prose: Take measures to ensure that transitive (downstream) information
                         exchanges cease when the controls on identified
                         transitive (downstream) systems cannot be verified or
-                        validated. "
+                        validated.
                 - id: ca-3.7_gdn
                   name: guidance
                   prose: Transitive or "downstream" information exchanges are information
@@ -10631,7 +10631,7 @@ catalog:
                     ca-5.1_prm_1 }}."
                 - id: ca-5.1_gdn
                   name: guidance
-                  prose: "Using automated tools helps maintain the accuracy, currency, and
+                  prose: Using automated tools helps maintain the accuracy, currency, and
                     availability of the plan of action and milestones and
                     facilitates the coordination and sharing of security and
                     privacy information throughout the organization. Such
@@ -10639,7 +10639,7 @@ catalog:
                     systemic weaknesses or deficiencies in organizational
                     systems and ensure that appropriate resources are directed
                     at the most critical system vulnerabilities in a timely
-                    manner. "
+                    manner.
         - id: ca-6
           class: SP800-53
           title: Authorization
@@ -11505,7 +11505,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: cm-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -11968,7 +11968,7 @@ catalog:
               label: organization-defined configuration change control element
             - id: cm-3_prm_3
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - " {{ insert: param, cm-3_prm_4 }} "
                   - "when {{ insert: param, cm-3_prm_5 }} "
@@ -12389,9 +12389,9 @@ catalog:
                     following circumstances: {{ insert: param, cm-3.8_prm_1 }}."
                 - id: cm-3.8_gdn
                   name: guidance
-                  prose: "System configuration changes can adversely affect critical system
+                  prose: System configuration changes can adversely affect critical system
                     security and privacy functionality. Change restrictions can
-                    be enforced through automated mechanisms. "
+                    be enforced through automated mechanisms.
         - id: cm-4
           class: SP800-53
           title: Impact Analyses
@@ -12551,8 +12551,8 @@ catalog:
           parts:
             - id: cm-5_smt
               name: statement
-              prose: "Define, document, approve, and enforce physical and logical access
-                restrictions associated with changes to the system. "
+              prose: Define, document, approve, and enforce physical and logical access
+                restrictions associated with changes to the system.
             - id: cm-5_gdn
               name: guidance
               prose: Changes to the hardware, software, or firmware components of systems or
@@ -12605,8 +12605,8 @@ catalog:
                       props:
                         - name: label
                           value: (a)
-                      prose: "Enforce access restrictions using {{ insert: param, cm-5.1_prm_1 }}; and
-                        "
+                      prose: "Enforce access restrictions using {{ insert: param, cm-5.1_prm_1 }};
+                        and"
                     - id: cm-5.1_smt.b
                       name: item
                       props:
@@ -13158,7 +13158,7 @@ catalog:
               params:
                 - id: cm-7.2_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - " {{ insert: param, cm-7.2_prm_2 }} "
                       - rules authorizing the terms and conditions of software
@@ -13386,7 +13386,7 @@ catalog:
                   name: statement
                   prose: "Require that the following user-installed software execute in a confined
                     physical or virtual machine environment with limited
-                    privileges: {{ insert: param, cm-7.6_prm_1 }}. "
+                    privileges: {{ insert: param, cm-7.6_prm_1 }}."
                 - id: cm-7.6_gdn
                   name: guidance
                   prose: Organizations identify software that may be of concern regarding its
@@ -13517,7 +13517,7 @@ catalog:
                       props:
                         - name: label
                           value: (b)
-                      prose: "Prohibit the use or connection of unauthorized hardware components; "
+                      prose: Prohibit the use or connection of unauthorized hardware components;
                     - id: cm-7.9_smt.c
                       name: item
                       props:
@@ -13738,7 +13738,7 @@ catalog:
                   label: organization-defined frequency
                 - id: cm-8.3_prm_3
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - disable network access by such components
                       - isolate the components
@@ -13817,7 +13817,7 @@ catalog:
               params:
                 - id: cm-8.4_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - name
                       - position
@@ -13934,7 +13934,7 @@ catalog:
                     {{ insert: param, cm-8.8_prm_1 }}."
                 - id: cm-8.8_gdn
                   name: guidance
-                  prose: "The use of automated mechanisms to track the location of system
+                  prose: The use of automated mechanisms to track the location of system
                     components can increase the accuracy of component
                     inventories. Such capability may help organizations rapidly
                     identify the location and responsible individuals of system
@@ -13942,7 +13942,7 @@ catalog:
                     otherwise in need of mitigation actions. The use of tracking
                     mechanisms can be coordinated with senior agency officials
                     for privacy if there are implications that affect individual
-                    privacy. "
+                    privacy.
             - id: cm-8.9
               class: SP800-53-enhancement
               title: Assignment of Components to Systems
@@ -13966,7 +13966,7 @@ catalog:
                       props:
                         - name: label
                           value: (a)
-                      prose: "Assign system components to a system; and "
+                      prose: Assign system components to a system; and
                     - id: cm-8.9_smt.b
                       name: item
                       props:
@@ -14050,8 +14050,8 @@ catalog:
                   props:
                     - name: label
                       value: e.
-                  prose: "Protects the configuration management plan from unauthorized disclosure
-                    and modification. "
+                  prose: Protects the configuration management plan from unauthorized disclosure
+                    and modification.
             - id: cm-9_gdn
               name: guidance
               prose: >-
@@ -14571,7 +14571,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: cp-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -14817,8 +14817,8 @@ catalog:
                       props:
                         - name: label
                           value: "4."
-                      prose: "Addresses maintaining essential mission and business functions despite a
-                        system disruption, compromise, or failure; "
+                      prose: Addresses maintaining essential mission and business functions despite a
+                        system disruption, compromise, or failure;
                     - id: cp-2_smt.a.5
                       name: item
                       props:
@@ -15054,13 +15054,13 @@ catalog:
                     sites."
                 - id: cp-2.5_gdn
                   name: guidance
-                  prose: "Organizations may choose to conduct the contingency planning activities
+                  prose: Organizations may choose to conduct the contingency planning activities
                     to continue mission and business functions as part of
                     business continuity planning or business impact analyses.
                     Primary processing and/or storage sites defined by
                     organizations as part of contingency planning may change
                     depending on the circumstances associated with the
-                    contingency. "
+                    contingency.
             - id: cp-2.6
               class: SP800-53-enhancement
               title: Alternate Processing and Storage Sites
@@ -15088,12 +15088,12 @@ catalog:
                     primary processing and/or storage sites."
                 - id: cp-2.6_gdn
                   name: guidance
-                  prose: "Organizations may choose to conduct contingency planning activities for
+                  prose: Organizations may choose to conduct contingency planning activities for
                     alternate processing and storage sites as part of business
                     continuity planning or business impact analyses. Primary
                     processing and/or storage sites defined by organizations as
                     part of contingency planning may change depending on the
-                    circumstances associated with the contingency. "
+                    circumstances associated with the contingency.
             - id: cp-2.7
               class: SP800-53-enhancement
               title: Coordinate with External Service Providers
@@ -15220,7 +15220,7 @@ catalog:
                     - name: label
                       value: a.
                   prose: "Provide contingency training to system users consistent with assigned
-                    roles and responsibilities: "
+                    roles and responsibilities:"
                   parts:
                     - id: cp-3_smt.a.1
                       name: item
@@ -15290,8 +15290,8 @@ catalog:
               parts:
                 - id: cp-3.1_smt
                   name: statement
-                  prose: "Incorporate simulated events into contingency training to facilitate
-                    effective response by personnel in crisis situations. "
+                  prose: Incorporate simulated events into contingency training to facilitate
+                    effective response by personnel in crisis situations.
                 - id: cp-3.1_gdn
                   name: guidance
                   prose: The use of simulated events creates an environment for personnel to
@@ -16288,7 +16288,7 @@ catalog:
                       value: c.
                   prose: "Conduct backups of system documentation, including security- and
                     privacy-related documentation {{ insert: param, cp-9_prm_4
-                    }}; and "
+                    }}; and"
                 - id: cp-9_smt.d
                   name: item
                   props:
@@ -16337,7 +16337,7 @@ catalog:
                     media reliability and information integrity."
                 - id: cp-9.1_gdn
                   name: guidance
-                  prose: "Organizations need assurance that backup information can be reliably
+                  prose: Organizations need assurance that backup information can be reliably
                     retrieved. Reliability pertains to the systems and system
                     components where the backup information is stored, the
                     operations used to retrieve the information, and the
@@ -16347,7 +16347,7 @@ catalog:
                     transmitting) a random sample of backup files from the
                     alternate storage or backup site and comparing the
                     information to the same information at the primary
-                    processing site can provide such assurance. "
+                    processing site can provide such assurance.
             - id: cp-9.2
               class: SP800-53-enhancement
               title: Test Restoration Using Sampling
@@ -16557,15 +16557,15 @@ catalog:
                     and modification of {{ insert: param, cp-9.8_prm_1 }}."
                 - id: cp-9.8_gdn
                   name: guidance
-                  prose: "The selection of cryptographic mechanisms is based on the need to
-                    protect the confidentiality and integrity of backup
-                    information. The strength of mechanisms selected is
-                    commensurate with the security category or classification of
-                    the information. Cryptographic protection applies to system
-                    backup information in storage at both primary and alternate
+                  prose: The selection of cryptographic mechanisms is based on the need to protect
+                    the confidentiality and integrity of backup information. The
+                    strength of mechanisms selected is commensurate with the
+                    security category or classification of the information.
+                    Cryptographic protection applies to system backup
+                    information in storage at both primary and alternate
                     locations. Organizations that implement cryptographic
                     mechanisms to protect information at rest also consider
-                    cryptographic key management solutions. "
+                    cryptographic key management solutions.
         - id: cp-10
           class: SP800-53
           title: System Recovery and Reconstitution
@@ -16745,11 +16745,11 @@ catalog:
                   prose: Protect system components used for recovery and reconstitution.
                 - id: cp-10.6_gdn
                   name: guidance
-                  prose: "Protection of system recovery and reconstitution components (i.e.,
+                  prose: Protection of system recovery and reconstitution components (i.e.,
                     hardware, firmware, and software) includes physical and
                     technical controls. Backup and restoration components used
                     for recovery and reconstitution include router tables,
-                    compilers, and other system software. "
+                    compilers, and other system software.
         - id: cp-11
           class: SP800-53
           title: Alternate Communications Protocols
@@ -16882,7 +16882,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: ia-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -17274,14 +17274,14 @@ catalog:
               params:
                 - id: ia-2.6_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - local
                       - network
                       - remote
                 - id: ia-2.6_prm_2
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - privileged accounts
                       - non-privileged accounts
@@ -17347,7 +17347,7 @@ catalog:
               params:
                 - id: ia-2.8_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - privileged accounts
                       - non-privileged accounts
@@ -17517,7 +17517,7 @@ catalog:
               label: organization-defined devices and/or types of devices
             - id: ia-3_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - local
                   - remote
@@ -17586,7 +17586,7 @@ catalog:
                   label: organization-defined devices and/or types of devices
                 - id: ia-3.1_prm_2
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - local
                       - remote
@@ -18506,7 +18506,7 @@ catalog:
                     systems."
                 - id: ia-5.8_gdn
                   name: guidance
-                  prose: "When individuals have accounts on multiple systems and use the same
+                  prose: When individuals have accounts on multiple systems and use the same
                     authenticators such as passwords, there is the risk that a
                     compromise of one account may lead to the compromise of
                     other accounts. Alternative approaches include having
@@ -18515,7 +18515,7 @@ catalog:
                     some form of one-time passwords on all systems.
                     Organizations can also use rules of behavior (see
                     [PL-4](#pl-4)) and access agreements (see [PS-6](#ps-6)) to
-                    mitigate the risk of multiple system accounts. "
+                    mitigate the risk of multiple system accounts.
             - id: ia-5.9
               class: SP800-53-enhancement
               title: Federated Credential Management
@@ -18681,10 +18681,10 @@ catalog:
               parts:
                 - id: ia-5.14_smt
                   name: statement
-                  prose: "For PKI-based authentication, employ an organization-wide methodology
-                    for managing the content of PKI trust stores installed
-                    across all platforms, including networks, operating systems,
-                    browsers, and applications. "
+                  prose: For PKI-based authentication, employ an organization-wide methodology for
+                    managing the content of PKI trust stores installed across
+                    all platforms, including networks, operating systems,
+                    browsers, and applications.
                 - id: ia-5.14_gdn
                   name: guidance
                   prose: An organization-wide methodology for managing the content of PKI trust
@@ -18990,14 +18990,13 @@ catalog:
                     credentials from other federal agencies.
                 - id: ia-8.1_gdn
                   name: guidance
-                  prose: "Acceptance of Personal Identity Verification (PIV) credentials from
-                    other federal agencies applies to both logical and physical
-                    access control systems. PIV credentials are those
-                    credentials issued by federal agencies that conform to FIPS
-                    Publication 201 and supporting guidelines. The adequacy and
-                    reliability of PIV card issuers are addressed and authorized
-                    using [SP 800-79-2](#10963761-58fc-4b20-b3d6-b44a54daba03).
-                    "
+                  prose: Acceptance of Personal Identity Verification (PIV) credentials from other
+                    federal agencies applies to both logical and physical access
+                    control systems. PIV credentials are those credentials
+                    issued by federal agencies that conform to FIPS Publication
+                    201 and supporting guidelines. The adequacy and reliability
+                    of PIV card issuers are addressed and authorized using [SP
+                    800-79-2](#10963761-58fc-4b20-b3d6-b44a54daba03).
             - id: ia-8.2
               class: SP800-53-enhancement
               title: Acceptance of External Authenticators
@@ -19099,7 +19098,7 @@ catalog:
                 - id: ia-8.5_smt
                   name: statement
                   prose: "Accept and verify federated or PKI credentials that meet {{ insert:
-                    param, ia-8.5_prm_1 }}. "
+                    param, ia-8.5_prm_1 }}."
                 - id: ia-8.5_gdn
                   name: guidance
                   prose: Acceptance of PIV-I credentials can be implemented by PIV, PIV-I, and
@@ -19175,7 +19174,7 @@ catalog:
               name: statement
               prose: "Uniquely identify and authenticate {{ insert: param, ia-9_prm_1 }}
                 before establishing communications with devices, users, or other
-                services or applications. "
+                services or applications."
             - id: ia-9_gdn
               name: guidance
               prose: Services that may require identification and authentication include web
@@ -19242,8 +19241,7 @@ catalog:
             - id: ia-10_smt
               name: statement
               prose: "Require individuals accessing the system to employ {{ insert: param,
-                ia-10_prm_1 }} under specific {{ insert: param, ia-10_prm_2 }}.
-                "
+                ia-10_prm_1 }} under specific {{ insert: param, ia-10_prm_2 }}."
             - id: ia-10_gdn
               name: guidance
               prose: Adversaries may compromise individual authentication mechanisms employed
@@ -19291,8 +19289,7 @@ catalog:
           parts:
             - id: ia-11_smt
               name: statement
-              prose: "Require users to re-authenticate when {{ insert: param, ia-11_prm_1 }}.
-                "
+              prose: "Require users to re-authenticate when {{ insert: param, ia-11_prm_1 }}."
             - id: ia-11_gdn
               name: guidance
               prose: In addition to the re-authentication requirements associated with device
@@ -19343,9 +19340,9 @@ catalog:
                   props:
                     - name: label
                       value: a.
-                  prose: "Identity proof users that require accounts for logical access to systems
+                  prose: Identity proof users that require accounts for logical access to systems
                     based on appropriate identity assurance level requirements
-                    as specified in applicable standards and guidelines; "
+                    as specified in applicable standards and guidelines;
                 - id: ia-12_smt.b
                   name: item
                   props:
@@ -19417,13 +19414,13 @@ catalog:
                     registration authority.
                 - id: ia-12.2_gdn
                   name: guidance
-                  prose: "Identity evidence, such as documentary evidence or a combination of
+                  prose: Identity evidence, such as documentary evidence or a combination of
                     documents and biometrics, reduces the likelihood of
                     individuals using fraudulent identification to establish an
                     identity or at least increases the work factor of potential
                     adversaries. The forms of acceptable evidence are consistent
                     with the risks to the systems, roles, and privileges
-                    associated with the user’s account. "
+                    associated with the user’s account.
             - id: ia-12.3
               class: SP800-53-enhancement
               title: Identity Evidence Validation and Verification
@@ -19476,11 +19473,11 @@ catalog:
                     authority.
                 - id: ia-12.4_gdn
                   name: guidance
-                  prose: "In-person proofing reduces the likelihood of fraudulent credentials
-                    being issued because it requires the physical presence of
+                  prose: In-person proofing reduces the likelihood of fraudulent credentials being
+                    issued because it requires the physical presence of
                     individuals, the presentation of physical identity
                     documents, and actual face-to-face interactions with
-                    designated registration authorities. "
+                    designated registration authorities.
             - id: ia-12.5
               class: SP800-53-enhancement
               title: Address Confirmation
@@ -19548,7 +19545,7 @@ catalog:
                     }}."
                 - id: ia-12.6_gdn
                   name: guidance
-                  prose: "To limit unnecessary re-proofing of identities, particularly of non-PIV
+                  prose: To limit unnecessary re-proofing of identities, particularly of non-PIV
                     users, organizations accept proofing conducted at a
                     commensurate level of assurance by other agencies or
                     organizations. Proofing is consistent with organizational
@@ -19556,7 +19553,7 @@ catalog:
                     for the system, application, or information accessed.
                     Accepting externally-proofed identities is a fundamental
                     component of managing federated identities across agencies
-                    and organizations. "
+                    and organizations.
     - id: ir
       class: family
       title: Incident Response
@@ -19569,7 +19566,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: ir-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -20256,7 +20253,7 @@ catalog:
                   prose: "Identify {{ insert: param, ir-4.3_prm_1 }} and take the following
                     actions in response to those incidents to ensure
                     continuation of organizational mission and business
-                    functions: {{ insert: param, ir-4.3_prm_2 }}. "
+                    functions: {{ insert: param, ir-4.3_prm_2 }}."
                 - id: ir-4.3_gdn
                   name: guidance
                   prose: Classes of incidents include malfunctions due to design or implementation
@@ -20915,10 +20912,10 @@ catalog:
           parts:
             - id: ir-7_smt
               name: statement
-              prose: "Provide an incident response support resource, integral to the
+              prose: Provide an incident response support resource, integral to the
                 organizational incident response capability, that offers advice
                 and assistance to users of the system for the handling and
-                reporting of incidents. "
+                reporting of incidents.
             - id: ir-7_gdn
               name: guidance
               prose: Incident response support resources provided by organizations include
@@ -21215,7 +21212,7 @@ catalog:
                       props:
                         - name: label
                           value: (c)
-                      prose: "Identification of applicable privacy requirements. "
+                      prose: Identification of applicable privacy requirements.
                 - id: ir-8.1_gdn
                   name: guidance
                   prose: Organizations may be required by law, regulation, or policy to follow
@@ -21455,7 +21452,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: ma-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -22080,8 +22077,8 @@ catalog:
                   props:
                     - name: label
                       value: e.
-                  prose: "Terminate session and network connections when nonlocal maintenance is
-                    completed. "
+                  prose: Terminate session and network connections when nonlocal maintenance is
+                    completed.
             - id: ma-4_gdn
               name: guidance
               prose: Nonlocal maintenance and diagnostic activities are conducted by
@@ -22409,10 +22406,10 @@ catalog:
                   props:
                     - name: label
                       value: c.
-                  prose: "Designate organizational personnel with required access authorizations
+                  prose: Designate organizational personnel with required access authorizations
                     and technical competence to supervise the maintenance
                     activities of personnel who do not possess the required
-                    access authorizations. "
+                    access authorizations.
             - id: ma-5_gdn
               name: guidance
               prose: Maintenance personnel refers to individuals who perform hardware or
@@ -22831,7 +22828,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: mp-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -23106,7 +23103,7 @@ catalog:
                     - name: label
                       value: b.
                   prose: "Exempt {{ insert: param, mp-3_prm_1 }} from marking if the media remain
-                    within {{ insert: param, mp-3_prm_2 }}. "
+                    within {{ insert: param, mp-3_prm_2 }}."
             - id: mp-3_gdn
               name: guidance
               prose: Security marking refers to the application or use of human-readable
@@ -24044,7 +24041,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: pe-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -24339,7 +24336,7 @@ catalog:
               params:
                 - id: pe-2.3_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - security clearances for all information contained within
                         the system
@@ -24367,7 +24364,7 @@ catalog:
                 - id: pe-2.3_smt
                   name: statement
                   prose: "Restrict unescorted access to the facility where the system resides to
-                    personnel with {{ insert: param, pe-2.3_prm_1 }}. "
+                    personnel with {{ insert: param, pe-2.3_prm_1 }}."
                 - id: pe-2.3_gdn
                   name: guidance
                   prose: Individuals without required security clearances, access approvals, or
@@ -24383,7 +24380,7 @@ catalog:
                 system resides
             - id: pe-3_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - " {{ insert: param, pe-3_prm_3 }} "
                   - guards
@@ -24684,7 +24681,7 @@ catalog:
                   label: organization-defined anti-tamper technologies
                 - id: pe-3.5_prm_2
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - detect
                       - prevent
@@ -24747,7 +24744,7 @@ catalog:
               parts:
                 - id: pe-3.7_smt
                   name: statement
-                  prose: "Limit access using physical barriers. "
+                  prose: Limit access using physical barriers.
                 - id: pe-3.7_gdn
                   name: guidance
                   prose: Physical barriers include bollards, concrete slabs, jersey walls, and
@@ -25427,7 +25424,7 @@ catalog:
           params:
             - id: pe-11_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - an orderly shutdown of the system
                   - transition of the system to long-term alternate power
@@ -25750,7 +25747,7 @@ catalog:
           params:
             - id: pe-14_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - temperature
                   - humidity
@@ -26195,7 +26192,7 @@ catalog:
             - id: pe-21_smt
               name: statement
               prose: "Employ {{ insert: param, pe-21_prm_1 }} against electromagnetic pulse
-                damage for {{ insert: param, pe-21_prm_2 }}. "
+                damage for {{ insert: param, pe-21_prm_2 }}."
             - id: pe-21_gdn
               name: guidance
               prose: An electromagnetic pulse (EMP) is a short burst of electromagnetic energy
@@ -26233,7 +26230,7 @@ catalog:
               name: statement
               prose: "Mark {{ insert: param, pe-22_prm_1 }} indicating the impact level or
                 classification level of the information permitted to be
-                processed, stored, or transmitted by the hardware component. "
+                processed, stored, or transmitted by the hardware component."
             - id: pe-22_gdn
               name: guidance
               prose: Hardware components that may require marking include input and output
@@ -26316,7 +26313,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: pl-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -26606,8 +26603,8 @@ catalog:
                       props:
                         - name: label
                           value: "7."
-                      prose: "Describe any specific threats to the system that are of concern to the
-                        organization; "
+                      prose: Describe any specific threats to the system that are of concern to the
+                        organization;
                     - id: pl-2_smt.a.8
                       name: item
                       props:
@@ -26677,7 +26674,7 @@ catalog:
                   props:
                     - name: label
                       value: c.
-                  prose: "Review the plans {{ insert: param, pl-2_prm_3 }}; "
+                  prose: "Review the plans {{ insert: param, pl-2_prm_3 }};"
                 - id: pl-2_smt.d
                   name: item
                   props:
@@ -26787,7 +26784,7 @@ catalog:
               label: organization-defined frequency
             - id: pl-4_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - " {{ insert: param, pl-4_prm_3 }} "
                   - when the rules are revised or updated
@@ -27435,8 +27432,8 @@ catalog:
           parts:
             - id: pl-11_smt
               name: statement
-              prose: "Tailor the selected control baseline by applying specified tailoring
-                actions. "
+              prose: Tailor the selected control baseline by applying specified tailoring
+                actions.
             - id: pl-11_gdn
               name: guidance
               prose: The concept of tailoring allows organizations to specialize or customize
@@ -27788,7 +27785,7 @@ catalog:
             - id: pm-5_smt
               name: statement
               prose: "Develop and update {{ insert: param, pm-5_prm_1 }} an inventory of
-                organizational systems. "
+                organizational systems."
             - id: pm-5_gdn
               name: guidance
               prose: " [OMB A-130](#27847491-5ce1-4f6a-a1e4-9e483782f0ef) provides guidance on
@@ -27925,10 +27922,10 @@ catalog:
           parts:
             - id: pm-7_smt
               name: statement
-              prose: "Develop and maintain an enterprise architecture with consideration for
+              prose: Develop and maintain an enterprise architecture with consideration for
                 information security, privacy, and the resulting risk to
                 organizational operations and assets, individuals, other
-                organizations, and the Nation. "
+                organizations, and the Nation.
             - id: pm-7_gdn
               name: guidance
               prose: The integration of security and privacy requirements and controls into
@@ -28027,9 +28024,9 @@ catalog:
           parts:
             - id: pm-8_smt
               name: statement
-              prose: "Address information security and privacy issues in the development,
+              prose: Address information security and privacy issues in the development,
                 documentation, and updating of a critical infrastructure and key
-                resources protection plan. "
+                resources protection plan.
             - id: pm-8_gdn
               name: guidance
               prose: Protection strategies are based on the prioritization of critical assets
@@ -28832,11 +28829,11 @@ catalog:
                       props:
                         - name: label
                           value: "6."
-                      prose: "Is approved by a senior official with responsibility and accountability
+                      prose: Is approved by a senior official with responsibility and accountability
                         for the privacy risk being incurred to organizational
                         operations (including mission, functions, image, and
                         reputation), organizational assets, individuals, other
-                        organizations, and the Nation; and "
+                        organizations, and the Nation; and
                 - id: pm-18_smt.b
                   name: item
                   props:
@@ -29012,10 +29009,10 @@ catalog:
                       props:
                         - name: label
                           value: (c)
-                      prose: "Are updated whenever the organization makes a substantive change to the
+                      prose: Are updated whenever the organization makes a substantive change to the
                         practices it describes and includes a time/date stamp to
                         inform the public of the date of the most recent
-                        changes. "
+                        changes.
                 - id: pm-20.1_gdn
                   name: guidance
                   prose: Organizations post privacy policies on all external-facing websites,
@@ -29137,9 +29134,9 @@ catalog:
                   props:
                     - name: label
                       value: a.
-                  prose: "Reviewing for the accuracy, relevance, timeliness, and completeness of
+                  prose: Reviewing for the accuracy, relevance, timeliness, and completeness of
                     personally identifiable information across the information
-                    life cycle; "
+                    life cycle;
                 - id: pm-22_smt.b
                   name: item
                   props:
@@ -29182,10 +29179,10 @@ catalog:
                 certain circumstances, can cause problems for individuals that
                 outweigh the benefits of organizations maintaining the
                 information. Organizations consider creating policies and
-                procedures for the removal of such information. 
+                procedures for the removal of such information.
 
 
-                The senior agency official for privacy ensures that practical means and mechanisms exist and are accessible for individuals or their authorized representatives to seek the correction or deletion of personally identifiable information. Processes for correcting or deleting data are clearly defined and publicly available. Organizations use discretion in determining whether data is to be deleted or corrected based on the scope of requests, the changes sought, and the impact of the changes. Additionally, processes include the provision of responses to individuals of decisions to deny requests for correction or deletion. The responses include the reasons for the decisions, a means to record individual objections to the decisions, and a means of requesting reviews of the initial determinations. 
+                The senior agency official for privacy ensures that practical means and mechanisms exist and are accessible for individuals or their authorized representatives to seek the correction or deletion of personally identifiable information. Processes for correcting or deleting data are clearly defined and publicly available. Organizations use discretion in determining whether data is to be deleted or corrected based on the scope of requests, the changes sought, and the impact of the changes. Additionally, processes include the provision of responses to individuals of decisions to deny requests for correction or deletion. The responses include the reasons for the decisions, a means to record individual objections to the decisions, and a means of requesting reviews of the initial determinations.
 
 
                 Organizations notify individuals or their designated representatives when their personally identifiable information is corrected or deleted to provide transparency and confirm the completed action. Due to the complexity of data flows and storage, other entities may need to be informed of the correction or deletion. Notice supports the consistent correction and deletion of personally identifiable information across the data ecosystem.
@@ -29804,8 +29801,8 @@ catalog:
               parts:
                 - id: pm-30.1_smt
                   name: statement
-                  prose: "Identify, prioritize, and assess suppliers of critical or
-                    mission-essential technologies, products, and services. "
+                  prose: Identify, prioritize, and assess suppliers of critical or
+                    mission-essential technologies, products, and services.
                 - id: pm-30.1_gdn
                   name: guidance
                   prose: The identification and prioritization of suppliers of critical or
@@ -30088,7 +30085,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: ps-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -30631,7 +30628,7 @@ catalog:
                   label: organization-defined automated mechanisms
                 - id: ps-4.2_prm_2
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - "notify {{ insert: param, ps-4.2_prm_3 }} of individual
                         termination actions"
@@ -30801,7 +30798,7 @@ catalog:
                     - name: label
                       value: c.
                   prose: "Verify that individuals requiring access to organizational information
-                    and systems: "
+                    and systems:"
                   parts:
                     - id: ps-6_smt.c.1
                       name: item
@@ -31110,7 +31107,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: pt-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -31317,10 +31314,10 @@ catalog:
                 processing, storage, maintenance, dissemination, disclosure, and
                 disposal. Processing operations also include logging,
                 generation, and transformation, as well as analysis techniques,
-                such as data mining. 
+                such as data mining.
 
 
-                Organizations may be subject to laws, executive orders, directives, regulations, or policies that establish the organization’s authority and thereby limit certain types of processing of personally identifiable information or establish other requirements related to the processing. Organizational personnel consult with the senior agency official for privacy and legal counsel regarding such authority, particularly if the organization is subject to multiple jurisdictions or sources of authority. For organizations whose processing is not determined according to legal authorities, the organization’s policies and determinations govern how they process personally identifiable information. While processing of personally identifiable information may be legally permissible, privacy risks may still arise. Privacy risk assessments can identify the privacy risks associated with the authorized processing of personally identifiable information and support solutions to manage such risks. 
+                Organizations may be subject to laws, executive orders, directives, regulations, or policies that establish the organization’s authority and thereby limit certain types of processing of personally identifiable information or establish other requirements related to the processing. Organizational personnel consult with the senior agency official for privacy and legal counsel regarding such authority, particularly if the organization is subject to multiple jurisdictions or sources of authority. For organizations whose processing is not determined according to legal authorities, the organization’s policies and determinations govern how they process personally identifiable information. While processing of personally identifiable information may be legally permissible, privacy risks may still arise. Privacy risk assessments can identify the privacy risks associated with the authorized processing of personally identifiable information and support solutions to manage such risks.
 
 
                 Organizations consider applicable requirements and organizational policies to determine how to document this authority. For federal agencies, the authority to process personally identifiable information is documented in privacy policies and notices, system of records notices, privacy impact assessments, [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) statements, computer matching agreements and notices, contracts, information sharing agreements, memoranda of understanding, and other documentation.
@@ -31492,8 +31489,8 @@ catalog:
                   props:
                     - name: label
                       value: b.
-                  prose: "Describe the purpose(s) in the public privacy notices and policies of
-                    the organization; "
+                  prose: Describe the purpose(s) in the public privacy notices and policies of the
+                    organization;
                 - id: pt-3_smt.c
                   name: item
                   props:
@@ -31501,7 +31498,7 @@ catalog:
                       value: c.
                   prose: "Restrict the {{ insert: param, pt-3_prm_2 }} of personally identifiable
                     information to only that which is compatible with the
-                    identified purpose(s); and "
+                    identified purpose(s); and"
                 - id: pt-3_smt.d
                   name: item
                   props:
@@ -31538,7 +31535,7 @@ catalog:
                 Organizations take steps to help ensure that personally identifiable information is processed only for identified purposes, including training organizational personnel and monitoring and auditing organizational processing of personally identifiable information.
 
 
-                Organizations monitor for changes in personally identifiable information processing. Organizational personnel consult with the senior agency official for privacy and legal counsel to ensure that any new purposes that arise from changes in processing are compatible with the purpose for which the information was collected, or if the new purpose is not compatible, implement mechanisms in accordance with defined requirements to allow for the new processing, if appropriate. Mechanisms may include obtaining consent from individuals, revising privacy policies, or other measures to manage privacy risks that arise from changes in personally identifiable information processing purposes. 
+                Organizations monitor for changes in personally identifiable information processing. Organizational personnel consult with the senior agency official for privacy and legal counsel to ensure that any new purposes that arise from changes in processing are compatible with the purpose for which the information was collected, or if the new purpose is not compatible, implement mechanisms in accordance with defined requirements to allow for the new processing, if appropriate. Mechanisms may include obtaining consent from individuals, revising privacy policies, or other measures to manage privacy risks that arise from changes in personally identifiable information processing purposes.
           controls:
             - id: pt-3.1
               class: SP800-53-enhancement
@@ -31663,7 +31660,7 @@ catalog:
                 decision-making."
             - id: pt-4_gdn
               name: guidance
-              prose: "Consent allows individuals to participate in making decisions about the
+              prose: Consent allows individuals to participate in making decisions about the
                 processing of their information and transfers some of the risk
                 that arises from the processing of personally identifiable
                 information from the organization to an individual. Consent may
@@ -31687,7 +31684,7 @@ catalog:
                 appropriate. Finally, organizations consider usability factors
                 to help individuals understand the risks being accepted when
                 providing consent, including the use of plain language and
-                avoiding technical jargon. "
+                avoiding technical jargon.
           controls:
             - id: pt-4.1
               class: SP800-53-enhancement
@@ -31713,13 +31710,13 @@ catalog:
                     identifiable information."
                 - id: pt-4.1_gdn
                   name: guidance
-                  prose: "While some processing may be necessary for the basic functionality of
-                    the product or service, other processing may not. In these
+                  prose: While some processing may be necessary for the basic functionality of the
+                    product or service, other processing may not. In these
                     circumstances, organizations allow individuals to select how
                     specific personally identifiable information elements may be
                     processed. More tailored consent may help reduce privacy
                     risk, increase individual satisfaction, and avoid adverse
-                    behaviors, such as abandonment of the product or service. "
+                    behaviors, such as abandonment of the product or service.
             - id: pt-4.2
               class: SP800-53-enhancement
               title: Just-in-time Consent
@@ -31782,13 +31779,13 @@ catalog:
                   name: statement
                   prose: "Implement {{ insert: param, pt-4.3_prm_1 }} for individuals to revoke
                     consent to the processing of their personally identifiable
-                    information. "
+                    information."
                 - id: pt-4.3_gdn
                   name: guidance
-                  prose: "Revocation of consent enables individuals to exercise control over their
+                  prose: Revocation of consent enables individuals to exercise control over their
                     initial consent decision when circumstances change.
                     Organizations consider usability factors in enabling
-                    easy-to-use revocation capabilities. "
+                    easy-to-use revocation capabilities.
         - id: pt-5
           class: SP800-53
           title: Privacy Notice
@@ -31890,7 +31887,7 @@ catalog:
                 privacy notices.
 
 
-                Privacy risk assessments identify the privacy risks associated with the processing of personally identifiable information and may help organizations determine appropriate elements to include in a privacy notice to manage such risks. To help individuals understand how their information is being processed, organizations write materials in plain language and avoid technical jargon. 
+                Privacy risk assessments identify the privacy risks associated with the processing of personally identifiable information and may help organizations determine appropriate elements to include in a privacy notice to manage such risks. To help individuals understand how their information is being processed, organizations write materials in plain language and avoid technical jargon.
           controls:
             - id: pt-5.1
               class: SP800-53-enhancement
@@ -32157,7 +32154,7 @@ catalog:
             - id: pt-7_smt
               name: statement
               prose: "Apply {{ insert: param, pt-7_prm_1 }} for specific categories of
-                personally identifiable information. "
+                personally identifiable information."
             - id: pt-7_gdn
               name: guidance
               prose: Organizations apply any conditions or protections that may be necessary
@@ -32217,11 +32214,11 @@ catalog:
                         number is solicited, and what uses will be made of it.
                 - id: pt-7.1_gdn
                   name: guidance
-                  prose: "Federal law and policy establish specific requirements for
-                    organizations’ processing of Social Security numbers.
-                    Organizations take steps to eliminate unnecessary uses of
-                    Social Security numbers and other sensitive information and
-                    observe any particular requirements that apply. "
+                  prose: Federal law and policy establish specific requirements for organizations’
+                    processing of Social Security numbers. Organizations take
+                    steps to eliminate unnecessary uses of Social Security
+                    numbers and other sensitive information and observe any
+                    particular requirements that apply.
             - id: pt-7.2
               class: SP800-53-enhancement
               title: First Amendment Information
@@ -32310,7 +32307,7 @@ catalog:
                     findings before taking adverse action against an individual.
             - id: pt-8_gdn
               name: guidance
-              prose: "The [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) establishes
+              prose: The [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) establishes
                 requirements for federal and non-federal agencies if they engage
                 in a matching program. In general, a matching program is a
                 computerized comparison of records from two or more automated
@@ -32323,7 +32320,7 @@ catalog:
                 federal benefit programs or to recoup payments or delinquent
                 debts under federal benefit programs. A matching program
                 involves not just the matching activity itself but also the
-                investigative follow-up and ultimate action, if any. "
+                investigative follow-up and ultimate action, if any.
     - id: ra
       class: family
       title: Risk Assessment
@@ -32336,7 +32333,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: ra-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -32849,7 +32846,7 @@ catalog:
                         necessitate a change in the supply chain."
                 - id: ra-3.1_gdn
                   name: guidance
-                  prose: "Supply chain-related events include disruption, use of defective
+                  prose: Supply chain-related events include disruption, use of defective
                     components, insertion of counterfeits, theft, malicious
                     development practices, improper delivery practices, and
                     insertion of malicious code. These events can have a
@@ -32863,7 +32860,6 @@ catalog:
                     the system life cycle. An analysis of supply chain risk can
                     help an organization identify systems or components for
                     which additional supply chain risk mitigations are required.
-                    "
             - id: ra-3.2
               class: SP800-53-enhancement
               title: Use of All-source Intelligence
@@ -33088,7 +33084,7 @@ catalog:
                       props:
                         - name: label
                           value: "3."
-                      prose: "Measuring vulnerability impact; "
+                      prose: Measuring vulnerability impact;
                 - id: ra-5_smt.c
                   name: item
                   props:
@@ -33142,7 +33138,7 @@ catalog:
                 Organizations can use these analysis approaches in source code
                 reviews and in a variety of tools, including web-based
                 application scanners, static analysis tools, and binary
-                analyzers. 
+                analyzers.
 
 
                 Vulnerability monitoring includes scanning for patch levels; scanning for functions, ports, protocols, and services that should not be accessible to users or devices; and scanning for flow control mechanisms that are improperly configured or operating incorrectly. Vulnerability monitoring may also include continuous vulnerability monitoring tools that use instrumentation to continuously analyze components. Instrumentation-based tools may improve accuracy and may be run throughout an organization without scanning. Vulnerability monitoring tools that facilitate interoperability include tools that are Security Content Automated Protocol (SCAP)-validated. Thus, organizations consider using scanning tools that express vulnerabilities in the Common Vulnerabilities and Exposures (CVE) naming convention and that employ the Open Vulnerability Assessment Language (OVAL) to determine the presence of vulnerabilities. Sources for vulnerability information include the Common Weakness Enumeration (CWE) listing and the National Vulnerability Database (NVD). Control assessments, such as red team exercises, provide additional sources of potential vulnerabilities for which to scan. Organizations also consider using scanning tools that express vulnerability impact by the Common Vulnerability Scoring System (CVSS).
@@ -33172,7 +33168,7 @@ catalog:
               params:
                 - id: ra-5.2_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - " {{ insert: param, ra-5.2_prm_2 }} "
                       - prior to a new scan
@@ -33455,7 +33451,7 @@ catalog:
               label: organization-defined locations
             - id: ra-6_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - " {{ insert: param, ra-6_prm_3 }} "
                   - "when the following events or indicators occur: {{ insert:
@@ -33696,7 +33692,7 @@ catalog:
                 those missions, and traceability to the hardware, software, and
                 firmware components that implement those functions, including
                 when the functions are shared by many components within and
-                external to the system. 
+                external to the system.
 
 
                 The operational environment of a system or a system component may impact the criticality, including the connections to and dependencies on cyber-physical systems, devices, system-of-systems, and outsourced IT services. System components that allow unmediated access to critical system components or functions are considered critical due to the inherent vulnerabilities that such components create. Component and function criticality are assessed in terms of the impact of a component or function failure on the organizational missions that are supported by the system that contains the components and functions.
@@ -33790,7 +33786,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: sa-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -34101,7 +34097,7 @@ catalog:
                 Role-based security and privacy training programs can ensure
                 that individuals with key security and privacy roles and
                 responsibilities have the experience, skills, and expertise to
-                conduct assigned system development life cycle activities. 
+                conduct assigned system development life cycle activities.
 
 
                 The effective integration of security and privacy requirements into enterprise architecture also helps to ensure that important security and privacy considerations are addressed throughout the system life cycle and that those considerations are directly related to organizational mission and business processes. This process also facilitates the integration of the information security and privacy architectures into the enterprise architecture, consistent with the risk management strategy of the organization. Because the system development life cycle involves multiple organizations, (e.g., external suppliers, developers, integrators, service providers), acquisition and supply chain risk management functions and controls play significant roles in the effective management of the system during the life cycle.
@@ -34174,10 +34170,10 @@ catalog:
                       props:
                         - name: label
                           value: (b)
-                      prose: "Protect preproduction environments for the system, system component, or
+                      prose: Protect preproduction environments for the system, system component, or
                         system service at the same impact or classification
                         level as any live data in use within the preproduction
-                        environments. "
+                        environments.
                 - id: sa-3.2_gdn
                   name: guidance
                   prose: Live data is also referred to as operational data. The use of live or
@@ -34231,7 +34227,7 @@ catalog:
           params:
             - id: sa-4_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - standardized contract language
                   - " {{ insert: param, sa-4_prm_2 }} "
@@ -34434,7 +34430,7 @@ catalog:
               params:
                 - id: sa-4.2_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - security-relevant external system interfaces
                       - high-level design
@@ -34941,8 +34937,8 @@ catalog:
                       props:
                         - name: label
                           value: "1."
-                      prose: "Secure configuration, installation, and operation of the system,
-                        component, or service; "
+                      prose: Secure configuration, installation, and operation of the system,
+                        component, or service;
                     - id: sa-5_smt.a.2
                       name: item
                       props:
@@ -36937,7 +36933,7 @@ catalog:
               params:
                 - id: sa-9.5_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - information processing
                       - information or data
@@ -37007,15 +37003,15 @@ catalog:
                     stored or transmitted through an external system.
                 - id: sa-9.6_gdn
                   name: guidance
-                  prose: "Maintaining exclusive control of cryptographic keys in an external
-                    system prevents decryption of organizational data by
-                    external system staff. Organizational control of
-                    cryptographic keys can be implemented by encrypting and
-                    decrypting data inside the organization as data is sent to
-                    and received from the external system or by employing a
-                    component that permits encryption and decryption functions
-                    to be local to the external system but allows exclusive
-                    organizational access to the encryption keys. "
+                  prose: Maintaining exclusive control of cryptographic keys in an external system
+                    prevents decryption of organizational data by external
+                    system staff. Organizational control of cryptographic keys
+                    can be implemented by encrypting and decrypting data inside
+                    the organization as data is sent to and received from the
+                    external system or by employing a component that permits
+                    encryption and decryption functions to be local to the
+                    external system but allows exclusive organizational access
+                    to the encryption keys.
             - id: sa-9.7
               class: SP800-53-enhancement
               title: Organization-controlled Integrity Checking
@@ -37036,11 +37032,11 @@ catalog:
                     resides in the external system.
                 - id: sa-9.7_gdn
                   name: guidance
-                  prose: "Storage of organizational information in an external system could limit
+                  prose: Storage of organizational information in an external system could limit
                     visibility into the security status of its data. The ability
                     of the organization to verify and validate the integrity of
                     its stored data without transferring it out of the external
-                    system provides such visibility. "
+                    system provides such visibility.
             - id: sa-9.8
               class: SP800-53-enhancement
               title: Processing and Storage Location — U.s. Jurisdiction
@@ -37080,7 +37076,7 @@ catalog:
           params:
             - id: sa-10_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - design
                   - development
@@ -37414,7 +37410,7 @@ catalog:
           params:
             - id: sa-11_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - unit
                   - integration
@@ -37601,7 +37597,7 @@ catalog:
                   prose: "Require the developer of the system, system component, or system service
                     to perform threat modeling and vulnerability analyses during
                     development and the subsequent testing and evaluation of the
-                    system, component, or service that: "
+                    system, component, or service that:"
                   parts:
                     - id: sa-11.2_smt.a
                       name: item
@@ -37633,19 +37629,18 @@ catalog:
                         insert: param, sa-11.2_prm_4 }}."
                 - id: sa-11.2_gdn
                   name: guidance
-                  prose: "Systems, system components, and system services may deviate
-                    significantly from the functional and design specifications
-                    created during the requirements and design stages of the
-                    system development life cycle. Therefore, updates to threat
-                    modeling and vulnerability analyses of those systems, system
-                    components, and system services during development and prior
-                    to delivery are critical to the effective operation of those
-                    systems, components, and services. Threat modeling and
-                    vulnerability analyses at this stage of the system
-                    development life cycle ensure that design and implementation
-                    changes have been accounted for and that vulnerabilities
-                    created because of those changes have been reviewed and
-                    mitigated. "
+                  prose: Systems, system components, and system services may deviate significantly
+                    from the functional and design specifications created during
+                    the requirements and design stages of the system development
+                    life cycle. Therefore, updates to threat modeling and
+                    vulnerability analyses of those systems, system components,
+                    and system services during development and prior to delivery
+                    are critical to the effective operation of those systems,
+                    components, and services. Threat modeling and vulnerability
+                    analyses at this stage of the system development life cycle
+                    ensure that design and implementation changes have been
+                    accounted for and that vulnerabilities created because of
+                    those changes have been reviewed and mitigated.
             - id: sa-11.3
               class: SP800-53-enhancement
               title: Independent Verification of Assessment Plans and Evidence
@@ -37814,8 +37809,8 @@ catalog:
               parts:
                 - id: sa-11.6_smt
                   name: statement
-                  prose: "Require the developer of the system, system component, or system service
-                    to perform attack surface reviews. "
+                  prose: Require the developer of the system, system component, or system service
+                    to perform attack surface reviews.
                 - id: sa-11.6_gdn
                   name: guidance
                   prose: Attack surfaces of systems and system components are exposed areas that
@@ -38291,7 +38286,7 @@ catalog:
               params:
                 - id: sa-15.1_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - " {{ insert: param, sa-15.1_prm_2 }} "
                       - " {{ insert: param, sa-15.1_prm_3 }} "
@@ -39512,7 +39507,7 @@ catalog:
                     - name: label
                       value: b.
                   prose: "Satisfies the following additional personnel screening criteria: {{
-                    insert: param, sa-21_prm_3 }}. "
+                    insert: param, sa-21_prm_3 }}."
             - id: sa-21_gdn
               name: guidance
               prose: Developer screening is directed at external developers. Internal
@@ -39556,7 +39551,7 @@ catalog:
           params:
             - id: sa-22_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - in-house support
                   - " {{ insert: param, sa-22_prm_2 }} "
@@ -39629,7 +39624,7 @@ catalog:
           params:
             - id: sa-23_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - design
                   - modification
@@ -39681,7 +39676,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: sc-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -40395,7 +40390,7 @@ catalog:
               label: organization-defined resources
             - id: sc-6_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - priority
                   - quota
@@ -40713,7 +40708,7 @@ catalog:
               params:
                 - id: sc-7.5_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - at managed interfaces
                       - "for {{ insert: param, sc-7.5_prm_2 }} "
@@ -41209,8 +41204,8 @@ catalog:
               parts:
                 - id: sc-7.18_smt
                   name: statement
-                  prose: "Prevent systems from entering unsecure states in the event of an
-                    operational failure of a boundary protection device. "
+                  prose: Prevent systems from entering unsecure states in the event of an
+                    operational failure of a boundary protection device.
                 - id: sc-7.18_gdn
                   name: guidance
                   prose: Fail secure is a condition achieved by employing mechanisms to ensure
@@ -41415,7 +41410,7 @@ catalog:
                       props:
                         - name: label
                           value: (d)
-                      prose: "Review and remove exceptions that are no longer supported. "
+                      prose: Review and remove exceptions that are no longer supported.
                 - id: sc-7.24_gdn
                   name: guidance
                   prose: Managing the processing of personally identifiable information is an
@@ -41586,7 +41581,7 @@ catalog:
           params:
             - id: sc-8_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - confidentiality
                   - integrity
@@ -41666,7 +41661,7 @@ catalog:
                 protection can be achieved by employing encryption techniques.
 
 
-                Organizations that rely on commercial providers who offer transmission services as commodity services rather than as fully dedicated services may find it difficult to obtain the necessary assurances regarding the implementation of needed controls for transmission confidentiality and integrity. In such situations, organizations determine what types of confidentiality or integrity services are available in standard, commercial telecommunications service packages. If it is not feasible to obtain the necessary controls and assurances of control effectiveness through appropriate contracting vehicles, organizations can implement appropriate compensating controls. 
+                Organizations that rely on commercial providers who offer transmission services as commodity services rather than as fully dedicated services may find it difficult to obtain the necessary assurances regarding the implementation of needed controls for transmission confidentiality and integrity. In such situations, organizations determine what types of confidentiality or integrity services are available in standard, commercial telecommunications service packages. If it is not feasible to obtain the necessary controls and assurances of control effectiveness through appropriate contracting vehicles, organizations can implement appropriate compensating controls.
           controls:
             - id: sc-8.1
               class: SP800-53-enhancement
@@ -41674,7 +41669,7 @@ catalog:
               params:
                 - id: sc-8.1_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - prevent unauthorized disclosure of information
                       - detect changes to information
@@ -41711,7 +41706,7 @@ catalog:
               params:
                 - id: sc-8.2_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - confidentiality
                       - integrity
@@ -41824,7 +41819,7 @@ catalog:
                   label: organization-defined protected distribution system
                 - id: sc-8.5_prm_2
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - prevent unauthorized disclosure of information
                       - detect changes to information
@@ -41880,7 +41875,7 @@ catalog:
               name: statement
               prose: "Terminate the network connection associated with a communications
                 session at the end of the session or after {{ insert: param,
-                sc-10_prm_1 }} of inactivity. "
+                sc-10_prm_1 }} of inactivity."
             - id: sc-10_gdn
               name: guidance
               prose: Network disconnect applies to internal and external networks. Terminating
@@ -41940,7 +41935,7 @@ catalog:
                     communications between the user and the following security
                     functions of the system, including at a minimum,
                     authentication and re-authentication: {{ insert: param,
-                    sc-11_prm_2 }}. "
+                    sc-11_prm_2 }}."
             - id: sc-11_gdn
               name: guidance
               prose: Trusted paths are mechanisms by which users can communicate (using input
@@ -42484,7 +42479,7 @@ catalog:
               params:
                 - id: sc-15.1_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - physical
                       - logical
@@ -42948,9 +42943,9 @@ catalog:
                     environments.
                 - id: sc-18.5_gdn
                   name: guidance
-                  prose: "Permitting the execution of mobile code only in confined virtual machine
+                  prose: Permitting the execution of mobile code only in confined virtual machine
                     environments helps prevent the introduction of malicious
-                    code into other systems and system components. "
+                    code into other systems and system components.
         - id: sc-19
           class: SP800-53
           title: Voice Over Internet Protocol
@@ -43475,7 +43470,7 @@ catalog:
           params:
             - id: sc-28_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - confidentiality
                   - integrity
@@ -43960,7 +43955,7 @@ catalog:
           params:
             - id: sc-31_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - storage
                   - timing
@@ -44033,7 +44028,7 @@ catalog:
               params:
                 - id: sc-31.2_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - storage
                       - timing
@@ -44528,7 +44523,7 @@ catalog:
                 }}."
             - id: sc-37_gdn
               name: guidance
-              prose: "Out-of-band channels include local, non-network accesses to systems;
+              prose: Out-of-band channels include local, non-network accesses to systems;
                 network paths physically separate from network paths used for
                 operational traffic; or non-electronic paths, such as the U.S.
                 Postal Service. The use of out-of-band channels is contrasted
@@ -44543,7 +44538,7 @@ catalog:
                 cryptographic key management information; system and data
                 backups; configuration management changes for hardware,
                 firmware, or software; security updates; maintenance
-                information; and malicious code protection updates. "
+                information; and malicious code protection updates.
           controls:
             - id: sc-37.1
               class: SP800-53-enhancement
@@ -44836,10 +44831,10 @@ catalog:
                 - id: sc-40.2_smt
                   name: statement
                   prose: "Implement cryptographic mechanisms to reduce the detection potential of
-                    wireless links to {{ insert: param, sc-40.2_prm_1 }}. "
+                    wireless links to {{ insert: param, sc-40.2_prm_1 }}."
                 - id: sc-40.2_gdn
                   name: guidance
-                  prose: "The implementation of cryptographic mechanisms to reduce detection
+                  prose: The implementation of cryptographic mechanisms to reduce detection
                     potential is used for covert communications and to protect
                     wireless transmitters from geo-location. It also ensures
                     that the spread spectrum waveforms used to achieve a low
@@ -44848,7 +44843,7 @@ catalog:
                     concept of operations, and applicable laws, executive
                     orders, directives, regulations, policies, and standards
                     determine the levels to which wireless links are
-                    undetectable. "
+                    undetectable.
             - id: sc-40.3
               class: SP800-53-enhancement
               title: Imitative or Manipulative Communications Deception
@@ -44905,7 +44900,7 @@ catalog:
                   name: statement
                   prose: "Implement cryptographic mechanisms to prevent the identification of {{
                     insert: param, sc-40.4_prm_1 }} by using the transmitter
-                    signal parameters. "
+                    signal parameters."
                 - id: sc-40.4_gdn
                   name: guidance
                   prose: The implementation of cryptographic mechanisms to prevent the
@@ -44962,7 +44957,7 @@ catalog:
           params:
             - id: sc-42_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - "the use of devices possessing {{ insert: param, sc-42_prm_2
                     }} in {{ insert: param, sc-42_prm_3 }} "
@@ -45471,7 +45466,7 @@ catalog:
                 organizational command and control."
             - id: sc-47_gdn
               name: guidance
-              prose: "An incident, whether adversarial- or nonadversarial-based, can disrupt
+              prose: An incident, whether adversarial- or nonadversarial-based, can disrupt
                 established communications paths used for system operations and
                 organizational command and control. Alternate communications
                 paths reduce the risk of all communications paths being affected
@@ -45485,7 +45480,7 @@ catalog:
                 decision makers if primary decision makers are unavailable and
                 establishing the extent and limitations of their actions, can
                 greatly facilitate the organization’s ability to continue to
-                operate and take appropriate actions during an incident. "
+                operate and take appropriate actions during an incident.
         - id: sc-48
           class: SP800-53
           title: Sensor Relocation
@@ -45518,7 +45513,7 @@ catalog:
                 {{ insert: param, sc-48_prm_3 }}."
             - id: sc-48_gdn
               name: guidance
-              prose: "Adversaries may take various paths and use different approaches as they
+              prose: Adversaries may take various paths and use different approaches as they
                 move laterally through an organization (including its systems)
                 to reach their target or as they attempt to exfiltrate
                 information from the organization. The organization often only
@@ -45533,7 +45528,7 @@ catalog:
                 monitoring capabilities might be done based on threat
                 information that the organization has acquired or randomly to
                 confuse the adversary and make its lateral transition through
-                the system or organization more challenging. "
+                the system or organization more challenging.
           controls:
             - id: sc-48.1
               class: SP800-53-enhancement
@@ -45679,7 +45674,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: si-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -46089,7 +46084,7 @@ catalog:
           params:
             - id: si-3_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - signature based
                   - non-signature based
@@ -46097,13 +46092,13 @@ catalog:
               label: organization-defined frequency
             - id: si-3_prm_3
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - endpoint
                   - network entry and exit points
             - id: si-3_prm_4
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - block malicious code
                   - quarantine malicious code
@@ -46378,7 +46373,7 @@ catalog:
                   label: organization-defined unauthorized operating system commands
                 - id: si-3.8_prm_3
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - issue a warning
                       - audit the command execution
@@ -46504,7 +46499,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: si-4_prm_5
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - as needed
                   - " {{ insert: param, si-4_prm_6 }} "
@@ -47393,7 +47388,7 @@ catalog:
                   label: organization-defined authorization or approval processes
                 - id: si-4.22_prm_2
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - Audit
                       - "Alert {{ insert: param, si-4.22_prm_3 }} "
@@ -47524,9 +47519,9 @@ catalog:
               parts:
                 - id: si-4.25_smt
                   name: statement
-                  prose: "Provide visibility into network traffic at external and key internal
+                  prose: Provide visibility into network traffic at external and key internal
                     system interfaces to optimize the effectiveness of
-                    monitoring devices. "
+                    monitoring devices.
                 - id: si-4.25_gdn
                   name: guidance
                   prose: Encrypted traffic, asymmetric routing architectures, capacity and latency
@@ -47545,7 +47540,7 @@ catalog:
               label: organization-defined external organizations
             - id: si-5_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - " {{ insert: param, si-5_prm_3 }} "
                   - " {{ insert: param, si-5_prm_4 }} "
@@ -47608,7 +47603,7 @@ catalog:
                     noncompliance.
             - id: si-5_gdn
               name: guidance
-              prose: "The Cybersecurity and Infrastructure Security Agency (CISA) generates
+              prose: The Cybersecurity and Infrastructure Security Agency (CISA) generates
                 security alerts and advisories to maintain situational awareness
                 throughout the Federal Government. Security directives are
                 issued by OMB or other designated organizations with the
@@ -47620,7 +47615,7 @@ catalog:
                 the directives not be implemented in a timely manner. External
                 organizations include supply chain partners, external mission or
                 business partners, external service providers, and other peer or
-                supporting organizations. "
+                supporting organizations.
           controls:
             - id: si-5.1
               class: SP800-53-enhancement
@@ -47661,7 +47656,7 @@ catalog:
               label: organization-defined security and privacy functions
             - id: si-6_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - " {{ insert: param, si-6_prm_3 }} "
                   - upon command by user with appropriate privilege
@@ -47676,7 +47671,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: si-6_prm_6
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Shut the system down
                   - Restart the system
@@ -47925,7 +47920,7 @@ catalog:
                   label: organization-defined software, firmware, and information
                 - id: si-7.1_prm_2
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - at startup
                       - "at {{ insert: param, si-7.1_prm_3 }} "
@@ -48033,7 +48028,7 @@ catalog:
               params:
                 - id: si-7.5_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - shut the system down
                       - restart the system
@@ -48140,7 +48135,7 @@ catalog:
               params:
                 - id: si-7.8_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - generate an audit record
                       - alert current user
@@ -49055,7 +49050,7 @@ catalog:
                   name: statement
                   prose: "Use the following techniques to dispose of, destroy, or erase
                     information following the retention period: {{ insert:
-                    param, si-12.3_prm_1 }}. "
+                    param, si-12.3_prm_1 }}."
                 - id: si-12.3_gdn
                   name: guidance
                   prose: Organizations can minimize both security and privacy risks by disposing
@@ -49203,7 +49198,7 @@ catalog:
                   label: organization-defined time period
                 - id: si-13.4_prm_2
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - "Activate {{ insert: param, si-13.4_prm_3 }} "
                       - Automatically shut down the system
@@ -49291,7 +49286,7 @@ catalog:
               label: organization-defined system components and services
             - id: si-14_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - upon end of session of use
                   - "periodically at {{ insert: param, si-14_prm_3 }} "
@@ -49897,9 +49892,9 @@ catalog:
               parts:
                 - id: si-19.2_smt
                   name: statement
-                  prose: "Prohibit archiving of personally identifiable information elements if
+                  prose: Prohibit archiving of personally identifiable information elements if
                     those elements in a dataset will not be needed after the
-                    dataset is archived. "
+                    dataset is archived.
                 - id: si-19.2_gdn
                   name: guidance
                   prose: Datasets can be archived for many reasons. The envisioned purposes for
@@ -49924,9 +49919,9 @@ catalog:
               parts:
                 - id: si-19.3_smt
                   name: statement
-                  prose: "Remove personally identifiable information elements from a dataset prior
+                  prose: Remove personally identifiable information elements from a dataset prior
                     to its release if those elements in the dataset do not need
-                    to be part of the data release. "
+                    to be part of the data release.
                 - id: si-19.3_gdn
                   name: guidance
                   prose: Prior to releasing a dataset, a data custodian considers the intended
@@ -49987,9 +49982,9 @@ catalog:
               parts:
                 - id: si-19.5_smt
                   name: statement
-                  prose: "Manipulate numerical data, contingency tables, and statistical findings
+                  prose: Manipulate numerical data, contingency tables, and statistical findings
                     so that no individual or organization is identifiable in the
-                    results of the analysis. "
+                    results of the analysis.
                 - id: si-19.5_gdn
                   name: guidance
                   prose: Many types of statistical analyses can result in the disclosure of
@@ -50051,8 +50046,8 @@ catalog:
               parts:
                 - id: si-19.7_smt
                   name: statement
-                  prose: "Perform de-identification using validated algorithms and software that
-                    is validated to implement the algorithms. "
+                  prose: Perform de-identification using validated algorithms and software that is
+                    validated to implement the algorithms.
                 - id: si-19.7_gdn
                   name: guidance
                   prose: Algorithms that appear to remove personally identifiable information from
@@ -50296,7 +50291,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: sr-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Organization-level
                   - Mission/business process-level
@@ -51364,7 +51359,7 @@ catalog:
               params:
                 - id: sr-6.1_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - organizational analysis
                       - independent third-party analysis
@@ -51471,7 +51466,7 @@ catalog:
           params:
             - id: sr-8_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - notification of supply chain compromises
                   - results of assessments or audits
@@ -51604,7 +51599,7 @@ catalog:
           params:
             - id: sr-10_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - at random
                   - "at {{ insert: param, sr-10_prm_2 }}, upon {{ insert: param,
@@ -51664,7 +51659,7 @@ catalog:
           params:
             - id: sr-11_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - source of counterfeit component
                   - " {{ insert: param, sr-11_prm_2 }} "
@@ -51711,7 +51706,7 @@ catalog:
                     - name: label
                       value: b.
                   prose: "Report counterfeit system components to {{ insert: param, sr-11_prm_1
-                    }}. "
+                    }}."
             - id: sr-11_gdn
               name: guidance
               prose: Sources of counterfeit components include manufacturers, developers,
@@ -52371,7 +52366,7 @@ catalog:
         citation:
           text: "International Organization for Standardization/International
             Electrotechnical Commission 20243-1:2018, *Information technology —
-            Open Trusted Technology ProviderTM Standard (O-TTPS) — Mitigating
+            Open Trusted Technology Provider™ Standard (O-TTPS) — Mitigating
             maliciously tainted and counterfeit products — Part 1: Requirements
             and recommendations*, February 2018."
         rlinks:

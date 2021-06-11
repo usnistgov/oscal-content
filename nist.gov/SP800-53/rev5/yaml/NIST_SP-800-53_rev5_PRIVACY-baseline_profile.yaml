@@ -1,11 +1,11 @@
 ---
 profile:
-  uuid: 6ae2741b-b391-4353-a938-5270b954c4eb
+  uuid: 66b95dd9-650d-456f-b143-19ae7bb36944
   metadata:
     title: NIST Special Publication 800-53 Revision 5 PRIVACY BASELINE
-    last-modified: 2021-04-07T12:50:18.462-04:00
+    last-modified: 2021-06-08T13:57:34.707994-04:00
     version: Final
-    oscal-version: 1.0.0-rc2
+    oscal-version: 1.0.0
     roles:
       - id: creator
         title: Document Creator
@@ -27,10 +27,10 @@ profile:
             state: MD
             postal-code: 20899-8930
     responsible-parties:
-      creator:
+      - role-id: creator
         party-uuids:
           - 11f1de66-89ba-499d-903e-56418e95af9d
-      contact:
+      - role-id: contact
         party-uuids:
           - 11f1de66-89ba-499d-903e-56418e95af9d
   imports:
