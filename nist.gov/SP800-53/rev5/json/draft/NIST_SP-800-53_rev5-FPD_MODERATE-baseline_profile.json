@@ -1,11 +1,11 @@
 {
   "profile": {
-    "uuid": "8bd38335-b5e4-4e23-91d3-6b45ff66a680",
+    "uuid": "3b5e4f70-153e-4a76-a6d1-215dbed4467d",
     "metadata": {
       "title": "SP800-53 MODERATE IMPACT BASELINE",
-      "last-modified": "2021-04-07T12:50:16.742-04:00",
+      "last-modified": "2021-06-08T13:57:32.277476-04:00",
       "version": "FPD",
-      "oscal-version": "1.0.0-rc2",
+      "oscal-version": "1.0.0",
       "roles": [
         {
           "id": "creator",
@@ -39,18 +39,20 @@
           ]
         }
       ],
-      "responsible-parties": {
-        "creator": {
+      "responsible-parties": [
+        {
+          "role-id": "creator",
           "party-uuids": [
             "2ef7cfec-cb8e-4571-a7a2-a5c609b4767a"
           ]
         },
-        "contact": {
+        {
+          "role-id": "contact",
           "party-uuids": [
             "2ef7cfec-cb8e-4571-a7a2-a5c609b4767a"
           ]
         }
-      }
+      ]
     },
     "imports": [
       {

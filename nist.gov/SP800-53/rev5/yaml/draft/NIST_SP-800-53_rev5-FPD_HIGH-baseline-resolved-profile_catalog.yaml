@@ -1,11 +1,11 @@
 ---
 catalog:
-  uuid: e2ca89e0-0927-4538-9a2c-31daab8078d7
+  uuid: defaf4aa-b817-4b72-94e2-13d014998d84
   metadata:
     title: SP800-53 HIGH IMPACT BASELINE
-    last-modified: 2021-05-18T18:47:42.207592Z
+    last-modified: 2021-06-10T17:35:52.520121Z
     version: FPD
-    oscal-version: 1.0.0-rc2
+    oscal-version: 1.0.0
     links:
       - href: NIST_SP-800-53_rev5-FPD_HIGH-baseline_profile.xml
         rel: resolution-source
@@ -30,9 +30,9 @@ catalog:
             state: MD
             postal-code: 20899-8930
     responsible-parties:
-      creator:
+      - role-id: creator
         party-uuids:
           - a90f4235-ab3c-4bf1-ba0a-865bbc833346
-      contact:
+      - role-id: contact
         party-uuids:
           - a90f4235-ab3c-4bf1-ba0a-865bbc833346

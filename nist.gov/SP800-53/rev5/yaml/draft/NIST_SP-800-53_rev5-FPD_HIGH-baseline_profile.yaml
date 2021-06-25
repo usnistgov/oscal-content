@@ -1,11 +1,11 @@
 ---
 profile:
-  uuid: cec50a14-b34f-4978-b97e-d537908168bd
+  uuid: 25009e9c-c752-458c-8bf8-5b4f3ece73ea
   metadata:
     title: SP800-53 HIGH IMPACT BASELINE
-    last-modified: 2021-04-07T12:50:15.922-04:00
+    last-modified: 2021-06-08T13:57:31.45647-04:00
     version: FPD
-    oscal-version: 1.0.0-rc2
+    oscal-version: 1.0.0
     roles:
       - id: creator
         title: Document Creator
@@ -27,10 +27,10 @@ profile:
             state: MD
             postal-code: 20899-8930
     responsible-parties:
-      creator:
+      - role-id: creator
         party-uuids:
           - a90f4235-ab3c-4bf1-ba0a-865bbc833346
-      contact:
+      - role-id: contact
         party-uuids:
           - a90f4235-ab3c-4bf1-ba0a-865bbc833346
   imports:

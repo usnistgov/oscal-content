@@ -1,11 +1,11 @@
 ---
 profile:
-  uuid: fd73e5e1-1226-4680-94a6-4c0b4887371b
+  uuid: 8742196d-86ba-4e72-a411-28867dab43bb
   metadata:
     title: NIST Special Publication 800-53 Revision 5 LOW IMPACT BASELINE
-    last-modified: 2021-04-07T12:50:17.751-04:00
+    last-modified: 2021-06-08T13:57:33.97549-04:00
     version: Final
-    oscal-version: 1.0.0-rc2
+    oscal-version: 1.0.0
     roles:
       - id: creator
         title: Document Creator
@@ -27,10 +27,10 @@ profile:
             state: MD
             postal-code: 20899-8930
     responsible-parties:
-      creator:
+      - role-id: creator
         party-uuids:
           - 984e6c07-b5b6-4ab6-b22b-283609c325e6
-      contact:
+      - role-id: contact
         party-uuids:
           - 984e6c07-b5b6-4ab6-b22b-283609c325e6
   imports:

@@ -1,11 +1,11 @@
 ---
 profile:
-  uuid: 7fc80cbe-157d-4d4d-9c42-adb7f918f859
+  uuid: 69757251-0190-4ebe-8cce-fdf06cec9bc7
   metadata:
     title: SP800-53 LOW IMPACT BASELINE
-    last-modified: 2021-04-07T12:50:16.393-04:00
+    last-modified: 2021-06-08T13:57:31.860472-04:00
     version: FPD
-    oscal-version: 1.0.0-rc2
+    oscal-version: 1.0.0
     roles:
       - id: creator
         title: Document Creator
@@ -27,10 +27,10 @@ profile:
             state: MD
             postal-code: 20899-8930
     responsible-parties:
-      creator:
+      - role-id: creator
         party-uuids:
           - fcba95f8-df3b-47cd-ae6f-57089a2b7174
-      contact:
+      - role-id: contact
         party-uuids:
           - fcba95f8-df3b-47cd-ae6f-57089a2b7174
   imports:

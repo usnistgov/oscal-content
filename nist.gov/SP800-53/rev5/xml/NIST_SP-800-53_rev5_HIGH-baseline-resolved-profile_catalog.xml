@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="be958e2d-31d1-4d33-b854-1c45ba2d5c79">
+         uuid="addb30d1-ba08-48c4-b3c5-9687cce97e19">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 5 HIGH IMPACT BASELINE</title>
-      <last-modified>2021-05-18T18:46:51.165231Z</last-modified>
+      <last-modified>2021-06-10T17:34:52.473322Z</last-modified>
       <version>Final</version>
-      <oscal-version>1.0.0-rc2</oscal-version>
+      <oscal-version>1.0.0</oscal-version>
       <link rel="resolution-source"
             href="NIST_SP-800-53_rev5_HIGH-baseline_profile.xml"/>
       <role id="creator">
@@ -42,7 +42,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="ac-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -327,7 +327,7 @@
             <prop name="sort-id" value="ac-02.03"/>
             <link rel="required" href="#ac-2"/>
             <part name="statement" id="ac-2.3_smt">
-               <p>Disable accounts within <insert type="param" id-ref="ac-2.3_prm_1"/> when the accounts: </p>
+               <p>Disable accounts within <insert type="param" id-ref="ac-2.3_prm_1"/> when the accounts:</p>
                <part name="item" id="ac-2.3_smt.a">
                   <prop name="label" value="(a)"/>
                   <p>Have expired;</p>
@@ -551,7 +551,7 @@
                <label>organization-defined information flow control mechanisms</label>
             </param>
             <param id="ac-4.4_prm_2">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>decrypting the information</choice>
                   <choice>blocking the flow of the encrypted information</choice>
                   <choice>terminating communications sessions attempting to pass encrypted information</choice>
@@ -791,7 +791,7 @@
             <label>organization-defined time period</label>
          </param>
          <param id="ac-7_prm_3">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>lock the account or node for an <insert type="param" id-ref="ac-7_prm_4"/>
                </choice>
                <choice>lock the account or node until released by an administrator</choice>
@@ -914,7 +914,7 @@
       <control class="SP800-53" id="ac-11">
          <title>Device Lock</title>
          <param id="ac-11_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>initiating a device lock after <insert type="param" id-ref="ac-11_prm_2"/> of inactivity</choice>
                <choice>requiring the user to initiate a device lock before leaving the system unattended</choice>
             </select>
@@ -948,7 +948,7 @@
             <link rel="required" href="#ac-11"/>
             <part name="statement" id="ac-11.1_smt">
                <p>
-                  <b>Conceal, via the device lock, information previously visible on the display with a publicly viewable image</b>.</p>
+                  <strong>Conceal, via the device lock, information previously visible on the display with a publicly viewable image</strong>.</p>
             </part>
             <part name="guidance" id="ac-11.1_gdn">
                <p>The pattern-hiding display can include static or dynamic images, such as patterns used with screen savers, photographic images, solid colors, clock, battery life indicator, or a blank screen with the caveat that controlled unclassified information is not displayed.</p>
@@ -1144,7 +1144,7 @@
          <control class="SP800-53-enhancement" id="ac-18.1">
             <title>Authentication and Encryption</title>
             <param id="ac-18.1_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>users</choice>
                   <choice>devices</choice>
                </select>
@@ -1273,7 +1273,7 @@
       <control class="SP800-53" id="ac-20">
          <title>Use of External Systems</title>
          <param id="ac-20_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Establish <insert type="param" id-ref="ac-20_prm_2"/>
                </choice>
                <choice>Identify <insert type="param" id-ref="ac-20_prm_3"/>
@@ -1443,7 +1443,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="at-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -1720,7 +1720,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="au-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -1905,7 +1905,7 @@
             </part>
             <part name="item" id="au-3_smt.e">
                <prop name="label" value="e."/>
-               <p>Outcome of the event; and </p>
+               <p>Outcome of the event; and</p>
             </part>
             <part name="item" id="au-3_smt.f">
                <prop name="label" value="f."/>
@@ -2127,7 +2127,7 @@
          <control class="SP800-53-enhancement" id="au-6.5">
             <title>Integrated Analysis of Audit Records</title>
             <param id="au-6.5_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>vulnerability scanning information</choice>
                   <choice>performance data</choice>
                   <choice>system monitoring information</choice>
@@ -2233,7 +2233,7 @@
             </part>
          </part>
          <part name="guidance" id="au-8_gdn">
-            <p>Time stamps generated by the system include date and time. Time is commonly expressed in Coordinated Universal Time (UTC), a modern continuation of Greenwich Mean Time (GMT), or local time with an offset from UTC. Granularity of time measurements refers to the degree of synchronization between system clocks and reference clocks (e.g., clocks synchronizing within hundreds of milliseconds or tens of milliseconds). Organizations may define different time granularities for different system components. Time service can be critical to other security capabilities such as access control and identification and authentication, depending on the nature of the mechanisms used to support those capabilities. </p>
+            <p>Time stamps generated by the system include date and time. Time is commonly expressed in Coordinated Universal Time (UTC), a modern continuation of Greenwich Mean Time (GMT), or local time with an offset from UTC. Granularity of time measurements refers to the degree of synchronization between system clocks and reference clocks (e.g., clocks synchronizing within hundreds of milliseconds or tens of milliseconds). Organizations may define different time granularities for different system components. Time service can be critical to other security capabilities such as access control and identification and authentication, depending on the nature of the mechanisms used to support those capabilities.</p>
          </part>
       </control>
       <control class="SP800-53" id="au-9">
@@ -2475,7 +2475,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="ca-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -2658,7 +2658,7 @@
                </select>
             </param>
             <param id="ca-2.2_prm_3">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>in-depth monitoring</choice>
                   <choice>security instrumentation</choice>
                   <choice>automated security test cases</choice>
@@ -2691,7 +2691,7 @@
       <control class="SP800-53" id="ca-3">
          <title>Information Exchange</title>
          <param id="ca-3_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>interconnection security agreements</choice>
                <choice>information exchange security agreements</choice>
                <choice>memoranda of understanding or agreement</choice>
@@ -3084,7 +3084,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="cm-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -3289,7 +3289,7 @@
             <label>organization-defined configuration change control element</label>
          </param>
          <param id="cm-3_prm_3">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>
                   <insert type="param" id-ref="cm-3_prm_4"/>
                </choice>
@@ -3529,7 +3529,7 @@
          <link rel="related" href="#si-2"/>
          <link rel="related" href="#si-10"/>
          <part name="statement" id="cm-5_smt">
-            <p>Define, document, approve, and enforce physical and logical access restrictions associated with changes to the system. </p>
+            <p>Define, document, approve, and enforce physical and logical access restrictions associated with changes to the system.</p>
          </part>
          <part name="guidance" id="cm-5_gdn">
             <p>Changes to the hardware, software, or firmware components of systems or the operational procedures related to the system can potentially have significant effects on the security of the systems or individuals’ privacy. Therefore, organizations permit only qualified and authorized individuals to access systems for purposes of initiating changes. Access restrictions include physical and logical access controls (see <a href="#ac-3">AC-3</a> and <a href="#pe-3">PE-3</a>), software libraries, workflow automation, media libraries, abstract layers (i.e., changes implemented into external interfaces rather than directly into systems), and change windows (i.e., changes occur only during specified times).</p>
@@ -3552,7 +3552,7 @@
             <part name="statement" id="cm-5.1_smt">
                <part name="item" id="cm-5.1_smt.a">
                   <prop name="label" value="(a)"/>
-                  <p>Enforce access restrictions using <insert type="param" id-ref="cm-5.1_prm_1"/>; and </p>
+                  <p>Enforce access restrictions using <insert type="param" id-ref="cm-5.1_prm_1"/>; and</p>
                </part>
                <part name="item" id="cm-5.1_smt.b">
                   <prop name="label" value="(b)"/>
@@ -3749,7 +3749,7 @@
          <control class="SP800-53-enhancement" id="cm-7.2">
             <title>Prevent Program Execution</title>
             <param id="cm-7.2_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>
                      <insert type="param" id-ref="cm-7.2_prm_2"/>
                   </choice>
@@ -3878,7 +3878,7 @@
             </part>
          </part>
          <part name="guidance" id="cm-8_gdn">
-            <p>System components are discrete, identifiable information technology assets that include hardware, software, and firmware. Organizations may choose to implement centralized system component inventories that include components from all organizational systems. In such situations, organizations ensure that the inventories include system-specific information required for component accountability. The information necessary for effective accountability of system components includes the system name, software owners, software version numbers, hardware inventory specifications, software license information, and for networked components, the machine names and network addresses across all implemented protocols (e.g., IPv4, IPv6). Inventory specifications include date of receipt, cost, model, serial number, manufacturer, supplier information, component type,  and physical location.</p>
+            <p>System components are discrete, identifiable information technology assets that include hardware, software, and firmware. Organizations may choose to implement centralized system component inventories that include components from all organizational systems. In such situations, organizations ensure that the inventories include system-specific information required for component accountability. The information necessary for effective accountability of system components includes the system name, software owners, software version numbers, hardware inventory specifications, software license information, and for networked components, the machine names and network addresses across all implemented protocols (e.g., IPv4, IPv6). Inventory specifications include date of receipt, cost, model, serial number, manufacturer, supplier information, component type, and physical location.</p>
             <p>Preventing duplicate accounting of system components addresses the lack of accountability that occurs when component ownership and system association is not known, especially in large or complex connected systems. Effective prevention of duplicate accounting of system components necessitates use of a unique identifier for each component. For software inventory, centrally managed software that is accessed via other systems is addressed as a component of the system on which it is installed and managed. Software installed on multiple organizational systems and managed at the system level is addressed for each individual system and may appear more than once in a centralized component inventory, necessitating a system association for each software instance in the centralized inventory to avoid duplicate accounting of components. Scanning systems implementing multiple network protocols (e.g., IPv4 and IPv6) can result in duplicate components being identified in different address spaces. The implementation of <a href="#cm-8.7">CM-8(7)</a> can help to eliminate duplicate accounting of components.</p>
          </part>
          <control class="SP800-53-enhancement" id="cm-8.1">
@@ -3918,7 +3918,7 @@
                <label>organization-defined frequency</label>
             </param>
             <param id="cm-8.3_prm_3">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>disable network access by such components</choice>
                   <choice>isolate the components</choice>
                   <choice>notify <insert type="param" id-ref="cm-8.3_prm_4"/>
@@ -3959,7 +3959,7 @@
          <control class="SP800-53-enhancement" id="cm-8.4">
             <title>Accountability Information</title>
             <param id="cm-8.4_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>name</choice>
                   <choice>position</choice>
                   <choice>role</choice>
@@ -4014,7 +4014,7 @@
             </part>
             <part name="item" id="cm-9_smt.e">
                <prop name="label" value="e."/>
-               <p>Protects the configuration management plan from unauthorized disclosure and modification. </p>
+               <p>Protects the configuration management plan from unauthorized disclosure and modification.</p>
             </part>
          </part>
          <part name="guidance" id="cm-9_gdn">
@@ -4164,7 +4164,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="cp-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -4300,7 +4300,7 @@
                </part>
                <part name="item" id="cp-2_smt.a.4">
                   <prop name="label" value="4."/>
-                  <p>Addresses maintaining essential mission and business functions despite a system disruption, compromise, or failure; </p>
+                  <p>Addresses maintaining essential mission and business functions despite a system disruption, compromise, or failure;</p>
                </part>
                <part name="item" id="cp-2_smt.a.5">
                   <prop name="label" value="5."/>
@@ -4414,7 +4414,7 @@
                <p>Plan for the continuance of <insert type="param" id-ref="cp-2.5_prm_1"/> mission and business functions with minimal or no loss of operational continuity and sustains that continuity until full system restoration at primary processing and/or storage sites.</p>
             </part>
             <part name="guidance" id="cp-2.5_gdn">
-               <p>Organizations may choose to conduct the contingency planning activities to continue mission and business functions as part of business continuity planning or business impact analyses. Primary processing and/or storage sites defined by organizations as part of contingency planning may change depending on the circumstances associated with the contingency. </p>
+               <p>Organizations may choose to conduct the contingency planning activities to continue mission and business functions as part of business continuity planning or business impact analyses. Primary processing and/or storage sites defined by organizations as part of contingency planning may change depending on the circumstances associated with the contingency.</p>
             </part>
          </control>
          <control class="SP800-53-enhancement" id="cp-2.8">
@@ -4467,7 +4467,7 @@
          <part name="statement" id="cp-3_smt">
             <part name="item" id="cp-3_smt.a">
                <prop name="label" value="a."/>
-               <p>Provide contingency training to system users consistent with assigned roles and responsibilities: </p>
+               <p>Provide contingency training to system users consistent with assigned roles and responsibilities:</p>
                <part name="item" id="cp-3_smt.a.1">
                   <prop name="label" value="1."/>
                   <p>Within <insert type="param" id-ref="cp-3_prm_1"/> of assuming a contingency role or responsibility;</p>
@@ -4496,7 +4496,7 @@
             <prop name="sort-id" value="cp-03.01"/>
             <link rel="required" href="#cp-3"/>
             <part name="statement" id="cp-3.1_smt">
-               <p>Incorporate simulated events into contingency training to facilitate effective response by personnel in crisis situations. </p>
+               <p>Incorporate simulated events into contingency training to facilitate effective response by personnel in crisis situations.</p>
             </part>
             <part name="guidance" id="cp-3.1_gdn">
                <p>The use of simulated events creates an environment for personnel to experience actual threat events, including cyber-attacks that disable websites, ransomware attacks that encrypt organizational data on servers, hurricanes that damage or destroy organizational facilities, or hardware or software failures.</p>
@@ -4878,7 +4878,7 @@
             </part>
             <part name="item" id="cp-9_smt.c">
                <prop name="label" value="c."/>
-               <p>Conduct backups of system documentation, including security- and privacy-related documentation <insert type="param" id-ref="cp-9_prm_4"/>; and  </p>
+               <p>Conduct backups of system documentation, including security- and privacy-related documentation <insert type="param" id-ref="cp-9_prm_4"/>; and</p>
             </part>
             <part name="item" id="cp-9_smt.d">
                <prop name="label" value="d."/>
@@ -4901,7 +4901,7 @@
                <p>Test backup information <insert type="param" id-ref="cp-9.1_prm_1"/> to verify media reliability and information integrity.</p>
             </part>
             <part name="guidance" id="cp-9.1_gdn">
-               <p>Organizations need assurance that backup information can be reliably retrieved. Reliability pertains to the systems and system components where the backup information is stored, the operations used to retrieve the information, and the integrity of the information being retrieved. Independent and specialized tests can be used for each of the aspects of reliability. For example, decrypting and transporting (or transmitting) a random sample of backup files from the alternate storage or backup site and comparing the information to the same information at the primary processing site can provide such assurance. </p>
+               <p>Organizations need assurance that backup information can be reliably retrieved. Reliability pertains to the systems and system components where the backup information is stored, the operations used to retrieve the information, and the integrity of the information being retrieved. Independent and specialized tests can be used for each of the aspects of reliability. For example, decrypting and transporting (or transmitting) a random sample of backup files from the alternate storage or backup site and comparing the information to the same information at the primary processing site can provide such assurance.</p>
             </part>
          </control>
          <control class="SP800-53-enhancement" id="cp-9.2">
@@ -4969,7 +4969,7 @@
                <p>Implement cryptographic mechanisms to prevent unauthorized disclosure and modification of <insert type="param" id-ref="cp-9.8_prm_1"/>.</p>
             </part>
             <part name="guidance" id="cp-9.8_gdn">
-               <p>The selection of cryptographic mechanisms is based on the need to protect the confidentiality and integrity of backup information. The strength of mechanisms selected is commensurate with the security category or classification of the information. Cryptographic protection applies to system backup information in storage at both primary and alternate locations. Organizations that implement cryptographic mechanisms to protect information at rest also consider cryptographic key management solutions. </p>
+               <p>The selection of cryptographic mechanisms is based on the need to protect the confidentiality and integrity of backup information. The strength of mechanisms selected is commensurate with the security category or classification of the information. Cryptographic protection applies to system backup information in storage at both primary and alternate locations. Organizations that implement cryptographic mechanisms to protect information at rest also consider cryptographic key management solutions.</p>
             </part>
          </control>
       </control>
@@ -5035,7 +5035,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="ia-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -5204,7 +5204,7 @@
          <control class="SP800-53-enhancement" id="ia-2.8">
             <title>Access to Accounts — Replay Resistant</title>
             <param id="ia-2.8_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>privileged accounts</choice>
                   <choice>non-privileged accounts</choice>
                </select>
@@ -5238,7 +5238,7 @@
             <label>organization-defined devices and/or types of devices</label>
          </param>
          <param id="ia-3_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>local</choice>
                <choice>remote</choice>
                <choice>network</choice>
@@ -5586,7 +5586,7 @@
                <p>Accept and electronically verify Personal Identity Verification-compliant credentials from other federal agencies.</p>
             </part>
             <part name="guidance" id="ia-8.1_gdn">
-               <p>Acceptance of Personal Identity Verification (PIV) credentials from other federal agencies applies to both logical and physical access control systems. PIV credentials are those credentials issued by federal agencies that conform to FIPS Publication 201 and supporting guidelines. The adequacy and reliability of PIV card issuers are addressed and authorized using <a href="#10963761-58fc-4b20-b3d6-b44a54daba03">SP 800-79-2</a>. </p>
+               <p>Acceptance of Personal Identity Verification (PIV) credentials from other federal agencies applies to both logical and physical access control systems. PIV credentials are those credentials issued by federal agencies that conform to FIPS Publication 201 and supporting guidelines. The adequacy and reliability of PIV card issuers are addressed and authorized using <a href="#10963761-58fc-4b20-b3d6-b44a54daba03">SP 800-79-2</a>.</p>
             </part>
          </control>
          <control class="SP800-53-enhancement" id="ia-8.2">
@@ -5638,7 +5638,7 @@
          <link rel="related" href="#ia-4"/>
          <link rel="related" href="#ia-8"/>
          <part name="statement" id="ia-11_smt">
-            <p>Require users to re-authenticate when <insert type="param" id-ref="ia-11_prm_1"/>. </p>
+            <p>Require users to re-authenticate when <insert type="param" id-ref="ia-11_prm_1"/>.</p>
          </part>
          <part name="guidance" id="ia-11_gdn">
             <p>In addition to the re-authentication requirements associated with device locks, organizations may require re-authentication of individuals in certain situations, including when roles, authenticators or credentials change, when security categories of systems change, when the execution of privileged functions occurs, after a fixed time period, or periodically.</p>
@@ -5663,7 +5663,7 @@
          <part name="statement" id="ia-12_smt">
             <part name="item" id="ia-12_smt.a">
                <prop name="label" value="a."/>
-               <p>Identity proof users that require accounts for logical access to systems based on appropriate identity assurance level requirements as specified in applicable standards and guidelines; </p>
+               <p>Identity proof users that require accounts for logical access to systems based on appropriate identity assurance level requirements as specified in applicable standards and guidelines;</p>
             </part>
             <part name="item" id="ia-12_smt.b">
                <prop name="label" value="b."/>
@@ -5686,7 +5686,7 @@
                <p>Require evidence of individual identification be presented to the registration authority.</p>
             </part>
             <part name="guidance" id="ia-12.2_gdn">
-               <p>Identity evidence, such as documentary evidence or a combination of documents and biometrics, reduces the likelihood of individuals using fraudulent identification to establish an identity or at least increases the work factor of potential adversaries. The forms of acceptable evidence are consistent with the risks to the systems, roles, and privileges associated with the user’s account. </p>
+               <p>Identity evidence, such as documentary evidence or a combination of documents and biometrics, reduces the likelihood of individuals using fraudulent identification to establish an identity or at least increases the work factor of potential adversaries. The forms of acceptable evidence are consistent with the risks to the systems, roles, and privileges associated with the user’s account.</p>
             </part>
          </control>
          <control class="SP800-53-enhancement" id="ia-12.3">
@@ -5713,7 +5713,7 @@
                <p>Require that the validation and verification of identity evidence be conducted in person before a designated registration authority.</p>
             </part>
             <part name="guidance" id="ia-12.4_gdn">
-               <p>In-person proofing reduces the likelihood of fraudulent credentials being issued because it requires the physical presence of individuals, the presentation of physical identity documents, and actual face-to-face interactions with designated registration authorities. </p>
+               <p>In-person proofing reduces the likelihood of fraudulent credentials being issued because it requires the physical presence of individuals, the presentation of physical identity documents, and actual face-to-face interactions with designated registration authorities.</p>
             </part>
          </control>
          <control class="SP800-53-enhancement" id="ia-12.5">
@@ -5745,7 +5745,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="ir-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -6159,7 +6159,7 @@
          <link rel="related" href="#sa-9"/>
          <link rel="related" href="#si-18"/>
          <part name="statement" id="ir-7_smt">
-            <p>Provide an incident response support resource, integral to the organizational incident response capability, that offers advice and assistance to users of the system for the handling and reporting of incidents. </p>
+            <p>Provide an incident response support resource, integral to the organizational incident response capability, that offers advice and assistance to users of the system for the handling and reporting of incidents.</p>
          </part>
          <part name="guidance" id="ir-7_gdn">
             <p>Incident response support resources provided by organizations include help desks, assistance groups, automated ticketing systems to open and track incident response tickets, and access to forensics services or consumer redress services, when required.</p>
@@ -6289,7 +6289,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="ma-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -6570,7 +6570,7 @@
             </part>
             <part name="item" id="ma-4_smt.e">
                <prop name="label" value="e."/>
-               <p>Terminate session and network connections when nonlocal maintenance is completed.    </p>
+               <p>Terminate session and network connections when nonlocal maintenance is completed.</p>
             </part>
          </part>
          <part name="guidance" id="ma-4_gdn">
@@ -6626,7 +6626,7 @@
             </part>
             <part name="item" id="ma-5_smt.c">
                <prop name="label" value="c."/>
-               <p>Designate organizational personnel with required access authorizations and technical competence to supervise the maintenance activities of personnel who do not possess the required access authorizations. </p>
+               <p>Designate organizational personnel with required access authorizations and technical competence to supervise the maintenance activities of personnel who do not possess the required access authorizations.</p>
             </part>
          </part>
          <part name="guidance" id="ma-5_gdn">
@@ -6700,7 +6700,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="mp-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -6833,7 +6833,7 @@
             </part>
             <part name="item" id="mp-3_smt.b">
                <prop name="label" value="b."/>
-               <p>Exempt <insert type="param" id-ref="mp-3_prm_1"/> from marking if the media remain within <insert type="param" id-ref="mp-3_prm_2"/>.  </p>
+               <p>Exempt <insert type="param" id-ref="mp-3_prm_1"/> from marking if the media remain within <insert type="param" id-ref="mp-3_prm_2"/>.</p>
             </part>
          </part>
          <part name="guidance" id="mp-3_gdn">
@@ -7072,7 +7072,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="pe-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -7199,7 +7199,7 @@
             <label>organization-defined entry and exit points to the facility where the system resides</label>
          </param>
          <param id="pe-3_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>
                   <insert type="param" id-ref="pe-3_prm_3"/>
                </choice>
@@ -7516,7 +7516,7 @@
       <control class="SP800-53" id="pe-11">
          <title>Emergency Power</title>
          <param id="pe-11_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>an orderly shutdown of the system</choice>
                <choice>transition of the system to long-term alternate power</choice>
             </select>
@@ -7622,7 +7622,7 @@
       <control class="SP800-53" id="pe-14">
          <title>Environmental Controls</title>
          <param id="pe-14_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>temperature</choice>
                <choice>humidity</choice>
                <choice>pressure</choice>
@@ -7785,7 +7785,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="pl-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -7945,7 +7945,7 @@
                </part>
                <part name="item" id="pl-2_smt.a.7">
                   <prop name="label" value="7."/>
-                  <p>Describe any specific threats to the system that are of concern to the organization; </p>
+                  <p>Describe any specific threats to the system that are of concern to the organization;</p>
                </part>
                <part name="item" id="pl-2_smt.a.8">
                   <prop name="label" value="8."/>
@@ -7986,7 +7986,7 @@
             </part>
             <part name="item" id="pl-2_smt.c">
                <prop name="label" value="c."/>
-               <p>Review the plans <insert type="param" id-ref="pl-2_prm_3"/>; </p>
+               <p>Review the plans <insert type="param" id-ref="pl-2_prm_3"/>;</p>
             </part>
             <part name="item" id="pl-2_smt.d">
                <prop name="label" value="d."/>
@@ -8010,7 +8010,7 @@
             <label>organization-defined frequency</label>
          </param>
          <param id="pl-4_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>
                   <insert type="param" id-ref="pl-4_prm_3"/>
                </choice>
@@ -8199,7 +8199,7 @@
          <link rel="related" href="#ra-9"/>
          <link rel="related" href="#sa-8"/>
          <part name="statement" id="pl-11_smt">
-            <p>Tailor the selected control baseline by applying specified tailoring actions. </p>
+            <p>Tailor the selected control baseline by applying specified tailoring actions.</p>
          </part>
          <part name="guidance" id="pl-11_gdn">
             <p>The concept of tailoring allows organizations to specialize or customize a set of baseline controls by applying a defined set of tailoring actions. Tailoring actions facilitate such specialization and customization by allowing organizations to develop security and privacy plans that reflect their specific mission and business functions, the environments where their systems operate, the threats and vulnerabilities that can affect their systems, and any other conditions or situations that can impact their mission or business success. Tailoring guidance is provided in <a href="#46d9e201-840e-440e-987c-2c773333c752">SP 800-53B</a>. Tailoring a control baseline is accomplished by identifying and designating common controls, applying scoping considerations, selecting compensating controls, assigning values to control parameters, supplementing the control baseline with additional controls as needed, and providing information for control implementation. The general tailoring actions in <a href="#46d9e201-840e-440e-987c-2c773333c752">SP 800-53B</a> can be supplemented with additional actions based on the needs of organizations. Tailoring actions can be applied to the baselines in <a href="#46d9e201-840e-440e-987c-2c773333c752">SP 800-53B</a> in accordance with the security and privacy requirements from <a href="#0c67b2a9-bede-43d2-b86d-5f35b8be36e9">FISMA</a>, <a href="#18e71fec-c6fd-475a-925a-5d8495cf8455">PRIVACT</a>, and <a href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef">OMB A-130</a>. Alternatively, other communities of interest adopting different control baselines can apply the tailoring actions in <a href="#46d9e201-840e-440e-987c-2c773333c752">SP 800-53B</a> to specialize or customize the controls that represent the specific needs and concerns of those entities.</p>
@@ -8214,7 +8214,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="ps-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -8411,7 +8411,7 @@
                <label>organization-defined automated mechanisms</label>
             </param>
             <param id="ps-4.2_prm_2">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>notify <insert type="param" id-ref="ps-4.2_prm_3"/> of individual termination actions</choice>
                   <choice>disable access to system resources</choice>
                </select>
@@ -8505,7 +8505,7 @@
             </part>
             <part name="item" id="ps-6_smt.c">
                <prop name="label" value="c."/>
-               <p>Verify that individuals requiring access to organizational information and systems: </p>
+               <p>Verify that individuals requiring access to organizational information and systems:</p>
                <part name="item" id="ps-6_smt.c.1">
                   <prop name="label" value="1."/>
                   <p>Sign appropriate access agreements prior to being granted access; and</p>
@@ -8619,7 +8619,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="ra-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -8869,7 +8869,7 @@
                </part>
             </part>
             <part name="guidance" id="ra-3.1_gdn">
-               <p>Supply chain-related events include disruption, use of defective components, insertion of counterfeits, theft, malicious development practices, improper delivery practices, and insertion of malicious code. These events can have a significant impact on the confidentiality, integrity, or availability of a system and its information and, therefore, can also adversely impact organizational operations (including mission, functions, image, or reputation), organizational assets, individuals, other organizations, and the Nation. The supply chain-related events may be unintentional or malicious and can occur at any point during the system life cycle. An analysis of supply chain risk can help an organization identify systems or components for which additional supply chain risk mitigations are required. </p>
+               <p>Supply chain-related events include disruption, use of defective components, insertion of counterfeits, theft, malicious development practices, improper delivery practices, and insertion of malicious code. These events can have a significant impact on the confidentiality, integrity, or availability of a system and its information and, therefore, can also adversely impact organizational operations (including mission, functions, image, or reputation), organizational assets, individuals, other organizations, and the Nation. The supply chain-related events may be unintentional or malicious and can occur at any point during the system life cycle. An analysis of supply chain risk can help an organization identify systems or components for which additional supply chain risk mitigations are required.</p>
             </part>
          </control>
       </control>
@@ -8930,7 +8930,7 @@
                </part>
                <part name="item" id="ra-5_smt.b.3">
                   <prop name="label" value="3."/>
-                  <p>Measuring vulnerability impact; </p>
+                  <p>Measuring vulnerability impact;</p>
                </part>
             </part>
             <part name="item" id="ra-5_smt.c">
@@ -8951,7 +8951,7 @@
             </part>
          </part>
          <part name="guidance" id="ra-5_gdn">
-            <p>Security categorization of information and systems guides the frequency and comprehensiveness of vulnerability monitoring (including scans). Organizations determine the required vulnerability monitoring for system components, ensuring that the potential sources of vulnerabilities—such as infrastructure components (e.g., switches, routers, guards, sensors), networked printers, scanners, and copiers—are not overlooked. The capability to readily update vulnerability monitoring tools as new vulnerabilities are discovered and announced and as new scanning methods are developed helps to ensure that new vulnerabilities are not missed by employed vulnerability monitoring tools. The vulnerability monitoring tool update process helps to ensure that potential vulnerabilities in the system are identified and addressed as quickly as possible. Vulnerability monitoring and analyses for custom software may require additional approaches, such as static analysis, dynamic analysis, binary analysis, or a hybrid of the three approaches. Organizations can use these analysis approaches in source code reviews and in a variety of tools, including web-based application scanners, static analysis tools, and binary analyzers. </p>
+            <p>Security categorization of information and systems guides the frequency and comprehensiveness of vulnerability monitoring (including scans). Organizations determine the required vulnerability monitoring for system components, ensuring that the potential sources of vulnerabilities—such as infrastructure components (e.g., switches, routers, guards, sensors), networked printers, scanners, and copiers—are not overlooked. The capability to readily update vulnerability monitoring tools as new vulnerabilities are discovered and announced and as new scanning methods are developed helps to ensure that new vulnerabilities are not missed by employed vulnerability monitoring tools. The vulnerability monitoring tool update process helps to ensure that potential vulnerabilities in the system are identified and addressed as quickly as possible. Vulnerability monitoring and analyses for custom software may require additional approaches, such as static analysis, dynamic analysis, binary analysis, or a hybrid of the three approaches. Organizations can use these analysis approaches in source code reviews and in a variety of tools, including web-based application scanners, static analysis tools, and binary analyzers.</p>
             <p>Vulnerability monitoring includes scanning for patch levels; scanning for functions, ports, protocols, and services that should not be accessible to users or devices; and scanning for flow control mechanisms that are improperly configured or operating incorrectly. Vulnerability monitoring may also include continuous vulnerability monitoring tools that use instrumentation to continuously analyze components. Instrumentation-based tools may improve accuracy and may be run throughout an organization without scanning. Vulnerability monitoring tools that facilitate interoperability include tools that are Security Content Automated Protocol (SCAP)-validated. Thus, organizations consider using scanning tools that express vulnerabilities in the Common Vulnerabilities and Exposures (CVE) naming convention and that employ the Open Vulnerability Assessment Language (OVAL) to determine the presence of vulnerabilities. Sources for vulnerability information include the Common Weakness Enumeration (CWE) listing and the National Vulnerability Database (NVD). Control assessments, such as red team exercises, provide additional sources of potential vulnerabilities for which to scan. Organizations also consider using scanning tools that express vulnerability impact by the Common Vulnerability Scoring System (CVSS).</p>
             <p>Vulnerability monitoring includes a channel and process for receiving reports of security vulnerabilities from the public at-large. Vulnerability disclosure programs can be as simple as publishing a monitored email address or web form that can receive reports, including notification authorizing good-faith research and disclosure of security vulnerabilities. Organizations generally expect that such research is happening with or without their authorization and can use public vulnerability disclosure channels to increase the likelihood that discovered vulnerabilities are reported directly to the organization for remediation.</p>
             <p>Organizations may also employ the use of financial incentives (also known as <q>bug bounties</q>) to further encourage external security researchers to report discovered vulnerabilities. Bug bounty programs can be tailored to the organization’s needs. Bounties can be operated indefinitely or over a defined period of time and can be offered to the general public or to a curated group. Organizations may run public and private bounties simultaneously and could choose to offer partially credentialed access to certain participants in order to evaluate security vulnerabilities from privileged vantage points.</p>
@@ -8959,7 +8959,7 @@
          <control class="SP800-53-enhancement" id="ra-5.2">
             <title>Update Vulnerabilities to Be Scanned</title>
             <param id="ra-5.2_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>
                      <insert type="param" id-ref="ra-5.2_prm_2"/>
                   </choice>
@@ -9079,7 +9079,7 @@
             <p>Identify critical system components and functions by performing a criticality analysis for <insert type="param" id-ref="ra-9_prm_1"/> at <insert type="param" id-ref="ra-9_prm_2"/>.</p>
          </part>
          <part name="guidance" id="ra-9_gdn">
-            <p>Not all system components, functions, or services necessarily require significant protections. For example, criticality analysis is a key tenet of supply chain risk management and informs the prioritization of protection activities. The identification of critical system components and functions considers applicable laws, executive orders, regulations, directives, policies, standards, system functionality requirements, system and component interfaces, and system and component dependencies. Systems engineers conduct a functional decomposition of a system to identify mission-critical functions and components. The functional decomposition includes the identification of organizational missions supported by the system, decomposition into the specific functions to perform those missions, and traceability to the hardware, software, and firmware components that implement those functions, including when the functions are shared by many components within and  external to the system. </p>
+            <p>Not all system components, functions, or services necessarily require significant protections. For example, criticality analysis is a key tenet of supply chain risk management and informs the prioritization of protection activities. The identification of critical system components and functions considers applicable laws, executive orders, regulations, directives, policies, standards, system functionality requirements, system and component interfaces, and system and component dependencies. Systems engineers conduct a functional decomposition of a system to identify mission-critical functions and components. The functional decomposition includes the identification of organizational missions supported by the system, decomposition into the specific functions to perform those missions, and traceability to the hardware, software, and firmware components that implement those functions, including when the functions are shared by many components within and  external to the system.</p>
             <p>The operational environment of a system or a system component may impact the criticality, including the connections to and dependencies on cyber-physical systems, devices, system-of-systems, and outsourced IT services. System components that allow unmediated access to critical system components or functions are considered critical due to the inherent vulnerabilities that such components create. Component and function criticality are assessed in terms of the impact of a component or function failure on the organizational missions that are supported by the system that contains the components and functions.</p>
             <p>Criticality analysis is performed when an architecture or design is being developed, modified, or upgraded. If such analysis is performed early in the system development life cycle, organizations may be able to modify the system design to reduce the critical nature of these components and functions, such as by adding redundancy or alternate paths into the system design. Criticality analysis can also influence the protection measures required by development contractors. In addition to criticality analysis for systems, system components, and system services, criticality analysis of information is an important consideration. Such analysis is conducted as part of security categorization in <a href="#ra-2">RA-2</a>.</p>
          </part>
@@ -9093,7 +9093,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="sa-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -9246,14 +9246,14 @@
             </part>
          </part>
          <part name="guidance" id="sa-3_gdn">
-            <p>A system development life cycle process provides the foundation for the successful development, implementation, and operation of organizational systems. The integration of security and privacy considerations early in the system development life cycle is a foundational principle of systems security engineering and privacy engineering. To apply the required controls within the system development life cycle requires a basic understanding of information security and privacy, threats, vulnerabilities, adverse impacts, and risk to critical mission and business functions. The security engineering principles in <a href="#sa-8">SA-8</a> help individuals properly design, code, and test systems and system components. Organizations include qualified personnel (e.g., senior agency information security officers, senior agency officials for privacy, security and privacy architects, and security and privacy engineers) in system development life cycle processes to ensure that established security and privacy requirements are incorporated into organizational systems. Role-based security and privacy training programs can ensure that individuals with key security and privacy roles and responsibilities have the experience, skills, and expertise to conduct assigned system development life cycle activities. </p>
+            <p>A system development life cycle process provides the foundation for the successful development, implementation, and operation of organizational systems. The integration of security and privacy considerations early in the system development life cycle is a foundational principle of systems security engineering and privacy engineering. To apply the required controls within the system development life cycle requires a basic understanding of information security and privacy, threats, vulnerabilities, adverse impacts, and risk to critical mission and business functions. The security engineering principles in <a href="#sa-8">SA-8</a> help individuals properly design, code, and test systems and system components. Organizations include qualified personnel (e.g., senior agency information security officers, senior agency officials for privacy, security and privacy architects, and security and privacy engineers) in system development life cycle processes to ensure that established security and privacy requirements are incorporated into organizational systems. Role-based security and privacy training programs can ensure that individuals with key security and privacy roles and responsibilities have the experience, skills, and expertise to conduct assigned system development life cycle activities.</p>
             <p>The effective integration of security and privacy requirements into enterprise architecture also helps to ensure that important security and privacy considerations are addressed throughout the system life cycle and that those considerations are directly related to organizational mission and business processes. This process also facilitates the integration of the information security and privacy architectures into the enterprise architecture, consistent with the risk management strategy of the organization. Because the system development life cycle involves multiple organizations, (e.g., external suppliers, developers, integrators, service providers), acquisition and supply chain risk management functions and controls play significant roles in the effective management of the system during the life cycle.</p>
          </part>
       </control>
       <control class="SP800-53" id="sa-4">
          <title>Acquisition Process</title>
          <param id="sa-4_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>standardized contract language</choice>
                <choice>
                   <insert type="param" id-ref="sa-4_prm_2"/>
@@ -9359,7 +9359,7 @@
          <control class="SP800-53-enhancement" id="sa-4.2">
             <title>Design and Implementation Information for Controls</title>
             <param id="sa-4.2_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>security-relevant external system interfaces</choice>
                   <choice>high-level design</choice>
                   <choice>low-level design</choice>
@@ -9474,7 +9474,7 @@
                <p>Obtain or develop administrator documentation for the system, system component, or system service that describes:</p>
                <part name="item" id="sa-5_smt.a.1">
                   <prop name="label" value="1."/>
-                  <p>Secure configuration, installation, and operation of the system, component, or service; </p>
+                  <p>Secure configuration, installation, and operation of the system, component, or service;</p>
                </part>
                <part name="item" id="sa-5_smt.a.2">
                   <prop name="label" value="2."/>
@@ -9623,7 +9623,7 @@
       <control class="SP800-53" id="sa-10">
          <title>Developer Configuration Management</title>
          <param id="sa-10_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>design</choice>
                <choice>development</choice>
                <choice>implementation</choice>
@@ -9689,7 +9689,7 @@
       <control class="SP800-53" id="sa-11">
          <title>Developer Testing and Evaluation</title>
          <param id="sa-11_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>unit</choice>
                <choice>integration</choice>
                <choice>system</choice>
@@ -9909,7 +9909,7 @@
             </part>
             <part name="item" id="sa-21_smt.b">
                <prop name="label" value="b."/>
-               <p>Satisfies the following additional personnel screening criteria: <insert type="param" id-ref="sa-21_prm_3"/>. </p>
+               <p>Satisfies the following additional personnel screening criteria: <insert type="param" id-ref="sa-21_prm_3"/>.</p>
             </part>
          </part>
          <part name="guidance" id="sa-21_gdn">
@@ -9919,7 +9919,7 @@
       <control class="SP800-53" id="sa-22">
          <title>Unsupported System Components</title>
          <param id="sa-22_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>in-house support</choice>
                <choice>
                   <insert type="param" id-ref="sa-22_prm_2"/>
@@ -9957,7 +9957,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="sc-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -10250,7 +10250,7 @@
          <control class="SP800-53-enhancement" id="sc-7.5">
             <title>Deny by Default — Allow by Exception</title>
             <param id="sc-7.5_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>at managed interfaces</choice>
                   <choice>for <insert type="param" id-ref="sc-7.5_prm_2"/>
                   </choice>
@@ -10312,7 +10312,7 @@
             <link rel="related" href="#cp-12"/>
             <link rel="related" href="#sc-24"/>
             <part name="statement" id="sc-7.18_smt">
-               <p>Prevent systems from entering unsecure states in the event of an operational failure of a boundary protection device. </p>
+               <p>Prevent systems from entering unsecure states in the event of an operational failure of a boundary protection device.</p>
             </part>
             <part name="guidance" id="sc-7.18_gdn">
                <p>Fail secure is a condition achieved by employing mechanisms to ensure that in the event of operational failures of boundary protection devices at managed interfaces, systems do not enter into unsecure states where intended security properties no longer hold. Managed interfaces include routers, firewalls, and application gateways that reside on protected subnetworks (commonly referred to as demilitarized zones). Failures of boundary protection devices cannot lead to or cause information external to the devices to enter the devices nor can failures permit unauthorized information releases.</p>
@@ -10341,7 +10341,7 @@
       <control class="SP800-53" id="sc-8">
          <title>Transmission Confidentiality and Integrity</title>
          <param id="sc-8_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>confidentiality</choice>
                <choice>integrity</choice>
             </select>
@@ -10376,12 +10376,12 @@
          </part>
          <part name="guidance" id="sc-8_gdn">
             <p>Protecting the confidentiality and integrity of transmitted information applies to internal and external networks as well as any system components that can transmit information, including servers, notebook computers, desktop computers, mobile devices, printers, copiers, scanners, facsimile machines, and radios. Unprotected communication paths are exposed to the possibility of interception and modification. Protecting the confidentiality and integrity of information can be accomplished by physical or logical means. Physical protection can be achieved by using protected distribution systems. A protected distribution system is a wireline or fiber-optics telecommunications system that includes terminals and adequate electromagnetic, acoustical, electrical, and physical controls to permit its use for the unencrypted transmission of classified information. Logical protection can be achieved by employing encryption techniques.</p>
-            <p>Organizations that rely on commercial providers who offer transmission services as commodity services rather than as fully dedicated services may find it difficult to obtain the necessary assurances regarding the implementation of needed controls for transmission confidentiality and integrity. In such situations, organizations determine what types of confidentiality or integrity services are available in standard, commercial telecommunications service packages. If it is not feasible to obtain the necessary controls and assurances of control effectiveness through appropriate contracting vehicles, organizations can implement appropriate compensating controls. </p>
+            <p>Organizations that rely on commercial providers who offer transmission services as commodity services rather than as fully dedicated services may find it difficult to obtain the necessary assurances regarding the implementation of needed controls for transmission confidentiality and integrity. In such situations, organizations determine what types of confidentiality or integrity services are available in standard, commercial telecommunications service packages. If it is not feasible to obtain the necessary controls and assurances of control effectiveness through appropriate contracting vehicles, organizations can implement appropriate compensating controls.</p>
          </part>
          <control class="SP800-53-enhancement" id="sc-8.1">
             <title>Cryptographic Protection</title>
             <param id="sc-8.1_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>prevent unauthorized disclosure of information</choice>
                   <choice>detect changes to information</choice>
                </select>
@@ -10409,7 +10409,7 @@
          <link rel="related" href="#ac-17"/>
          <link rel="related" href="#sc-23"/>
          <part name="statement" id="sc-10_smt">
-            <p>Terminate the network connection associated with a communications session at the end of the session or after <insert type="param" id-ref="sc-10_prm_1"/> of inactivity. </p>
+            <p>Terminate the network connection associated with a communications session at the end of the session or after <insert type="param" id-ref="sc-10_prm_1"/> of inactivity.</p>
          </part>
          <part name="guidance" id="sc-10_gdn">
             <p>Network disconnect applies to internal and external networks. Terminating network connections associated with specific communications sessions includes de-allocating TCP/IP address or port pairs at the operating system level and de-allocating the networking assignments at the application level if multiple application sessions are using a single operating system-level network connection. Periods of inactivity may be established by organizations and include time periods by type of network access or for specific network accesses.</p>
@@ -10706,7 +10706,7 @@
       <control class="SP800-53" id="sc-28">
          <title>Protection of Information at Rest</title>
          <param id="sc-28_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>confidentiality</choice>
                <choice>integrity</choice>
             </select>
@@ -10801,7 +10801,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="si-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -10950,7 +10950,7 @@
       <control class="SP800-53" id="si-3">
          <title>Malicious Code Protection</title>
          <param id="si-3_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>signature based</choice>
                <choice>non-signature based</choice>
             </select>
@@ -10959,13 +10959,13 @@
             <label>organization-defined frequency</label>
          </param>
          <param id="si-3_prm_3">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>endpoint</choice>
                <choice>network entry and exit points</choice>
             </select>
          </param>
          <param id="si-3_prm_4">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>block malicious code</choice>
                <choice>quarantine malicious code</choice>
                <choice>take <insert type="param" id-ref="si-3_prm_5"/>
@@ -11050,7 +11050,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="si-4_prm_5">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>as needed</choice>
                <choice>
                   <insert type="param" id-ref="si-4_prm_6"/>
@@ -11294,7 +11294,7 @@
                <label>organization-defined authorization or approval processes</label>
             </param>
             <param id="si-4.22_prm_2">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>Audit</choice>
                   <choice>Alert <insert type="param" id-ref="si-4.22_prm_3"/>
                   </choice>
@@ -11329,7 +11329,7 @@
             <label>organization-defined external organizations</label>
          </param>
          <param id="si-5_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>
                   <insert type="param" id-ref="si-5_prm_3"/>
                </choice>
@@ -11375,7 +11375,7 @@
             </part>
          </part>
          <part name="guidance" id="si-5_gdn">
-            <p>The Cybersecurity and Infrastructure Security Agency (CISA) generates security alerts and advisories to maintain situational awareness throughout the Federal Government. Security directives are issued by OMB or other designated organizations with the responsibility and authority to issue such directives. Compliance with security directives is essential due to the critical nature of many of these directives and the potential (immediate) adverse effects on organizational operations and assets, individuals, other organizations, and the Nation should the directives not be implemented in a timely manner. External organizations include supply chain partners, external mission or business partners, external service providers, and other peer or supporting organizations.  </p>
+            <p>The Cybersecurity and Infrastructure Security Agency (CISA) generates security alerts and advisories to maintain situational awareness throughout the Federal Government. Security directives are issued by OMB or other designated organizations with the responsibility and authority to issue such directives. Compliance with security directives is essential due to the critical nature of many of these directives and the potential (immediate) adverse effects on organizational operations and assets, individuals, other organizations, and the Nation should the directives not be implemented in a timely manner. External organizations include supply chain partners, external mission or business partners, external service providers, and other peer or supporting organizations.</p>
          </part>
          <control class="SP800-53-enhancement" id="si-5.1">
             <title>Automated Alerts and Advisories</title>
@@ -11399,7 +11399,7 @@
             <label>organization-defined security and privacy functions</label>
          </param>
          <param id="si-6_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>
                   <insert type="param" id-ref="si-6_prm_3"/>
                </choice>
@@ -11419,7 +11419,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="si-6_prm_6">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Shut the system down</choice>
                <choice>Restart the system</choice>
                <choice>
@@ -11519,7 +11519,7 @@
                <label>organization-defined software, firmware, and information</label>
             </param>
             <param id="si-7.1_prm_2">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>at startup</choice>
                   <choice>at <insert type="param" id-ref="si-7.1_prm_3"/>
                   </choice>
@@ -11563,7 +11563,7 @@
          <control class="SP800-53-enhancement" id="si-7.5">
             <title>Automated Response to Integrity Violations</title>
             <param id="si-7.5_prm_1">
-               <select how-many="one or more">
+               <select how-many="one-or-more">
                   <choice>shut the system down</choice>
                   <choice>restart the system</choice>
                   <choice>implement <insert type="param" id-ref="si-7.5_prm_2"/>
@@ -11775,7 +11775,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="sr-1_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>Organization-level</choice>
                <choice>Mission/business process-level</choice>
                <choice>System-level</choice>
@@ -12066,7 +12066,7 @@
       <control class="SP800-53" id="sr-8">
          <title>Notification Agreements</title>
          <param id="sr-8_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>notification of supply chain compromises</choice>
                <choice>results of assessments or audits</choice>
                <choice>
@@ -12134,7 +12134,7 @@
       <control class="SP800-53" id="sr-10">
          <title>Inspection of Systems or Components</title>
          <param id="sr-10_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>at random</choice>
                <choice>at <insert type="param" id-ref="sr-10_prm_2"/>, upon <insert type="param" id-ref="sr-10_prm_3"/>
                </choice>
@@ -12171,7 +12171,7 @@
       <control class="SP800-53" id="sr-11">
          <title>Component Authenticity</title>
          <param id="sr-11_prm_1">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>source of counterfeit component</choice>
                <choice>
                   <insert type="param" id-ref="sr-11_prm_2"/>
@@ -12202,7 +12202,7 @@
             </part>
             <part name="item" id="sr-11_smt.b">
                <prop name="label" value="b."/>
-               <p>Report counterfeit system components to <insert type="param" id-ref="sr-11_prm_1"/>.     </p>
+               <p>Report counterfeit system components to <insert type="param" id-ref="sr-11_prm_1"/>.</p>
             </part>
          </part>
          <part name="guidance" id="sr-11_gdn">
@@ -12267,7 +12267,7 @@
       <resource uuid="91f992fb-f668-4c91-a50f-0f05b95ccee3">
          <title>32 CFR 2002</title>
          <citation>
-            <text>Code of Federal Regulations, Title 32, <i>Controlled Unclassified Information</i> (32 C.F.R. 2002).</text>
+            <text>Code of Federal Regulations, Title 32, <em>Controlled Unclassified Information</em> (32 C.F.R. 2002).</text>
          </citation>
          <rlink href="https://www.federalregister.gov/documents/2016/09/14/2016-21665/controlled-unclassified-information"/>
       </resource>
@@ -12282,63 +12282,63 @@
       <resource uuid="a5ef5e56-5c1a-4911-b419-37dddc1b3581">
          <title>5 CFR 731</title>
          <citation>
-            <text>Code of Federal Regulations, Title 5, <i>Administrative Personnel</i>, Section 731.106, <i>Designation of Public Trust Positions and Investigative Requirements</i> (5 C.F.R. 731.106).</text>
+            <text>Code of Federal Regulations, Title 5, <em>Administrative Personnel</em>, Section 731.106, <em>Designation of Public Trust Positions and Investigative Requirements</em> (5 C.F.R. 731.106).</text>
          </citation>
          <rlink href="https://www.govinfo.gov/content/pkg/CFR-2012-title5-vol2/pdf/CFR-2012-title5-vol2-sec731-106.pdf"/>
       </resource>
       <resource uuid="031cc4b7-9adf-4835-98f1-f1ca493519cf">
          <title>CNSSD 505</title>
          <citation>
-            <text>Committee on National Security Systems Directive No. 505, <i>Supply Chain Risk Management (SCRM)</i>, August 2017.</text>
+            <text>Committee on National Security Systems Directive No. 505, <em>Supply Chain Risk Management (SCRM)</em>, August 2017.</text>
          </citation>
          <rlink href="https://www.cnss.gov/CNSS/issuances/Directives.cfm"/>
       </resource>
       <resource uuid="4e4fbc93-333d-45e6-a875-de36b878b6b9">
          <title>CNSSI 1253</title>
          <citation>
-            <text>Committee on National Security Systems Instruction No. 1253, <i>Security Categorization and Control Selection for National Security Systems</i>, March 2014.</text>
+            <text>Committee on National Security Systems Instruction No. 1253, <em>Security Categorization and Control Selection for National Security Systems</em>, March 2014.</text>
          </citation>
          <rlink href="https://www.cnss.gov/CNSS/issuances/Instructions.cfm"/>
       </resource>
       <resource uuid="4f42ee6e-86cc-403b-a51f-76c2b4f81b54">
          <title>DHS TIC</title>
          <citation>
-            <text>Department of Homeland Security, <i>Trusted Internet Connections (TIC)</i>.</text>
+            <text>Department of Homeland Security, <em>Trusted Internet Connections (TIC)</em>.</text>
          </citation>
          <rlink href="https://www.dhs.gov/trusted-internet-connections"/>
       </resource>
       <resource uuid="aa66e14f-e7cb-4a37-99d2-07578dfd4608">
          <title>DOD STIG</title>
          <citation>
-            <text>Defense Information Systems Agency, <i>Security Technical Implementation Guides (STIG)</i>.</text>
+            <text>Defense Information Systems Agency, <em>Security Technical Implementation Guides (STIG)</em>.</text>
          </citation>
          <rlink href="https://public.cyber.mil/stigs"/>
       </resource>
       <resource uuid="55b0c93a-5e48-457a-baa6-5ce81c239c49">
          <title>EO 13526</title>
          <citation>
-            <text>Executive Order 13526, <i>Classified National Security Information</i>, December 2009.</text>
+            <text>Executive Order 13526, <em>Classified National Security Information</em>, December 2009.</text>
          </citation>
          <rlink href="https://www.archives.gov/isoo/policy-documents/cnsi-eo.html"/>
       </resource>
       <resource uuid="34a5571f-e252-4309-a8a1-2fdb2faefbcd">
          <title>EO 13556</title>
          <citation>
-            <text>Executive Order 13556, <i>Controlled Unclassified Information</i>, November 2010.</text>
+            <text>Executive Order 13556, <em>Controlled Unclassified Information</em>, November 2010.</text>
          </citation>
          <rlink href="https://obamawhitehouse.archives.gov/the-press-office/2010/11/04/executive-order-13556-controlled-unclassified-information"/>
       </resource>
       <resource uuid="0af071a6-cf8e-48ee-8c82-fe91efa20f94">
          <title>EO 13587</title>
          <citation>
-            <text>Executive Order 13587, <i>Structural Reforms to Improve the Security of Classified Networks and the Responsible Sharing and Safeguarding of Classified Information</i>, October 2011.</text>
+            <text>Executive Order 13587, <em>Structural Reforms to Improve the Security of Classified Networks and the Responsible Sharing and Safeguarding of Classified Information</em>, October 2011.</text>
          </citation>
          <rlink href="https://obamawhitehouse.archives.gov/the-press-office/2011/10/07/executive-order-13587-structural-reforms-improve-security-classified-net"/>
       </resource>
       <resource uuid="21caa535-1154-4369-ba7b-32c309fee0f7">
          <title>EO 13873</title>
          <citation>
-            <text>Executive Order 13873, <i>Executive Order on Securing the Information and Communications Technology and Services Supply Chain</i>, May 2019.</text>
+            <text>Executive Order 13873, <em>Executive Order on Securing the Information and Communications Technology and Services Supply Chain</em>, May 2019.</text>
          </citation>
          <rlink href="https://www.whitehouse.gov/presidential-actions/executive-order-securing-information-communications-technology-services-supply-chain"/>
       </resource>
@@ -12352,7 +12352,7 @@
       <resource uuid="a1555677-2b9d-4868-a97b-a1363aff32f5">
          <title>FED PKI</title>
          <citation>
-            <text>General Services Administration, <i>Federal Public Key Infrastructure</i>.</text>
+            <text>General Services Administration, <em>Federal Public Key Infrastructure</em>.</text>
          </citation>
          <rlink href="https://www.idmanagement.gov/topics/fpki"/>
       </resource>
@@ -12576,49 +12576,49 @@
       <resource uuid="6afc1b04-c9d6-4023-adbc-f8fbe33a3c73">
          <title>ISO 15408-1</title>
          <citation>
-            <text>International Organization for Standardization/International Electrotechnical Commission 15408-1:2009, <i>Information technology —Security techniques — Evaluation criteria for IT security — Part 1: Introduction and general model</i>, April 2017.</text>
+            <text>International Organization for Standardization/International Electrotechnical Commission 15408-1:2009, <em>Information technology —Security techniques — Evaluation criteria for IT security — Part 1: Introduction and general model</em>, April 2017.</text>
          </citation>
          <rlink href="https://www.commoncriteriaportal.org/files/ccfiles/CCPART1V3.1R5.pdf"/>
       </resource>
       <resource uuid="87087451-2af5-43d4-88c1-d66ad850f614">
          <title>ISO 15408-2</title>
          <citation>
-            <text>International Organization for Standardization/International Electrotechnical Commission 15408-2:2008, <i>Information technology —Security techniques — Evaluation criteria for IT security — Part 2: Security functional requirements</i>, April 2017.</text>
+            <text>International Organization for Standardization/International Electrotechnical Commission 15408-2:2008, <em>Information technology —Security techniques — Evaluation criteria for IT security — Part 2: Security functional requirements</em>, April 2017.</text>
          </citation>
          <rlink href="https://www.commoncriteriaportal.org/files/ccfiles/CCPART2V3.1R5.pdf"/>
       </resource>
       <resource uuid="4452efc0-e79e-47b8-aa30-b54f3ef61c2f">
          <title>ISO 15408-3</title>
          <citation>
-            <text>International Organization for Standardization/International Electrotechnical Commission 15408-3:2008, <i>Information technology—Security techniques — Evaluation criteria for IT security — Part 3: Security assurance requirements</i>, April 2017.</text>
+            <text>International Organization for Standardization/International Electrotechnical Commission 15408-3:2008, <em>Information technology—Security techniques — Evaluation criteria for IT security — Part 3: Security assurance requirements</em>, April 2017.</text>
          </citation>
          <rlink href="https://www.commoncriteriaportal.org/files/ccfiles/CCPART3V3.1R5.pdf"/>
       </resource>
       <resource uuid="15a95e24-65b6-4686-bc18-90855a10457d">
          <title>ISO 20243</title>
          <citation>
-            <text>International Organization for Standardization/International Electrotechnical Commission 20243-1:2018, <i>Information technology — Open Trusted Technology Provider<sup>TM</sup> Standard (O-TTPS) — Mitigating maliciously tainted and counterfeit products — Part 1: Requirements and recommendations</i>, February 2018.</text>
+            <text>International Organization for Standardization/International Electrotechnical Commission 20243-1:2018, <em>Information technology — Open Trusted Technology Provider™ Standard (O-TTPS) — Mitigating maliciously tainted and counterfeit products — Part 1: Requirements and recommendations</em>, February 2018.</text>
          </citation>
          <rlink href="https://www.iso.org/standard/74399.html"/>
       </resource>
       <resource uuid="863caf2a-978a-4260-9e8d-4a8929bce40c">
          <title>ISO 27036</title>
          <citation>
-            <text>International Organization for Standardization/International Electrotechnical Commission 27036-1:2014, <i>Information technology—Security techniques—Information security for supplier relationships, Part 1: Overview and concepts</i>, April 2014.</text>
+            <text>International Organization for Standardization/International Electrotechnical Commission 27036-1:2014, <em>Information technology—Security techniques—Information security for supplier relationships, Part 1: Overview and concepts</em>, April 2014.</text>
          </citation>
          <rlink href="https://www.iso.org/standard/59648.html"/>
       </resource>
       <resource uuid="8df72805-2e5c-4731-a73e-81db0f0318d0">
          <title>ISO 29147</title>
          <citation>
-            <text>International Organization for Standardization/International Electrotechnical Commission 29147:2018, <i>Information technology—Security techniques—Vulnerability disclosure</i>, October 2018.</text>
+            <text>International Organization for Standardization/International Electrotechnical Commission 29147:2018, <em>Information technology—Security techniques—Vulnerability disclosure</em>, October 2018.</text>
          </citation>
          <rlink href="https://www.iso.org/standard/72311.html"/>
       </resource>
       <resource uuid="06ce9216-bd54-4054-a422-94f358b50a5d">
          <title>ISO 29148</title>
          <citation>
-            <text>International Organization for Standardization/International Electrotechnical Commission/Institute of Electrical and Electronics Engineers (ISO/IEC/IEEE) 29148:2018, <i>Systems and software engineering—Life cycle processes—Requirements engineering</i>, November 2018.</text>
+            <text>International Organization for Standardization/International Electrotechnical Commission/Institute of Electrical and Electronics Engineers (ISO/IEC/IEEE) 29148:2018, <em>Systems and software engineering—Life cycle processes—Requirements engineering</em>, November 2018.</text>
          </citation>
          <rlink href="https://www.iso.org/standard/72089.html"/>
       </resource>
@@ -12632,42 +12632,42 @@
       <resource uuid="d744d9a3-73eb-4085-b9ff-79e82e9e2d6e">
          <title>NCPR</title>
          <citation>
-            <text>National Institute of Standards and Technology (2020) <i>National Checklist Program Repository</i>. Available at</text>
+            <text>National Institute of Standards and Technology (2020) <em>National Checklist Program Repository</em>. Available at</text>
          </citation>
          <rlink href="https://nvd.nist.gov/ncp/repository"/>
       </resource>
       <resource uuid="795aff72-3e6c-4b6b-a80a-b14d84b7f544">
          <title>NIAP CCEVS</title>
          <citation>
-            <text>National Information Assurance Partnership, <i>Common Criteria Evaluation and Validation Scheme</i>.</text>
+            <text>National Information Assurance Partnership, <em>Common Criteria Evaluation and Validation Scheme</em>.</text>
          </citation>
          <rlink href="https://www.niap-ccevs.org"/>
       </resource>
       <resource uuid="84dc1b0c-acb7-4269-84c4-00dbabacd78c">
          <title>NIST CAVP</title>
          <citation>
-            <text>National Institute of Standards and Technology (2020) <i>Cryptographic Algorithm Validation Program</i>. Available at</text>
+            <text>National Institute of Standards and Technology (2020) <em>Cryptographic Algorithm Validation Program</em>. Available at</text>
          </citation>
          <rlink href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program"/>
       </resource>
       <resource uuid="1acdc775-aafb-4d11-9341-dc6a822e9d38">
          <title>NIST CMVP</title>
          <citation>
-            <text>National Institute of Standards and Technology (2020) <i>Cryptographic Module Validation Program</i>. Available at</text>
+            <text>National Institute of Standards and Technology (2020) <em>Cryptographic Module Validation Program</em>. Available at</text>
          </citation>
          <rlink href="https://csrc.nist.gov/projects/cryptographic-module-validation-program"/>
       </resource>
       <resource uuid="3d575737-98cb-459d-b41c-d7e82b73ad78">
          <title>NSA CSFC</title>
          <citation>
-            <text>National Security Agency, <i>Commercial Solutions for Classified Program (CSfC)</i>.</text>
+            <text>National Security Agency, <em>Commercial Solutions for Classified Program (CSfC)</em>.</text>
          </citation>
          <rlink href="https://www.nsa.gov/resources/everyone/csfc"/>
       </resource>
       <resource uuid="df9f87e9-71e7-4c74-9ac3-3cabd4e92f21">
          <title>NSA MEDIA</title>
          <citation>
-            <text>National Security Agency, <i>Media Destruction Guidance</i>.</text>
+            <text>National Security Agency, <em>Media Destruction Guidance</em>.</text>
          </citation>
          <rlink href="https://www.nsa.gov/resources/everyone/media-destruction"/>
       </resource>
@@ -12681,21 +12681,21 @@
       <resource uuid="27847491-5ce1-4f6a-a1e4-9e483782f0ef">
          <title>OMB A-130</title>
          <citation>
-            <text>Office of Management and Budget Memorandum Circular A-130, <i>Managing Information as a Strategic Resource</i>, July 2016.</text>
+            <text>Office of Management and Budget Memorandum Circular A-130, <em>Managing Information as a Strategic Resource</em>, July 2016.</text>
          </citation>
          <rlink href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/circulars/A130/a130revised.pdf"/>
       </resource>
       <resource uuid="5f4705ac-8d17-438c-b23a-ac7f12362ae4">
          <title>OMB M-17-12</title>
          <citation>
-            <text>Office of Management and Budget Memorandum M-17-12, <i>Preparing for and Responding to a Breach of Personally Identifiable Information</i>, January 2017.</text>
+            <text>Office of Management and Budget Memorandum M-17-12, <em>Preparing for and Responding to a Breach of Personally Identifiable Information</em>, January 2017.</text>
          </citation>
          <rlink href="https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2017/m-17-12_0.pdf"/>
       </resource>
       <resource uuid="c5e11048-1d38-4af3-b00b-0d88dc26860c">
          <title>OMB M-19-03</title>
          <citation>
-            <text>Office of Management and Budget Memorandum M-19-03, <i>Strengthening the Cybersecurity of Federal Agencies by Enhancing the High Value Asset Program</i>, December 2018.</text>
+            <text>Office of Management and Budget Memorandum M-19-03, <em>Strengthening the Cybersecurity of Federal Agencies by Enhancing the High Value Asset Program</em>, December 2018.</text>
          </citation>
          <rlink href="https://www.whitehouse.gov/wp-content/uploads/2018/12/M-19-03.pdf"/>
       </resource>
@@ -13269,27 +13269,27 @@
       <resource uuid="e922fc50-b1f9-469f-92ef-ed7d9803611c">
          <title>USC 2901</title>
          <citation>
-            <text>United States Code, 2008 Edition, Title 44 - <i>Public Printing and Documents</i>, Chapters 29, 31, and 33, January 2012.</text>
+            <text>United States Code, 2008 Edition, Title 44 - <em>Public Printing and Documents</em>, Chapters 29, 31, and 33, January 2012.</text>
          </citation>
          <rlink href="https://www.govinfo.gov/content/pkg/USCODE-2011-title44/pdf/USCODE-2011-title44-chap29-sec2901.pdf"/>
       </resource>
       <resource uuid="40b78258-c892-480e-9af8-77ac36648301">
          <title>USCERT IR</title>
          <citation>
-            <text>Department of Homeland Security, <i>US-CERT Federal Incident Notification Guidelines</i>, April 2017.</text>
+            <text>Department of Homeland Security, <em>US-CERT Federal Incident Notification Guidelines</em>, April 2017.</text>
          </citation>
          <rlink href="https://us-cert.cisa.gov/incident-notification-guidelines"/>
       </resource>
       <resource uuid="98498928-3ca3-44b3-8b1e-f48685373087">
          <title>USGCB</title>
          <citation>
-            <text>National Institute of Standards and Technology (2020) <i>United States Government Configuration Baseline</i>. Available at</text>
+            <text>National Institute of Standards and Technology (2020) <em>United States Government Configuration Baseline</em>. Available at</text>
          </citation>
          <rlink href="https://csrc.nist.gov/projects/united-states-government-configuration-baseline"/>
       </resource>
       <resource uuid="c3397cc9-83c6-4459-adb2-836739dc1b94">
-         <title>NIST Special Publication 800-53, Revision 5: <i> Security and Privacy
-                        Controls for Information Systems and Organizations</i> (PDF)</title>
+         <title>NIST Special Publication 800-53, Revision 5: <em> Security and Privacy
+                        Controls for Information Systems and Organizations</em> (PDF)</title>
          <rlink media-type="application/pdf"
                 href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf"/>
       </resource>

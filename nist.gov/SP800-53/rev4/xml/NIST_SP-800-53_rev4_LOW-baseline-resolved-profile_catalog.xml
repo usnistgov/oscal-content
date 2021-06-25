@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="ecf6ce16-17d3-4063-b405-17fbca2e9c71">
+         uuid="80b0a3b6-0dd2-4b00-a6d0-c0463c21009f">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 4 LOW IMPACT BASELINE</title>
-      <last-modified>2021-05-18T18:46:19.070616Z</last-modified>
+      <last-modified>2021-06-10T17:34:15.3063Z</last-modified>
       <version>2015-01-22</version>
-      <oscal-version>1.0.0-rc2</oscal-version>
+      <oscal-version>1.0.0</oscal-version>
       <link rel="resolution-source"
             href="NIST_SP-800-53_rev4_LOW-baseline_profile.xml"/>
       <role id="creator">
@@ -8368,7 +8368,7 @@
             <label>organization-defined entry/exit points to the facility where the information system resides</label>
          </param>
          <param id="pe-3_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>
                   <insert type="param" id-ref="pe-3_prm_3"/>
                </choice>
@@ -12920,13 +12920,13 @@
             <label>organization-defined frequency</label>
          </param>
          <param id="si-3_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>endpoint</choice>
                <choice>network entry/exit points</choice>
             </select>
          </param>
          <param id="si-3_prm_3">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>block malicious code</choice>
                <choice>quarantine malicious code</choice>
                <choice>send alert to administrator</choice>
@@ -13112,7 +13112,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <param id="si-4_prm_5">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>as needed</choice>
                <choice>
                   <insert type="param" id-ref="si-4_prm_6"/>
@@ -13351,7 +13351,7 @@
             <label>organization-defined external organizations</label>
          </param>
          <param id="si-5_prm_2">
-            <select how-many="one or more">
+            <select how-many="one-or-more">
                <choice>
                   <insert type="param" id-ref="si-5_prm_3"/>
                </choice>

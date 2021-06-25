@@ -1,21 +1,21 @@
 ---
 catalog:
-  uuid: 0eea0026-eb3f-48ff-8512-e4f7ec2c3c15
+  uuid: 3774332f-a28d-4e61-8c3e-31171abbe07c
   metadata:
     title: "NIST Special Publication 800-53: Security and Privacy Controls for
       Federal Information Systems and Organizations, Revision 5 Final Public
       Draft"
-    last-modified: 2021-04-07T12:50:11.957-04:00
+    last-modified: 2021-06-08T13:57:30.880464-04:00
     version: Revision 5
-    oscal-version: 1.0.0-rc2
+    oscal-version: 1.0.0
     props:
       - name: keywords
-        value: >-
-          assurance, availability, computer security, confidentiality, control,
-                   cybersecurity, FISMA, information security, information system, integrity, personally
-                   identifiable information, Privacy Act, privacy controls, privacy functions, privacy
-                   requirements, Risk Management Framework, security controls, security functions, security
-                   requirements, system, system security
+        value: assurance, availability, computer security, confidentiality, control,
+          cybersecurity, FISMA, information security, information system,
+          integrity, personally identifiable information, Privacy Act, privacy
+          controls, privacy functions, privacy requirements, Risk Management
+          Framework, security controls, security functions, security
+          requirements, system, system security
     links:
       - href: "#90ec1671-8dcf-4bcf-8efe-ac6d06a806f0"
         rel: alternate
@@ -42,10 +42,10 @@ catalog:
             state: MD
             postal-code: 20899-8930
     responsible-parties:
-      creator:
+      - role-id: creator
         party-uuids:
           - 4ae7292e-6d8e-4735-86ea-11047c575e87
-      contact:
+      - role-id: contact
         party-uuids:
           - 4ae7292e-6d8e-4735-86ea-11047c575e87
   groups:
@@ -61,7 +61,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: ac-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - organization-level
                   - mission/business process-level
@@ -899,7 +899,7 @@ catalog:
               params:
                 - id: ac-2.14_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - shared
                       - guest
@@ -1940,7 +1940,7 @@ catalog:
                   label: organization-defined information flow control mechanisms
                 - id: ac-4.4_prm_2
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - decrypting the information
                       - blocking the flow of the encrypted information
@@ -2061,7 +2061,7 @@ catalog:
                   label: organization-defined information flows
                 - id: ac-4.8_prm_3
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - block
                       - strip
@@ -2330,7 +2330,7 @@ catalog:
               params:
                 - id: ac-4.17_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - organization
                       - system
@@ -2541,7 +2541,7 @@ catalog:
               params:
                 - id: ac-4.25_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - delivery of malicious content, command and control of
                         malicious code, malicious code augmentation, and
@@ -3259,7 +3259,7 @@ catalog:
               label: organization-defined time-period
             - id: ac-7_prm_3
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - "lock the account or node for an {{ insert: param,
                     ac-7_prm_4 }} "
@@ -3747,7 +3747,7 @@ catalog:
           params:
             - id: ac-11_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - "initiating a device lock after {{ insert: param,
                     ac-11_prm_2 }} of inactivity"
@@ -4914,7 +4914,7 @@ catalog:
               params:
                 - id: ac-18.1_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - users
                       - devices
@@ -5316,7 +5316,7 @@ catalog:
           params:
             - id: ac-20_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - " {{ insert: param, ac-20_prm_2 }} "
                   - " {{ insert: param, ac-20_prm_3 }} "
@@ -6040,7 +6040,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: at-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - organization-level
                   - mission/business process-level
@@ -6902,7 +6902,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: au-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - organization-level
                   - mission/business process-level
@@ -7947,7 +7947,7 @@ catalog:
               params:
                 - id: au-6.5_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - vulnerability scanning information
                       - performance data
@@ -8028,7 +8028,7 @@ catalog:
               params:
                 - id: au-6.7_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - system process
                       - role
@@ -8561,7 +8561,7 @@ catalog:
               params:
                 - id: au-9.5_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - movement
                       - deletion
@@ -9306,7 +9306,7 @@ catalog:
               label: organization-defined users or roles
             - id: au-14_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - record
                   - view
@@ -9591,7 +9591,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: ca-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - organization-level
                   - mission/business process-level
@@ -9972,7 +9972,7 @@ catalog:
                       - unannounced
                 - id: ca-2.2_prm_3
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - in-depth monitoring
                       - security instrumentation
@@ -10073,7 +10073,7 @@ catalog:
           params:
             - id: ca-3_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - interconnection security agreements
                   - information exchange security agreements
@@ -11279,7 +11279,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: cm-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - organization-level
                   - mission/business process-level
@@ -11720,7 +11720,7 @@ catalog:
               label: organization-defined configuration change control element
             - id: cm-3_prm_3
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - " {{ insert: param, cm-3_prm_4 }} "
                   - "when {{ insert: param, cm-3_prm_5 }} "
@@ -12902,7 +12902,7 @@ catalog:
               params:
                 - id: cm-7.2_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - " {{ insert: param, cm-7.2_prm_2 }} "
                       - rules authorizing the terms and conditions of software
@@ -13396,7 +13396,7 @@ catalog:
                   label: organization-defined frequency
                 - id: cm-8.3_prm_3
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - disable network access by such components
                       - isolate the components
@@ -13470,7 +13470,7 @@ catalog:
               params:
                 - id: cm-8.4_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - name
                       - position
@@ -14160,7 +14160,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: cp-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - organization-level
                   - mission/business process-level
@@ -16338,7 +16338,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: ia-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - organization-level
                   - mission/business process-level
@@ -16722,14 +16722,14 @@ catalog:
               params:
                 - id: ia-2.6_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - local
                       - network
                       - remote
                 - id: ia-2.6_prm_2
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - privileged accounts
                       - non-privileged accounts
@@ -16794,7 +16794,7 @@ catalog:
               params:
                 - id: ia-2.8_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - privileged accounts
                       - non-privileged accounts
@@ -16951,7 +16951,7 @@ catalog:
               label: organization-defined devices and/or types of devices
             - id: ia-3_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - local
                   - remote
@@ -17018,7 +17018,7 @@ catalog:
                   label: organization-defined devices and/or types of devices
                 - id: ia-3.1_prm_2
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - local
                       - remote
@@ -18830,7 +18830,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: ir-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - organization-level
                   - mission/business process-level
@@ -20547,7 +20547,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: ma-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - organization-level
                   - mission/business process-level
@@ -21848,7 +21848,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: mp-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - organization-level
                   - mission/business process-level
@@ -23002,7 +23002,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: pe-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - organization-level
                   - mission/business process-level
@@ -23279,7 +23279,7 @@ catalog:
               params:
                 - id: pe-2.3_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - security clearances for all information contained within
                         the system
@@ -23321,7 +23321,7 @@ catalog:
                 system resides
             - id: pe-3_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - " {{ insert: param, pe-3_prm_3 }} "
                   - guards
@@ -23608,7 +23608,7 @@ catalog:
                   label: organization-defined controls
                 - id: pe-3.5_prm_2
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - detect
                       - prevent
@@ -24302,7 +24302,7 @@ catalog:
           params:
             - id: pe-11_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - an orderly shutdown of the system
                   - transition of the system to long-term alternate power
@@ -24604,7 +24604,7 @@ catalog:
           params:
             - id: pe-14_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - temperature
                   - humidity
@@ -25143,7 +25143,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: pl-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - organization-level
                   - mission/business process-level
@@ -25621,7 +25621,7 @@ catalog:
               label: organization-defined frequency
             - id: pl-4_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - " {{ insert: param, pl-4_prm_3 }} "
                   - when the rules are revised or updated
@@ -28836,7 +28836,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: ps-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - organization-level
                   - mission/business process-level
@@ -29826,7 +29826,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: pt-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - organization-level
                   - mission/business process-level
@@ -31018,7 +31018,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: ra-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - organization-level
                   - mission/business process-level
@@ -31845,7 +31845,7 @@ catalog:
               params:
                 - id: ra-5.2_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - " {{ insert: param, ra-5.2_prm_2 }} "
                       - prior to a new scan
@@ -32105,7 +32105,7 @@ catalog:
               label: organization-defined locations
             - id: ra-6_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - " {{ insert: param, ra-6_prm_3 }} "
                   - " {{ insert: param, ra-6_prm_4 }} "
@@ -32460,7 +32460,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: sa-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - organization-level
                   - mission/business process-level
@@ -32883,7 +32883,7 @@ catalog:
           params:
             - id: sa-4_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - standardized contract language
                   - " {{ insert: param, sa-4_prm_2 }} "
@@ -33099,7 +33099,7 @@ catalog:
               params:
                 - id: sa-4.2_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - security-relevant external system interfaces
                       - high-level design
@@ -35579,7 +35579,7 @@ catalog:
               params:
                 - id: sa-9.5_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - information processing
                       - information or data
@@ -35716,7 +35716,7 @@ catalog:
           params:
             - id: sa-10_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - design
                   - development
@@ -36004,7 +36004,7 @@ catalog:
           params:
             - id: sa-11_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - unit
                   - integration
@@ -36869,7 +36869,7 @@ catalog:
               params:
                 - id: sa-15.1_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - " {{ insert: param, sa-15.1_prm_2 }} "
                       - " {{ insert: param, sa-15.1_prm_3 }} "
@@ -38094,7 +38094,7 @@ catalog:
           params:
             - id: sa-22_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - in-house support
                   - " {{ insert: param, sa-22_prm_2 }} "
@@ -38173,7 +38173,7 @@ catalog:
           params:
             - id: sa-23_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - design modification
                   - augmentation
@@ -38224,7 +38224,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: sc-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - organization-level
                   - mission/business process-level
@@ -38891,7 +38891,7 @@ catalog:
               label: organization-defined resources
             - id: sc-6_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - priority
                   - quota
@@ -39180,7 +39180,7 @@ catalog:
               params:
                 - id: sc-7.5_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - at managed interfaces
                       - "for {{ insert: param, sc-7.5_prm_2 }} "
@@ -39975,7 +39975,7 @@ catalog:
           params:
             - id: sc-8_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - confidentiality
                   - integrity
@@ -40071,7 +40071,7 @@ catalog:
               params:
                 - id: sc-8.1_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - prevent unauthorized disclosure of information
                       - detect changes to information
@@ -40106,7 +40106,7 @@ catalog:
               params:
                 - id: sc-8.2_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - confidentiality
                       - integrity
@@ -40211,7 +40211,7 @@ catalog:
                   label: organization-defined protected distribution system
                 - id: sc-8.5_prm_2
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - prevent unauthorized disclosure of information
                       - detect changes to information
@@ -40837,7 +40837,7 @@ catalog:
               params:
                 - id: sc-15.1_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - physical
                       - logical
@@ -41753,7 +41753,7 @@ catalog:
           params:
             - id: sc-28_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - confidentiality
                   - integrity
@@ -42215,7 +42215,7 @@ catalog:
           params:
             - id: sc-31_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - storage
                   - timing
@@ -42285,7 +42285,7 @@ catalog:
               params:
                 - id: sc-31.2_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - storage
                       - timing
@@ -43875,7 +43875,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: si-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - organization-level
                   - mission/business process-level
@@ -44276,7 +44276,7 @@ catalog:
           params:
             - id: si-3_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - signature based
                   - non-signature based
@@ -44284,13 +44284,13 @@ catalog:
               label: organization-defined frequency
             - id: si-3_prm_3
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - endpoint
                   - network entry/exit points
             - id: si-3_prm_4
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - block malicious code
                   - quarantine malicious code
@@ -44591,7 +44591,7 @@ catalog:
                   label: organization-defined unauthorized operating system commands
                 - id: si-3.8_prm_3
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - issue a warning
                       - audit the command execution
@@ -44739,7 +44739,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: si-4_prm_5
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - as needed
                   - " {{ insert: param, si-4_prm_6 }} "
@@ -45570,7 +45570,7 @@ catalog:
                   label: organization-defined authorization or approval processes
                 - id: si-4.22_prm_2
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - audit
                       - "alert {{ insert: param, si-4.22_prm_3 }} "
@@ -45711,7 +45711,7 @@ catalog:
               label: organization-defined external organizations
             - id: si-5_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - " {{ insert: param, si-5_prm_3 }} "
                   - " {{ insert: param, si-5_prm_4 }} "
@@ -45824,7 +45824,7 @@ catalog:
               label: organization-defined security and privacy functions
             - id: si-6_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - " {{ insert: param, si-6_prm_3 }} "
                   - upon command by user with appropriate privilege
@@ -45839,7 +45839,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: si-6_prm_6
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - Shut the system down
                   - Restart the system
@@ -46083,7 +46083,7 @@ catalog:
                   label: organization-defined software, firmware, and information
                 - id: si-7.1_prm_2
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - at startup
                       - "at {{ insert: param, si-7.1_prm_3 }} "
@@ -46183,7 +46183,7 @@ catalog:
               params:
                 - id: si-7.5_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - shut the system down
                       - restart the system
@@ -46284,7 +46284,7 @@ catalog:
               params:
                 - id: si-7.8_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - generate an audit record
                       - alert current user
@@ -47321,7 +47321,7 @@ catalog:
                   label: organization-defined time-period
                 - id: si-13.4_prm_2
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - "Activate {{ insert: param, si-13.4_prm_3 }} "
                       - Automatically shut down the system
@@ -47405,7 +47405,7 @@ catalog:
               label: organization-defined system components and services
             - id: si-14_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - upon end of session of use
                   - "periodically at {{ insert: param, si-14_prm_3 }} "
@@ -48377,7 +48377,7 @@ catalog:
               label: organization-defined personnel or roles
             - id: sr-1_prm_2
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - organization-level
                   - mission/business process-level
@@ -49256,7 +49256,7 @@ catalog:
               params:
                 - id: sr-6.1_prm_1
                   select:
-                    how-many: one or more
+                    how-many: one-or-more
                     choice:
                       - organizational analysis
                       - independent third-party analysis
@@ -49354,7 +49354,7 @@ catalog:
           params:
             - id: sr-8_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - notification of supply chain compromises
                   - results of assessments or audits
@@ -49474,7 +49474,7 @@ catalog:
           params:
             - id: sr-10_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - at random
                   - "at {{ insert: param, sr-10_prm_2 }}, upon {{ insert: param,
@@ -49531,7 +49531,7 @@ catalog:
           params:
             - id: sr-11_prm_1
               select:
-                how-many: one or more
+                how-many: one-or-more
                 choice:
                   - source of counterfeit component
                   - " {{ insert: param, sr-11_prm_2 }} "

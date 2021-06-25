@@ -1,11 +1,11 @@
 ---
 catalog:
-  uuid: a2c6c186-26e8-428d-baad-c0358d454a8e
+  uuid: 6ce0c746-df98-4de3-a269-707085877cd2
   metadata:
     title: SP800-53 PRIVACY BASELINE
-    last-modified: 2021-05-18T18:48:07.153051Z
+    last-modified: 2021-06-10T17:36:22.591292Z
     version: FPD
-    oscal-version: 1.0.0-rc2
+    oscal-version: 1.0.0
     links:
       - href: NIST_SP-800-53_rev5-FPD_PRIVACY-baseline_profile.xml
         rel: resolution-source
@@ -30,9 +30,9 @@ catalog:
             state: MD
             postal-code: 20899-8930
     responsible-parties:
-      creator:
+      - role-id: creator
         party-uuids:
           - d8bc8fc4-0f2e-4bfd-983f-e2ec9dc64696
-      contact:
+      - role-id: contact
         party-uuids:
           - d8bc8fc4-0f2e-4bfd-983f-e2ec9dc64696

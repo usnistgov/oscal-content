@@ -3,9 +3,9 @@
         "uuid": "8223d65f-57a9-4689-8f06-2a975ae2ad72",
         "metadata": {
             "title": "Test Component Definition",
-            "last-modified": "2021-04-07T12:50:10.241-04:00",
+            "last-modified": "2021-06-08T13:57:28.355446-04:00",
             "version": "20200723",
-            "oscal-version": "1.0.0-rc2",
+            "oscal-version": "1.0.0",
             "parties": [
                 {
                     "uuid": "ee47836c-877c-4007-bbf3-c9d9bd805a9a",
@@ -14,16 +14,17 @@
                 }
             ]
         },
-        "components": {
-            "b036a6ac-6cff-4066-92bc-74ddfd9ad6fa": {
+        "components": [
+            { "uuid": "b036a6ac-6cff-4066-92bc-74ddfd9ad6fa",
                 "type": "software",
                 "title": "test component 1",
                 "description": "This is a software component that implements basic authentication mechanisms.",
-                "responsible-roles": {
-                    "supplier": {
+                "responsible-roles": [
+                    {
+                        "role-id": "supplier",
                         "party-uuids": ["ee47836c-877c-4007-bbf3-c9d9bd805a9a"]
                     }
-                },
+                ],
                 "control-implementations": [
                     {
                         "uuid": "cfcdd674-8595-4f98-a9d1-3ac70825c49f",
@@ -51,6 +52,6 @@
                     }
                 ]
             }
-        }
+        ]
     }
 }
