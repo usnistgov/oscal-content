@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="80b0a3b6-0dd2-4b00-a6d0-c0463c21009f">
+         uuid="042a6a4a-7411-4ba6-a1ed-07e5ebfe13c8">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 4 LOW IMPACT BASELINE</title>
-      <last-modified>2021-06-10T17:34:15.3063Z</last-modified>
+      <last-modified>2021-06-29T18:29:57.999206Z</last-modified>
       <version>2015-01-22</version>
       <oscal-version>1.0.0</oscal-version>
       <link rel="resolution-source"

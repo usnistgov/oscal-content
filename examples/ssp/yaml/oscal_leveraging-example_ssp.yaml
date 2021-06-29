@@ -112,7 +112,7 @@ system-security-plan:
       - uuid: 22222222-0000-4000-9000-300000000001
         title: CSP IaaS [Leveraged System]
         links:
-          - href: ./oscal_csp-example_ssp.xml
+          - href: ./oscal_leveraged-example_ssp.xml
             rel: OSCAL-SSP-XML
         party-uuid: 22222222-0000-4000-9000-100000000002
         date-authorized: 2018-01-01
