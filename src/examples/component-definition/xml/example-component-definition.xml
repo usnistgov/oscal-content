@@ -53,7 +53,7 @@
           uuid="cf8338c5-fb6e-4593-a4a8-b3c4946ee080"
           control-id="sc-8">
         <description>
-          <p>MongoDB's implementation of SC-8 control</p>
+          <p>MongoDB's implementation of SC-8 control. The details of the implementation are provided at the statement level.</p>
         </description>
         <set-parameter param-id="sc-8_prm_1">
             <value>"confidentiality"</value>
@@ -64,7 +64,7 @@
             <description>
               <p>MongoDB implements TLS 1.x to protect the 
                 <insert type="param" id-ref="sc-8_prm_1"/> 
-              of translitted data by encrypting data in transit,
+              of transmitted data by encrypting data in transit,
               preventing unauthorized disclosure or changes to information
               during transmission.</p>
             </description>
