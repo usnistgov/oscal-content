@@ -56,7 +56,7 @@
           <p>MongoDB's implementation of SC-8 control. The details of the implementation are provided at the statement level.</p>
         </description>
         <set-parameter param-id="sc-8_prm_1">
-            <value>"confidentiality"</value>
+            <value>confidentiality</value>
         </set-parameter>
         <statement 
           statement-id="sc-8_smt" 
@@ -78,7 +78,7 @@
             to provide cryptographic protection for data in transit.</p>
         </description>
         <set-parameter param-id="sc-8.1_prm_1">
-            <value>"prevent unauthorized disclosure of information"</value>
+            <value>prevent unauthorized disclosure of information</value>
         </set-parameter>
         <statement 
           statement-id="sc-8.1_smt" 
