@@ -1,9 +1,9 @@
 ---
 catalog:
-  uuid: 1e7e941a-a6b5-4d0e-95fa-68a1502d413f
+  uuid: be314319-466e-459b-b736-631bd84e3cd7
   metadata:
     title: NIST Special Publication 800-53 Revision 4 MODERATE IMPACT BASELINE
-    last-modified: 2021-08-27T16:53:26.151975Z
+    last-modified: 2022-01-25T16:50:49.591338Z
     version: 2015-01-22
     oscal-version: 1.0.0
     links:
