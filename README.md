@@ -2,7 +2,7 @@
 
 # OSCAL Examples
 
-This directory contains numerous OSCAL examples in XML, JSON, and YAML formats based on the OSCAL 1.0.0 Release Candidate (RC) 2 [release]().
+This directory contains numerous OSCAL examples in XML, JSON, and YAML formats based on the OSCAL 1.0.0 release.
 
 Some examples are considered provisional "finished" versions of OSCAL catalogs and profiles; they are not authoritative but are intended as demonstrations of OSCAL. Other examples are works in progress. Each subdirectory within the examples directory clearly indicates the current status of its example files.
 
