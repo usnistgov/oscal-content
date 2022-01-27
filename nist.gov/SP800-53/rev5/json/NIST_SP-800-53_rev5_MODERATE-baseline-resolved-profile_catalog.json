@@ -8,7 +8,7 @@
       "oscal-version": "1.0.0",
       "links": [
         {
-          "href": "NIST_SP-800-53_rev5_MODERATE-baseline_profile.xml",
+          "href": "NIST_SP-800-53_rev5_MODERATE-baseline_profile.json",
           "rel": "resolution-source"
         }
       ],
