@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-definition xmlns="http://csrc.nist.gov/ns/oscal/1.0"
+    uuid="4d091abe-7489-4cb7-bb94-1a4d1c532c80"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 ../../../../../OSCAL/xml/schema/oscal_component_schema.xsd">
+  <metadata>
+    <title>NIST OISM Enterprise Cloud Security Overlay</title>
+    <last-modified>2001-12-09T14:00:00Z</last-modified>
+    <version>20220201</version>
+    <oscal-version>1.2.0-alpha</oscal-version>
+    <role id="nist-cloud-aws-system-administrator">
+      <title>NIST OISM AWS Cloud Administrator</title>
+    </role>
+    <role id="nist-itso-senior-cloud-ops-lead">
+      <title>NIST OISM IT Security Officer Team - Senior Operation Lead for AWS Cloud Systems</title>
+    </role>
+  </metadata>
+  <rule uuid="823ca7d8-0eaf-4485-9526-d63baf8324d8"
+     name="NIST Common Controls Audit Record Review, Analysis, and Reporting">
+      <title>Ensure Audit Record Review, Analysis, and Reporting</title>
+      <condition>review logs at specific intervals for specific anomalies in the SIEM system</condition>
+      <condition-test uuid="6db8ee2a-2ca8-4c1e-b4fc-5050051ece26">
+          <title>Log into SIEM and Review Predetermined Queries</title>
+          <description>
+            <p>Using the provided checklist, NIST OISM will provide you 
+            step by step instructions about how to log into the Splunk SIEM
+            service, which indices to search, and which queries to execute.</p>
+          </description>
+        <step uuid="19d6932c-090a-483c-8ac0-534c975ba233">
+          <title>Access Organizational SIEM</title>
+          <description>
+            <p>A system administrator must be able to enter the SIEM as an authenticated and authorized user.</p>
+          </description>
+          <prop ns="https://www.nist.gov/oism/security-procedures" class="argument" name="siem-server" value="5c46775c-c89d-49fe-b0a2-d1d20ef7e59a"/>
+          <prop ns="https://www.nist.gov/oism/security-procedures" class="policy-cross-reference" name="policy-document" value="#2f78e608-d10d-4986-a3ae-a5cf02741a4d"/>
+          <responsible-role role-id="nist-cloud-aws-system-administrator"/>
+        </step>
+        <step uuid="a5b74ddc-192b-4334-af70-1dc700eb22a3">
+          <title>Query Preconfigured Indices and Review Audit Logs for Anamolous Behavior</title>
+          <description>
+            <p>A system administator, once authenticated and authorized in the SIEM, must be able to perform a query on the relevant index with AWS CloudTrail logs and confirm if 0 or more attempts to authenticate to the organization's AWS accounts have been denied.</p></description>
+          <prop ns="https://www.nist.gov/oism/security-procedures" class="argument" name="index" value="aws_logins"/>
+          <prop ns="https://www.nist.gov/oism/security-procedures" class="argument" name="query-language" value="spl"/>
+          <prop ns="https://www.nist.gov/oism/security-procedures" class="argument" name="query"
+            value="sourcetype='aws:cloudtrail' | spath | search errorCode=AccessDenied"/>
+          <link rel="dependency" href="#2f78e608-d10d-4986-a3ae-a5cf02741a4d"/>
+          <responsible-role role-id="nist-cloud-aws-system-administrator"/>
+        </step>
+        <step uuid="b1c05502-0197-4d39-b350-40ee1032d1c6">
+          <title>Complete Periodic Audit Log with AWS Denied Login Records for Reporting to OISM</title>
+          <description>
+            <p>A system administator, once completing their analysis during an authenticated and authorized session in the SIEM, must access the AWS Denied Logins report from the OISM's fileshare system and submit it for review by the agency ITSO's team.</p>
+          </description>
+          <link rel="dependency" href="#151a06ba-0083-4d96-b7d7-c00ba99d1a77"/>
+          <responsible-role role-id="nist-cloud-aws-system-administrator"/>
+        </step>
+        <step uuid="b9d742db-e809-46e7-b289-65ddc0f7cad6">
+          <title>ITSO Team's Operation Lead Review Reports</title>
+          <description>
+            <p>The ITSO has an assigned Operations Loud for AWS cloud environments that read reports from all administrators assigned audit log duty periodically, acknowledge reports, and formally requesting follow up for anomalies via the OISM issue tracker as needed.</p>
+          </description>
+          <responsible-role role-id="nist-itso-senior-cloud-ops-lead"/>
+        </step>
+      </condition-test>
+  </rule>
+  <component uuid="6b9b34ad-ac13-43b6-a14c-e276ab4eaa73" type="software">
+    <title/>
+    <description/>
+    <purpose/>
+    <responsible-role role-id="nist-cloud-aws-system-administrator"/>
+    <control-implementation
+      uuid="559f76db-060f-44d0-bbc8-fdce1798e4ee"
+      source="https://github.com/usnistgov/oscal-content/blob/master/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_MODERATE-baseline_profile.xml">
+      <description/>
+      <implemented-requirement uuid="5a82db6f-3bef-408b-b7f7-8c54b6136580" control-id="au-6">
+        <description/>
+        <statement
+          statement-id="au-6_smt.a"
+          uuid="5fee2acd-dbec-4d09-bc91-53c9e20e0ebf">
+          <description>
+            <p>This component provides NIST organizational policy for audit logging.
+            The policy and materials will sufficiently prepare DevOPs engineers or
+            system administrators of an information system to perform the necessary
+            procedures and comply with NIST risk management requirements.</p>
+          </description>
+        </statement>
+      </implemented-requirement>
+    </control-implementation>
+  </component>
+  <back-matter>
+    <resource uuid="2f78e608-d10d-4986-a3ae-a5cf02741a4d">
+      <title>NIST OISM SSP for Common Controls - Audit Logging Policies and Procedures</title>
+      <rlink media-type="application/pdf"
+        href="https://intranet.nist.gov/oism/common-controls/au.pdf"/>
+    </resource>
+    <resource uuid="5c46775c-c89d-49fe-b0a2-d1d20ef7e59a">
+      <title>HTTPS URL for Access to NIST OISM SIEM Server via Secure Remote Access</title>
+      <rlink media-type="text/html"
+        href="https://siem-search-head.fakedomain.nist.gov:9876/en-US/account/login?return_to=%2Fen-US%2F"/>
+    </resource>
+    <resource uuid="151a06ba-0083-4d96-b7d7-c00ba99d1a77">
+      <title>Self-Assessment Report &amp; Checklist for NIST OISM Event Log Reviews in Splunk</title>
+      <rlink media-type="text/html"
+        href="https://nistgov.sharepoint.com/:w:/s/OISMSecurityPrivacy/MTY5MDhhYTktODI1MS00NjhhLWIyZDktZTI3OTZhZmFlMjBk"/>
+    </resource>
+  </back-matter>
+</component-definition>
