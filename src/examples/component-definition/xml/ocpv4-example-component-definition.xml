@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-definition xmlns="http://csrc.nist.gov/ns/oscal/1.0"
+    uuid="a7ba800c-a432-44cd-9075-0862cd66da6b"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 ../../../../OSCAL/xml/schema/oscal_component_schema.xsd">
+  <metadata>
+    <title>OpenShift Container Platform v4 Example Component Definition</title>
+    <last-modified>2001-12-09T14:00:00Z</last-modified>
+    <version>20211209</version>
+    <oscal-version>1.1.0-alpha</oscal-version>
+    <role id="provider">
+      <title>Provider</title>
+    </role>
+    <party uuid="12bde908-adba-4a59-a6a3-198163f62a48" type="organization">
+      <name>RedHat</name>
+      <link rel="website" href="https://docs.openshift.com/"/>
+    </party>
+  </metadata>
+  <rule uuid="a969feae-ae93-422f-8a95-9362adef826b"
+     name="OpenShift Container Platform v4 Kubelet Eviction Threshhold Settings">
+      <title>Check hardening guidelines for OCP kubelet instances with OpenSCAP</title>
+      <condition>kubelet is hardened with CIS OCPv4 baseline validated with OpenSCAP</condition>
+      <condition-test uuid="02970ddf-68f2-4bf8-8f2d-cc511766a3e8">
+        <title>OpenSCAP | CIS | OCPv4 Baseline Tests and Parameters</title>
+          <description>
+              <p>The <code>oscap</code> program is a command line tool that
+              allows users to load, scan, validate, edit, and export SCAP
+              documents.</p>
+              <p>This baseline is to test against the recommendations from
+              the Center for Internet Security for hardening one or more
+              instances of the OpenShift Container Platform (v4).</p>
+          </description>
+          <prop ns="https://www.open-scap.org" class="dependency" name="runtime" value="#9c1d4058-127e-4314-b25d-f042182eea7d"/>
+          <prop ns="https://www.open-scap.org" class="dependency" name="baselines-archive" value="#96c0023a-3ba7-4160-8dfc-e6c230885586"/>
+          <prop ns="https://www.open-scap.org" class="dependency" name="baseline-file" value="#9c584372-0f9f-44bc-b68a-8956f7b8d4f6"/>
+          <link rel="dependency" href="#96c0023a-3ba7-4160-8dfc-e6c230885586"/>
+          <link rel="dependency" href="#9c1d4058-127e-4314-b25d-f042182eea7d"/>
+          <link rel="dependency" href="#9c584372-0f9f-44bc-b68a-8956f7b8d4f6"/>
+          <step uuid="9334fe43-4ee2-46ba-87e8-4b73f54819ab">
+            <title>Ensure Eviction threshold Settings Are Set - evictionSoft: nodefs.available</title>
+            <description>
+              <p>Execute the openscap test to confirm this sub-rule:</p>
+              <p><code>nodefs.available</code> setting of the <code>evictionSoft</code> section.</p>
+            </description>
+            <prop ns="https://www.open-scap.org" class="argument" name="kubelet_eviction_thresholds_set_soft_nodefs_inodesfree" value="5%"/>      
+          </step>
+      </condition-test>
+  </rule>
+  <component uuid="a0c6c6d7-7fae-4c9c-a80d-b4bcae7cd079" type="software">
+    <title>OpenShift</title>
+    <description>
+      <p>Red Hat OpenShift is an enterprise-ready Kubernetes container platform
+      built for an open hybrid cloud strategy. It provides a consistent application
+      platform to manage hybrid cloud, multicloud, and edge deployments.</p>
+    </description>
+    <purpose>Provides a container platform</purpose>
+    <responsible-role role-id="provider">
+      <party-uuid>12bde908-adba-4a59-a6a3-198163f62a48</party-uuid>
+    </responsible-role>
+    <responsible-role role-id="customer">
+      <party-uuid>cf464e59-3926-46b8-8513-7a8132afe74f</party-uuid>
+    </responsible-role>
+    <protocol uuid="b9ec3518-1615-4add-9bba-a443b69bd8dc" name="kubernetes-api-server">
+      <title>Primary control plane API for the Kubernetes sub-systems of OCP.</title>
+      <port-range start="6443" end="6443" transport="TCP" />
+    </protocol>
+    <control-implementation
+        uuid="32036dfd-3f2a-4952-b9d3-c8675cea82da"
+        source="https://github.com/usnistgov/oscal-content/blob/master/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_MODERATE-baseline_profile.xml">
+      <description>
+        <p>OpenShift control implementations for NIST SP 800-53 revision 5.</p>
+      </description>          
+      <implemented-requirement
+          uuid="be44debe-6801-49c4-9c3b-6e8494d6850a"
+          control-id="cm-6">
+        <description>
+          <p>OpenShift's architecture and implementation for this information system
+          support and it's organization's configuration management requirements for
+          secure baselines with restrictive modes consistent with operational
+          requirements.</p>
+        </description>
+        <set-parameter param-id="cm-6_prm_1">
+            <value>organization-defined common secure configurations</value>
+        </set-parameter>
+        <statement 
+          statement-id="cm-6_smt.b" 
+          uuid="8df5b586-c7af-428d-b200-805151814ff4">      
+            <description>
+              <p>OpenShift as part of this information system supports 
+                <insert type="param" id-ref="cm-6_prm_1"/>. 
+              OpenShift is configured to properly enforced logical quotas
+              to prevent full use of OpenShift host volumes on the underlying
+              Kubernetes' nodes in the cluster by use of soft eviction settings.</p>
+            </description>
+        </statement>
+      </implemented-requirement>
+    </control-implementation>
+  </component>
+  <back-matter>
+    <resource uuid="9c1d4058-127e-4314-b25d-f042182eea7d">
+        <title>OpenSCAP 1.3.5</title>
+        <rlink media-type="application/gzip"
+            href="https://github.com/OpenSCAP/openscap/releases/download/1.3.5/openscap-1.3.5.tar.gz"/>
+    </resource>
+    <resource uuid="96c0023a-3ba7-4160-8dfc-e6c230885586">
+        <title>SCAP Security Guide OVAL Baselines 0.1.59 Release Bundle</title>
+        <rlink media-type="application/zip"
+            href="https://github.com/ComplianceAsCode/content/releases/download/v0.1.59/scap-security-guide-0.1.59-oval-5.10.zip"/>
+    </resource>
+    <resource uuid="9c584372-0f9f-44bc-b68a-8956f7b8d4f6">
+        <title>SCAP Security Guide OVAL Baseline for Openshift Container Platform v4 (OCPv4)"</title>
+        <rlink media-type="application/xml"
+            href="scap-security-guide-0.1.59-oval-5.10/ssg-ocp4-ds-1.2.xml"/>
+    </resource>
+  </back-matter>
+</component-definition>
