@@ -1,0 +1,194 @@
+{
+  "component-definition": {
+    "uuid": "a7ba800c-a432-44cd-9075-0862cd66da6b",
+    "metadata": {
+      "title": "OpenShift Container Platform v4 Example Component Definition",
+      "last-modified": "2001-12-09T14:00:00Z",
+      "version": "20211209",
+      "oscal-version": "1.1.0-alpha",
+      "roles": [
+        {
+          "id": "provider",
+          "title": "Provider"
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "12bde908-adba-4a59-a6a3-198163f62a48",
+          "type": "organization",
+          "name": "RedHat",
+          "links": [
+            {
+              "href": "https://docs.openshift.com/",
+              "rel": "website"
+            }
+          ]
+        }
+      ]
+    },
+    "rules": [
+      {
+        "name": "OpenShift Container Platform v4 Kubelet Eviction Threshhold Settings",
+        "uuid": "a969feae-ae93-422f-8a95-9362adef826b",
+        "title": "Check hardening guidelines for OCP kubelet instances with OpenSCAP",
+        "condition": "kubelet is hardened with CIS OCPv4 baseline validated with OpenSCAP",
+        "condition-tests": [
+          {
+            "uuid": "02970ddf-68f2-4bf8-8f2d-cc511766a3e8",
+            "title": "OpenSCAP | CIS | OCPv4 Baseline Tests and Parameters",
+            "description": "The `oscap` program is a command line tool that allows users to load, scan, validate, edit, and export SCAP documents.\n\nThis baseline is to test against the recommendations from the Center for Internet Security for hardening one or more instances of the OpenShift Container Platform (v4).",
+            "props": [
+              {
+                "name": "runtime",
+                "ns": "https://www.open-scap.org",
+                "value": "#9c1d4058-127e-4314-b25d-f042182eea7d",
+                "class": "dependency"
+              },
+              {
+                "name": "baselines-archive",
+                "ns": "https://www.open-scap.org",
+                "value": "#96c0023a-3ba7-4160-8dfc-e6c230885586",
+                "class": "dependency"
+              },
+              {
+                "name": "baseline-file",
+                "ns": "https://www.open-scap.org",
+                "value": "#9c584372-0f9f-44bc-b68a-8956f7b8d4f6",
+                "class": "dependency"
+              }
+            ],
+            "links": [
+              {
+                "href": "#96c0023a-3ba7-4160-8dfc-e6c230885586",
+                "rel": "dependency"
+              },
+              {
+                "href": "#9c1d4058-127e-4314-b25d-f042182eea7d",
+                "rel": "dependency"
+              },
+              {
+                "href": "#9c584372-0f9f-44bc-b68a-8956f7b8d4f6",
+                "rel": "dependency"
+              }
+            ],
+            "steps": [
+              {
+                "uuid": "9334fe43-4ee2-46ba-87e8-4b73f54819ab",
+                "title": "Ensure Eviction threshold Settings Are Set - evictionSoft: nodefs.available",
+                "description": "Execute the openscap test to confirm this sub-rule:\n\n`nodefs.available` setting of the `evictionSoft` section.",
+                "props": [
+                  {
+                    "name": "kubelet_eviction_thresholds_set_soft_nodefs_inodesfree",
+                    "ns": "https://www.open-scap.org",
+                    "value": "5%",
+                    "class": "argument"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "components": [
+      {
+        "uuid": "a0c6c6d7-7fae-4c9c-a80d-b4bcae7cd079",
+        "type": "software",
+        "title": "OpenShift",
+        "description": "Red Hat OpenShift is an enterprise-ready Kubernetes container platform built for an open hybrid cloud strategy. It provides a consistent application platform to manage hybrid cloud, multicloud, and edge deployments.",
+        "purpose": "Provides a container platform",
+        "responsible-roles": [
+          {
+            "role-id": "provider",
+            "party-uuids": [
+              "12bde908-adba-4a59-a6a3-198163f62a48"
+            ]
+          },
+          {
+            "role-id": "customer",
+            "party-uuids": [
+              "cf464e59-3926-46b8-8513-7a8132afe74f"
+            ]
+          }
+        ],
+        "protocols": [
+          {
+            "uuid": "b9ec3518-1615-4add-9bba-a443b69bd8dc",
+            "name": "kubernetes-api-server",
+            "title": "Primary control plane API for the Kubernetes sub-systems of OCP.",
+            "port-ranges": [
+              {
+                "start": 6443,
+                "end": 6443,
+                "transport": "TCP"
+              }
+            ]
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "32036dfd-3f2a-4952-b9d3-c8675cea82da",
+            "source": "https://github.com/usnistgov/oscal-content/blob/master/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_MODERATE-baseline_profile.xml",
+            "description": "OpenShift control implementations for NIST SP 800-53 revision 5.",
+            "implemented-requirements": [
+              {
+                "uuid": "be44debe-6801-49c4-9c3b-6e8494d6850a",
+                "control-id": "cm-6",
+                "description": "OpenShift's architecture and implementation for this information system support and it's organization's configuration management requirements for secure baselines with restrictive modes consistent with operational requirements.",
+                "set-parameters": [
+                  {
+                    "param-id": "cm-6_prm_1",
+                    "values": [
+                      "organization-defined common secure configurations"
+                    ]
+                  }
+                ],
+                "statements": [
+                  {
+                    "statement-id": "cm-6_smt.b",
+                    "uuid": "8df5b586-c7af-428d-b200-805151814ff4",
+                    "description": "OpenShift as part of this information system supports {{ insert: param, cm-6_prm_1 }}. OpenShift is configured to properly enforced logical quotas to prevent full use of OpenShift host volumes on the underlying Kubernetes' nodes in the cluster by use of soft eviction settings."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "9c1d4058-127e-4314-b25d-f042182eea7d",
+          "title": "OpenSCAP 1.3.5",
+          "rlinks": [
+            {
+              "href": "https://github.com/OpenSCAP/openscap/releases/download/1.3.5/openscap-1.3.5.tar.gz",
+              "media-type": "application/gzip"
+            }
+          ]
+        },
+        {
+          "uuid": "96c0023a-3ba7-4160-8dfc-e6c230885586",
+          "title": "SCAP Security Guide OVAL Baselines 0.1.59 Release Bundle",
+          "rlinks": [
+            {
+              "href": "https://github.com/ComplianceAsCode/content/releases/download/v0.1.59/scap-security-guide-0.1.59-oval-5.10.zip",
+              "media-type": "application/zip"
+            }
+          ]
+        },
+        {
+          "uuid": "9c584372-0f9f-44bc-b68a-8956f7b8d4f6",
+          "title": "SCAP Security Guide OVAL Baseline for Openshift Container Platform v4 (OCPv4)\\\"",
+          "rlinks": [
+            {
+              "href": "scap-security-guide-0.1.59-oval-5.10/ssg-ocp4-ds-1.2.xml",
+              "media-type": "application/xml"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
