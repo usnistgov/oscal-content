@@ -2,7 +2,7 @@
 <component-definition xmlns="http://csrc.nist.gov/ns/oscal/1.0"
     uuid="a7ba800c-a432-44cd-9075-0862cd66da6b"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 ../../../../OSCAL/xml/schema/oscal_component_schema.xsd">
+    xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 ../../../../../OSCAL/xml/schema/oscal_component_schema.xsd">
   <metadata>
     <title>OpenShift Container Platform v4 Example Component Definition</title>
     <last-modified>2001-12-09T14:00:00Z</last-modified>
@@ -10,6 +10,9 @@
     <oscal-version>1.2.0-alpha</oscal-version>
     <role id="provider">
       <title>Provider</title>
+    </role>
+    <role id="organization-devsecops-engineer">
+      <title>Organization DevSecOps Engineer</title>
     </role>
     <party uuid="12bde908-adba-4a59-a6a3-198163f62a48" type="organization">
       <name>RedHat</name>
@@ -42,7 +45,8 @@
               <p>Execute the openscap test to confirm this sub-rule:</p>
               <p><code>nodefs.available</code> setting of the <code>evictionSoft</code> section.</p>
             </description>
-            <prop ns="https://www.open-scap.org" class="argument" name="kubelet_eviction_thresholds_set_soft_nodefs_inodesfree" value="5%"/>      
+            <prop ns="https://www.open-scap.org" class="argument" name="kubelet_eviction_thresholds_set_soft_nodefs_inodesfree" value="5%"/>
+            <responsible-role role-id="organization-devsecops-engineer"/>
           </step>
       </condition-test>
   </rule>
