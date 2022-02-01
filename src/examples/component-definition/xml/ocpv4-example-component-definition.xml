@@ -7,7 +7,7 @@
     <title>OpenShift Container Platform v4 Example Component Definition</title>
     <last-modified>2001-12-09T14:00:00Z</last-modified>
     <version>20211209</version>
-    <oscal-version>1.1.0-alpha</oscal-version>
+    <oscal-version>1.2.0-alpha</oscal-version>
     <role id="provider">
       <title>Provider</title>
     </role>
