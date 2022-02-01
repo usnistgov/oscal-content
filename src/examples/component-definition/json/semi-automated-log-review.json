@@ -1,0 +1,193 @@
+{
+  "component-definition": {
+    "uuid": "4d091abe-7489-4cb7-bb94-1a4d1c532c80",
+    "metadata": {
+      "title": "NIST OISM Enterprise Cloud Security Overlay",
+      "last-modified": "2001-12-09T14:00:00Z",
+      "version": "20220201",
+      "oscal-version": "1.2.0-alpha",
+      "roles": [
+        {
+          "id": "nist-cloud-aws-system-administrator",
+          "title": "NIST OISM AWS Cloud Administrator"
+        },
+        {
+          "id": "nist-itso-senior-cloud-ops-lead",
+          "title": "NIST OISM IT Security Officer Team - Senior Operation Lead for AWS Cloud Systems"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "name": "NIST Common Controls Audit Record Review, Analysis, and Reporting",
+        "uuid": "823ca7d8-0eaf-4485-9526-d63baf8324d8",
+        "title": "Ensure Audit Record Review, Analysis, and Reporting",
+        "condition": "review logs at specific intervals for specific anomalies in the SIEM system",
+        "condition-tests": [
+          {
+            "uuid": "6db8ee2a-2ca8-4c1e-b4fc-5050051ece26",
+            "title": "Log into SIEM and Review Predetermined Queries",
+            "description": "Using the provided checklist, NIST OISM will provide you step by step instructions about how to log into the Splunk SIEM service, which indices to search, and which queries to execute.",
+            "steps": [
+              {
+                "uuid": "19d6932c-090a-483c-8ac0-534c975ba233",
+                "title": "Access Organizational SIEM",
+                "description": "A system administrator must be able to enter the SIEM as an authenticated and authorized user.",
+                "props": [
+                  {
+                    "name": "siem-server",
+                    "ns": "https://www.nist.gov/oism/security-procedures",
+                    "value": "5c46775c-c89d-49fe-b0a2-d1d20ef7e59a",
+                    "class": "argument"
+                  },
+                  {
+                    "name": "policy-document",
+                    "ns": "https://www.nist.gov/oism/security-procedures",
+                    "value": "#2f78e608-d10d-4986-a3ae-a5cf02741a4d",
+                    "class": "policy-cross-reference"
+                  }
+                ],
+                "responsible-roles": [
+                  {
+                    "role-id": "nist-cloud-aws-system-administrator"
+                  }
+                ]
+              },
+              {
+                "uuid": "a5b74ddc-192b-4334-af70-1dc700eb22a3",
+                "title": "Query Preconfigured Indices and Review Audit Logs for Anamolous Behavior",
+                "description": "A system administator, once authenticated and authorized in the SIEM, must be able to perform a query on the relevant index with AWS CloudTrail logs and confirm if 0 or more attempts to authenticate to the organization's AWS accounts have been denied.",
+                "props": [
+                  {
+                    "name": "index",
+                    "ns": "https://www.nist.gov/oism/security-procedures",
+                    "value": "aws_logins",
+                    "class": "argument"
+                  },
+                  {
+                    "name": "query-language",
+                    "ns": "https://www.nist.gov/oism/security-procedures",
+                    "value": "spl",
+                    "class": "argument"
+                  },
+                  {
+                    "name": "query",
+                    "ns": "https://www.nist.gov/oism/security-procedures",
+                    "value": "sourcetype='aws:cloudtrail' | spath | search errorCode=AccessDenied",
+                    "class": "argument"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "#2f78e608-d10d-4986-a3ae-a5cf02741a4d",
+                    "rel": "dependency"
+                  }
+                ],
+                "responsible-roles": [
+                  {
+                    "role-id": "nist-cloud-aws-system-administrator"
+                  }
+                ]
+              },
+              {
+                "uuid": "b1c05502-0197-4d39-b350-40ee1032d1c6",
+                "title": "Complete Periodic Audit Log with AWS Denied Login Records for Reporting to OISM",
+                "description": "A system administator, once completing their analysis during an authenticated and authorized session in the SIEM, must access the AWS Denied Logins report from the OISM's fileshare system and submit it for review by the agency ITSO's team.",
+                "links": [
+                  {
+                    "href": "#151a06ba-0083-4d96-b7d7-c00ba99d1a77",
+                    "rel": "dependency"
+                  }
+                ],
+                "responsible-roles": [
+                  {
+                    "role-id": "nist-cloud-aws-system-administrator"
+                  }
+                ]
+              },
+              {
+                "uuid": "b9d742db-e809-46e7-b289-65ddc0f7cad6",
+                "title": "ITSO Team's Operation Lead Review Reports",
+                "description": "The ITSO has an assigned Operations Loud for AWS cloud environments that read reports from all administrators assigned audit log duty periodically, acknowledge reports, and formally requesting follow up for anomalies via the OISM issue tracker as needed.",
+                "responsible-roles": [
+                  {
+                    "role-id": "nist-itso-senior-cloud-ops-lead"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "components": [
+      {
+        "uuid": "6b9b34ad-ac13-43b6-a14c-e276ab4eaa73",
+        "type": "software",
+        "title": "",
+        "description": "",
+        "purpose": "",
+        "responsible-roles": [
+          {
+            "role-id": "nist-cloud-aws-system-administrator"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "559f76db-060f-44d0-bbc8-fdce1798e4ee",
+            "source": "https://github.com/usnistgov/oscal-content/blob/master/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_MODERATE-baseline_profile.xml",
+            "description": "",
+            "implemented-requirements": [
+              {
+                "uuid": "5a82db6f-3bef-408b-b7f7-8c54b6136580",
+                "control-id": "au-6",
+                "description": "",
+                "statements": [
+                  {
+                    "statement-id": "au-6_smt.a",
+                    "uuid": "5fee2acd-dbec-4d09-bc91-53c9e20e0ebf",
+                    "description": "This component provides NIST organizational policy for audit logging. The policy and materials will sufficiently prepare DevOPs engineers or system administrators of an information system to perform the necessary procedures and comply with NIST risk management requirements."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "2f78e608-d10d-4986-a3ae-a5cf02741a4d",
+          "title": "NIST OISM SSP for Common Controls - Audit Logging Policies and Procedures",
+          "rlinks": [
+            {
+              "href": "https://intranet.nist.gov/oism/common-controls/au.pdf",
+              "media-type": "application/pdf"
+            }
+          ]
+        },
+        {
+          "uuid": "5c46775c-c89d-49fe-b0a2-d1d20ef7e59a",
+          "title": "HTTPS URL for Access to NIST OISM SIEM Server via Secure Remote Access",
+          "rlinks": [
+            {
+              "href": "https://siem-search-head.fakedomain.nist.gov:9876/en-US/account/login?return_to=%2Fen-US%2F",
+              "media-type": "text/html"
+            }
+          ]
+        },
+        {
+          "uuid": "151a06ba-0083-4d96-b7d7-c00ba99d1a77",
+          "title": "Self-Assessment Report & Checklist for NIST OISM Event Log Reviews in Splunk",
+          "rlinks": [
+            {
+              "href": "https://nistgov.sharepoint.com/:w:/s/OISMSecurityPrivacy/MTY5MDhhYTktODI1MS00NjhhLWIyZDktZTI3OTZhZmFlMjBk",
+              "media-type": "text/html"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
