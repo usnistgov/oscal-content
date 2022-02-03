@@ -1,0 +1,171 @@
+{
+  "component-definition": {
+    "uuid": "b7071c1c-9c6e-4d91-8891-8cd2734495f1",
+    "metadata": {
+      "title": "GSA Office of Information Technology CISO Overlay",
+      "last-modified": "2022-02-01T14:00:00Z",
+      "version": "20220201",
+      "oscal-version": "1.2.0-alpha",
+      "roles": [
+        {
+          "id": "gsa-devopsengineer-big-service",
+          "title": "GSA DevOps Engineer for the Big Service Project"
+        },
+        {
+          "id": "gsa-isso-big-service",
+          "title": "GSA Information System Security Official for the Big Service Project"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "name": "GSA OIT 800-53 Tailored Baseline IA Family Policy Conformance Rule",
+        "uuid": "823ca7d8-0eaf-4485-9526-d63baf8324d8",
+        "title": "Ensure Access of Proper Roles and Personnel of GSA OIT IT Security Policy",
+        "condition": "assigned roles have policy and review it",
+        "condition-tests": [
+          {
+            "uuid": "258192c7-17a6-4d69-a2e3-65127f2ab0a3",
+            "title": "Meet with Information System Personnel in Assigned Roles",
+            "description": "Staff assigned to the operations and maintenance of this information system will be apprised of the identity and authentication policy.\n\nPolicies, procedures, and standards specific to the information system will align with this organizational policy, reference it, and expound upon it, as evidenced by discussion with said staff.",
+            "steps": [
+              {
+                "uuid": "e95ebeaf-87d9-474f-98ee-197d78293a45",
+                "title": "Assigned Information System Security Engineer Reviews Responsibilites",
+                "description": "The assigned ISSE (information system security engineer) will retrieve the relevant identification and authorization policy and review it for understanding and applicability.",
+                "props": [
+                  {
+                    "name": "policy-document",
+                    "ns": "https://www.gsa.gov/oism/security-procedures",
+                    "value": "#d0e386c7-52c4-4691-a623-ca7925064833",
+                    "class": "policy-cross-reference"
+                  },
+                  {
+                    "name": "policy-document-anchor",
+                    "ns": "https://www.gsa.gov/oism/security-procedures",
+                    "value": "#[{%22num%22%3A51%2C%22gen%22%3A0}%2C{%22name%22%3A%22XYZ%22}%2C69%2C171%2C0]",
+                    "class": "policy-cross-reference"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "#699249d5-f591-4281-a8ff-c0438b6e24e2",
+                    "rel": "dependency"
+                  }
+                ]
+              },
+              {
+                "uuid": "0168a1dc-b964-4806-8943-dd07d9809d11",
+                "title": "Information System Personnel in Assigned Roles Complete Policy to Procedure Mapping Checklist",
+                "description": "The assigned ISSE (information system security engineer) will review newly created or updated procedures used for identification and authorization particular to that particular project.\n\nThe ISSE will complete the checklist in Google Docs mapping these procedures that address each policy and control requirement.\n\nIt will be reviewed monthly and updated for accuracy until the system is decomissioned.",
+                "props": [
+                  {
+                    "name": "ia-checklist-template",
+                    "ns": "https://www.gsa.gov/oism/security-procedures",
+                    "value": "#699249d5-f591-4281-a8ff-c0438b6e24e2",
+                    "class": "procedures-checklist"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "#699249d5-f591-4281-a8ff-c0438b6e24e2",
+                    "rel": "dependency"
+                  }
+                ],
+                "responsible-roles": [
+                  {
+                    "role-id": "gsa-devopsengineer-big-service"
+                  }
+                ]
+              },
+              {
+                "uuid": "496bece0-b6da-4948-b83a-b561f37c2843",
+                "title": "Information System Personnel in Assigned Roles for Ongoing Continous Monitoring",
+                "description": "The assigned project's ISSO (information system security officer) will review the checklist completed from the template by the staff member assigned the responsibility by virtue of their role.\n\nThe ISSO will log date and times of reviews, indicating no findings or referencing updated or newly created findings for review in the project's issue tracker of choice (in addition to POA&M system of record, if system is operational).",
+                "props": [
+                  {
+                    "name": "ia-checklist-template",
+                    "ns": "https://www.gsa.gov/oism/security-procedures",
+                    "value": "#699249d5-f591-4281-a8ff-c0438b6e24e2",
+                    "class": "procedures-checklist"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "#699249d5-f591-4281-a8ff-c0438b6e24e2",
+                    "rel": "dependency"
+                  }
+                ],
+                "responsible-roles": [
+                  {
+                    "role-id": "gsa-isso-big-service"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "components": [
+      {
+        "uuid": "c7cba7bb-9275-4f90-b02b-418017a8a96d",
+        "type": "policy",
+        "title": "",
+        "description": "",
+        "purpose": "",
+        "control-implementations": [
+          {
+            "uuid": "559f76db-060f-44d0-bbc8-fdce1798e4ee",
+            "source": "https://github.com/usnistgov/oscal-content/blob/master/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_MODERATE-baseline_profile.xml",
+            "description": "",
+            "implemented-requirements": [
+              {
+                "uuid": "5a82db6f-3bef-408b-b7f7-8c54b6136580",
+                "control-id": "ia-1",
+                "description": "",
+                "statements": [
+                  {
+                    "statement-id": "ia-1_smt.a",
+                    "uuid": "2235cfcb-36d0-47e6-8aac-c1bfbd8fee85",
+                    "description": "This component provides GSA organization policy for identity and authentication, to support staff operating and maintaining an information system for GSA. Included are self-training materials. The policy and materials will sufficiently prepare system administrators of an information system for audit around this policy, given their responsible role.",
+                    "links": [
+                      {
+                        "href": "#823ca7d8-0eaf-4485-9526-d63baf8324d8",
+                        "rel": "evidence"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "d0e386c7-52c4-4691-a623-ca7925064833",
+          "title": "GSA CIO IT Security 01-01 Rev. 6",
+          "rlinks": [
+            {
+              "href": "https://www.gsa.gov/cdnstatic/Identification_and_Authentication_(IA)_%5BCIO_IT_Security_01-01_Rev_6%5D_03-20-2019_Signed_BB.pdf",
+              "media-type": "application/pdf"
+            }
+          ]
+        },
+        {
+          "uuid": "699249d5-f591-4281-a8ff-c0438b6e24e2",
+          "title": "Self-Assessment Questionnaire for Audit Preparation",
+          "rlinks": [
+            {
+              "href": "https://docs.google.com/spreadsheets/d/19BtbNb5AoTB/edit#gid=0",
+              "media-type": "text/html"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
