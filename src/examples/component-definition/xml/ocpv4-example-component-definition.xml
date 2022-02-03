@@ -6,7 +6,7 @@
   <metadata>
     <title>OpenShift Container Platform v4 Example Component Definition</title>
     <last-modified>2001-12-09T14:00:00Z</last-modified>
-    <version>20211209</version>
+    <version>20220201</version>
     <oscal-version>1.2.0-alpha</oscal-version>
     <role id="provider">
       <title>Provider</title>
@@ -96,6 +96,7 @@
               to prevent full use of OpenShift host volumes on the underlying
               Kubernetes' nodes in the cluster by use of soft eviction settings.</p>
             </description>
+            <link rel="evidence" href="#a969feae-ae93-422f-8a95-9362adef826b"/>
         </statement>
       </implemented-requirement>
     </control-implementation>

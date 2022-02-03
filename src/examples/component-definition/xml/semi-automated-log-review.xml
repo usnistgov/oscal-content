@@ -38,7 +38,8 @@
         <step uuid="a5b74ddc-192b-4334-af70-1dc700eb22a3">
           <title>Query Preconfigured Indices and Review Audit Logs for Anamolous Behavior</title>
           <description>
-            <p>A system administator, once authenticated and authorized in the SIEM, must be able to perform a query on the relevant index with AWS CloudTrail logs and confirm if 0 or more attempts to authenticate to the organization's AWS accounts have been denied.</p></description>
+            <p>A system administator, once authenticated and authorized in the SIEM, must be able to perform a query on the relevant index with AWS CloudTrail logs and confirm if 0 or more attempts to authenticate to the organization's AWS accounts have been denied.</p>
+          </description>
           <prop ns="https://www.nist.gov/oism/security-procedures" class="argument" name="index" value="aws_logins"/>
           <prop ns="https://www.nist.gov/oism/security-procedures" class="argument" name="query-language" value="spl"/>
           <prop ns="https://www.nist.gov/oism/security-procedures" class="argument" name="query"
@@ -83,6 +84,7 @@
             system administrators of an information system to perform the necessary
             procedures and comply with NIST risk management requirements.</p>
           </description>
+          <link rel="evidence" href="#823ca7d8-0eaf-4485-9526-d63baf8324d8"/>
         </statement>
       </implemented-requirement>
     </control-implementation>

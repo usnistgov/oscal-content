@@ -4,7 +4,7 @@
     "metadata": {
       "title": "OpenShift Container Platform v4 Example Component Definition",
       "last-modified": "2001-12-09T14:00:00Z",
-      "version": "20211209",
+      "version": "20220201",
       "oscal-version": "1.2.0-alpha",
       "roles": [
         {
@@ -156,7 +156,13 @@
                   {
                     "statement-id": "cm-6_smt.b",
                     "uuid": "8df5b586-c7af-428d-b200-805151814ff4",
-                    "description": "OpenShift as part of this information system supports {{ insert: param, cm-6_prm_1 }}. OpenShift is configured to properly enforced logical quotas to prevent full use of OpenShift host volumes on the underlying Kubernetes' nodes in the cluster by use of soft eviction settings."
+                    "description": "OpenShift as part of this information system supports {{ insert: param, cm-6_prm_1 }}. OpenShift is configured to properly enforced logical quotas to prevent full use of OpenShift host volumes on the underlying Kubernetes' nodes in the cluster by use of soft eviction settings.",
+                    "links": [
+                      {
+                        "href": "#a969feae-ae93-422f-8a95-9362adef826b",
+                        "rel": "evidence"
+                      }
+                    ]
                   }
                 ]
               }

@@ -146,7 +146,13 @@
                   {
                     "statement-id": "au-6_smt.a",
                     "uuid": "5fee2acd-dbec-4d09-bc91-53c9e20e0ebf",
-                    "description": "This component provides NIST organizational policy for audit logging. The policy and materials will sufficiently prepare DevOPs engineers or system administrators of an information system to perform the necessary procedures and comply with NIST risk management requirements."
+                    "description": "This component provides NIST organizational policy for audit logging. The policy and materials will sufficiently prepare DevOPs engineers or system administrators of an information system to perform the necessary procedures and comply with NIST risk management requirements.",
+                    "links": [
+                      {
+                        "href": "#823ca7d8-0eaf-4485-9526-d63baf8324d8",
+                        "rel": "evidence"
+                      }
+                    ]
                   }
                 ]
               }
