@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-definition xmlns="http://csrc.nist.gov/ns/oscal/1.0"
+    uuid="b7071c1c-9c6e-4d91-8891-8cd2734495f1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 ../../../../../OSCAL/xml/schema/oscal_component_schema.xsd">
+    <metadata>
+        <title>Container and Registry Components Conformant with FedRAMP Guidance</title>
+        <last-modified>2022-02-03T14:00:00Z</last-modified>
+        <version>20220203</version>
+        <oscal-version>1.2.0-alpha</oscal-version>
+        <role id="devsecops-engineer">
+            <title>AlphaBetaGamma Corporation Cloud Service Provider Division DevSecops Engineer</title>
+        </role>
+        <role id="infrastructure-engineer">
+            <title>AlphaBetaGamma Corporation Cloud Service Provider Division Infrastructure Engineer</title>
+        </role>
+    </metadata>
+    <rule name="fedramp-vuln-scanning-containers-1-hardened-images"
+        uuid="e7bd52e3-ecd3-4d0d-9a9b-7367c38c6eb2">
+        <title>Security Testing Procedures for FedRAMP Vulnerability Scanning Requirements for Containers</title>
+        <description></description>
+        <condition>a container image hardening baseline is selected and applied</condition>
+    </rule>
+    <rule name="fedramp-vuln-scanning-containers-2-container-build-test-orchestration-pipeline"
+        uuid="45a1f1cd-6612-49d1-8c94-68887c3c19c9">
+        <title></title>
+        <description>
+            <p>
+                The CSP must l everage automated container orchestration tools to build, test, and deploy containers to production. These automated tools must
+                be validated by a 3PAO to meet FedRAMP requirements for the baseline controls CA-2, CM-2,
+                CM-3, SC-28, SI-3, and SI-7. However, components of the pipeline that fall to the l eft of the
+                production container registry, i ncluding environments i ntended for development or testing, may
+                reside outside of the system boundary. Non-automated processes should not be considered part of
+                the container testing and orchestration process, except i n the case of i ntentional manual procedures
+                for quality review purposes. These processes and tools must i nclude a mechanism to restrict
+                containers that do not adhere to FedRAMP requirements from successfully deploying.
+            </p>
+        </description>
+        <condition>an orchestration pipeline to build, test, and deploy, container to production</condition>
+    </rule>
+    <rule name="fedramp-vuln-scanning-containers-3-vuln-scanning-images" uuid="79147f31-794c-41e8-85e0-2304c8910918">
+        <title></title>
+        <description>
+            <p>
+                Prior to deploying containers to production, a CSP
+                must ensure that all components of the container i mage are scanned as outlined i n the F edRAMP
+                Vulnerability Scanning Requirements document. When possible, the container orchestration process
+                should i ncorporate scanning as one of the steps i n the deployment pipeline. The 30-day scanning
+                window begins as soon as the container i s deployed to the production registry. Only containers
+                from i mages that have been scanned within a 30-day vulnerability scanning window can be
+                actively deployed on the production environment. Additionally, modification of configuration settings
+                defined within the i mage or software patching should never occur directly on the production
+                environment, but rather on the replacement i mage to be deployed to production. Performing
+                vulnerability scanning directly on containers deployed to production i s not recommended, unless i t i s
+                performed via the use of i ndependent security sensors deployed alongside production-deployed
+                containers.
+            </p>
+            <p>
+                <b>NOTE:</b> If sampling is used, the CSP <b>must document this and comply with FedRAMP sampling guidelines.</b>
+            </p>
+        </description>
+        <condition>output of a container vulnerability scanner in SARIF format</condition>
+    </rule>
+    <rule name="fedramp-vuln-scanning-containers-4-security-sensors" uuid="fd6220c2-e8b7-49cb-892f-f0ecce0d1858">
+        <condition>output of an OCI container runtime configuration inspect command with evidence of a sensor sidecar container</condition>
+    </rule>
+    <rule name="fedramp-vuln-scanning-containers-5-registry-monitoring" uuid="7c1ea610-0479-4e41-98a7-5286dff6c86f">
+        <condition>output of a registry scanning tool in a JSON format</condition>
+    </rule>
+    <rule name="fedramp-vuln-scanning-containers-6-asset-mgmt-inventory-reporting" uuid="046e950c-eca9-4bb9-8c3f-69bab5bd78e0">
+        <condition>an inventory in FedRAMP OSCAL format with unqiue assed indentifier for every image class</condition>
+    </rule>
+    <back-matter>
+        <resource uuid="806660ab-f445-450e-b4cf-eab6c9eab2f0">
+            <rlink media-type="application/pdf" href="https://www.fedramp.gov/assets/resources/documents/Vulnerability_Scanning_Requirements_for_Containers.pdf"></rlink>
+        </resource>
+    </back-matter>
+</component-definition>
