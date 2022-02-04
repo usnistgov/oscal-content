@@ -36,7 +36,7 @@
             <prop name="label" value="1.1.1"/>
             <part id="s1.1.1_stm" name="statement">
                <p>All information security responsibilities should be defined and allocated.</p>
-               <p>A value has been assigned to <insert type="param" id-ref="s1.1.1-prm11"/>.</p>
+               <p>A value has been assigned to <insert type="param" id-ref="s1.1.1-prm1"/>.</p>
                <p>A cross link has been established with a choppy syntax: <a href="#s1.2">(choppy)</a>.</p>
             </part>
             <part id="s1.1.1_gdn" name="guidance">
