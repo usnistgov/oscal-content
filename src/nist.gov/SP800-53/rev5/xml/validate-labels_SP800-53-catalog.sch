@@ -21,18 +21,18 @@
             <xsl:variable name="expected">
                 <xsl:number count="oscal:part[@name='item']" format="{$number-format}"/>
             </xsl:variable>
-            <sch:assert test=". = $expected">Label issue: expected '<sch:value-of select="$expected"/>'</sch:assert>
+            <sch:assert test="@value = $expected">Label issue: expected '<sch:value-of select="$expected"/>'</sch:assert>
         </sch:rule>
         
         <!-- Preempted by the preceding rule, this rule matches label properties not directly inside part[@name='item'] -->
         <sch:rule context="oscal:prop[@name='label']">
-            <sch:let name="parent-label" value="parent::*/../oscal:prop[@name='label']"/>
+            <sch:let name="parent-label" value="parent::*/../oscal:prop[@name='label'][not(@class='sp800-53a')]"/>
             <!-- returns true() when $parent-label is empty -->
             <sch:assert test="starts-with(.,$parent-label)">Label hierarchy issue</sch:assert>
         </sch:rule>
         
         <sch:rule context="oscal:control">
-            <sch:let name="expected-id" value="o:reduce-label(oscal:prop[@name='label'])"/>
+            <sch:let name="expected-id" value="o:reduce-label(oscal:prop[@name='label'][not(@class='sp800-53a')]/@value)"/>
             <sch:assert test="@id = $expected-id">Expected id to be '<sch:value-of select="$expected-id"/>'</sch:assert>
         </sch:rule>
         
@@ -114,7 +114,7 @@
     </xsl:function>
     
     <xsl:function name="o:reduce-label">
-        <xsl:param name="what"/>
+        <xsl:param name="what" as="node()"/>
         <xsl:value-of select="lower-case($what) ! replace(., '\(', '.') ! replace(., '\)', '') ! replace(.,'\.$','')"/>
     </xsl:function>
     

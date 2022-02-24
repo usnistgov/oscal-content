@@ -11,7 +11,7 @@
     <xsl:key name="link-targets"    match="*[@id]"   use="'#' || @id"/>
     <xsl:key name="link-targets"    match="*[@uuid]" use="'#' || @uuid"/>
     
-    <xsl:key name="insert-by-param-id" match="o:insert" use="@param-id"/>
+    <xsl:key name="insert-by-param-id" match="o:insert[@type='param']" use="@id-ref"/>
     
 <!-- This Schematron checks several basic features of SP800-53, or a similarly encoded document,
      for conformance with expectations. Specifically, it tests:
@@ -29,6 +29,9 @@
     -->
     
     <sch:pattern id="ids">
+        <sch:rule context="o:part[@name='assessment-objects']">
+            <sch:assert test="empty(@id)">no @id is expected on assessment-objects parts</sch:assert>
+        </sch:rule>
         <sch:rule context="o:part | o:control">
             <sch:assert test="empty(@id) or matches(@id,'\S')">@id must have a value</sch:assert>
             <sch:assert test="exists(@id)"><sch:name/> is expected to have an @id</sch:assert>
@@ -58,9 +61,9 @@
     
     <sch:let name="interdicted" value="'control','group','part','prop','param','title'"/>
     
-    <sch:let name="known-part-names" value="('overview','statement', 'item', 'guidance', 'objective', 'assessment', 'objects')"/>
+    <sch:let name="known-part-names" value="('overview','statement', 'item', 'guidance', 'assessment-objective', 'assessment-method', 'assessment-objects')"/>
     
-    <sch:let name="known-property-names" value="('keywords', 'label', 'sort-id', 'method', 'status')"/>
+    <sch:let name="known-property-names" value="('keywords', 'label', 'sort-id', 'method', 'status', 'aggregates', 'alt-identifier', 'alt-label')"/>
     
     <sch:pattern id="general">
         <sch:rule context="*[matches(@name,'\S')]">
@@ -74,15 +77,16 @@
     
     <sch:pattern id="cross-referencing-constraints">
         <sch:rule context="o:insert">
-            <sch:assert test="exists(key('parameter-by-id',@param-id))"><sch:name/> does not point to a parameter.</sch:assert>
-            <sch:let name="param-id" value="@param-id"/>
+            <sch:assert test="exists(key('parameter-by-id',@id-ref))"><sch:name/> does not point to a parameter.</sch:assert>
+            <sch:let name="param-id" value="@id-ref"/>
             <sch:assert role="warning" test="empty(ancestor::o:select) or (count(ancestor::o:select/key('insert-by-param-id',$param-id,.)) eq 1)"><sch:name/> calls the same parameter as its neighbor: is this right?</sch:assert> </sch:rule>
         
         
         <sch:rule context="o:param">
-            <sch:let name="orphans" value="tokenize(@depends-on,'\s+')[not(.=current()/key('insert-by-param-id',@id,root())/ancestor::o:param/@id)]"/>
+            <sch:assert test="empty(@depends-on)">deprecated @depends-on should not appear</sch:assert>
+            <!--<sch:let name="orphans" value="tokenize(@depends-on,'\s+')[not(.=current()/key('insert-by-param-id',@id,root())/ancestor::o:param/@id)]"/>
             <sch:assert test="empty(@depends-on) or empty($orphans)">@depends-on points to a parameter that does not reference this one (<sch:value-of select="string-join($orphans,', ')"/>).</sch:assert>
-            <sch:assert test="exists(@depends-on) or empty(key('insert-by-param-id',@id)/ancestor::o:param)">Parameter <sch:value-of select="@id"/> has an unmarked dependency on parameter(s) <sch:value-of select="string-join(key('insert-by-param-id',@id)/ancestor::o:param/@id,', ')"/></sch:assert>
+            <sch:assert test="exists(@depends-on) or empty(key('insert-by-param-id',@id)/ancestor::o:param)">Parameter <sch:value-of select="@id"/> has an unmarked dependency on parameter(s) <sch:value-of select="string-join(key('insert-by-param-id',@id)/ancestor::o:param/@id,', ')"/></sch:assert>-->
         </sch:rule>
     </sch:pattern>
     
@@ -106,18 +110,18 @@
     <!-- Controls and their parts may require properties or subparts designated for particular contents. -->
     <sch:pattern id="required-items">
         <sch:rule context="o:control">
-            <sch:let name="withdrawn" value="o:prop[@name='status'] = 'withdrawn'"/>
+            <sch:let name="withdrawn" value="o:prop[@name='status']/@value = 'withdrawn'"/>
             <sch:assert test="o:prop/@name='label'">control must have a child 'prop' with @name='label'</sch:assert>
             <sch:assert test="o:prop/@name='sort-id'">control must have a child 'prop' with @name='sort-id'</sch:assert>
-            <sch:assert test="o:part/@name='statement' or $withdrawn">control with name='SP800-53' must have a child 'part' with @name='statement'</sch:assert>
+            <sch:assert test="o:part/@name='statement' or $withdrawn">control must have a child 'part' with @name='statement'</sch:assert>
             <!--<sch:assert test="o:part/@name='objective' or $withdrawn">control with name='SP800-53' must have a child 'part' with @name='objective'</sch:assert>-->
         </sch:rule>
         <sch:rule context="o:part[@name='item']">
             <sch:assert test="o:prop/@name='label'">part with name='item' must have a child prop with @name='label'</sch:assert>            <sch:assert test="exists(../o:part[@name='item'][2])" role="warning">Solitary item.</sch:assert>
         </sch:rule>
-        <sch:rule context="o:part[@name='assessment']">
-            <sch:assert test="o:prop/@name='method'">part with name='assessment' must have a child prop with @name='method'</sch:assert>
-            <sch:assert test="o:part/@name='objects'">part with name='assessment' must have a child part with @name='objects'</sch:assert>
+        <sch:rule context="o:part[@name='assessment-method']">
+            <sch:assert test="o:prop/@name='method'">part with name='assessment-method' must have a child prop with @name='method'</sch:assert>
+            <sch:assert test="o:part/@name='assessment-objects'">part with name='assessment-method' must have a child part with @name='assessment-objects'</sch:assert>
         </sch:rule>
         <sch:rule context="o:link">
             <sch:assert test="matches(@rel,'\S')"><sch:name/> should have @rel given</sch:assert>
@@ -131,31 +135,34 @@
          those gaps in validation against this Schematron. -->
     <sch:pattern id="appearances">
         <!-- o:control/o:control is a control enhancement -->
+        <!-- pre-empting rules for 53A labels       -->
+        <sch:rule context="o:control/o:prop[@name = 'label'][@class='sp800-53a']"/>
+        
         <sch:rule context="o:control/o:control/o:prop[@name = 'label']">
             <sch:let name="label-regex" value="'^(AC|AT|AU|CA|CM|CP|IA|IR|MA|MP|PE|PL|PM|PS|PT|RA|SA|SC|SI|SR)\-\d\d?\(\d\d?\)$'"/>
-            <sch:assert test="o:singleton(.)">prop with name='label'
+            <!--<sch:assert test="o:singleton(.)">prop with name='label'
                 must be a singleton: no other properties named 'label' may appear in the same
-                context</sch:assert>
-            <sch:assert test="matches(., $label-regex)">prop with name='label' must match regular expression <sch:value-of select="$label-regex"/></sch:assert>
-            <sch:let name="parent-label" value="../../o:prop[@name = 'label']"/>
+                context</sch:assert>-->
+            <sch:assert test="matches(@value, $label-regex)">prop with name='label' must match regular expression <sch:value-of select="$label-regex"/></sch:assert>
+            <sch:let name="parent-label" value="../../o:prop[@name = 'label'][not(@class='sp800-53a')]"/>
             <xsl:variable name="formatted-no">
                 <xsl:number count="o:control" format="(1)"/>
             </xsl:variable>
-            <sch:assert test=". = ($parent-label || $formatted-no)">Control enhancement
-                label is inconsistent: we expect <sch:value-of select="$parent-label || $formatted-no"/> here</sch:assert>
+            <sch:assert test="@value = (($parent-label/@value) || $formatted-no)">Control enhancement
+                label is inconsistent: we expect <sch:value-of select="$parent-label/@value || $formatted-no"/> here</sch:assert>
         </sch:rule>
 
         <sch:rule context="o:control/o:prop[@name = 'label']">
             <sch:let name="label-regex" value="'^(AC|AT|AU|CA|CM|CP|IA|IR|MA|MP|PE|PL|PM|PS|PT|RA|SA|SC|SI|SR)[\d\.\-]*$'"/>
-            <sch:assert test="o:singleton(.)">prop with name='label'
+            <!--<sch:assert test="o:singleton(.)">prop with name='label'
                 must be a singleton: no other properties named 'label' may appear in the same
-                context</sch:assert>
-            <sch:assert test="matches(., $label-regex)">prop with name='label' must match regular expression <sch:value-of select="$label-regex"/></sch:assert>
-            <sch:assert test="substring(.,1,2) = upper-case(../../@id)">Control label does not match its family, '<sch:value-of select="upper-case(../../@id)"/></sch:assert>
+                context</sch:assert>-->
+            <sch:assert test="matches(@value, $label-regex)">prop with name='label' must match regular expression <sch:value-of select="$label-regex"/></sch:assert>
+            <sch:assert test="substring(@value,1,2) = upper-case(../../@id)">Control label does not match its family, '<sch:value-of select="upper-case(../../@id)"/></sch:assert>
             <xsl:variable name="formatted-no">
                 <xsl:number count="o:control"/>
             </xsl:variable>
-            <sch:assert test="replace(.,'\D','') = $formatted-no">Control label appears to be out of sequence</sch:assert>
+            <sch:assert test="replace(@value,'\D','') = $formatted-no">Control label appears to be out of sequence</sch:assert>
         </sch:rule>
         <sch:rule context="o:part[@name = 'statement']">
             <sch:assert test="o:singleton(.)">part with name='statement'
@@ -184,11 +191,11 @@
                 must be a singleton: no other properties named 'sort-id' may appear in the same
                 context</sch:assert>
         </sch:rule>
-        <sch:rule context="o:part[@name = 'assessment']/o:prop[@name = 'method']">
+        <sch:rule context="o:part[@name = 'assessment-method']/o:prop[@name = 'method']">
             <sch:assert test="o:singleton(.)">prop with name='method'
                 must be a singleton: no other properties named 'method' may appear in the same
                 context</sch:assert>
-            <sch:assert test=". = ('EXAMINE', 'INTERVIEW', 'TEST')">prop name='method' here must
+            <sch:assert test="@value = ('EXAMINE', 'INTERVIEW', 'TEST')">prop name='method' here must
                 have a value 'EXAMINE', 'INTERVIEW', or 'TEST'</sch:assert>
         </sch:rule>
         <sch:rule context="o:prop[@name = 'status']">
@@ -196,7 +203,7 @@
                 must be a singleton: no other properties named 'status' may appear in the same
                 context</sch:assert>
             <sch:assert test="exists(parent::o:control)">'status' property should not appear except on controls</sch:assert>
-            <sch:assert test=". = ('withdrawn')">prop name='status' here must have a value
+            <sch:assert test="@value = ('withdrawn')">prop name='status' here must have a value
                 'withdrawn'</sch:assert>
         </sch:rule>
         <sch:rule context="o:prop[@name = 'method']">
