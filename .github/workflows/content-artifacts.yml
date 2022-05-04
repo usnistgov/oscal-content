@@ -58,6 +58,17 @@ jobs:
       - name: Get Saxon-HE
         run: |
           mvn org.apache.maven.plugins:maven-dependency-plugin:2.10:get -DartifactId=Saxon-HE -DgroupId=net.sf.saxon -Dversion=$SAXON_VERSION
+      - name: Set up Python 3.x
+        uses: actions/setup-python@98f2ad02fd48d057ee3b4d4f66525b231c3e52b6 # current release v3.1.2
+        with:
+          python-version: '3.8'
+          architecture: 'x64'
+          cache: 'pip'
+          cache-dependency-path: |
+            git-content/${{ env.CICD_DIR_PATH }}/python/requirements.txt
+      - name: Install Python dependencies
+        run: |
+          pip install -r "${GITHUB_WORKSPACE}/git-content/${CICD_DIR_PATH}/python/requirements.txt"
       - name: Validate Content
         run:
           # mkdir -p "${OSCAL_BUILD_DIR_PATH}"
@@ -66,13 +77,6 @@ jobs:
       - name: Auto-convert Content
         run:
           bash "${GITHUB_WORKSPACE}/git-content/${CICD_DIR_PATH}/copy-and-convert-content.sh" -o "${GITHUB_WORKSPACE}/git-content/${OSCAL_DIR_PATH}" -a "${GITHUB_WORKSPACE}/git-content" -c "${GITHUB_WORKSPACE}/git-content/${CONTENT_CONFIG_PATH}" -w "${GITHUB_WORKSPACE}/git-content" --resolve-profiles
-      # job-deploy-artifacts
-#      - name: Setup SSH key
-#        # only do this on master in the home repo
-#        if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/master'
-#        run: |
-#          eval "$(ssh-agent -s)"
-#          ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
       - name: Publish Artifacts
         # only do this on master
         if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/master'
