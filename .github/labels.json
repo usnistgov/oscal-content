@@ -23,4 +23,5 @@
     { "name": "User Story", "color":"5319e7", "description":"The issue is a user story for a development task."},
     { "name": "Waiting for Action", "color":"ef9c6b", "description":"The issue is waiting for the assignee to take some action described in the issue's comments."},
     { "name": "wontfix", "color":"ffffff", "description":"The issue will not be addressed."}
+    { "name": "Source Document Defect", "color":"ee0701", "description":"Track defects in source documents converted into OSCAL and stored in this repo."}
 ]
