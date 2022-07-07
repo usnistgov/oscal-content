@@ -59,7 +59,7 @@
         </description>
       </implemented-requirement>
       <implemented-requirement
-          uuid="cf8338c5-fb6e-4593-a4a8-b3c4946ee2a0"
+          uuid="5227daf8-7a4b-4fe0-aea9-3547b7de2603"
           control-id="sa-4.9">
         <description>
           <p>Must ensure that MongoDB only listens for network
