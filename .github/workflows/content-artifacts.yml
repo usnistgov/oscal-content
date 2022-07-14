@@ -9,7 +9,7 @@ on:
     types: [opened, synchronize, reopened]
   workflow_dispatch:
     branches:
-      - master
+      - main
 name: Process Content Artifacts
 env:
   OSCAL_DIR_PATH: oscal
@@ -24,14 +24,14 @@ jobs:
     steps:
       # use this if checkout needs to be authenticated
       - uses: actions/checkout@v2
-        if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/master'
+        if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/main'
         with:
           path: git-content
           submodules: recursive
           token: ${{ secrets.COMMIT_TOKEN }}
       # use this if checkout is anonymous
       - uses: actions/checkout@v2
-        if: github.repository != env.HOME_REPO || github.ref != 'refs/heads/master'
+        if: github.repository != env.HOME_REPO || github.ref != 'refs/heads/main'
         with:
           path: git-content
           submodules: recursive
@@ -78,8 +78,8 @@ jobs:
         run:
           bash "${GITHUB_WORKSPACE}/git-content/${CICD_DIR_PATH}/copy-and-convert-content.sh" -o "${GITHUB_WORKSPACE}/git-content/${OSCAL_DIR_PATH}" -a "${GITHUB_WORKSPACE}/git-content" -c "${GITHUB_WORKSPACE}/git-content/${CONTENT_CONFIG_PATH}" -w "${GITHUB_WORKSPACE}/git-content" --resolve-profiles
       - name: Publish Artifacts
-        # only do this on master
-        if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/master'
+        # only do this on main
+        if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/main'
         uses: stefanzweifel/git-auto-commit-action@v4.5.1
         with:
           repository: git-content
