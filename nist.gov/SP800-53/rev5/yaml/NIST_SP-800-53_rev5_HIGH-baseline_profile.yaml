@@ -34,7 +34,7 @@ profile:
         party-uuids:
           - c748c806-1d77-4695-bb40-e117b2afa82e
   imports:
-    - href: NIST_SP-800-53_rev5_catalog.xml
+    - href: NIST_SP-800-53_rev5_catalog.yaml
       include-controls:
         - with-ids:
             - ac-1

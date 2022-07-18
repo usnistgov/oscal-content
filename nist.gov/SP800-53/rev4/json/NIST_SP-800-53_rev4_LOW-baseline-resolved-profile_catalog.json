@@ -1,14 +1,14 @@
 {
   "catalog": {
-    "uuid": "9a740e35-422f-48e2-baca-0b0c515997d1",
+    "uuid": "c883920c-f255-4068-bc8b-bf71f9bb2beb",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 4 LOW IMPACT BASELINE",
-      "last-modified": "2022-01-25T16:50:38.19596Z",
+      "last-modified": "2022-07-18T16:03:22.554445Z",
       "version": "2015-01-22",
       "oscal-version": "1.0.0",
       "links": [
         {
-          "href": "NIST_SP-800-53_rev4_LOW-baseline_profile.xml",
+          "href": "NIST_SP-800-53_rev4_LOW-baseline_profile.json",
           "rel": "resolution-source"
         }
       ],

@@ -1,14 +1,14 @@
 {
   "catalog": {
-    "uuid": "f97bc35d-9782-462d-85b7-44d26d47f9e2",
+    "uuid": "fea18fc7-d4aa-4c73-9fa8-bdc19f466f91",
     "metadata": {
       "title": "SP800-53 LOW IMPACT BASELINE",
-      "last-modified": "2022-01-25T16:52:25.329073Z",
+      "last-modified": "2022-07-18T16:08:39.747827Z",
       "version": "FPD",
       "oscal-version": "1.0.0",
       "links": [
         {
-          "href": "NIST_SP-800-53_rev5-FPD_LOW-baseline_profile.xml",
+          "href": "NIST_SP-800-53_rev5-FPD_LOW-baseline_profile.json",
           "rel": "resolution-source"
         }
       ],

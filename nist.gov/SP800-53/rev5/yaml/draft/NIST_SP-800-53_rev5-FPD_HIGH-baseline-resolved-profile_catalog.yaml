@@ -1,13 +1,13 @@
 ---
 catalog:
-  uuid: 02075720-cfaf-4904-a96e-e6916eeb4ffe
+  uuid: b010483f-0ad3-420c-b2fd-4c45f13c006c
   metadata:
     title: SP800-53 HIGH IMPACT BASELINE
-    last-modified: 2022-01-25T16:52:17.302903Z
+    last-modified: 2022-07-18T16:08:32.515211Z
     version: FPD
     oscal-version: 1.0.0
     links:
-      - href: NIST_SP-800-53_rev5-FPD_HIGH-baseline_profile.xml
+      - href: NIST_SP-800-53_rev5-FPD_HIGH-baseline_profile.yaml
         rel: resolution-source
     roles:
       - id: creator

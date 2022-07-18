@@ -1,14 +1,14 @@
 {
   "catalog": {
-    "uuid": "7d8bd4ba-c143-4ff0-a6b3-a87af4a104d2",
+    "uuid": "65ae2a4c-3dd8-46a7-89ac-bcb29fb5214a",
     "metadata": {
       "title": "SP800-53 PRIVACY BASELINE",
-      "last-modified": "2022-01-25T16:52:41.313187Z",
+      "last-modified": "2022-07-18T16:08:54.072593Z",
       "version": "FPD",
       "oscal-version": "1.0.0",
       "links": [
         {
-          "href": "NIST_SP-800-53_rev5-FPD_PRIVACY-baseline_profile.xml",
+          "href": "NIST_SP-800-53_rev5-FPD_PRIVACY-baseline_profile.json",
           "rel": "resolution-source"
         }
       ],

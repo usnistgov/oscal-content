@@ -858,8 +858,8 @@ profile:
   back-matter:
     resources:
       - uuid: 31dbc4f2-c0e6-4e85-9cf4-b5d4843a32e8
-        description: "NIST Special Publication 800-53 Revision 4: Security and Privacy
-          Controls for Federal Information Systems and Organizations"
+        description: "NIST Special Publication 800-53 Revision 4: Security and Privacy\
+          \ Controls for Federal Information Systems and Organizations"
         rlinks:
-          - href: NIST_SP-800-53_rev4_catalog.xml
-            media-type: application/oscal.catalog+json
+          - href: NIST_SP-800-53_rev4_catalog.yaml
+            media-type: application/oscal.catalog+yaml

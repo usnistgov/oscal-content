@@ -21,8 +21,8 @@ component-definition:
       type: software
       title: MongoDB
       description: MongoDB is a source-available, cross-platform document-oriented
-        database program. Classified as a NoSQL database program, MongoDB uses
-        JSON-like documents with optional schemas.
+        database program. Classified as a NoSQL database program, MongoDB uses JSON-like
+        documents with optional schemas.
       purpose: Provides a NoSQL database service
       responsible-roles:
         - role-id: provider
@@ -53,19 +53,18 @@ component-definition:
       control-implementations:
         - uuid: 49f0b690-ed9f-4f32-aae0-625b77aa6d27
           source: https://github.com/usnistgov/oscal-content/blob/master/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_MODERATE-baseline_profile.xml
-          description: MongoDB control implementations for NIST SP 800-53 revision 5.
+          description: MongoDB control implementations for NIST SP 800-53 revision
+            5.
           implemented-requirements:
             - uuid: cf8338c5-fb6e-4593-a4a8-b3c4946ee2a0
               control-id: sc-8.1
               description: MongoDB supports TLS 1.x to encrypt data in transit, preventing
-                unauthorized disclosure or changes to information during
-                transmission. To implement TLS, set the PEMKeyFile option in the
-                configuration /etc/mongod.conf to the certificate file's path
-                and restart the the component.
+                unauthorized disclosure or changes to information during transmission.
+                To implement TLS, set the PEMKeyFile option in the configuration /etc/mongod.conf
+                to the certificate file's path and restart the the component.
             - uuid: cf8338c5-fb6e-4593-a4a8-b3c4946ee2a0
               control-id: sa-4.9
-              description: Must ensure that MongoDB only listens for network connections on
-                authorized interfaces by configuring the MongoDB configuration
-                file to limit the services exposure to only the network
-                interfaces on which MongoDB instances should listen for incoming
-                connections.
+              description: Must ensure that MongoDB only listens for network connections
+                on authorized interfaces by configuring the MongoDB configuration
+                file to limit the services exposure to only the network interfaces
+                on which MongoDB instances should listen for incoming connections.

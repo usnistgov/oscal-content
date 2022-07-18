@@ -87,7 +87,7 @@
           "title": "CSP IaaS [Leveraged System]",
           "links": [
             {
-              "href": "./oscal_leveraged-example_ssp.xml",
+              "href": "./oscal_leveraged-example_ssp.json",
               "rel": "OSCAL-SSP-XML"
             }
           ],

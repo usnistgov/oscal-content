@@ -48,13 +48,15 @@ system-security-plan:
       ```
 
 
-      In this example, the IaaS SSP specifies customer responsibilities for certain controls.
+      In this example, the IaaS SSP specifies customer responsibilities for certain
+      controls.
 
 
       The SaaS must address these for the control to be fully satisfied.
 
 
-      The SaaS provider may either implement these directly or pass the responsibility on to their customers. Both may be necessary.
+      The SaaS provider may either implement these directly or pass the responsibility
+      on to their customers. Both may be necessary.
 
 
       For any given control, the Leveraged IaaS SSP must describe:
@@ -62,7 +64,8 @@ system-security-plan:
 
       1. HOW the IaaS is directly satisfying the control
 
-      1. WHAT responsibilities are left for the Leveraging SaaS (or their customers) to implement.
+      1. WHAT responsibilities are left for the Leveraging SaaS (or their customers)
+      to implement.
 
 
 
@@ -73,7 +76,8 @@ system-security-plan:
 
       1. HOW the SaaS is directly satisfying the control.
 
-      1. WHAT responsibilities are left for the SaaS customers to implement. (The SaaS customers are Cust-A, B and C)
+      1. WHAT responsibilities are left for the SaaS customers to implement. (The
+      SaaS customers are Cust-A, B and C)
     security-sensitivity-level: low
     system-information:
       information-types:
@@ -86,18 +90,18 @@ system-security-plan:
           confidentiality-impact:
             base: fips-199-moderate
             selected: fips-199-low
-            adjustment-justification: This impact has been adjusted to low as an example of
-              how to perform this type of adjustment.
+            adjustment-justification: This impact has been adjusted to low as an example
+              of how to perform this type of adjustment.
           integrity-impact:
             base: fips-199-moderate
             selected: fips-199-low
-            adjustment-justification: This impact has been adjusted to low as an example of
-              how to perform this type of adjustment.
+            adjustment-justification: This impact has been adjusted to low as an example
+              of how to perform this type of adjustment.
           availability-impact:
             base: fips-199-moderate
             selected: fips-199-low
-            adjustment-justification: This impact has been adjusted to low as an example of
-              how to perform this type of adjustment.
+            adjustment-justification: This impact has been adjusted to low as an example
+              of how to perform this type of adjustment.
     security-impact-level:
       security-objective-confidentiality: fips-199-low
       security-objective-integrity: fips-199-low
@@ -152,7 +156,8 @@ system-security-plan:
           The Leveraging SaaS maintains aspects of their assigned portion of the application.
 
 
-          The customers of the Leveraging SaaS maintain aspects of their sub-assigned portions of the application.
+          The customers of the Leveraging SaaS maintain aspects of their sub-assigned
+          portions of the application.
         props:
           - name: implementation-point
             value: system
@@ -181,25 +186,29 @@ system-security-plan:
                   Response for the \"This System\" component.
 
 
-                  Overall description of how \"This System\" satisfies AC-2, Part a.
+                  Overall description of how \"This System\" satisfies AC-2, Part
+                  a.
 
 
                   Response for the \"This System\" component.
 
 
-                  Overall description of how \"This System\" satisfies AC-2, Part a.
+                  Overall description of how \"This System\" satisfies AC-2, Part
+                  a.
 
 
                   Response for the \"This System\" component.
 
 
-                  Overall description of how \"This System\" satisfies AC-2, Part a.
+                  Overall description of how \"This System\" satisfies AC-2, Part
+                  a.
 
 
                   Response for the \"This System\" component.
 
 
-                  Overall description of how \"This System\" satisfies AC-2, Part a.
+                  Overall description of how \"This System\" satisfies AC-2, Part
+                  a.
                 export:
                   description: Optional description about what is being exported.
                   responsibilities:
@@ -209,7 +218,8 @@ system-security-plan:
                         inheriting this capability.
 
 
-                        In the context of the application component in satisfaction of AC-2, part a.
+                        In the context of the application component in satisfaction
+                        of AC-2, part a.
                       responsible-roles:
                         - role-id: customer
               - component-uuid: 11111111-0000-4000-9001-000000000002
@@ -224,7 +234,8 @@ system-security-plan:
                         inherited.
 
 
-                        In the context of the application component in satisfaction of AC-2, part a.
+                        In the context of the application component in satisfaction
+                        of AC-2, part a.
                       responsible-roles:
                         - role-id: poc-for-customers
                   responsibilities:
@@ -235,17 +246,20 @@ system-security-plan:
                         inheriting this capability.
 
 
-                        In the context of the application component in satisfaction of AC-2, part a.
+                        In the context of the application component in satisfaction
+                        of AC-2, part a.
                       responsible-roles:
                         - role-id: customer
-            remarks: "a. Identifies and selects the following types of information system
-              accounts to support organizational missions/business functions:
-              [Assignment: privileged and non-privileged];"
+            remarks: "a. Identifies and selects the following types of information\
+              \ system accounts to support organizational missions/business functions:\
+              \ [Assignment: privileged and non-privileged];"
         remarks: >-
           The organization:
 
 
-          a. Identifies and selects the following types of information system accounts to support organizational missions/business functions: [Assignment: organization-defined information system account types];
+          a. Identifies and selects the following types of information system accounts
+          to support organizational missions/business functions: [Assignment: organization-defined
+          information system account types];
 
 
           b. Assigns account managers for information system accounts;

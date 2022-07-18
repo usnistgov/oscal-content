@@ -1,14 +1,14 @@
 {
   "catalog": {
-    "uuid": "6ab81aa8-5426-4b15-b747-f7ee5aa302ee",
+    "uuid": "75c2cdd3-0e99-43f3-8d35-7b2361e08caf",
     "metadata": {
       "title": "SP800-53 MODERATE IMPACT BASELINE",
-      "last-modified": "2022-01-25T16:52:33.280935Z",
+      "last-modified": "2022-07-18T16:08:46.903308Z",
       "version": "FPD",
       "oscal-version": "1.0.0",
       "links": [
         {
-          "href": "NIST_SP-800-53_rev5-FPD_MODERATE-baseline_profile.xml",
+          "href": "NIST_SP-800-53_rev5-FPD_MODERATE-baseline_profile.json",
           "rel": "resolution-source"
         }
       ],

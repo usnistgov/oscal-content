@@ -67,7 +67,7 @@
                   {
                     "id": "s1.1.1_stm",
                     "name": "statement",
-                    "prose": "All information security responsibilities should be defined and allocated.\n\nA value has been assigned to {{ insert: param, s1.1.1-prm11 }}.\n\nA cross link has been established with a choppy syntax: [(choppy)](#s1.2)."
+                    "prose": "All information security responsibilities should be defined and allocated.\n\nA value has been assigned to {{ insert: param, s1.1.1-prm1 }}.\n\nA cross link has been established with a choppy syntax: [(choppy)](#s1.2)."
                   },
                   {
                     "id": "s1.1.1_gdn",

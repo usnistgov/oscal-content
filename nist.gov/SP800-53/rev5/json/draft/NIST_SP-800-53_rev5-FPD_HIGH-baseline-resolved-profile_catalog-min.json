@@ -1,1 +1,64 @@
-{"catalog":{"uuid":"02075720-cfaf-4904-a96e-e6916eeb4ffe","metadata":{"title":"SP800-53 HIGH IMPACT BASELINE","last-modified":"2022-01-25T16:52:17.302903Z","version":"FPD","oscal-version":"1.0.0","links":[{"href":"NIST_SP-800-53_rev5-FPD_HIGH-baseline_profile.xml","rel":"resolution-source"}],"roles":[{"id":"creator","title":"Document Creator"},{"id":"contact","title":"Contact"}],"parties":[{"uuid":"a90f4235-ab3c-4bf1-ba0a-865bbc833346","type":"organization","name":"Joint Task Force, Transformation Initiative","email-addresses":["sec-cert@nist.gov"],"addresses":[{"addr-lines":["National Institute of Standards and Technology","Attn: Computer Security Division","Information Technology Laboratory","100 Bureau Drive (Mail Stop 8930)"],"city":"Gaithersburg","state":"MD","postal-code":"20899-8930"}]}],"responsible-parties":[{"role-id":"creator","party-uuids":["a90f4235-ab3c-4bf1-ba0a-865bbc833346"]},{"role-id":"contact","party-uuids":["a90f4235-ab3c-4bf1-ba0a-865bbc833346"]}]}}}
+{
+  "catalog": {
+    "uuid": "b010483f-0ad3-420c-b2fd-4c45f13c006c",
+    "metadata": {
+      "title": "SP800-53 HIGH IMPACT BASELINE",
+      "last-modified": "2022-07-18T16:08:32.515211Z",
+      "version": "FPD",
+      "oscal-version": "1.0.0",
+      "links": [
+        {
+          "href": "NIST_SP-800-53_rev5-FPD_HIGH-baseline_profile.json",
+          "rel": "resolution-source"
+        }
+      ],
+      "roles": [
+        {
+          "id": "creator",
+          "title": "Document Creator"
+        },
+        {
+          "id": "contact",
+          "title": "Contact"
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "a90f4235-ab3c-4bf1-ba0a-865bbc833346",
+          "type": "organization",
+          "name": "Joint Task Force, Transformation Initiative",
+          "email-addresses": [
+            "sec-cert@nist.gov"
+          ],
+          "addresses": [
+            {
+              "addr-lines": [
+                "National Institute of Standards and Technology",
+                "Attn: Computer Security Division",
+                "Information Technology Laboratory",
+                "100 Bureau Drive (Mail Stop 8930)"
+              ],
+              "city": "Gaithersburg",
+              "state": "MD",
+              "postal-code": "20899-8930"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "creator",
+          "party-uuids": [
+            "a90f4235-ab3c-4bf1-ba0a-865bbc833346"
+          ]
+        },
+        {
+          "role-id": "contact",
+          "party-uuids": [
+            "a90f4235-ab3c-4bf1-ba0a-865bbc833346"
+          ]
+        }
+      ]
+    }
+  }
+}
