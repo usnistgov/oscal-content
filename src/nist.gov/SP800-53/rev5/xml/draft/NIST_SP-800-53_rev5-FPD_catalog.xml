@@ -79,8 +79,7 @@
                <p>Develop, document, and disseminate to <insert type="param" id-ref="ac-1_prm_1"/>:</p>
                <part name="item" id="ac-1_smt.a.1">
                   <prop name="label" value="1."/>
-                  <p>
-                     <insert type="param" id-ref="ac-1_prm_2"/> access control policy that:</p>
+                  <p><insert type="param" id-ref="ac-1_prm_2"/> access control policy that:</p>
                   <part name="item" id="ac-1_smt.a.1.a">
                      <prop name="label" value="(a)"/>
                      <p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
@@ -221,18 +220,15 @@
                <p>Notify account managers and <insert type="param" id-ref="ac-2_prm_4"/> within:</p>
                <part name="item" id="ac-2_smt.h.1">
                   <prop name="label" value="1."/>
-                  <p>
-                     <insert type="param" id-ref="ac-2_prm_5"/> when accounts are no longer required;</p>
+                  <p><insert type="param" id-ref="ac-2_prm_5"/> when accounts are no longer required;</p>
                </part>
                <part name="item" id="ac-2_smt.h.2">
                   <prop name="label" value="2."/>
-                  <p>
-                     <insert type="param" id-ref="ac-2_prm_6"/> when users are terminated or transferred; and</p>
+                  <p><insert type="param" id-ref="ac-2_prm_6"/> when users are terminated or transferred; and</p>
                </part>
                <part name="item" id="ac-2_smt.h.3">
                   <prop name="label" value="3."/>
-                  <p>
-                     <insert type="param" id-ref="ac-2_prm_7"/> when system usage or need-to-know changes for an individual;</p>
+                  <p><insert type="param" id-ref="ac-2_prm_7"/> when system usage or need-to-know changes for an individual;</p>
                </part>
             </part>
             <part name="item" id="ac-2_smt.i">
@@ -248,8 +244,7 @@
                </part>
                <part name="item" id="ac-2_smt.i.3">
                   <prop name="label" value="3."/>
-                  <p>
-                     <insert type="param" id-ref="ac-2_prm_8"/>;</p>
+                  <p><insert type="param" id-ref="ac-2_prm_8"/>;</p>
                </part>
             </part>
             <part name="item" id="ac-2_smt.j">
@@ -779,8 +774,7 @@
                </part>
                <part name="item" id="ac-3.9_smt.b">
                   <prop name="label" value="(b)"/>
-                  <p>
-                     <insert type="param" id-ref="ac-3.9_prm_3"/> are used to validate the appropriateness of the information designated for release.</p>
+                  <p><insert type="param" id-ref="ac-3.9_prm_3"/> are used to validate the appropriateness of the information designated for release.</p>
                </part>
             </part>
             <part name="guidance" id="ac-3.9_gdn">
@@ -1091,8 +1085,7 @@
                </part>
                <part name="item" id="ac-4.8_smt.b">
                   <prop name="label" value="(b)"/>
-                  <p>
-                     <insert type="param" id-ref="ac-4.8_prm_3"/> data after a filter processing failure in accordance with <insert type="param" id-ref="ac-4.8_prm_4"/>.</p>
+                  <p><insert type="param" id-ref="ac-4.8_prm_3"/> data after a filter processing failure in accordance with <insert type="param" id-ref="ac-4.8_prm_4"/>.</p>
                </part>
             </part>
             <part name="guidance" id="ac-4.8_gdn">
@@ -1536,13 +1529,11 @@
                <p>Explicitly authorize access for <insert type="param" id-ref="ac-6.1_prm_1"/> to:</p>
                <part name="item" id="ac-6.1_smt.a">
                   <prop name="label" value="(a)"/>
-                  <p>
-                     <insert type="param" id-ref="ac-6.1_prm_2"/>; and</p>
+                  <p><insert type="param" id-ref="ac-6.1_prm_2"/>; and</p>
                </part>
                <part name="item" id="ac-6.1_smt.b">
                   <prop name="label" value="(b)"/>
-                  <p>
-                     <insert type="param" id-ref="ac-6.1_prm_3"/>.</p>
+                  <p><insert type="param" id-ref="ac-6.1_prm_3"/>.</p>
                </part>
             </part>
             <part name="guidance" id="ac-6.1_gdn">
@@ -3019,8 +3010,7 @@
          <link rel="related" href="#ac-2"/>
          <link rel="related" href="#ac-3"/>
          <part name="statement" id="ac-24_smt">
-            <p>
-               <insert type="param" id-ref="ac-24_prm_1"/> to ensure <insert type="param" id-ref="ac-24_prm_2"/> are applied to each access request prior to access enforcement.</p>
+            <p><insert type="param" id-ref="ac-24_prm_1"/> to ensure <insert type="param" id-ref="ac-24_prm_2"/> are applied to each access request prior to access enforcement.</p>
          </part>
          <part name="guidance" id="ac-24_gdn">
             <p>Access control decisions (also known as authorization decisions) occur when authorization information is applied to specific accesses. In contrast, access enforcement occurs when systems enforce access control decisions. While it is very common to have access control decisions and access enforcement implemented by the same entity, it is not required, and it is not always an optimal implementation choice. For some architectures and distributed systems, different entities may perform access control decisions and access enforcement.</p>
@@ -3124,8 +3114,7 @@
                <p>Develop, document, and disseminate to <insert type="param" id-ref="at-1_prm_1"/>:</p>
                <part name="item" id="at-1_smt.a.1">
                   <prop name="label" value="1."/>
-                  <p>
-                     <insert type="param" id-ref="at-1_prm_2"/> awareness and training policy that:</p>
+                  <p><insert type="param" id-ref="at-1_prm_2"/> awareness and training policy that:</p>
                   <part name="item" id="at-1_smt.a.1.a">
                      <prop name="label" value="(a)"/>
                      <p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
@@ -3558,8 +3547,7 @@
                <p>Develop, document, and disseminate to <insert type="param" id-ref="au-1_prm_1"/>:</p>
                <part name="item" id="au-1_smt.a.1">
                   <prop name="label" value="1."/>
-                  <p>
-                     <insert type="param" id-ref="au-1_prm_2"/> audit and accountability policy that:</p>
+                  <p><insert type="param" id-ref="au-1_prm_2"/> audit and accountability policy that:</p>
                   <part name="item" id="au-1_smt.a.1.a">
                      <prop name="label" value="(a)"/>
                      <p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
@@ -4960,8 +4948,7 @@
                <p>Develop, document, and disseminate to <insert type="param" id-ref="ca-1_prm_1"/>:</p>
                <part name="item" id="ca-1_smt.a.1">
                   <prop name="label" value="1."/>
-                  <p>
-                     <insert type="param" id-ref="ca-1_prm_2"/> assessment, authorization, and monitoring policy that:</p>
+                  <p><insert type="param" id-ref="ca-1_prm_2"/> assessment, authorization, and monitoring policy that:</p>
                   <part name="item" id="ca-1_smt.a.1.a">
                      <prop name="label" value="(a)"/>
                      <p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
@@ -5733,8 +5720,7 @@
                <p>Develop, document, and disseminate to <insert type="param" id-ref="cm-1_prm_1"/>:</p>
                <part name="item" id="cm-1_smt.a.1">
                   <prop name="label" value="1."/>
-                  <p>
-                     <insert type="param" id-ref="cm-1_prm_2"/> configuration management policy that:</p>
+                  <p><insert type="param" id-ref="cm-1_prm_2"/> configuration management policy that:</p>
                   <part name="item" id="cm-1_smt.a.1.a">
                      <prop name="label" value="(a)"/>
                      <p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
@@ -5811,8 +5797,7 @@
                <p>Review and update the baseline configuration of the system:</p>
                <part name="item" id="cm-2_smt.b.1">
                   <prop name="label" value="1."/>
-                  <p>
-                     <insert type="param" id-ref="cm-2_prm_1"/>;</p>
+                  <p><insert type="param" id-ref="cm-2_prm_1"/>;</p>
                </part>
                <part name="item" id="cm-2_smt.b.2">
                   <prop name="label" value="2."/>
@@ -7205,8 +7190,7 @@
                <p>Develop, document, and disseminate to <insert type="param" id-ref="cp-1_prm_1"/>:</p>
                <part name="item" id="cp-1_smt.a.1">
                   <prop name="label" value="1."/>
-                  <p>
-                     <insert type="param" id-ref="cp-1_prm_2"/> contingency planning policy that:</p>
+                  <p><insert type="param" id-ref="cp-1_prm_2"/> contingency planning policy that:</p>
                   <part name="item" id="cp-1_smt.a.1.a">
                      <prop name="label" value="(a)"/>
                      <p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
@@ -7495,8 +7479,7 @@
             </part>
             <part name="item" id="cp-3_smt.c">
                <prop name="label" value="c."/>
-               <p>
-                  <insert type="param" id-ref="cp-3_prm_2"/> thereafter.</p>
+               <p><insert type="param" id-ref="cp-3_prm_2"/> thereafter.</p>
             </part>
          </part>
          <part name="guidance" id="cp-3_gdn">
@@ -8124,8 +8107,7 @@
             <prop name="status" value="Withdrawn"/>
             <prop name="sort-id" value="CP-10(03)"/>
             <part name="statement" id="cp-10.3_smt">
-               <p>
-                  <em>Addressed through tailoring procedures.</em>
+               <p><em>Addressed through tailoring procedures.</em>
                </p>
             </part>
          </control>
@@ -8294,8 +8276,7 @@
                <p>Develop, document, and disseminate to <insert type="param" id-ref="ia-1_prm_1"/>:</p>
                <part name="item" id="ia-1_smt.a.1">
                   <prop name="label" value="1."/>
-                  <p>
-                     <insert type="param" id-ref="ia-1_prm_2"/> identification and authentication policy that:</p>
+                  <p><insert type="param" id-ref="ia-1_prm_2"/> identification and authentication policy that:</p>
                   <part name="item" id="ia-1_smt.a.1.a">
                      <prop name="label" value="(a)"/>
                      <p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
@@ -9520,8 +9501,7 @@
                <p>Develop, document, and disseminate to <insert type="param" id-ref="ir-1_prm_1"/>:</p>
                <part name="item" id="ir-1_smt.a.1">
                   <prop name="label" value="1."/>
-                  <p>
-                     <insert type="param" id-ref="ir-1_prm_2"/> incident response policy that:</p>
+                  <p><insert type="param" id-ref="ir-1_prm_2"/> incident response policy that:</p>
                   <part name="item" id="ir-1_smt.a.1.a">
                      <prop name="label" value="(a)"/>
                      <p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
@@ -9588,8 +9568,7 @@
             </part>
             <part name="item" id="ir-2_smt.c">
                <prop name="label" value="c."/>
-               <p>
-                  <insert type="param" id-ref="ir-2_prm_2"/> thereafter.</p>
+               <p><insert type="param" id-ref="ir-2_prm_2"/> thereafter.</p>
             </part>
          </part>
          <part name="guidance" id="ir-2_gdn">
@@ -10412,8 +10391,7 @@
                <p>Develop, document, and disseminate to <insert type="param" id-ref="ma-1_prm_1"/>:</p>
                <part name="item" id="ma-1_smt.a.1">
                   <prop name="label" value="1."/>
-                  <p>
-                     <insert type="param" id-ref="ma-1_prm_2"/> maintenance policy that:</p>
+                  <p><insert type="param" id-ref="ma-1_prm_2"/> maintenance policy that:</p>
                   <part name="item" id="ma-1_smt.a.1.a">
                      <prop name="label" value="(a)"/>
                      <p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
@@ -11086,8 +11064,7 @@
                <p>Develop, document, and disseminate to <insert type="param" id-ref="mp-1_prm_1"/>:</p>
                <part name="item" id="mp-1_smt.a.1">
                   <prop name="label" value="1."/>
-                  <p>
-                     <insert type="param" id-ref="mp-1_prm_2"/> media protection policy that:</p>
+                  <p><insert type="param" id-ref="mp-1_prm_2"/> media protection policy that:</p>
                   <part name="item" id="mp-1_smt.a.1.a">
                      <prop name="label" value="(a)"/>
                      <p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
@@ -11526,8 +11503,7 @@
          <part name="statement" id="mp-7_smt">
             <part name="item" id="mp-7_smt.a">
                <prop name="label" value="a."/>
-               <p>
-                  <insert type="param" id-ref="mp-7_prm_1"/> the use of <insert type="param" id-ref="mp-7_prm_2"/> on <insert type="param" id-ref="mp-7_prm_3"/> using <insert type="param" id-ref="mp-7_prm_4"/>; and</p>
+               <p><insert type="param" id-ref="mp-7_prm_1"/> the use of <insert type="param" id-ref="mp-7_prm_2"/> on <insert type="param" id-ref="mp-7_prm_3"/> using <insert type="param" id-ref="mp-7_prm_4"/>; and</p>
             </part>
             <part name="item" id="mp-7_smt.b">
                <prop name="label" value="b."/>
@@ -11676,8 +11652,7 @@
                <p>Develop, document, and disseminate to <insert type="param" id-ref="pe-1_prm_1"/>:</p>
                <part name="item" id="pe-1_smt.a.1">
                   <prop name="label" value="1."/>
-                  <p>
-                     <insert type="param" id-ref="pe-1_prm_2"/> physical and environmental protection policy that:</p>
+                  <p><insert type="param" id-ref="pe-1_prm_2"/> physical and environmental protection policy that:</p>
                   <part name="item" id="pe-1_smt.a.1.a">
                      <prop name="label" value="(a)"/>
                      <p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
@@ -12889,8 +12864,7 @@
                <p>Develop, document, and disseminate to <insert type="param" id-ref="pl-1_prm_1"/>:</p>
                <part name="item" id="pl-1_smt.a.1">
                   <prop name="label" value="1."/>
-                  <p>
-                     <insert type="param" id-ref="pl-1_prm_2"/> planning policy that:</p>
+                  <p><insert type="param" id-ref="pl-1_prm_2"/> planning policy that:</p>
                   <part name="item" id="pl-1_smt.a.1.a">
                      <prop name="label" value="(a)"/>
                      <p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
@@ -14257,8 +14231,7 @@
                </part>
                <part name="item" id="pm-27_smt.a.2">
                   <prop name="label" value="2."/>
-                  <p>
-                     <insert type="param" id-ref="pm-27_prm_2"/> and other personnel with responsibility for monitoring privacy program compliance; and</p>
+                  <p><insert type="param" id-ref="pm-27_prm_2"/> and other personnel with responsibility for monitoring privacy program compliance; and</p>
                </part>
             </part>
             <part name="item" id="pm-27_smt.b">
@@ -14569,8 +14542,7 @@
                <p>Develop, document, and disseminate to <insert type="param" id-ref="ps-1_prm_1"/>:</p>
                <part name="item" id="ps-1_smt.a.1">
                   <prop name="label" value="1."/>
-                  <p>
-                     <insert type="param" id-ref="ps-1_prm_2"/> personnel security policy that:</p>
+                  <p><insert type="param" id-ref="ps-1_prm_2"/> personnel security policy that:</p>
                   <part name="item" id="ps-1_smt.a.1.a">
                      <prop name="label" value="(a)"/>
                      <p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
@@ -15093,8 +15065,7 @@
                <p>Develop, document, and disseminate to <insert type="param" id-ref="pt-1_prm_1"/>:</p>
                <part name="item" id="pt-1_smt.a.1">
                   <prop name="label" value="1."/>
-                  <p>
-                     <insert type="param" id-ref="pt-1_prm_2"/> personally identifiable information processing and transparency policy that:</p>
+                  <p><insert type="param" id-ref="pt-1_prm_2"/> personally identifiable information processing and transparency policy that:</p>
                   <part name="item" id="pt-1_smt.a.1.a">
                      <prop name="label" value="(a)"/>
                      <p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
@@ -15658,8 +15629,7 @@
                <p>Develop, document, and disseminate to <insert type="param" id-ref="ra-1_prm_1"/>:</p>
                <part name="item" id="ra-1_smt.a.1">
                   <prop name="label" value="1."/>
-                  <p>
-                     <insert type="param" id-ref="ra-1_prm_2"/> risk assessment policy that:</p>
+                  <p><insert type="param" id-ref="ra-1_prm_2"/> risk assessment policy that:</p>
                   <part name="item" id="ra-1_smt.a.1.a">
                      <prop name="label" value="(a)"/>
                      <p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
@@ -16338,8 +16308,7 @@
                <p>Develop, document, and disseminate to <insert type="param" id-ref="sa-1_prm_1"/>:</p>
                <part name="item" id="sa-1_smt.a.1">
                   <prop name="label" value="1."/>
-                  <p>
-                     <insert type="param" id-ref="sa-1_prm_2"/> system and services acquisition policy that:</p>
+                  <p><insert type="param" id-ref="sa-1_prm_2"/> system and services acquisition policy that:</p>
                   <part name="item" id="sa-1_smt.a.1.a">
                      <prop name="label" value="(a)"/>
                      <p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
@@ -16647,18 +16616,15 @@
                <p>Require the developer of the system, system component, or system service to demonstrate the use of a system development life cycle process that includes:</p>
                <part name="item" id="sa-4.3_smt.a">
                   <prop name="label" value="(a)"/>
-                  <p>
-                     <insert type="param" id-ref="sa-4.3_prm_1"/>;</p>
+                  <p><insert type="param" id-ref="sa-4.3_prm_1"/>;</p>
                </part>
                <part name="item" id="sa-4.3_smt.b">
                   <prop name="label" value="(b)"/>
-                  <p>
-                     <insert type="param" id-ref="sa-4.3_prm_2"/> engineering methods];</p>
+                  <p><insert type="param" id-ref="sa-4.3_prm_2"/> engineering methods];</p>
                </part>
                <part name="item" id="sa-4.3_smt.c">
                   <prop name="label" value="(c)"/>
-                  <p>
-                     <insert type="param" id-ref="sa-4.3_prm_3"/>.</p>
+                  <p><insert type="param" id-ref="sa-4.3_prm_3"/>.</p>
                </part>
             </part>
             <part name="guidance" id="sa-4.3_gdn">
@@ -18889,8 +18855,7 @@
                <p>Develop, document, and disseminate to <insert type="param" id-ref="sc-1_prm_1"/>:</p>
                <part name="item" id="sc-1_smt.a.1">
                   <prop name="label" value="1."/>
-                  <p>
-                     <insert type="param" id-ref="sc-1_prm_2"/> system and communications protection policy that:</p>
+                  <p><insert type="param" id-ref="sc-1_prm_2"/> system and communications protection policy that:</p>
                   <part name="item" id="sc-1_smt.a.1.a">
                      <prop name="label" value="(a)"/>
                      <p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
@@ -19109,8 +19074,7 @@
          <part name="statement" id="sc-5_smt">
             <part name="item" id="sc-5_smt.a">
                <prop name="label" value="a."/>
-               <p>
-                  <insert type="param" id-ref="sc-5_prm_1"/> the effects of the following types of denial of service events: <insert type="param" id-ref="sc-5_prm_2"/>; and</p>
+               <p><insert type="param" id-ref="sc-5_prm_1"/> the effects of the following types of denial of service events: <insert type="param" id-ref="sc-5_prm_2"/>; and</p>
             </part>
             <part name="item" id="sc-5_smt.b">
                <prop name="label" value="b."/>
@@ -20405,8 +20369,7 @@
          <prop name="status" value="Withdrawn"/>
          <prop name="sort-id" value="SC-19"/>
          <part name="statement" id="sc-19_smt">
-            <p>
-               <em>Technology-specific; addressed by other controls for protocols.</em>
+            <p><em>Technology-specific; addressed by other controls for protocols.</em>
             </p>
          </part>
       </control>
@@ -21407,8 +21370,7 @@
          <link rel="related" href="#ac-20"/>
          <link rel="related" href="#mp-7"/>
          <part name="statement" id="sc-41_smt">
-            <p>
-               <insert type="param" id-ref="sc-41_prm_1"/> disable or remove <insert type="param" id-ref="sc-41_prm_2"/> on the following systems or system components: <insert type="param" id-ref="sc-41_prm_3"/>.</p>
+            <p><insert type="param" id-ref="sc-41_prm_1"/> disable or remove <insert type="param" id-ref="sc-41_prm_2"/> on the following systems or system components: <insert type="param" id-ref="sc-41_prm_3"/>.</p>
          </part>
          <part name="guidance" id="sc-41_gdn">
             <p>Connection ports include Universal Serial Bus (USB), Thunderbolt, Firewire (IEEE 1394). Input/output (I/O) devices include Compact Disk (CD) and Digital Versatile Disk (DVD) drives. Disabling or removing such connection ports and I/O devices helps prevent exfiltration of information from systems and the introduction of malicious code into systems from those ports or devices. Physically disabling or removing ports and/or devices is the stronger action.</p>
@@ -21786,8 +21748,7 @@
                <p>Develop, document, and disseminate to <insert type="param" id-ref="si-1_prm_1"/>:</p>
                <part name="item" id="si-1_smt.a.1">
                   <prop name="label" value="1."/>
-                  <p>
-                     <insert type="param" id-ref="si-1_prm_2"/> system and information integrity policy that:</p>
+                  <p><insert type="param" id-ref="si-1_prm_2"/> system and information integrity policy that:</p>
                   <part name="item" id="si-1_smt.a.1.a">
                      <prop name="label" value="(a)"/>
                      <p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
@@ -22043,8 +22004,7 @@
                </part>
                <part name="item" id="si-3_smt.c.2">
                   <prop name="label" value="2."/>
-                  <p>
-                     <insert type="param" id-ref="si-3_prm_4"/>; and send alert to <insert type="param" id-ref="si-3_prm_6"/> in response to malicious code detection.</p>
+                  <p><insert type="param" id-ref="si-3_prm_4"/>; and send alert to <insert type="param" id-ref="si-3_prm_6"/> in response to malicious code detection.</p>
                </part>
             </part>
             <part name="item" id="si-3_smt.d">
@@ -22158,8 +22118,7 @@
                </part>
                <part name="item" id="si-3.8_smt.b">
                   <prop name="label" value="(b)"/>
-                  <p>
-                     <insert type="param" id-ref="si-3.8_prm_3"/>.</p>
+                  <p><insert type="param" id-ref="si-3.8_prm_3"/>.</p>
                </part>
             </part>
             <part name="guidance" id="si-3.8_gdn">
@@ -22664,8 +22623,7 @@
                </part>
                <part name="item" id="si-4.22_smt.b">
                   <prop name="label" value="(b)"/>
-                  <p>
-                     <insert type="param" id-ref="si-4.22_prm_2"/> when detected.</p>
+                  <p><insert type="param" id-ref="si-4.22_prm_2"/> when detected.</p>
                </part>
             </part>
             <part name="guidance" id="si-4.22_gdn">
@@ -22849,8 +22807,7 @@
             </part>
             <part name="item" id="si-6_smt.d">
                <prop name="label" value="d."/>
-               <p>
-                  <insert type="param" id-ref="si-6_prm_6"/> when anomalies are discovered.</p>
+               <p><insert type="param" id-ref="si-6_prm_6"/> when anomalies are discovered.</p>
             </part>
          </part>
          <part name="guidance" id="si-6_gdn">
@@ -23634,8 +23591,7 @@
                </part>
                <part name="item" id="si-13.4_smt.b">
                   <prop name="label" value="(b)"/>
-                  <p>
-                     <insert type="param" id-ref="si-13.4_prm_2"/>.</p>
+                  <p><insert type="param" id-ref="si-13.4_prm_2"/>.</p>
                </part>
             </part>
             <part name="guidance" id="si-13.4_gdn">
@@ -23731,8 +23687,7 @@
             <part name="statement" id="si-14.2_smt">
                <part name="item" id="si-14.2_smt.a">
                   <prop name="label" value="(a)"/>
-                  <p>
-                     <insert type="param" id-ref="si-14.2_prm_1"/>; and</p>
+                  <p><insert type="param" id-ref="si-14.2_prm_1"/>; and</p>
                </part>
                <part name="item" id="si-14.2_smt.b">
                   <prop name="label" value="(b)"/>
@@ -24161,8 +24116,7 @@
                <p>Develop, document, and disseminate to <insert type="param" id-ref="sr-1_prm_1"/>:</p>
                <part name="item" id="sr-1_smt.a.1">
                   <prop name="label" value="1."/>
-                  <p>
-                     <insert type="param" id-ref="sr-1_prm_2"/> supply chain risk management policy that:</p>
+                  <p><insert type="param" id-ref="sr-1_prm_2"/> supply chain risk management policy that:</p>
                   <part name="item" id="sr-1_smt.a.1.a">
                      <prop name="label" value="(a)"/>
                      <p>Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
