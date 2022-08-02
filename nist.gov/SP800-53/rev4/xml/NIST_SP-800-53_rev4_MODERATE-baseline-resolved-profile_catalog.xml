@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="20605d15-89b2-4b65-9d3a-aa718c4043e9">
+         uuid="7209f923-e195-47a7-bb7f-50f164337401">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 4 MODERATE IMPACT BASELINE</title>
-      <last-modified>2022-07-18T16:03:42.477805Z</last-modified>
+      <last-modified>2022-08-02T17:46:39.400351Z</last-modified>
       <version>2015-01-22</version>
       <oscal-version>1.0.0</oscal-version>
       <link rel="resolution-source"

@@ -62,7 +62,7 @@ component-definition:
                 unauthorized disclosure or changes to information during transmission.
                 To implement TLS, set the PEMKeyFile option in the configuration /etc/mongod.conf
                 to the certificate file's path and restart the the component.
-            - uuid: cf8338c5-fb6e-4593-a4a8-b3c4946ee2a0
+            - uuid: 5227daf8-7a4b-4fe0-aea9-3547b7de2603
               control-id: sa-4.9
               description: Must ensure that MongoDB only listens for network connections
                 on authorized interfaces by configuring the MongoDB configuration

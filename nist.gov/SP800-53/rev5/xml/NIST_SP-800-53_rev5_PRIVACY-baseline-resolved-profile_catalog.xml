@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="caa4c993-18b9-4edf-a0d3-9eef8a35eaf5">
+         uuid="2bf46c66-ae5b-480d-9977-132202f79394">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 5 PRIVACY BASELINE</title>
-      <last-modified>2022-07-18T16:06:49.064227Z</last-modified>
+      <last-modified>2022-08-02T17:49:46.700013Z</last-modified>
       <version>Final</version>
       <oscal-version>1.0.0</oscal-version>
       <link rel="resolution-source"
