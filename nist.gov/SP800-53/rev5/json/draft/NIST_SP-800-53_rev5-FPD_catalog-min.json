@@ -190,7 +190,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": " {{ insert: param, ac-1_prm_2 }} access control policy that:",
+                        "prose": "{{ insert: param, ac-1_prm_2 }} access control policy that:",
                         "parts": [
                           {
                             "id": "ac-1_smt.a.1.a",
@@ -587,7 +587,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": " {{ insert: param, ac-2_prm_5 }} when accounts are no longer required;"
+                        "prose": "{{ insert: param, ac-2_prm_5 }} when accounts are no longer required;"
                       },
                       {
                         "id": "ac-2_smt.h.2",
@@ -598,7 +598,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": " {{ insert: param, ac-2_prm_6 }} when users are terminated or transferred; and"
+                        "prose": "{{ insert: param, ac-2_prm_6 }} when users are terminated or transferred; and"
                       },
                       {
                         "id": "ac-2_smt.h.3",
@@ -609,7 +609,7 @@
                             "value": "3."
                           }
                         ],
-                        "prose": " {{ insert: param, ac-2_prm_7 }} when system usage or need-to-know changes for an individual;"
+                        "prose": "{{ insert: param, ac-2_prm_7 }} when system usage or need-to-know changes for an individual;"
                       }
                     ]
                   },
@@ -655,7 +655,7 @@
                             "value": "3."
                           }
                         ],
-                        "prose": " {{ insert: param, ac-2_prm_8 }};"
+                        "prose": "{{ insert: param, ac-2_prm_8 }};"
                       }
                     ]
                   },
@@ -2104,7 +2104,7 @@
                             "value": "(b)"
                           }
                         ],
-                        "prose": " {{ insert: param, ac-3.9_prm_3 }} are used to validate the appropriateness of the information designated for release."
+                        "prose": "{{ insert: param, ac-3.9_prm_3 }} are used to validate the appropriateness of the information designated for release."
                       }
                     ]
                   },
@@ -2898,7 +2898,7 @@
                             "value": "(b)"
                           }
                         ],
-                        "prose": " {{ insert: param, ac-4.8_prm_3 }} data after a filter processing failure in accordance with {{ insert: param, ac-4.8_prm_4 }}."
+                        "prose": "{{ insert: param, ac-4.8_prm_3 }} data after a filter processing failure in accordance with {{ insert: param, ac-4.8_prm_4 }}."
                       }
                     ]
                   },
@@ -4044,7 +4044,7 @@
                             "value": "(a)"
                           }
                         ],
-                        "prose": " {{ insert: param, ac-6.1_prm_2 }}; and"
+                        "prose": "{{ insert: param, ac-6.1_prm_2 }}; and"
                       },
                       {
                         "id": "ac-6.1_smt.b",
@@ -4055,7 +4055,7 @@
                             "value": "(b)"
                           }
                         ],
-                        "prose": " {{ insert: param, ac-6.1_prm_3 }}."
+                        "prose": "{{ insert: param, ac-6.1_prm_3 }}."
                       }
                     ]
                   },
@@ -8081,7 +8081,7 @@
               {
                 "id": "ac-24_smt",
                 "name": "statement",
-                "prose": " {{ insert: param, ac-24_prm_1 }} to ensure {{ insert: param, ac-24_prm_2 }} are applied to each access request prior to access enforcement."
+                "prose": "{{ insert: param, ac-24_prm_1 }} to ensure {{ insert: param, ac-24_prm_2 }} are applied to each access request prior to access enforcement."
               },
               {
                 "id": "ac-24_gdn",
@@ -8352,7 +8352,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": " {{ insert: param, at-1_prm_2 }} awareness and training policy that:",
+                        "prose": "{{ insert: param, at-1_prm_2 }} awareness and training policy that:",
                         "parts": [
                           {
                             "id": "at-1_smt.a.1.a",
@@ -9576,7 +9576,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": " {{ insert: param, au-1_prm_2 }} audit and accountability policy that:",
+                        "prose": "{{ insert: param, au-1_prm_2 }} audit and accountability policy that:",
                         "parts": [
                           {
                             "id": "au-1_smt.a.1.a",
@@ -13505,7 +13505,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": " {{ insert: param, ca-1_prm_2 }} assessment, authorization, and monitoring policy that:",
+                        "prose": "{{ insert: param, ca-1_prm_2 }} assessment, authorization, and monitoring policy that:",
                         "parts": [
                           {
                             "id": "ca-1_smt.a.1.a",
@@ -15701,7 +15701,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": " {{ insert: param, cm-1_prm_2 }} configuration management policy that:",
+                        "prose": "{{ insert: param, cm-1_prm_2 }} configuration management policy that:",
                         "parts": [
                           {
                             "id": "cm-1_smt.a.1.a",
@@ -15941,7 +15941,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": " {{ insert: param, cm-2_prm_1 }};"
+                        "prose": "{{ insert: param, cm-2_prm_1 }};"
                       },
                       {
                         "id": "cm-2_smt.b.2",
@@ -19880,7 +19880,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": " {{ insert: param, cp-1_prm_2 }} contingency planning policy that:",
+                        "prose": "{{ insert: param, cp-1_prm_2 }} contingency planning policy that:",
                         "parts": [
                           {
                             "id": "cp-1_smt.a.1.a",
@@ -20684,7 +20684,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": " {{ insert: param, cp-3_prm_2 }} thereafter."
+                    "prose": "{{ insert: param, cp-3_prm_2 }} thereafter."
                   }
                 ]
               },
@@ -22473,7 +22473,7 @@
                   {
                     "id": "cp-10.3_smt",
                     "name": "statement",
-                    "prose": " *Addressed through tailoring procedures.* "
+                    "prose": "*Addressed through tailoring procedures.* "
                   }
                 ]
               },
@@ -22937,7 +22937,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": " {{ insert: param, ia-1_prm_2 }} identification and authentication policy that:",
+                        "prose": "{{ insert: param, ia-1_prm_2 }} identification and authentication policy that:",
                         "parts": [
                           {
                             "id": "ia-1_smt.a.1.a",
@@ -26399,7 +26399,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": " {{ insert: param, ir-1_prm_2 }} incident response policy that:",
+                        "prose": "{{ insert: param, ir-1_prm_2 }} incident response policy that:",
                         "parts": [
                           {
                             "id": "ir-1_smt.a.1.a",
@@ -26592,7 +26592,7 @@
                         "value": "c."
                       }
                     ],
-                    "prose": " {{ insert: param, ir-2_prm_2 }} thereafter."
+                    "prose": "{{ insert: param, ir-2_prm_2 }} thereafter."
                   }
                 ]
               },
@@ -28847,7 +28847,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": " {{ insert: param, ma-1_prm_2 }} maintenance policy that:",
+                        "prose": "{{ insert: param, ma-1_prm_2 }} maintenance policy that:",
                         "parts": [
                           {
                             "id": "ma-1_smt.a.1.a",
@@ -30755,7 +30755,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": " {{ insert: param, mp-1_prm_2 }} media protection policy that:",
+                        "prose": "{{ insert: param, mp-1_prm_2 }} media protection policy that:",
                         "parts": [
                           {
                             "id": "mp-1_smt.a.1.a",
@@ -32057,7 +32057,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": " {{ insert: param, mp-7_prm_1 }} the use of {{ insert: param, mp-7_prm_2 }} on {{ insert: param, mp-7_prm_3 }} using {{ insert: param, mp-7_prm_4 }}; and"
+                    "prose": "{{ insert: param, mp-7_prm_1 }} the use of {{ insert: param, mp-7_prm_2 }} on {{ insert: param, mp-7_prm_3 }} using {{ insert: param, mp-7_prm_4 }}; and"
                   },
                   {
                     "id": "mp-7_smt.b",
@@ -32446,7 +32446,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": " {{ insert: param, pe-1_prm_2 }} physical and environmental protection policy that:",
+                        "prose": "{{ insert: param, pe-1_prm_2 }} physical and environmental protection policy that:",
                         "parts": [
                           {
                             "id": "pe-1_smt.a.1.a",
@@ -35696,7 +35696,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": " {{ insert: param, pl-1_prm_2 }} planning policy that:",
+                        "prose": "{{ insert: param, pl-1_prm_2 }} planning policy that:",
                         "parts": [
                           {
                             "id": "pl-1_smt.a.1.a",
@@ -39893,7 +39893,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": " {{ insert: param, pm-27_prm_2 }} and other personnel with responsibility for monitoring privacy program compliance; and"
+                        "prose": "{{ insert: param, pm-27_prm_2 }} and other personnel with responsibility for monitoring privacy program compliance; and"
                       }
                     ]
                   },
@@ -40820,7 +40820,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": " {{ insert: param, ps-1_prm_2 }} personnel security policy that:",
+                        "prose": "{{ insert: param, ps-1_prm_2 }} personnel security policy that:",
                         "parts": [
                           {
                             "id": "ps-1_smt.a.1.a",
@@ -42320,7 +42320,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": " {{ insert: param, pt-1_prm_2 }} personally identifiable information processing and transparency policy that:",
+                        "prose": "{{ insert: param, pt-1_prm_2 }} personally identifiable information processing and transparency policy that:",
                         "parts": [
                           {
                             "id": "pt-1_smt.a.1.a",
@@ -43925,7 +43925,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": " {{ insert: param, ra-1_prm_2 }} risk assessment policy that:",
+                        "prose": "{{ insert: param, ra-1_prm_2 }} risk assessment policy that:",
                         "parts": [
                           {
                             "id": "ra-1_smt.a.1.a",
@@ -45825,7 +45825,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": " {{ insert: param, sa-1_prm_2 }} system and services acquisition policy that:",
+                        "prose": "{{ insert: param, sa-1_prm_2 }} system and services acquisition policy that:",
                         "parts": [
                           {
                             "id": "sa-1_smt.a.1.a",
@@ -46712,7 +46712,7 @@
                             "value": "(a)"
                           }
                         ],
-                        "prose": " {{ insert: param, sa-4.3_prm_1 }};"
+                        "prose": "{{ insert: param, sa-4.3_prm_1 }};"
                       },
                       {
                         "id": "sa-4.3_smt.b",
@@ -46723,7 +46723,7 @@
                             "value": "(b)"
                           }
                         ],
-                        "prose": " {{ insert: param, sa-4.3_prm_2 }} engineering methods];"
+                        "prose": "{{ insert: param, sa-4.3_prm_2 }} engineering methods];"
                       },
                       {
                         "id": "sa-4.3_smt.c",
@@ -46734,7 +46734,7 @@
                             "value": "(c)"
                           }
                         ],
-                        "prose": " {{ insert: param, sa-4.3_prm_3 }}."
+                        "prose": "{{ insert: param, sa-4.3_prm_3 }}."
                       }
                     ]
                   },
@@ -53030,7 +53030,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": " {{ insert: param, sc-1_prm_2 }} system and communications protection policy that:",
+                        "prose": "{{ insert: param, sc-1_prm_2 }} system and communications protection policy that:",
                         "parts": [
                           {
                             "id": "sc-1_smt.a.1.a",
@@ -53647,7 +53647,7 @@
                         "value": "a."
                       }
                     ],
-                    "prose": " {{ insert: param, sc-5_prm_1 }} the effects of the following types of denial of service events: {{ insert: param, sc-5_prm_2 }}; and"
+                    "prose": "{{ insert: param, sc-5_prm_1 }} the effects of the following types of denial of service events: {{ insert: param, sc-5_prm_2 }}; and"
                   },
                   {
                     "id": "sc-5_smt.b",
@@ -57218,7 +57218,7 @@
               {
                 "id": "sc-19_smt",
                 "name": "statement",
-                "prose": " *Technology-specific; addressed by other controls for protocols.* "
+                "prose": "*Technology-specific; addressed by other controls for protocols.* "
               }
             ]
           },
@@ -59966,7 +59966,7 @@
               {
                 "id": "sc-41_smt",
                 "name": "statement",
-                "prose": " {{ insert: param, sc-41_prm_1 }} disable or remove {{ insert: param, sc-41_prm_2 }} on the following systems or system components: {{ insert: param, sc-41_prm_3 }}."
+                "prose": "{{ insert: param, sc-41_prm_1 }} disable or remove {{ insert: param, sc-41_prm_2 }} on the following systems or system components: {{ insert: param, sc-41_prm_3 }}."
               },
               {
                 "id": "sc-41_gdn",
@@ -60978,7 +60978,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": " {{ insert: param, si-1_prm_2 }} system and information integrity policy that:",
+                        "prose": "{{ insert: param, si-1_prm_2 }} system and information integrity policy that:",
                         "parts": [
                           {
                             "id": "si-1_smt.a.1.a",
@@ -61681,7 +61681,7 @@
                             "value": "2."
                           }
                         ],
-                        "prose": " {{ insert: param, si-3_prm_4 }}; and send alert to {{ insert: param, si-3_prm_6 }} in response to malicious code detection."
+                        "prose": "{{ insert: param, si-3_prm_4 }}; and send alert to {{ insert: param, si-3_prm_6 }} in response to malicious code detection."
                       }
                     ]
                   },
@@ -62015,7 +62015,7 @@
                             "value": "(b)"
                           }
                         ],
-                        "prose": " {{ insert: param, si-3.8_prm_3 }}."
+                        "prose": "{{ insert: param, si-3.8_prm_3 }}."
                       }
                     ]
                   },
@@ -63359,7 +63359,7 @@
                             "value": "(b)"
                           }
                         ],
-                        "prose": " {{ insert: param, si-4.22_prm_2 }} when detected."
+                        "prose": "{{ insert: param, si-4.22_prm_2 }} when detected."
                       }
                     ]
                   },
@@ -63776,7 +63776,7 @@
                         "value": "d."
                       }
                     ],
-                    "prose": " {{ insert: param, si-6_prm_6 }} when anomalies are discovered."
+                    "prose": "{{ insert: param, si-6_prm_6 }} when anomalies are discovered."
                   }
                 ]
               },
@@ -65959,7 +65959,7 @@
                             "value": "(b)"
                           }
                         ],
-                        "prose": " {{ insert: param, si-13.4_prm_2 }}."
+                        "prose": "{{ insert: param, si-13.4_prm_2 }}."
                       }
                     ]
                   },
@@ -66177,7 +66177,7 @@
                             "value": "(a)"
                           }
                         ],
-                        "prose": " {{ insert: param, si-14.2_prm_1 }}; and"
+                        "prose": "{{ insert: param, si-14.2_prm_1 }}; and"
                       },
                       {
                         "id": "si-14.2_smt.b",
@@ -67311,7 +67311,7 @@
                             "value": "1."
                           }
                         ],
-                        "prose": " {{ insert: param, sr-1_prm_2 }} supply chain risk management policy that:",
+                        "prose": "{{ insert: param, sr-1_prm_2 }} supply chain risk management policy that:",
                         "parts": [
                           {
                             "id": "sr-1_smt.a.1.a",

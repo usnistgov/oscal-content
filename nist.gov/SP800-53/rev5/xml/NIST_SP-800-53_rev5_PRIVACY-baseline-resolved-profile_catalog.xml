@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="2bf46c66-ae5b-480d-9977-132202f79394">
+         uuid="cb54bc61-173e-4a2d-aacd-4da8cfa17aa8">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 5 PRIVACY BASELINE</title>
-      <last-modified>2022-08-02T17:49:46.700013Z</last-modified>
+      <last-modified>2022-08-02T18:11:20.726185Z</last-modified>
       <version>Final</version>
       <oscal-version>1.0.0</oscal-version>
       <link rel="resolution-source"
@@ -5820,7 +5820,7 @@
                <p>procedures addressing management (i.e., documentation, tracking, and reporting) of the authorization process</p>
                <p>assessment, authorization, and monitoring policy</p>
                <p>assessment, authorization, and monitoring procedures</p>
-               <p> system authorization documentation</p>
+               <p>system authorization documentation</p>
                <p>lists or other documentation about authorization process roles and responsibilities</p>
                <p>risk assessment results relevant to the authorization process and the organization-wide risk management program</p>
                <p>organizational risk management strategy</p>
@@ -5930,8 +5930,8 @@
                <p>procedures for determining mission and business protection needs</p>
                <p>information security and privacy risk assessment results relevant to the determination of mission and business protection needs</p>
                <p>personally identifiable information processing policy</p>
-               <p> personally identifiable information inventory</p>
-               <p> other relevant documents or records</p>
+               <p>personally identifiable information inventory</p>
+               <p>other relevant documents or records</p>
             </part>
          </part>
          <part id="pm-11_asm-interview" name="assessment-method">
