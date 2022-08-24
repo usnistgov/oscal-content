@@ -39,11 +39,18 @@
     with <link rel="required" href="#[param parent ID]"/> -->
     <!--see  /control[@id='sc-42.2'] for an example -->
     
+
+    <sch:let name="show-info" value="false()"/>
+    
     <sch:pattern>
         <sch:rule context="o:insert[@type='param']">
             <sch:let name="my-param" value="key('parameter-by-id',@id-ref)"/>
             <sch:let name="dependencies" value="ancestor::o:control[1]/o:link[@rel='required']/key('link-targets',@href)"/>
-            <sch:assert test="empty($my-param/parent::* except (ancestor::* union $dependencies))" role="error">Reference is made to a parameter '<sch:value-of select="@id-ref"/>' outside the hierarchy of the insertion, and no dependency is marked (use link[@rel]/@href on the containing control).</sch:assert>
+            <sch:let name="sits-outside" value="exists($my-param/parent::* except ancestor::o:control)"/>
+            <sch:assert test="$my-param/parent::* is ancestor::o:control[1] or $sits-outside" role="info">Reference is made to parameter <sch:value-of select="@id-ref"/> outside the control context of the insertion (control <sch:value-of select="ancestor::o:control[1]/@id"/>).</sch:assert>
+            <sch:assert test="not($sits-outside)" role="info">Reference is made to parameter <sch:value-of select="@id-ref"/> outside the control ancestry of the insertion (control <sch:value-of select="ancestor::o:control[last()]/@id"/>).</sch:assert>
+            <sch:assert test="empty($my-param/parent::* except (ancestor::o:control[1] union $dependencies))" role="warning">Reference is made to parameter <sch:value-of select="@id-ref"/> outside the control context of the insertion, and no dependency is marked (use &lt;link rel="required" href="<sch:value-of select="$my-param/../@id"/>"/> on control <sch:value-of select="ancestor::o:control[1]/@id"/>).</sch:assert>
+            <!--<sch:assert test="empty($my-param/parent::* except (ancestor::o:control union $dependencies))" role="error">Reference is made to a parameter <sch:value-of select="@id-ref"/> outside the hierarchy of the insertion, and no dependency is marked (use &lt;link rel="required" href="<sch:value-of select="$my-param/../@id"/>"/> on control <sch:value-of select="ancestor::o:control[1]/@id"/>).</sch:assert>-->
         </sch:rule>
     </sch:pattern>
 
