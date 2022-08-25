@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="a126c035-b372-42e7-b92d-aeac4e5903d9">
+         uuid="01fd2f23-0d2b-4b2e-bb63-6d81e3ffa5c2">
    <metadata>
       <title>SP800-53 PRIVACY BASELINE</title>
-      <last-modified>2022-08-19T12:06:21.450528Z</last-modified>
+      <last-modified>2022-08-25T18:36:05.864088Z</last-modified>
       <version>FPD</version>
       <oscal-version>1.0.0</oscal-version>
       <link rel="resolution-source"

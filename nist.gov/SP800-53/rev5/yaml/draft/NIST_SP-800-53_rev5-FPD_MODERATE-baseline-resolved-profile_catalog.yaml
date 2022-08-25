@@ -1,9 +1,9 @@
 ---
 catalog:
-  uuid: b8706c1d-793a-4cfa-97db-7eeb521b9051
+  uuid: ecb35bac-8060-42dd-b991-d7bfa192c50e
   metadata:
     title: SP800-53 MODERATE IMPACT BASELINE
-    last-modified: 2022-08-19T12:06:14.289883Z
+    last-modified: 2022-08-25T18:35:58.535429Z
     version: FPD
     oscal-version: 1.0.0
     links:

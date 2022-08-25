@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="a2250a74-d6b7-4847-a9d7-638b74d96457">
+         uuid="331c4327-5ca3-4410-baaa-777eb633505b">
    <metadata>
       <title>SP800-53 HIGH IMPACT BASELINE</title>
-      <last-modified>2022-08-19T12:05:59.753497Z</last-modified>
+      <last-modified>2022-08-25T18:35:43.9564Z</last-modified>
       <version>FPD</version>
       <oscal-version>1.0.0</oscal-version>
       <link rel="resolution-source"
