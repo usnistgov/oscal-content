@@ -63,7 +63,8 @@
     
     <sch:let name="known-part-names" value="('overview','statement', 'item', 'guidance', 'assessment-objective', 'assessment-method', 'assessment-objects')"/>
     
-    <sch:let name="known-property-names" value="('keywords', 'label', 'sort-id', 'method', 'status', 'aggregates', 'alt-identifier', 'alt-label')"/>
+    <sch:let name="known-property-names" value="('keywords', 'label', 'sort-id', 'method', 'status', 'aggregates', 'alt-identifier', 'alt-label',
+        'implementation-level','contributes-to-assurance')"/>
     
     <sch:pattern id="general">
         <sch:rule context="*[matches(@name,'\S')]">
@@ -99,10 +100,10 @@
 <!-- Ensure all the values of @name given are known.  -->
     <sch:pattern id="occurrences">
         <sch:rule context="o:part[exists(@name)]">
-            <sch:assert test="@name=$known-part-names">@name on part is not recognized: we expect <sch:value-of select="o:or-sequence($known-part-names)"/></sch:assert>
+            <sch:assert test="@name=$known-part-names">@name '<sch:value-of select="@name"/>' on part is not recognized: we expect <sch:value-of select="o:or-sequence($known-part-names)"/></sch:assert>
         </sch:rule>
         <sch:rule context="o:prop[exists(@name)]">
-            <sch:assert test="@name=$known-property-names">@name on property is not recognized: we expect <sch:value-of select="o:or-sequence($known-property-names)"/></sch:assert>
+            <sch:assert test="@name=$known-property-names">@name '<sch:value-of select="@name"/>' on property is not recognized: we expect <sch:value-of select="o:or-sequence($known-property-names)"/></sch:assert>
         </sch:rule>
         
     </sch:pattern>
@@ -215,16 +216,25 @@
         </sch:rule>
     </sch:pattern>
     
-    <sch:pattern id="conversion-quality">
+    <sch:pattern id="element-content-conversions">
         <sch:rule context="o:p|o:li">
             <sch:report test="matches(.,'^\s*\d')"><sch:name/> starts with a numeral</sch:report>
         </sch:rule>
         <sch:rule context="o:b | o:i | o:u | o:a | o:code | o:q">
             <sch:assert test="matches(.,'\S')"><sch:name/> appears without content</sch:assert>
         </sch:rule>
+        <sch:rule context="o:title">
+            <sch:report test="matches(.,'\p{Ps}\p{Ll}')">Title contains an open bracket followed by lower case</sch:report>
+            <sch:report test="matches(.,'(&#x8212;\S|\S&#x8212;)')">Title contains an em dash without whitespace </sch:report>
+            <!--<sch:report test="matches(.,'(/\S|\S/)')">Title contains a slash without whitespace</sch:report>-->
+        </sch:rule>
+    </sch:pattern>
+    
+    <sch:pattern id="text-conversions">
         <sch:rule context="*[exists(text()[matches(.,'\S')])]">
             <sch:report test="matches(string(.),'\[Assign')">Check text for dropped paramater ("[Assign")</sch:report>
         </sch:rule>
+        
         
     </sch:pattern>
 
