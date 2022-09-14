@@ -10,6 +10,40 @@ These files are maintained by a Continuous Integration and Continuous Deployment
 
 ## Contributing
 
+### How do I set up my developerment environment?
+
+```mermaid
+graph TD
+    ForkRepo[fork repo into GitHub account] --> LocalRepoClone
+    LocalRepoClone[clone git repo onto computer] --> UpdateRemote
+    UpdateRemote[fetch remote updates from usnistgov] --> PushChangesFork
+    PushChangesFork[push updates to my fork] --> EditExample
+    EditExample[begin editing example content]
+```
+
+### How do I send change content to the OSCAL Team for review?
+
+```mermaid
+graph TD
+    MakeBranchFork[make git branch for intended changes] --> EditExample
+    EditExample[edit content in ./src/examples] --> CommitGit
+    CommitGit[commit changes with git] --> PushGitHub
+    PushGitHub[push changes to GitHub] --> MakePrBranch
+    MakePrBranch[PR branch to usnistgov/oscal-content develop branch] -->TriggerGitHubActions
+    TriggerGitHubActions[trigger GitHub Actions job] --> ValidateContent
+    ValidateContent[job validates content in ./src] --> IsContentValid{Content passes validation?}
+    IsContentValid -->|Yes| ConvertContent
+    IsContentValid -->|No| EditExample
+    ConvertContent[job converts ./src to OSCAL JSON, XML, YAML] --> ConvertContentHasErrors{Did conversion throw errors?}
+    ConvertContentHasErrors -->|No| UploadSnapshot
+    ConvertContentHasErrors -->|Yes| EditExample
+    UploadSnapshot[attach ZIP of files for debugging] --> CommitConvertedResources
+    CommitConvertedResources[job commits converted content back to repo] --> Done
+    Done[Good job, you're done!]
+```
+
+### Step-by-step instructions
+
 1. Read the [CONTRIBUTING.md](CONTRIBUTING.md) file to understand the NIST OSCAL contribution process.
 2. Fork this repository to add your contributions.
 3. Make changes in the [src](src) directory.
