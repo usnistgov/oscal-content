@@ -1,0 +1,46 @@
+assessment-plan:
+  uuid: AAAA4321-AAAA-5555-AAAA-AAAAAAAAAAAA
+ 
+  metadata:
+    title: OSCAL Automated Workflow Example
+    last-modified: 2022-07-27T09:00:00.000000-04:00
+    version: 0.0.1
+    oscal-version: 1.0.4
+  
+  import-ssp:
+    href: ./system-security-plan.yaml
+  
+  reviewed-controls:
+    control-selections:
+      include_controls:
+        - control-id: ac-8
+    control-objective-selections:
+      include-objectives:
+        - objective-id: ac-8.a_obj
+        - objective-id: ac-8.a_obj.1
+        - objective-id: ac-8.a_obj.2
+        - objective-id: ac-8.a_obj.3
+        - objective-id: ac-8.a_obj.4
+        - objective-id: ac-8_obj.b
+    remarks: Control objective selections are declared separately of the include-controls directive, must be explicit here.
+
+  tasks:
+    - uuid: BBAA0001-AAAA-5555-AAAA-AAAAAAAAAAAA
+      title: Validate System Use Notification Presence from Python Script
+      description: Check system use notification presence.
+      type: action
+      links:
+        - href: "#BAAA0001-AAAA-5555-AAAA-AAAAAAAAAAAA"
+          rel: command
+
+  back-matter:
+    resources:
+      - uuid: BAAA0001-AAAA-5555-AAAA-AAAAAAAAAAAA
+        title: "Execute pytest"
+        description: "This is just to test the concept of executing some script or action within the repository."
+        rlinks:
+          - href: script/app_assessment.py
+            media-type: text/plain
+            hashes:
+              - algorithm: SHA-256
+                value: 2e7de3c29f5ac5bceb0e5ef7a3a0134a6cca49c7135cf8c138f1422fb0fa9cee

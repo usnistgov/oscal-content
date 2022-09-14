@@ -1,0 +1,41 @@
+profile:
+  uuid: ##########ID##########
+  metadata:
+    title: Bloss@m Minimal Baseline for Demonstration
+    last-modified: 2022-06-27T00:00:00.000000-04:00
+    version: 0.0.1
+    oscal-version: 1.0.4
+    roles:
+      - id: creator
+        title: Document Creator
+      - id: contact
+        title: Contact
+    parties:
+      - uuid: ##########ID##########
+        type: organization
+        name: CSD Development
+        email-addresses:
+          - blossom@nist.gov
+        addresses:
+          - addr-lines:
+              - National Institute of Standards and Technology
+              - "Attn: Computer Security Division"
+              - Information Technology Laboratory
+              - 100 Bureau Drive (Mail Stop 8930)
+            city: Gaithersburg
+            state: MD
+            postal-code: 20899-8930
+    responsible-parties:
+      - role-id: creator
+        party-uuids:
+          - ##########ID##########
+      - role-id: contact
+        party-uuids:
+          - ##########ID##########
+  imports:
+    - href: ../../nist.gov/SP800-53/rev5/yaml/NIST_SP-800-53_rev5_catalog.yaml
+      include-controls:
+        - with-ids:
+            - ac-8
+  merge:
+    as-is: true

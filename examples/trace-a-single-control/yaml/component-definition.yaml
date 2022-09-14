@@ -1,0 +1,34 @@
+component-definition:
+  uuid: ##########ID##########
+
+  metadata:
+    title: System Definition
+    last-modified: 2022-09-08T00:00:00.0000-04:00
+    version: "0.0.1"
+    oscal-version: 1.0.4
+
+    parties:
+      - uuid: ##########ID##########
+        name: CSD Development Team
+        type: National Institute of Standards and Technology
+
+  components:
+    - uuid: ##########ID##########
+      type: software
+      title: Base Application Component (GitHub Software Repository)
+      description: This is a software component that implements a basic OSCAL workflow.
+
+      responsible-roles:
+        - role-id: provider
+          party-uuids:
+            - ##########ID##########
+
+      control-implementations:
+
+        - uuid: ##########ID##########
+          source: catalog.yaml
+          description: This is a partial implementation.
+          implemented-requirements:
+            - uuid: ##########ID##########
+              description: This should display a system use notification during the continuous integration process.
+              control-id: ac-8

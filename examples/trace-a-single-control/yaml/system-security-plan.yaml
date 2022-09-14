@@ -1,0 +1,129 @@
+system-security-plan:
+  uuid: ##########ID##########
+
+  metadata:
+    title: Leveraging SaaS System Security Plan
+    last-modified: 2022-09-08T00:00:00.0000-04:00
+    version: "0.1"
+    oscal-version: 1.0.4
+    roles:
+      - id: admin
+        title: Administrator
+    parties:
+      - uuid: ##########ID##########
+        type: person
+  
+  import-profile:
+    href: profile.yaml
+  
+  system-characteristics:
+    system-ids:
+      - id: saas_system_iaas_customer
+    system-name: Leveraging SaaS System
+    description: >
+      NO CONTENT HERE FOR NOW
+    security-sensitivity-level: low
+    system-information:
+      information-types:
+        - title: System Assessment
+          description: This system handles development information pertaining to audit and assessment events to demonstrate the OSCAL workflow.
+          categorizations:
+            - system: https://doi.org/10.6028/NIST.SP.800-60v2r1
+              information-type-ids:
+                - C.3.5.1
+          confidentiality-impact:
+            base: fips-199-low
+          integrity-impact:
+            base: fips-199-low
+          availability-impact:
+            base: fips-199-low
+    security-impact-level:
+      security-objective-confidentiality: fips-199-low
+      security-objective-integrity: fips-199-low
+      security-objective-availability: fips-199-low
+    status:
+      state: operational
+    authorization-boundary:
+      description: This system is for demonstration purposes only.
+  
+  system-implementation:
+    users:
+      - uuid: ##########ID##########
+        role-ids:
+          - admin
+        authorized-privileges:
+          - title: Developer
+            functions-performed:
+              - Manages the content and components within the system.
+    components:
+      - uuid: ##########ID##########
+        type: this-system
+        title: OSCAL Testing Workflow Application
+        description: This is an application to demonstrate minimal OSCAL content, and automation to execute tests against the application.
+        props:
+          - name: implementation-point
+            value: system
+        status:
+          state: operational
+
+  
+  control-implementation:
+    description: This system implements a very minimal set of controls for demonstration only.
+    implemented-requirements:
+      - uuid: ##########ID##########
+        control-id: ac-8
+        set-parameters:
+          - param-id: ac-8_prm_1
+            values: >-
+              You are accessing a U.S. Government information system, which includes: 1) this computer, 2) this computer network, 
+              3) all Government-furnished computers connected to this network, and 4) all Government-furnished devices and storage 
+              media attached to this network or to a computer on this network. You understand and consent to the following: you 
+              may access this information system for authorized use only; unauthorized use of the system is prohibited and subject 
+              to criminal and civil penalties; you have no reasonable expectation of privacy regarding any communication or data 
+              transiting or stored on this information system at any time and for any lawful Government purpose, the Government may 
+              monitor, intercept, audit, and search and seize any communication or data transiting or stored on this information system; 
+              and any communications or data transiting or stored on this information system may be disclosed or used for any lawful 
+              Government purpose. This information system may contain Controlled Unclassified Information (CUI) that is subject to 
+              safeguarding or dissemination controls in accordance with law, regulation, or Government-wide policy. Accessing and 
+              using this system indicates your understanding of this warning.
+        statements:
+          - statement-id: ac-8_smt.a
+            uuid: ##########ID##########
+              by-components:
+                - component-uuid: ##########ID##########
+                  uuid: ##########ID##########
+                  description: >-
+                    The system use notification will be implemented in the following locations before allowing access:
+                      * Server log in
+                      * Application log in
+                  props:
+                    - name: responsibility
+                      value: provider
+          - statement-id: ac-8_smt.b
+            uuid: ##########ID##########
+              by-components:
+                - component-uuid: ##########ID##########
+                  uuid: ##########ID##########
+                  description: >-
+                    The system use notification will remain visible until the user completes the actions required to attempt to log into the system.
+                  props:
+                    - name: responsibility
+                      value: provider
+          - statement-id: ac-8_smt.c
+            uuid: ##########ID##########
+              by-components:
+                - component-uuid: ##########ID##########
+                  uuid: ##########ID##########
+                  description: >-
+                    This system is not authorized to be publicly accessible.  If any response from the system can be displayed on screen, 
+                    such as a terminal window or web browser, the system use notification will be emitted.
+                  props:
+                    - name: responsibility
+                      value: provider       
+
+
+  back-matter:
+    resources:
+      - uuid: ##########ID##########
+        rlinks:
+          - href: component-definition.yaml
