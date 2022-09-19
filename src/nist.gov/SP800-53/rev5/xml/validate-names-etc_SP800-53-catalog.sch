@@ -64,7 +64,9 @@
     <sch:let name="known-part-names" value="('overview','statement', 'item', 'guidance', 'assessment-objective', 'assessment-method', 'assessment-objects')"/>
     
     
-    <sch:let name="known-property-names" value="('keywords', 'label', 'sort-id', 'method', 'status', 'aggregates', 'alt-identifier', 'alt-label','implementation-level','contributes-to-assurance')"/>
+    <sch:let name="rmf-property-names" value="('implementation-level','contributes-to-assurance')"/>
+    
+    <sch:let name="known-property-names" value="('keywords', 'label', 'sort-id', 'method', 'status', 'aggregates', 'alt-identifier', 'alt-label',$rmf-property-names)"/>
     
     <sch:pattern id="general">
         <sch:rule context="*[matches(@name,'\S')]">
@@ -104,6 +106,7 @@
         </sch:rule>
         <sch:rule context="o:prop[exists(@name)]">
             <sch:assert test="@name=$known-property-names">@name on property is not recognized: we expect <sch:value-of select="o:or-sequence($known-property-names)"/></sch:assert>
+            <sch:assert test="not(@name=$rmf-property-names) or @ns='http://csrc.nist.gov/ns/rmf'">Namespace @ns='http://csrc.nist.gov/ns/rmf' is expected on RMF property name '<sch:value-of select="@name"/>'.</sch:assert>
         </sch:rule>
         
     </sch:pattern>
