@@ -63,8 +63,7 @@
     
     <sch:let name="known-part-names" value="('overview','statement', 'item', 'guidance', 'assessment-objective', 'assessment-method', 'assessment-objects')"/>
     
-    <sch:let name="known-property-names" value="('keywords', 'label', 'sort-id', 'method', 'status', 'aggregates', 'alt-identifier', 'alt-label',
-        'implementation-level','contributes-to-assurance')"/>
+    <sch:let name="known-property-names" value="('keywords', 'label', 'sort-id', 'method', 'status', 'aggregates', 'alt-identifier', 'alt-label','implementation-level','contributes-to-assurance')"/>
     
     <sch:pattern id="general">
         <sch:rule context="*[matches(@name,'\S')]">
