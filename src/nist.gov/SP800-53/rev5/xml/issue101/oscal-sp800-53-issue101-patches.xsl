@@ -68,6 +68,10 @@
       <p>the <insert type="param" id-ref="ca-01_odp.03"/> assessment, authorization, and monitoring policy addresses roles;</p>
    </xsl:template>
    
+   <xsl:template match="control[@id='ia-8.3']/p">
+      <title>Use of FICAM-approved Products</title>
+   </xsl:template>
+   
    <xsl:template priority="5" match="param[@id='pe-06.02_odp.03']/guideline/p">
       <p>automated mechanisms used to recognize classes or types of intrusions and initiate response actions (defined in <a href="#pe-06.02_odp.02">PE-06(02)_ODP</a>) are defined;</p>
    </xsl:template>
