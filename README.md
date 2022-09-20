@@ -10,7 +10,7 @@ These files are maintained by a Continuous Integration and Continuous Deployment
 
 ## Contributing
 
-### How do I set up my developerment environment?
+### How do I set up my developer environment?
 
 ```mermaid
 graph TD
