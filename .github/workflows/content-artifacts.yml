@@ -15,12 +15,13 @@ env:
   OSCAL_DIR_PATH: oscal
   CICD_DIR_PATH: oscal/build/ci-cd
   CONTENT_CONFIG_PATH: src/config
+  JAVA_CLASSPATH: ${{ github.workspace}}/lib
   SAXON_VERSION: 9.9.0-1
   HOME_REPO: usnistgov/oscal-content
 jobs:
   validate-and-publish-content:
     name: Check, Convert and Validate Content
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       # use this if checkout needs to be authenticated
       - uses: actions/checkout@v2
@@ -35,40 +36,58 @@ jobs:
         with:
           path: git-content
           submodules: recursive
-      # job-validate-content
+      - name: Set env
+        run: |
+          echo "SAXON_HOME=${JAVA_CLASSPATH}" >> $GITHUB_ENV
+          echo "CALABASH_HOME=${JAVA_CLASSPATH}" >> $GITHUB_ENV
       - name: Update APT package metadata
         run: |
           sudo rm -rf /var/lib/apt/lists/* && sudo apt-get update
       - name: Install APT dependencies
         run: |
           sudo apt-get install libxml2-utils
-      - name: Install NPM dependencies
+      - name: Set up NodeJS
+        uses: actions/setup-node@1f8c6b94b26d0feae1e387ca63ccbdc44d27b561
+        with:
+          node-version-file: git-content/${{ env.OSCAL_DIR_PATH }}/build/.nvmrc
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
+      - name: Setup Dependencies
         run: |
-          sudo npm install --loglevel verbose -g yargs ajv-formats@"^1.5.x" ajv-cli@"^4.0.x" yaml-convert@"^1.0.x"
-      - name: Set up JDK 11
-        uses: actions/setup-java@v1
+          # NodeJS
+          # If you are a developer and need to modify the workflow, be sure to review
+          # the package.json and package-lock.json to ensure the following deps are
+          # at least installed (they will be updated by dependabot):
+          # - ajv-cli
+          # - ajv-formats
+          # - markdown-link-check
+          # - yaml-convert
+          npm ci
+          echo "$PWD/node_modules/.bin/" >> $GITHUB_PATH
+        working-directory: git-content/${{ env.OSCAL_DIR_PATH }}/build
+      - name: Set up JDK
+        uses: actions/setup-java@f0bb91606209742fe3ea40199be2f3ef195ecabf
         with:
           java-version: 11
-      - name: Cache Maven packages
-        uses: actions/cache@v2
-        with:
-          path: ~/.m2
-          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-          restore-keys: ${{ runner.os }}-m2
-      - name: Get Saxon-HE
+          distribution: 'temurin'
+          cache: 'maven'
+      - name: Install JDK Deps Saxon and XML Calabash
         run: |
-          mvn org.apache.maven.plugins:maven-dependency-plugin:2.10:get -DartifactId=Saxon-HE -DgroupId=net.sf.saxon -Dversion=$SAXON_VERSION
+          mkdir -p "${JAVA_CLASSPATH}"
+          mvn dependency:copy-dependencies -DoutputDirectory="${JAVA_CLASSPATH}"
+        working-directory: git-content/${{ env.OSCAL_DIR_PATH }}/build
       - name: Set up Python 3.x
-        uses: actions/setup-python@98f2ad02fd48d057ee3b4d4f66525b231c3e52b6 # current release v3.1.2
+        uses: actions/setup-python@98f2ad02fd48d057ee3b4d4f66525b231c3e52b6
         with:
           python-version: '3.8'
           architecture: 'x64'
           cache: 'pip'
           cache-dependency-path: |
-            git-content/${{ env.CICD_DIR_PATH }}/python/requirements.txt
+           git-content/${{ env.CICD_DIR_PATH }}/python/requirements.txt
       - name: Install Python dependencies
         run: |
-          pip install -r "${GITHUB_WORKSPACE}/git-content/${CICD_DIR_PATH}/python/requirements.txt"
+          pip install -r requirements.txt
+        working-directory: git-content/${{ env.CICD_DIR_PATH }}/python
       - name: Validate Content
         run:
           # mkdir -p "${OSCAL_BUILD_DIR_PATH}"
@@ -80,7 +99,7 @@ jobs:
       - name: Publish Artifacts
         # only do this on main
         if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/main'
-        uses: stefanzweifel/git-auto-commit-action@v4.5.1
+        uses: stefanzweifel/git-auto-commit-action@6c32682a4040e023c054b2fc60a7cf65cc77f7ad
         with:
           repository: git-content
           push_options: --force
