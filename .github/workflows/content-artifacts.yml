@@ -26,14 +26,14 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       # use this if checkout needs to be authenticated
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
         if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/main'
         with:
           path: git-content
           submodules: recursive
           token: ${{ secrets.COMMIT_TOKEN }}
       # use this if checkout is anonymous
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
         if: github.repository != env.HOME_REPO || github.ref != 'refs/heads/main'
         with:
           path: git-content
@@ -49,7 +49,7 @@ jobs:
         run: |
           sudo apt-get install libxml2-utils
       - name: Set up NodeJS
-        uses: actions/setup-node@1f8c6b94b26d0feae1e387ca63ccbdc44d27b561
+        uses: actions/setup-node@8c91899e586c5b171469028077307d293428b516
         with:
           node-version-file: git-content/${{ env.OSCAL_DIR_PATH }}/build/.nvmrc
           cache: 'npm'
@@ -68,7 +68,7 @@ jobs:
           echo "$PWD/node_modules/.bin/" >> $GITHUB_PATH
         working-directory: git-content/${{ env.OSCAL_DIR_PATH }}/build
       - name: Set up JDK
-        uses: actions/setup-java@f0bb91606209742fe3ea40199be2f3ef195ecabf
+        uses: actions/setup-java@a18c333f3f14249953dab3e186e5e21bf3390f1d
         with:
           java-version: 11
           distribution: 'temurin'
@@ -113,7 +113,7 @@ jobs:
       - name: Publish Artifacts
         # only do this on main
         if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/main'
-        uses: stefanzweifel/git-auto-commit-action@6c32682a4040e023c054b2fc60a7cf65cc77f7ad
+        uses: stefanzweifel/git-auto-commit-action@fd157da78fa13d9383e5580d1fd1184d89554b51
         with:
           repository: git-content
           push_options: --force
