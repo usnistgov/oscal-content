@@ -1,46 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Modified by the OSCAL 1.0.0 RC2 to OSCAL 1.0.0 conversion XSLT on 2021-06-08T13:57:33.97549-04:00 -->
-<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="8742196d-86ba-4e72-a411-28867dab43bb">
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="c657e7dd-8b8e-4261-891b-caf94e7149dd">
+
    <metadata>
       <title>NIST Special Publication 800-53 Revision 5 LOW IMPACT BASELINE</title>
-      <last-modified>2021-06-08T13:57:33.97549-04:00</last-modified>
-      <version>Final</version>
-      <oscal-version>1.0.0</oscal-version>
+      <last-modified>2022-09-29T18:34:00.00000-04:00</last-modified>
+      <version>Draft 1</version>
+      <oscal-version>1.0.4</oscal-version>
+
       <role id="creator">
          <title>Document Creator</title>
       </role>
       <role id="contact">
          <title>Contact</title>
       </role>
-      <party uuid="f8541f6b-ef0a-4638-98d0-7f214a9b4b28" type="organization">
-         <name>OSCAL Program</name>
-         <link rel="website" href="https://pages.nist.gov/OSCAL/contact/" />
+
+      <party uuid="dc31b097-c02f-4b1d-8b0a-4c728493a5ef" type="organization">
+         <name>GovReady PBC</name>
+         <email-address>gregelin@govready.com</email-address>
+         <address>
+            <addr-line>GovReady PBC</addr-line>
+            <city>Chicago</city>
+            <state>IL</state>
+            <postal-code>60601</postal-code>
+         </address>
       </party>
+
       <responsible-party role-id="creator">
-         <party-uuid>f8541f6b-ef0a-4638-98d0-7f214a9b4b28</party-uuid>
+         <party-uuid>dc31b097-c02f-4b1d-8b0a-4c728493a5ef</party-uuid>
       </responsible-party>
       <responsible-party role-id="contact">
-         <party-uuid>f8541f6b-ef0a-4638-98d0-7f214a9b4b28</party-uuid>
+         <party-uuid>dc31b097-c02f-4b1d-8b0a-4c728493a5ef</party-uuid>
       </responsible-party>
    </metadata>
+
    <import href="NIST_SP-800-53_rev5_catalog.xml">
       <include-controls>
-         <with-id>ac-1</with-id>
-         <with-id>ac-2</with-id>
-         <with-id>ac-3</with-id>
          <with-id>ac-7</with-id>
-         <with-id>ac-8</with-id>
-         <with-id>ac-14</with-id>
-         <with-id>ac-17</with-id>
-         <with-id>ac-18</with-id>
-         <with-id>ac-19</with-id>
-         <with-id>ac-20</with-id>
-         <with-id>ac-22</with-id>
-         <with-id>at-1</with-id>
-         <with-id>at-2</with-id>
+         <with-id>cp-1</with-id>
+         <with-id>cp-6</with-id>
+         <with-id>ia-2</with-id>
+         <with-id>pe-8</with-id>
+         <with-id>sc-28</with-id>
+         <with-id>si-8</with-id>
       </include-controls>
    </import>
+
    <merge>
       <as-is>true</as-is>
    </merge>
