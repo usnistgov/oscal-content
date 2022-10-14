@@ -62,11 +62,7 @@
           statement-id="sc-8_smt" 
           uuid="bb9219b1-e51c-4680-abb0-616a43bbfbb1">      
             <description>
-              <p>MongoDB implements TLS 1.x to protect the 
-                <insert type="param" id-ref="sc-8_prm_1"/> 
-              of transmitted data by encrypting data in transit,
-              preventing unauthorized disclosure or changes to information
-              during transmission.</p>
+              <p>MongoDB implements TLS 1.x to protect the <insert type="param" id-ref="sc-8_prm_1"/> of transmitted data by encrypting data in transit, preventing unauthorized disclosure or changes to information during transmission.</p>
             </description>
         </statement>
       </implemented-requirement>
