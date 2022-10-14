@@ -70,8 +70,7 @@
         uuid="cf8338c5-fb6e-4593-a4a8-b3c4946ee081"
         control-id="sc-8.1">
         <description>
-          <p>MongoDB implements cryptographic mechanisms (TLS 1.x) 
-            to provide cryptographic protection for data in transit.</p>
+          <p>MongoDB implements cryptographic mechanisms (TLS 1.x) to provide cryptographic protection for data in transit.</p>
         </description>
         <set-parameter param-id="sc-8.1_prm_1">
             <value>prevent unauthorized disclosure of information</value>
