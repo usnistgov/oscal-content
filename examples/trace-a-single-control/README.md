@@ -28,7 +28,7 @@ This example outlines the following models for a single control:
 
 ![Graphic displaying the connections between OSCAL models](diagrams/Concept.drawio.svg)
 
-One concept that is important to understand is the meaning of a **resolved profile**.  In this example, the profile produces a subset of controls from the NIST 800-53 Rev 5 catalog, specifically we only select one control: AC-8.  Until this profile is resolved, a catalog does not exist that only contains the subset.  For this example, the profile is considered resolved, and the catalog model would be the result of this transformation.
+One concept that is important to understand is the meaning of a **resolved (profile) catalog**.  In this example, a profiler resolver tool will use a profile to produce a new catalog with a subset of controls from the NIST 800-53 Rev 5 catalog. Specifically, we only select one control: AC-8.  Until this profile is resolved, a catalog does not exist that only contains the subset.  For this example, the profile is considered resolved, and the catalog model would be the result of this transformation.
 
 ## Model Files
 
