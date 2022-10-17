@@ -98,19 +98,35 @@
     
     -->
     <!-- Each part[@name='assessment-objective'] has a single label -->
-    <xsl:template match="part[@name='assessment-objective']/prop[@name='label']">
-        <xsl:next-match/>
-        <xsl:copy-of select="preceding-sibling::text()[1]"/>
-        
-        <xsl:variable name="parent-key" select="o:reduce-label(parent::part)"/>
-        <xsl:variable name="statement-item" select="key('item-by-label',$parent-key)"/>
-        
-        <!--<xsl:message expand-text="true">on { parent::part/@name } #{ @value } the reduced label is '{ $parent-key }' linking to '{ $statement-item/@id => string-join(', ') }' ({ count($statement-item) })</xsl:message>-->
-        <link rel="depends-on" href="#{ $statement-item/@id }"></link>
-        <xsl:if test="empty($statement-item)">
-            <xsl:message expand-text="true">No link made for part '{ @value }'</xsl:message>
+    <xsl:template match="part[@name='assessment-objective']/link"/>
+
+    <xsl:template match="part[@name='assessment-objective']/text()[not(matches(.,'\S'))]">
+        <xsl:if test="empty(following-sibling::*[1]/self::link)">
+            <xsl:next-match/>
         </xsl:if>
     </xsl:template>
+    
 
+    <xsl:template match="part[@name='assessment-objective']">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates/>
+            
 
+            <xsl:variable name="part-key" select="o:reduce-label(.)"/>
+            <xsl:variable name="statement-item" select="key('item-by-label',$part-key)"/>
+            
+            <xsl:text>  </xsl:text>
+            <link rel="depends-on" href="#{ $statement-item/@id }"></link>
+            
+            <xsl:if test="empty($statement-item)">
+                <xsl:message expand-text="true">No link made for part '{ o:label(.) }'</xsl:message>
+            </xsl:if>
+            <xsl:copy-of select="text()[last()]"></xsl:copy-of>
+        </xsl:copy>
+        
+        
+    </xsl:template>
+    
+    
 </xsl:stylesheet>
