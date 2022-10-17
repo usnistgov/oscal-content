@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../../../oscal/xml/schema/oscal_complete_schema.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<component-definition xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="6b0dfd92-2662-4ea3-9b01-514d67c7a595">
+    <metadata>
+        <title>Simple Rules Example Component Definition</title>
+        <last-modified>2022-10-16T00:00:00Z</last-modified>
+        <version>0.0.1</version>
+        <oscal-version>1.1.0-alpha</oscal-version>
+    </metadata>
+    <rule uuid="fb189e4f-945d-4563-b5c9-0dfbf31a41ab">
+        <title>Strong Encryption Algorithms and Implementations for Remote Access Services</title>
+        <description>
+            <p>This vendor supports convenient, reliable, and secure methods for customers to remotely access service nodes for system administration.</p>
+            <p>Where possible, the vendor supports the most common method for the operating system of a given service node, proprietary or open-source.</p>
+            <p>Where using existing remote access methods for convenience, the vendor provides specific, veriable configuration guidance. Permissive and insecure defaults are not recommended by the vendor when using any particular method for remote access.</p>
+            <p>These configuration recommendations include proper use of encryption algorithms and implementations in these remote access methods. To ensure confidentiality in general and specific security control framework requires for confidentiality in particular, only vendor-recommended encryption system configuraiton in tests associated with this rule must be implemented and their configuration verified.</p>
+        </description>
+    </rule>
+    <test uuid="b6f8cb8e-fe1f-434b-bb18-d8803d1a0a26">
+        <title>OpenSSH Server Daemon Must Use Only Approved Encryption Ciphers</title>
+        <description>
+            <p>The vendor only recommends the deployment of service nodes with OpenSSH for remote access to peform system administration if and only if the OpenSSH daemon is configured with strict cipher options.</p>
+            <p>Only the OpenSSH server cyphers below are supported.</p>
+            <ul>
+                <li><code>aes128-ctr</code></li>
+                <li><code>aes192-ctr</code></li>
+                <li><code>aes256-ctr</code></li>
+                <li><code>aes128-cbc</code></li>
+                <li><code>3des-cbc</code></li>
+                <li><code>aes192-cbc</code></li>
+                <li><code>aes256-cbc</code></li>
+            </ul>
+        </description>
+    </test>
+    <testing-scenario uuid="f1cfb2d5-abf5-41c8-a83b-53734fd85ad8" rule-uuid="fb189e4f-945d-4563-b5c9-0dfbf31a41ab">
+        <test-reference test-uuid="b6f8cb8e-fe1f-434b-bb18-d8803d1a0a26" />
+    </testing-scenario>
+    <component uuid="06d5d6d9-c51e-4b9b-b848-76aac8beb91f" type="software">
+        <title>OpenSSH Component</title>
+        <description>
+            <p>This is a component for the OpenSSH open-source secure shell remote access server.</p>
+        </description>
+        <control-implementation uuid="cc9aef5d-f0f9-4084-a103-73a47af39006" source="https://raw.githubusercontent.com/usnistgov/oscal-content/v1.0.0/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_catalog.xml">
+            <description>
+                <p>The vendor documents how they implement requirements for controls as part of the Risk Managament Framework and NIST SP 800-53 catalog as they pertain to the vendor and customer's use of OpenSSH in their environment.</p>
+            </description>
+            <implemented-requirement uuid="51160c98-b16a-47c2-93e8-9bdc92525945" control-id="ac-17.2">
+                <description>
+                    <p>The vendor provides a service which implement cryptographic mechanisms to protect the confidentiality and integrity of remote access sessions.</p>
+                </description>
+                <rule-implementation uuid="883d2f89-7207-44a4-9d7b-4648e3e62f9b">
+                    <description>
+                        <p>When the vendor uses OpenSSH in their service, they recommend customers to configure the OpenSSH daemon to use only a secure subset of strong ciphers for encrypted, confidential remote access to nodes of their service for the purpose of system administration. The vendor performs automated security testing, as referenced in this rule, during ongoing development of the service. The vendor provides this automation for the customer to use and confirm proper configuration in their development and testing environments.</p>
+                    </description>
+                    <condition operator="and">
+                        <test-reference test-uuid="b6f8cb8e-fe1f-434b-bb18-d8803d1a0a26" />
+                    </condition>
+                </rule-implementation>
+            </implemented-requirement>
+        </control-implementation>
+    </component>
+</component-definition>
