@@ -93,7 +93,7 @@ jobs:
       - name: Validate Content
         run:
           # mkdir -p "${OSCAL_BUILD_DIR_PATH}"
-          bash "${GITHUB_WORKSPACE}/git-content/${CICD_DIR_PATH}/validate-content.sh" -o "${GITHUB_WORKSPACE}/git-content/${OSCAL_DIR_PATH}" -a "${GITHUB_WORKSPACE}/git-content" -c "${GITHUB_WORKSPACE}/git-content/${CONTENT_CONFIG_PATH}"
+          bash "${GITHUB_WORKSPACE}/git-content/${CICD_DIR_PATH}/validate-content.sh" -o "${GITHUB_WORKSPACE}/git-content/${OSCAL_DIR_PATH}" -a "${GITHUB_WORKSPACE}/git-content" -c "${GITHUB_WORKSPACE}/git-content/${CONTENT_CONFIG_PATH}" --scratch-dir "${RUNNER_TEMP}" --keep-temp-scratch-dir
       # job-copy-and-convert-content
       - name: Auto-convert Content
         run:
