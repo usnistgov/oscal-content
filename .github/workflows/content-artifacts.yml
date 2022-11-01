@@ -23,14 +23,14 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       # use this if checkout needs to be authenticated
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/main'
         with:
           path: git-content
           submodules: recursive
           token: ${{ secrets.COMMIT_TOKEN }}
       # use this if checkout is anonymous
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         if: github.repository != env.HOME_REPO || github.ref != 'refs/heads/main'
         with:
           path: git-content
