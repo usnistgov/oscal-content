@@ -68,7 +68,7 @@ jobs:
           echo "$PWD/node_modules/.bin/" >> $GITHUB_PATH
         working-directory: git-content/${{ env.OSCAL_DIR_PATH }}/build
       - name: Set up JDK
-        uses: actions/setup-java@a18c333f3f14249953dab3e186e5e21bf3390f1d
+        uses: actions/setup-java@de1bb2b0c5634f0fc4438d7aa9944e68f9bf86cc
         with:
           java-version: 11
           distribution: 'temurin'
@@ -113,7 +113,7 @@ jobs:
       - name: Publish Artifacts
         # only do this on main
         if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/main'
-        uses: stefanzweifel/git-auto-commit-action@fd157da78fa13d9383e5580d1fd1184d89554b51
+        uses: stefanzweifel/git-auto-commit-action@0049e3fa4059ca715255fbbcb7dea4516f02ce0a
         with:
           repository: git-content
           push_options: --force
