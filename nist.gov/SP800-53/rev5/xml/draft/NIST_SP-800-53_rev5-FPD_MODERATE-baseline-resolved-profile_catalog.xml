@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="ecb35bac-8060-42dd-b991-d7bfa192c50e">
+         uuid="c5a15fc5-6b0f-4c41-a25e-3ade3af1c919">
    <metadata>
       <title>SP800-53 MODERATE IMPACT BASELINE</title>
-      <last-modified>2022-08-25T18:35:58.535429Z</last-modified>
+      <last-modified>2022-11-01T18:57:29.713995Z</last-modified>
       <version>FPD</version>
       <oscal-version>1.0.0</oscal-version>
       <link rel="resolution-source"
