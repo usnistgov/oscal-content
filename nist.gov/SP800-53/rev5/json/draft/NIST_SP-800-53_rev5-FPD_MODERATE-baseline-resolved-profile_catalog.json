@@ -1,9 +1,9 @@
 {
   "catalog": {
-    "uuid": "c5a15fc5-6b0f-4c41-a25e-3ade3af1c919",
+    "uuid": "34d6d3fe-8221-490b-851d-26520a95b440",
     "metadata": {
       "title": "SP800-53 MODERATE IMPACT BASELINE",
-      "last-modified": "2022-11-01T18:57:29.713995Z",
+      "last-modified": "2022-11-02T14:25:19.133636Z",
       "version": "FPD",
       "oscal-version": "1.0.0",
       "links": [
