@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 ../../../../../oscal/xml/schema/oscal_complete_schema.xsd" uuid="46126f22-0bca-4a16-b6b1-8cb7e1915292">
+    <metadata>
+        <title>Example System SSP with Actions</title>
+        <last-modified>2022-09-02T00:00:00.000000001-04:00</last-modified>
+        <version>0.0.2</version>
+        <oscal-version>1.1.0</oscal-version>
+        <revisions>
+            <revision>
+                <last-modified>2022-08-30T00:00:00.000000001-04:00</last-modified>
+                <version>0.0.1</version>
+                <oscal-version>1.1.0</oscal-version>
+                <remarks>
+                    <p>Submitted to ISSM before approval by system owner.</p>
+                </remarks>
+            </revision>
+            <revision>
+                <last-modified>2022-09-02T00:00:00.000000001-04:00</last-modified>
+                <version>0.0.2</version>
+                <oscal-version>1.1.0</oscal-version>
+                <remarks>
+                    <p>The legal officer for the Security &amp; Compliance Office has requested changes.</p>
+                </remarks>
+            </revision>
+        </revisions>
+        <role id="legal-officer">
+            <title>BigCorp IT Security and Compliance Division Legal Officer</title>
+            <short-name>Legal</short-name>
+        </role>
+        <role id="issm">
+            <title>BigCorp Information System Security Manager</title>
+            <short-name>ISSM</short-name>
+        </role>
+        <party uuid="166befca-8f70-4170-8848-2af978990772" type="organization">
+            <name>BigCorp Office of Information Technology Security and Compliance Division Legal Office</name>
+            <short-name>BigCorp ITSECLAW</short-name>
+            <link href="https://example.com" rel="homepage" />
+            <email-address>legal@example.com</email-address>
+            <address type="work">
+                <addr-line>100 Main Street NW</addr-line>
+                <city>Washington</city>
+                <state>DC</state>
+                <postal-code>20000</postal-code>
+                <country>US</country>
+            </address>
+        </party>
+        <action uuid="bc90bc6b-8d06-4422-8bbb-63fd525f62f6" date="2022-08-23T00:00:00.000000001-04:00" type="request-changes" system="http://csrc.nist.gov/ns/oscal">
+
+            <responsible-party role-id="legal-officer">
+                <party-uuid>166befca-8f70-4170-8848-2af978990772</party-uuid>
+            </responsible-party>
+            <remarks>
+                <p>The legal department wants several changes made to this system security plan. Relevant security controls do not reference organization or division policies, and the narratives are in some cases are ambiguous. Please review each item of feedback below, update the relevant section, and re-submit to the department for further review.</p>
+                <ul>
+                    <li>The narrative for implemented requirements of control AT-1 does not accurately cite or reference BigCorp's 2022 Security Awareness Training Policy. Please add references and clarify how this system and relevant staff apply it in their own standard operating procedures.</li>
+                    <li>The narrative for implemented requirements of control RA-1 does not accurately cite or reference BigCorp's 2022 Security Awareness Training Policy. Please add references and clarify how this system and relevant staff apply it in their own standard operating procedures.</li>
+                </ul>
+            </remarks>
+        </action>
+    </metadata>
+    <import-profile href="#9aa67a14-d18e-461f-8eee-d7b661703a9f" />
+    <system-characteristics>
+        <system-id identifier-type="http://ietf.org/rfc/rfc4122">103e77a8-ab96-4767-9625-19940fefde5f</system-id>
+        <system-name>Example System</system-name>
+        <description>
+            <p>This is an example system to demonstrate a system security plan with rules, tests, and relations to control implementation requirements as evidence.</p>
+        </description>
+        <date-authorized>2022-08-23</date-authorized>
+        <security-sensitivity-level>fips-199-moderate</security-sensitivity-level>
+        <system-information>
+            <information-type>
+                <title>Summary of System Development Information in Example System</title>
+                <description>
+                    <p>This application contains system development data.</p>
+                </description>
+                <confidentiality-impact>
+                    <base>fips-199-low</base>
+                    <selected>fips-199-low</selected>
+                </confidentiality-impact>
+                <integrity-impact>
+                    <base>fips-199-low</base>
+                    <selected>fips-199-low</selected>
+                </integrity-impact>
+                <availability-impact>
+                    <base>fips-199-low</base>
+                    <selected>fips-199-low</selected>
+                </availability-impact>
+            </information-type>
+        </system-information>
+        <security-impact-level>
+            <security-objective-confidentiality>fips-199-moderate</security-objective-confidentiality>
+            <security-objective-integrity>fips-199-moderate</security-objective-integrity>
+            <security-objective-availability>fips-199-moderate</security-objective-availability>
+        </security-impact-level>
+        <status state="under-development" />
+        <authorization-boundary>
+            <description>
+                <p>There is no authorization boundary for the application.</p>
+            </description>
+            <remarks>
+                <p>This is a notional example that will be permenantely in a development state. No authorization boundary will be defined.</p>
+            </remarks>
+        </authorization-boundary>
+    </system-characteristics>
+    <system-implementation>
+        <user uuid="3260c490-ad55-4c99-a3d4-09a6b6f6fb17">
+            <authorized-privilege>
+                <title>System Developer Privilege</title>
+                <function-performed>add functionality</function-performed>
+                <function-performed>modify functionality</function-performed>
+                <function-performed>maintain deploy system in environment</function-performed>
+            </authorized-privilege>
+        </user>
+        <component uuid="1e3aaf69-258b-4e19-a4cc-0289049ceb7c" type="this-system">
+            <title>The Example System Core Component</title>
+            <description>
+                <p></p>
+            </description>
+            <status state="under-development" />
+            <remarks>
+                <p>This is an example system with notional examples, the system and this document will never be complete, regardless of the intention implicated by <code>action</code> examples.</p>
+            </remarks>
+        </component>
+    </system-implementation>
+    <control-implementation>
+        <description>
+            <p>Example System, like other BigCorp information systems, uses security controls from a variety of frameworks. Example System is especially focused on NIST SP 800-53 controls.</p>
+        </description>
+        <implemented-requirement uuid="e7d0fd18-0bc6-4583-9eb2-66e77956a96d" control-id="at-1">
+            <responsible-role role-id="issm"/>
+            <by-component component-uuid="1e3aaf69-258b-4e19-a4cc-0289049ceb7c" uuid="e188a871-6d0e-47c0-a5a8-9939114979d6">
+                <description>
+                    <p>The ISSM ensures staff developing and operating this system handle security awareness and training pretty well.</p>
+                </description>
+            </by-component>
+        </implemented-requirement>
+        <implemented-requirement uuid="1e3aaf69-258b-4e19-a4cc-0289049ceb7c" control-id="ra-1">
+            <by-component component-uuid="1e3aaf69-258b-4e19-a4cc-0289049ceb7c" uuid="d1f3ad99-670f-4db9-a849-b24a6e4bac69">
+                <description>
+                    <p>The ISSM ensures staff developing and operating this system handle vulnerability management pretty well. The ISSM even tells them to use threat intelligence from the BigCorp SOC to prioritize mitigations and fixes of vulnerabilities!</p>
+                </description>
+            </by-component>
+        </implemented-requirement>
+    </control-implementation>
+    <back-matter>
+        <resource uuid="9aa67a14-d18e-461f-8eee-d7b661703a9f">
+            <rlink href="https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_MODERATE-baseline-resolved-profile_catalog.xml" />
+        </resource>
+    </back-matter>
+</system-security-plan>

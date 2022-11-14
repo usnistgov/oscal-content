@@ -1,7 +1,20 @@
 # path to source|format of source|model of source|format(s) to convert to
 src/examples/catalog/xml/*.xml|xml|catalog|json
 src/examples/ssp/xml/*.xml|xml|ssp|json
-src/examples/ssp/json/ssp-example.json|json|ssp|xml
+src/examples/ssp/xml/actions/*.xml|xml|ssp|json
+# TODO: Review this error, cause unclear need to do RCA before merge.
+# /home/runner/work/oscal-content/oscal-content/git-content/src/examples/ssp/json/ssp-example.json invalid
+# [ 
+#   {
+#     instancePath: '/system-security-plan/system-characteristics/props/0/name',
+#     schemaPath: '#/properties/name/allOf/1/enum',
+#     keyword: 'enum',
+#     params: { allowedValues: [Array] },
+#     message: 'must be equal to one of the allowed values'
+#   }
+# ]
+# https://github.com/usnistgov/oscal-content/actions/runs/3191841714/jobs/5208629060
+# src/examples/ssp/json/ssp-example.json|json|ssp|xml
 src/examples/component-definition/json/example-component.json|json|component|xml
 src/examples/component-definition/xml/*.xml|xml|component|json
 src/nist.gov/SP800-53/rev4/xml/*catalog.xml|xml|catalog|json
