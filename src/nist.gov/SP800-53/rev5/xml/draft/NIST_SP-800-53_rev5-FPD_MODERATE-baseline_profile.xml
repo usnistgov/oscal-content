@@ -33,7 +33,7 @@
          <party-uuid>2ef7cfec-cb8e-4571-a7a2-a5c609b4767a</party-uuid>
       </responsible-party>
    </metadata>
-   <import href="NIST_SP-800-53_rev5-FINAL_catalog.xml">
+   <import href="NIST_SP-800-53_rev5-FPD_catalog.xml">
       <include-controls>
          <with-id>ac-1</with-id>
          <with-id>ac-2</with-id>
