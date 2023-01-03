@@ -93,11 +93,11 @@ jobs:
       - name: Validate Content
         run:
           # mkdir -p "${OSCAL_BUILD_DIR_PATH}"
-          bash "${GITHUB_WORKSPACE}/git-content/${CICD_DIR_PATH}/validate-content.sh" -o "${GITHUB_WORKSPACE}/git-content/${OSCAL_DIR_PATH}" -a "${GITHUB_WORKSPACE}/git-content" -c "${GITHUB_WORKSPACE}/git-content/${CONTENT_CONFIG_PATH}"
+          bash -x "${GITHUB_WORKSPACE}/git-content/${CICD_DIR_PATH}/validate-content.sh" -o "${GITHUB_WORKSPACE}/git-content/${OSCAL_DIR_PATH}" -a "${GITHUB_WORKSPACE}/git-content" -c "${GITHUB_WORKSPACE}/git-content/${CONTENT_CONFIG_PATH}"
       # job-copy-and-convert-content
       - name: Auto-convert Content
         run:
-          bash "${GITHUB_WORKSPACE}/git-content/${CICD_DIR_PATH}/copy-and-convert-content.sh" -o "${GITHUB_WORKSPACE}/git-content/${OSCAL_DIR_PATH}" -a "${GITHUB_WORKSPACE}/git-content" -c "${GITHUB_WORKSPACE}/git-content/${CONTENT_CONFIG_PATH}" -w "${GITHUB_WORKSPACE}/git-content" --resolve-profiles
+          bash -x "${GITHUB_WORKSPACE}/git-content/${CICD_DIR_PATH}/copy-and-convert-content.sh" -o "${GITHUB_WORKSPACE}/git-content/${OSCAL_DIR_PATH}" -a "${GITHUB_WORKSPACE}/git-content" -c "${GITHUB_WORKSPACE}/git-content/${CONTENT_CONFIG_PATH}" -w "${GITHUB_WORKSPACE}/git-content" --resolve-profiles
       - name: Zip Artifacts for Upload
         if: always()
         run: |
