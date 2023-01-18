@@ -8,5 +8,3 @@ src/nist.gov/SP800-53/rev4/xml/*catalog.xml|xml|catalog|json
 src/nist.gov/SP800-53/rev4/xml/*profile.xml|xml|profile|json
 src/nist.gov/SP800-53/rev5/xml/*catalog.xml|xml|catalog|json
 src/nist.gov/SP800-53/rev5/xml/*profile.xml|xml|profile|json
-src/nist.gov/SP800-53/rev5/xml/draft/*catalog.xml|xml|catalog|json
-src/nist.gov/SP800-53/rev5/xml/draft/*profile.xml|xml|profile|json
