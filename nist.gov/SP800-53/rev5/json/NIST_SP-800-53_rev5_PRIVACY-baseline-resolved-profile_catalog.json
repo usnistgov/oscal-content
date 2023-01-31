@@ -1,9 +1,9 @@
 {
   "catalog": {
-    "uuid": "2406a7dd-5f0a-4fcc-892d-e3b0656d955d",
+    "uuid": "8290bd1b-1f33-423d-87cc-9ff6be256c96",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 5 PRIVACY BASELINE",
-      "last-modified": "2023-01-19T19:32:16.743505Z",
+      "last-modified": "2023-01-31T16:40:37.480055Z",
       "version": "Final",
       "oscal-version": "1.0.0",
       "links": [

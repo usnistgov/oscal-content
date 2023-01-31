@@ -1,9 +1,9 @@
 {
   "catalog": {
-    "uuid": "212c9a82-df6f-49a5-8307-3aeb1363be36",
+    "uuid": "0858479f-e29d-45ba-b417-1251eb92ae50",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 5 MODERATE IMPACT BASELINE",
-      "last-modified": "2023-01-19T19:31:44.027957Z",
+      "last-modified": "2023-01-31T16:40:03.724074Z",
       "version": "Final",
       "oscal-version": "1.0.0",
       "links": [

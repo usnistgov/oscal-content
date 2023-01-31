@@ -1,9 +1,9 @@
 ---
 catalog:
-  uuid: 0689558b-ff45-451e-9069-994f2f46eed7
+  uuid: cfb55bb8-fe19-42b9-aa66-a4a1d4d5a418
   metadata:
     title: SP800-53 PRIVACY BASELINE
-    last-modified: 2023-01-19T19:34:23.562671Z
+    last-modified: 2023-01-31T16:42:48.844935Z
     version: FPD
     oscal-version: 1.0.0
     links:
