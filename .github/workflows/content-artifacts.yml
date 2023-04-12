@@ -26,14 +26,14 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       # use this if checkout needs to be authenticated
-      - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
+      - uses: actions/checkout@83b7061638ee4956cf7545a6f7efe594e5ad0247
         if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/main'
         with:
           path: git-content
           submodules: recursive
           token: ${{ secrets.COMMIT_TOKEN }}
       # use this if checkout is anonymous
-      - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
+      - uses: actions/checkout@83b7061638ee4956cf7545a6f7efe594e5ad0247
         if: github.repository != env.HOME_REPO || github.ref != 'refs/heads/main'
         with:
           path: git-content
