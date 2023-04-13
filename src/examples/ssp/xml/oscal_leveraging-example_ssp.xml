@@ -134,7 +134,7 @@ Cust-A    Cust-B    Cust-C
          <prop name="implementation-point" value="system"/>
          <status state="operational"/>
       </component>
-      <component uuid="22222222-0000-4000-9001-000000000002" type="leveraged-system">
+      <component uuid="22222222-0000-4000-9001-000000000002" type="system">
          <title>
             <strong>LEVERAGED SYSTEM (IaaS)</strong>
          </title>
