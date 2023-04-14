@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="642518e5-1364-41c0-baf1-17c7df83b069">
+         uuid="4778cb0c-a7ab-4c57-b592-8e958cfca0a2">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 5 HIGH IMPACT BASELINE</title>
-      <last-modified>2023-01-31T16:39:00.120817Z</last-modified>
+      <last-modified>2023-04-14T17:22:28.535397Z</last-modified>
       <version>Final</version>
       <oscal-version>1.0.0</oscal-version>
       <link rel="resolution-source"

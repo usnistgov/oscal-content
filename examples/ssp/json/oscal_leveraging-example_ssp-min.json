@@ -138,7 +138,7 @@
         },
         {
           "uuid": "22222222-0000-4000-9001-000000000002",
-          "type": "leveraged-system",
+          "type": "system",
           "title": " **LEVERAGED SYSTEM (IaaS)** ",
           "description": "If the leveraged system owner provides a UUID for their system (such as in an OSCAL-based CRM), it should be used as the UUID for this component.",
           "props": [
