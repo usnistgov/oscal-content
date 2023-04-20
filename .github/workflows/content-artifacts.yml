@@ -79,7 +79,7 @@ jobs:
           mvn dependency:copy-dependencies -DoutputDirectory="${JAVA_CLASSPATH}"
         working-directory: git-content/${{ env.OSCAL_DIR_PATH }}/build
       - name: Set up Python 3.x
-        uses: actions/setup-python@13ae5bb136fac2878aff31522b9efb785519f984
+        uses: actions/setup-python@57ded4d7d5e986d7296eab16560982c6dd7c923b
         with:
           python-version: '3.8'
           architecture: 'x64'
