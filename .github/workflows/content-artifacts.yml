@@ -103,7 +103,7 @@ jobs:
         run: |
           zip ${{ runner.temp }}/generated-content.zip -r .
         working-directory: ${{ github.workspace }}
-      - uses: actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8
+      - uses: actions/upload-artifact@a8a3f3ad30e3422c9c7b888a15615d19a852ae32
         if: always()
         with:
           name: generated-content
