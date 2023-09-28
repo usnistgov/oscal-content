@@ -4,24 +4,15 @@ on:
   issues:
     types:
       - opened
-      - closed
+      - reopened
+      - transferred
+
 jobs:
-  createCard:
-    runs-on: ubuntu-latest
-    if: github.event.action == 'opened'
+  add-to-project:
+    name: Add issue to project
+    runs-on: ubuntu-20.04
     steps:
-      - name: Add New Issues to Issue Triage Board
-        uses: peter-evans/create-or-update-project-card@5eacbbd224b7814354861b555cc18a8359e2cebe
+      - uses: actions/add-to-project@31b3f3ccdc584546fc445612dec3f38ff5edb41c
         with:
-          project-name: Issue Triage
-          column-name: Needs Triage
-  removeCard:
-    runs-on: ubuntu-latest
-    if: github.event.action == 'closed'
-    steps:
-      - uses: alex-page/github-project-automation-plus@1f8873e97e3c8f58161a323b7c568c1f623a1c4d
-        with:
-          project: Issue Triage
-          column: Done
-          action: delete
-          repo-token: ${{ secrets.COMMIT_TOKEN }}
+          project-url: https://github.com/orgs/usnistgov/projects/25
+          github-token: ${{ secrets.COMMIT_TOKEN }}
