@@ -26,14 +26,12 @@ jobs:
       - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
         if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/main'
         with:
-          path: git-content
           submodules: recursive
           token: ${{ secrets.COMMIT_TOKEN }}
       # use this if checkout is anonymous
       - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
         if: github.repository != env.HOME_REPO || github.ref != 'refs/heads/main'
         with:
-          path: git-content
           submodules: recursive
       - name: Copy and convert content
         run: |
@@ -56,7 +54,6 @@ jobs:
         if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/main'
         uses: stefanzweifel/git-auto-commit-action@3ea6ae190baf489ba007f7c92608f33ce20ef04a
         with:
-          repository: git-content
           push_options: --force
           commit_message: Publishing auto-converted artifacts
           commit_user_name: OSCAL GitHub Actions Bot
