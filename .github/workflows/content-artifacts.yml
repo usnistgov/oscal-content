@@ -9,17 +9,14 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
   workflow_dispatch:
-    branches:
-      - main
-      - develop
 name: Process Content Artifacts
 env:
-  OSCAL_DIR_PATH: oscal
-  CICD_DIR_PATH: oscal/build/ci-cd
-  CONTENT_CONFIG_PATH: src/config
-  JAVA_CLASSPATH: ${{ github.workspace}}/lib
-  SAXON_VERSION: 9.9.0-1
-  HOME_REPO: usnistgov/oscal-content
+  HOME_REPO: usnistgov/OSCAL
+  # With the default GEN_CONTENT_DIR, the resulting catalogs, profiles, and
+  # other example content will end up in the build/generated directory. For
+  # checking in finalized content, it goes into build/.., the top-level
+  # directory of this project.
+  GEN_CONTENT_DIR: ..
 jobs:
   validate-and-publish-content:
     name: Check, Convert and Validate Content
@@ -38,66 +35,10 @@ jobs:
         with:
           path: git-content
           submodules: recursive
-      - name: Set env
+      - name: Copy and convert content
         run: |
-          echo "SAXON_HOME=${JAVA_CLASSPATH}" >> $GITHUB_ENV
-          echo "CALABASH_HOME=${JAVA_CLASSPATH}" >> $GITHUB_ENV
-      - name: Update APT package metadata
-        run: |
-          sudo rm -rf /var/lib/apt/lists/* && sudo apt-get update
-      - name: Install APT dependencies
-        run: |
-          sudo apt-get install libxml2-utils
-      - name: Set up NodeJS
-        uses: actions/setup-node@8c91899e586c5b171469028077307d293428b516
-        with:
-          node-version-file: git-content/${{ env.OSCAL_DIR_PATH }}/build/.nvmrc
-          cache: 'npm'
-          cache-dependency-path: '**/package-lock.json'
-      - name: Setup Dependencies
-        run: |
-          # NodeJS
-          # If you are a developer and need to modify the workflow, be sure to review
-          # the package.json and package-lock.json to ensure the following deps are
-          # at least installed (they will be updated by dependabot):
-          # - ajv-cli
-          # - ajv-formats
-          # - markdown-link-check
-          # - yaml-convert
-          npm ci
-          echo "$PWD/node_modules/.bin/" >> $GITHUB_PATH
-        working-directory: git-content/${{ env.OSCAL_DIR_PATH }}/build
-      - name: Set up JDK
-        uses: actions/setup-java@1df8dbefe2a8cbc99770194893dd902763bee34b
-        with:
-          java-version: 11
-          distribution: 'temurin'
-          cache: 'maven'
-      - name: Install JDK Deps Saxon and XML Calabash
-        run: |
-          mkdir -p "${JAVA_CLASSPATH}"
-          mvn dependency:copy-dependencies -DoutputDirectory="${JAVA_CLASSPATH}"
-        working-directory: git-content/${{ env.OSCAL_DIR_PATH }}/build
-      - name: Set up Python 3.x
-        uses: actions/setup-python@13ae5bb136fac2878aff31522b9efb785519f984
-        with:
-          python-version: '3.8'
-          architecture: 'x64'
-          cache: 'pip'
-          cache-dependency-path: |
-           git-content/${{ env.CICD_DIR_PATH }}/python/requirements.txt
-      - name: Install Python dependencies
-        run: |
-          pip install -r requirements.txt
-        working-directory: git-content/${{ env.CICD_DIR_PATH }}/python
-      - name: Validate Content
-        run:
-          # mkdir -p "${OSCAL_BUILD_DIR_PATH}"
-          bash "${GITHUB_WORKSPACE}/git-content/${CICD_DIR_PATH}/validate-content.sh" -o "${GITHUB_WORKSPACE}/git-content/${OSCAL_DIR_PATH}" -a "${GITHUB_WORKSPACE}/git-content" -c "${GITHUB_WORKSPACE}/git-content/${CONTENT_CONFIG_PATH}"
-      # job-copy-and-convert-content
-      - name: Auto-convert Content
-        run:
-          bash "${GITHUB_WORKSPACE}/git-content/${CICD_DIR_PATH}/copy-and-convert-content.sh" -o "${GITHUB_WORKSPACE}/git-content/${OSCAL_DIR_PATH}" -a "${GITHUB_WORKSPACE}/git-content" -c "${GITHUB_WORKSPACE}/git-content/${CONTENT_CONFIG_PATH}" -w "${GITHUB_WORKSPACE}/git-content" --resolve-profiles
+          make -C build all GEN_CONTENT_DIR=${{env.GEN_CONTENT_DIR}}
+        id: copy-convert
       - name: Zip Artifacts for Upload
         if: always()
         run: |
