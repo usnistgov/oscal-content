@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 name: Process Content Artifacts
 env:
-  HOME_REPO: usnistgov/OSCAL
+  HOME_REPO: aj-stein-nist/oscal-content
   # With the default GEN_CONTENT_DIR, the resulting catalogs, profiles, and
   # other example content will end up in the build/generated directory. For
   # checking in finalized content, it goes into build/.., the top-level
