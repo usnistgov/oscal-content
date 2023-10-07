@@ -29,6 +29,15 @@ jobs:
           submodules: recursive
           token: ${{ secrets.COMMIT_TOKEN }}
       # use this if checkout is anonymous
+      - name: Cache generated content for OSCAL build artifacts
+        uses: actions/cache@v3
+        with:
+          path: |
+            build/oscal/build/node_modules
+            build/oscal/build/generated
+          # See https://github.com/actions/cache/blob/main/tips-and-workarounds.md#update-a-cache            
+          key: |
+            ${{ hashFiles('build/oscal/build/**') }}
       - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
         if: github.repository != env.HOME_REPO || github.ref != 'refs/heads/main'
         with:
