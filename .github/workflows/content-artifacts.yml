@@ -35,7 +35,7 @@ jobs:
           submodules: recursive
       - name: Copy and convert content
         run: |
-          make -C build all GEN_CONTENT_DIR=${{env.GEN_CONTENT_DIR}}
+          make -j2 -C build all GEN_CONTENT_DIR=${{env.GEN_CONTENT_DIR}}
         id: copy-convert
       - name: Zip Artifacts for Upload
         if: always()
