@@ -15,10 +15,14 @@ JQ_BIN:=jq-linux-amd64
 JQ_PATH:=$(shell pwd)/jq
 JQ_INSTALL_VERSION:=jq-1.7
 JQ_DOWNLOAD_URL:=https://github.com/jqlang/jq/releases/download/$(JQ_INSTALL_VERSION)/$(JQ_BIN)
+JQ_INSTALL_COMMAND=curl $(CURL_INSTALL_OPTS) -o $(JQ_PATH) $(JQ_DOWNLOAD_URL) && chmod +x $(JQ_PATH)
+XMLLINT_PATH=/usr/bin/xmllint
+XMLLINT_INSTALL_COMMAND=sudo rm -rf /var/lib/apt/lists/* && sudo apt-get update && sudo apt-get install libxml2-utils
 YQ_BIN:=yq_linux_amd64
 YQ_PATH:=$(shell pwd)/yq
 YQ_INSTALL_VERSION:=v4.35.2
 YQ_DOWNLOAD_URL:=https://github.com/mikefarah/yq/releases/download/$(YQ_INSTALL_VERSION)/$(YQ_BIN)
+YQ_INSTALL_COMMAND:=curl $(CURL_INSTALL_OPTS) -o $(YQ_PATH) $(YQ_DOWNLOAD_URL) && chmod +x $(YQ_PATH)
 NPM_PREFIX_DIR:=oscal/build
 NPM_PKGS_DIR:=node_modules
 XSLT_RUNNER:=oscal/build/xslt-runner.sh
@@ -47,15 +51,16 @@ build: ## Build core OSCAL artifacts to convert content examples
 	$(MAKE) -C oscal/build artifacts
 
 .PHONY: dependencies
-dependencies: $(JQ_PATH) $(YQ_PATH) ## Install binary build $(JQ_PATH) and yq dependencies for repo
+dependencies: $(JQ_PATH) $(XMLLINT_PATH) $(YQ_PATH) ## Install binary build $(JQ_PATH) and yq dependencies for repo
 
 $(JQ_PATH):
-	@curl $(CURL_INSTALL_OPTS) -o $(JQ_PATH) $(JQ_DOWNLOAD_URL)
-	@chmod +x $(JQ_PATH)
+	@$(JQ_INSTALL_COMMAND)
+
+$(XMLLINT_PATH):
+	@$(XMLLINT_INSTALL_COMMAND)
 
 $(YQ_PATH):
-	@curl $(CURL_INSTALL_OPTS) -o $(YQ_PATH) $(YQ_DOWNLOAD_URL)
-	@chmod +x $(YQ_PATH)
+	@$(YQ_INSTALL_COMMAND)
 
 .PHONY: copy-readmes
 copy-readmes: $(GEN_READMES) ## Copy README files to release location
@@ -135,6 +140,10 @@ clean-xml-content: ## Clean generated XML content
 clean-yaml-content: ## Clean generated YAML content
 	@rm -f $(GEN_YAML_FILES)
 
+
+# By default we install xmllint with operating system package manager, so
+# to be sensible, we will not uninstall or delete it even with the package
+# manager and reduce the amount of friction.
 .PHONY: clean-dependencies
 clean-dependencies: ## Clean binary dependencies for repo
 	@rm -f $(JQ_PATH) $(YQ_PATH)
