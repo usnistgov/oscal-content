@@ -43,7 +43,18 @@ help: ## Show this help message
 	{ printf "\033[32m%-30s\033[0m %s\n", $$1, $$2 }'
 
 .PHONY: all
-all: dependencies build copy-readmes copy-xml-content resolve-xml-profiles convert-min-json-content reformat-json-content convert-yaml-content validate-xml-content validate-json-content validate-yaml-content ## Run all steps for content preparation
+all: \
+	dependencies             \
+	build                    \
+	copy-readmes             \
+	copy-xml-content         \
+	resolve-xml-profiles     \
+	convert-min-json-content \
+	reformat-json-content    \
+	convert-yaml-content     \
+	validate-xml-content     \
+	validate-json-content    \
+	validate-yaml-content ## Run all steps for content preparation
 
 .PHONY: build
 build: ## Build core OSCAL artifacts to convert content examples
