@@ -22,15 +22,18 @@ jobs:
     name: Check, Convert and Validate Content
     runs-on: ubuntu-20.04
     steps:
-      # use this if checkout needs to be authenticated
-      - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
+      - uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
+        if: github.repository != env.HOME_REPO || github.ref != 'refs/heads/main'
+        with:
+          submodules: recursive
+      - uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
         if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/main'
         with:
           submodules: recursive
           token: ${{ secrets.COMMIT_TOKEN }}
       # use this if checkout is anonymous
       - name: Cache generated content for OSCAL build artifacts
-        uses: actions/cache@v3
+        uses: actions/cache@704facf57e6136b1bc63b828d79edcd491f0ee84
         with:
           path: |
             build/oscal/build/node_modules
@@ -38,10 +41,6 @@ jobs:
           # See https://github.com/actions/cache/blob/main/tips-and-workarounds.md#update-a-cache            
           key: |
             ${{ hashFiles('build/oscal/build/**') }}
-      - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
-        if: github.repository != env.HOME_REPO || github.ref != 'refs/heads/main'
-        with:
-          submodules: recursive
       - name: Copy and convert content
         run: |
           make -j2 -C build all GEN_CONTENT_DIR=${{env.GEN_CONTENT_DIR}}
@@ -51,7 +50,7 @@ jobs:
         run: |
           zip ${{ runner.temp }}/generated-content.zip -r examples/ nist.gov/
         working-directory: ${{ github.workspace }}
-      - uses: actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8
+      - uses: actions/upload-artifact@a8a3f3ad30e3422c9c7b888a15615d19a852ae32
         if: always()
         with:
           name: generated-content
@@ -61,10 +60,10 @@ jobs:
       - name: Publish Artifacts
         # only do this on main
         if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/main'
-        uses: stefanzweifel/git-auto-commit-action@3ea6ae190baf489ba007f7c92608f33ce20ef04a
+        uses: stefanzweifel/git-auto-commit-action@8756aa072ef5b4a080af5dc8fef36c5d586e521d
         with:
           push_options: --force
-          commit_message: Publishing auto-converted artifacts
+          commit_message: Publishing auto-converted artifacts [skip ci]
           commit_user_name: OSCAL GitHub Actions Bot
           commit_user_email: oscal@nist.gov
           commit_author: OSCAL GitHub Actions Bot <oscal@nist.gov>
