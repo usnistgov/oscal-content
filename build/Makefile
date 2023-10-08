@@ -27,7 +27,7 @@ NPM_PREFIX_DIR:=oscal/build
 NPM_PKGS_DIR:=node_modules
 XSLT_RUNNER:=oscal/build/xslt-runner.sh
 PROFILE_RESOLVER_RUNNER:=oscal/src/utils/resolver-pipeline/oscal-profile-resolve.sh
-PROFILE_RESOLVER_ARGS:="hide-source-profile-uri=true" "uuid-method='random-xslt'"
+PROFILE_RESOLVER_ARGS:="uuid-method='random-xslt'"
 XML_JSON_CONVERTER_XSLT:=oscal/build/generated/oscal_complete_xml-to-json-converter.xsl
 OSCAL_COMPLETE_XML_SCHEMA:=oscal/build/generated/oscal_complete_schema.xsd
 OSCAL_COMPLETE_JSON_SCHEMA:=oscal/build/generated/oscal_complete_schema.json
