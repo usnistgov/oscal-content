@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model schematypens="http://www.w3.org/2001/XMLSchema" type="application/xml" href="https://github.com/usnistgov/OSCAL/releases/download/v1.1.1/oscal_complete_schema.xsd"?>
 <component-definition xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-                      uuid="a7ba800c-a432-44cd-9075-0862cd66da6b"
-                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                      xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 https://raw.githubusercontent.com/usnistgov/OSCAL/master/xml/schema/oscal_component_schema.xsd">
+                      uuid="a7ba800c-a432-44cd-9075-0862cd66da6b">
   <metadata>
     <title>MongoDB Component Definition Example</title>
     <last-modified>2023-10-12T00:00:00.000000-04:00</last-modified>
