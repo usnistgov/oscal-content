@@ -31,7 +31,6 @@ jobs:
         with:
           submodules: recursive
           token: ${{ secrets.COMMIT_TOKEN }}
-      # use this if checkout is anonymous
       - name: Cache generated content for OSCAL build artifacts
         uses: actions/cache@704facf57e6136b1bc63b828d79edcd491f0ee84
         with:
@@ -58,7 +57,6 @@ jobs:
             ${{ runner.temp }}/generated-content.zip
           retention-days: 5
       - name: Publish Artifacts
-        # only do this on main
         if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/main'
         uses: stefanzweifel/git-auto-commit-action@8756aa072ef5b4a080af5dc8fef36c5d586e521d
         with:
