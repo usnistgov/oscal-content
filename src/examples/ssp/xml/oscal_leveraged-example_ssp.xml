@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Modified by the OSCAL 1.0.0 RC2 to OSCAL 1.0.0 conversion XSLT on 2021-06-08T13:57:35.068496-04:00 -->
 <system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0"
                       uuid="d197545f-353f-407b-9166-ebf959774c5a">
    <metadata>
