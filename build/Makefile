@@ -11,18 +11,7 @@ GEN_JSON_FILES:=$(subst xml,json,$(GEN_XML_FILES))
 GEN_MIN_JSON_FILES:=$(subst .json,-min.json,$(subst xml,json,$(GEN_XML_FILES) $(GEN_XML_RESOLVED_CATALOGS)))
 GEN_YAML_FILES:=$(subst xml,yaml,$(GEN_XML_FILES) $(GEN_XML_RESOLVED_CATALOGS))
 CURL_INSTALL_OPTS:=--silent --location
-JQ_BIN:=jq-linux-amd64
-JQ_PATH:=$(shell pwd)/jq
-JQ_INSTALL_VERSION:=jq-1.7
-JQ_DOWNLOAD_URL:=https://github.com/jqlang/jq/releases/download/$(JQ_INSTALL_VERSION)/$(JQ_BIN)
-JQ_INSTALL_COMMAND=curl $(CURL_INSTALL_OPTS) -o $(JQ_PATH) $(JQ_DOWNLOAD_URL) && chmod +x $(JQ_PATH)
-XMLLINT_PATH=/usr/bin/xmllint
-XMLLINT_INSTALL_COMMAND=sudo rm -rf /var/lib/apt/lists/* && sudo apt-get update && sudo apt-get install libxml2-utils
-YQ_BIN:=yq_linux_amd64
-YQ_PATH:=$(shell pwd)/yq
-YQ_INSTALL_VERSION:=v4.35.2
-YQ_DOWNLOAD_URL:=https://github.com/mikefarah/yq/releases/download/$(YQ_INSTALL_VERSION)/$(YQ_BIN)
-YQ_INSTALL_COMMAND:=curl $(CURL_INSTALL_OPTS) -o $(YQ_PATH) $(YQ_DOWNLOAD_URL) && chmod +x $(YQ_PATH)
+XMLLINT_PATH=$(shell which xmllint || { echo "Use operating system to install XMLLINT_INSTALL_COMMAND"; exit 1; })
 NPM_PREFIX_DIR:=oscal/build
 NPM_PKGS_DIR:=node_modules
 XSLT_RUNNER:=oscal/build/xslt-runner.sh
@@ -50,17 +39,32 @@ build: ## Build core OSCAL artifacts to convert content examples
 	$(MAKE) -C oscal/build dependencies
 	$(MAKE) -C oscal/build artifacts
 
-.PHONY: dependencies
-dependencies: $(JQ_PATH) $(XMLLINT_PATH) $(YQ_PATH) ## Install binary build $(JQ_PATH) and yq dependencies for repo
+# Used to automatically install certain executables
+JQ_INSTALL_BIN:=jq-linux-amd64
+JQ_INSTALL_VERSION:=jq-1.7
+JQ_INSTALL_URL:=https://github.com/jqlang/jq/releases/download/$(JQ_INSTALL_VERSION)/$(JQ_INSTALL_BIN)
+JQ_INSTALL_PATH:=./jq
+JQ_PATH:=$(shell which jq || echo $(JQ_INSTALL_PATH))
+JQ_INSTALL_COMMAND=curl $(CURL_INSTALL_OPTS) -o $(JQ_INSTALL_PATH) $(JQ_INSTALL_URL) && chmod +x $(JQ_INSTALL_PATH)
 
-$(JQ_PATH):
+$(JQ_INSTALL_PATH):
 	@$(JQ_INSTALL_COMMAND)
+
+YQ_INSTALL_BIN:=yq_linux_amd64
+YQ_INSTALL_VERSION:=v4.35.2
+YQ_INSTALL_URL:=https://github.com/mikefarah/yq/releases/download/$(YQ_INSTALL_VERSION)/$(YQ_INSTALL_BIN)
+YQ_INSTALL_PATH:=./yq
+YQ_PATH:=$(shell which yq || echo $(YQ_INSTALL_PATH))
+YQ_INSTALL_COMMAND:=curl $(CURL_INSTALL_OPTS) -o $(YQ_INSTALL_PATH) $(YQ_INSTALL_URL) && chmod +x $(YQ_INSTALL_PATH)
+
+$(YQ_PATH):
+	@$(YQ_INSTALL_COMMAND)
 
 $(XMLLINT_PATH):
 	@$(XMLLINT_INSTALL_COMMAND)
 
-$(YQ_PATH):
-	@$(YQ_INSTALL_COMMAND)
+.PHONY: dependencies
+dependencies: $(JQ_PATH) $(XMLLINT_PATH) $(YQ_PATH) ## Install binary build jq and yq dependencies for repo
 
 .PHONY: copy-readmes
 copy-readmes: $(GEN_READMES) ## Copy README files to release location
@@ -92,6 +96,7 @@ convert-min-json-content: $(GEN_MIN_JSON_FILES) ## Convert examples from OSCAL X
 
 .SECONDEXPANSION:
 $(GEN_CONTENT_DIR)/%-min.json: $(GEN_CONTENT_DIR)/$$(subst json,xml,%).xml
+	# TODO: Document for others where this @D alias comes from.
 	@mkdir -p $(@D)
 	$(XSLT_RUNNER) $(XML_JSON_CONVERTER_XSLT) $(GEN_CONTENT_DIR)/$(subst json,xml,$*).xml $(GEN_CONTENT_DIR)/$*-min.json
 
@@ -121,7 +126,7 @@ validate-yaml-content: $(GEN_YAML_FILES) ## Validate YAML files
 	npx --prefix $(NPM_PREFIX_DIR) ajv validate -s $(OSCAL_COMPLETE_JSON_SCHEMA) -c ajv-formats $(foreach file,$(GEN_YAML_FILES),-d $(file))
 
 .PHONY: clean
-clean: clean-build clean-dependencies clean-readmes clean-json-content clean-xml-content clean-yaml-content ## Clean all generated content
+clean: clean-build clean-readmes clean-json-content clean-xml-content clean-yaml-content ## Clean all generated content
 
 .PHONY: clean-build
 clean-build: ## Clean core OSCAL artifacts to convert content examples
