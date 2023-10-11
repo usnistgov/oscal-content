@@ -43,18 +43,7 @@ help: ## Show this help message
 	{ printf "\033[32m%-30s\033[0m %s\n", $$1, $$2 }'
 
 .PHONY: all
-all: \
-	dependencies             \
-	build                    \
-	copy-readmes             \
-	copy-xml-content         \
-	resolve-xml-profiles     \
-	convert-min-json-content \
-	reformat-json-content    \
-	convert-yaml-content     \
-	validate-xml-content     \
-	validate-json-content    \
-	validate-yaml-content ## Run all steps for content preparation
+all: build dependencies copy-readmes copy-xml-content resolve-xml-profiles convert-min-json-content reformat-json-content convert-yaml-content validate-xml-content validate-json-content validate-yaml-content ## Run all steps for content preparation
 
 .PHONY: build
 build: ## Build core OSCAL artifacts to convert content examples
@@ -132,13 +121,7 @@ validate-yaml-content: $(GEN_YAML_FILES) ## Validate YAML files
 	npx --prefix $(NPM_PREFIX_DIR) ajv validate -s $(OSCAL_COMPLETE_JSON_SCHEMA) -c ajv-formats $(foreach file,$(GEN_YAML_FILES),-d $(file))
 
 .PHONY: clean
-clean: \
-	clean-build        \
-	clean-dependencies \
-	clean-readmes      \
-	clean-json-content \
-	clean-xml-content  \
-	clean-yaml-content ## Clean all generated content
+clean: clean-build clean-dependencies clean-readmes clean-json-content clean-xml-content clean-yaml-content ## Clean all generated content
 
 .PHONY: clean-build
 clean-build: ## Clean core OSCAL artifacts to convert content examples
