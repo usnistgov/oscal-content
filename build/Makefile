@@ -132,7 +132,24 @@ validate-yaml-content: $(GEN_YAML_FILES) ## Validate YAML files
 	npx --prefix $(NPM_PREFIX_DIR) ajv validate -s $(OSCAL_COMPLETE_JSON_SCHEMA) -c ajv-formats $(foreach file,$(GEN_YAML_FILES),-d $(file))
 
 .PHONY: clean
-clean: clean-readmes clean-json-content clean-xml-content clean-yaml-content ## Clean all generated content
+clean: \
+	clean-build        \
+	clean-dependencies \
+	clean-readmes      \
+	clean-json-content \
+	clean-xml-content  \
+	clean-yaml-content ## Clean all generated content
+
+.PHONY: clean-build
+clean-build: ## Clean core OSCAL artifacts to convert content examples
+	$(MAKE) -C oscal/build clean
+
+# By default we install xmllint with operating system package manager, so
+# to be sensible, we will not uninstall or delete it even with the package
+# manager and reduce the amount of friction.
+.PHONY: clean-dependencies
+clean-dependencies: ## Clean binary dependencies for repo
+	@rm -f $(JQ_PATH) $(YQ_PATH)
 
 .PHONY: clean-readmes
 clean-readmes: ## Clean generated README files
@@ -150,11 +167,3 @@ clean-xml-content: ## Clean generated XML content
 .PHONY: clean-yaml-content
 clean-yaml-content: ## Clean generated YAML content
 	@rm -f $(GEN_YAML_FILES)
-
-
-# By default we install xmllint with operating system package manager, so
-# to be sensible, we will not uninstall or delete it even with the package
-# manager and reduce the amount of friction.
-.PHONY: clean-dependencies
-clean-dependencies: ## Clean binary dependencies for repo
-	@rm -f $(JQ_PATH) $(YQ_PATH)
