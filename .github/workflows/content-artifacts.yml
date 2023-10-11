@@ -47,7 +47,7 @@ jobs:
       - name: Zip Artifacts for Upload
         if: always()
         run: |
-          zip ${{ runner.temp }}/generated-content.zip -r examples/ nist.gov/
+          zip ${{ runner.temp }}/generated-content.zip -r README.md examples/ nist.gov/
         working-directory: ${{ github.workspace }}
       - uses: actions/upload-artifact@a8a3f3ad30e3422c9c7b888a15615d19a852ae32
         if: always()
