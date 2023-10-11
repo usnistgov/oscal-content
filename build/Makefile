@@ -32,7 +32,7 @@ help: ## Show this help message
 	{ printf "\033[32m%-30s\033[0m %s\n", $$1, $$2 }'
 
 .PHONY: all
-all: build dependencies copy-readmes copy-xml-content resolve-xml-profiles convert-min-json-content reformat-json-content convert-yaml-content validate-xml-content validate-json-content validate-yaml-content ## Run all steps for content preparation
+all: build dependencies artifacts checks ## Run all steps for content preparation
 
 .PHONY: build
 build: ## Build core OSCAL artifacts to convert content examples
@@ -66,6 +66,9 @@ $(XMLLINT_PATH):
 .PHONY: dependencies
 dependencies: $(JQ_PATH) $(XMLLINT_PATH) $(YQ_PATH) ## Install binary build jq and yq dependencies for repo
 
+.PHONY: artifacts
+artifacts: copy-readmes copy-xml-content resolve-xml-profiles convert-min-json-content reformat-json-content convert-yaml-content ## Generate all artifacts
+
 .PHONY: copy-readmes
 copy-readmes: $(GEN_READMES) ## Copy README files to release location
 
@@ -96,7 +99,6 @@ convert-min-json-content: $(GEN_MIN_JSON_FILES) ## Convert examples from OSCAL X
 
 .SECONDEXPANSION:
 $(GEN_CONTENT_DIR)/%-min.json: $(GEN_CONTENT_DIR)/$$(subst json,xml,%).xml
-	# TODO: Document for others where this @D alias comes from.
 	@mkdir -p $(@D)
 	$(XSLT_RUNNER) $(XML_JSON_CONVERTER_XSLT) $(GEN_CONTENT_DIR)/$(subst json,xml,$*).xml $(GEN_CONTENT_DIR)/$*-min.json
 
@@ -108,6 +110,9 @@ $(NPM_PREFIX_DIR)/$(NPM_PKGS_DIR):
 
 $(GEN_CONTENT_DIR)/%.json: $(GEN_CONTENT_DIR)/%-min.json
 	$(JQ_PATH) . $(GEN_CONTENT_DIR)/$*-min.json > $(GEN_CONTENT_DIR)/$*.json
+
+.PHONY: checks
+checks: validate-xml-content validate-json-content validate-yaml-content ## Check all content with schema and other validation methods
 
 .PHONY: validate-json-content
 validate-json-content: $(GEN_JSON_FILES) ## Validate JSON files
@@ -151,6 +156,7 @@ clean-json-content: ## Clean generated JSON content
 .PHONY: clean-xml-content
 clean-xml-content: ## Clean generated XML content
 	@rm -f $(GEN_XML_FILES)
+	@rm -f $(GEN_XML_RESOLVED_CATALOGS)
 
 .PHONY: clean-yaml-content
 clean-yaml-content: ## Clean generated YAML content

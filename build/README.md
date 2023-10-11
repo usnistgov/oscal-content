@@ -18,7 +18,7 @@ To generate all artifacts and run all checks, simply run `make all`.
 
 If you want to run `make` commands outside of this directory, for example from [the top-level directory of this repository](..) cloned onto a developer workstation, use the `-C` argument, such as `make -C ./build all`.
 
-By default, the destination for all generated content is in the [`generated`](./generated) sub-directory. To generate content "inline" like the GitHub Actions CI/CD automation, you want to change the `GEN_CONTENT_DIR` relative to location of the `Makefile`. Either executing `make -C all GEN_CONTENT_DIR=..` from the top-level directory or executing `make -C build GEN_CONTENT_DIR=..` from this directory are correct. Either will generate source content in [`src/nist.gov`](../src/nist.gov) and [`examples`](../src/examples) into [`nist.gov`](../nist.gov) and [`examples`](../examples), respectively.
+By default, the destination for all generated content is in the [`generated`](./generated) sub-directory. To generate content "inline" like the GitHub Actions CI/CD automation, you want to change the `GEN_CONTENT_DIR` relative to location of the `Makefile`. Either executing `make -C build all GEN_CONTENT_DIR=..` from the top-level directory or executing `make all GEN_CONTENT_DIR=..` from this directory are correct. Either will generate source content in [`src/nist.gov`](../src/nist.gov) and [`examples`](../src/examples) into [`nist.gov`](../nist.gov) and [`examples`](../examples), respectively.
 
 ### Build OSCAL Tools and Install Dependencies
 
@@ -31,7 +31,7 @@ make dependencies
 
 ### Artifact Generation
 
-You can use the `make all` to generate all artifacts in addition to other steps, or you can use specific target(s) to generate a specific artifact.
+You can use the `make artifacts` to generate all artifacts in addition to other steps, or you can use specific target(s) to generate a specific artifact.
 
 ```sh
 make copy-readmes
@@ -44,7 +44,7 @@ make convert-yaml-content
 
 ### Checks
 
-You can use the `make all` to validate generated artifacts in addition to other steps, or you can use specific target(s) to generate a specific artifact.
+You can use the `make checks` to validate generated artifacts in addition to other steps, or you can use specific target(s) to generate a specific artifact.
 
 ```sh
 make validate-xml-content
