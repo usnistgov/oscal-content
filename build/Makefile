@@ -6,10 +6,10 @@ SRC_READMES:=$(shell find $(SRC_DIR) -iname 'README.md')
 GEN_CONTENT_DIR:=generated
 GEN_READMES:=$(patsubst $(SRC_DIR)/%,$(GEN_CONTENT_DIR)/%,$(SRC_READMES))
 GEN_XML_FILES:=$(patsubst $(SRC_DIR)/%,$(GEN_CONTENT_DIR)/%,$(SRC_FILES))
-GEN_XML_PROFILES:=$(subst _profile.xml,-resolved-profile_catalog.xml,$(patsubst $(SRC_DIR)/%,$(GEN_CONTENT_DIR)/%,$(SRC_XML_PROFILES)))
+GEN_XML_RESOLVED_CATALOGS:=$(subst _profile.xml,-resolved-profile_catalog.xml,$(patsubst $(SRC_DIR)/%,$(GEN_CONTENT_DIR)/%,$(SRC_XML_PROFILES)))
 GEN_JSON_FILES:=$(subst xml,json,$(GEN_XML_FILES))
-GEN_MIN_JSON_FILES:=$(subst .json,-min.json,$(subst xml,json,$(GEN_XML_FILES)))
-GEN_YAML_FILES:=$(subst xml,yaml,$(GEN_XML_FILES))
+GEN_MIN_JSON_FILES:=$(subst .json,-min.json,$(subst xml,json,$(GEN_XML_FILES) $(GEN_XML_RESOLVED_CATALOGS)))
+GEN_YAML_FILES:=$(subst xml,yaml,$(GEN_XML_FILES) $(GEN_XML_RESOLVED_CATALOGS))
 CURL_INSTALL_OPTS:=--silent --location
 JQ_BIN:=jq-linux-amd64
 JQ_PATH:=$(shell pwd)/jq
@@ -88,7 +88,7 @@ $(GEN_CONTENT_DIR)/%.xml: $(SRC_DIR)/%.xml
 	@cp $(SRC_DIR)/$*.xml $(GEN_CONTENT_DIR)/$*.xml
 
 .PHONY: resolve-xml-profiles
-resolve-xml-profiles: $(GEN_XML_PROFILES) ## Resolve OSCAL XML profiles for custom catalogs
+resolve-xml-profiles: $(GEN_XML_RESOLVED_CATALOGS) ## Resolve OSCAL XML profiles for custom catalogs
 
 $(GEN_CONTENT_DIR)/%-resolved-profile_catalog.xml: $(SRC_DIR)/%_profile.xml
 	mkdir -p $(@D)
