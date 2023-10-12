@@ -73,6 +73,9 @@ artifacts: copy-readmes copy-xml-content resolve-xml-profiles convert-min-json-c
 copy-readmes: $(GEN_READMES) ## Copy README files to release location
 
 $(GEN_CONTENT_DIR)/%.md: $(SRC_DIR)/%.md
+	# $(@D): The directory part of the file name of the target, with the
+	# trailing slash removed.
+	# https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html
 	@mkdir -p $(@D)
 	@cp $(SRC_DIR)/$*.md $(GEN_CONTENT_DIR)/$*.md
 
