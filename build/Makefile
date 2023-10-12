@@ -88,7 +88,8 @@ resolve-xml-profiles: $(GEN_XML_RESOLVED_CATALOGS) ## Resolve OSCAL XML profiles
 
 $(GEN_CONTENT_DIR)/%-resolved-profile_catalog.xml: $(SRC_DIR)/%_profile.xml
 	mkdir -p $(@D)
-	$(PROFILE_RESOLVER_RUNNER) $(SRC_DIR)/$*_profile.xml $(GEN_CONTENT_DIR)/$*-resolved-profile_catalog.xml $(PROFILE_RESOLVER_ARGS)
+	$(PROFILE_RESOLVER_RUNNER) $(GEN_CONTENT_DIR)/$*_profile.xml $(GEN_CONTENT_DIR)/$*-resolved-profile_catalog.xml $(PROFILE_RESOLVER_ARGS)
+	@sed -i'' -e "s|file:$(shell realpath $(GEN_CONTENT_DIR)/$*_profile.xml)|$(shell basename $*_profile.xml)|g" $(GEN_CONTENT_DIR)/$*-resolved-profile_catalog.xml	
 
 .PHONY: validate-xml-content
 validate-xml-content: $(GEN_XML_FILES) ## Validate XML files
