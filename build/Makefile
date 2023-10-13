@@ -57,7 +57,7 @@ YQ_INSTALL_PATH:=./yq
 YQ_PATH:=$(shell which yq || echo $(YQ_INSTALL_PATH))
 YQ_INSTALL_COMMAND:=curl $(CURL_INSTALL_OPTS) -o $(YQ_INSTALL_PATH) $(YQ_INSTALL_URL) && chmod +x $(YQ_INSTALL_PATH)
 
-$(YQ_PATH):
+$(YQ_INSTALL_PATH):
 	@$(YQ_INSTALL_COMMAND)
 
 $(XMLLINT_PATH):
@@ -95,14 +95,14 @@ $(GEN_CONTENT_DIR)/%-resolved-profile_catalog.xml: $(SRC_DIR)/%_profile.xml
 	@sed -i'' -e "s|file:$(shell realpath $(GEN_CONTENT_DIR)/$*_profile.xml)|$(shell basename $*_profile.xml)|g" $(GEN_CONTENT_DIR)/$*-resolved-profile_catalog.xml	
 
 .PHONY: validate-xml-content
-validate-xml-content: $(GEN_XML_FILES) ## Validate XML files
+validate-xml-content: $(GEN_XML_FILES) $(OSCAL_COMPLETE_XML_SCHEMA) ## Validate XML files
 	@xmllint --schema $(OSCAL_COMPLETE_XML_SCHEMA) --noout $(GEN_XML_FILES)
 
 .PHONY: convert-min-json-content
 convert-min-json-content: $(GEN_MIN_JSON_FILES) ## Convert examples from OSCAL XML to JSON
 
 .SECONDEXPANSION:
-$(GEN_CONTENT_DIR)/%-min.json: $(GEN_CONTENT_DIR)/$$(subst json,xml,%).xml
+$(GEN_CONTENT_DIR)/%-min.json: $(GEN_CONTENT_DIR)/$$(subst json,xml,%).xml $(XML_JSON_CONVERTER_XSLT)
 	@mkdir -p $(@D)
 	$(XSLT_RUNNER) $(XML_JSON_CONVERTER_XSLT) $(GEN_CONTENT_DIR)/$(subst json,xml,$*).xml $(GEN_CONTENT_DIR)/$*-min.json
 
@@ -119,7 +119,7 @@ $(GEN_CONTENT_DIR)/%.json: $(GEN_CONTENT_DIR)/%-min.json
 checks: validate-xml-content validate-json-content validate-yaml-content ## Check all content with schema and other validation methods
 
 .PHONY: validate-json-content
-validate-json-content: $(GEN_JSON_FILES) ## Validate JSON files
+validate-json-content: $(GEN_JSON_FILES) $(NPM_PREFIX_DIR)/$(NPM_PKGS_DIR) ## Validate JSON files
 	npx --prefix $(NPM_PREFIX_DIR) ajv validate -s $(OSCAL_COMPLETE_JSON_SCHEMA) -c ajv-formats $(foreach file,$(GEN_JSON_FILES),-d $(file))
 
 .PHONY: convert-yaml-content
@@ -131,7 +131,7 @@ $(GEN_CONTENT_DIR)/%.yaml: $(GEN_CONTENT_DIR)/$$(subst yaml,json,%).json
 	@cat $(GEN_CONTENT_DIR)/$(subst yaml,json,$*).json | $(YQ_PATH) e -P - > $(GEN_CONTENT_DIR)/$(subst json,yaml,$*).yaml
 
 .PHONY: validate-yaml-content
-validate-yaml-content: $(GEN_YAML_FILES) ## Validate YAML files
+validate-yaml-content: $(GEN_YAML_FILES) $(NPM_PREFIX_DIR)/$(NPM_PKGS_DIR) ## Validate YAML files
 	npx --prefix $(NPM_PREFIX_DIR) ajv validate -s $(OSCAL_COMPLETE_JSON_SCHEMA) -c ajv-formats $(foreach file,$(GEN_YAML_FILES),-d $(file))
 
 .PHONY: clean
