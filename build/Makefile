@@ -102,7 +102,7 @@ validate-xml-content: $(GEN_XML_FILES) $(OSCAL_COMPLETE_XML_SCHEMA) ## Validate 
 convert-min-json-content: $(GEN_MIN_JSON_FILES) ## Convert examples from OSCAL XML to JSON
 
 .SECONDEXPANSION:
-$(GEN_CONTENT_DIR)/%-min.json: $(GEN_CONTENT_DIR)/$$(subst json,xml,%).xml $(XML_JSON_CONVERTER_XSLT)
+$(GEN_CONTENT_DIR)/%-min.json: $(GEN_XML_FILES) $(GEN_XML_RESOLVED_CATALOGS)
 	@mkdir -p $(@D)
 	$(XSLT_RUNNER) $(XML_JSON_CONVERTER_XSLT) $(GEN_CONTENT_DIR)/$(subst json,xml,$*).xml $(GEN_CONTENT_DIR)/$*-min.json
 
@@ -126,7 +126,7 @@ validate-json-content: $(GEN_JSON_FILES) $(NPM_PREFIX_DIR)/$(NPM_PKGS_DIR) ## Va
 convert-yaml-content: $(GEN_YAML_FILES) ## Convert examples from OSCAL JSON to YAML
 
 .SECONDEXPANSION:
-$(GEN_CONTENT_DIR)/%.yaml: $(GEN_CONTENT_DIR)/$$(subst yaml,json,%).json
+$(GEN_CONTENT_DIR)/%.yaml: $(GEN_MIN_JSON_FILES) $(GEN_JSON_FILES)
 	@mkdir -p $(@D)
 	@cat $(GEN_CONTENT_DIR)/$(subst yaml,json,$*).json | $(YQ_PATH) e -P - > $(GEN_CONTENT_DIR)/$(subst json,yaml,$*).yaml
 
