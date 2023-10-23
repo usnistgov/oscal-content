@@ -36,6 +36,7 @@ JQ_INSTALL_PATH:=./jq
 JQ_PATH:=$(shell which jq || echo $(JQ_INSTALL_PATH))
 JQ_INSTALL_COMMAND=curl $(CURL_INSTALL_OPTS) -o $(JQ_INSTALL_PATH) $(JQ_INSTALL_URL) && chmod +x $(JQ_INSTALL_PATH)
 
+# Adjust JQ_INSTALL_BIN as appropriate, e.x. `make JQ_INSTALL_BIN=./jq_darwin_arm64`
 $(JQ_INSTALL_PATH):
 	@$(JQ_INSTALL_COMMAND)
 
@@ -137,10 +138,17 @@ resolve-xml-profiles: $(GEN_XML_RESOLVED_CATALOGS) ## Resolve OSCAL XML profiles
 PROFILE_RESOLVER_RUNNER:=oscal/src/utils/resolver-pipeline/oscal-profile-resolve.sh
 PROFILE_RESOLVER_ARGS:="uuid-method='random-xslt'"
 
+# Do not save a backup of the in-place edited file
+SED_FLAGS:=-i
+
+ifeq ($(shell uname -s),Darwin)
+	SED_FLAGS:=-i ''
+endif
+
 $(GEN_CONTENT_DIR)/%-resolved-profile_catalog.xml: $(SRC_DIR)/%_profile.xml $(GEN_XML_COPIED)
 	@mkdir -p $(@D)
 	$(PROFILE_RESOLVER_RUNNER) $(GEN_CONTENT_DIR)/$*_profile.xml $(GEN_CONTENT_DIR)/$*-resolved-profile_catalog.xml $(PROFILE_RESOLVER_ARGS)
-	sed -i '' -e 's|file:$(shell realpath $(GEN_CONTENT_DIR)/$*_profile.xml)|$(shell basename $*_profile.xml)|g' $(GEN_CONTENT_DIR)/$*-resolved-profile_catalog.xml	
+	sed $(SED_FLAGS) -e 's|file:$(shell realpath $(GEN_CONTENT_DIR)/$*_profile.xml)|$(shell basename $*_profile.xml)|g' $(GEN_CONTENT_DIR)/$*-resolved-profile_catalog.xml	
 
 OSCAL_COMPLETE_XML_SCHEMA:=$(OSCAL_CORE_DIR)/generated/oscal_complete_schema.xsd
 
