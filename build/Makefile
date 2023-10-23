@@ -1,25 +1,4 @@
 SHELL:=/usr/bin/env bash
-SRC_DIR:=../src
-SRC_FILES:=$(shell find $(SRC_DIR) -name '*.xml' -o -name '*.json')
-SRC_XML_PROFILES:=$(shell find $(SRC_DIR) -name '*profile.xml')
-SRC_READMES:=$(shell find $(SRC_DIR) -iname 'README.md')
-GEN_CONTENT_DIR:=generated
-GEN_READMES:=$(patsubst $(SRC_DIR)/%,$(GEN_CONTENT_DIR)/%,$(SRC_READMES))
-GEN_XML_FILES:=$(patsubst $(SRC_DIR)/%,$(GEN_CONTENT_DIR)/%,$(SRC_FILES))
-GEN_XML_RESOLVED_CATALOGS:=$(subst _profile.xml,-resolved-profile_catalog.xml,$(patsubst $(SRC_DIR)/%,$(GEN_CONTENT_DIR)/%,$(SRC_XML_PROFILES)))
-GEN_JSON_FILES:=$(subst xml,json,$(GEN_XML_FILES))
-GEN_MIN_JSON_FILES:=$(subst .json,-min.json,$(subst xml,json,$(GEN_XML_FILES) $(GEN_XML_RESOLVED_CATALOGS)))
-GEN_YAML_FILES:=$(subst xml,yaml,$(GEN_XML_FILES) $(GEN_XML_RESOLVED_CATALOGS))
-CURL_INSTALL_OPTS:=--silent --location
-XMLLINT_PATH=$(shell which xmllint || { echo "Use operating system to install XMLLINT_INSTALL_COMMAND"; exit 1; })
-NPM_PREFIX_DIR:=oscal/build
-NPM_PKGS_DIR:=node_modules
-XSLT_RUNNER:=oscal/build/xslt-runner.sh
-PROFILE_RESOLVER_RUNNER:=oscal/src/utils/resolver-pipeline/oscal-profile-resolve.sh
-PROFILE_RESOLVER_ARGS:="uuid-method='random-xslt'"
-XML_JSON_CONVERTER_XSLT:=oscal/build/generated/oscal_complete_xml-to-json-converter.xsl
-OSCAL_COMPLETE_XML_SCHEMA:=oscal/build/generated/oscal_complete_schema.xsd
-OSCAL_COMPLETE_JSON_SCHEMA:=oscal/build/generated/oscal_complete_schema.json
 
 .PHONY: help
 # Run "make" or "make help" to get a list of user targets
@@ -32,12 +11,22 @@ help: ## Show this help message
 	{ printf "\033[32m%-30s\033[0m %s\n", $$1, $$2 }'
 
 .PHONY: all
-all: build dependencies artifacts checks ## Run all steps for content preparation
+all: artifacts checks ## Run all steps for content preparation
 
-.PHONY: build
-build: ## Build core OSCAL artifacts to convert content examples
-	$(MAKE) -C oscal/build dependencies
-	$(MAKE) -C oscal/build artifacts
+.PHONY: artifacts
+artifacts: copy-readmes copy-xml-content resolve-xml-profiles convert-min-json-content reformat-json-content convert-yaml-content ## Generate all artifacts
+
+.PHONY: checks
+checks: validate-xml-content validate-json-content validate-yaml-content ## Check all content with schema and other validation methods
+
+.PHONY: clean
+clean: clean-core-artifacts clean-readmes clean-json-content clean-xml-content clean-yaml-content ## Clean all generated content
+
+#
+# Dependencies
+#
+
+CURL_INSTALL_OPTS:=--silent --location
 
 # Used to automatically install certain executables
 JQ_INSTALL_BIN:=jq-linux-amd64
@@ -47,6 +36,7 @@ JQ_INSTALL_PATH:=./jq
 JQ_PATH:=$(shell which jq || echo $(JQ_INSTALL_PATH))
 JQ_INSTALL_COMMAND=curl $(CURL_INSTALL_OPTS) -o $(JQ_INSTALL_PATH) $(JQ_INSTALL_URL) && chmod +x $(JQ_INSTALL_PATH)
 
+# Adjust JQ_INSTALL_BIN as appropriate, e.x. `make JQ_INSTALL_BIN=./jq_darwin_arm64`
 $(JQ_INSTALL_PATH):
 	@$(JQ_INSTALL_COMMAND)
 
@@ -60,108 +50,174 @@ YQ_INSTALL_COMMAND:=curl $(CURL_INSTALL_OPTS) -o $(YQ_INSTALL_PATH) $(YQ_INSTALL
 $(YQ_INSTALL_PATH):
 	@$(YQ_INSTALL_COMMAND)
 
+XMLLINT_PATH=$(shell which xmllint || { echo "Use operating system to install XMLLINT_INSTALL_COMMAND"; exit 1; })
+
 $(XMLLINT_PATH):
 	@$(XMLLINT_INSTALL_COMMAND)
 
+OSCAL_CORE_DIR:=oscal/build
+
+NPM_PKGS_DIR:=node_modules
+
+$(NPM_PKGS_DIR):
+	$(MAKE) -C $(OSCAL_CORE_DIR) dependencies
+
 .PHONY: dependencies
-dependencies: $(JQ_PATH) $(XMLLINT_PATH) $(YQ_PATH) ## Install binary build jq and yq dependencies for repo
-
-.PHONY: artifacts
-artifacts: copy-readmes copy-xml-content resolve-xml-profiles convert-min-json-content reformat-json-content convert-yaml-content ## Generate all artifacts
-
-.PHONY: copy-readmes
-copy-readmes: $(GEN_READMES) ## Copy README files to release location
-
-$(GEN_CONTENT_DIR)/%.md: $(SRC_DIR)/%.md
-	# $(@D): The directory part of the file name of the target, with the
-	# trailing slash removed.
-	# https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html
-	@mkdir -p $(@D)
-	@cp $(SRC_DIR)/$*.md $(GEN_CONTENT_DIR)/$*.md
-
-.PHONY: copy-xml-content
-copy-xml-content: $(GEN_XML_FILES) ## Copy OSCAL XML files to release location
-
-$(GEN_CONTENT_DIR)/%.xml: $(SRC_DIR)/%.xml
-	@mkdir -p $(@D)
-	@cp $(SRC_DIR)/$*.xml $(GEN_CONTENT_DIR)/$*.xml
-
-.PHONY: resolve-xml-profiles
-resolve-xml-profiles: $(GEN_XML_RESOLVED_CATALOGS) ## Resolve OSCAL XML profiles for custom catalogs
-
-$(GEN_CONTENT_DIR)/%-resolved-profile_catalog.xml: $(SRC_DIR)/%_profile.xml
-	mkdir -p $(@D)
-	$(PROFILE_RESOLVER_RUNNER) $(GEN_CONTENT_DIR)/$*_profile.xml $(GEN_CONTENT_DIR)/$*-resolved-profile_catalog.xml $(PROFILE_RESOLVER_ARGS)
-	@sed -i'' -e "s|file:$(shell realpath $(GEN_CONTENT_DIR)/$*_profile.xml)|$(shell basename $*_profile.xml)|g" $(GEN_CONTENT_DIR)/$*-resolved-profile_catalog.xml	
-
-.PHONY: validate-xml-content
-validate-xml-content: $(GEN_XML_FILES) $(OSCAL_COMPLETE_XML_SCHEMA) ## Validate XML files
-	@xmllint --schema $(OSCAL_COMPLETE_XML_SCHEMA) --noout $(GEN_XML_FILES)
-
-.PHONY: convert-min-json-content
-convert-min-json-content: $(GEN_MIN_JSON_FILES) ## Convert examples from OSCAL XML to JSON
-
-.SECONDEXPANSION:
-$(GEN_CONTENT_DIR)/%-min.json: $(GEN_XML_FILES) $(GEN_XML_RESOLVED_CATALOGS)
-	@mkdir -p $(@D)
-	$(XSLT_RUNNER) $(XML_JSON_CONVERTER_XSLT) $(GEN_CONTENT_DIR)/$(subst json,xml,$*).xml $(GEN_CONTENT_DIR)/$*-min.json
-
-.PHONY: reformat-json-content
-reformat-json-content: $(GEN_JSON_FILES) ## Format minified JSON to pretty-printed JSON
-
-$(NPM_PREFIX_DIR)/$(NPM_PKGS_DIR):
-	$(MAKE) -C oscal/build dependencies
-
-$(GEN_CONTENT_DIR)/%.json: $(GEN_CONTENT_DIR)/%-min.json
-	$(JQ_PATH) . $(GEN_CONTENT_DIR)/$*-min.json > $(GEN_CONTENT_DIR)/$*.json
-
-.PHONY: checks
-checks: validate-xml-content validate-json-content validate-yaml-content ## Check all content with schema and other validation methods
-
-.PHONY: validate-json-content
-validate-json-content: $(GEN_JSON_FILES) $(NPM_PREFIX_DIR)/$(NPM_PKGS_DIR) ## Validate JSON files
-	npx --prefix $(NPM_PREFIX_DIR) ajv validate -s $(OSCAL_COMPLETE_JSON_SCHEMA) -c ajv-formats $(foreach file,$(GEN_JSON_FILES),-d $(file))
-
-.PHONY: convert-yaml-content
-convert-yaml-content: $(GEN_YAML_FILES) ## Convert examples from OSCAL JSON to YAML
-
-.SECONDEXPANSION:
-$(GEN_CONTENT_DIR)/%.yaml: $(GEN_MIN_JSON_FILES) $(GEN_JSON_FILES)
-	@mkdir -p $(@D)
-	@cat $(GEN_CONTENT_DIR)/$(subst yaml,json,$*).json | $(YQ_PATH) e -P - > $(GEN_CONTENT_DIR)/$(subst json,yaml,$*).yaml
-
-.PHONY: validate-yaml-content
-validate-yaml-content: $(GEN_YAML_FILES) $(NPM_PREFIX_DIR)/$(NPM_PKGS_DIR) ## Validate YAML files
-	npx --prefix $(NPM_PREFIX_DIR) ajv validate -s $(OSCAL_COMPLETE_JSON_SCHEMA) -c ajv-formats $(foreach file,$(GEN_YAML_FILES),-d $(file))
-
-.PHONY: clean
-clean: clean-build clean-readmes clean-json-content clean-xml-content clean-yaml-content ## Clean all generated content
-
-.PHONY: clean-build
-clean-build: ## Clean core OSCAL artifacts to convert content examples
-	$(MAKE) -C oscal/build clean
+dependencies: $(JQ_PATH) $(XMLLINT_PATH) $(YQ_PATH) $(NPM_PKGS_DIR) ## Install needed jq and yq binaries, and download needed downstream dependencies
 
 # By default we install xmllint with operating system package manager, so
 # to be sensible, we will not uninstall or delete it even with the package
 # manager and reduce the amount of friction.
 .PHONY: clean-dependencies
 clean-dependencies: ## Clean binary dependencies for repo
-	@rm -f $(JQ_PATH) $(YQ_PATH)
+	rm -f $(JQ_INSTALL_PATH) $(YQ_INSTALL_PATH)
+
+#
+# OSCAL Core
+#
+
+.PHONY: build-core-artifacts
+build-core-artifacts: ## Build core OSCAL artifacts to convert content examples
+	$(MAKE) -C $(OSCAL_CORE_DIR) artifacts
+
+.PHONY: clean-core-artifacts
+clean-core-artifacts: ## Clean core OSCAL artifacts to convert content examples
+	@echo Cleaning OSCAL core artifacts
+	$(MAKE) -C $(OSCAL_CORE_DIR) clean
+
+# The directory all content is sourced from
+SRC_DIR:=../src
+# The directory all content is written to (hint: override this to ..?)
+GEN_CONTENT_DIR:=generated
+
+#
+# Readmes
+#
+
+SRC_READMES:=$(shell find $(SRC_DIR) -iname 'README.md')
+GEN_READMES:=$(patsubst $(SRC_DIR)/%,$(GEN_CONTENT_DIR)/%,$(SRC_READMES))
+
+.PHONY: copy-readmes
+copy-readmes: $(GEN_READMES) ## Copy README files to release location
+
+# $(@D): The directory part of the file name of the target, with the
+# trailing slash removed.
+# https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html
+$(GEN_CONTENT_DIR)/%.md: $(SRC_DIR)/%.md
+	@mkdir -p $(@D)
+	cp $(SRC_DIR)/$*.md $(GEN_CONTENT_DIR)/$*.md
 
 .PHONY: clean-readmes
 clean-readmes: ## Clean generated README files
-	@find $(GEN_READMES)
+	@echo Cleaning README content
+	rm -f $(GEN_READMES)
 
-.PHONY: clean-json-content
-clean-json-content: ## Clean generated JSON content
-	@rm -f $(GEN_JSON_FILES)
-	@rm -f $(GEN_MIN_JSON_FILES)
+#
+# XML Content
+#
+
+# The source xml content to use for all generated files
+SRC_FILES:=$(shell find $(SRC_DIR) -name '*.xml')
+GEN_XML_COPIED:=$(patsubst $(SRC_DIR)/%,$(GEN_CONTENT_DIR)/%,$(SRC_FILES))
+SRC_XML_PROFILES:=$(shell find $(SRC_DIR) -name '*profile.xml')
+GEN_XML_RESOLVED_CATALOGS:=$(subst _profile.xml,-resolved-profile_catalog.xml,$(patsubst $(SRC_DIR)/%,$(GEN_CONTENT_DIR)/%,$(SRC_XML_PROFILES)))
+
+# All XML content generated by this configuration
+GEN_XML_FILES:=$(GEN_XML_COPIED) $(GEN_XML_RESOLVED_CATALOGS)
+
+.PHONY: copy-xml-content
+copy-xml-content: $(GEN_XML_COPIED) ## Copy OSCAL XML files to release location
+
+$(GEN_CONTENT_DIR)/%.xml: $(SRC_DIR)/%.xml
+	@mkdir -p $(@D)
+	cp $(SRC_DIR)/$*.xml $(GEN_CONTENT_DIR)/$*.xml
+
+.PHONY: resolve-xml-profiles
+resolve-xml-profiles: $(GEN_XML_RESOLVED_CATALOGS) ## Resolve OSCAL XML profiles for custom catalogs
+
+PROFILE_RESOLVER_RUNNER:=oscal/src/utils/resolver-pipeline/oscal-profile-resolve.sh
+PROFILE_RESOLVER_ARGS:="uuid-method='random-xslt'"
+
+# Do not save a backup of the in-place edited file
+SED_FLAGS:=-i
+
+ifeq ($(shell uname -s),Darwin)
+	SED_FLAGS:=-i ''
+endif
+
+$(GEN_CONTENT_DIR)/%-resolved-profile_catalog.xml: $(SRC_DIR)/%_profile.xml $(GEN_XML_COPIED)
+	@mkdir -p $(@D)
+	$(PROFILE_RESOLVER_RUNNER) $(GEN_CONTENT_DIR)/$*_profile.xml $(GEN_CONTENT_DIR)/$*-resolved-profile_catalog.xml $(PROFILE_RESOLVER_ARGS)
+	sed $(SED_FLAGS) -e 's|file:.*$(shell basename $*_profile.xml)|$(shell basename $*_profile.xml)|g' $(GEN_CONTENT_DIR)/$*-resolved-profile_catalog.xml
+
+OSCAL_COMPLETE_XML_SCHEMA:=$(OSCAL_CORE_DIR)/generated/oscal_complete_schema.xsd
+
+.PHONY: validate-xml-content
+validate-xml-content: $(GEN_XML_FILES) ## Validate XML files
+	$(MAKE) -C $(OSCAL_CORE_DIR) $(subst $(OSCAL_CORE_DIR)/,,$(OSCAL_COMPLETE_XML_SCHEMA))
+	$(XMLLINT_PATH) --schema $(OSCAL_COMPLETE_XML_SCHEMA) --noout $(GEN_XML_FILES)
 
 .PHONY: clean-xml-content
 clean-xml-content: ## Clean generated XML content
-	@rm -f $(GEN_XML_FILES)
-	@rm -f $(GEN_XML_RESOLVED_CATALOGS)
+	@echo Cleaning XML content
+	rm -f $(GEN_XML_FILES)
+
+#
+# JSON Content
+#
+
+GEN_JSON_FILES:=$(subst xml,json,$(GEN_XML_FILES))
+GEN_MIN_JSON_FILES:=$(subst .json,-min.json,$(GEN_JSON_FILES))
+
+.PHONY: convert-min-json-content
+convert-min-json-content: $(GEN_MIN_JSON_FILES) ## Convert examples from OSCAL XML to JSON
+
+XSLT_RUNNER:=$(OSCAL_CORE_DIR)/xslt-runner.sh
+XML_JSON_CONVERTER_XSLT:=$(OSCAL_CORE_DIR)/generated/oscal_complete_xml-to-json-converter.xsl
+
+$(GEN_CONTENT_DIR)/%-min.json: $(GEN_XML_FILES)
+	$(MAKE) -C $(OSCAL_CORE_DIR) $(subst $(OSCAL_CORE_DIR)/,,$(XML_JSON_CONVERTER_XSLT))
+	@mkdir -p $(@D)
+	$(XSLT_RUNNER) $(XML_JSON_CONVERTER_XSLT) $(GEN_CONTENT_DIR)/$(subst json,xml,$*).xml $(GEN_CONTENT_DIR)/$*-min.json
+
+.PHONY: reformat-json-content
+reformat-json-content: $(GEN_JSON_FILES) ## Format minified JSON to pretty-printed JSON
+
+$(GEN_CONTENT_DIR)/%.json: $(GEN_CONTENT_DIR)/%-min.json $(YQ_PATH)
+	$(JQ_PATH) . $(GEN_CONTENT_DIR)/$*-min.json > $(GEN_CONTENT_DIR)/$*.json
+
+OSCAL_COMPLETE_JSON_SCHEMA:=$(OSCAL_CORE_DIR)/generated/oscal_complete_schema.json
+
+.PHONY: validate-json-content
+validate-json-content: $(GEN_JSON_FILES) $(NPM_PKGS_DIR) ## Validate JSON files
+	$(MAKE) -C $(OSCAL_CORE_DIR) $(subst $(OSCAL_CORE_DIR)/,,$(OSCAL_COMPLETE_JSON_SCHEMA))
+	npx --prefix $(OSCAL_CORE_DIR) ajv validate -s $(OSCAL_COMPLETE_JSON_SCHEMA) -c ajv-formats $(foreach file,$(GEN_JSON_FILES),-d $(file))
+
+.PHONY: clean-json-content
+clean-json-content: ## Clean generated JSON content
+	@echo Cleaning JSON content
+	rm -f $(GEN_JSON_FILES)
+	rm -f $(GEN_MIN_JSON_FILES)
+
+#
+# YAML
+#
+
+GEN_YAML_FILES:=$(subst xml,yaml,$(GEN_XML_FILES))
+
+.PHONY: convert-yaml-content
+convert-yaml-content: $(GEN_YAML_FILES) ## Convert examples from OSCAL JSON to YAML
+
+$(GEN_CONTENT_DIR)/%.yaml: $(GEN_MIN_JSON_FILES) $(GEN_JSON_FILES) $(YQ_PATH)
+	@mkdir -p $(@D)
+	cat $(GEN_CONTENT_DIR)/$(subst yaml,json,$*).json | $(YQ_PATH) e -P - > $(GEN_CONTENT_DIR)/$(subst json,yaml,$*).yaml
+
+.PHONY: validate-yaml-content
+validate-yaml-content: $(GEN_YAML_FILES) $(NPM_PKGS_DIR) ## Validate YAML files
+	$(MAKE) -C $(OSCAL_CORE_DIR) $(subst $(OSCAL_CORE_DIR)/,,$(OSCAL_COMPLETE_JSON_SCHEMA))
+	npx --prefix $(OSCAL_CORE_DIR) ajv validate -s $(OSCAL_COMPLETE_JSON_SCHEMA) -c ajv-formats $(foreach file,$(GEN_YAML_FILES),-d $(file))
 
 .PHONY: clean-yaml-content
 clean-yaml-content: ## Clean generated YAML content
-	@rm -f $(GEN_YAML_FILES)
+	@echo Cleaning YAML content
+	rm -f $(GEN_YAML_FILES)
