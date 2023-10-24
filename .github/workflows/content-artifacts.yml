@@ -22,11 +22,11 @@ jobs:
     name: Check, Convert and Validate Content
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
         if: github.repository != env.HOME_REPO || github.ref != 'refs/heads/main'
         with:
           submodules: recursive
-      - uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
         if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/main'
         with:
           submodules: recursive
