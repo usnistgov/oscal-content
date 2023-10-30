@@ -26,9 +26,7 @@
     <responsible-role role-id="provider">
       <party-uuid>ef7c799a-c50e-49ab-83e0-515e989e6df1</party-uuid>
     </responsible-role>
-    <responsible-role role-id="customer">
-      <party-uuid>ef7c799a-c50e-49ab-83e0-515e982305a0</party-uuid>
-    </responsible-role>
+    <responsible-role role-id="customer"/>
     <protocol uuid="2b4a1b3a-cbc5-4cc8-bde6-7437c28c4e54" name="mongodb">
       <title>Primary daemon process for the MongoDB system.</title>
       <port-range start="27017" end="27017" transport="TCP" />
