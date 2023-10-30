@@ -81,9 +81,7 @@
             <description>
               <p>To implement cryptographic mechanisms (aka enable TLS 1.x) to <insert type="param" id-ref="sc-8.1_prm_1"/>, customers need to set the <code>PEMKeyFile</code> option in the configuration  file <code>/etc/mongod.conf</code> to the certificate file's path and restart the component.</p>
             </description>
-          <responsible-role role-id="customer">
-            <party-uuid>ef7c799a-c50e-49ab-83e0-515e982305a0</party-uuid>
-          </responsible-role>
+          <responsible-role role-id="customer"/>
         </statement>       
       </implemented-requirement>
       <implemented-requirement
