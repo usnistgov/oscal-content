@@ -3,9 +3,9 @@
     "uuid": "d197545f-353f-407b-9166-ebf959774c5a",
     "metadata": {
       "title": "CSP IaaS System Security Plan",
-      "last-modified": "2021-06-08T13:57:35.068496-04:00",
-      "version": "0.1",
-      "oscal-version": "1.0.0",
+      "last-modified": "2023-10-12T00:00:00.000000-04:00",
+      "version": "0.2",
+      "oscal-version": "1.1.1",
       "roles": [
         {
           "id": "admin",
@@ -28,7 +28,7 @@
       ]
     },
     "import-profile": {
-      "href": "../../../nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_LOW-baseline_profile.json"
+      "href": "#6b45e2a5-b238-4752-ba12-cfd6ef2a83df"
     },
     "system-characteristics": {
       "system-ids": [
@@ -228,6 +228,24 @@
           "rlinks": [
             {
               "href": "./attachments/IaaS_ac_proc.docx"
+            }
+          ]
+        },
+        {
+          "uuid": "6b45e2a5-b238-4752-ba12-cfd6ef2a83df",
+          "description": "NIST Special Publication 800-53 Revision 4: Low Baseline Profile",
+          "rlinks": [
+            {
+              "href": "../../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_LOW-baseline_profile.xml",
+              "media-type": "application/oscal.catalog+xml"
+            },
+            {
+              "href": "../../../nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_LOW-baseline_profile.json",
+              "media-type": "application/oscal.catalog+json"
+            },
+            {
+              "href": "../../../nist.gov/SP800-53/rev4/yaml/NIST_SP-800-53_rev4_LOW-baseline_profile.yaml",
+              "media-type": "application/oscal.catalog+yaml"
             }
           ]
         }

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Modified by the OSCAL 1.0.0 RC2 to OSCAL 1.0.0 conversion XSLT on 2021-06-08T13:57:34.707994-04:00 -->
+<?xml-model schematypens="http://www.w3.org/2001/XMLSchema" type="application/xml" href="https://github.com/usnistgov/OSCAL/releases/download/v1.1.1/oscal_complete_schema.xsd"?>
 <profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
          uuid="66b95dd9-650d-456f-b143-19ae7bb36944">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 5 PRIVACY BASELINE</title>
-      <last-modified>2021-06-08T13:57:34.707994-04:00</last-modified>
+      <last-modified>2023-10-12T00:00:00.000000-04:00</last-modified>
       <version>Final</version>
-      <oscal-version>1.0.0</oscal-version>
+      <oscal-version>1.1.1</oscal-version>
       <role id="creator">
          <title>Document Creator</title>
       </role>
@@ -33,7 +33,7 @@
          <party-uuid>11f1de66-89ba-499d-903e-56418e95af9d</party-uuid>
       </responsible-party>
    </metadata>
-   <import href="NIST_SP-800-53_rev5_catalog.xml">
+   <import href="#84cbf061-eb87-4ec1-8112-1f529232e907">
       <include-controls>
          <with-id>ac-1</with-id>
          <with-id>ac-3.14</with-id>
@@ -136,4 +136,14 @@
    <merge>
       <as-is>true</as-is>
    </merge>
+   <back-matter>
+      <resource uuid="84cbf061-eb87-4ec1-8112-1f529232e907">
+         <description>
+            <p>NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Federal Information Systems and Organizations</p>
+         </description>
+         <rlink media-type="application/oscal.catalog+xml" href="../../../../nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_catalog.xml"/>
+         <rlink media-type="application/oscal.catalog+json" href="../../../../nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json"/>
+         <rlink media-type="application/oscal.catalog+yaml" href="../../../../nist.gov/SP800-53/rev5/yaml/NIST_SP-800-53_rev5_catalog.yaml"/>
+      </resource>
+   </back-matter>
 </profile>

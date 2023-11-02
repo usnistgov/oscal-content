@@ -1,15 +1,21 @@
 {
   "catalog": {
-    "uuid": "f74b0917-4e39-4e19-aca7-71a77ce3c181",
+    "uuid": "bec68292-6541-40e5-bc3b-5fcfee922bd9",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 4 LOW IMPACT BASELINE",
-      "last-modified": "2023-04-14T17:20:31.478369Z",
+      "last-modified": "2023-11-02T11:49:37.69093-04:00",
       "version": "2015-01-22",
-      "oscal-version": "1.0.0",
+      "oscal-version": "1.1.1",
+      "props": [
+        {
+          "name": "resolution-tool",
+          "value": "OSCAL Profile Resolver XSLT Pipeline OPRXP"
+        }
+      ],
       "links": [
         {
-          "href": "NIST_SP-800-53_rev4_LOW-baseline_profile.json",
-          "rel": "resolution-source"
+          "href": "NIST_SP-800-53_rev4_LOW-baseline_profile.xml",
+          "rel": "source-profile"
         }
       ],
       "roles": [

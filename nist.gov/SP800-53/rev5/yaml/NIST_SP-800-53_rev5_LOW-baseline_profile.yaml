@@ -1,11 +1,10 @@
----
 profile:
   uuid: 8742196d-86ba-4e72-a411-28867dab43bb
   metadata:
     title: NIST Special Publication 800-53 Revision 5 LOW IMPACT BASELINE
-    last-modified: 2021-06-08T13:57:33.97549-04:00
+    last-modified: "2023-10-12T00:00:00.000000-04:00"
     version: Final
-    oscal-version: 1.0.0
+    oscal-version: 1.1.1
     roles:
       - id: creator
         title: Document Creator
@@ -20,7 +19,7 @@ profile:
         addresses:
           - addr-lines:
               - National Institute of Standards and Technology
-              - "Attn: Computer Security Division"
+              - 'Attn: Computer Security Division'
               - Information Technology Laboratory
               - 100 Bureau Drive (Mail Stop 8930)
             city: Gaithersburg
@@ -34,7 +33,7 @@ profile:
         party-uuids:
           - 984e6c07-b5b6-4ab6-b22b-283609c325e6
   imports:
-    - href: NIST_SP-800-53_rev5_catalog.yaml
+    - href: '#84cbf061-eb87-4ec1-8112-1f529232e907'
       include-controls:
         - with-ids:
             - ac-1
@@ -188,3 +187,14 @@ profile:
             - sr-12
   merge:
     as-is: true
+  back-matter:
+    resources:
+      - uuid: 84cbf061-eb87-4ec1-8112-1f529232e907
+        description: 'NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Federal Information Systems and Organizations'
+        rlinks:
+          - href: ../../../../nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_catalog.xml
+            media-type: application/oscal.catalog+xml
+          - href: ../../../../nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json
+            media-type: application/oscal.catalog+json
+          - href: ../../../../nist.gov/SP800-53/rev5/yaml/NIST_SP-800-53_rev5_catalog.yaml
+            media-type: application/oscal.catalog+yaml

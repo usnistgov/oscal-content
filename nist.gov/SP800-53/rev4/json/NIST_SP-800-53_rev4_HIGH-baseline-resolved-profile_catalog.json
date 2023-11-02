@@ -1,15 +1,21 @@
 {
   "catalog": {
-    "uuid": "9cd0f8e2-b0c9-4e76-9c3f-1d03b0c58ec6",
+    "uuid": "d42ac376-bf01-4baf-bad5-d0b7ee2626d5",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 4 HIGH IMPACT BASELINE",
-      "last-modified": "2023-04-14T17:20:00.711529Z",
+      "last-modified": "2023-11-02T11:49:45.965719-04:00",
       "version": "2015-01-22",
-      "oscal-version": "1.0.0",
+      "oscal-version": "1.1.1",
+      "props": [
+        {
+          "name": "resolution-tool",
+          "value": "OSCAL Profile Resolver XSLT Pipeline OPRXP"
+        }
+      ],
       "links": [
         {
-          "href": "NIST_SP-800-53_rev4_HIGH-baseline_profile.json",
-          "rel": "resolution-source"
+          "href": "NIST_SP-800-53_rev4_HIGH-baseline_profile.xml",
+          "rel": "source-profile"
         }
       ],
       "roles": [

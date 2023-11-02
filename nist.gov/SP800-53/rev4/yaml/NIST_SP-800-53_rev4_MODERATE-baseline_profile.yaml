@@ -1,11 +1,10 @@
----
 profile:
   uuid: 8b3beca1-fcdc-43e0-aebb-ffc0a080c486
   metadata:
     title: NIST Special Publication 800-53 Revision 4 MODERATE IMPACT BASELINE
-    last-modified: 2021-06-08T13:57:30.476461-04:00
-    version: 2015-01-22
-    oscal-version: 1.0.0
+    last-modified: "2023-10-12T00:00:00.000000-04:00"
+    version: "2015-01-22"
+    oscal-version: 1.1.1
     roles:
       - id: creator
         title: Document Creator
@@ -20,7 +19,7 @@ profile:
         addresses:
           - addr-lines:
               - National Institute of Standards and Technology
-              - "Attn: Computer Security Division"
+              - 'Attn: Computer Security Division'
               - Information Technology Laboratory
               - 100 Bureau Drive (Mail Stop 8930)
             city: Gaithersburg
@@ -34,7 +33,7 @@ profile:
         party-uuids:
           - 316876e2-5c7b-4a60-a488-2ed977238f04
   imports:
-    - href: "#dc380596-027f-423b-83f2-82757554ee27"
+    - href: '#f52e1458-7a97-49fd-8189-6af6a4e7051b'
       include-controls:
         - with-ids:
             - ac-1
@@ -1258,9 +1257,12 @@ profile:
                 value: P1
   back-matter:
     resources:
-      - uuid: dc380596-027f-423b-83f2-82757554ee27
-        description: "NIST Special Publication 800-53 Revision 4: Security and Privacy\
-          \ Controls for Federal Information Systems and Organizations"
+      - uuid: f52e1458-7a97-49fd-8189-6af6a4e7051b
+        description: 'NIST Special Publication 800-53 Revision 4: Security and Privacy Controls for Federal Information Systems and Organizations'
         rlinks:
-          - href: NIST_SP-800-53_rev4_catalog.yaml
+          - href: ../../../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_catalog.xml
+            media-type: application/oscal.catalog+xml
+          - href: ../../../../nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_catalog.json
+            media-type: application/oscal.catalog+json
+          - href: ../../../../nist.gov/SP800-53/rev4/yaml/NIST_SP-800-53_rev4_catalog.yaml
             media-type: application/oscal.catalog+yaml

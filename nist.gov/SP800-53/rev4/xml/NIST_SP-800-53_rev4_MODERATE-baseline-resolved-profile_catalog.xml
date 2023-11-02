@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="9f0d473a-62c7-4b00-b9b8-381496446284">
+          uuid="975aa476-c834-4b62-9e8b-f5d28a23962c">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 4 MODERATE IMPACT BASELINE</title>
-      <last-modified>2023-04-14T17:20:52.279858Z</last-modified>
+      <last-modified>2023-11-02T11:49:43.964173-04:00</last-modified>
       <version>2015-01-22</version>
-      <oscal-version>1.0.0</oscal-version>
-      <link rel="resolution-source"
-            href="NIST_SP-800-53_rev4_MODERATE-baseline_profile.xml"/>
+      <oscal-version>1.1.1</oscal-version>
+      <prop name="resolution-tool"
+             value="OSCAL Profile Resolver XSLT Pipeline OPRXP"/>
+      <link href="NIST_SP-800-53_rev4_MODERATE-baseline_profile.xml"
+             rel="source-profile"/>
       <role id="creator">
          <title>Document Creator</title>
       </role>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Modified by the OSCAL 1.0.0 RC2 to OSCAL 1.0.0 conversion XSLT on 2021-06-08T13:57:35.068496-04:00 -->
+<?xml-model schematypens="http://www.w3.org/2001/XMLSchema" type="application/xml" href="https://github.com/usnistgov/OSCAL/releases/download/v1.1.1/oscal_complete_schema.xsd"?>
 <system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0"
                       uuid="d197545f-353f-407b-9166-ebf959774c5a">
    <metadata>
       <title>CSP IaaS System Security Plan</title>
-      <last-modified>2021-06-08T13:57:35.068496-04:00</last-modified>
-      <version>0.1</version>
-      <oscal-version>1.0.0</oscal-version>
+      <last-modified>2023-10-12T00:00:00.000000-04:00</last-modified>
+      <version>0.2</version>
+      <oscal-version>1.1.1</oscal-version>
       <role id="admin">
          <title>Administrator</title>
       </role>
@@ -18,7 +18,7 @@
       </role>
       <party type="person" uuid="11111111-0000-4000-9000-100000000001"/>
    </metadata>
-   <import-profile href="../../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_LOW-baseline_profile.xml"/>
+   <import-profile href="#6b45e2a5-b238-4752-ba12-cfd6ef2a83df"/>
    <system-characteristics>
       <system-id>csp_iaas_system</system-id>
       <system-name>Leveraged IaaS System</system-name>
@@ -219,5 +219,13 @@ Cust-A    Cust-B    Cust-C
       <resource uuid="11111111-0000-4000-9999-000000000001">
          <rlink href="./attachments/IaaS_ac_proc.docx"/>
       </resource>
+      <resource uuid="6b45e2a5-b238-4752-ba12-cfd6ef2a83df">
+         <description>
+            <p>NIST Special Publication 800-53 Revision 4: Low Baseline Profile</p>
+         </description>
+         <rlink media-type="application/oscal.catalog+xml" href="../../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_LOW-baseline_profile.xml"/>
+         <rlink media-type="application/oscal.catalog+json" href="../../../nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_LOW-baseline_profile.json"/>
+         <rlink media-type="application/oscal.catalog+yaml" href="../../../nist.gov/SP800-53/rev4/yaml/NIST_SP-800-53_rev4_LOW-baseline_profile.yaml"/>
+      </resource>      
    </back-matter>
 </system-security-plan>

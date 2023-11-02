@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Modified by the OSCAL 1.0.0 RC2 to OSCAL 1.0.0 conversion XSLT on 2021-06-08T13:57:30.476461-04:00 -->
+<?xml-model schematypens="http://www.w3.org/2001/XMLSchema" type="application/xml" href="https://github.com/usnistgov/OSCAL/releases/download/v1.1.1/oscal_complete_schema.xsd"?>
 <profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
          uuid="8b3beca1-fcdc-43e0-aebb-ffc0a080c486">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 4 MODERATE IMPACT BASELINE</title>
-      <last-modified>2021-06-08T13:57:30.476461-04:00</last-modified>
+      <last-modified>2023-10-12T00:00:00.000000-04:00</last-modified>
       <version>2015-01-22</version>
-      <oscal-version>1.0.0</oscal-version>
+      <oscal-version>1.1.1</oscal-version>
       <role id="creator">
          <title>Document Creator</title>
       </role>
@@ -33,7 +33,7 @@
          <party-uuid>316876e2-5c7b-4a60-a488-2ed977238f04</party-uuid>
       </responsible-party>
    </metadata>
-   <import href="#dc380596-027f-423b-83f2-82757554ee27">
+   <import href="#f52e1458-7a97-49fd-8189-6af6a4e7051b">
       <include-controls>
          <with-id>ac-1</with-id>
          <with-id>ac-2</with-id>
@@ -1099,12 +1099,13 @@
       </alter>
    </modify>
    <back-matter>
-      <resource uuid="dc380596-027f-423b-83f2-82757554ee27">
+      <resource uuid="f52e1458-7a97-49fd-8189-6af6a4e7051b">
          <description>
             <p>NIST Special Publication 800-53 Revision 4: Security and Privacy Controls for Federal Information Systems and Organizations</p>
          </description>
-         <rlink href="NIST_SP-800-53_rev4_catalog.xml"
-                media-type="application/oscal.catalog+xml"/>
+         <rlink media-type="application/oscal.catalog+xml" href="../../../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_catalog.xml"/>
+         <rlink media-type="application/oscal.catalog+json" href="../../../../nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_catalog.json"/>
+         <rlink media-type="application/oscal.catalog+yaml" href="../../../../nist.gov/SP800-53/rev4/yaml/NIST_SP-800-53_rev4_catalog.yaml"/>
       </resource>
    </back-matter>
 </profile>

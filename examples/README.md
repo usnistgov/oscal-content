@@ -1,6 +1,6 @@
 # OSCAL Model-Specific Examples
 
-This directory contains OSCAL examples organized by their corresponding OSCAL model.
+This directory contains the source files for examples organized by their corresponding OSCAL model.
 
 The contents of the examples directory are as follows:
 

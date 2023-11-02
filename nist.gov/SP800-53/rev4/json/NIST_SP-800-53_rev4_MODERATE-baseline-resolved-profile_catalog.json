@@ -1,15 +1,21 @@
 {
   "catalog": {
-    "uuid": "9f0d473a-62c7-4b00-b9b8-381496446284",
+    "uuid": "975aa476-c834-4b62-9e8b-f5d28a23962c",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 4 MODERATE IMPACT BASELINE",
-      "last-modified": "2023-04-14T17:20:52.279858Z",
+      "last-modified": "2023-11-02T11:49:43.964173-04:00",
       "version": "2015-01-22",
-      "oscal-version": "1.0.0",
+      "oscal-version": "1.1.1",
+      "props": [
+        {
+          "name": "resolution-tool",
+          "value": "OSCAL Profile Resolver XSLT Pipeline OPRXP"
+        }
+      ],
       "links": [
         {
-          "href": "NIST_SP-800-53_rev4_MODERATE-baseline_profile.json",
-          "rel": "resolution-source"
+          "href": "NIST_SP-800-53_rev4_MODERATE-baseline_profile.xml",
+          "rel": "source-profile"
         }
       ],
       "roles": [

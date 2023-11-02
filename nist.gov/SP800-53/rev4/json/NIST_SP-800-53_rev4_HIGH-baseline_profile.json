@@ -3,9 +3,9 @@
     "uuid": "46c593c4-d3fb-4407-85bf-12d5f0f970e0",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 4 HIGH IMPACT BASELINE",
-      "last-modified": "2021-06-08T13:57:29.649957-04:00",
+      "last-modified": "2023-10-12T00:00:00.000000-04:00",
       "version": "2015-01-22",
-      "oscal-version": "1.0.0",
+      "oscal-version": "1.1.1",
       "roles": [
         {
           "id": "creator",
@@ -2802,8 +2802,16 @@
           "description": "NIST Special Publication 800-53 Revision 4: Security and Privacy Controls for Federal Information Systems and Organizations",
           "rlinks": [
             {
-              "href": "NIST_SP-800-53_rev4_catalog.json",
+              "href": "../../../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_catalog.xml",
+              "media-type": "application/oscal.catalog+xml"
+            },
+            {
+              "href": "../../../../nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_catalog.json",
               "media-type": "application/oscal.catalog+json"
+            },
+            {
+              "href": "../../../../nist.gov/SP800-53/rev4/yaml/NIST_SP-800-53_rev4_catalog.yaml",
+              "media-type": "application/oscal.catalog+yaml"
             }
           ]
         }

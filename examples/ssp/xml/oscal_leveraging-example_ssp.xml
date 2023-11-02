@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Modified by the OSCAL 1.0.0 RC2 to OSCAL 1.0.0 conversion XSLT on 2021-06-08T13:57:35.4515-04:00 -->
+<?xml-model schematypens="http://www.w3.org/2001/XMLSchema" type="application/xml" href="https://github.com/usnistgov/OSCAL/releases/download/v1.1.1/oscal_complete_schema.xsd"?>
 <system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0"
                       uuid="bb9219b1-e51c-4680-abb0-616a43bbfbb1">
    <metadata>
       <title>Leveraging SaaS System Security Plan</title>
-      <last-modified>2021-06-08T13:57:35.4515-04:00</last-modified>
-      <version>0.1</version>
-      <oscal-version>1.0.0</oscal-version>
+      <last-modified>2023-10-12T00:00:00.000000-04:00</last-modified>
+      <version>0.2</version>
+      <oscal-version>1.1.1</oscal-version>
       <role id="admin">
          <title>Administrator</title>
       </role>
@@ -17,7 +17,7 @@
          </remarks>
       </party>
    </metadata>
-   <import-profile href="../../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_LOW-baseline_profile.xml"/>
+   <import-profile href="#6b45e2a5-b238-4752-ba12-cfd6ef2a83df"/>
    <system-characteristics>
       <system-id>saas_system_iaas_customer</system-id>
       <system-name>Leveraging SaaS System</system-name>
@@ -104,7 +104,7 @@ Cust-A    Cust-B    Cust-C
    <system-implementation>
       <leveraged-authorization uuid="22222222-0000-4000-9000-300000000001">
          <title>CSP IaaS [Leveraged System]</title>
-         <link href="./oscal_leveraged-example_ssp.xml" rel="OSCAL-SSP-XML"/>
+         <link href="#b3a3079c-ace3-4aae-9acd-d52d418472f2" rel="oscal-ssp-xml"/>
          <party-uuid>22222222-0000-4000-9000-100000000002</party-uuid>
          <date-authorized>2018-01-01</date-authorized>
       </leveraged-authorization>
@@ -249,5 +249,21 @@ Cust-A    Cust-B    Cust-C
       <resource uuid="22222222-0000-4000-9999-000000000001">
          <rlink href="./attachments/SaaS_ac_proc.docx"/>
       </resource>
+      <resource uuid="6b45e2a5-b238-4752-ba12-cfd6ef2a83df">
+         <description>
+            <p>NIST Special Publication 800-53 Revision 4: Low Baseline Profile</p>
+         </description>
+         <rlink media-type="application/oscal.catalog+xml" href="../../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_LOW-baseline_profile.xml"/>
+         <rlink media-type="application/oscal.catalog+json" href="../../../nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_LOW-baseline_profile.json"/>
+         <rlink media-type="application/oscal.catalog+yaml" href="../../../nist.gov/SP800-53/rev4/yaml/NIST_SP-800-53_rev4_LOW-baseline_profile.yaml"/>
+      </resource>
+      <resource uuid="b3a3079c-ace3-4aae-9acd-d52d418472f2">
+         <description>
+            <p>Leveraged System Security Plan in OSCAL Data Formats</p>
+         </description>
+         <rlink media-type="application/oscal.catalog+xml" href="../../ssp/xml/oscal_leveraged-example_ssp.xml"/>
+         <rlink media-type="application/oscal.catalog+json" href="../../../ssp/json/nist.gov/SP800-53/rev4/json/oscal_leveraged-example_ssp.json"/>
+         <rlink media-type="application/oscal.catalog+yaml" href="../../../ssp/yaml/oscal_leveraged-example_ssp.yaml"/>
+      </resource>      
    </back-matter>
 </system-security-plan>

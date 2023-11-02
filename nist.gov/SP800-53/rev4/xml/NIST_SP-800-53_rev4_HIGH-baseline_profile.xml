@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Modified by the OSCAL 1.0.0 RC2 to OSCAL 1.0.0 conversion XSLT on 2021-06-08T13:57:29.649957-04:00 -->
+<?xml-model schematypens="http://www.w3.org/2001/XMLSchema" type="application/xml" href="https://github.com/usnistgov/OSCAL/releases/download/v1.1.1/oscal_complete_schema.xsd"?>
 <profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
          uuid="46c593c4-d3fb-4407-85bf-12d5f0f970e0">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 4 HIGH IMPACT BASELINE</title>
-      <last-modified>2021-06-08T13:57:29.649957-04:00</last-modified>
+      <last-modified>2023-10-12T00:00:00.000000-04:00</last-modified>
       <version>2015-01-22</version>
-      <oscal-version>1.0.0</oscal-version>
+      <oscal-version>1.1.1</oscal-version>
       <role id="creator">
          <title>Document Creator</title>
       </role>
@@ -1240,8 +1240,9 @@
          <description>
             <p>NIST Special Publication 800-53 Revision 4: Security and Privacy Controls for Federal Information Systems and Organizations</p>
          </description>
-         <rlink href="NIST_SP-800-53_rev4_catalog.xml"
-                media-type="application/oscal.catalog+xml"/>
+         <rlink media-type="application/oscal.catalog+xml" href="../../../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_catalog.xml"/>
+         <rlink media-type="application/oscal.catalog+json" href="../../../../nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_catalog.json"/>
+         <rlink media-type="application/oscal.catalog+yaml" href="../../../../nist.gov/SP800-53/rev4/yaml/NIST_SP-800-53_rev4_catalog.yaml"/>
       </resource>
    </back-matter>
 </profile>

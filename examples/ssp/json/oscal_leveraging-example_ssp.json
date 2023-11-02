@@ -3,9 +3,9 @@
     "uuid": "bb9219b1-e51c-4680-abb0-616a43bbfbb1",
     "metadata": {
       "title": "Leveraging SaaS System Security Plan",
-      "last-modified": "2021-06-08T13:57:35.4515-04:00",
-      "version": "0.1",
-      "oscal-version": "1.0.0",
+      "last-modified": "2023-10-12T00:00:00.000000-04:00",
+      "version": "0.2",
+      "oscal-version": "1.1.1",
       "roles": [
         {
           "id": "admin",
@@ -25,7 +25,7 @@
       ]
     },
     "import-profile": {
-      "href": "../../../nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_LOW-baseline_profile.json"
+      "href": "#6b45e2a5-b238-4752-ba12-cfd6ef2a83df"
     },
     "system-characteristics": {
       "system-ids": [
@@ -87,8 +87,8 @@
           "title": "CSP IaaS [Leveraged System]",
           "links": [
             {
-              "href": "./oscal_leveraged-example_ssp.json",
-              "rel": "OSCAL-SSP-XML"
+              "href": "#b3a3079c-ace3-4aae-9acd-d52d418472f2",
+              "rel": "oscal-ssp-xml"
             }
           ],
           "party-uuid": "22222222-0000-4000-9000-100000000002",
@@ -284,6 +284,42 @@
           "rlinks": [
             {
               "href": "./attachments/SaaS_ac_proc.docx"
+            }
+          ]
+        },
+        {
+          "uuid": "6b45e2a5-b238-4752-ba12-cfd6ef2a83df",
+          "description": "NIST Special Publication 800-53 Revision 4: Low Baseline Profile",
+          "rlinks": [
+            {
+              "href": "../../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_LOW-baseline_profile.xml",
+              "media-type": "application/oscal.catalog+xml"
+            },
+            {
+              "href": "../../../nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_LOW-baseline_profile.json",
+              "media-type": "application/oscal.catalog+json"
+            },
+            {
+              "href": "../../../nist.gov/SP800-53/rev4/yaml/NIST_SP-800-53_rev4_LOW-baseline_profile.yaml",
+              "media-type": "application/oscal.catalog+yaml"
+            }
+          ]
+        },
+        {
+          "uuid": "b3a3079c-ace3-4aae-9acd-d52d418472f2",
+          "description": "Leveraged System Security Plan in OSCAL Data Formats",
+          "rlinks": [
+            {
+              "href": "../../ssp/xml/oscal_leveraged-example_ssp.xml",
+              "media-type": "application/oscal.catalog+xml"
+            },
+            {
+              "href": "../../../ssp/json/nist.gov/SP800-53/rev4/json/oscal_leveraged-example_ssp.json",
+              "media-type": "application/oscal.catalog+json"
+            },
+            {
+              "href": "../../../ssp/yaml/oscal_leveraged-example_ssp.yaml",
+              "media-type": "application/oscal.catalog+yaml"
             }
           ]
         }

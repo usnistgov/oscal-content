@@ -1,11 +1,10 @@
----
 system-security-plan:
   uuid: d197545f-353f-407b-9166-ebf959774c5a
   metadata:
     title: CSP IaaS System Security Plan
-    last-modified: 2021-06-08T13:57:35.068496-04:00
-    version: "0.1"
-    oscal-version: 1.0.0
+    last-modified: "2023-10-12T00:00:00.000000-04:00"
+    version: "0.2"
+    oscal-version: 1.1.1
     roles:
       - id: admin
         title: Administrator
@@ -17,67 +16,12 @@ system-security-plan:
       - uuid: 11111111-0000-4000-9000-100000000001
         type: person
   import-profile:
-    href: ../../../nist.gov/SP800-53/rev4/yaml/NIST_SP-800-53_rev4_LOW-baseline_profile.yaml
+    href: '#6b45e2a5-b238-4752-ba12-cfd6ef2a83df'
   system-characteristics:
     system-ids:
       - id: csp_iaas_system
     system-name: Leveraged IaaS System
-    description: >
-      An example of three customers leveraging an authorized SaaS, which is
-      running on an authorized IaaS.
-
-
-      ```
-
-
-      Cust-A    Cust-B    Cust-C
-        |         |         |
-        +---------+---------+
-                  |
-        +-------------------+
-        |  Leveraging SaaS  |
-        +-------------------+
-                  |
-                  |
-        +-------------------+
-        |  Leveraged IaaS   |
-        |    this file      |
-        +-------------------+
-
-                  
-      ```
-
-
-      In this example, the IaaS SSP specifies customer responsibilities for certain
-      controls.
-
-
-      The SaaS must address these for the control to be fully satisfied.
-
-
-      The SaaS provider may either implement these directly or pass the responsibility
-      on to their customers. Both may be necessary.
-
-
-      For any given control, the Leveraged IaaS SSP must describe:
-
-
-      1. HOW the IaaS is directly satisfying the control
-
-      1. WHAT responsibilities are left for the Leveraging SaaS (or their customers)
-      to implement.
-
-
-
-      For any given control, the Leveraging SaaS SSP must describe:
-
-
-      1. WHAT is being inherited from the underlying IaaS
-
-      1. HOW the SaaS is directly satisfying the control.
-
-      1. WHAT responsibilities are left for the SaaS customers to implement. (The
-      SaaS customers are Cust-A, B and C)
+    description: "An example of three customers leveraging an authorized SaaS, which is running on an authorized IaaS.\n\n```\n\nCust-A    Cust-B    Cust-C\n  |         |         |\n  +---------+---------+\n            |\n  +-------------------+\n  |  Leveraging SaaS  |\n  +-------------------+\n            |\n            |\n  +-------------------+\n  |  Leveraged IaaS   |\n  |    this file      |\n  +-------------------+\n            \n```\n\nIn this example, the IaaS SSP specifies customer responsibilities for certain controls.\n\nThe SaaS must address these for the control to be fully satisfied.\n\nThe SaaS provider may either implement these directly or pass the responsibility on to their customers. Both may be necessary.\n\nFor any given control, the Leveraged IaaS SSP must describe:\n\n1. HOW the IaaS is directly satisfying the control\n1. WHAT responsibilities are left for the Leveraging SaaS (or their customers) to implement.\n\n\nFor any given control, the Leveraging SaaS SSP must describe:\n\n1. WHAT is being inherited from the underlying IaaS\n1. HOW the SaaS is directly satisfying the control.\n1. WHAT responsibilities are left for the SaaS customers to implement. (The SaaS customers are Cust-A, B and C)\n"
     security-sensitivity-level: low
     system-information:
       information-types:
@@ -90,18 +34,15 @@ system-security-plan:
           confidentiality-impact:
             base: fips-199-moderate
             selected: fips-199-low
-            adjustment-justification: This impact has been adjusted to low as an example
-              of how to perform this type of adjustment.
+            adjustment-justification: This impact has been adjusted to low as an example of how to perform this type of adjustment.
           integrity-impact:
             base: fips-199-moderate
             selected: fips-199-low
-            adjustment-justification: This impact has been adjusted to low as an example
-              of how to perform this type of adjustment.
+            adjustment-justification: This impact has been adjusted to low as an example of how to perform this type of adjustment.
           availability-impact:
             base: fips-199-moderate
             selected: fips-199-low
-            adjustment-justification: This impact has been adjusted to low as an example
-              of how to perform this type of adjustment.
+            adjustment-justification: This impact has been adjusted to low as an example of how to perform this type of adjustment.
     security-impact-level:
       security-objective-confidentiality: fips-199-low
       security-objective-integrity: fips-199-low
@@ -109,10 +50,8 @@ system-security-plan:
     status:
       state: operational
     authorization-boundary:
-      description: The hardware and software supporting the virtualized infrastructure
-        supporting the IaaS.
-    remarks: Most system-characteristics content does not support the example, and
-      is included to meet the minimum SSP syntax requirements.
+      description: The hardware and software supporting the virtualized infrastructure supporting the IaaS.
+    remarks: Most system-characteristics content does not support the example, and is included to meet the minimum SSP syntax requirements.
   system-implementation:
     users:
       - uuid: 11111111-0000-4000-9000-200000000001
@@ -126,9 +65,8 @@ system-security-plan:
       - uuid: cfbc1d9d-e772-47a4-aed5-1b902339eab2
         type: this-system
         title: This System
-        description: >-
+        description: |-
           The system described by this SSP.
-
 
           This text was auto-generated by the OSCAL M3-RC1 data upgrade converter.
         status:
@@ -145,19 +83,14 @@ system-security-plan:
       - uuid: 11111111-0000-4000-9001-000000000002
         type: software
         title: Application
-        description: >-
-          An application within the IaaS, exposed to SaaS customers and their
-          downstream customers.
-
+        description: |-
+          An application within the IaaS, exposed to SaaS customers and their downstream customers.
 
           This Leveraged IaaS maintains aspects of the application.
 
-
           The Leveraging SaaS maintains aspects of their assigned portion of the application.
 
-
-          The customers of the Leveraging SaaS maintain aspects of their sub-assigned
-          portions of the application.
+          The customers of the Leveraging SaaS maintain aspects of their sub-assigned portions of the application.
         props:
           - name: implementation-point
             value: system
@@ -182,44 +115,30 @@ system-security-plan:
             by-components:
               - component-uuid: 11111111-0000-4000-9001-000000000001
                 uuid: 11111111-0000-4000-9009-002001001000
-                description: >-
+                description: |-
                   Response for the \"This System\" component.
 
-
-                  Overall description of how \"This System\" satisfies AC-2, Part
-                  a.
-
+                  Overall description of how \"This System\" satisfies AC-2, Part a.
 
                   Response for the \"This System\" component.
 
-
-                  Overall description of how \"This System\" satisfies AC-2, Part
-                  a.
-
+                  Overall description of how \"This System\" satisfies AC-2, Part a.
 
                   Response for the \"This System\" component.
 
-
-                  Overall description of how \"This System\" satisfies AC-2, Part
-                  a.
-
+                  Overall description of how \"This System\" satisfies AC-2, Part a.
 
                   Response for the \"This System\" component.
 
-
-                  Overall description of how \"This System\" satisfies AC-2, Part
-                  a.
+                  Overall description of how \"This System\" satisfies AC-2, Part a.
                 export:
                   description: Optional description about what is being exported.
                   responsibilities:
                     - uuid: 11111111-0000-4000-9009-002001001001
-                      description: >-
-                        Leveraging system's responsibilities with respect to
-                        inheriting this capability.
+                      description: |-
+                        Leveraging system's responsibilities with respect to inheriting this capability.
 
-
-                        In the context of the application component in satisfaction
-                        of AC-2, part a.
+                        In the context of the application component in satisfaction of AC-2, part a.
                       responsible-roles:
                         - role-id: customer
               - component-uuid: 11111111-0000-4000-9001-000000000002
@@ -229,44 +148,30 @@ system-security-plan:
                   description: Optional description about what is being exported.
                   provided:
                     - uuid: 11111111-0000-4000-9009-002001002001
-                      description: >-
-                        Consumer-appropriate description of what may be
-                        inherited.
+                      description: |-
+                        Consumer-appropriate description of what may be inherited.
 
-
-                        In the context of the application component in satisfaction
-                        of AC-2, part a.
+                        In the context of the application component in satisfaction of AC-2, part a.
                       responsible-roles:
                         - role-id: poc-for-customers
                   responsibilities:
                     - uuid: 11111111-0000-4000-9009-002001002002
                       provided-uuid: 11111111-0000-4000-9009-002001002001
-                      description: >-
-                        Leveraging system's responsibilities with respect to
-                        inheriting this capability.
+                      description: |-
+                        Leveraging system's responsibilities with respect to inheriting this capability.
 
-
-                        In the context of the application component in satisfaction
-                        of AC-2, part a.
+                        In the context of the application component in satisfaction of AC-2, part a.
                       responsible-roles:
                         - role-id: customer
-            remarks: "a. Identifies and selects the following types of information\
-              \ system accounts to support organizational missions/business functions:\
-              \ [Assignment: privileged and non-privileged];"
-        remarks: >-
+            remarks: 'a. Identifies and selects the following types of information system accounts to support organizational missions/business functions: [Assignment: privileged and non-privileged];'
+        remarks: |-
           The organization:
 
-
-          a. Identifies and selects the following types of information system accounts
-          to support organizational missions/business functions: [Assignment: organization-defined
-          information system account types];
-
+          a. Identifies and selects the following types of information system accounts to support organizational missions/business functions: [Assignment: organization-defined information system account types];
 
           b. Assigns account managers for information system accounts;
 
-
           c. Establishes conditions for group and role membership;
-
 
           d. through j. omitted
   back-matter:
@@ -274,3 +179,12 @@ system-security-plan:
       - uuid: 11111111-0000-4000-9999-000000000001
         rlinks:
           - href: ./attachments/IaaS_ac_proc.docx
+      - uuid: 6b45e2a5-b238-4752-ba12-cfd6ef2a83df
+        description: 'NIST Special Publication 800-53 Revision 4: Low Baseline Profile'
+        rlinks:
+          - href: ../../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_LOW-baseline_profile.xml
+            media-type: application/oscal.catalog+xml
+          - href: ../../../nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_LOW-baseline_profile.json
+            media-type: application/oscal.catalog+json
+          - href: ../../../nist.gov/SP800-53/rev4/yaml/NIST_SP-800-53_rev4_LOW-baseline_profile.yaml
+            media-type: application/oscal.catalog+yaml
