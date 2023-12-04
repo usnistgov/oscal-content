@@ -3,9 +3,9 @@
 <profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
          uuid="8742196d-86ba-4e72-a411-28867dab43bb">
    <metadata>
-      <title>NIST Special Publication 800-53 Revision 5 LOW IMPACT BASELINE</title>
-      <last-modified>2023-10-12T00:00:00.000000-04:00</last-modified>
-      <version>Final</version>
+      <title>NIST Special Publication 800-53 Revision 5.1.1 LOW IMPACT BASELINE</title>
+      <last-modified>2023-12-04T14:55:00.000000-04:00</last-modified>
+      <version>5.1.1+u2</version>
       <oscal-version>1.1.1</oscal-version>
       <role id="creator">
          <title>Document Creator</title>
