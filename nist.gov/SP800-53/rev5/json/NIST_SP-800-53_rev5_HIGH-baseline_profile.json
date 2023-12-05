@@ -1,10 +1,10 @@
 {
   "profile": {
-    "uuid": "beade175-48ad-47c0-ac38-e9c2514cba22",
+    "uuid": "cd073316-7c58-4c34-9f5c-9eb5aa722683",
     "metadata": {
-      "title": "NIST Special Publication 800-53 Revision 5 HIGH IMPACT BASELINE",
-      "last-modified": "2023-10-12T00:00:00.000000-04:00",
-      "version": "Final",
+      "title": "NIST Special Publication 800-53 Revision 5.1.1 HIGH IMPACT BASELINE",
+      "last-modified": "2023-12-04T14:55:00.000000-04:00",
+      "version": "5.1.1+u2",
       "oscal-version": "1.1.1",
       "roles": [
         {
