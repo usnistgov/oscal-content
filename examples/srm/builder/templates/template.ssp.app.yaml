@@ -1,0 +1,72 @@
+system-security-plan:
+  uuid: {{ uuid:document }}
+
+  metadata:
+    title: {{ ssp_title }}
+    last-modified: '{{ modified_date }}'
+    version: {{ version }}
+    oscal-version: {{ oscal_version }}
+    roles:
+      - id: admin
+        title: Administrator
+    parties:
+      - uuid: {{ uuid:party }}
+        type: person
+  
+  import-profile:
+    href: ./profile.yaml
+  
+  system-characteristics:
+    system-ids:
+      - id: saas_system_iaas_customer
+    system-name: {{ ssp_system_name }}
+    description: {{ ssp_reason }}
+    security-sensitivity-level: low
+    system-information:
+      information-types:
+        - uuid: {{ uuid:information-type }}
+          title: System Assessment
+          description: This system handles development information pertaining to audit and assessment events to demonstrate the OSCAL workflow.
+          categorizations:
+            - system: https://doi.org/10.6028/NIST.SP.800-60v2r1
+              information-type-ids:
+                - C.3.5.1
+          confidentiality-impact:
+            base: fips-199-low
+          integrity-impact:
+            base: fips-199-low
+          availability-impact:
+            base: fips-199-low
+    security-impact-level:
+      security-objective-confidentiality: fips-199-low
+      security-objective-integrity: fips-199-low
+      security-objective-availability: fips-199-low
+    status:
+      state: operational
+    authorization-boundary:
+      description: This system is for demonstration purposes only.
+  
+  system-implementation:
+    users:
+      - uuid: {{ uuid:user }}
+        role-ids:
+          - admin
+        authorized-privileges:
+          - title: Developer
+            functions-performed:
+              - Manages the content and components within the system.
+    components:
+      - uuid: {{ uuid:component }}
+        type: this-system
+        title: OSCAL Testing Workflow Application
+        description: This is an application to demonstrate minimal OSCAL content, and automation to execute tests against the application.
+        props:
+          - name: implementation-point
+            value: internal
+        status:
+          state: under-development
+
+  
+  control-implementation:
+    description: "List of Controls"
+    implemented-requirements: []

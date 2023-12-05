@@ -1,0 +1,657 @@
+digraph {
+	graph [nodesep=6]
+	fontsize=16 label="OSCAL Document Relationships" scale=2
+	node [fontsize=16 shape=box style=filled]
+	root_ssp_csp [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>MODEL</b> <i>OSCAL</i></td></TR>
+            <TR><td width='275'>SSP: CSP</td></TR>
+        </TABLE>
+        > color="#bf150d" fillcolor="#f89f9b" penwidth=4]
+	root_ssp_msp [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>MODEL</b> <i>OSCAL</i></td></TR>
+            <TR><td width='275'>SSP: MSP</td></TR>
+        </TABLE>
+        > color="#bf150d" fillcolor="#f89f9b" penwidth=4]
+	root_ssp_app [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>MODEL</b> <i>OSCAL</i></td></TR>
+            <TR><td width='275'>SSP: APP</td></TR>
+        </TABLE>
+        > color="#bf150d" fillcolor="#f89f9b" penwidth=4]
+	"b'Y3Nwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'Y3Nwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'Y3Nwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'Y3Nwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'Y3Nwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'Y3Nwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'bXNwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'bXNwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'bXNwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'bXNwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'bXNwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'bXNwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'bXNwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'bXNwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'bXNwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'bXNwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'bXNwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'bXNwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'YXBwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'YXBwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'YXBwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'YXBwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'YXBwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'YXBwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'YXBwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'YXBwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'YXBwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'YXBwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'YXBwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'YXBwc3Nwc2MtNQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>CONTROL</b> <i>ctl</i></td></TR>
+            <TR><td width='275'>SC-5</td></TR>
+        </TABLE>
+        > color="#cc8400" fillcolor="#FFC355" penwidth=4]
+	"b'Y3Nwc3Nwc2MtNV9zbXQuYQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'Y3Nwc3Nwc2MtNV9zbXQuYQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'Y3Nwc3Nwc2MtNV9zbXQuYQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'Y3Nwc3Nwc2MtNV9zbXQuYg=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'Y3Nwc3Nwc2MtNV9zbXQuYg=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'Y3Nwc3Nwc2MtNV9zbXQuYg=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'bXNwc3Nwc2MtNV9zbXQuYQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'bXNwc3Nwc2MtNV9zbXQuYQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'bXNwc3Nwc2MtNV9zbXQuYQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'bXNwc3Nwc2MtNV9zbXQuYQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'bXNwc3Nwc2MtNV9zbXQuYQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'bXNwc3Nwc2MtNV9zbXQuYQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'bXNwc3Nwc2MtNV9zbXQuYg=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'bXNwc3Nwc2MtNV9zbXQuYg=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'bXNwc3Nwc2MtNV9zbXQuYg=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'bXNwc3Nwc2MtNV9zbXQuYg=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'bXNwc3Nwc2MtNV9zbXQuYg=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'bXNwc3Nwc2MtNV9zbXQuYg=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'YXBwc3Nwc2MtNV9zbXQuYQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'YXBwc3Nwc2MtNV9zbXQuYQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'YXBwc3Nwc2MtNV9zbXQuYQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'YXBwc3Nwc2MtNV9zbXQuYQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'YXBwc3Nwc2MtNV9zbXQuYQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'YXBwc3Nwc2MtNV9zbXQuYQ=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'YXBwc3Nwc2MtNV9zbXQuYg=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'YXBwc3Nwc2MtNV9zbXQuYg=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'YXBwc3Nwc2MtNV9zbXQuYg=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'YXBwc3Nwc2MtNV9zbXQuYg=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'YXBwc3Nwc2MtNV9zbXQuYg=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"b'YXBwc3Nwc2MtNV9zbXQuYg=='" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>STATEMENT</b> <i>stmt</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B</td></TR>
+        </TABLE>
+        > color="#c49208" fillcolor="#FBE29d" penwidth=4]
+	"CSPfbebed-15da-40e8-a8ed-211ccac9d6ef" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>PROVIDED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A:PROVIDED:CSP<BR/>CSPFBEBED:NAN</td></TR>
+        </TABLE>
+        > color="#47c507" fillcolor="#c3fca6" penwidth=4]
+	"CSP72b4ce-e05a-4829-9a40-521bb94935ba" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>RESPONSIBILITIES</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A:RESPONSIBILITIES:CSP<BR/>CSP72B4CE:CSPFBEBED</td></TR>
+        </TABLE>
+        > color="#4007c5" fillcolor="#c0a6fc" penwidth=4]
+	"CSPe15608-5066-470e-bd2c-3c7e25233812" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>SATISFIED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A:SATISFIED:CSP<BR/>CSPE15608:CSP72B4CE</td></TR>
+        </TABLE>
+        > color="#0044cc" fillcolor="#6296ff" penwidth=4]
+	"CSP246336-20e6-4abb-97ee-01aa3405c6f3" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>PROVIDED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B:PROVIDED:CSP<BR/>CSP246336:NAN</td></TR>
+        </TABLE>
+        > color="#47c507" fillcolor="#c3fca6" penwidth=4]
+	"CSPfb4bdd-8ba7-460b-8a29-3d3f24a6c7e4" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>RESPONSIBILITIES</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B:RESPONSIBILITIES:CSP<BR/>CSPFB4BDD:CSP246336</td></TR>
+        </TABLE>
+        > color="#4007c5" fillcolor="#c0a6fc" penwidth=4]
+	"CSPc0b05a-27cc-4303-a4b9-6d996852364a" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>SATISFIED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B:SATISFIED:CSP<BR/>CSPC0B05A:CSPFB4BDD</td></TR>
+        </TABLE>
+        > color="#0044cc" fillcolor="#6296ff" penwidth=4]
+	"MSP0c4638-0161-4817-8628-aacea03301a8" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>PROVIDED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A:PROVIDED:MSP<BR/>MSP0C4638:NAN</td></TR>
+        </TABLE>
+        > color="#47c507" fillcolor="#c3fca6" penwidth=4]
+	"MSP9ce930-83fa-4987-83f1-d5e45ba741d2" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>RESPONSIBILITIES</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A:RESPONSIBILITIES:MSP<BR/>MSP9CE930:MSP0C4638</td></TR>
+        </TABLE>
+        > color="#4007c5" fillcolor="#c0a6fc" penwidth=4]
+	"MSP797dfa-c867-457d-bc4f-c93e8f86cf8c" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>SATISFIED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A:SATISFIED:MSP<BR/>MSP797DFA:MSP9CE930</td></TR>
+        </TABLE>
+        > color="#0044cc" fillcolor="#6296ff" penwidth=4]
+	"MSP8a74b6-35c0-4e32-9050-23c3d05cce31" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>INHERITED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A:INHERITED:MSP<BR/>MSP8A74B6:CSPFBEBED</td></TR>
+        </TABLE>
+        > color="#0099cc" fillcolor="#62d8ff" penwidth=4]
+	"MSP8e130a-2e54-4914-bee4-07b76fa10c41" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>SATISFIED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A:SATISFIED:MSP<BR/>MSP8E130A:CSP72B4CE</td></TR>
+        </TABLE>
+        > color="#0044cc" fillcolor="#6296ff" penwidth=4]
+	"MSP3ef2c6-1853-4ec8-ae6f-a767aaabb13d" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>INHERITED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A:INHERITED:MSP<BR/>MSP3EF2C6:MSP0C4638</td></TR>
+        </TABLE>
+        > color="#0099cc" fillcolor="#62d8ff" penwidth=4]
+	"MSP92b0d8-a27a-4f67-b73c-ce811eee1a33" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>PROVIDED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B:PROVIDED:MSP<BR/>MSP92B0D8:NAN</td></TR>
+        </TABLE>
+        > color="#47c507" fillcolor="#c3fca6" penwidth=4]
+	"MSPa49076-2c68-4e70-aa3e-fe7f673a98e8" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>RESPONSIBILITIES</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B:RESPONSIBILITIES:MSP<BR/>MSPA49076:MSP92B0D8</td></TR>
+        </TABLE>
+        > color="#4007c5" fillcolor="#c0a6fc" penwidth=4]
+	"MSPcacd2d-5b7e-4e07-8f0f-184dcaacca30" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>SATISFIED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B:SATISFIED:MSP<BR/>MSPCACD2D:MSPA49076</td></TR>
+        </TABLE>
+        > color="#0044cc" fillcolor="#6296ff" penwidth=4]
+	"MSP3b752b-d458-4ab0-a130-1b822f956442" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>INHERITED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B:INHERITED:MSP<BR/>MSP3B752B:CSP246336</td></TR>
+        </TABLE>
+        > color="#0099cc" fillcolor="#62d8ff" penwidth=4]
+	"MSPdc5b9a-5f2e-43fc-9de6-7596be1948e9" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>SATISFIED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B:SATISFIED:MSP<BR/>MSPDC5B9A:CSPFB4BDD</td></TR>
+        </TABLE>
+        > color="#0044cc" fillcolor="#6296ff" penwidth=4]
+	"MSP83a1d1-049f-49fc-a815-6ab2c4492e1e" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>INHERITED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B:INHERITED:MSP<BR/>MSP83A1D1:MSP92B0D8</td></TR>
+        </TABLE>
+        > color="#0099cc" fillcolor="#62d8ff" penwidth=4]
+	"APPe7f936-5479-4bf0-9fa0-09596314edb8" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>PROVIDED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A:PROVIDED:APP<BR/>APPE7F936:NAN</td></TR>
+        </TABLE>
+        > color="#47c507" fillcolor="#c3fca6" penwidth=4]
+	"APP6c1d6a-965a-48c7-b620-d7fe4cd2ea62" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>RESPONSIBILITIES</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A:RESPONSIBILITIES:APP<BR/>APP6C1D6A:APPE7F936</td></TR>
+        </TABLE>
+        > color="#4007c5" fillcolor="#c0a6fc" penwidth=4]
+	"APP7af258-f956-49ca-9186-71fd96f5c625" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>SATISFIED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A:SATISFIED:APP<BR/>APP7AF258:APP6C1D6A</td></TR>
+        </TABLE>
+        > color="#0044cc" fillcolor="#6296ff" penwidth=4]
+	"APP118444-075e-4cbe-90bf-efe3b929cf3e" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>INHERITED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A:INHERITED:APP<BR/>APP118444:MSP0C4638</td></TR>
+        </TABLE>
+        > color="#0099cc" fillcolor="#62d8ff" penwidth=4]
+	"APP8415a9-b623-4884-9626-ceb6e944dcc5" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>SATISFIED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A:SATISFIED:APP<BR/>APP8415A9:MSP9CE930</td></TR>
+        </TABLE>
+        > color="#0044cc" fillcolor="#6296ff" penwidth=4]
+	"APPb70113-f738-4645-81e6-5e9c9428af5a" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>INHERITED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.A:INHERITED:APP<BR/>APPB70113:APPE7F936</td></TR>
+        </TABLE>
+        > color="#0099cc" fillcolor="#62d8ff" penwidth=4]
+	"APPe72477-9274-4dc3-ba75-9c9410b987b8" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>PROVIDED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B:PROVIDED:APP<BR/>APPE72477:NAN</td></TR>
+        </TABLE>
+        > color="#47c507" fillcolor="#c3fca6" penwidth=4]
+	"APPbbbe17-a7b2-49b5-8936-8100045b9f01" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>RESPONSIBILITIES</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B:RESPONSIBILITIES:APP<BR/>APPBBBE17:APPE72477</td></TR>
+        </TABLE>
+        > color="#4007c5" fillcolor="#c0a6fc" penwidth=4]
+	"APP4d1c4b-74d2-474a-81d1-95c3ef5dc3f6" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>SATISFIED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B:SATISFIED:APP<BR/>APP4D1C4B:APPBBBE17</td></TR>
+        </TABLE>
+        > color="#0044cc" fillcolor="#6296ff" penwidth=4]
+	"APP194ad5-8ea5-4a7f-913e-e61be019b417" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>INHERITED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B:INHERITED:APP<BR/>APP194AD5:MSP92B0D8</td></TR>
+        </TABLE>
+        > color="#0099cc" fillcolor="#62d8ff" penwidth=4]
+	"APPa2a597-716e-442d-a6af-d2bf525067a1" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>SATISFIED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B:SATISFIED:APP<BR/>APPA2A597:MSPA49076</td></TR>
+        </TABLE>
+        > color="#0044cc" fillcolor="#6296ff" penwidth=4]
+	"APP8ae642-b1bb-45fc-aa23-c6528c0af221" [label=<
+        <TABLE width='275'>
+            <TR><td width='275'><b>INHERITED</b> <i>ssp</i></td></TR>
+            <TR><td width='275'>SC-5_SMT.B:INHERITED:APP<BR/>APP8AE642:APPE72477</td></TR>
+        </TABLE>
+        > color="#0099cc" fillcolor="#62d8ff" penwidth=4]
+	edge [arrowsize=2 color="#c5029e" penwidth=2 weight=2]
+	root_ssp_csp -> "b'Y3Nwc3Nwc2MtNQ=='"
+	edge [arrowsize=2 color="#7880be" penwidth=2 weight=2]
+	root_ssp_msp -> "b'bXNwc3Nwc2MtNQ=='"
+	edge [arrowsize=2 color="#f8baec" penwidth=2 weight=2]
+	root_ssp_app -> "b'YXBwc3Nwc2MtNQ=='"
+	edge [arrowsize=2 color="#c5029e" penwidth=2 weight=2]
+	"b'Y3Nwc3Nwc2MtNQ=='" -> "b'Y3Nwc3Nwc2MtNV9zbXQuYQ=='"
+	edge [arrowsize=2 color="#c5029e" penwidth=2 weight=2]
+	"b'Y3Nwc3Nwc2MtNQ=='" -> "b'Y3Nwc3Nwc2MtNV9zbXQuYg=='"
+	edge [arrowsize=2 color="#7880be" penwidth=2 weight=2]
+	"b'bXNwc3Nwc2MtNQ=='" -> "b'bXNwc3Nwc2MtNV9zbXQuYQ=='"
+	edge [arrowsize=2 color="#7880be" penwidth=2 weight=2]
+	"b'bXNwc3Nwc2MtNQ=='" -> "b'bXNwc3Nwc2MtNV9zbXQuYg=='"
+	edge [arrowsize=2 color="#f8baec" penwidth=2 weight=2]
+	"b'YXBwc3Nwc2MtNQ=='" -> "b'YXBwc3Nwc2MtNV9zbXQuYQ=='"
+	edge [arrowsize=2 color="#f8baec" penwidth=2 weight=2]
+	"b'YXBwc3Nwc2MtNQ=='" -> "b'YXBwc3Nwc2MtNV9zbXQuYg=='"
+	edge [arrowsize=2 color="#c5029e" penwidth=2 weight=2]
+	"b'Y3Nwc3Nwc2MtNV9zbXQuYQ=='" -> "CSPfbebed-15da-40e8-a8ed-211ccac9d6ef"
+	edge [arrowsize=2 color="#c5029e" penwidth=2 weight=2]
+	"b'Y3Nwc3Nwc2MtNV9zbXQuYQ=='" -> "CSP72b4ce-e05a-4829-9a40-521bb94935ba"
+	edge [arrowsize=2 color="#c5029e" penwidth=2 weight=2]
+	"b'Y3Nwc3Nwc2MtNV9zbXQuYQ=='" -> "CSPe15608-5066-470e-bd2c-3c7e25233812"
+	edge [arrowsize=2 color="#c5029e" penwidth=2 weight=2]
+	"b'Y3Nwc3Nwc2MtNV9zbXQuYg=='" -> "CSP246336-20e6-4abb-97ee-01aa3405c6f3"
+	edge [arrowsize=2 color="#c5029e" penwidth=2 weight=2]
+	"b'Y3Nwc3Nwc2MtNV9zbXQuYg=='" -> "CSPfb4bdd-8ba7-460b-8a29-3d3f24a6c7e4"
+	edge [arrowsize=2 color="#c5029e" penwidth=2 weight=2]
+	"b'Y3Nwc3Nwc2MtNV9zbXQuYg=='" -> "CSPc0b05a-27cc-4303-a4b9-6d996852364a"
+	edge [arrowsize=2 color="#7880be" penwidth=2 weight=2]
+	"b'bXNwc3Nwc2MtNV9zbXQuYQ=='" -> "MSP0c4638-0161-4817-8628-aacea03301a8"
+	edge [arrowsize=2 color="#7880be" penwidth=2 weight=2]
+	"b'bXNwc3Nwc2MtNV9zbXQuYQ=='" -> "MSP9ce930-83fa-4987-83f1-d5e45ba741d2"
+	edge [arrowsize=2 color="#7880be" penwidth=2 weight=2]
+	"b'bXNwc3Nwc2MtNV9zbXQuYQ=='" -> "MSP797dfa-c867-457d-bc4f-c93e8f86cf8c"
+	edge [arrowsize=2 color="#7880be" penwidth=2 weight=2]
+	"b'bXNwc3Nwc2MtNV9zbXQuYQ=='" -> "MSP8a74b6-35c0-4e32-9050-23c3d05cce31"
+	edge [arrowsize=2 color="#7880be" penwidth=2 weight=2]
+	"b'bXNwc3Nwc2MtNV9zbXQuYQ=='" -> "MSP8e130a-2e54-4914-bee4-07b76fa10c41"
+	edge [arrowsize=2 color="#7880be" penwidth=2 weight=2]
+	"b'bXNwc3Nwc2MtNV9zbXQuYQ=='" -> "MSP3ef2c6-1853-4ec8-ae6f-a767aaabb13d"
+	edge [arrowsize=2 color="#7880be" penwidth=2 weight=2]
+	"b'bXNwc3Nwc2MtNV9zbXQuYg=='" -> "MSP92b0d8-a27a-4f67-b73c-ce811eee1a33"
+	edge [arrowsize=2 color="#7880be" penwidth=2 weight=2]
+	"b'bXNwc3Nwc2MtNV9zbXQuYg=='" -> "MSPa49076-2c68-4e70-aa3e-fe7f673a98e8"
+	edge [arrowsize=2 color="#7880be" penwidth=2 weight=2]
+	"b'bXNwc3Nwc2MtNV9zbXQuYg=='" -> "MSPcacd2d-5b7e-4e07-8f0f-184dcaacca30"
+	edge [arrowsize=2 color="#7880be" penwidth=2 weight=2]
+	"b'bXNwc3Nwc2MtNV9zbXQuYg=='" -> "MSP3b752b-d458-4ab0-a130-1b822f956442"
+	edge [arrowsize=2 color="#7880be" penwidth=2 weight=2]
+	"b'bXNwc3Nwc2MtNV9zbXQuYg=='" -> "MSPdc5b9a-5f2e-43fc-9de6-7596be1948e9"
+	edge [arrowsize=2 color="#7880be" penwidth=2 weight=2]
+	"b'bXNwc3Nwc2MtNV9zbXQuYg=='" -> "MSP83a1d1-049f-49fc-a815-6ab2c4492e1e"
+	edge [arrowsize=2 color="#f8baec" penwidth=2 weight=2]
+	"b'YXBwc3Nwc2MtNV9zbXQuYQ=='" -> "APPe7f936-5479-4bf0-9fa0-09596314edb8"
+	edge [arrowsize=2 color="#f8baec" penwidth=2 weight=2]
+	"b'YXBwc3Nwc2MtNV9zbXQuYQ=='" -> "APP6c1d6a-965a-48c7-b620-d7fe4cd2ea62"
+	edge [arrowsize=2 color="#f8baec" penwidth=2 weight=2]
+	"b'YXBwc3Nwc2MtNV9zbXQuYQ=='" -> "APP7af258-f956-49ca-9186-71fd96f5c625"
+	edge [arrowsize=2 color="#f8baec" penwidth=2 weight=2]
+	"b'YXBwc3Nwc2MtNV9zbXQuYQ=='" -> "APP118444-075e-4cbe-90bf-efe3b929cf3e"
+	edge [arrowsize=2 color="#f8baec" penwidth=2 weight=2]
+	"b'YXBwc3Nwc2MtNV9zbXQuYQ=='" -> "APP8415a9-b623-4884-9626-ceb6e944dcc5"
+	edge [arrowsize=2 color="#f8baec" penwidth=2 weight=2]
+	"b'YXBwc3Nwc2MtNV9zbXQuYQ=='" -> "APPb70113-f738-4645-81e6-5e9c9428af5a"
+	edge [arrowsize=2 color="#f8baec" penwidth=2 weight=2]
+	"b'YXBwc3Nwc2MtNV9zbXQuYg=='" -> "APPe72477-9274-4dc3-ba75-9c9410b987b8"
+	edge [arrowsize=2 color="#f8baec" penwidth=2 weight=2]
+	"b'YXBwc3Nwc2MtNV9zbXQuYg=='" -> "APPbbbe17-a7b2-49b5-8936-8100045b9f01"
+	edge [arrowsize=2 color="#f8baec" penwidth=2 weight=2]
+	"b'YXBwc3Nwc2MtNV9zbXQuYg=='" -> "APP4d1c4b-74d2-474a-81d1-95c3ef5dc3f6"
+	edge [arrowsize=2 color="#f8baec" penwidth=2 weight=2]
+	"b'YXBwc3Nwc2MtNV9zbXQuYg=='" -> "APP194ad5-8ea5-4a7f-913e-e61be019b417"
+	edge [arrowsize=2 color="#f8baec" penwidth=2 weight=2]
+	"b'YXBwc3Nwc2MtNV9zbXQuYg=='" -> "APPa2a597-716e-442d-a6af-d2bf525067a1"
+	edge [arrowsize=2 color="#f8baec" penwidth=2 weight=2]
+	"b'YXBwc3Nwc2MtNV9zbXQuYg=='" -> "APP8ae642-b1bb-45fc-aa23-c6528c0af221"
+	edge [arrowsize=2 color="#ff9900" penwidth=8 weight=8]
+	"CSPfbebed-15da-40e8-a8ed-211ccac9d6ef" -> "MSP8a74b6-35c0-4e32-9050-23c3d05cce31"
+	edge [arrowsize=2 color="#ff9900" penwidth=8 weight=8]
+	"CSP72b4ce-e05a-4829-9a40-521bb94935ba" -> "MSP8e130a-2e54-4914-bee4-07b76fa10c41"
+	edge [arrowsize=2 color="#ff9900" penwidth=8 weight=8]
+	"CSP246336-20e6-4abb-97ee-01aa3405c6f3" -> "MSP3b752b-d458-4ab0-a130-1b822f956442"
+	edge [arrowsize=2 color="#ff9900" penwidth=8 weight=8]
+	"CSPfb4bdd-8ba7-460b-8a29-3d3f24a6c7e4" -> "MSPdc5b9a-5f2e-43fc-9de6-7596be1948e9"
+	edge [arrowsize=2 color="#ff9900" penwidth=8 weight=8]
+	"MSP0c4638-0161-4817-8628-aacea03301a8" -> "APP118444-075e-4cbe-90bf-efe3b929cf3e"
+	edge [arrowsize=2 color="#ff9900" penwidth=8 weight=8]
+	"MSP9ce930-83fa-4987-83f1-d5e45ba741d2" -> "APP8415a9-b623-4884-9626-ceb6e944dcc5"
+	edge [arrowsize=2 color="#ff9900" penwidth=8 weight=8]
+	"MSP92b0d8-a27a-4f67-b73c-ce811eee1a33" -> "APP194ad5-8ea5-4a7f-913e-e61be019b417"
+	edge [arrowsize=2 color="#ff9900" penwidth=8 weight=8]
+	"MSPa49076-2c68-4e70-aa3e-fe7f673a98e8" -> "APPa2a597-716e-442d-a6af-d2bf525067a1"
+}

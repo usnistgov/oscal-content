@@ -1,0 +1,41 @@
+profile:
+  uuid: 51a969c1-af30-4eb7-99a2-0d3ddbd8cacb
+  metadata:
+    title: Leveraged Bloss@m Minimal Baseline for Demonstration
+    last-modified: '{{ modified_date }}'
+    version: 0.0.1-alpha
+    oscal-version: {{ oscal_version }}
+    roles:
+      - id: creator
+        title: Document Creator
+      - id: contact
+        title: Contact
+    parties:
+      - uuid: {{ uuid:party }}
+        type: organization
+        name: CSD Development
+        email-addresses:
+          - blossom@nist.gov
+        addresses:
+          - addr-lines:
+              - National Institute of Standards and Technology
+              - "Attn: Computer Security Division"
+              - Information Technology Laboratory
+              - 100 Bureau Drive (Mail Stop 8930)
+            city: Gaithersburg
+            state: MD
+            postal-code: 20899-8930
+    responsible-parties:
+      - role-id: creator
+        party-uuids:
+          - {{ uuid:party-1 }}
+      - role-id: contact
+        party-uuids:
+          - {{ uuid:party-2 }}
+  imports:
+    - href: https://raw.githubusercontent.com/usnistgov/oscal-content/ba2efa4c90155650b0fd536f3bffd13042ac6dc7/nist.gov/SP800-53/rev5/yaml/NIST_SP-800-53_rev5_LOW-baseline-resolved-profile_catalog.yaml
+      include-controls:
+        - with-ids:
+            {{ content:controls_list }}
+  merge:
+    as-is: true

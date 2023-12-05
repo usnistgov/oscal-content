@@ -1,0 +1,16 @@
+component-definition:
+  uuid: {{ uuid:document }}
+  type: responsibility-matrix
+  metadata:
+    title: {{ crm_title }}
+    last-modified: '{{ modified_date }}'
+    version: {{ version }}
+    oscal-version: {{ oscal_version }}
+    roles:
+      - id: admin
+        title: Administrator
+    parties:
+      - uuid: {{ uuid:party }}
+        type: person
+  
+    capabilities: []

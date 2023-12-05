@@ -1,0 +1,11 @@
+chevron==0.14.0
+Faker==20.1.0
+graphviz==0.19.2
+matplotlib==3.6.3
+nested-lookup==0.2.25
+pandas==1.5.0
+pydantic==1.9.1
+PyGithub==1.55
+pypandoc==1.10
+python-dotenv==0.17.0
+PyYAML==6.0
