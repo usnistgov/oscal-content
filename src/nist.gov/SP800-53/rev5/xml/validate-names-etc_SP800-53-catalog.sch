@@ -114,8 +114,10 @@
     <sch:pattern id="required-items">
         <sch:rule context="o:control">
             <sch:let name="withdrawn" value="o:prop[@name='status']/@value = 'withdrawn'"/>
-            <sch:assert test="o:prop/@name='label'">control must have a child 'prop' with @name='label'</sch:assert>
-            <sch:assert test="o:prop/@name='sort-id'">control must have a child 'prop' with @name='sort-id'</sch:assert>
+           <sch:assert test="count(o:prop[@class='sp800-53']/@name='alt-identifier') eq 1">control must have a child 'prop' with @name='alt-identifier' and @class='sp800-53' (<sch:value-of select="@id"/>)</sch:assert>
+           <sch:assert test="count(o:prop[@class='sp800-53a']/@name='alt-identifier') eq 1">control must have a child 'prop' with @name='alt-identifier' and @class="sp800-53a' (<sch:value-of select="@id"/>)</sch:assert>
+           <sch:assert test="empty(o:prop[@name='label'])">'label' props are not now being used (<sch:value-of select="@id"/>)</sch:assert>
+           <sch:assert test="o:prop/@name='sort-id'">control must have a child 'prop' with @name='sort-id'</sch:assert>
             <sch:assert test="o:part/@name='statement' or $withdrawn">control must have a child 'part' with @name='statement'</sch:assert>
             <!--<sch:assert test="o:part/@name='objective' or $withdrawn">control with name='SP800-53' must have a child 'part' with @name='objective'</sch:assert>-->
         </sch:rule>
@@ -141,15 +143,15 @@
         <!-- pre-empting rules for 53A labels       -->
         <sch:rule context="o:control/o:prop[@name = 'label'][@class='sp800-53a']"/>
         
-        <sch:rule context="o:control/o:control/o:prop[@name = 'label']">
+        <sch:rule context="o:control/o:control/o:prop[@name = 'alt-identifier'][@class='sp800-53']">
             <sch:let name="label-regex" value="'^(AC|AT|AU|CA|CM|CP|IA|IR|MA|MP|PE|PL|PM|PS|PT|RA|SA|SC|SI|SR)\-\d\d?\(\d\d?\)$'"/>
             <!--<sch:assert test="o:singleton(.)">prop with name='label'
                 must be a singleton: no other properties named 'label' may appear in the same
                 context</sch:assert>-->
             <sch:assert test="matches(@value, $label-regex)">prop with name='label' must match regular expression <sch:value-of select="$label-regex"/></sch:assert>
-            <sch:let name="parent-label" value="../../o:prop[@name = 'label'][not(@class='sp800-53a')]"/>
+            <sch:let name="parent-label" value="../../o:prop[@name = 'alt-identifier'][@class='sp800-53']"/>
             <xsl:variable name="formatted-no">
-                <xsl:number count="o:control" format="(1)"/>
+                <xsl:number count="o:control" format="(01)"/>
             </xsl:variable>
             <sch:assert test="@value = (($parent-label/@value) || $formatted-no)">Control enhancement
                 label is inconsistent: we expect <sch:value-of select="$parent-label/@value || $formatted-no"/> here</sch:assert>
