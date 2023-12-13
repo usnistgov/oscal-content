@@ -1,8 +1,8 @@
-shared-responsibility-definition:
-  uuid: SRMf36a88-28cd-47ce-86d4-1ff47b193e3a
+shared-responsibility:
+  uuid: SR4246af0-457d-4c8e-a414-081bd2d0a161
   metadata:
     title: Customer Responsibility Matrix
-    last-modified: '2023-12-05T00:00:00.0000-04:00'
+    last-modified: '2023-12-13T00:00:00.0000-04:00'
     version: 0.0.1
     oscal-version: 1.1.1
     roles:
@@ -11,606 +11,602 @@ shared-responsibility-definition:
     parties:
     - uuid: null
       type: person
-  capabilities:
-  - uuid: SRM9a3201-e90f-4cc1-8e11-5e209d999a2e
+  components:
+  - uuid: SR486ace8-d47b-45e4-8075-3a04479697c2
     name: Statement of Shared Responsibility
-    description: This is a demonstration CRM.
-    control_implementation:
-      description: List of Controls
+    description: This is a demonstration sr.
+    control_implementations:
+    - description: List of Controls
       implemented-requirements:
-      - uuid: CSP264a24-9637-4a51-a0f2-1b2ddbc1ac7f
+      - uuid: CSPdea7e4-190d-4ecb-80bc-fed0a0e24351
         control-id: ac-17
         statements:
-        - uuid: CSP51ea4f-ca51-4261-9aeb-76aca0cbe6a3
+        - uuid: CSPeb6cee-b354-43c9-b441-eb58cf6a7fe2
           statement-id: ac-17_smt.a
           by-components:
-          - uuid: CSP465878-1b1c-4e45-b769-31bc45ca06b2
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP9cc895-2fca-418b-8b42-c3ade8b543dc
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider documents remote access
               usage restrictions, configuration requirements, and implementation guidance
               in the SSP.
             provided:
-            - uuid: CSP1b0f65-1c0b-4541-b0dd-cc51bde84304
+            - uuid: CSP8e9a1b-bb89-4f12-b737-d80ac9d1aeed
               description: The criteria for cloud service provider remote access is
-                documented in the system security plan. (Random Content Follows) Provider
-                in system access remote plan. The in provider security.
+                documented in the system security plan. (Random Content Follows) Security
+                security security documented the cloud.
               exportable: true
             responsibilities:
-            - uuid: CSP4a05da-da03-49dd-b688-e4b9277ca74f
-              provided-uuid: CSP1b0f65-1c0b-4541-b0dd-cc51bde84304
+            - uuid: CSP3300d9-c71d-4960-87d8-dfd343050358
+              provided-uuid: CSP8e9a1b-bb89-4f12-b737-d80ac9d1aeed
               description: Requirements for cloud service provider remote access is
                 documented.
               exportable: true
-        - uuid: CSPf902c5-6984-481f-a43d-fdb7bd478ed4
+        - uuid: CSPc14dd1-6526-4141-8a75-befa5c3ad343
           statement-id: ac-17_smt.b
           by-components:
-          - uuid: CSP5ee722-8a6f-487e-b4ac-0ee5a4dc60a0
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPc48f5d-667a-4f2a-9268-046124c675b1
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider authorizes each type
               of remote access to the system.
             provided:
-            - uuid: CSPab1ff2-d6da-42d6-9c96-084fe27b1c47
+            - uuid: CSP2a5489-b955-4448-abf6-0a83d8701cea
               description: Specific types of remote access are authorized by the cloud
-                service provider. (Random Content Follows) Service are types Specific
-                are types of cloud provider. by cloud.
+                service provider. (Random Content Follows) Remote remote provider.
+                access authorized authorized types service cloud Specific are are.
               exportable: true
             responsibilities:
-            - uuid: CSPcc3ec0-5074-42fe-8c25-95736f53fd3a
-              provided-uuid: CSPab1ff2-d6da-42d6-9c96-084fe27b1c47
+            - uuid: CSP35a3c2-e3d9-443d-8d0b-72558dad86b3
+              provided-uuid: CSP2a5489-b955-4448-abf6-0a83d8701cea
               description: Individual remote access types are authorized by the cloud
                 service provider.
               exportable: true
-      - uuid: CSPcb22bc-0186-466c-b2e5-9745f86d7ae7
+      - uuid: CSPf3c5eb-31a6-4c08-bcac-420b1e6af2bb
         control-id: ac-17.1
         statements:
-        - uuid: CSPd23be0-84e1-45b4-bfc0-89a1061d0efc
+        - uuid: CSP2e0df0-9161-4515-aa0b-747fd215c67a
           statement-id: ac-17.1
           by-components:
-          - uuid: CSP48f6d5-a455-4625-86a4-e4990d6e1364
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP1b4c9d-562a-48cc-98ac-78b23a80074c
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider network routers are
               used to monitor and control remote access.
             provided:
-            - uuid: CSP397403-087a-4d82-b133-5132fb2f4d04
+            - uuid: CSP524670-7815-422b-94d6-4d8cfcb52f44
               description: Boundary devices monitor and control cloud service provider
-                remote access. (Random Content Follows) Control access. access. devices
-                remote Boundary devices.
+                remote access. (Random Content Follows) Monitor provider remote monitor
+                provider cloud access. access. Boundary.
               exportable: true
             responsibilities:
-            - uuid: CSPfdf238-74f7-411d-9dcb-1fef66ef6733
-              provided-uuid: CSP397403-087a-4d82-b133-5132fb2f4d04
+            - uuid: CSP9ea025-e820-4f2d-82eb-a1f98e91c8e8
+              provided-uuid: CSP524670-7815-422b-94d6-4d8cfcb52f44
               description: Remote access is monitored and controlled by the cloud
                 service provider.
               exportable: true
-      - uuid: CSPd3bfc8-2618-4450-b915-da76f35787e5
+      - uuid: CSP43c121-c297-44e6-93d2-3967eb483c1b
         control-id: ac-17.2
         statements:
-        - uuid: CSP700d6e-0556-424c-b1cd-40d49c42c8d9
+        - uuid: CSP935144-c71d-4e5a-94cb-8438f3a97465
           statement-id: ac-17.2
           by-components:
-          - uuid: CSPdd8d47-60db-4aa5-b425-85040cfeb0ce
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP18bb90-197c-42e2-8d6a-243488e071cc
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider implements TLS 1.2
               to protect the confidentiality and integrity of remote sessions.
             provided:
-            - uuid: CSPe451d5-1c51-4b68-a731-6e9945e19751
+            - uuid: CSPb081be-3f55-4942-9c33-67db8ee1f43f
               description: TLS has been implemented to protect cloud service provider
-                remote session transmissions. (Random Content Follows) Provider been
-                TLS been service remote implemented protect has to provider.
+                remote session transmissions. (Random Content Follows) Service protect
+                implemented service been remote remote been transmissions. protect.
               exportable: true
             responsibilities:
-            - uuid: CSP865e38-1d60-481a-8390-2ad17ed0db72
-              provided-uuid: CSPe451d5-1c51-4b68-a731-6e9945e19751
+            - uuid: CSPcb1800-79a5-4b4a-831f-10784cb6752a
+              provided-uuid: CSPb081be-3f55-4942-9c33-67db8ee1f43f
               description: Encryption has been implemented to protect remote cloud
                 service provider sessions.
               exportable: true
-      - uuid: CSPb5ae26-f2a0-435d-a9c8-ba451aaeadcc
+      - uuid: CSPefd424-7282-4e5d-847e-f7b2a0aef2d8
         control-id: ac-17.3
         statements:
-        - uuid: CSP951c23-4f37-4a36-810f-cca5d8dec569
+        - uuid: CSP70b0e4-b200-48c9-87d0-019b5ac0967d
           statement-id: ac-17.3
           by-components:
-          - uuid: CSPb33463-bdc4-4b99-941c-c0fd7b4b2b4c
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPfe7657-234c-4c58-b1bb-11c0cf3a7837
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider remote access is routed
               through network routers inside the network and at the boundary.
             provided:
-            - uuid: CSP0bbcc9-b444-4518-9973-a4dccbf8bedb
+            - uuid: CSP2e280d-e13a-415f-951c-0ce213ba3620
               description: Remote access is transmitted through cloud service provider
                 network devices inside the network and at the boundary. (Random Content
-                Follows) Network provider cloud network provider Remote transmitted
-                is provider at boundary..
+                Follows) Network and through the and through at transmitted.
               exportable: true
             responsibilities:
-            - uuid: CSPa90e5d-5c81-4318-940d-a03d572ac4fb
-              provided-uuid: CSP0bbcc9-b444-4518-9973-a4dccbf8bedb
+            - uuid: CSP552217-b25b-4013-9cfe-48ef67b26fa1
+              provided-uuid: CSP2e280d-e13a-415f-951c-0ce213ba3620
               description: Remote access is transmitted through cloud service provider
                 network devices.
               exportable: true
-      - uuid: CSP46b0e9-97ec-45d2-9e4f-750304ebc2b2
+      - uuid: CSPb58672-d669-49fc-814c-2321d0621a78
         control-id: ac-17.4
         statements:
-        - uuid: CSP33ab6a-de25-447e-9bcb-be28b896f939
+        - uuid: CSP5f8897-8349-4842-b908-cdfd3a3378d6
           statement-id: ac-17.4_smt.a
           by-components:
-          - uuid: CSPa02487-5a3a-475d-9c1c-56db0c25dd36
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPfab01a-6e08-4162-b1bc-ff1d38c7e8f1
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider system owner authorizes
               remote access via e-mail to the system administrators. System administrators
               use privileged commands to manage and configure systems.
             provided:
-            - uuid: CSP251bd7-bc1e-4209-8177-46ca0f1c61a2
+            - uuid: CSPcd3c3b-1914-4ca3-9171-79a89c7a1c0f
               description: Cloud service provider system owner approves remote access
                 where system administrators can execute privileged commands. (Random
-                Content Follows) System can execute remote can Cloud system execute
-                owner service.
+                Content Follows) Can service system remote approves system execute
+                system system privileged commands. service access.
               exportable: true
             responsibilities:
-            - uuid: CSP27623e-fcb9-42db-a3a3-50668646000a
-              provided-uuid: CSP251bd7-bc1e-4209-8177-46ca0f1c61a2
+            - uuid: CSP20d25f-8d80-425b-bfe0-f27a72c8b1bd
+              provided-uuid: CSPcd3c3b-1914-4ca3-9171-79a89c7a1c0f
               description: Execution of privileged commands by remote access is authorized
                 by the cloud service provider system owner.
               exportable: true
-        - uuid: CSP3c2035-80aa-4c29-9b17-d78a8fd9223a
+        - uuid: CSP0e61cf-21ad-4abd-93d7-02e3487a5452
           statement-id: ac-17.4_smt.b
           by-components:
-          - uuid: CSPdb1799-180a-44ff-9abd-33aa9f68f9ec
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP1e3829-e45c-49fb-bd97-6e7f728a2dc6
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider rationale for approving
               remote access is documented in the SSP.
             provided:
-            - uuid: CSP7113a9-3c23-4e97-9321-27f41aa26a14
+            - uuid: CSPb7b633-468b-43a2-8f2f-cfa45ff1f931
               description: Rationale for approving cloud service provider remote access
                 is documented in the system security plan. (Random Content Follows)
-                Rationale the provider approving the access Rationale.
+                The system is service in plan..
               exportable: true
             responsibilities:
-            - uuid: CSPebd3e4-c49f-4f50-95d1-4c4b604f147e
-              provided-uuid: CSP7113a9-3c23-4e97-9321-27f41aa26a14
+            - uuid: CSP7001fb-4261-44a9-bed4-2b93241b8573
+              provided-uuid: CSPb7b633-468b-43a2-8f2f-cfa45ff1f931
               description: Rationale for approving cloud service provider remote access
                 is documented.
               exportable: true
-      - uuid: CSP871a67-ca07-4c67-b834-ceb7b81db191
+      - uuid: CSP514d8b-0354-4e59-99f4-7d398b5269e5
         control-id: ac-2
         statements:
-        - uuid: CSPecafd7-c2a3-4f6e-89fc-8c1fa9c61aac
+        - uuid: CSP7872cb-7de4-43d0-9b78-be6e11ba8343
           statement-id: ac-2_smt.a
           by-components:
-          - uuid: CSPc3d2cd-d28e-4129-9583-42e863dfd1fd
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP6bca58-aab3-4736-9324-06c2fd44e4a0
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider account management
               policy identifies that only user and system administrator accounts will
               be allowed on the system.
             provided:
-            - uuid: CSP2a37a0-322c-4e90-b522-76b7528e933e
+            - uuid: CSP8c6c16-0bc6-41ff-9e46-cfcaa3df10ea
               description: Cloud service provider account management policy identifies
-                users allowed on the system. (Random Content Follows) The management
-                system. identifies identifies service management the.
+                users allowed on the system. (Random Content Follows) Policy account
+                management account on policy service identifies the on users.
               exportable: true
             responsibilities:
-            - uuid: CSP7ec1ca-edac-4e43-804b-307575e1adea
-              provided-uuid: CSP2a37a0-322c-4e90-b522-76b7528e933e
+            - uuid: CSP154916-d4e1-4695-b8b0-55e34efc5d6d
+              provided-uuid: CSP8c6c16-0bc6-41ff-9e46-cfcaa3df10ea
               description: Account management policy identifies cloud service provider
                 users allowed on the system.
               exportable: true
-        - uuid: CSP33306b-9d9d-438b-9347-cca60c42c9b8
+        - uuid: CSP54741b-786d-4ddd-a8a4-7d23cc53bc5c
           statement-id: ac-2_smt.b
           by-components:
-          - uuid: CSP508de8-bb93-4776-9ca9-0cb405a074df
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP56637a-809f-4132-a2fa-12d2cdafa72e
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider account managers have
               been assigned.
             provided:
-            - uuid: CSPb5e735-b9e6-4640-aace-373a96a45e18
+            - uuid: CSP042349-0717-418f-bcfb-585649cfb47a
               description: Cloud service provider account managers have been assigned.
-                (Random Content Follows) Account been assigned. managers managers
-                been managers service Cloud been service service assigned..
+                (Random Content Follows) Been been service been service provider.
               exportable: true
             responsibilities:
-            - uuid: CSPa4063e-c09c-4073-86eb-3ba333738af4
-              provided-uuid: CSPb5e735-b9e6-4640-aace-373a96a45e18
+            - uuid: CSP2e68ad-5b53-40c4-9be6-48b3787df7a4
+              provided-uuid: CSP042349-0717-418f-bcfb-585649cfb47a
               description: Cloud service provider account management roles have been
                 assigned.
               exportable: true
-        - uuid: CSPa49a97-7c31-4f6a-ae03-345543f11065
+        - uuid: CSPf5967c-7578-4ea8-9067-78b1fe5f81e2
           statement-id: ac-2_smt.c
           by-components:
-          - uuid: CSPf2d936-9d4b-4d15-9ca6-a4623cb2f66b
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP7e5327-50c7-4e06-a490-906e46bd74c4
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider account requests include
               business need for the account.
             provided:
-            - uuid: CSPe87f0c-bed2-4fc7-a0db-f958a1107f38
+            - uuid: CSP5e9cb7-04ad-4976-bde9-fa29ed1e0203
               description: Cloud service provider account requests include the need
-                for the account. (Random Content Follows) Include provider requests
-                account requests requests Cloud account account.
+                for the account. (Random Content Follows) Account for account account.
+                the account. the requests the the include the service.
               exportable: true
             responsibilities:
-            - uuid: CSP26f7ea-5dfd-4e9c-a614-d670133557e5
-              provided-uuid: CSPe87f0c-bed2-4fc7-a0db-f958a1107f38
+            - uuid: CSPb3de8d-ffb5-4043-906d-1a81ade8b983
+              provided-uuid: CSP5e9cb7-04ad-4976-bde9-fa29ed1e0203
               description: The need for the account is identified in the cloud service
                 provider account request.
               exportable: true
-        - uuid: CSP9df112-09a4-4570-82c8-9bae6d237369
+        - uuid: CSP4f1899-ddce-4c8b-bf75-e9d12d7122f8
           statement-id: ac-2_smt.d
           by-components:
-          - uuid: CSPe9775e-58e4-4457-95bd-68a30d3cc191
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP50d00d-53f6-4cda-8f30-52ced06f7594
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider account requests include
               user of the system, their group and/or role membership, privileges,
               and the business need for the account.
             provided:
-            - uuid: CSP06edc6-df01-47a6-a008-0e2bc55c3a19
+            - uuid: CSP10d034-5a69-4c09-9ec2-bff1588aa651
               description: Cloud service provider account request includes user information,
                 their memberships and privileges, and the need for the account. (Random
-                Content Follows) For the for need and privileges, account. provider
-                account. the account. need need.
+                Content Follows) Account. request memberships provider need request
+                memberships account. information, need the memberships.
               exportable: true
             responsibilities:
-            - uuid: CSP32fc94-2801-4a94-91cf-e239b7c90ee7
-              provided-uuid: CSP06edc6-df01-47a6-a008-0e2bc55c3a19
+            - uuid: CSPcf098d-e27d-4831-8ae6-e198173f9a8d
+              provided-uuid: CSP10d034-5a69-4c09-9ec2-bff1588aa651
               description: User information is included in the cloud service provider
                 account request.
               exportable: true
-        - uuid: CSPd6967c-6ed8-4a7a-b8ce-4c85f41ebaf2
+        - uuid: CSPfe3a99-3329-4dab-9107-ec6892f160cb
           statement-id: ac-2_smt.e
           by-components:
-          - uuid: CSPdab571-dd1e-408b-bc89-c0645c995d3e
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP0bc487-03a5-43fe-b390-d2f77c483071
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider system owner approves
               requests to create accounts via e-mail.
             provided:
-            - uuid: CSP571d06-0a73-4d62-a0b8-4021d4b63a72
+            - uuid: CSP0dec66-8eae-42e5-8014-5c0ed3b8750f
               description: Cloud service provider system owner approves the account.
-                (Random Content Follows) Owner service the account. service system
-                approves account..
+                (Random Content Follows) System provider approves service provider
+                system Cloud Cloud Cloud the Cloud.
               exportable: true
             responsibilities:
-            - uuid: CSP23776f-824f-4b63-87eb-578757885933
-              provided-uuid: CSP571d06-0a73-4d62-a0b8-4021d4b63a72
+            - uuid: CSPfae9a6-bc17-4179-abb0-b16e9f20af5c
+              provided-uuid: CSP0dec66-8eae-42e5-8014-5c0ed3b8750f
               description: Account approvals follow cloud service provider account
                 management policy.
               exportable: true
-        - uuid: CSP968603-57d2-4889-8752-1946266a495a
+        - uuid: CSP0aade1-f7b7-4a8d-bc1e-b716a62233f1
           statement-id: ac-2_smt.f
           by-components:
-          - uuid: CSP2bb656-534f-41f9-a42e-365e62417a46
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP280be2-0dd6-42c9-a09a-f4266c6b0eb5
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: 'DO NOT SHARE - Cloud service provider account management
               policies and procedures are followed for creating, enabling modifying,
               disabling, and removing accounts. '
             provided:
-            - uuid: CSPca6337-8f01-409b-a528-df845c54f506
+            - uuid: CSPf1f230-8ccc-45ab-b902-762181019d2b
               description: Cloud service provider account management policy and procedures
-                include actions that can be taken. (Random Content Follows) Be provider
-                taken. and procedures taken. be.
+                include actions that can be taken. (Random Content Follows) Account
+                that provider policy that policy and account policy.
               exportable: true
             responsibilities:
-            - uuid: CSPdc30a1-9c40-4c32-9f0d-13fc1fb25ede
-              provided-uuid: CSPca6337-8f01-409b-a528-df845c54f506
+            - uuid: CSPe74442-2703-420b-9513-767a94bedf84
+              provided-uuid: CSPf1f230-8ccc-45ab-b902-762181019d2b
               description: Account management policy and procedures are followed for
                 managing cloud service provider accounts.
               exportable: true
-        - uuid: CSPacdb2e-8d9f-4749-b8b9-6cf34fb97df5
+        - uuid: CSP5e1c60-dced-4b85-85d8-4bbb3d857836
           statement-id: ac-2_smt.g
           by-components:
-          - uuid: CSP9bdc91-061c-42ea-9d60-9e535d1542a3
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP6c425d-db6e-4b74-a7d3-d5b46e81de61
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: 'DO NOT SHARE - Cloud service provider system accounts are
               monitored by the account managers and the system owner is notified if
               any changes are needed to the account privileges.  '
             provided:
-            - uuid: CSPfc1b7a-614f-49c1-8567-6428384a346c
+            - uuid: CSP8063bc-e350-40fb-b3fd-ea2dab7173eb
               description: Cloud service provider system accounts are monitored and
                 notifications are sent if any account changes occur. (Random Content
-                Follows) If are if provider are provider are system system changes
-                if are are.
+                Follows) Monitored sent service system sent provider are occur..
               exportable: true
             responsibilities:
-            - uuid: CSP3169a7-4ade-419a-a81a-fddbe814ee85
-              provided-uuid: CSPfc1b7a-614f-49c1-8567-6428384a346c
+            - uuid: CSPa33a06-d9f5-4b2d-802a-910662a364ef
+              provided-uuid: CSP8063bc-e350-40fb-b3fd-ea2dab7173eb
               description: System accounts of cloud service provider users are monitored
                 and notifications are sent as needed.
               exportable: true
-        - uuid: CSP3d36d7-90be-4ebd-afe3-8a9c23f7eb5d
+        - uuid: CSP3128fa-7831-4c21-bfaa-829fc9c27058
           statement-id: ac-2_smt.h
           by-components:
-          - uuid: CSP8d5e99-2399-4252-8900-bbe691f7d810
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP78ef7c-b7bf-4cc2-be48-f84a77f189fb
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider system account managers
               and system owner are notified within 24 hours via e-mail when accounts
               are no longer required, uses are terminated or transferred, and user
               privileges change.
             provided:
-            - uuid: CSP4a3c61-8c7c-4b8d-810d-81f428fb538c
+            - uuid: CSP2c524a-ba5c-408b-a75e-8e143e27486e
               description: Cloud service provider account managers and system owner
                 are notified within a specific time frame when accounts are modified.
-                (Random Content Follows) Modified. accounts provider owner notified
-                modified. frame.
+                (Random Content Follows) Frame when Cloud time a notified are provider
+                time when modified. time modified..
               exportable: true
             responsibilities:
-            - uuid: CSP17d40a-ec30-4cc4-9e69-2e0e7998a0fa
-              provided-uuid: CSP4a3c61-8c7c-4b8d-810d-81f428fb538c
+            - uuid: CSP8b9191-07d6-4cc6-bc61-5e016eef5cc0
+              provided-uuid: CSP2c524a-ba5c-408b-a75e-8e143e27486e
               description: Cloud service provider account managers and system owner
                 are notified when there are changes to the account.
               exportable: true
-        - uuid: CSPf8d69d-05f7-4339-9787-ef376d2a044c
+        - uuid: CSPecb111-af8a-4aad-a194-702dd6628067
           statement-id: ac-2_smt.i
           by-components:
-          - uuid: CSPb203f3-8609-465b-b603-ba81fac9fb7d
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP55d3b5-89f9-47d4-b828-a738d8ff4b74
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider system administrator
               authorizes access to the system based on a valid access authorization,
               system usage requirements, and role or responsibility.
             provided:
-            - uuid: CSP981009-0d6f-45e7-bfbd-608171a1c6b3
+            - uuid: CSP41d498-b9ca-4cea-96bc-6ed2ed28dbd4
               description: The cloud service provider system administrator authorizes
                 access to the system based on specific criteria. (Random Content Follows)
-                On service to system access provider criteria. based.
+                To specific on service system The.
               exportable: true
             responsibilities:
-            - uuid: CSP70eac9-a4a1-4bae-92bd-1a7925f8d4b4
-              provided-uuid: CSP981009-0d6f-45e7-bfbd-608171a1c6b3
+            - uuid: CSP7801bb-a020-41ef-8963-3bbfca2cfa05
+              provided-uuid: CSP41d498-b9ca-4cea-96bc-6ed2ed28dbd4
               description: Cloud service provider system administrator authorizes
                 access to the system based on policy.
               exportable: true
-        - uuid: CSP07ca2f-02d7-471f-a933-50fe72525083
+        - uuid: CSP4fff39-3327-453a-8fac-18f11c612d71
           statement-id: ac-2_smt.j
           by-components:
-          - uuid: CSPa354bb-235c-44d4-96c2-d3502924f18e
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPd41a2c-8f60-4983-b7aa-073d2e3563f0
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider system accounts are
               reviewed by the system administrator and account managers every 30 days
               and the results are sent to the system owner via e-mail.
             provided:
-            - uuid: CSPc80afd-f259-417c-b0aa-c399f43b22b8
+            - uuid: CSPf6ee88-8788-4166-875f-25a02daea735
               description: The cloud service provider system accounts are reviewed
                 by the system administrator and account managers within a specific
                 time frame and results are sent to the system owner. (Random Content
-                Follows) System by frame service a The The within administrator frame
-                The are.
+                Follows) Are provider frame owner. service and service cloud within
+                the and by provider.
               exportable: true
             responsibilities:
-            - uuid: CSP937f71-eb43-40f0-98dc-2564a2bbbfd9
-              provided-uuid: CSPc80afd-f259-417c-b0aa-c399f43b22b8
+            - uuid: CSPec43f5-db3d-4d04-bda7-37fc3f8ec367
+              provided-uuid: CSPf6ee88-8788-4166-875f-25a02daea735
               description: The system administrator and account managers review cloud
                 service provider system accounts and the system owner is notified.
               exportable: true
-        - uuid: CSPacf5fe-655a-4acd-90b6-b00b523a90e4
+        - uuid: CSP6245f6-e2f1-450c-9ea3-f5b216b8efe6
           statement-id: ac-2_smt.k
           by-components:
-          - uuid: CSP61f00a-1816-4d73-9350-1eb3b3d13eb5
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP548ed2-5be3-456e-aa09-52f37ad6d450
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider does not allow the
               use of shared or group authenticators.
             provided:
-            - uuid: CSPb1315a-76ae-4b4a-97fa-21dd55727a9a
+            - uuid: CSP0360d9-1ec8-4c83-87b8-404143f7caf0
               description: The cloud service provider does not allow shared or group
-                authenticators. (Random Content Follows) The service not does group
-                service.
+                authenticators. (Random Content Follows) Not does provider does shared
+                or shared service The The.
               exportable: true
             responsibilities:
-            - uuid: CSPfed514-4efa-45a1-a839-05238e3eb06a
-              provided-uuid: CSPb1315a-76ae-4b4a-97fa-21dd55727a9a
+            - uuid: CSPa2a00d-ed52-4c60-b716-6f718e77b22d
+              provided-uuid: CSP0360d9-1ec8-4c83-87b8-404143f7caf0
               description: Shared or group authenticators are not allowed by the cloud
                 service provider.
               exportable: true
-        - uuid: CSPf6c68e-53af-4dc8-ba19-473cc3db306e
+        - uuid: CSP3fed6a-623b-4304-b3e1-4b5ff5fd146b
           statement-id: ac-2_smt.l
           by-components:
-          - uuid: CSP6fde66-aa31-4751-87b7-d8d7752ba90a
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP365f85-bd94-487b-8d0e-70e4265b3cea
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider account management
               policy is followed when users are terminated or transferred.
             provided:
-            - uuid: CSPa4d451-377e-4a07-8760-bad17e8e0da4
+            - uuid: CSPfe1253-f537-4357-b61a-3101ad03c7e1
               description: The cloud service provider account management policy is
                 followed when the user does not require system access. (Random Content
-                Follows) Management provider does cloud management service The when
-                The policy.
+                Follows) Management The when user policy cloud.
               exportable: true
             responsibilities:
-            - uuid: CSPc000c1-06c1-4c56-aa99-28ba0a52e273
-              provided-uuid: CSPa4d451-377e-4a07-8760-bad17e8e0da4
+            - uuid: CSP7f00f9-c7bf-401d-aa47-b0d149184663
+              provided-uuid: CSPfe1253-f537-4357-b61a-3101ad03c7e1
               description: The account management policy is followed when cloud service
                 provider user accounts are no longer needed.
               exportable: true
-      - uuid: CSP8198e0-287f-4314-a78b-43537df2dea1
+      - uuid: CSP720343-8b0c-4e9a-8770-fabe7e54d1ae
         control-id: ac-2.1
         statements:
-        - uuid: CSP673a77-0e68-464a-bb97-62abb0a1b964
+        - uuid: CSP50209a-6d15-4631-bc5f-ec0948d286ae
           statement-id: ac-2.1
           by-components:
-          - uuid: CSPc1ccdd-cdab-4c28-a28d-570473b55574
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP6cf1ae-69db-4902-be7a-b6b2725d98e7
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider uses Active Directory
               to manage system accounts and privileges.
             provided:
-            - uuid: CSP7bdb8b-0f5d-4c88-9e6d-c043c85ba7f7
+            - uuid: CSP3b1c6d-0a36-4d74-854e-cbc8d979e8dd
               description: Active Directory is used to manage cloud service provider
-                system accounts and privileges. (Random Content Follows) And cloud
-                provider to manage and Active privileges. Active.
+                system accounts and privileges. (Random Content Follows) Privileges.
+                Directory service Active Active to Directory.
               exportable: true
             responsibilities:
-            - uuid: CSPa9ec3d-a706-4e49-929a-611b897ee564
-              provided-uuid: CSP7bdb8b-0f5d-4c88-9e6d-c043c85ba7f7
+            - uuid: CSP1d8417-d52d-489b-af35-cb7346072801
+              provided-uuid: CSP3b1c6d-0a36-4d74-854e-cbc8d979e8dd
               description: Automation is used to manage cloud service provider system
                 accounts and privileges.
               exportable: true
-      - uuid: CSP82642a-ecdb-48d0-9e41-fd7766b82890
+      - uuid: CSP97ceff-23af-43a9-a37c-40613471ad20
         control-id: ac-2.13
         statements:
-        - uuid: CSPd3c652-a5be-42f6-b69e-31cda2d027b7
+        - uuid: CSPf23d5b-0b3d-41df-8879-6ad6a28b0d64
           statement-id: ac-2.13
           by-components:
-          - uuid: CSP921c6d-92e3-41f2-b953-5e4b84599074
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPaa9272-2f2a-44fc-8d7b-4ecf557e1a38
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider user accounts are disabled
               by the system administrator within 1 hour after they are notified of
               unauthorized access. An account disabled verification e-mail is sent
               to the system owner.
             provided:
-            - uuid: CSPa1645f-d346-4ee4-8096-97a48cf51ffe
+            - uuid: CSPebcf51-d7cd-4aa4-b99a-e31711d281a5
               description: Cloud service provider user accounts are disabled by the
                 system administrator within specific time frame of notification and
-                the system owner is notified. (Random Content Follows) System provider
-                accounts of system accounts.
+                the system owner is notified. (Random Content Follows) Time disabled
+                disabled owner specific provider and provider user owner administrator
+                the notified..
               exportable: true
             responsibilities:
-            - uuid: CSP11de7e-fdd3-4fa3-82f9-5c41acb642ec
-              provided-uuid: CSPa1645f-d346-4ee4-8096-97a48cf51ffe
+            - uuid: CSP56f53c-0aaf-480d-a79f-1c5f8f9e6633
+              provided-uuid: CSPebcf51-d7cd-4aa4-b99a-e31711d281a5
               description: System administrators disable cloud service provider user
                 accounts when notified and a notification is sent.
               exportable: true
-      - uuid: CSP4d36d0-8733-4ff2-ba5b-1cdd1150c86c
+      - uuid: CSP31d7ff-de0b-4fec-a1a8-3cf14c92519e
         control-id: ac-2.2
         statements:
-        - uuid: CSP1d0c77-8c93-40af-bd4a-f812652c0f48
+        - uuid: CSP7d27ad-4b63-45a1-a822-22c541bab06f
           statement-id: ac-2.2
           by-components:
-          - uuid: CSP7660aa-cd96-4389-9804-6c773437e5e9
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPb7b435-b086-4613-8462-790d9aabf95e
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider removes temporary or
               emergency accounts after 24 hours of creation.
             provided:
-            - uuid: CSP817c48-0345-420a-89b3-3f108cd7d189
+            - uuid: CSP9cfac2-6c0e-4a9e-8867-a0af062218d2
               description: Temporary or emergency cloud service provider accounts
                 are removed after a specific period of time. (Random Content Follows)
-                Temporary a after a after emergency after specific of a accounts of
-                removed.
+                Service cloud accounts specific removed are.
               exportable: true
             responsibilities:
-            - uuid: CSP7d6f28-83af-47ac-86bd-7571fb8164eb
-              provided-uuid: CSP817c48-0345-420a-89b3-3f108cd7d189
+            - uuid: CSP57f4ef-c7eb-4ec7-9612-8b9b697c6860
+              provided-uuid: CSP9cfac2-6c0e-4a9e-8867-a0af062218d2
               description: Temporary or emergency cloud service provider accounts
                 are removed according to the policy.
               exportable: true
-      - uuid: CSP6e2106-dbae-4f48-8328-22416f9e7a97
+      - uuid: CSPf922c1-335b-4da3-86c4-1a659f9bdd85
         control-id: ac-2.3
         statements:
-        - uuid: CSPb980c4-dee0-4714-ad98-4f8c2188f676
+        - uuid: CSPa8112a-272a-4d28-8092-53c2ade53092
           statement-id: ac-2.3
           by-components:
-          - uuid: CSP8bf924-22f2-481e-a812-c31ed1a21e14
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPfe7d71-a96c-4e8a-b22a-33c8b0923c3c
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider accounts are disabled
               within 24 hours when they have expired, are no longer associated with
               the user, are in violation of the account management policy, or have
               been inactive for 17 calendar days.
             provided:
-            - uuid: CSPc9f273-4746-4bac-958e-ce42cdf8f857
+            - uuid: CSP0ace82-b13d-46c5-8e9c-024d619e85b0
               description: User accounts are disabled by the cloud service provider
                 within a specific time frame, for specific reasons, or if inactive
-                for a specific time frame. (Random Content Follows) Frame. specific
-                provider accounts disabled frame. within User specific time.
+                for a specific time frame. (Random Content Follows) Specific are the
+                within a reasons, frame. specific time time frame. specific.
               exportable: true
             responsibilities:
-            - uuid: CSPc26803-9b42-433d-a481-df059247bf44
-              provided-uuid: CSPc9f273-4746-4bac-958e-ce42cdf8f857
+            - uuid: CSP83e0a1-7ca9-48cc-b0c6-19b5eee84fa4
+              provided-uuid: CSP0ace82-b13d-46c5-8e9c-024d619e85b0
               description: Accounts are disabled according to cloud service provider
                 policy.
               exportable: true
-      - uuid: CSP798ce2-6974-42c0-a86d-e5fba7c5aca6
+      - uuid: CSPecdba0-5a80-4da8-87c5-c2b5998cc3da
         control-id: ac-2.4
         statements:
-        - uuid: CSP96a21d-2211-4e81-9d22-b1912c024dcf
+        - uuid: CSPd6a979-2ba5-449d-911c-3ae786157ccb
           statement-id: ac-2.4
           by-components:
-          - uuid: CSP493bc1-9fd5-4088-b750-0bf8764e7506
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP820058-101e-4ef8-8c9e-03d1057cd97a
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider system audit logs capture
               account creation, modification, enabling, disabling, and removal.
             provided:
-            - uuid: CSP253bb5-0c34-4d1d-a542-69b99d740bd6
+            - uuid: CSPcd4306-4a73-49d2-8f0f-4b43bc61d44c
               description: Cloud service provider system auditing captures specific
-                events. (Random Content Follows) Events. provider specific provider
-                Cloud captures service Cloud system Cloud auditing Cloud.
+                events. (Random Content Follows) Cloud system provider service events.
+                specific auditing service auditing.
               exportable: true
             responsibilities:
-            - uuid: CSP874104-ed4b-423f-b764-7a4befca5ecb
-              provided-uuid: CSP253bb5-0c34-4d1d-a542-69b99d740bd6
+            - uuid: CSPeedda8-fc91-4f65-bb6b-a95cf8fb27f9
+              provided-uuid: CSPcd4306-4a73-49d2-8f0f-4b43bc61d44c
               description: Audit logs capture events identified in the cloud service
                 provider auditing policy.
               exportable: true
-      - uuid: CSP228ada-6ad6-449f-896f-759e7104819d
+      - uuid: CSP0c3066-d51b-4ea0-854e-65b922a36ded
         control-id: ac-2.5
         statements:
-        - uuid: CSP919c94-2a45-46f3-b24d-b13e57903adc
+        - uuid: CSP693eb2-42b9-45b7-b329-84c6f2586f2c
           statement-id: ac-2.5
           by-components:
-          - uuid: CSPee8c5b-040d-4f11-82b5-34d14024b9b7
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP6a47d2-04b1-45d6-9a01-8f9a4c2376c0
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider requires users to log
               out if 5 minutes of inactivity will occur or if they are leaving their
               PC, laptop, or any networked device.
             provided:
-            - uuid: CSP3f9706-bd57-4af5-924c-4f86c0da20ed
+            - uuid: CSPa25e08-57d0-4fa7-a7a2-c5b8db199062
               description: Cloud service provider requires users to log out from their
                 systems if they are going to be inactive for a specific time frame
-                or if they are leaving their systems. (Random Content Follows) Time
-                log time systems. they time time if frame out if.
+                or if they are leaving their systems. (Random Content Follows) To
+                their be systems systems. service their systems. users.
               exportable: true
             responsibilities:
-            - uuid: CSP52a5ba-2bc6-4b66-ad6d-015d91af712e
-              provided-uuid: CSP3f9706-bd57-4af5-924c-4f86c0da20ed
+            - uuid: CSPdf17e5-344d-4e67-a122-3181ec99bd8f
+              provided-uuid: CSPa25e08-57d0-4fa7-a7a2-c5b8db199062
               description: Users are required to log out of their cloud service provider
                 systems.
               exportable: true
-      - uuid: CSPf3f75d-be4a-4a2e-a6ef-5b9d886104e9
+      - uuid: CSP1f0763-29fe-4338-b5d7-029482d10824
         control-id: ac-3
         statements:
-        - uuid: CSP252715-19e3-4086-bc26-7d75e039e1dc
+        - uuid: CSPc49ed8-f419-4476-8ae1-e57f883a9e2d
           statement-id: ac-3
           by-components:
-          - uuid: CSP8bfdd1-37e3-4d5c-8227-d75b2fe094c6
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPc53d02-f739-4b3d-b276-1803c1d03ede
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider enforces access to
               the system by assigning users to groups within the Active Directory
               domain.
             provided:
-            - uuid: CSP81be3b-32c2-4a3c-9178-ef0f09774949
+            - uuid: CSP2f027f-d0e2-4166-9a8d-202e7309a8f6
               description: The cloud service provider enforces system access by user
-                groups in Active Directory. (Random Content Follows) Cloud system
-                Directory. system Directory. in cloud Directory..
+                groups in Active Directory. (Random Content Follows) Enforces in groups
+                by service service.
               exportable: true
             responsibilities:
-            - uuid: CSPba55fb-02ca-469a-b3e9-20f535ffb8e4
-              provided-uuid: CSP81be3b-32c2-4a3c-9178-ef0f09774949
+            - uuid: CSP87c482-bb48-426d-bfe2-4592c8e117a0
+              provided-uuid: CSP2f027f-d0e2-4166-9a8d-202e7309a8f6
               description: Automation is used to enforce access to cloud service provider
                 system.
               exportable: true
-      - uuid: CSP8d9514-afb6-4d1b-93ef-dc39735f52a7
+      - uuid: CSP804081-7733-458d-884f-3e282aa5a8aa
         control-id: ac-6
         statements:
-        - uuid: CSP664532-2d86-4b63-92a8-6039d3b823ce
+        - uuid: CSP8c98a3-0e70-474c-83cd-49153dc22664
           statement-id: ac-6
           by-components:
-          - uuid: CSPe6eec9-17cf-48e3-9ee8-a9950e3f3bf7
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP2247db-fd76-4fd3-8de0-62270048eb1a
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider users are only provided
               necessary privileges to complete their tasks, and this is enforced by
               AD group/role membership.
             provided:
-            - uuid: CSP09fd08-228b-43cb-9f07-ff30ff87b26c
+            - uuid: CSP625e18-c840-4292-9166-0a28573021b7
               description: Automation has been implemented to enforce minimum cloud
                 service provider user privileges associated with group/role membership.
-                (Random Content Follows) Associated to implemented enforce minimum
-                Automation been associated user enforce has with.
+                (Random Content Follows) To enforce cloud implemented group/role service
+                with group/role has been with provider.
               exportable: true
             responsibilities:
-            - uuid: CSPb9e815-8dec-44c0-ae8b-b4854e4e38d4
-              provided-uuid: CSP09fd08-228b-43cb-9f07-ff30ff87b26c
+            - uuid: CSP68c83f-0067-4266-9dc2-d44882f5715b
+              provided-uuid: CSP625e18-c840-4292-9166-0a28573021b7
               description: Minimum user privileges are enforced by the cloud service
                 provider.
               exportable: true
-      - uuid: CSP05a826-d135-4124-8bbf-3c254e523b54
+      - uuid: CSP77879e-c507-4ee1-a42a-3c87018d4329
         control-id: ac-6.1
         statements:
-        - uuid: CSPa1ec26-cc64-4ba6-9263-0126f65a4eed
+        - uuid: CSP69963f-431d-4a52-9319-9c11e0b7af99
           statement-id: ac-6.1
           by-components:
-          - uuid: CSPa695a0-5a81-4ecd-8c11-1aa1d153dbab
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP8b54ac-04f1-48dc-8830-7c54b6dd23fa
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: "DO NOT SHARE - Cloud service provider user access to the\
               \ system and privileges are enforced by assignment to groups within\
               \ the Active Directory domain. Authorized access will be permitted for\
@@ -619,48 +615,49 @@ shared-responsibility-definition:
               \ for events to be audited, and establish intrusion detection parameters;\
               \ and\n (b) Review access control lists.\n          "
             provided:
-            - uuid: CSP275525-f58d-48bb-983c-e3d3f5e7b021
+            - uuid: CSPda3d93-817b-4504-b5e1-5e91d4ce86a9
               description: The cloud service provider system administrators have permissions
-                to conduct role based actions. (Random Content Follows) Cloud system
-                service have conduct cloud role The administrators.
+                to conduct role based actions. (Random Content Follows) System have
+                have cloud permissions system based to conduct actions. provider cloud
+                provider.
               exportable: true
             responsibilities:
-            - uuid: CSP7f92ec-1466-49fe-a14e-a4eb22461671
-              provided-uuid: CSP275525-f58d-48bb-983c-e3d3f5e7b021
+            - uuid: CSPaf8a98-ce68-41bb-9d6f-bbd0d5de2631
+              provided-uuid: CSPda3d93-817b-4504-b5e1-5e91d4ce86a9
               description: Cloud service provider system administrators have privileges
                 to perform certain actions.
               exportable: true
-      - uuid: CSP6d6d6a-e74b-41f9-9d64-3d51622935d2
+      - uuid: CSP695a93-5153-4646-a914-b255656b1c72
         control-id: ac-6.10
         statements:
-        - uuid: CSP9fb5a6-f7a0-4a7a-8a21-1669559ec810
+        - uuid: CSP851a76-60c1-486f-8b01-96c00addb45e
           statement-id: ac-6.10
           by-components:
-          - uuid: CSP26a381-1103-41d8-8caa-345778ff60af
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP425377-8803-4afc-9473-bfd35dcac20e
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Only cloud service provider system administrators
               can execute privileged functions. This is enforced by AD group/role
               membership.
             provided:
-            - uuid: CSP98c908-f60c-4d2d-8200-e7b76635337c
+            - uuid: CSPf972de-ffe4-49b6-aee6-98a03a4ac8d3
               description: Automation I used to enforce cloud service provider privileged
-                function execution. (Random Content Follows) Function provider used
-                function Automation function privileged privileged to.
+                function execution. (Random Content Follows) Cloud I privileged I
+                function enforce used to to to.
               exportable: true
             responsibilities:
-            - uuid: CSP31c57d-6e37-44e1-9ce5-0b245114d65d
-              provided-uuid: CSP98c908-f60c-4d2d-8200-e7b76635337c
+            - uuid: CSP7cbe98-00de-4960-b65d-efe6628fe6a7
+              provided-uuid: CSPf972de-ffe4-49b6-aee6-98a03a4ac8d3
               description: Group/role function execution is enforced by the cloud
                 service provider.
               exportable: true
-      - uuid: CSPa935fd-66e8-4c2c-b0b4-abd56205aa32
+      - uuid: CSP38aec1-9c11-4165-8f76-e014ef7162ff
         control-id: ac-6.2
         statements:
-        - uuid: CSP79fed3-252f-4634-b679-f4cae45dd793
+        - uuid: CSPa8cb2f-d588-44df-a927-485273b40176
           statement-id: ac-6.2
           by-components:
-          - uuid: CSPd78ebe-44f5-4288-812e-3d49ebb5e207
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP8e04ce-0fe7-4994-b5c7-d8c8a1fd284a
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: 'DO NOT SHARE - Cloud service provider system administrators
               with access to establish system accounts, configure access authorizations
               (i.e., permissions, privileges), configure settings for events to be
@@ -668,264 +665,260 @@ shared-responsibility-definition:
               to access control lists use non-privileged accounts or roles when accessing
               non-security functions. '
             provided:
-            - uuid: CSPb0a6ab-b1ad-4b48-b812-da1c60b25e09
+            - uuid: CSPc7b99c-6a89-4973-b9d0-ddde2b0dbcc2
               description: The cloud service provider system administrators are required
                 to use non-privileged accounts or roles when conducting specific actions.
-                (Random Content Follows) When to or or use cloud.
+                (Random Content Follows) Service or administrators The provider cloud
+                required are use use non-privileged to conducting specific.
               exportable: true
             responsibilities:
-            - uuid: CSPc8f983-623c-47ed-ba45-5d7fb18dd75e
-              provided-uuid: CSPb0a6ab-b1ad-4b48-b812-da1c60b25e09
+            - uuid: CSP0e5f7c-cf9a-474d-a26d-13a422bc448f
+              provided-uuid: CSPc7b99c-6a89-4973-b9d0-ddde2b0dbcc2
               description: Cloud service provider system administrators are required
                 to use non-privileged accounts for non-privileged functions.
               exportable: true
-      - uuid: CSPbc3c4a-f13f-4d52-b0d9-9a6d69f01014
+      - uuid: CSPb46b05-7379-4a2c-9ac9-0df3ce30ef1b
         control-id: ac-6.5
         statements:
-        - uuid: CSPb5def9-1b53-4728-a1ab-fdfafe692fdc
+        - uuid: CSP38c99d-dd1a-4135-89b6-47862d59b223
           statement-id: ac-6.5
           by-components:
-          - uuid: CSP2c8744-1e5d-4d2c-8ce1-31e92045ec1e
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP4b68e9-7cef-40ff-a95e-ecaefe66c8cb
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Only cloud service provider system administrators
               have privileged accounts.
             provided:
-            - uuid: CSP0abad9-8387-499f-ac0b-74181f5b01b3
+            - uuid: CSP53221b-c0fb-4eea-8e56-007f7a76a69a
               description: Cloud service provider privileged accounts are associated
-                with specific roles. (Random Content Follows) Service service specific
-                roles. roles. specific provider.
+                with specific roles. (Random Content Follows) With specific accounts
+                specific provider Cloud Cloud provider.
               exportable: true
             responsibilities:
-            - uuid: CSP38396f-79f4-4dd8-8e3b-b5e7fee427f1
-              provided-uuid: CSP0abad9-8387-499f-ac0b-74181f5b01b3
+            - uuid: CSP6ef575-bc15-45d5-823b-489e6b8134f6
+              provided-uuid: CSP53221b-c0fb-4eea-8e56-007f7a76a69a
               description: Privileged cloud service provider account holders have
                 specific roles.
               exportable: true
-      - uuid: CSPf5b7bf-aa18-46ce-b8e0-891dc83d8c9e
+      - uuid: CSP3e35f6-37b8-4b12-aa80-bb3450a09311
         control-id: ac-6.7
         statements:
-        - uuid: CSP6c427b-a5e9-4541-85ae-b813212efcc8
+        - uuid: CSPae275a-d6b3-4a74-adf2-0e268ce2cbf7
           statement-id: ac-6.7_smt.a
           by-components:
-          - uuid: CSPc63c78-cee7-46f5-8057-d28490b0c1e3
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP9aeccf-ee0e-4a17-814a-e49a7aa1f129
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider system administrator
               privileges are reviewed every 30 days.
             provided:
-            - uuid: CSPd6071d-cfd5-4acf-8035-5285a2250858
+            - uuid: CSP242218-06b4-44a0-8395-b680c9c0722e
               description: Cloud service provider system administrator privileges
                 are reviewed within a specific time frame. (Random Content Follows)
-                System provider Cloud privileges are privileges reviewed provider
-                Cloud system are administrator within.
+                Specific provider privileges are administrator time Cloud a.
               exportable: true
             responsibilities:
-            - uuid: CSP4d388c-494a-47d5-9195-febdb6c37677
-              provided-uuid: CSPd6071d-cfd5-4acf-8035-5285a2250858
+            - uuid: CSPd3d64f-67db-4070-a74d-790b79d5ea32
+              provided-uuid: CSP242218-06b4-44a0-8395-b680c9c0722e
               description: System administrator privileges review time frame follows
                 cloud service provider policy.
               exportable: true
-        - uuid: CSPbf87e3-b56e-4487-9ee0-de7d877ec10e
+        - uuid: CSPbe70cd-676a-49f0-bc11-b14babac55f9
           statement-id: ac-6.7_smt.b
           by-components:
-          - uuid: CSPdf0a06-3177-4066-9413-09f9c7c316bf
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP9ed954-c00e-48c7-bea0-0cef2b2cfe28
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider system administrator
               privileges are reassigned or removed, if necessary, to correctly reflect
               organizational mission and business needs.
             provided:
-            - uuid: CSP87447c-d904-45ab-b329-d391d45a3992
+            - uuid: CSP001268-a652-478c-a9b0-84313cb8e2e7
               description: System administrator privileges are modified to meet cloud
-                service provider business needs. (Random Content Follows) System to
-                modified service business administrator.
+                service provider business needs. (Random Content Follows) Business
+                needs. meet System administrator service to needs. service administrator.
               exportable: true
             responsibilities:
-            - uuid: CSPafe76b-6add-4dd7-8514-b25b415b5b40
-              provided-uuid: CSP87447c-d904-45ab-b329-d391d45a3992
+            - uuid: CSP664ca7-835c-4869-a07a-fcfc241fdfd1
+              provided-uuid: CSP001268-a652-478c-a9b0-84313cb8e2e7
               description: Cloud service provider system administrator privileges
                 are modified as needed.
               exportable: true
-      - uuid: CSPa21e1e-5bbe-4c9f-9000-59dd23ce2192
+      - uuid: CSPc51d0e-3327-40a0-bb4a-5ee0f3520393
         control-id: ac-6.9
         statements:
-        - uuid: CSPc62727-33c0-4925-9023-308fbd33d8b0
+        - uuid: CSP28d053-041e-44b6-89a7-efa90f3359e5
           statement-id: ac-6.9
           by-components:
-          - uuid: CSP7f707a-1a02-4ddf-832a-dda68c0da18e
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPe7b07c-2918-4373-a5f4-8649790852e5
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider system administrator
               privileged functions are captured by the system audit logs.
             provided:
-            - uuid: CSP93bbb2-0775-4d84-8086-c8fa5bcb6a8b
+            - uuid: CSPf3f8f2-8268-41a5-b87e-b9f81d23c028
               description: System audit logs capture cloud service provider system
-                administrator functions. (Random Content Follows) Logs functions.
-                administrator functions. provider functions. logs service service
-                system provider System.
+                administrator functions. (Random Content Follows) Provider administrator
+                provider logs capture capture.
               exportable: true
             responsibilities:
-            - uuid: CSPdbbf38-815d-424d-91e9-b2c3dfca10dc
-              provided-uuid: CSP93bbb2-0775-4d84-8086-c8fa5bcb6a8b
+            - uuid: CSP80317c-1e34-4c04-b745-f04e61053e3d
+              provided-uuid: CSPf3f8f2-8268-41a5-b87e-b9f81d23c028
               description: System audit logs capture cloud service provider privileged
                 functions.
               exportable: true
-      - uuid: CSPb57eac-ceb9-456e-929d-ee645125fad2
+      - uuid: CSP4b4be2-b014-413a-b4f5-16b37537abf7
         control-id: ac-7
         statements:
-        - uuid: CSP626408-4cd3-4453-8ebf-8579b5a95559
+        - uuid: CSP4425f6-91bf-4ec8-9111-f13113a39c2a
           statement-id: ac-7_smt.a
           by-components:
-          - uuid: CSP231e6f-8adc-42d3-a30c-cfd315cc6b7b
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPb6a020-237f-4b6b-81ac-d3d14c7c2ef2
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider system enforces 5 invalid
               login attempts within a 15 minute time period.
             provided:
-            - uuid: CSPc5bc1e-b69c-4583-8ae9-2f4009ffae0c
+            - uuid: CSP15bdac-468b-4d7a-82b6-49a445f9c7cd
               description: Cloud service provider system enforces a specific number
                 of invalid login attempts within a specific time frame. (Random Content
-                Follows) Login number frame. within specific specific a a time provider
-                specific time.
+                Follows) Frame. of frame. of service enforces.
               exportable: true
             responsibilities:
-            - uuid: CSPca2266-5809-4449-b99f-fc63d8c2ec23
-              provided-uuid: CSPc5bc1e-b69c-4583-8ae9-2f4009ffae0c
+            - uuid: CSP94bf8a-5496-490d-a599-13ed73f4b024
+              provided-uuid: CSP15bdac-468b-4d7a-82b6-49a445f9c7cd
               description: Cloud service provider system enforces invalid login attempts
                 within a time frame.
               exportable: true
-        - uuid: CSP094230-5f6e-4255-85fc-0bcd352e88e1
+        - uuid: CSP8ea98f-a094-4329-941d-fe30471973af
           statement-id: ac-7_smt.b
           by-components:
-          - uuid: CSP440495-b54d-4abd-b80e-83bef99bd403
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPb8f744-bc61-46a8-a700-6d1212d717e0
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: 'DO NOT SHARE - When the user exceeds 5 invalid login attempts
               the cloud service provider user account or node is automatically locked
               for 60 minutes and the system administrator is notified. '
             provided:
-            - uuid: CSP41fd66-35a3-4fcd-a3d9-31f2e7ee7a4c
+            - uuid: CSP7fddb1-c1a5-4d6e-8ebc-afbc577f62e7
               description: System locks the cloud service provider user account for
                 a specific time frame and sends notification when the number of invalid
-                login attempts exceed the threshold. (Random Content Follows) Number
-                of locks notification the the System cloud login login invalid provider
-                when login.
+                login attempts exceed the threshold. (Random Content Follows) Cloud
+                attempts cloud time provider login account when sends a number exceed
+                login.
               exportable: true
             responsibilities:
-            - uuid: CSP86b0fc-1374-4024-9aee-6eb7aeb37416
-              provided-uuid: CSP41fd66-35a3-4fcd-a3d9-31f2e7ee7a4c
+            - uuid: CSP2a87a6-1593-4e8f-88bd-5e56060a1baa
+              provided-uuid: CSP7fddb1-c1a5-4d6e-8ebc-afbc577f62e7
               description: When the user exceeds the number of invalid login attempts
                 allowed the account is locked for a specific time frame and a notification
                 is sent.
               exportable: true
-      - uuid: CSPc41b7d-a36e-4e05-8399-951203501c36
+      - uuid: CSP2f4787-b97c-4a67-86df-5df9afe2eef6
         control-id: ac-8
         statements:
-        - uuid: CSPcfba9f-5e76-4bf8-8325-fead7155f0be
+        - uuid: CSPa5e4bc-5668-44a9-b907-69a0900c42c5
           statement-id: ac-8_smt.a
           by-components:
-          - uuid: CSP13de6b-e8c0-4679-9fbb-ea289234ae09
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP19ad04-3770-4560-904a-47082422114a
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: 'DO NOT SHARE - Cloud service provider system use notification
               is implemented at network, server, and application login. '
             provided:
-            - uuid: CSPa3d5a1-8a73-4ba4-b77a-d663f544f034
+            - uuid: CSP61bb96-3e92-4413-8f39-d1b620717f3d
               description: System use notification has been implemented on cloud service
-                provider systems inside the network. (Random Content Follows) Service
-                the notification cloud the been the the notification.
+                provider systems inside the network. (Random Content Follows) Use
+                notification on been cloud network. notification has implemented.
               exportable: true
             responsibilities:
-            - uuid: CSPce93e6-a39b-46ed-a3b5-a11cdc5135be
-              provided-uuid: CSPa3d5a1-8a73-4ba4-b77a-d663f544f034
+            - uuid: CSPa20071-6672-43d7-944c-9c17ec180a91
+              provided-uuid: CSP61bb96-3e92-4413-8f39-d1b620717f3d
               description: System use notification has been implemented on cloud service
                 provider systems.
               exportable: true
-        - uuid: CSPde1042-b572-4269-90a3-e6bd3106b35e
+        - uuid: CSP0181f7-8a04-492a-b40d-37e702c1a465
           statement-id: ac-8_smt.b
           by-components:
-          - uuid: CSPc875ba-6fbe-42cb-82c4-c8f6cf5ebaa5
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP84be66-cd78-4690-80b3-6ac548fbddb8
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider system use notification
               is visible until the user logs in.
             provided:
-            - uuid: CSP403721-7be4-4cc7-82c2-cfaf0a7675d5
+            - uuid: CSPdf3a77-30cb-4ea0-9858-90bdbbe5270b
               description: System use notification is visible to the cloud service
-                provider user until they log in. (Random Content Follows) Cloud log
-                until until the the.
+                provider user until they log in. (Random Content Follows) They visible
+                they service provider use provider.
               exportable: true
             responsibilities:
-            - uuid: CSP205ef4-fcb1-4ceb-9b3d-74f0450ff932
-              provided-uuid: CSP403721-7be4-4cc7-82c2-cfaf0a7675d5
+            - uuid: CSP71a6ad-25b6-4e44-9848-3c6d7b65e67f
+              provided-uuid: CSPdf3a77-30cb-4ea0-9858-90bdbbe5270b
               description: System use notification has been implemented by the cloud
                 service provider.
               exportable: true
-        - uuid: CSPd06034-988a-4949-802b-96dcc9227bc0
+        - uuid: CSP45e1ab-6c98-4bba-8b99-b38be042d490
           statement-id: ac-8_smt.c
           by-components:
-          - uuid: CSP07e0ea-fdd4-4b7b-9152-9bd9bfae64df
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPc64221-0577-4841-a202-26618b3b1acf
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider, for public systems,
               will display the system use notification before granting access to the
               system. The system use notification  will include a description of the
               authorized use of the system.
             provided:
-            - uuid: CSP486cbc-ca3e-4039-9d9f-5d6692cc1096
+            - uuid: CSP4bd29a-f994-4763-9f76-bd3f3ccc0d32
               description: For public systems the cloud service provider will display
                 the system use notification prior to allowing access. The notification
                 will describe the authorized use of the system. (Random Content Follows)
-                To authorized use allowing For public describe notification display
-                the.
+                Authorized to service use provider authorized.
               exportable: true
             responsibilities:
-            - uuid: CSP1602c2-0342-4ff3-823c-cc5d281de459
-              provided-uuid: CSP486cbc-ca3e-4039-9d9f-5d6692cc1096
+            - uuid: CSP4d2b6c-e181-432e-8384-c4f813bd9bdd
+              provided-uuid: CSP4bd29a-f994-4763-9f76-bd3f3ccc0d32
               description: 'For public systems the cloud service provider system use
                 notification describing the use of the system will be displayed '
               exportable: true
-      - uuid: CSP4d04f2-8d41-46ea-af55-d7005ad996d6
+      - uuid: CSP32c473-9b01-4b31-9103-c45421dec0b7
         control-id: au-12
         statements:
-        - uuid: CSP58d181-0765-43a2-9838-bf2e1a2df378
+        - uuid: CSPe12e63-7480-4b8b-9769-d258010bb499
           statement-id: au-12_smt.a
           by-components:
-          - uuid: CSPe4e78a-208a-4313-a8d2-891275cfa4b2
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP692b5d-8d97-4cf8-9bf1-bafffb5d6cbf
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Audit records can be generated for cloud service
               provider system audit logs that capture system access, system accounts,
               system configuration changes, and file change events on all system components.
             provided:
-            - uuid: CSP52e0e7-5f37-4242-a607-e2a0ee21d9cd
+            - uuid: CSP907674-598f-4ef1-add1-acb4bcc32abe
               description: System audit log records can be generated for specific
                 cloud service provider events captured by the audit logs. (Random
-                Content Follows) Can cloud System audit events generated service audit
-                captured the.
+                Content Follows) Audit be be can records by cloud logs. be for specific.
               exportable: true
             responsibilities:
-            - uuid: CSPc1e79a-a756-4db8-80db-76bde8ed442d
-              provided-uuid: CSP52e0e7-5f37-4242-a607-e2a0ee21d9cd
+            - uuid: CSP73020e-643b-4d4a-92d5-74308f815e49
+              provided-uuid: CSP907674-598f-4ef1-add1-acb4bcc32abe
               description: Audit records can be generated for events captured by the
                 cloud service provider system audit logs.
               exportable: true
-        - uuid: CSPa526d1-7d49-4d7f-a1f2-3139f4ab9ef5
+        - uuid: CSP46cd46-b65a-4fb6-8ada-34995ee54dc8
           statement-id: au-12_smt.b
           by-components:
-          - uuid: CSPb2d502-1f06-42b8-bcf3-4797e68b58a6
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPe4dac0-949b-412f-a9a9-200cc887dcce
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider system administrators
               are allowed to select event types that are to be logged by all components
               of the system.
             provided:
-            - uuid: CSPcaf9e7-00f5-4f1a-953d-a58805d2e7ed
+            - uuid: CSP903e19-f135-4bd7-9602-66b72d32cd09
               description: System administrators select cloud service provider event
-                types to be logged by the system. (Random Content Follows) Service
-                by select select the service logged be System logged be.
+                types to be logged by the system. (Random Content Follows) Event by
+                be service be logged event.
               exportable: true
             responsibilities:
-            - uuid: CSPfc04d6-252b-4115-b167-8a9b03f76323
-              provided-uuid: CSPcaf9e7-00f5-4f1a-953d-a58805d2e7ed
+            - uuid: CSP7db0e7-6aca-4027-9d6c-596f673fd9bc
+              provided-uuid: CSP903e19-f135-4bd7-9602-66b72d32cd09
               description: System administrators select cloud service provider system
                 event types to be logged.
               exportable: true
-        - uuid: CSP768b9d-dc3b-46cb-8240-e4ad80189fe9
+        - uuid: CSPb9446c-7ad5-4210-9efc-0d70750ac475
           statement-id: au-12_smt.c
           by-components:
-          - uuid: CSP16501c-d447-4038-921d-069a57177ac3
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP0d9d7a-c061-47f9-b6fb-a62d24cbc793
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider system audit logs are
               generated for logon and log off; invalid login attempts; account creation,
               deletion, and modification; system configuration changes; and stored
@@ -933,473 +926,476 @@ shared-responsibility-definition:
               type of event occurred, when and where event occurred, source of the
               event, outcome of the event, and any user associated with the event.
             provided:
-            - uuid: CSP625a9c-e35c-480f-9dba-21ce24f83986
+            - uuid: CSP2a394e-a35b-40c6-8b4d-b6646d3c8801
               description: System audit logs are generated for cloud service provider
                 specific system events and event information. (Random Content Follows)
-                Service are System audit and and generated cloud are specific.
+                Cloud information. logs information. information. cloud audit event
+                System.
               exportable: true
             responsibilities:
-            - uuid: CSP180d6d-40cc-45d5-ad3c-7ec4b929bf61
-              provided-uuid: CSP625a9c-e35c-480f-9dba-21ce24f83986
+            - uuid: CSP28600c-8e9a-4a17-910f-0e574b250c82
+              provided-uuid: CSP2a394e-a35b-40c6-8b4d-b6646d3c8801
               description: System audit logs are generated for select cloud service
                 provider system events.
               exportable: true
-      - uuid: CSPe13a55-cb85-4f0c-a18d-f033c2cb6d3e
+      - uuid: CSPc8cedd-c356-4e6b-889c-949ade58c2e6
         control-id: au-2
         statements:
-        - uuid: CSP0537a3-a56b-448b-84f4-ab669ff5fd45
+        - uuid: CSPa81d55-9c3d-4851-ac48-15c671bc6761
           statement-id: au-2_smt.a
           by-components:
-          - uuid: CSPb97442-6e7f-4e53-b459-1a9dbc615e22
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP54a99e-fb13-4c1c-8a65-cdb8d6037055
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud system provider system audit logs capture
               system access, system accounts, system configuration changes, and file
               change events.
             provided:
-            - uuid: CSP2545f0-1f66-46bb-ab83-bc5f68b49d61
+            - uuid: CSP48a89c-1ada-492c-8bd6-c3b2a7cce0a4
               description: System audit logs capture specific cloud service provider
-                auditable events. (Random Content Follows) Cloud service System auditable
-                events. cloud.
+                auditable events. (Random Content Follows) Service specific audit
+                specific auditable provider events. capture.
               exportable: true
             responsibilities:
-            - uuid: CSPc4ac43-b3df-4d52-b534-4c6b52c176fa
-              provided-uuid: CSP2545f0-1f66-46bb-ab83-bc5f68b49d61
+            - uuid: CSP3a7d41-4dc1-4829-abc4-8e762fb8b8b5
+              provided-uuid: CSP48a89c-1ada-492c-8bd6-c3b2a7cce0a4
               description: Audit logs record required cloud service provider auditable
                 events.
               exportable: true
-        - uuid: CSP1a0aef-bd67-419c-8459-d66c8c37c05e
+        - uuid: CSP13a8ff-8410-45fc-a0f5-e6fe8651b0fd
           statement-id: au-2_smt.b
           by-components:
-          - uuid: CSP974ba1-39d8-4d0c-9c73-3a33a9ccb7b8
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPe160b8-234a-4471-bcb6-568a66368054
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud system provider system auditable events
               are coordinated with Office of Information Security.
             provided:
-            - uuid: CSPb58a9a-2e4b-443c-8850-79f26d838557
+            - uuid: CSP1da632-3ec6-4f60-9251-18a0f92d186c
               description: Auditable cloud service provider events are synchronized
-                with the IT security office. (Random Content Follows) Service with
-                provider are with IT events service IT office..
+                with the IT security office. (Random Content Follows) Provider with
+                the are synchronized synchronized synchronized are service.
               exportable: true
             responsibilities:
-            - uuid: CSP1648ec-05e6-44b6-92e5-df60808ba7ba
-              provided-uuid: CSPb58a9a-2e4b-443c-8850-79f26d838557
+            - uuid: CSP661416-1455-45f4-ac43-91e3c66fbc79
+              provided-uuid: CSP1da632-3ec6-4f60-9251-18a0f92d186c
               description: Auditable cloud service provider events are reviewed by
                 the IT security office.
               exportable: true
-        - uuid: CSPa7e708-a451-463f-9b64-a48b47ec5d99
+        - uuid: CSP967970-a2f5-4459-99ed-7e2ff8bbb321
           statement-id: au-2_smt.c
           by-components:
-          - uuid: CSP1096b3-4030-4341-8d3a-432553b3c62e
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP057d5b-19ef-4d29-b93b-18cf1848723c
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: "DO NOT SHARE - Cloud system provider system logon and log\
               \ off; invalid login attempts; account creation, deletion, and modification;\
               \ system configuration changes; and stored file change events are logged\
               \ when they occur.      \n             "
             provided:
-            - uuid: CSP3e9b9d-d440-4718-b505-4d81e4dc833f
+            - uuid: CSPb25803-8a4d-4392-93f4-fef3c9bcdf42
               description: System logs specific cloud service provider events when
-                they occur. (Random Content Follows) System when service logs provider
-                when System service logs they.
+                they occur. (Random Content Follows) Logs provider cloud logs they
+                events service.
               exportable: true
             responsibilities:
-            - uuid: CSP903752-bfd5-439a-86e5-d81ad06eef34
-              provided-uuid: CSP3e9b9d-d440-4718-b505-4d81e4dc833f
+            - uuid: CSP4dd9d3-e206-42b6-bfce-efed2790a1be
+              provided-uuid: CSPb25803-8a4d-4392-93f4-fef3c9bcdf42
               description: System logs specific cloud service provider events in real
                 time.
               exportable: true
-        - uuid: CSPe8910f-55db-4bab-bca5-304d00321ab5
+        - uuid: CSPfacb09-79aa-4418-879c-8a5d6d25f2a2
           statement-id: au-2_smt.d
           by-components:
-          - uuid: CSP9f9738-82ea-4159-912f-74c10f90a039
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP8d0895-00fe-4dac-a50e-683862c4ec6b
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud system provider rationale for selecting
               specific auditable events to be logged is documented in the SSP.
             provided:
-            - uuid: CSPbf7fdc-73fd-44d8-8c1e-92b2473c9f23
+            - uuid: CSP1b44a2-3581-4063-978d-dc28fa9a0d5a
               description: Justification for selecting specific cloud service provider
                 auditable events to be logged is documented in the system security
-                plan. (Random Content Follows) Specific documented Justification be
-                the is security auditable.
+                plan. (Random Content Follows) Provider specific security system to
+                auditable provider specific to selecting specific Justification security.
               exportable: true
             responsibilities:
-            - uuid: CSPb5ed70-aa25-493d-b16b-6b6d3b901379
-              provided-uuid: CSPbf7fdc-73fd-44d8-8c1e-92b2473c9f23
+            - uuid: CSP07fa12-d43b-496f-95e9-87d0297d2937
+              provided-uuid: CSP1b44a2-3581-4063-978d-dc28fa9a0d5a
               description: Reason for selecting specific cloud service provider auditable
                 events is documented.
               exportable: true
-        - uuid: CSP7d2e72-cd81-4f44-8d14-c40837377890
+        - uuid: CSP8a4fe3-4800-42ca-86a3-3790fe9a174b
           statement-id: au-2_smt.e
           by-components:
-          - uuid: CSP4722c7-5b4f-4bf1-b210-0885bf8dee7c
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP6e5a46-14db-43e6-87d3-81f8f5a0e089
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: 'DO NOT SHARE - Cloud system provider system auditable events
               are reviewed and updated annually. '
             provided:
-            - uuid: CSP88e8bf-ae62-4a2c-9a07-2bad3e0047ac
+            - uuid: CSP58cf91-8a1c-4825-9396-37ef20b8fda0
               description: Cloud system auditable events are reviewed and updated
-                at a specific time frame. (Random Content Follows) Cloud events a
-                events time are auditable updated.
+                at a specific time frame. (Random Content Follows) And updated reviewed
+                are system a reviewed at.
               exportable: true
             responsibilities:
-            - uuid: CSPffc39a-acea-48f2-a24b-c80e6ec43b83
-              provided-uuid: CSP88e8bf-ae62-4a2c-9a07-2bad3e0047ac
+            - uuid: CSP44d14b-5cb6-4b48-9bf1-7fc141364c9c
+              provided-uuid: CSP58cf91-8a1c-4825-9396-37ef20b8fda0
               description: System auditable cloud service provider events are reviewed
                 and updated.
               exportable: true
-      - uuid: CSP0593f9-49e9-45cc-9cc2-11c0591ba41f
+      - uuid: CSP7dacb9-36ef-464a-bf03-f48d5ac63b0e
         control-id: au-3
         statements:
-        - uuid: CSPaf33b3-d08b-47c8-955a-cbec7d762ee1
+        - uuid: CSPae1fa3-f696-4c22-aab0-2d57382e6224
           statement-id: au-3
           by-components:
-          - uuid: CSPa77b8d-944a-4855-88c8-437b5f04d4d5
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP1c9583-1ba7-46e2-a099-4220866d7544
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud system provider system audit logs contain
               type of event occurred, when and where event occurred, source of the
               event, outcome of the event, and any user associated with the event.
             provided:
-            - uuid: CSP4559bb-74a3-4e8c-ace7-baf699f98982
+            - uuid: CSP6b5192-f4d8-4493-85fb-c54619c893ed
               description: System audit logs contain more detailed cloud service provider
-                event information. (Random Content Follows) Event audit logs audit
-                cloud logs.
+                event information. (Random Content Follows) Cloud event System detailed
+                logs event service detailed.
               exportable: true
             responsibilities:
-            - uuid: CSPd29ac6-9ec8-46f5-86c7-935013e0ba90
-              provided-uuid: CSP4559bb-74a3-4e8c-ace7-baf699f98982
+            - uuid: CSP4bedb2-958b-450e-af26-c1a4f556c153
+              provided-uuid: CSP6b5192-f4d8-4493-85fb-c54619c893ed
               description: System audit logs contain specific cloud service provider
                 event information.
               exportable: true
-      - uuid: CSP21f684-2b52-40fc-9fd0-5d7f0cf16ef5
+      - uuid: CSP20d2ff-d5cd-453c-af94-41204e10026a
         control-id: au-3.1
         statements:
-        - uuid: CSP48eb38-7589-4363-a5f8-b442761921ee
+        - uuid: CSP29e638-5acd-4eb7-ac40-11f2cc2f8114
           statement-id: au-3.1
           by-components:
-          - uuid: CSP37859a-5ffe-4081-969d-70684d1ca7ae
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP7ac5dd-a034-4c91-88a9-b2af5fa8a7cf
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider system audit logs contain
               user IP address and file location information.
             provided:
-            - uuid: CSPb804a9-f7f0-47cb-8e9b-cc0cdfd17353
+            - uuid: CSP046f14-d6b0-41eb-8ac6-6f28faac23af
               description: Cloud system provider audit logs contain user and file
-                information. (Random Content Follows) File contain file user and user.
+                information. (Random Content Follows) Audit audit file provider contain
+                system Cloud audit.
               exportable: true
             responsibilities:
-            - uuid: CSP21286b-ea58-4c39-a084-272b2c64f47d
-              provided-uuid: CSPb804a9-f7f0-47cb-8e9b-cc0cdfd17353
+            - uuid: CSPa24e35-75a1-446f-a51c-3d8fd25b6bd5
+              provided-uuid: CSP046f14-d6b0-41eb-8ac6-6f28faac23af
               description: System audit logs contain cloud service provider specific
                 information.
               exportable: true
-      - uuid: CSP289bb7-65ee-4953-ad42-c96ed5d14e0d
+      - uuid: CSP199c5e-11a8-493d-81b1-b2ef6d128811
         control-id: ia-2
         statements:
-        - uuid: CSP06ace1-688b-4d34-aa02-acad078693ec
+        - uuid: CSP562654-0e78-4fa7-8311-4a38947585f9
           statement-id: ia-2
           by-components:
-          - uuid: CSPb002f3-ceb5-43cb-ae89-c7ab09d02133
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP09968c-a806-46fa-824e-dcff17b21f8e
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider will employ PIV cards
               to identify and authenticate users.
             provided:
-            - uuid: CSP4a2ed3-eaaa-4e1e-a069-09dfc8a743b1
+            - uuid: CSP44721c-c99d-434d-96f2-9021d178cc7b
               description: PIV cards are employed for identifying and authenticating
-                cloud service provider users. (Random Content Follows) Users. cards
-                PIV are employed service for PIV provider cloud cloud and employed
-                users..
+                cloud service provider users. (Random Content Follows) Are cloud provider
+                and users. cards employed for employed cards are.
               exportable: true
             responsibilities:
-            - uuid: CSPd805ea-2fbb-4469-8b49-8d86f40628f6
-              provided-uuid: CSP4a2ed3-eaaa-4e1e-a069-09dfc8a743b1
+            - uuid: CSP3ffaae-c8f3-4e6a-a353-2b654d686dc1
+              provided-uuid: CSP44721c-c99d-434d-96f2-9021d178cc7b
               description: PIV cards are employed for cloud service provider user
                 identification and authentication.
               exportable: true
-      - uuid: CSP821861-c450-4b77-b123-ed4cf6aeaabe
+      - uuid: CSP10c526-a564-45ae-890e-2fd59794b910
         control-id: ia-2.1
         statements:
-        - uuid: CSPf07512-98d9-4c1f-9620-7e047a57ff0c
+        - uuid: CSP30ff07-f7fe-4f1e-a59c-1d9b513e5d88
           statement-id: ia-2.1
           by-components:
-          - uuid: CSP0144b1-2c7d-441d-b969-762812ac9746
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP47a818-4d80-464d-ae94-ca77a5de65b3
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider employs PIV cards for
               access to privileged accounts.
             provided:
-            - uuid: CSPdadb6f-8c7c-4ac6-b19c-51517c39db83
+            - uuid: CSPc66e5e-d40b-4d6a-9b4b-7466e576782d
               description: PIV cards are required for cloud service provider privileged
-                account access. (Random Content Follows) Access. PIV service cloud
-                cards PIV cards account privileged are PIV access. account.
+                account access. (Random Content Follows) Cloud PIV service account
+                cloud for service service PIV cards provider required.
               exportable: true
             responsibilities:
-            - uuid: CSP445633-57a9-4853-89ab-6dbf420ee6a0
-              provided-uuid: CSPdadb6f-8c7c-4ac6-b19c-51517c39db83
+            - uuid: CSPfeeb15-0d04-46b0-b115-330b1887b300
+              provided-uuid: CSPc66e5e-d40b-4d6a-9b4b-7466e576782d
               description: PIV cards are implemented for cloud service provider privileged
                 account access.
               exportable: true
-      - uuid: CSPcb32a8-26b6-4e06-b3b1-fd88a42dd2e2
+      - uuid: CSPf072b3-292e-4b85-b9bd-035aec9573dc
         control-id: ia-2.12
         statements:
-        - uuid: CSP164696-58f6-483d-8e43-a19ef1853818
+        - uuid: CSPb216c9-6011-4b73-98c2-84f747c04912
           statement-id: ia-2.12
           by-components:
-          - uuid: CSPb89fd0-984f-4738-b864-b9904822a443
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPbf328c-41b0-4906-94a8-d56077a002b4
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider accepts and electronically
               verifies PIV cards .
             provided:
-            - uuid: CSP21bca7-4db7-4b0d-a2ef-6ed64e3f791b
+            - uuid: CSP66dd09-abb3-4672-9c93-d9f543967304
               description: PIV cards are accepted and verified by the cloud service
-                provider. (Random Content Follows) Service the PIV and verified accepted.
+                provider. (Random Content Follows) Provider. verified by PIV PIV by.
               exportable: true
             responsibilities:
-            - uuid: CSP2b2bed-8c40-460a-a3a6-f201a7255a02
-              provided-uuid: CSP21bca7-4db7-4b0d-a2ef-6ed64e3f791b
+            - uuid: CSP443b46-7ee5-429d-9f08-c3cf739919ad
+              provided-uuid: CSP66dd09-abb3-4672-9c93-d9f543967304
               description: PIV cards are accepted and confirmed by the cloud service
                 provider.
               exportable: true
-      - uuid: CSP1a20ac-d6f0-49b3-ac30-c63352fd9969
+      - uuid: CSPf29c85-bd6d-44b9-b17e-6042cc843b64
         control-id: ia-2.2
         statements:
-        - uuid: CSPf85f0d-e4b5-4b94-80b9-637a76832166
+        - uuid: CSP17c30d-8d7f-4576-b811-2d6891990da4
           statement-id: ia-2.2
           by-components:
-          - uuid: CSP49df96-f8dc-42e8-a96e-b948e95c5804
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP681a8a-7d3a-4186-9348-65e2ce0daadd
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider employs PIV cards for
               access to non-privileged accounts.
             provided:
-            - uuid: CSP300f41-9205-490e-885b-42d2d0ab7aba
+            - uuid: CSP35d0a3-3f45-4fa4-a692-313b676c61ac
               description: PIV cards are required for cloud service provider non-privileged
-                account access. (Random Content Follows) Non-Privileged provider for
-                required non-privileged access. cards required.
+                account access. (Random Content Follows) Piv provider non-privileged
+                required non-privileged service account are account.
               exportable: true
             responsibilities:
-            - uuid: CSPc810ef-2819-4e24-af50-cdf59b2a49e0
-              provided-uuid: CSP300f41-9205-490e-885b-42d2d0ab7aba
+            - uuid: CSPa2aaee-dba8-4975-ae5c-9871480a345a
+              provided-uuid: CSP35d0a3-3f45-4fa4-a692-313b676c61ac
               description: PIV cards are implemented for cloud service provider non-privileged
                 account access.
               exportable: true
-      - uuid: CSPe9fbad-ed2e-41c6-b9a0-43fa0dee7d73
+      - uuid: CSPed1251-248f-46ca-8f8e-dd09a75ef3d2
         control-id: ia-2.8
         statements:
-        - uuid: CSP2da519-8f2a-479a-ad35-cc3180bb9760
+        - uuid: CSP2c41c8-b42c-460d-ab9f-4e95366998d3
           statement-id: ia-2.8
           by-components:
-          - uuid: CSP7ff7e7-43a4-4d7a-b0f8-c382e5ebbe45
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPead2e4-0fce-45e8-8a68-d4559dad7927
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: 'DO NOT SHARE - Cloud service provider employs replay-resistant
               authentication mechanisms for access to privileged and non-privileged
               accounts. '
             provided:
-            - uuid: CSPb94279-f78d-430b-a4cb-b83a79a94635
+            - uuid: CSP75fbb2-825f-44ac-884f-6937b6da50aa
               description: Replay-resistant authentication mechanisms are required
                 for cloud service provider privileged and non-privileged account access.
-                (Random Content Follows) Are access. are service access. provider.
+                (Random Content Follows) Access. Replay-resistant required provider
+                for cloud are account account.
               exportable: true
             responsibilities:
-            - uuid: CSPd79027-812f-4c34-b969-b8efed20b7dd
-              provided-uuid: CSPb94279-f78d-430b-a4cb-b83a79a94635
+            - uuid: CSP275a93-fbb7-43cd-864d-287bb3c022ee
+              provided-uuid: CSP75fbb2-825f-44ac-884f-6937b6da50aa
               description: Replay-resistant authentication mechanisms are required
                 for cloud service provider account access.
               exportable: true
-      - uuid: CSP9a1b2f-4149-434a-84c6-1fbc1508a5dd
+      - uuid: CSP8cf9bb-a7c4-420e-9c2b-dc4485e28544
         control-id: ra-5
         statements:
-        - uuid: CSPc7fc1c-40d0-4acb-85fd-dddc882dcec1
+        - uuid: CSP330f60-97fc-41e5-bafe-c298234e7386
           statement-id: ra-5_smt.a
           by-components:
-          - uuid: CSPd433ff-8ca6-48ab-a273-4a4c590091be
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPcb093d-aa09-4685-9625-f3bb4ad929e2
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider system vulnerability
               scans are conducted monthly or when new moderate or high vulnerabilities
               are identified and reported by vendor.
             provided:
-            - uuid: CSP52e15f-fce4-400c-86b4-01cbb6745480
+            - uuid: CSPea58fd-ff0f-463e-be7c-825c9b9892ff
               description: Vulnerability scans on cloud service provider systems are
                 conducted during a specific time frame or when new vulnerabilities
-                are identified. (Random Content Follows) Conducted vulnerabilities
-                frame are identified. new.
+                are identified. (Random Content Follows) Identified. service vulnerabilities
+                cloud Vulnerability scans new service conducted new.
               exportable: true
             responsibilities:
-            - uuid: CSP434edc-d4eb-4b9b-a298-eb8eb975c003
-              provided-uuid: CSP52e15f-fce4-400c-86b4-01cbb6745480
+            - uuid: CSPb3b23b-ad2e-4cef-910d-356d8f78dfec
+              provided-uuid: CSPea58fd-ff0f-463e-be7c-825c9b9892ff
               description: System vulnerability scans are conducted by the cloud service
                 provider on a timely fashion or when new vulnerabilities are identified.
               exportable: true
-        - uuid: CSPe1000b-7eeb-4e59-8486-94290baa3659
+        - uuid: CSP02034b-9ffc-4a5a-8b78-448e9bc3f866
           statement-id: ra-5_smt.b
           by-components:
-          - uuid: CSP6f9fa4-dbb4-4dae-ae9a-753d69c61c81
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPb46838-265e-46e4-aa6a-d72d96d2db51
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider system vulnerabilities
               are identified using the Common Vulnerabilities and Exposures (CVE)
               naming convention.
             provided:
-            - uuid: CSPa03439-8532-4385-8733-a661c74808b3
+            - uuid: CSPbc54be-ab03-47b1-b0c3-ba8c0bb36b9c
               description: Unique IDs are used to identify cloud service provider
-                system vulnerabilities. (Random Content Follows) To are Unique IDs
-                cloud to service provider.
+                system vulnerabilities. (Random Content Follows) Ids identify identify
+                system system to to.
               exportable: true
             responsibilities:
-            - uuid: CSP6a7c06-85e1-43c0-8d6f-28be05087702
-              provided-uuid: CSPa03439-8532-4385-8733-a661c74808b3
+            - uuid: CSPfa95ff-3656-4df9-ba90-ed41b08185b3
+              provided-uuid: CSPbc54be-ab03-47b1-b0c3-ba8c0bb36b9c
               description: Standard vulnerability naming conventions are used to identify
                 cloud service provider system vulnerabilities.
               exportable: true
-        - uuid: CSPb0403f-7f54-43e0-b6e9-e4fd08057c1c
+        - uuid: CSP660f7c-8a45-4965-b8d1-8291eeed134c
           statement-id: ra-5_smt.c
           by-components:
-          - uuid: CSP425bf8-0f7e-477c-b414-caa9a3134181
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP7c585c-a2cd-4934-965b-ad995e1ab4d3
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider system vulnerability
               scan results are analyzed by the Security Operations Center and the
               applicable results are provided to the ISSO for remediation.
             provided:
-            - uuid: CSP28a2ed-52ec-4369-a4c6-b0f49d39b8f1
+            - uuid: CSP6bad35-7870-40b1-8db2-cb728569904c
               description: Vulnerability scans conducted on cloud service provider
                 systems are analyzed and the results are provided to appropriate personnel.
-                (Random Content Follows) And provided provided on the service the
-                results.
+                (Random Content Follows) Vulnerability results Vulnerability to appropriate
+                appropriate systems the.
               exportable: true
             responsibilities:
-            - uuid: CSPa81452-118f-4562-990e-e0e9b5da0cbc
-              provided-uuid: CSP28a2ed-52ec-4369-a4c6-b0f49d39b8f1
+            - uuid: CSP54f11a-063f-45bd-a1a7-e652712a7a14
+              provided-uuid: CSP6bad35-7870-40b1-8db2-cb728569904c
               description: Vulnerability scan results on cloud service provider systems
                 are analyzed and reported.
               exportable: true
-        - uuid: CSPc3b168-c44b-4a0e-8936-4b0d19e23e0d
+        - uuid: CSP6b4f88-5ce5-417a-9784-eeef00a21a24
           statement-id: ra-5_smt.d
           by-components:
-          - uuid: CSPabb7a5-ad08-417b-b04f-a14f841c97fe
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPb8ab54-c501-4946-ad2d-076dc5ac5a6f
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider system vulnerabilities
               are remediated within 1 week for HIGH, 30 days for MODERATE, and 90
               days for LOW.
             provided:
-            - uuid: CSP71c514-e9a1-4701-bddd-f6bbe8235300
+            - uuid: CSP8d7441-420f-4f77-ba6b-baf5ad3bafa9
               description: Vulnerabilities on cloud service provider systems are remediated
-                within a specific time frame. (Random Content Follows) Provider within
-                are cloud Vulnerabilities systems.
+                within a specific time frame. (Random Content Follows) Within remediated
+                service frame. service specific within Vulnerabilities time cloud
+                service Vulnerabilities.
               exportable: true
             responsibilities:
-            - uuid: CSPc4a25a-71e4-4215-a506-94196ab54156
-              provided-uuid: CSP71c514-e9a1-4701-bddd-f6bbe8235300
+            - uuid: CSPf65b34-9b39-46ad-bae7-ea7d69d14cfb
+              provided-uuid: CSP8d7441-420f-4f77-ba6b-baf5ad3bafa9
               description: Vulnerabilities identified by cloud service provider system
                 scans are remediated per policy.
               exportable: true
-        - uuid: CSP5b0028-b317-4ef6-9e16-fcbf64697bc2
+        - uuid: CSPf1990f-98ed-4ec1-b775-05a63dd77815
           statement-id: ra-5_smt.e
           by-components:
-          - uuid: CSP1c56e7-4826-45a8-a5b6-52059b58e1ae
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP688832-119d-428f-a75a-a79658f6dd55
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider system vulnerability
               scan results are provided to system security officer.
             provided:
-            - uuid: CSP120ca0-28db-4e00-a3fe-d0dbaffdfb58
+            - uuid: CSP188355-3633-4909-859c-83aed35dd86c
               description: Vulnerability scan results on cloud service provider systems
-                are reported to appropriate personnel. (Random Content Follows) To
-                to on cloud are systems to.
+                are reported to appropriate personnel. (Random Content Follows) Personnel.
+                Vulnerability on Vulnerability service appropriate provider are service
+                are reported.
               exportable: true
             responsibilities:
-            - uuid: CSPfbebc4-0af2-442b-bfad-147087a7e749
-              provided-uuid: CSP120ca0-28db-4e00-a3fe-d0dbaffdfb58
+            - uuid: CSPc495c6-c61d-441d-9316-a2449ff6ef42
+              provided-uuid: CSP188355-3633-4909-859c-83aed35dd86c
               description: Results of the vulnerability scans are reported.
               exportable: true
-        - uuid: CSPce4248-5fd7-466f-b830-466b98013b1a
+        - uuid: CSP176a41-2464-4a2e-9791-2cc08acf39b0
           statement-id: ra-5_smt.f
           by-components:
-          - uuid: CSP4e084f-4a5a-4af4-ba65-aac728131a4c
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP404a3d-28bb-44f0-819d-3d2e6b9813ca
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider employed scanning tool
               is updated by the vendor.
             provided:
-            - uuid: CSP69354d-686c-46d7-b424-cdfb9794a7f9
+            - uuid: CSP1917d5-debc-4422-b20d-ae8f632ab86e
               description: Cloud service provider vendor updates the vulnerability
-                scanning tool. (Random Content Follows) Scanning tool. provider vulnerability
-                updates vulnerability vulnerability.
+                scanning tool. (Random Content Follows) Provider the provider service
+                the service the.
               exportable: true
             responsibilities:
-            - uuid: CSPeff46d-7e2d-4c29-a758-354550616edb
-              provided-uuid: CSP69354d-686c-46d7-b424-cdfb9794a7f9
+            - uuid: CSP69c8df-38a5-461f-a1c8-5cf8863bbb6e
+              provided-uuid: CSP1917d5-debc-4422-b20d-ae8f632ab86e
               description: Vulnerability scanning tool employed by the cloud service
                 provider is updated.
               exportable: true
-      - uuid: CSPb332a7-8556-4c96-8176-d6977efa7626
+      - uuid: CSPaba194-9834-4cfc-ab12-29fed33c1eb2
         control-id: ra-5.11
         statements:
-        - uuid: CSP776264-0556-42fb-ab73-8693f0e39de9
+        - uuid: CSP3629f3-1cc9-40d4-9bed-04dbb2cee317
           statement-id: ra-5.11
           by-components:
-          - uuid: CSP3b449a-9884-4bb6-9fa6-1bac7994c9f8
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPb4e2c4-1312-4ea8-b341-c82d11bd6d04
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - A cloud service provider website is available
               for the public to reported system vulnerabilities.
             provided:
-            - uuid: CSPc516a8-b82e-4ac2-9662-37345eabde4c
+            - uuid: CSP408b9a-9661-46c2-9570-b0c3a3c7e7ff
               description: A website is available for the public to report cloud service
-                provider system vulnerabilities. (Random Content Follows) Report public
-                service public system cloud available.
+                provider system vulnerabilities. (Random Content Follows) Report system
+                for available vulnerabilities. cloud available for website.
               exportable: true
             responsibilities:
-            - uuid: CSPa33f3d-2561-41ba-b7f1-2076745e462c
-              provided-uuid: CSPc516a8-b82e-4ac2-9662-37345eabde4c
+            - uuid: CSP677f2c-c8c6-4446-b1f4-296f27af36a5
+              provided-uuid: CSP408b9a-9661-46c2-9570-b0c3a3c7e7ff
               description: The public can report cloud service provider system vulnerabilities
                 through a public website.
               exportable: true
-      - uuid: CSP2174c1-5506-4463-b69d-b2cbce67238a
+      - uuid: CSP864731-a14d-4e9b-bc88-7bd2d33576df
         control-id: ra-5.2
         statements:
-        - uuid: CSP44667e-139a-464f-9e8a-631fc52749e4
+        - uuid: CSPc8e408-529b-4ef4-b281-4af4ee89241d
           statement-id: ra-5.2
           by-components:
-          - uuid: CSP6c5464-dca7-4b32-91d6-eeb8648c84bd
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP42c2b5-c63c-460f-aed4-83957700d140
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: 'DO NOT SHARE - Cloud service provider system scanning tool
               vulnerability signatures are provided by the vendor and are updated
               prior to a new scan. '
             provided:
-            - uuid: CSPf733e8-10ee-4008-b9c7-cc3cb034e9cc
+            - uuid: CSPc446f5-3aba-4158-a2d1-00379077f195
               description: Cloud service provider system scanning tool vendor provides
                 vulnerability signatures which are updated before each scan. (Random
-                Content Follows) Which each tool tool scanning service each scan.
-                each tool updated provider.
+                Content Follows) Signatures scanning scanning which service before
+                are are system scan. scanning.
               exportable: true
             responsibilities:
-            - uuid: CSP5bd474-5a47-479f-8606-6ab03630bc89
-              provided-uuid: CSPf733e8-10ee-4008-b9c7-cc3cb034e9cc
+            - uuid: CSPeace0a-e081-4b1c-a767-2eb9335deb6d
+              provided-uuid: CSPc446f5-3aba-4158-a2d1-00379077f195
               description: Signatures are provided and updated for the system scanning
                 tool employed by the cloud service provider.
               exportable: true
-      - uuid: CSP2d4e27-f138-49b0-8601-e9a58e504034
+      - uuid: CSP8a7ebb-3f0e-4e23-96a5-7f488efd95ab
         control-id: ra-5.5
         statements:
-        - uuid: CSP9d7039-c802-461e-9b5d-a72c2f13c56f
+        - uuid: CSPd5dbaa-6c13-4a68-aa76-14cc84578978
           statement-id: ra-5.5
           by-components:
-          - uuid: CSP8595bf-0010-408f-880f-7c64a8e034b6
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPf3d216-41a9-49db-ba7a-11b280a0468b
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Credential scans are implemented on all cloud
               service provider system components for monthly vulnerability scans.
             provided:
-            - uuid: CSP6e1846-6d8f-4d31-b26c-ab4717ae0140
+            - uuid: CSPb7c952-89f5-400c-968c-b3e340c2b749
               description: Credential scans are conducted on all cloud service provider
                 system components on a specific time frame. (Random Content Follows)
-                Time components components scans provider all a on scans provider
-                all frame. service.
+                System cloud specific Credential specific time service scans.
               exportable: true
             responsibilities:
-            - uuid: CSP253355-4e7d-4767-8a9f-677b3f1421b6
-              provided-uuid: CSP6e1846-6d8f-4d31-b26c-ab4717ae0140
+            - uuid: CSP818142-e4dd-4f6a-b9cb-59ddd7f00dc3
+              provided-uuid: CSPb7c952-89f5-400c-968c-b3e340c2b749
               description: Credential scans are conducted on all cloud service provider
                 system components.
               exportable: true
-      - uuid: CSP55536c-45d6-4f16-b2fc-878fcff406a3
+      - uuid: CSP07c24f-026f-469f-89e1-3932bef3d01b
         control-id: sa-11
         statements:
-        - uuid: CSP72ea7d-6a39-45c6-b80b-cbcf8b2c027e
+        - uuid: CSP3ed37b-9881-4ebf-88d1-ee2d1f066221
           statement-id: sa-11
           by-components:
-          - uuid: CSP851ddf-55cd-4055-b9c4-9ed311f6c5df
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP612b4d-3323-4ac6-9355-e90b9257ce5c
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider system developers will
               develop and implement a plan for ongoing security and privacy control
               assessments; perform unit, integration, system, and regression testing/evaluation
@@ -1408,390 +1404,388 @@ shared-responsibility-definition:
               implement a verifiable flaw remediation process; and correct flaws identified
               during testing and evaluation.
             provided:
-            - uuid: CSP30ed8c-0bda-4050-b9ea-92860e2c1c5e
+            - uuid: CSP2e42e3-40f5-43ea-81f9-58f0906f5478
               description: Cloud service provider developer will develop and implement
                 specific system testing at specific times, provide results of testing,
-                and correct identified flaws. (Random Content Follows) Identified
-                provider of system at specific provide develop implement.
+                and correct identified flaws. (Random Content Follows) Provider developer
+                testing, flaws. and provide specific at identified developer provide.
               exportable: true
             responsibilities:
-            - uuid: CSPe8427e-cf03-461b-b287-b10a5580454c
-              provided-uuid: CSP30ed8c-0bda-4050-b9ea-92860e2c1c5e
+            - uuid: CSPcd87fd-deba-41cc-bcc6-e08eee24acb3
+              provided-uuid: CSP2e42e3-40f5-43ea-81f9-58f0906f5478
               description: Testing is developed and conducted, results are provided,
                 and flaws identified during testing are corrected.
               exportable: true
-      - uuid: CSPf07437-1dbb-4d1e-b777-2859f3832978
+      - uuid: CSP5c5409-c03a-4445-9682-16082af5e5ec
         control-id: sc-2
         statements:
-        - uuid: CSP3bd60e-5d20-499f-bfd3-429f908e368e
+        - uuid: CSP925eba-f709-4395-8fae-e576ba8efbe4
           statement-id: sc-2
           by-components:
-          - uuid: CSP3b17ee-8085-4988-a186-c71b35439588
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP38c4e3-9cb3-4c2e-8bf1-a4a186fb3a01
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider system user functionality
               is separate from system management functionality.
             provided:
-            - uuid: CSP8f626e-2f2e-48a1-a12f-eae22b48b463
+            - uuid: CSP298c00-89b7-496b-ab96-8e132644ebed
               description: Cloud service provider functionalities are separated by
-                user roles. (Random Content Follows) Provider service by provider
-                Cloud by provider.
+                user roles. (Random Content Follows) Cloud provider are Cloud functionalities
+                roles. are.
               exportable: true
             responsibilities:
-            - uuid: CSP8cef65-34f9-43c4-bd12-69911b7de845
-              provided-uuid: CSP8f626e-2f2e-48a1-a12f-eae22b48b463
+            - uuid: CSP913e25-659b-4686-b11d-1e2ec02d2e9e
+              provided-uuid: CSP298c00-89b7-496b-ab96-8e132644ebed
               description: User functionalities on could service provider systems
                 are separated by roles.
               exportable: true
-      - uuid: CSPcf9aee-1bec-486b-aa46-a0a2029028e0
+      - uuid: CSPd4ab2e-4d62-489f-848e-aaba5a94fcb0
         control-id: sc-5
         statements:
-        - uuid: CSPe86e9d-450e-45af-b01f-217b030477c4
+        - uuid: CSP57d7f9-b975-45c2-be92-a322447c5b30
           statement-id: sc-5_smt.a
           by-components:
-          - uuid: CSP8d3db1-bae7-4ed0-9c48-002a364bee72
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP420877-fa45-4aba-93bd-a957ca70db25
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider has implemented protections
               against denial of service flooding services and crashing services. Cloud
               service provider network and boundary routers filter all incoming packets.
             provided:
-            - uuid: CSPfbebed-15da-40e8-a8ed-211ccac9d6ef
+            - uuid: CSP42e812-fbad-49b0-a950-e279efc62562
               description: Cloud service provider network devices provide denial of
                 service protections by filtering all incoming packets. (Random Content
-                Follows) Packets. protections service by service filtering by packets.
-                service service Cloud.
+                Follows) Filtering filtering of denial by protections.
               exportable: true
             responsibilities:
-            - uuid: CSP72b4ce-e05a-4829-9a40-521bb94935ba
-              provided-uuid: CSPfbebed-15da-40e8-a8ed-211ccac9d6ef
+            - uuid: CSP2baeaa-e379-455c-a7b2-942bdfbfe0f5
+              provided-uuid: CSP42e812-fbad-49b0-a950-e279efc62562
               description: Denial of service protections implemented by the cloud
                 service provider filter all incoming packets.
               exportable: true
-        - uuid: CSPc1d64c-559f-4b5b-8ec6-4c3486f507d1
+        - uuid: CSP3a4b13-bc7f-497c-8ccd-61db1b8209bb
           statement-id: sc-5_smt.b
           by-components:
-          - uuid: CSPeecc09-6d0b-44e3-ad0b-4b5d221b70a7
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP535399-05a0-4e00-9695-abb9fafc005b
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Network packets are filtered by cloud service
               provider managed routers in the network and at the network boundary.
               System is also replicated along multiple VMs.
             provided:
-            - uuid: CSP246336-20e6-4abb-97ee-01aa3405c6f3
+            - uuid: CSP352ecc-7163-44d2-adb7-b2e646ba6f2a
               description: Replicated cloud service provider network devices filter
                 network packets in the network and at the boundary. (Random Content
-                Follows) Network cloud the at service devices provider provider the
-                at.
+                Follows) Boundary. and in network filter devices network service devices.
               exportable: true
             responsibilities:
-            - uuid: CSPfb4bdd-8ba7-460b-8a29-3d3f24a6c7e4
-              provided-uuid: CSP246336-20e6-4abb-97ee-01aa3405c6f3
+            - uuid: CSP93a500-e24c-4cf6-8ab8-291a9de861c8
+              provided-uuid: CSP352ecc-7163-44d2-adb7-b2e646ba6f2a
               description: Network devices managed by the cloud service provider filter
                 network packets.
               exportable: true
-      - uuid: CSP20d078-244a-4fad-96c1-cdfd1dcd4a99
+      - uuid: CSPb75cfe-40f4-4259-a179-49128bdcc5bd
         control-id: sc-7
         statements:
-        - uuid: CSP26a6a5-ff7a-453c-b10c-586faee50063
+        - uuid: CSPb51315-3609-4396-9cfd-a0eeb1dcc943
           statement-id: sc-7_smt.a
           by-components:
-          - uuid: CSP0a2b07-078e-46bd-88f0-21ca949904a0
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP591b3f-ad54-47ae-9864-15dbb39acace
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Communication into and out of the cloud service
               provider system is monitored and controlled by network and boundary
               routers.
             provided:
-            - uuid: CSPf399bc-bbf8-4442-9be9-1f76cda89d74
+            - uuid: CSPf92422-72d7-43d0-9332-6f54823a0625
               description: All inbound and outbound cloud service provider system
                 communications are monitored and controlled by network devices. (Random
-                Content Follows) All communications controlled monitored outbound
-                by cloud cloud.
+                Content Follows) Network controlled network provider and service inbound
+                and outbound monitored devices. service are.
               exportable: true
             responsibilities:
-            - uuid: CSP9d7949-3f0a-4e76-9956-d55bb5270165
-              provided-uuid: CSPf399bc-bbf8-4442-9be9-1f76cda89d74
+            - uuid: CSP3b5c79-27cc-4c7e-a2cd-ee5d2ecce332
+              provided-uuid: CSPf92422-72d7-43d0-9332-6f54823a0625
               description: Cloud service provider network devices monitor and control
                 all external communications with the system.
               exportable: true
-        - uuid: CSPa4d79b-ac81-4244-9185-80fe6c326417
+        - uuid: CSP6d9d5a-95ee-4c20-81e8-8ca70703d009
           statement-id: sc-7_smt.b
           by-components:
-          - uuid: CSP5084ff-5d15-4e68-9799-ab40b1fbe70c
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP9943fa-17d9-4f5f-95ad-a138e4cb836c
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - There are no publicly accessible system components.
             provided:
-            - uuid: CSPb64d15-549f-47f4-8e1a-06036244990b
+            - uuid: CSP3bcd85-9561-4e65-8995-8adf0695e39c
               description: Cloud service provider system components are not publicly
-                accessible. (Random Content Follows) Cloud publicly provider system
-                Cloud accessible. service publicly.
+                accessible. (Random Content Follows) Publicly accessible. accessible.
+                accessible. publicly Cloud system service not.
               exportable: true
             responsibilities:
-            - uuid: CSP1fe510-b548-4833-a729-f40179296793
-              provided-uuid: CSPb64d15-549f-47f4-8e1a-06036244990b
+            - uuid: CSP137b15-c986-486f-95fc-2bbcfa1ae318
+              provided-uuid: CSP3bcd85-9561-4e65-8995-8adf0695e39c
               description: There is no public access to cloud service provider system
                 components.
               exportable: true
-        - uuid: CSP0dab5e-d59d-4a7b-a7d5-5fbf92256810
+        - uuid: CSPef4664-7402-4dca-96d5-2a28be80a921
           statement-id: sc-7_smt.c
           by-components:
-          - uuid: CSPae05e0-8772-46e8-b5d0-03782bc7634f
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP109a0f-b3e3-4119-b7ea-9c9a78a9590e
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - External systems or networks are connected
               to the cloud service provider systems through cloud service provider
               managed network and boundary routers.
             provided:
-            - uuid: CSP8e0875-bc86-42bc-bbee-ff46d8bd2138
+            - uuid: CSP059888-ba1f-4fa2-9cf1-474957495011
               description: External connections to cloud service provider systems
                 are through cloud service provider managed network devices. (Random
-                Content Follows) Service through are managed systems network network
-                through.
+                Content Follows) Systems are service cloud service External External
+                cloud External cloud External cloud External.
               exportable: true
             responsibilities:
-            - uuid: CSPb83a47-d9ff-43cb-b153-b09286081b96
-              provided-uuid: CSP8e0875-bc86-42bc-bbee-ff46d8bd2138
+            - uuid: CSP78ce51-3fa0-47ee-8bea-65340d1cf4d4
+              provided-uuid: CSP059888-ba1f-4fa2-9cf1-474957495011
               description: Cloud service provider network devices manage all external
                 communication with cloud service provider systems.
               exportable: true
-      - uuid: CSP6993a8-444e-461e-871e-7969fb949a09
+      - uuid: CSP9c8c06-0163-4796-ac32-a010d4f1d702
         control-id: sc-7.3
         statements:
-        - uuid: CSPc70d72-8e29-4369-82bc-cbf033e57c95
+        - uuid: CSPe799a8-4b79-4839-9ab5-465eb7a23bef
           statement-id: sc-7.3
           by-components:
-          - uuid: CSP6cbabd-34c3-4981-be08-9744e9e9b473
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP1fb134-7655-4045-8bd4-ca5229ccb8bd
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Connections to cloud service provider system
               are only allowed through cloud service provider managed boundary routers.
             provided:
-            - uuid: CSP15a496-c4fe-4f74-8b67-f541adf94770
+            - uuid: CSP9eb1c0-2ece-4291-a7dc-cbc9c0bc7305
               description: Connections to cloud service provider system are only through
                 cloud service provider managed network devices. (Random Content Follows)
-                Cloud managed are only service only Connections Connections Connections.
+                Are provider to cloud cloud Connections only Connections service are.
               exportable: true
             responsibilities:
-            - uuid: CSP2e2e3e-b03e-42fb-a391-df145c896d98
-              provided-uuid: CSP15a496-c4fe-4f74-8b67-f541adf94770
+            - uuid: CSP10f652-43dd-4c47-9387-ccbe06e47f12
+              provided-uuid: CSP9eb1c0-2ece-4291-a7dc-cbc9c0bc7305
               description: System connections are through cloud service provider managed
                 network devices.
               exportable: true
-      - uuid: CSP7daf48-d79b-48e1-b923-ed26a34f3af2
+      - uuid: CSP417fdb-71a9-4357-a5db-8e36bf89c446
         control-id: sc-7.4
         statements:
-        - uuid: CSPe24212-72d6-4c77-b49d-8e7f9152b8fd
+        - uuid: CSP8ab45b-c59e-4de2-b21b-a35e79170c9d
           statement-id: sc-7.4_smt.a
           by-components:
-          - uuid: CSP3805b2-9e00-49ca-b9b3-7568183e0a7d
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP15c8f3-5f8d-4215-8433-f25661718196
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - External communication with cloud service
               provider systems are provided by boundary routers.
             provided:
-            - uuid: CSPba8f1b-a9d5-4d37-adc9-0847c35a82f5
+            - uuid: CSP660e70-10ff-484e-a291-52321a7d3938
               description: External communication with cloud service provider system
-                are provided by boundary devices. (Random Content Follows) Boundary
-                devices. provided with devices. cloud provided devices. with system
-                by by cloud.
+                are provided by boundary devices. (Random Content Follows) Cloud service
+                with devices. cloud External service communication by service service.
               exportable: true
             responsibilities:
-            - uuid: CSP105fca-85c1-483c-8c97-d9e14c18a04c
-              provided-uuid: CSPba8f1b-a9d5-4d37-adc9-0847c35a82f5
+            - uuid: CSPa40947-39ce-43f0-bade-5723fcc3b6bc
+              provided-uuid: CSP660e70-10ff-484e-a291-52321a7d3938
               description: Boundary devices provide external communication with cloud
                 service provider system.
               exportable: true
-        - uuid: CSPc6c8a7-7d7d-42e2-a15a-069346c4d7ae
+        - uuid: CSP42286e-148b-4daa-8099-39c5c8f61c9f
           statement-id: sc-7.4_smt.b
           by-components:
-          - uuid: CSP1170ae-3a45-4c60-a6d2-b3258ed81d20
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPbe41ca-7028-4771-bf59-5e707a93610f
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider traffic flow policies
               are enforced by the network routers.
             provided:
-            - uuid: CSPd061d5-c5b3-47ad-8f83-9e1c53c7ad5f
+            - uuid: CSP1a5f5d-df01-4811-934d-77ca35e91c6c
               description: Cloud service provider traffic flow policies are enforced
-                by network devices. (Random Content Follows) Are enforced traffic
-                devices. policies service by Cloud.
+                by network devices. (Random Content Follows) Service Cloud devices.
+                are flow provider provider are network network devices. Cloud flow
+                enforced.
               exportable: true
             responsibilities:
-            - uuid: CSP207673-1bab-44d6-929c-fa458328a06f
-              provided-uuid: CSPd061d5-c5b3-47ad-8f83-9e1c53c7ad5f
+            - uuid: CSP4c8408-7384-431b-abb5-5e1322f862fa
+              provided-uuid: CSP1a5f5d-df01-4811-934d-77ca35e91c6c
               description: Cloud service provider network devices enforce traffic
                 flow policies.
               exportable: true
-        - uuid: CSPc04d77-3784-4873-ae26-fe4352839de0
+        - uuid: CSP1cae1a-7f31-43e3-845b-4810d336c607
           statement-id: sc-7.4_smt.c
           by-components:
-          - uuid: CSP3f5db7-2729-41d4-b260-136d34be93b8
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP21d923-e4d8-4407-bc44-78b893bafde5
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider has implemented TLS
               1.2 to protect the confidentiality and integrity of transmitted information.
             provided:
-            - uuid: CSP786ccb-4ead-4aca-bbb1-5d062b8cce9a
+            - uuid: CSP8333c0-3569-4ce3-8b2f-f8c93cc2e05c
               description: Cloud service provider has implemented TLS to protected
-                transmitted information. (Random Content Follows) Implemented implemented
-                information. implemented to information. to provider transmitted provider
-                Cloud information. to.
+                transmitted information. (Random Content Follows) Tls implemented
+                service protected to provider.
               exportable: true
             responsibilities:
-            - uuid: CSP98bf29-aeec-47e0-a88f-755c1d1525f1
-              provided-uuid: CSP786ccb-4ead-4aca-bbb1-5d062b8cce9a
+            - uuid: CSPd4ce35-a287-4560-8484-69efd47508b5
+              provided-uuid: CSP8333c0-3569-4ce3-8b2f-f8c93cc2e05c
               description: Encryption has been implemented by the cloud service provider
                 to protect transmitted information.
               exportable: true
-        - uuid: CSPc9b7c2-1936-4c5b-a14e-bfdc5d2a5db4
+        - uuid: CSP8dd854-cc6b-4f5d-ab71-a6be6023d5ec
           statement-id: sc-7.4_smt.d
           by-components:
-          - uuid: CSP1903a5-0bcf-44e6-8109-8dec2273b9e1
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP2eac62-8dcb-4923-91fd-a5b4b712c046
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Exceptions to the cloud service provider traffic
               flow policy are documented in the SSP.
             provided:
-            - uuid: CSP892dbb-563f-413c-a069-772beb5696cd
+            - uuid: CSP7d3c6c-18a5-458f-9656-2e782b54113a
               description: Traffic flow exemptions are documented in the cloud service
-                provider policy. (Random Content Follows) In exemptions are are policy.
-                exemptions flow policy. flow in service.
+                provider policy. (Random Content Follows) Service flow cloud provider
+                flow provider in.
               exportable: true
             responsibilities:
-            - uuid: CSPaa2e0f-4cbb-4806-80e0-6e14d6d94939
-              provided-uuid: CSP892dbb-563f-413c-a069-772beb5696cd
+            - uuid: CSP5a9542-a48a-41cd-93f2-b29baa067ea1
+              provided-uuid: CSP7d3c6c-18a5-458f-9656-2e782b54113a
               description: Traffic flow policy for the cloud service provider is documented.
               exportable: true
-        - uuid: CSP755dbb-c580-47df-a668-041577aedd8a
+        - uuid: CSP36f994-2b98-493b-914a-b71fe5e56ceb
           statement-id: sc-7.4_smt.e
           by-components:
-          - uuid: CSP69de41-4054-4e8b-a5a9-03d5d9d58cc9
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP3324f8-64e3-4731-8141-f04c4a170eea
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Exceptions to the cloud service provider traffic
               policy are reviewed annually and updated as they are identified.
             provided:
-            - uuid: CSPbbe97d-a774-42a9-8d99-df8ef53e274e
+            - uuid: CSP78a49b-7b7e-494b-9c22-1c5fd66f700f
               description: Cloud service provider traffic flow exceptions are reviewed
                 at a specific time frame and updated as needed. (Random Content Follows)
-                Service a are provider service provider at exceptions.
+                Flow as a updated traffic are exceptions.
               exportable: true
             responsibilities:
-            - uuid: CSP5863e7-48a6-4e9c-be61-5aa7c7372770
-              provided-uuid: CSPbbe97d-a774-42a9-8d99-df8ef53e274e
+            - uuid: CSP66cf22-daf0-4948-ad52-b57d8fb696b7
+              provided-uuid: CSP78a49b-7b7e-494b-9c22-1c5fd66f700f
               description: Cloud service provider traffic flow policy is reviewed
                 and updated.
               exportable: true
-        - uuid: CSP28494f-f16a-4341-9bc1-5760f9092830
+        - uuid: CSPf2ff45-71cd-4e7e-b923-4b044bc27931
           statement-id: sc-7.4_smt.f
           by-components:
-          - uuid: CSPc1d754-e7b6-41c9-b218-0c2445f3b062
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPf9573d-2878-426f-98f7-e949a75e4b46
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider traffic flow is enforced
               by network routers following traffic flow policies.
             provided:
-            - uuid: CSP16b0ed-3da1-4816-9622-d27936871f1f
+            - uuid: CSPb04e37-8a11-4065-b351-19f901ff3acd
               description: Traffic flow policy is enforced by cloud service provider
-                network devices. (Random Content Follows) Devices. devices. is provider
-                flow cloud devices. network.
+                network devices. (Random Content Follows) Devices. Traffic Traffic
+                by enforced Traffic network policy devices. is network devices..
               exportable: true
             responsibilities:
-            - uuid: CSPa7dd9b-ad33-4bc3-8c1c-53946ee18342
-              provided-uuid: CSP16b0ed-3da1-4816-9622-d27936871f1f
+            - uuid: CSP63a8dc-bd3a-41b4-b09f-c2fe4ef967e1
+              provided-uuid: CSPb04e37-8a11-4065-b351-19f901ff3acd
               description: Cloud service provider traffic flow policy is enforced.
               exportable: true
-        - uuid: CSP8b8b91-5fe2-46dc-84cf-f716d8b27220
+        - uuid: CSP17aa32-2f6c-447d-89ee-1edcc0b5d8b1
           statement-id: sc-7.4_smt.g
           by-components:
-          - uuid: CSP34a892-b36b-488b-9af2-c62db7e85183
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPd4dbda-34b1-427f-a942-8cd49d6abd62
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - External networks do not have access to cloud
               service provider internal networks.
             provided:
-            - uuid: CSPebc16b-254a-48f1-b5aa-5653b569ad83
+            - uuid: CSP6627f2-a38d-4265-b4f4-65cb193107ec
               description: External networks can't access the cloud service provider
-                networks. (Random Content Follows) Access networks. the access networks
-                networks the.
+                networks. (Random Content Follows) Can'T cloud cloud cloud networks
+                cloud cloud provider provider.
               exportable: true
             responsibilities:
-            - uuid: CSPfc8bbf-bf99-4f21-b139-e737a7284f2c
-              provided-uuid: CSPebc16b-254a-48f1-b5aa-5653b569ad83
+            - uuid: CSPa106aa-5771-49cc-a479-4915892882aa
+              provided-uuid: CSP6627f2-a38d-4265-b4f4-65cb193107ec
               description: Cloud service provider networks are not accessible by external
                 networks.
               exportable: true
-        - uuid: CSPfdeb61-29b7-41ba-b37c-e55b66b77cb4
+        - uuid: CSP99f62f-a18b-4135-a0c7-a4ba276a13dc
           statement-id: sc-7.4_smt.h
           by-components:
-          - uuid: CSP26bba3-7cf7-448e-bb68-cf622d6418bf
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP913c70-0acb-4b23-afca-3f37f3c64dbd
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider control plane traffic
               is enforced by the network routers.
             provided:
-            - uuid: CSP59fbc4-905d-439f-b736-211f43dc6acd
+            - uuid: CSPdd1da5-2a32-4dcb-922f-e409284b9e8c
               description: Cloud service provider network devices filter control plane
-                traffic. (Random Content Follows) Cloud service traffic. control devices
-                plane provider devices plane plane.
+                traffic. (Random Content Follows) Control filter Cloud control control
+                traffic. devices control service plane service traffic..
               exportable: true
             responsibilities:
-            - uuid: CSP61d986-7251-484b-aa56-b7a409a038fe
-              provided-uuid: CSP59fbc4-905d-439f-b736-211f43dc6acd
+            - uuid: CSPad2ada-144c-48f8-8bb0-41254ca389b0
+              provided-uuid: CSPdd1da5-2a32-4dcb-922f-e409284b9e8c
               description: Control plane traffic is filtered by the cloud service
                 provider network.
               exportable: true
-      - uuid: CSP8a1258-4871-49d1-a0ea-874b6b81511e
+      - uuid: CSPc84b4a-8348-4e63-85f4-70fafdc580e8
         control-id: sc-7.5
         statements:
-        - uuid: CSPd80d4d-e224-4a73-886a-b7ed4f738f94
+        - uuid: CSPd80119-e43c-4127-bac1-48501d1b1f66
           statement-id: sc-7.5
           by-components:
-          - uuid: CSP42e216-9778-4825-876c-7c786a25ff1e
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP41e982-e98a-4e03-afbd-0f578a8adc3d
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider managed network routers
               deny network traffic to all cloud service provider systems by default
               and allow by exception.
             provided:
-            - uuid: CSPf9ba68-d0ef-43cf-9ee0-2abaeed30c94
+            - uuid: CSP78b003-fca0-480c-8855-8af87132776f
               description: Cloud service provider network devices deny network traffic
-                by default and allow by exception. (Random Content Follows) Deny Cloud
-                by provider allow and Cloud traffic devices.
+                by default and allow by exception. (Random Content Follows) Default
+                service deny exception. by provider allow by network Cloud.
               exportable: true
             responsibilities:
-            - uuid: CSP480336-9ead-4184-8a9c-e226867b4579
-              provided-uuid: CSPf9ba68-d0ef-43cf-9ee0-2abaeed30c94
+            - uuid: CSPcfb107-a02b-4e15-9797-e9af7ff86f14
+              provided-uuid: CSP78b003-fca0-480c-8855-8af87132776f
               description: Network communications traffic policy is enforced by the
                 cloud service provider network devices.
               exportable: true
-      - uuid: CSP2faa02-5f16-4a14-b717-41ae15823598
+      - uuid: CSP9e91cf-ed81-44cc-b035-8e4f39a02275
         control-id: sc-7.7
         statements:
-        - uuid: CSP8a4c66-76fd-47c7-baeb-d6ead527fe3a
+        - uuid: CSP82a99e-4bff-42a8-9caa-1cc94df3bb44
           statement-id: sc-7.7
           by-components:
-          - uuid: CSPaf7481-ea90-425a-a22d-41c4352ae4cc
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSP6e4136-4687-4850-a0d9-2e8606016129
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - Cloud service provider does not allow split
               tunneling.
             provided:
-            - uuid: CSPb35b35-6065-40a8-9a02-5845cb5f9e19
+            - uuid: CSP5c33a5-714b-443d-a078-400365706204
               description: Cloud service provider prevents split tunneling for remote
-                connections. (Random Content Follows) Tunneling for for service prevents
-                remote connections..
+                connections. (Random Content Follows) Split tunneling remote for provider
+                prevents provider tunneling provider prevents provider connections.
+                connections..
               exportable: true
             responsibilities:
-            - uuid: CSPcd6265-c2c6-4074-837c-4e6f1a223f8b
-              provided-uuid: CSPb35b35-6065-40a8-9a02-5845cb5f9e19
+            - uuid: CSP1611af-cb2c-4654-a6c9-5f25d4a68670
+              provided-uuid: CSP5c33a5-714b-443d-a078-400365706204
               description: Split tunneling is prevented by the cloud service provider.
               exportable: true
-      - uuid: CSPd66c65-1a6b-4566-8fbc-3c43a242270b
+      - uuid: CSP68d7c2-f56d-4fa1-872b-a5754711baf9
         control-id: sc-7.8
         statements:
-        - uuid: CSPa01063-c1f7-4446-8285-2fc89f8d8436
+        - uuid: CSP68ca63-ceec-4f42-8b96-14787be57932
           statement-id: sc-7.8
           by-components:
-          - uuid: CSP62965c-e41e-4c62-8c93-02f643f4a086
-            component-uuid: CSPa51457-0ee0-4ab0-94b1-dc454059b451
+          - uuid: CSPd5943c-d79e-4dc9-867b-91a309451388
+            component-uuid: CSPe140e1-fd88-4a94-92df-bca4759df597
             description: DO NOT SHARE - All cloud service provider internal communication
               traffic to all external networks are routed through the cloud service
               provider managed boundary proxy servers and routers.
             provided:
-            - uuid: CSP240434-0ead-44cb-be9e-c42413b6d36b
+            - uuid: CSPd55f41-2561-447b-b322-e2b4eb4b55f6
               description: Cloud service provider communication traffic to external
                 networks are routed through cloud service provider managed boundary
-                devices. (Random Content Follows) Provider communication managed to
-                boundary Cloud through Cloud communication to managed through through.
+                devices. (Random Content Follows) Devices. provider traffic to through
+                through devices..
               exportable: true
             responsibilities:
-            - uuid: CSP4e23c4-92a4-45d4-8a84-c9d23c424a04
-              provided-uuid: CSP240434-0ead-44cb-be9e-c42413b6d36b
+            - uuid: CSPcbf5a0-2a14-45b0-9ae9-5f6a6a36ce4a
+              provided-uuid: CSPd55f41-2561-447b-b322-e2b4eb4b55f6
               description: Cloud service provider managed boundary devices control
                 all traffic to external networks.
               exportable: true
