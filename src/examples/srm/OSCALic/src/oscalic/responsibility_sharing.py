@@ -37,5 +37,5 @@ class Document(BaseModel):
     capabilities: List[CapabilityAssembly] | None
 
 class SharedResponsibilityDefinition(BaseModel):
-    responsibility_sharing: Document = Field(default=None, alias='shared-responsibility-definition')
+    responsibility_sharing: Document = Field(default=None, alias='shared-responsibility')
 
