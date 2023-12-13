@@ -1,8 +1,8 @@
-shared-responsibility-definition:
+shared-responsibility:
   uuid: {{ uuid:document }}
   type: responsibility-matrix
   metadata:
-    title: {{ crm_title }}
+    title: {{ sr_title }}
     last-modified: '{{ modified_date }}'
     version: {{ version }}
     oscal-version: {{ oscal_version }}
