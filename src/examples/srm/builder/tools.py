@@ -1,15 +1,12 @@
 import datetime, os, json, subprocess
-
 from pathlib import Path
-from oscalic import Helper
 
 from faker import Faker
 fake_it = Faker()
 
-
 from oscalic.system_security_plan       import SystemSecurityPlan as SSP
 from oscalic.component_definition       import ComponentDefinition as CDef
-from oscalic.responsibility_sharing     import SharedResponsibilityDefinition as SRDef
+from oscalic.shared_responsibility      import SharedResponsibility as SRDef
 from oscalic.control                    import StatementAssembly as Statement
 from oscalic.control                    import ByComponentAssembly as ByComponent
 from oscalic.control                    import ControlAssembly as Control
@@ -136,7 +133,11 @@ def get_related_uuids(target_name, source_name, source_uuid=None):
 
 def get_components(document, statement_id=None):
     components = []
-    # print(document)
+
+    if isinstance(document, list):
+        document = document[0]
+
+    print(document)
     for requirement in document.implemented_requirements:
         for statement in requirement.statements:
             if statement_id:
@@ -149,26 +150,26 @@ def get_components(document, statement_id=None):
     return components
 
 
-def get_inherited_responses(crm, current_org_type=None, control_id=None, statement_id=None, marker=''):
+def get_inherited_responses(sr, current_org_type=None, control_id=None, statement_id=None, marker=''):
     # Track Connections
-    crm_org = {
+    sr_org = {
         'csp': 'csp',
         'msp': 'csp',
         'app': 'msp'
     }
 
-    crm_inherited_content = []
-    crm_satisfied_content = []
+    sr_inherited_content = []
+    sr_satisfied_content = []
     
-    crm_components = get_components(crm.responsibility_sharing.capabilities[0]['control_implementation'], statement_id)
+    sr_components = get_components(sr.shared_responsibility.components[0]['control_implementations'], statement_id)
 
-    for component in crm_components:
+    for component in sr_components:
 
         ##### PROVIDED ##############################################
         if 'provided' in dir(component):
             inherited_uuid = get_marker_uuid(marker)
             # print(f"{inherited_uuid}:{component.provided[0]['uuid']}")
-            crm_inherited_content.append({
+            sr_inherited_content.append({
                 'uuid': inherited_uuid,
                 'provided-uuid': component.provided[0]['uuid'],
                 # 'satisfied-uuid': satisfied_uuid,
@@ -190,8 +191,8 @@ def get_inherited_responses(crm, current_org_type=None, control_id=None, stateme
             add_record(IdRecord(**record))
 
             record = {
-                'source': crm_org[current_org_type],
-                'document': 'crm',
+                'source': sr_org[current_org_type],
+                'document': 'sr',
                 'control': control_id,
                 'statement': statement_id,
                 'relation': 'provided',
@@ -206,7 +207,7 @@ def get_inherited_responses(crm, current_org_type=None, control_id=None, stateme
         ##### RESPONSIBILITIES ##############################################
         if 'responsibilities' in dir(component):
             satisfied_uuid = get_marker_uuid(marker)
-            crm_satisfied_content.append({
+            sr_satisfied_content.append({
                 'uuid': satisfied_uuid,
                 'responsibility-uuid': component.responsibilities[0]['uuid'],
                 'description': ''
@@ -230,8 +231,8 @@ def get_inherited_responses(crm, current_org_type=None, control_id=None, stateme
             add_record(IdRecord(**record))
 
             record = {
-                'source': crm_org[current_org_type],
-                'document': 'crm',
+                'source': sr_org[current_org_type],
+                'document': 'sr',
                 'control': control_id,
                 'statement': statement_id,
                 'relation': 'responsibilities',
@@ -243,9 +244,9 @@ def get_inherited_responses(crm, current_org_type=None, control_id=None, stateme
             add_record(IdRecord(**record))
             # End Track Connections
 
-    return (crm_inherited_content,crm_satisfied_content)
+    return (sr_inherited_content,sr_satisfied_content)
 
-def build_ssp(filepath_template, metadata, controls=None, crm=None):
+def build_ssp(filepath_template, metadata, controls=None, sr=None):
     current_org_type            = filepath_template.split('.')[2:-1][0]
     this_system_component_uuid  = get_marker_uuid(current_org_type)
     today                       = datetime.datetime.now()
@@ -360,15 +361,15 @@ def build_ssp(filepath_template, metadata, controls=None, crm=None):
             # End Track Connections
 
 
-            crm_inherited_content = []
-            crm_satisfied_content = []
-            if crm:
+            sr_inherited_content = []
+            sr_satisfied_content = []
+            if sr:
                 #print(f"Get inherited for {row['statement_id']}")
-                (crm_inherited_content, crm_satisfied_content) = get_inherited_responses(crm, current_org_type, control_id, row['statement_id'], current_org_type)
+                (sr_inherited_content, sr_satisfied_content) = get_inherited_responses(sr, current_org_type, control_id, row['statement_id'], current_org_type)
 
             
-            if len(crm_satisfied_content) > 0:
-                satisfied_content.extend(crm_satisfied_content)
+            if len(sr_satisfied_content) > 0:
+                satisfied_content.extend(sr_satisfied_content)
 
 
             ##### INHERITED ##############################################
@@ -382,8 +383,8 @@ def build_ssp(filepath_template, metadata, controls=None, crm=None):
                     'description': row['export_responsibility']                 
                 }]
                 
-                if len(crm_inherited_content) > 0:
-                    inherited_content.extend(crm_inherited_content)
+                if len(sr_inherited_content) > 0:
+                    inherited_content.extend(sr_inherited_content)
 
 
                 #print(IdCollection, dir(IdCollection))
@@ -452,24 +453,24 @@ def build_ssp(filepath_template, metadata, controls=None, crm=None):
 
 
 
-def build_crm(filepath_template, ssp):
+def build_sr(filepath_template, ssp):
     current_org_type= filepath_template.split('.')[2:-1][0]
     today           = datetime.datetime.now()
     today_format    = '%Y-%m-%dT00:00:00.0000-04:00'
     today           = today.strftime(today_format)
 
-    crm_data = {
-        'crm_title':        "Customer Responsibility Matrix",
+    sr_data = {
+        'sr_title':        "Customer Responsibility Matrix",
         'uuid:document':    get_marker_uuid(current_org_type),
         'uuid:component':   get_marker_uuid(current_org_type), 
         'modified_date':    f"{today}",
     }
-    crm_data.update(all_model_metadata)
-    crm_data.update(ssp.system_security_plan.metadata.dict())
-    crm_data.update(ssp.system_security_plan.metadata.dict())
+    sr_data.update(all_model_metadata)
+    sr_data.update(ssp.system_security_plan.metadata.dict())
+    sr_data.update(ssp.system_security_plan.metadata.dict())
 
-    crm_content     = Template.apply(filepath_template, crm_data)
-    crm = Helper.from_yaml(SRDef, crm_content)
+    sr_content     = Template.apply(filepath_template, sr_data)
+    sr             = Helper.from_yaml(SRDef, sr_content)
 
     # Loop through each requirement in the ssps and export the exportable.
     # for requirement in ssp.system_security_plan.control_implementation.implemented_requirements:
@@ -496,14 +497,14 @@ def build_crm(filepath_template, ssp):
             component.inherited[0]['exportable'] == True):
                 del component.inherited
 
-    crm.responsibility_sharing.capabilities=[{
+    sr.shared_responsibility.components=[{
         'uuid': get_marker_uuid(current_org_type),
         'name': 'Statement of Shared Responsibility',
-        'description': 'This is a demonstration CRM.',
-        'control_implementation': ssp.system_security_plan.control_implementation
+        'description': 'This is a demonstration sr.',
+        'control_implementations': [ssp.system_security_plan.control_implementation]
     }]
 
-    return crm
+    return sr
 
 
 ##########################################################################################################

@@ -44,7 +44,7 @@ link_documents          = True
 link_responses          = False
 plot_associations       = False
 
-show_documents          = ['ssp'] #,'crm']
+show_documents          = ['ssp']#,'sr']
 show_responses          = ['provided', 'inherited', 'responsibilities', 'satisfied']
 show_controls           = ['sc-5']
 
@@ -81,17 +81,17 @@ if show_document_level:
             "file_type":"OSCAL"
         })
 
-    if 'crm' in show_documents:
+    if 'sr' in show_documents:
         diagram['nodes'].append({
-            "id": "root_crm_csp", 
-            "label": 'CRM: CSP', 
+            "id": "root_sr_csp", 
+            "label": 'SR: CSP', 
             "type":"model", 
             "file_type":"OSCAL"
         })
 
         diagram['nodes'].append({
-            "id": "root_crm_msp", 
-            "label": 'CRM: MSP', 
+            "id": "root_sr_msp", 
+            "label": 'SR: MSP', 
             "type":"model", 
             "file_type":"OSCAL"
         })

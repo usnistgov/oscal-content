@@ -29,7 +29,6 @@ source .nist-srm-builder/bin/activate
 #### Install Requirements
 
 ```
-pip install -e ../OSCALic
 pip3 install -r requirements.txt
 ```
 

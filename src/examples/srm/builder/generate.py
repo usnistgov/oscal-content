@@ -20,11 +20,11 @@ dir_content                 = os.path.join(os.getcwd(),'content')
 
 filename_output             = 'example'
 filename_input              = 'NIST_800-53_Rev5_Simulated.csv'
-filename_crm                = 'template.cdef.srm.yaml'
+filename_sr                = 'template.cdef.sr.yaml'
 filename_validation_log     = 'validation.log'
 
 filepath_csv                = os.path.join(dir_content, filename_input)
-filepath_template_crm       = os.path.join(dir_template_support, filename_crm)
+filepath_template_sr       = os.path.join(dir_template_support, filename_sr)
 filepath_validation_log     = os.path.join(dir_output, filename_validation_log)
 
 #%% Static Settings
@@ -33,7 +33,7 @@ lb                          = "\n\n"
 make_xml                    = False
 validate_oscal_cli          = False
 oscal_cli                   = 'Validate/oscal-cli-1.0.2'
-crm                         = None
+sr                         = None
 
 #%% Setup
 df_content                  = pd.read_csv(filepath_csv)
@@ -85,8 +85,8 @@ for ssp_template in templates:
     filepath_template           = os.path.join(dir_template,ssp_template)
     filepath_yaml               = os.path.join(dir_output, f"{filename_output}.{'.'.join(ssp_template.split('.')[1:-1])}.yaml")
     filepath_json               = os.path.join(dir_output, f"{filename_output}.{'.'.join(ssp_template.split('.')[1:-1])}.json")
-    filepath_crm_yaml           = os.path.join(dir_output, f"{filename_output}.{'.'.join(ssp_template.split('.')[1:-1])}.crm.yaml")
-    filepath_crm_json           = os.path.join(dir_output, f"{filename_output}.{'.'.join(ssp_template.split('.')[1:-1])}.crm.json")
+    filepath_sr_yaml           = os.path.join(dir_output, f"{filename_output}.{'.'.join(ssp_template.split('.')[1:-1])}.sr.yaml")
+    filepath_sr_json           = os.path.join(dir_output, f"{filename_output}.{'.'.join(ssp_template.split('.')[1:-1])}.sr.json")
     
     print(f"Generating [{current_org}]: {filepath_template}")
     print(f"YAML: {filepath_yaml}")
@@ -97,9 +97,9 @@ for ssp_template in templates:
     # Build Content
     print("Building SSP")
     if current_org == 'csp':
-        crm = None
+        sr = None
 
-    ssp = t.build_ssp(filepath_template, metadata, grouped_controls_df, crm)
+    ssp = t.build_ssp(filepath_template, metadata, grouped_controls_df, sr)
 
     # Export YAML file
     print(f"YAML: {filepath_yaml}")
@@ -125,28 +125,28 @@ for ssp_template in templates:
 
 
     if current_org != 'app':
-        crm = t.build_crm(filepath_template_crm, ssp)
+        sr = t.build_sr(filepath_template_sr, ssp)
 
         # Export YAML file
-        print(f"CRM YAML: {filepath_crm_yaml}")
-        t.save_yaml(crm, filepath_crm_yaml)
+        print(f"SR YAML: {filepath_sr_yaml}")
+        t.save_yaml(sr, filepath_sr_yaml)
 
         # Export JSON file
-        print(f"CRM JSON: {filepath_crm_json}")
-        t.save_json(crm, filepath_crm_json)      
+        print(f"SR JSON: {filepath_sr_json}")
+        t.save_json(sr, filepath_sr_json)      
 
 
 
         if validate_oscal_cli:
             with open(filepath_validation_log, "a") as outfile:
-                subprocess.run([oscal_cli, 'component-definition', 'validate', filepath_crm_yaml], stdout=outfile, stderr=outfile)
+                subprocess.run([oscal_cli, 'component-definition', 'validate', filepath_sr_yaml], stdout=outfile, stderr=outfile)
 
             with open(filepath_validation_log, "a") as outfile:
-                subprocess.run([oscal_cli, 'component-definition', 'validate', filepath_crm_json], stdout=outfile, stderr=outfile)
+                subprocess.run([oscal_cli, 'component-definition', 'validate', filepath_sr_json], stdout=outfile, stderr=outfile)
 
         if make_xml:
             with open(filepath_validation_log, "a") as outfile:
-                subprocess.run([oscal_cli,'ssp','convert','--to=xml',filepath_crm_json,filepath_crm_json+'.xml'], stdout=outfile, stderr=outfile)
+                subprocess.run([oscal_cli,'ssp','convert','--to=xml',filepath_sr_json,filepath_sr_json+'.xml'], stdout=outfile, stderr=outfile)
 
     print("\n\n")
 
