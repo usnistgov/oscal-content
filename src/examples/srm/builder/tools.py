@@ -15,6 +15,7 @@ from oscalic.control                    import ByComponentAssembly as ByComponen
 from oscalic.control                    import ControlAssembly as Control
 from oscalic                            import Template, Helper, Validation
 from oscalic.common                     import SatisfiedAssembly, ResponsibilitiesAssembly, InheritedAssembly, ProvidedAssembly
+
 class Identifier:
     uuid = None
     name = None

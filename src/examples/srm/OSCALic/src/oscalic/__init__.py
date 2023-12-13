@@ -6,6 +6,7 @@ from .validation import Validation
 
 from .system_security_plan import SystemSecurityPlan
 from .component_definition import ComponentDefinition
+from .responsibility_sharing import SharedResponsibility
 
 # from .schema import (
 #     MarkupLineDatatype,
