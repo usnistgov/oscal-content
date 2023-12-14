@@ -32,7 +32,7 @@
         </sch:rule>
         
         <sch:rule context="oscal:control">
-            <sch:let name="expected-id" value="o:reduce-label(oscal:prop[@name='label'][not(@class='sp800-53a')]/@value)"/>
+           <sch:let name="expected-id" value="oscal:prop[@name='alt-identifier'][@class='sp800-53']/@value ! o:reduce-label(.)"/>
             <sch:assert test="@id = $expected-id">Expected id to be '<sch:value-of select="$expected-id"/>'</sch:assert>
         </sch:rule>
         
@@ -115,7 +115,7 @@
     
     <xsl:function name="o:reduce-label">
         <xsl:param name="what" as="node()"/>
-        <xsl:value-of select="lower-case($what) ! replace(., '\(', '.') ! replace(., '\)', '') ! replace(.,'\.$','')"/>
+        <xsl:value-of select="lower-case($what) ! replace(., '\(', '.') ! replace(., '\)', '') ! replace(.,'\.$','') ! replace(.,'0(\d)','$1')"/>
     </xsl:function>
     
     <xsl:template mode="number-format" priority="1" match="oscal:part[@name='item']">a.</xsl:template>
