@@ -112,6 +112,13 @@
             <prop name="type" value="internal" />
             <role-id>provider</role-id>
         </user>
+        <component type="this-system" uuid="74042245-3db1-4f4d-be9a-ceb62d81152c">
+            <title>This System</title>
+            <description>
+               <p>The system described by this SSP.</p>
+            </description>
+            <status state="operational"/>
+         </component>
         <component uuid="e00acdcf-911b-437d-a42f-b0b558cc4f03" type="software">
             <title>Logging Server</title>
             <description>
