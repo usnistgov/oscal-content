@@ -6,9 +6,21 @@
         <title>Enterprise Logging and Auditing System Security Plan</title>
         <last-modified>2023-10-12T00:00:00.000000-04:00</last-modified>
         <version>1.1</version>
-        <oscal-version>1.1.1</oscal-version>
+        <oscal-version>1.1.2</oscal-version>
         <role id="legal-officer">
             <title>Legal Officer</title>
+        </role>
+        <role id="maintainer">
+            <title>System Maintainer</title>
+        </role>
+        <role id="asset-owner">
+            <title>System Assets Owner</title>
+        </role>
+        <role id="provider">
+            <title>System Provider</title>
+        </role>
+        <role id="asset-administrator">
+            <title>System Assets Admin</title>
         </role>
         <party uuid="3b2a5599-cc37-403f-ae36-5708fa804b27" type="organization">
             <name>Enterprise Asset Owners</name>
@@ -34,8 +46,8 @@
             <p>This is an example of a system that provides enterprise logging and log auditing
                 capabilities.</p>
         </description>
-        <prop name="deployment-model" value="private" />
-        <prop name="service-models" value="iaas" />
+        <prop name="cloud-deployment-model" value="private-cloud" />
+        <prop name="cloud-service-model" value="iaas" />
         <security-sensitivity-level>moderate</security-sensitivity-level>
         <system-information>
             <information-type uuid="7d28ac6e-5970-4f4c-a508-5a3715f0f02b">
@@ -80,6 +92,11 @@
             <prop name="type" value="internal" />
             <role-id>asset-administrator</role-id>
         </user>
+        <user uuid="9824089b-322c-456f-86c4-4111c4200f62">
+            <title>System Maintainer</title>
+            <prop name="type" value="internal" />
+            <role-id>maintainer</role-id>
+        </user>
         <user uuid="ae8de94c-835d-4303-83b1-114b6a117a07">
             <title>Audit Team</title>
             <prop name="type" value="internal" />
@@ -90,6 +107,18 @@
             <prop name="type" value="internal" />
             <role-id>legal-officer</role-id>
         </user>
+        <user uuid="372ce7a3-92b0-437e-a98c-55d29f9bfab8">
+            <title>Provider</title>
+            <prop name="type" value="internal" />
+            <role-id>provider</role-id>
+        </user>
+        <component type="this-system" uuid="74042245-3db1-4f4d-be9a-ceb62d81152c">
+            <title>This System</title>
+            <description>
+               <p>The system described by this SSP.</p>
+            </description>
+            <status state="operational"/>
+         </component>
         <component uuid="e00acdcf-911b-437d-a42f-b0b558cc4f03" type="software">
             <title>Logging Server</title>
             <description>
@@ -124,7 +153,7 @@
                 </ul>
             </description>
             <prop name="version" value="2.1" />
-            <prop name="last-modified-date" value="20181015" />
+            <prop name="release-date" value="2018-10-15" />
             <status state="operational" />
             <responsible-role role-id="maintainer">
                 <party-uuid>ec485dcf-2519-43f5-8e7d-014cc315332d</party-uuid>
@@ -136,7 +165,7 @@
                 <p>Ensures proper integration into the enterprise as new systems are brought into
                     production.</p>
             </description>
-            <prop name="last-modified-date" value="20181015" />
+            <prop name="release-date" value="2018-10-15" />
             <link href="#795533ab-9427-4abe-820f-0b571bacfe6d" rel="implements-policy">
                 <text>Ensures logs from components in new system are able to published to the
                     logging server. Ensures log monitoring capabilities recognize new system as
@@ -154,7 +183,7 @@
                     teams know about every asset that should be producing logs, thus should be
                     monitored.</p>
             </description>
-            <prop name="last-modified-date" value="20181015" />
+            <prop name="release-date" value="2018-10-15" />
             <link href="#795533ab-9427-4abe-820f-0b571bacfe6d" rel="implements-policy">
                 <text>Ensures that all host are known and authorized. Ensures that these hosts
                     publish log events to the logging server.</text>
@@ -171,7 +200,7 @@
                     Splunk in the appropriate format. Also describes how to configure time
                     synchronization.</p>
             </description>
-            <prop name="last-modified-date" value="20181015" />
+            <prop name="release-date" value="2018-10-15" />
             <link href="#795533ab-9427-4abe-820f-0b571bacfe6d" rel="implements-policy">
                 <text>Ensures that all host are configured to publish log events to the logging
                     server.</text>
@@ -192,8 +221,13 @@
             <responsible-party role-id="asset-owner">
                 <party-uuid>3b2a5599-cc37-403f-ae36-5708fa804b27</party-uuid>
             </responsible-party>
-            <implemented-component component-uuid="e00acdcf-911b-437d-a42f-b0b558cc4f03" />
-            <implemented-component component-uuid="795533ab-9427-4abe-820f-0b571bacfe6d" />
+            <implemented-component component-uuid="e00acdcf-911b-437d-a42f-b0b558cc4f03" >
+            <prop name="asset-id" value="logging-server"></prop>    
+            </implemented-component>
+
+            <implemented-component component-uuid="795533ab-9427-4abe-820f-0b571bacfe6d">
+                <prop name="asset-id" value="legal policy"></prop>
+                </implemented-component>
         </inventory-item>
         <remarks>
             <p>This is a partial implementation that addresses the logging server portion of the
