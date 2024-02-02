@@ -6,7 +6,7 @@
         <title>IFA GoodRead Assessment Plan</title>
         <last-modified>2023-05-18T13:57:28.355446-04:00</last-modified>
         <version>1.0</version>
-        <oscal-version>1.1.1</oscal-version>
+        <oscal-version>1.1.2</oscal-version>
         <role id="assessor">
             <title>IFA Security Control Assessor</title>
         </role>

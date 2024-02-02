@@ -6,7 +6,7 @@
         <title>IFA GoodRead Continuous Monitoring Assessment Results June 2023</title>
         <last-modified>2023-06-02T08:47:33-04:00</last-modified>
         <version>202306-002</version>
-        <oscal-version>1.1.1</oscal-version>
+        <oscal-version>1.1.2</oscal-version>
         <role id="assessor">
             <title>IFA Security Controls Assessor</title>
         </role>

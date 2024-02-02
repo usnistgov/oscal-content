@@ -6,7 +6,7 @@
     <title>MongoDB Component Definition Example</title>
     <last-modified>2023-10-12T00:00:00.000000-04:00</last-modified>
     <version>20231012</version>
-    <oscal-version>1.1.1</oscal-version>
+    <oscal-version>1.1.2</oscal-version>
     <role id="provider">
       <title>Provider</title>
     </role>
