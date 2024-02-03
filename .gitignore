@@ -3,3 +3,4 @@ generated/
 # Downloaded utilities for content transformation
 yq
 jq
+.DS_Store
