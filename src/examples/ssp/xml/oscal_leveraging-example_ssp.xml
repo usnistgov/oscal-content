@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model schematypens="http://www.w3.org/2001/XMLSchema" type="application/xml" href="https://github.com/usnistgov/OSCAL/releases/download/v1.1.1/oscal_complete_schema.xsd"?>
 <system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-                      uuid="bb9219b1-e51c-4680-abb0-616a43bbfbb1">
+   uuid="bb9219b1-e51c-4680-abb0-616a43bbfbb1">
    <metadata>
       <title>Leveraging SaaS System Security Plan</title>
-      <last-modified>2023-10-12T00:00:00.000000-04:00</last-modified>
-      <version>0.2</version>
-      <oscal-version>1.1.1</oscal-version>
+      <last-modified>2024-02-01T13:57:28.355446-04:00</last-modified>
+      <version>0.3</version>
+      <oscal-version>1.1.2</oscal-version>
       <role id="admin">
          <title>Administrator</title>
       </role>
-      <party type="person" uuid="22222222-0000-4000-9000-100000000001"/>
-      <party type="person" uuid="22222222-0000-4000-9000-100000000002">
+      <party type="person" uuid="22222222-0000-4000-9000-100000000001">
          <remarks>
-            <p>Leveraged Authorization POC</p>
+            <p>Leveraging SaaS' Admin</p>
+         </remarks>
+      </party>
+      <party type="person" uuid="11111111-0000-4000-9000-100000000001">
+         <remarks>
+            <p>Leveraged Authorization (IaaS) POC</p>
          </remarks>
       </party>
    </metadata>
-   <import-profile href="#6b45e2a5-b238-4752-ba12-cfd6ef2a83df"/>
+   <import-profile href="#6b45e2a5-b238-4752-ba12-cfd6ef2a83df" />
    <system-characteristics>
       <system-id>saas_system_iaas_customer</system-id>
       <system-name>Leveraging SaaS System</system-name>
       <description>
-         <p>An example of three customers leveraging an authorized SaaS, which is running on an authorized IaaS.</p>
+         <p>An example of three customers leveraging an authorized SaaS, which is running on an
+            authorized IaaS.</p>
          <pre>
 Cust-A    Cust-B    Cust-C
   |         |         |
@@ -38,24 +43,28 @@ Cust-A    Cust-B    Cust-C
   |  Leveraged IaaS   |
   +-------------------+
             </pre>
-         <p>In this example, the IaaS SSP specifies customer responsibilities for certain controls.</p>
-         <p>The SaaS must address these for the control to be fully satisfied.</p>
-         <p>The SaaS provider may either implement these directly or pass the responsibility on to their customers. Both may be necessary.</p>
+         <p>In this example, the IaaS SSP (the leveraged SSP) specifies what IaaS provides and the
+            customer's responsibilities for certain controls.</p>
+         <p>The SaaS must address these responsibilities for the control to be fully satisfied.</p>
+         <p>The SaaS provider may either implement these directly or pass the responsibility on to
+            their customers. Both may be necessary.</p>
          <p>For any given control, the Leveraged IaaS SSP must describe:</p>
          <ol>
             <li>HOW the IaaS is directly satisfying the control</li>
-            <li>WHAT responsibilities are left for the Leveraging SaaS (or their customers) to implement.</li>
+            <li>WHAT responsibilities are left for the Leveraging SaaS (or their customers) to
+               implement.</li>
          </ol>
          <p>For any given control, the Leveraging SaaS SSP must describe:</p>
          <ol>
             <li>WHAT is being inherited from the underlying IaaS</li>
             <li>HOW the SaaS is directly satisfying the control.</li>
-            <li>WHAT responsibilities are left for the SaaS customers to implement. (The SaaS customers are Cust-A, B and C)</li>
+            <li>WHAT responsibilities are left for the SaaS' customers to implement. (The SaaS
+               customers are Cust-A, B and C)</li>
          </ol>
       </description>
       <security-sensitivity-level>low</security-sensitivity-level>
       <system-information>
-         <information-type>
+         <information-type uuid="22222222-0000-4000-9000-200000000000">
             <title>System and Network Monitoring</title>
             <description>
                <p>This system handles information pertaining to audit events.</p>
@@ -67,21 +76,24 @@ Cust-A    Cust-B    Cust-C
                <base>fips-199-moderate</base>
                <selected>fips-199-low</selected>
                <adjustment-justification>
-                  <p>This impact has been adjusted to low as an example of how to perform this type of adjustment.</p>
+                  <p>This impact has been adjusted to low as an example of how to perform this type
+                     of adjustment.</p>
                </adjustment-justification>
             </confidentiality-impact>
             <integrity-impact>
                <base>fips-199-moderate</base>
                <selected>fips-199-low</selected>
                <adjustment-justification>
-                  <p>This impact has been adjusted to low as an example of how to perform this type of adjustment.</p>
+                  <p>This impact has been adjusted to low as an example of how to perform this type
+                     of adjustment.</p>
                </adjustment-justification>
             </integrity-impact>
             <availability-impact>
                <base>fips-199-moderate</base>
                <selected>fips-199-low</selected>
                <adjustment-justification>
-                  <p>This impact has been adjusted to low as an example of how to perform this type of adjustment.</p>
+                  <p>This impact has been adjusted to low as an example of how to perform this type
+                     of adjustment.</p>
                </adjustment-justification>
             </availability-impact>
          </information-type>
@@ -91,21 +103,22 @@ Cust-A    Cust-B    Cust-C
          <security-objective-integrity>fips-199-low</security-objective-integrity>
          <security-objective-availability>fips-199-low</security-objective-availability>
       </security-impact-level>
-      <status state="operational"/>
+      <status state="operational" />
       <authorization-boundary>
          <description>
             <p>The virtualized components deployed on the CSP IaaS.</p>
          </description>
       </authorization-boundary>
       <remarks>
-         <p>Most system-characteristics content does not support the example, and is included to meet the minimum SSP syntax requirements.</p>
+         <p>Most system-characteristics content does not support the example, and is included to
+            meet the minimum SSP syntax requirements.</p>
       </remarks>
    </system-characteristics>
    <system-implementation>
       <leveraged-authorization uuid="22222222-0000-4000-9000-300000000001">
          <title>CSP IaaS [Leveraged System]</title>
-         <link href="#b3a3079c-ace3-4aae-9acd-d52d418472f2" rel="oscal-ssp-xml"/>
-         <party-uuid>22222222-0000-4000-9000-100000000002</party-uuid>
+         <link href="#b3a3079c-ace3-4aae-9acd-d52d418472f2" rel="oscal-ssp-xml" />
+         <party-uuid>11111111-0000-4000-9000-100000000001</party-uuid>
          <date-authorized>2018-01-01</date-authorized>
       </leveraged-authorization>
       <user uuid="22222222-0000-4000-9000-200000000001">
@@ -115,14 +128,6 @@ Cust-A    Cust-B    Cust-C
             <function-performed>Manages the components within the SaaS.</function-performed>
          </authorized-privilege>
       </user>
-      <component type="this-system" uuid="80511208-2643-4d2a-bef4-d593ba86b73f">
-         <title>This System</title>
-         <description>
-            <p>The system described by this SSP.</p>
-            <p>This text was auto-generated by the OSCAL M3-RC1 data upgrade converter.</p>
-         </description>
-         <status state="operational"/>
-      </component>
       <component uuid="22222222-0000-4000-9001-000000000001" type="this-system">
          <title>
             <strong>THIS SYSTEM (SaaS)</strong>
@@ -131,41 +136,41 @@ Cust-A    Cust-B    Cust-C
             <p>This Leveraging SaaS.</p>
             <p>The entire system as depicted in the system authorization boundary</p>
          </description>
-         <prop name="implementation-point" value="system"/>
-         <status state="operational"/>
+         <status state="operational" />
       </component>
       <component uuid="22222222-0000-4000-9001-000000000002" type="system">
          <title>
             <strong>LEVERAGED SYSTEM (IaaS)</strong>
          </title>
          <description>
-            <p>If the leveraged system owner provides a UUID for their system (such as in an OSCAL-based CRM), it should be used as the UUID for this component.</p>
+            <p>If the leveraged system owner provides a UUID for their system (such as in an
+               OSCAL-based CRM), it should be used as the UUID for this component.</p>
          </description>
-         <prop name="implementation-point" value="external"/>
+         <prop name="implementation-point" value="external" />
          <prop name="leveraged-authorization-uuid"
-               value="22222222-0000-4000-9000-300000000001"/>
-         <prop name="inherited-uuid" value="11111111-0000-4000-9001-000000000001"/>
-         <status state="operational"/>
+            value="22222222-0000-4000-9000-300000000001" />
+         <prop name="inherited-uuid" value="11111111-0000-4000-9001-000000000001" />
+         <status state="operational" />
       </component>
       <component uuid="22222222-0000-4000-9001-000000000003" type="appliance">
          <title>Access Control Appliance</title>
          <description>
             <p>An access control virtual appliance, wich performs XYZ functions.</p>
          </description>
-         <prop name="implementation-point" value="internal"/>
-         <prop name="virtual" value="yes"/>
-         <status state="operational"/>
+         <prop name="implementation-point" value="internal" />
+         <prop name="virtual" value="yes" />
+         <status state="operational" />
       </component>
       <component uuid="22222222-0000-4000-9001-000000000004" type="application">
-         <title>Leveraged Application</title>
+         <title>LEVERAGED APPLICATION</title>
          <description>
             <p>Inherited from underlying IaaS.</p>
          </description>
-         <prop name="implementation-point" value="external"/>
+         <prop name="implementation-point" value="external" />
          <prop name="leveraged-authorization-uuid"
-               value="22222222-0000-4000-9000-300000000001"/>
-         <prop name="inherited-uuid" value="11111111-0000-4000-9001-000000000002"/>
-         <status state="operational"/>
+            value="22222222-0000-4000-9000-300000000001" />
+         <prop name="inherited-uuid" value="11111111-0000-4000-9001-000000000002" />
+         <status state="operational" />
       </component>
    </system-implementation>
    <!-- ************************ -->
@@ -179,7 +184,7 @@ Cust-A    Cust-B    Cust-C
          </set-parameter>
          <statement statement-id="ac-2_stmt.a" uuid="22222222-0000-4000-9009-002001000000">
             <by-component uuid="22222222-0000-4000-9009-002001001000"
-                          component-uuid="22222222-0000-4000-9001-000000000001">
+               component-uuid="22222222-0000-4000-9001-000000000001">
                <description>
                   <p>Response for the "This System" component.</p>
                   <p>Overall description of how "This System" satisfies AC-2, Part a.</p>
@@ -190,32 +195,38 @@ Cust-A    Cust-B    Cust-C
                   <p>Response for the "This System" component.</p>
                   <p>Overall description of how "This System" satisfies AC-2, Part a.</p>
                </description>
-               <prop name="responsibility" value="provider"/>
+               <responsible-role role-id="admin">
+                  <party-uuid>22222222-0000-4000-9000-100000000001</party-uuid>
+               </responsible-role>
             </by-component>
             <by-component uuid="22222222-0000-4000-9009-002001002000"
-                          component-uuid="22222222-0000-4000-9001-000000000002">
+               component-uuid="22222222-0000-4000-9001-000000000002">
                <description>
                   <p>Describe how this internal virtual appliance satisfies AC-2, Part a.</p>
                </description>
                <satisfied uuid="22222222-0000-4000-9009-002001002001"
-                          responsibility-uuid="11111111-0000-4000-9009-002001001001">
+                  responsibility-uuid="11111111-0000-4000-9009-002001001001">
                   <description>
-                     <p>Description that directly addresses how the consumer responsibility was satisfied.</p>
+                     <p>Description that directly addresses how the consumer responsibility was
+                        satisfied.</p>
                   </description>
-                  <responsible-role role-id="role-id"/>
+                  <responsible-role role-id="admin">
+                     <party-uuid>22222222-0000-4000-9000-100000000001</party-uuid>
+                  </responsible-role>
                </satisfied>
             </by-component>
             <by-component uuid="22222222-0000-4000-9009-002001003000"
-                          component-uuid="22222222-0000-4000-9001-000000000003">
+               component-uuid="22222222-0000-4000-9001-000000000003">
                <description>
                   <p>
-                     <em>duplicated/tailored description of what was inherited, and description of what was configured.</em>
+                     <em>duplicated/tailored description of what was inherited, and description of
+                     what was configured.</em>
                   </p>
                   <p>Consumer-appropriate description of what may be inherited.</p>
                   <p>In the context of the application component in satisfaction of AC-2, part a.</p>
                </description>
                <inherited uuid="22222222-0000-4000-9009-002001002002"
-                          provided-uuid="11111111-0000-4000-9009-002001002001">
+                  provided-uuid="11111111-0000-4000-9009-002001002001">
                   <description>
                      <p>Optional description.</p>
                      <p>
@@ -226,19 +237,23 @@ Cust-A    Cust-B    Cust-C
                   </description>
                </inherited>
                <satisfied uuid="22222222-0000-4000-9009-002001002003"
-                          responsibility-uuid="11111111-0000-4000-9009-002001002002">
+                  responsibility-uuid="11111111-0000-4000-9009-002001002002">
                   <description>
                      <p>Description of how the responsibility was satisfied.</p>
                   </description>
                </satisfied>
             </by-component>
             <remarks>
-               <p>a. Identifies and selects the following types of information system accounts to support organizational missions/business functions: [Assignment: privileged and non-privileged];</p>
+               <p>a. Identifies and selects the following types of information system accounts to
+                  support organizational missions/business functions: [Assignment: privileged and
+                  non-privileged];</p>
             </remarks>
          </statement>
          <remarks>
             <p>The organization:</p>
-            <p>a. Identifies and selects the following types of information system accounts to support organizational missions/business functions: [Assignment: organization-defined information system account types];</p>
+            <p>a. Identifies and selects the following types of information system accounts to
+               support organizational missions/business functions: [Assignment: organization-defined
+               information system account types];</p>
             <p>b. Assigns account managers for information system accounts;</p>
             <p>c. Establishes conditions for group and role membership;</p>
             <p>Omitted: d. through j.</p>
@@ -247,23 +262,29 @@ Cust-A    Cust-B    Cust-C
    </control-implementation>
    <back-matter>
       <resource uuid="22222222-0000-4000-9999-000000000001">
-         <rlink href="./attachments/SaaS_ac_proc.docx"/>
+         <rlink href="./attachments/SaaS_ac_proc.docx" />
       </resource>
       <resource uuid="6b45e2a5-b238-4752-ba12-cfd6ef2a83df">
          <description>
             <p>NIST Special Publication 800-53 Revision 4: Low Baseline Profile</p>
          </description>
-         <rlink media-type="application/oscal.catalog+xml" href="../../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_LOW-baseline_profile.xml"/>
-         <rlink media-type="application/oscal.catalog+json" href="../../../nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_LOW-baseline_profile.json"/>
-         <rlink media-type="application/oscal.catalog+yaml" href="../../../nist.gov/SP800-53/rev4/yaml/NIST_SP-800-53_rev4_LOW-baseline_profile.yaml"/>
+         <rlink media-type="application/oscal.catalog+xml"
+            href="../../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_LOW-baseline_profile.xml" />
+         <rlink media-type="application/oscal.catalog+json"
+            href="../../../nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_LOW-baseline_profile.json" />
+         <rlink media-type="application/oscal.catalog+yaml"
+            href="../../../nist.gov/SP800-53/rev4/yaml/NIST_SP-800-53_rev4_LOW-baseline_profile.yaml" />
       </resource>
       <resource uuid="b3a3079c-ace3-4aae-9acd-d52d418472f2">
          <description>
             <p>Leveraged System Security Plan in OSCAL Data Formats</p>
          </description>
-         <rlink media-type="application/oscal.catalog+xml" href="../../ssp/xml/oscal_leveraged-example_ssp.xml"/>
-         <rlink media-type="application/oscal.catalog+json" href="../../../ssp/json/nist.gov/SP800-53/rev4/json/oscal_leveraged-example_ssp.json"/>
-         <rlink media-type="application/oscal.catalog+yaml" href="../../../ssp/yaml/oscal_leveraged-example_ssp.yaml"/>
-      </resource>      
+         <rlink media-type="application/oscal.catalog+xml"
+            href="../../ssp/xml/oscal_leveraged-example_ssp.xml" />
+         <rlink media-type="application/oscal.catalog+json"
+            href="../../../ssp/json/nist.gov/SP800-53/rev4/json/oscal_leveraged-example_ssp.json" />
+         <rlink media-type="application/oscal.catalog+yaml"
+            href="../../../ssp/yaml/oscal_leveraged-example_ssp.yaml" />
+      </resource>
    </back-matter>
 </system-security-plan>

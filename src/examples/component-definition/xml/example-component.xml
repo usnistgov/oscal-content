@@ -3,9 +3,9 @@
 <component-definition xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="8223d65f-57a9-4689-8f06-2a975ae2ad72">
     <metadata>
         <title>Test Component Definition</title>
-        <last-modified>2023-10-12T00:00:00.000000-04:00</last-modified>
+        <last-modified>2024-02-01T13:57:28.355446-04:00</last-modified>
         <version>20231012</version>
-        <oscal-version>1.1.1</oscal-version>
+        <oscal-version>1.1.2</oscal-version>
         <party uuid="ee47836c-877c-4007-bbf3-c9d9bd805a9a" type="organization">
             <name>Test Vendor</name>
         </party>
