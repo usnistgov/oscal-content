@@ -1,9 +1,9 @@
 profile:
-  uuid: 1019f424-1556-4aa3-9df3-337b97c2c856
+  uuid: 49f45a95-20d1-450a-b4a5-c27ecc335a26
   metadata:
-    title: NIST Special Publication 800-53 Revision 5 MODERATE IMPACT BASELINE
-    last-modified: "2023-10-12T00:00:00.000000-04:00"
-    version: Final
+    title: NIST Special Publication 800-53 Revision 5.1.1 MODERATE IMPACT BASELINE
+    last-modified: "2023-12-04T14:55:00.000000-04:00"
+    version: 5.1.1+u2
     oscal-version: 1.1.1
     roles:
       - id: creator
