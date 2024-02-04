@@ -17,7 +17,7 @@ all: artifacts checks ## Run all steps for content preparation
 artifacts: copy-readmes copy-xml-content resolve-xml-profiles convert-min-json-content reformat-json-content convert-yaml-content ## Generate all artifacts
 
 .PHONY: checks
-checks: validate-xml-content validate-json-content validate-yaml-content ## Check all content with schema and other validation methods
+checks: validate-xml-content validate-json-content validate-yaml-content validate-xml-by-cli ## Check all content with schema and other validation methods
 
 .PHONY: clean
 clean: clean-core-artifacts clean-readmes clean-json-content clean-xml-content clean-yaml-content ## Clean all generated content
@@ -25,6 +25,22 @@ clean: clean-core-artifacts clean-readmes clean-json-content clean-xml-content c
 #
 # Dependencies
 #
+
+
+
+
+OSCAL_CLI_VERSION:=1.0.3
+OSCAL_CLI_BIN:=oscal-cli
+OSCAL_CLI_INSTALL_URL:=https://repo1.maven.org/maven2/gov/nist/secauto/oscal/tools/oscal-cli/cli-core/$(OSCAL_CLI_VERSION)/cli-core-$(OSCAL_CLI_VERSION)-oscal-cli.zip
+OSCAL_CLI_INSTALL_PATH:=./oscal-cli/bin
+OSCAL_CLI_PATH:=$(shell which $(OSCAL_CLI_BIN) > /dev/null && dirname `which $(OSCAL_CLI_BIN)` || echo $(OSCAL_CLI_INSTALL_PATH))
+
+$(OSCAL_CLI_INSTALL_PATH):
+	@echo Downloading OSCAL CLI Tool...
+	@mkdir -p $(OSCAL_CLI_INSTALL_PATH)
+	@curl $(CURL_INSTALL_OPTS) -o $(OSCAL_CLI_INSTALL_PATH)/oscal-cli.zip $(OSCAL_CLI_INSTALL_URL)
+	@unzip -o $(OSCAL_CLI_INSTALL_PATH)/oscal-cli.zip -d $(OSCAL_CLI_INSTALL_PATH)
+	@chmod +x $(OSCAL_CLI_INSTALL_PATH)/$(OSCAL_CLI_BIN)
 
 CURL_INSTALL_OPTS:=--silent --location
 
@@ -156,6 +172,21 @@ OSCAL_COMPLETE_XML_SCHEMA:=$(OSCAL_CORE_DIR)/generated/oscal_complete_schema.xsd
 validate-xml-content: $(GEN_XML_FILES) ## Validate XML files
 	$(MAKE) -C $(OSCAL_CORE_DIR) $(subst $(OSCAL_CORE_DIR)/,,$(OSCAL_COMPLETE_XML_SCHEMA))
 	$(XMLLINT_PATH) --schema $(OSCAL_COMPLETE_XML_SCHEMA) --noout $(GEN_XML_FILES)
+
+
+#
+# Validate XML with oscal-cli
+#
+.PHONY: validate-xml-by-cli
+validate-xml-by-cli: $(OSCAL_CLI_PATH) ## Validate XML files by directory using OSCAL CLI Tool
+	@find $(SRC_DIR)/examples -mindepth 1 -maxdepth 1 -type d | while read example_dir; do \
+		example_type=$$(basename "$$example_dir"); \
+		echo "Processing example type: $$example_type"; \
+		find "$$example_dir" -name '*.xml' | while read xml_file; do \
+			echo "Validating $$xml_file with OSCAL CLI as $$example_type"; \
+			$(OSCAL_CLI_PATH)/oscal-cli "$$example_type" validate "$$xml_file"; \
+		done \
+	done
 
 .PHONY: clean-xml-content
 clean-xml-content: ## Clean generated XML content
