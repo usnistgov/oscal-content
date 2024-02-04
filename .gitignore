@@ -4,3 +4,4 @@ generated/
 yq
 jq
 .DS_Store
+build/oscal-cli/
