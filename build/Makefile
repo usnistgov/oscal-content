@@ -29,16 +29,6 @@ clean: clean-core-artifacts clean-readmes clean-json-content clean-xml-content c
 
 
 
-OSCAL_CLI_VERSION:=1.0.3
-OSCAL_CLI_BIN:=oscal-cli
-OSCAL_CLI_INSTALL_URL:=https://repo1.maven.org/maven2/gov/nist/secauto/oscal/tools/oscal-cli/cli-core/$(OSCAL_CLI_VERSION)/cli-core-$(OSCAL_CLI_VERSION)-oscal-cli.zip
-OSCAL_CLI_INSTALL_PATH:=./oscal-cli
-$(OSCAL_CLI_INSTALL_PATH):
-	@echo Downloading OSCAL CLI Tool...
-	@mkdir -p $(OSCAL_CLI_INSTALL_PATH)
-	@curl $(CURL_INSTALL_OPTS) -o $(OSCAL_CLI_INSTALL_PATH)/oscal-cli.zip $(OSCAL_CLI_INSTALL_URL)
-	@unzip -o $(OSCAL_CLI_INSTALL_PATH)/oscal-cli.zip -d $(OSCAL_CLI_INSTALL_PATH)
-	@chmod +x $(OSCAL_CLI_INSTALL_PATH)/bin/$(OSCAL_CLI_BIN)
 
 CURL_INSTALL_OPTS:=--silent --location
 
@@ -76,8 +66,21 @@ NPM_PKGS_DIR:=node_modules
 $(NPM_PKGS_DIR):
 	$(MAKE) -C $(OSCAL_CORE_DIR) dependencies
 
+
+OSCAL_CLI_VERSION=`curl -s https://api.github.com/repos/usnistgov/oscal-cli/releases/latest | jq -r '.name[1:]'`
+OSCAL_CLI_BIN:=oscal-cli
+OSCAL_CLI_INSTALL_URL:=https://repo1.maven.org/maven2/gov/nist/secauto/oscal/tools/oscal-cli/cli-core/$(OSCAL_CLI_VERSION)/cli-core-$(OSCAL_CLI_VERSION)-oscal-cli.zip
+OSCAL_CLI_INSTALL_PATH:=./oscal-cli
+$(OSCAL_CLI_INSTALL_PATH):
+	@echo Downloading OSCAL CLI Tool...
+	@echo $(OSCAL_CLI_VERSION)
+	@mkdir -p $(OSCAL_CLI_INSTALL_PATH)
+	@curl $(CURL_INSTALL_OPTS) -o $(OSCAL_CLI_INSTALL_PATH)/oscal-cli.zip $(OSCAL_CLI_INSTALL_URL)
+	@unzip -o $(OSCAL_CLI_INSTALL_PATH)/oscal-cli.zip -d $(OSCAL_CLI_INSTALL_PATH)
+	@chmod +x $(OSCAL_CLI_INSTALL_PATH)/bin/$(OSCAL_CLI_BIN)
+
 .PHONY: dependencies
-dependencies: $(JQ_PATH) $(XMLLINT_PATH) $(YQ_PATH) $(NPM_PKGS_DIR) ## Install needed jq and yq binaries, and download needed downstream dependencies
+dependencies: $(JQ_PATH) $(XMLLINT_PATH) $(YQ_PATH) $(NPM_PKGS_DIR) $(OSCAL_CLI_INSTALL_PATH) ## Install needed jq and yq binaries, and download needed downstream dependencies
 
 # By default we install xmllint with operating system package manager, so
 # to be sensible, we will not uninstall or delete it even with the package
