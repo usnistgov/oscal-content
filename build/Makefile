@@ -66,18 +66,22 @@ NPM_PKGS_DIR:=node_modules
 $(NPM_PKGS_DIR):
 	$(MAKE) -C $(OSCAL_CORE_DIR) dependencies
 
-
 OSCAL_CLI_VERSION=`curl -s https://api.github.com/repos/usnistgov/oscal-cli/releases/latest | jq -r '.name[1:]'`
 OSCAL_CLI_BIN:=oscal-cli
 OSCAL_CLI_INSTALL_URL:=https://repo1.maven.org/maven2/gov/nist/secauto/oscal/tools/oscal-cli/cli-core/$(OSCAL_CLI_VERSION)/cli-core-$(OSCAL_CLI_VERSION)-oscal-cli.zip
-OSCAL_CLI_INSTALL_PATH:=./oscal-cli
-$(OSCAL_CLI_INSTALL_PATH):
-	@echo Downloading OSCAL CLI Tool...
-	@echo $(OSCAL_CLI_VERSION)
-	@mkdir -p $(OSCAL_CLI_INSTALL_PATH)
-	@curl $(CURL_INSTALL_OPTS) -o $(OSCAL_CLI_INSTALL_PATH)/oscal-cli.zip $(OSCAL_CLI_INSTALL_URL)
-	@unzip -o $(OSCAL_CLI_INSTALL_PATH)/oscal-cli.zip -d $(OSCAL_CLI_INSTALL_PATH)
-	@chmod +x $(OSCAL_CLI_INSTALL_PATH)/bin/$(OSCAL_CLI_BIN)
+OSCAL_CLI_INSTALL_PATH := $(shell which oscal-cli 2>/dev/null)
+ifeq ($(OSCAL_CLI_INSTALL_PATH),)
+OSCAL_CLI_INSTALL_PATH := ./oscal-cli/
+else
+OSCAL_CLI_INSTALL_PATH := $(shell dirname $$(dirname $$(which oscal-cli)))
+endif
+$(OSCAL_CLI_INSTALL_PATH):	
+	@echo "Downloading OSCAL CLI version $(OSCAL_CLI_VERSION)..."; \
+	mkdir -p $(OSCAL_CLI_INSTALL_PATH); \
+	curl $(CURL_INSTALL_OPTS) -o $(OSCAL_CLI_INSTALL_PATH)/oscal-cli.zip $(OSCAL_CLI_INSTALL_URL); \
+	unzip -o $(OSCAL_CLI_INSTALL_PATH)/oscal-cli.zip -d $(OSCAL_CLI_INSTALL_PATH); \
+	chmod +x $(OSCAL_CLI_INSTALL_PATH)/bin/$(OSCAL_CLI_BIN)
+
 
 .PHONY: dependencies
 dependencies: $(JQ_PATH) $(XMLLINT_PATH) $(YQ_PATH) $(NPM_PKGS_DIR) $(OSCAL_CLI_INSTALL_PATH) ## Install needed jq and yq binaries, and download needed downstream dependencies
@@ -180,6 +184,9 @@ validate-xml-content: $(GEN_XML_FILES) ## Validate XML files
 #
 .PHONY: validate-xml-by-cli
 validate-xml-by-cli: $(OSCAL_CLI_INSTALL_PATH) ## Validate XML files by directory using OSCAL CLI Tool
+	@echo "Validating XML files by directory using OSCAL CLI Tool"
+	@$(OSCAL_CLI_INSTALL_PATH)/bin/$(OSCAL_CLI_BIN) --version
+	@echo "latest oscal-cli version is $(OSCAL_CLI_VERSION)"
 	@find $(SRC_DIR)/examples -mindepth 1 -maxdepth 1 -type d | while read example_dir; do \
 		example_type=$$(basename "$$example_dir"); \
 		echo "Processing example type: $$example_type"; \
