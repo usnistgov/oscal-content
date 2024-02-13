@@ -2,9 +2,9 @@ component-definition:
   uuid: a7ba800c-a432-44cd-9075-0862cd66da6b
   metadata:
     title: MongoDB Component Definition Example
-    last-modified: "2023-10-12T00:00:00.000000-04:00"
+    last-modified: "2024-02-01T13:57:28.355446-04:00"
     version: "20231012"
-    oscal-version: 1.1.1
+    oscal-version: 1.1.2
     roles:
       - id: provider
         title: Provider
@@ -17,7 +17,7 @@ component-definition:
             rel: website
   components:
     - uuid: 91f646c5-b1b6-4786-9ec3-2305a044e217
-      type: software
+      type: service
       title: MongoDB
       description: MongoDB is a source-available, cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.
       purpose: Provides a NoSQL database service

@@ -2,12 +2,20 @@ system-security-plan:
   uuid: cff8385f-108e-40a5-8f7a-82f3dc0eaba8
   metadata:
     title: Enterprise Logging and Auditing System Security Plan
-    last-modified: "2023-10-12T00:00:00.000000-04:00"
+    last-modified: "2024-02-01T13:57:28.355446-04:00"
     version: "1.1"
-    oscal-version: 1.1.1
+    oscal-version: 1.1.2
     roles:
       - id: legal-officer
         title: Legal Officer
+      - id: maintainer
+        title: System Maintainer
+      - id: asset-owner
+        title: System Assets Owner
+      - id: provider
+        title: System Provider
+      - id: asset-administrator
+        title: System Assets Admin
     parties:
       - uuid: 3b2a5599-cc37-403f-ae36-5708fa804b27
         type: organization
@@ -33,9 +41,9 @@ system-security-plan:
     system-name: Enterprise Logging and Auditing System
     description: This is an example of a system that provides enterprise logging and log auditing capabilities.
     props:
-      - name: deployment-model
-        value: private
-      - name: service-models
+      - name: cloud-deployment-model
+        value: private-cloud
+      - name: cloud-service-model
         value: iaas
     security-sensitivity-level: moderate
     system-information:
@@ -71,6 +79,13 @@ system-security-plan:
             value: internal
         role-ids:
           - asset-administrator
+      - uuid: 9824089b-322c-456f-86c4-4111c4200f62
+        title: System Maintainer
+        props:
+          - name: type
+            value: internal
+        role-ids:
+          - maintainer
       - uuid: ae8de94c-835d-4303-83b1-114b6a117a07
         title: Audit Team
         props:
@@ -85,7 +100,20 @@ system-security-plan:
             value: internal
         role-ids:
           - legal-officer
+      - uuid: 372ce7a3-92b0-437e-a98c-55d29f9bfab8
+        title: Provider
+        props:
+          - name: type
+            value: internal
+        role-ids:
+          - provider
     components:
+      - uuid: 74042245-3db1-4f4d-be9a-ceb62d81152c
+        type: this-system
+        title: This System
+        description: The system described by this SSP.
+        status:
+          state: operational
       - uuid: e00acdcf-911b-437d-a42f-b0b558cc4f03
         type: software
         title: Logging Server
@@ -109,8 +137,8 @@ system-security-plan:
         props:
           - name: version
             value: "2.1"
-          - name: last-modified-date
-            value: "20181015"
+          - name: release-date
+            value: "2018-10-15"
         status:
           state: operational
         responsible-roles:
@@ -122,8 +150,8 @@ system-security-plan:
         title: System Integration Process
         description: Ensures proper integration into the enterprise as new systems are brought into production.
         props:
-          - name: last-modified-date
-            value: "20181015"
+          - name: release-date
+            value: "2018-10-15"
         links:
           - href: '#795533ab-9427-4abe-820f-0b571bacfe6d'
             rel: implements-policy
@@ -139,8 +167,8 @@ system-security-plan:
         title: Inventory Management Process
         description: Describes how new components are introduced into the system - ensures monitoring teams know about every asset that should be producing logs, thus should be monitored.
         props:
-          - name: last-modified-date
-            value: "20181015"
+          - name: release-date
+            value: "2018-10-15"
         links:
           - href: '#795533ab-9427-4abe-820f-0b571bacfe6d'
             rel: implements-policy
@@ -156,8 +184,8 @@ system-security-plan:
         title: Configuration Management Guidance
         description: Describes how to configure a component to ensure its logs are transmitted to Splunk in the appropriate format. Also describes how to configure time synchronization.
         props:
-          - name: last-modified-date
-            value: "20181015"
+          - name: release-date
+            value: "2018-10-15"
         links:
           - href: '#795533ab-9427-4abe-820f-0b571bacfe6d'
             rel: implements-policy
@@ -183,7 +211,13 @@ system-security-plan:
               - 3b2a5599-cc37-403f-ae36-5708fa804b27
         implemented-components:
           - component-uuid: e00acdcf-911b-437d-a42f-b0b558cc4f03
+            props:
+              - name: asset-id
+                value: logging-server
           - component-uuid: 795533ab-9427-4abe-820f-0b571bacfe6d
+            props:
+              - name: asset-id
+                value: legal policy
     remarks: This is a partial implementation that addresses the logging server portion of the auditing system.
   control-implementation:
     description: This is the control implementation for the system.

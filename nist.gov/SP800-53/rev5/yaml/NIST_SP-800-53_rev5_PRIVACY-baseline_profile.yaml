@@ -1,10 +1,10 @@
 profile:
-  uuid: c8485895-a2f7-46f1-843a-380668cd6fe8
+  uuid: 6a917bb8-b705-4b60-bcf9-6f10bdf24d3b
   metadata:
     title: NIST Special Publication 800-53 Revision 5.1.1 PRIVACY BASELINE
     last-modified: "2023-12-04T14:55:00.000000-04:00"
-    version: 5.1.1+u2
-    oscal-version: 1.1.1
+    version: 5.1.1+u4
+    oscal-version: 1.1.2
     roles:
       - id: creator
         title: Document Creator

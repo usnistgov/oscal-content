@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system-security-plan
+    uuid="5e139edd-86aa-4b65-8431-1192bd276658"
+    xmlns="http://csrc.nist.gov/ns/oscal/1.0">
+    <metadata>
+        <title>IFA GoodRead System Security Plan</title>
+        <published>2023-05-19T14:46:54-04:00</published>
+        <last-modified>2024-03-01T13:57:28.355446-04:00</last-modified>
+        <version>1.1</version>
+        <oscal-version>1.1.2</oscal-version>
+        <role id="owner">
+            <title>IFA GoodRead Owner</title>
+        </role>
+        <role id="developer">
+            <title>IFA GoodRead Developer</title>
+        </role>
+        <role id="system-engineer">
+            <title>IFA GoodRead System Engineer</title>
+        </role>
+        <role id="public-affairs-office">
+            <title>IFA Public Affairs Office</title>
+        </role>
+        <party uuid="ba9c12bd-e5ef-46b6-95a2-4d8e7f864c1a" type="person">
+            <name>Owen Stilskin</name>
+            <member-of-organization>3a675986-b4ff-4030-b178-e953c2e55d64</member-of-organization>
+        </party>
+        <party uuid="67c04291-dbf6-495a-a3ba-0011638acc94" type="person">
+            <name>Juno Styles</name>
+            <member-of-organization>3a675986-b4ff-4030-b178-e953c2e55d64</member-of-organization>
+        </party>
+        <party uuid="4ba3f2b7-e894-48d7-b940-91c68661df55" type="person">
+            <name>Xavier Jones</name>
+            <member-of-organization>3a675986-b4ff-4030-b178-e953c2e55d64</member-of-organization>
+        </party>
+        <party uuid="3a675986-b4ff-4030-b178-e953c2e55d64" type="organization">
+            <name>Important Federal Agency</name>
+            <short-name>IFA</short-name>
+            <link href="https://www.ifa.gov" rel="website"/>
+        </party>
+        <responsible-party role-id="owner">
+            <party-uuid>ba9c12bd-e5ef-46b6-95a2-4d8e7f864c1a</party-uuid>
+        </responsible-party>
+        <responsible-party role-id="developer">
+            <party-uuid>67c04291-dbf6-495a-a3ba-0011638acc94</party-uuid>
+        </responsible-party>
+        <responsible-party role-id="system-engineer">
+            <party-uuid>4ba3f2b7-e894-48d7-b940-91c68661df55</party-uuid>
+        </responsible-party>
+    </metadata>
+    <import-profile href="../select/profile.oscal.json"/>
+    <system-characteristics>
+        <system-id identifier-type="http://ietf.org/rfc/rfc4122">8101e04d-8305-4e73-bb95-6b59f645b143</system-id>
+        <system-name>IFA GoodRead</system-name>
+        <description>
+            <p>This system acts as a link shortener for IFA employees</p>
+        </description>
+        <date-authorized>2023-05-19</date-authorized>
+        <security-sensitivity-level>moderate</security-sensitivity-level>
+        <system-information>
+            <information-type uuid="bccfbb65-a7f3-41ac-989f-01d96eddfdc7">
+                <title>User-provided Links</title>
+                <description>
+                    <p>This system maintains a set of user-provided links and their associated
+                        shortlinks</p>
+                </description>
+                <categorization system="https://doi.org/10.6028/NIST.SP.800-60v2r1">
+                    <information-type-id>C.2.8.12</information-type-id>
+                </categorization>
+                <confidentiality-impact>
+                    <base>fips-199-low</base>
+                </confidentiality-impact>
+                <integrity-impact>
+                    <base>fips-199-low</base>
+                    <selected>fips-199-moderate</selected>
+                    <adjustment-justification>
+                        <p>Maliciously modified links are a concern</p>
+                    </adjustment-justification>
+                </integrity-impact>
+                <availability-impact>
+                    <base>fips-199-low</base>
+                </availability-impact>
+            </information-type>
+        </system-information>
+        <security-impact-level>
+            <security-objective-confidentiality>low</security-objective-confidentiality>
+            <security-objective-integrity>medium</security-objective-integrity>
+            <security-objective-availability>low</security-objective-availability>
+        </security-impact-level>
+        <status state="operational"/>
+        <authorization-boundary>
+            <description>
+                <p>This section describes an attached diagram of the authorization boundary for IFA GoodRead Project's information system.</p>
+            </description>
+        </authorization-boundary>
+        <network-architecture>
+            <description>
+                <p>This section describes an attached diagram of the network architecture for IFA GoodRead Project's information system.</p>
+            </description>        
+        </network-architecture>
+        <data-flow>
+            <description>
+                <p>This section describes an attached diagram of various dataflows for application and related elements of the IFA GoodRead Project's information system.</p>
+            </description>        
+        </data-flow>
+    </system-characteristics>
+    <system-implementation>
+        <user uuid="00d323d3-dc3f-4d93-900f-f13430e094d3">
+            <title>Application Administrator</title>
+            <description>
+                <p>The developer of the application supports IFA Public Affairs Officers by administering the application and its infrastructure.</p>
+            </description>
+            <role-id>developer</role-id>
+            <authorized-privilege>
+                <title>Application Administrator Privilege</title>
+                <function-performed>user-creation</function-performed>
+                <function-performed>user-enablement</function-performed>
+                <function-performed>user-disablement</function-performed>
+                <function-performed>user-role-modification</function-performed>
+                <function-performed>popular-shortlink-cache-reset</function-performed>
+                <function-performed>database-export</function-performed>
+                <function-performed>database-migration</function-performed>
+            </authorized-privilege>
+        </user>
+        <user uuid="61405ba7-edb4-4243-8461-79aac5805e5c">
+            <title>Public Affairs Officers</title>
+            <description>
+                <p>IFA Public Affairs Officers (PAOs) in each division of the agency review public communications to citizens who are customers of the IFA. PAOs review requests from colleagues to generate and publish content that is the target of a shortlink and can unpublish shortlinks.</p>
+            </description>
+            <role-id>public-affairs-office</role-id>
+            <authorized-privilege>
+                <title>Public Affairs Officer Privilege</title>
+                <function-performed>shortlink-generation</function-performed>
+                <function-performed>shortlink-approval</function-performed>
+                <function-performed>shortlink-rejection</function-performed>
+                <function-performed>shortlink-publication</function-performed>
+                <function-performed>shortlink-unpublication</function-performed>
+            </authorized-privilege>
+        </user>
+        <user uuid="fb36760a-143d-490b-8fc4-6a8c172fba86">
+            <title>General Public</title>
+            <description>
+                <p>The general public is free to click on shortlinks</p>
+            </description>
+            <authorized-privilege>
+                <title>General Public Privilege</title>
+                <function-performed>shortlink-view</function-performed>
+            </authorized-privilege>
+        </user>
+        <component uuid="551b9706-d6a4-4d25-8207-f2ccec548b89" type="this-system">
+            <title>IFA GoodRead System</title>
+            <description>
+                <p>IFA develops, operates, and maintains the GoodRead link shortener system to </p>
+            </description>
+            <status state="operational"/>
+            <responsible-role role-id="developer">
+                <party-uuid>67c04291-dbf6-495a-a3ba-0011638acc94</party-uuid>
+            </responsible-role>
+            <responsible-role role-id="system-engineer">
+                <party-uuid>4ba3f2b7-e894-48d7-b940-91c68661df55</party-uuid>
+            </responsible-role>
+        </component>
+        <inventory-item uuid="4392599a-9117-416a-87d1-24c7d1b2dd0b">
+            <description>
+                <p>This is the custom GoodRead application within the system.</p>
+            </description>
+            <prop class="webserver-application" name="software-name" value="IFA GoodRead"/>
+            <prop class="webserver-application" name="software-version" value="1.0.0"/>
+            <prop class="webserver-application" name="asset-type" value="web-server"/>
+            <implemented-component component-uuid="551b9706-d6a4-4d25-8207-f2ccec548b89">
+                <prop name="asset-id" value="IFAGOV-SYSTEM1234-GOODREAD"/>
+            </implemented-component>
+        </inventory-item>
+        <inventory-item uuid="d911b560-f564-4715-8d2a-76f86127ac73">
+            <description>
+                <p>This is the web application framework upon which the developer writes the custom GoodRead application for the user interface and API of this system.</p>
+            </description>
+            <prop class="webserver-framework" name="software-name" value="Django Framework"/>
+            <prop class="webserver-framework" name="software-version" value="4.2.1"/>
+            <prop class="webserver-framework" name="asset-type" value="web-server"/>
+            <implemented-component component-uuid="551b9706-d6a4-4d25-8207-f2ccec548b89">
+                <prop name="asset-id" value="IFAGOV-SYSTEM1234-GOODREAD"/>
+            </implemented-component>
+        </inventory-item>
+        <inventory-item uuid="3e3a8d9a-e3d6-4c7d-b59b-a8d6514fa4a2">
+            <description>
+                <p>This is the database for the custom GoodRead application within the system.</p>
+            </description>
+            <prop class="database" name="software-name" value="PostgreSQL"/>
+            <prop class="database" name="software-version" value="15.3"/>
+            <prop class="database" name="asset-type" value="database"/>
+            <implemented-component component-uuid="551b9706-d6a4-4d25-8207-f2ccec548b89">
+                <prop name="asset-id" value="IFAGOV-SYSTEM1234-GOODREAD"/>
+            </implemented-component>
+        </inventory-item>
+        <inventory-item uuid="0fb95c4c-ebfd-492e-8145-363eb7947dbe">
+            <description>
+                <p>This is the operating system for the web server that runs the custom GoodRead application within the system.</p>
+            </description>
+            <prop class="operating-system" name="software-name" value="Red Hat Enterprise Linux 9"/>
+            <prop class="operating-system" name="asset-type" value="operating-system"/>
+            <implemented-component component-uuid="551b9706-d6a4-4d25-8207-f2ccec548b89">
+                <prop name="asset-id" value="IFAGOV-SYSTEM1234-GOODREAD"/>
+            </implemented-component>
+        </inventory-item>
+        <inventory-item uuid="cd39f700-23ab-4574-a17e-c9c8f073cbec">
+            <description>
+                <p>This inventory item is an instance from the AwesomeCloud Awesome Compute Service (ACS) Service. It is a Linux server.</p>
+            </description>
+            <prop class="linux-server" name="asset-id" value="instance-abcd1234"/>
+            <prop class="linux-server" name="ipv4-address" value="172.1.2.3"/>
+            <prop class="linux-server" name="ipv4-address" value="1.1.2.3"/>
+            <prop class="linux-server" name="uri" value="instance-abcd1234.acs.awesomecloud.systems"/>
+            <prop class="linux-server" name="asset-type" value="appliance"/>
+            <implemented-component component-uuid="551b9706-d6a4-4d25-8207-f2ccec548b89">
+                <prop name="asset-id" value="IFAGOV-SYSTEM1234-GOODREAD"/>
+            </implemented-component>
+        </inventory-item>
+        <inventory-item uuid="d9550535-40b9-4d8b-861c-07aa8786bf43">
+            <description>
+                <p>This inventory item is an instance from the AwesomeCloud Awesome Load Balancer (ALB) Service. It is a Linux server.</p>
+            </description>
+            <prop class="network-load-balancer" name="asset-type" value="appliance"/>
+            <prop class="linux-server" name="asset-id" value="instance-defg7890"/>
+            <prop class="network-load-balancer" name="uri" value="https://instance-defg7890.alb.awesomecloud.systems"/>
+            <implemented-component component-uuid="551b9706-d6a4-4d25-8207-f2ccec548b89">
+                <prop name="asset-id" value="IFAGOV-SYSTEM1234-GOODREAD"/>
+            </implemented-component>
+        </inventory-item>
+    </system-implementation>
+    <control-implementation>
+        <description>
+            <p>This is the control implementation for the application and infrastructure that compose to the IFA GoodRead Project's system.</p>
+        </description>
+        <set-parameter param-id="ac-06.01_odp.01">
+            <value>individuals and roles with authorized access to security functions and security-relevant information are defined and not available to all users of the system;</value>
+        </set-parameter>
+        <set-parameter param-id="ac-06.01_odp.02">
+            <value>security functions (deployed in hardware) for authorized access are defined;</value>
+        </set-parameter>
+        <set-parameter param-id="ac-06.01_odp.03">
+            <value>security functions (deployed in soware) for authorized access are defined;</value>
+        </set-parameter>
+        <set-parameter param-id="ac-06.01_odp.04">
+            <value>security functions (deployed in firmware) for authorized access are defined;</value>
+        </set-parameter>
+        <set-parameter param-id="ac-06.01_odp.05">
+            <value>security-relevant information for authorized access is defined;</value>
+        </set-parameter>
+        <implemented-requirement uuid="d5f9b263-965d-440b-99e7-77f5df670a11" control-id="ac-6.1">
+            <by-component component-uuid="551b9706-d6a4-4d25-8207-f2ccec548b89" uuid="a4c2d318-26a9-49df-9818-ee0acaf066f2">
+                <description>
+                    <p>The IFA GoodRead application and infrastructure are composed as designed and implemented with lease privilege for the elements of this system.</p>
+                    <p>For the IFA GoodRead application, the custom application is designed and implemented on top of the Django Framework to enforce least privilege. The application has a role for IFA Public Affairs Officers and one for the developers for privileged permissions, respectively. Only the latter can access or change administrative and security configurations and related data.</p>
+                    <p>The Django Framework and Django REST Framework (DRF), by default, allows any user with the <code>is_staff</code> role attribute to access administrative functions in an application using the framework. IFA GoodRead developers have disabled this behavior, relying on the custom roles identified in the relevant section.</p>
+                    <p>For the IFA GoodRead database, the system account and accredentials for the application to read and write to the system datastore has specific read and write authorization for specific tables. This database service account does not have full administrative permissions to add, modify, or delete all respective tables. For the production environment, only the IFA GoodRead developer has a dedicated account with equivalent permissions. Only local network socket access, within in the Linux server, is permitted by host firewall configuration. Remote access, privileged or unprivileged, is not allowed remotely and the system engineer must locally authenticate for access.</p>
+                    <p>For the RedHat Linux server upon which the IFA GoodRead application is deployed in this system, only the system engineer has a non-privileged user to log in remotely via the SSH protocol to perform ad-hoc inspection, monthly log review as required by policy and procedure, and emergency debugging of the system. Privileged system administration operations may only be performed with the <code>sudo</code> subsystem which requires a password, two-factor authentication, and has enhanced logging of all commands executed. The system engineer must log in remotely and then use <code>sudo</code> to elevate privileges. Remote access with the privileged account is prohibited by configuration and attempts are logged.</p>
+                    <p>For this remote SSH access, least privilege is additionally enforced by allowing this access via a specific network zone in the IFA GoodRead AwesomeCloud account accessible to only the system engineer via IFA's VPN solution, which requires the system engineer use a dedicated account with their own password and two-factor authentication token.</p>
+                    <p>For cloud account and API access to reconfigure the Linux server and its load balancer, administrative access is only allowed for the system engineer via a special AwesomeCloud IAM role. The authentication and authorization for this role is controlled by an integration with the organization's single sign-on solution. This solution will only be accessible and correctly execute for them when they are on the VPN with their account with traffic forwarded to the appropriate network zone in the IFA GoodRead account in AwesomeCloud. It will not work the developer or any staff users of the application.</p>
+                </description>         
+                <implementation-status state="implemented"/>
+            </by-component>
+        </implemented-requirement>
+    </control-implementation>
+</system-security-plan>
