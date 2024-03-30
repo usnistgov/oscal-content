@@ -15,12 +15,11 @@
       <email-address>bob.jones@saas.com</email-address>
     </party>
   </metadata>
-  <source-ssp>
+  <source-ssp ssp-uuid="11111111-0000-4000-9000-100000000001">
     <title>CSP IaaS System Security Plan</title>
     <published>2024-02-01T13:57:28.355446-04:00</published>
     <last-modified>2024-02-01T13:57:28.355446-04:00</last-modified>
     <version>0.3</version>
-    <ssp-uuid>11111111-0000-4000-9000-100000000001</party-uuid>
   </source-ssp>
   <control-implementation>
     <description>
