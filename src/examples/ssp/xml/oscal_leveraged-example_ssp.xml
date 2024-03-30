@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model schematypens="http://www.w3.org/2001/XMLSchema" type="application/xml" href="https://github.com/usnistgov/OSCAL/releases/download/v1.1.1/oscal_complete_schema.xsd"?>
 <system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0"
     uuid="d197545f-353f-407b-9166-ebf959774c5a">
     <metadata>
         <title>CSP IaaS System Security Plan</title>
         <last-modified>2024-02-01T13:57:28.355446-04:00</last-modified>
         <version>0.3</version>
-        <oscal-version>1.1.2</oscal-version>
+        <oscal-version>1.2.0</oscal-version>
         <role id="admin">
             <title>Administrator</title>
         </role>
@@ -16,14 +15,20 @@
         <role id="poc-for-customers">
             <title>Internal POC for Customers</title>
         </role>
-        <party type="person" uuid="11111111-0000-4000-9000-100000000001">
+        <party uuid="11111111-0000-4000-9000-100000000001" type="person">
             <remarks>
                 <p>Leveraged Authorization POC</p>
             </remarks>
         </party>
-        <party type="person" uuid="11111111-0000-4000-9000-100000000002" />
+        <party uuid="11111111-0000-4000-9000-100000000002" type="person" />
+        <responsible-party role-id="admin">
+            <party-uuid>11111111-0000-4000-9000-100000000001</party-uuid>
+        </responsible-party>
     </metadata>
+
+
     <import-profile href="#6b45e2a5-b238-4752-ba12-cfd6ef2a83df" />
+
     <system-characteristics>
         <system-id>csp_iaas_system</system-id>
         <system-name>Leveraged IaaS System</system-name>
@@ -32,19 +37,19 @@
                 authorized IaaS.</p>
             <pre>
 Cust-A    Cust-B    Cust-C
-  |         |         |
-  +---------+---------+
-            |
-  +-------------------+
-  |  Leveraging SaaS  |
-  +-------------------+
-            |
-            |
-  +-------------------+
-  |  Leveraged IaaS   |
-  |    this file      |
-  +-------------------+
-            </pre>
+|         |         |
++---------+---------+
+          |
++-------------------+
+|  Leveraging SaaS  |
++-------------------+
+          |
+          |
++-------------------+
+|  Leveraged IaaS   |
+|    this file      |
++-------------------+          
+</pre>
             <p>In this example, the IaaS SSP specifies customer responsibilities for certain
                 controls.</p>
             <p>The SaaS must address these for the control to be fully satisfied.</p>
@@ -119,6 +124,8 @@ Cust-A    Cust-B    Cust-C
     </system-characteristics>
     <system-implementation>
         <user uuid="11111111-0000-4000-9000-200000000001">
+            <title>Administrator</title>
+            <short-name>admin</short-name>
             <role-id>admin</role-id>
             <authorized-privilege>
                 <title>Administrator</title>
@@ -129,126 +136,32 @@ Cust-A    Cust-B    Cust-C
             <title>This System</title>
             <description>
                 <p>This Leveraged IaaS.</p>
-                <p>The entire system as depicted in the system authorization boundary</p>
+                <p>The entire system as depicted in the system authorization boundary.</p>
             </description>
             <status state="operational" />
         </component>
-        <component uuid="11111111-0000-4000-9001-000000000002" type="software">
-            <title>Application</title>
-            <description>
-                <p>An application within the IaaS, exposed to SaaS customers and their downstream
-                    customers.</p>
-                <p>This Leveraged IaaS maintains aspects of the application.</p>
-                <p>The Leveraging SaaS maintains aspects of their assigned portion of the
-                    application.</p>
-                <p>The customers of the Leveraging SaaS maintain aspects of their sub-assigned
-                    portions of the application.</p>
-            </description>
-            <prop name="implementation-point" value="internal" />
-            <status state="operational" />
+    </system-implementation>
+    <control-implementation>
+        <description>
+            <p>This is a placeholder control implementation section.</p>
+        </description>
+        <implemented-requirement uuid="11111111-0000-4000-9009-000000000001" control-id="ac-1">
+            <prop name="marking" value="2024-06-01">
+                <remarks>
+                    <p>This is a sample control response.</p>
+                </remarks>
+            </prop>
             <responsible-role role-id="admin">
                 <party-uuid>11111111-0000-4000-9000-100000000001</party-uuid>
             </responsible-role>
-        </component>
-    </system-implementation>
-    <!-- ************************ -->
-    <control-implementation>
-        <description>
-            <p>This is a collection of control responses.</p>
-        </description>
-        <implemented-requirement control-id="ac-2" uuid="11111111-0000-4000-9009-002000000000">
-            <set-parameter param-id="ac-2_prm_1">
-                <value>privileged and non-privileged</value>
-            </set-parameter>
-            <statement statement-id="ac-2_stmt.a" uuid="11111111-0000-4000-9009-002001000000">
-                <by-component uuid="11111111-0000-4000-9009-002001001000"
-                    component-uuid="11111111-0000-4000-9001-000000000001">
-                    <description>
-                        <p>Response for the "This System" component.</p>
-                        <p>Overall description of how "This System" satisfies AC-2, Part a.</p>
-                        <p>Response for the "This System" component.</p>
-                        <p>Overall description of how "This System" satisfies AC-2, Part a.</p>
-                        <p>Response for the "This System" component.</p>
-                        <p>Overall description of how "This System" satisfies AC-2, Part a.</p>
-                        <p>Response for the "This System" component.</p>
-                        <p>Overall description of how "This System" satisfies AC-2, Part a.</p>
-                    </description>
-                    <export>
-                        <description>
-                            <p>Optional description about what is being exported.</p>
-                        </description>
-                        <provided uuid="11111111-0000-4000-9009-002001001001">
-                            <description>
-                                <p>Consumer-appropriate description of what a leveraging system may
-                                    inherite from THIS SYSTEM in the context of satisfying
-                                    satisfaction of AC-2, part a.</p>
-                            </description>
-                            <responsible-role role-id="poc-for-customers">
-                                <party-uuid>11111111-0000-4000-9000-100000000001</party-uuid>
-                            </responsible-role>
-                        </provided>
-                        <responsibility uuid="11111111-0000-4000-9009-002001001002"
-                            provided-uuid="11111111-0000-4000-9009-002001001001">
-                            <description>
-                                <p>Leveraging system's responsibilities with respect to inheriting
-                                    this capability.</p>
-                                <p>In the context of the application component in satisfaction of
-                                    AC-2, part a.</p>
-                            </description>
-                            <responsible-role role-id="customer">
-                                <party-uuid>11111111-0000-4000-9000-100000000002</party-uuid>
-                            </responsible-role>
-                        </responsibility>
-                    </export>
-                </by-component>
-                <by-component uuid="11111111-0000-4000-9009-002001002000"
-                    component-uuid="11111111-0000-4000-9001-000000000002">
-                    <description>
-                        <p>Describes how the application satisfies AC-2, Part a.</p>
-                    </description>
-                    <export>
-                        <description>
-                            <p>Optional description about what is being exported.</p>
-                        </description>
-                        <provided uuid="11111111-0000-4000-9009-002001002001">
-                            <description>
-                                <p>Consumer-appropriate description of what may be inherited.</p>
-                                <p>In the context of the application component in satisfaction of
-                                    AC-2, part a.</p>
-                            </description>
-                            <responsible-role role-id="poc-for-customers">
-                                <party-uuid>11111111-0000-4000-9000-100000000001</party-uuid>
-                            </responsible-role>
-                        </provided>
-                        <responsibility uuid="11111111-0000-4000-9009-002001002002"
-                            provided-uuid="11111111-0000-4000-9009-002001002001">
-                            <description>
-                                <p>Leveraging system's responsibilities with respect to inheriting
-                                    this capability.</p>
-                                <p>In the context of the application component in satisfaction of
-                                    AC-2, part a.</p>
-                            </description>
-                            <responsible-role role-id="customer">
-                                <party-uuid>11111111-0000-4000-9000-100000000002</party-uuid>
-                            </responsible-role>
-                        </responsibility>
-                    </export>
-                </by-component>
-                <remarks>
-                    <p>a. Identifies and selects the following types of information system accounts
-                        to support organizational missions/business functions: [Assignment:
-                        privileged and non-privileged];</p>
-                </remarks>
+            <statement statement-id="ac-1_smt.a" uuid="11111111-0000-4000-9009-000000000002">
             </statement>
-            <remarks>
-                <p>The organization:</p>
-                <p>a. Identifies and selects the following types of information system accounts to
-                    support organizational missions/business functions: [Assignment:
-                    organization-defined information system account types];</p>
-                <p>b. Assigns account managers for information system accounts;</p>
-                <p>c. Establishes conditions for group and role membership;</p>
-                <p>d. through j. omitted</p>
-            </remarks>
+            <by-component uuid="11111111-1000-4000-9001-000000000001" component-uuid="11111111-0000-4000-9001-000000000001">
+                <description>
+                    <p>This is a placeholder by component control implementation section.</p>
+                </description>
+        
+            </by-component>
         </implemented-requirement>
     </control-implementation>
     <back-matter>
