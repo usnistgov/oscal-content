@@ -1,116 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <shared-responsibility xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-  uuid="53ab883e-0372-4699-ba09-7a5b3c9e4613">
+  uuid="d197545f-353f-407b-9166-ebf959774c5a">
   <metadata>
-    <title>Example Shared Responsibility Model for IaaS and SaaS</title>
-    <last-modified>2024-03-28T18:30:00.000Z</last-modified>
+    <title>CSP IaaS Shared Responsibility Plan</title>
+    <last-modified>2024-03-30T11:00:00.000000-04:00</last-modified>
     <version>1.0</version>
     <oscal-version>1.1.2</oscal-version>
-    <party type="organization" uuid="11111111-0000-4000-9000-100000000001">
-      <name>Example IaaS Provider</name>
-      <email-address>info@exampleiaas.com</email-address>
+    <party uuid="11111111-0000-4000-9000-100000000001" type="person">
+      <name>John Smith</name>
+      <email-address>john.smith@csp.com</email-address>
     </party>
-    <party type="organization" uuid="22222222-0000-4000-9000-100000000001">
-      <name>Example SaaS Provider</name>
-      <email-address>info@examplesaas.com</email-address>
+    <party uuid="11111111-0000-4000-9000-100000000002" type="person">
+      <name>Bob Jones</name>
+      <email-address>bob.jones@saas.com</email-address>
     </party>
   </metadata>
-
-  <source-ssp ssp-uuid="d197545f-353f-407b-9166-ebf959774c5a">
+  <source-ssp>
     <title>CSP IaaS System Security Plan</title>
+    <published>2024-02-01T13:57:28.355446-04:00</published>
+    <last-modified>2024-02-01T13:57:28.355446-04:00</last-modified>
+    <version>0.3</version>
     <party-uuid>11111111-0000-4000-9000-100000000001</party-uuid>
-    <referenced-profile
-      href="../../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_LOW-baseline_profile.xml" />
   </source-ssp>
   <control-implementation>
     <description>
-      <p>Shared control implementations between IaaS and SaaS.</p>
+      <p>This shared responsibility model documents the application level security responsibilities
+        between the CSP and leveraging SaaS customer.</p>
     </description>
-    <implemented-requirement uuid="11111111-0000-4000-9009-002000000000" control-id="ac-2">
-      <set-parameter param-id="ac-2_prm_1">
-        <value>privileged, non-privileged, and customer-managed</value>
-      </set-parameter>
-      <statement uuid="11111111-0000-4000-9009-002001000000" statement-id="ac-2_stmt.a">
-        <by-component uuid="11111111-0000-4000-9009-002001001000"
-          component-uuid="11111111-0000-4000-9001-000000000001">
+    <implemented-requirement control-id="ac-2" uuid="11111111-0000-4000-9009-002000000000">
+      <statement statement-id="ac-2_stmt.a" uuid="11111111-0000-4000-9009-002001000000">
+        <by-component component-uuid="11111111-0000-4000-9001-000000000002"
+          uuid="11111111-0000-4000-9009-002001002000">
           <description>
-            <p>The IaaS system identifies and selects privileged and non-privileged accounts to
-              support its operations.</p>
+            <p>Describes how the application satisfies AC-2, Part a.</p>
           </description>
-          <provided uuid="11111111-0000-4000-9009-002001001001" exportable="true"
-            implemented-by="11111111-0000-4000-9000-100000000001">
+          <provided uuid="11111111-0000-4000-9009-002001002001" exportable="true">
             <description>
-              <p>The IaaS system provides account management capabilities that can be inherited by
-                the leveraging SaaS system.</p>
+              <p>The CSP maintains the core user access management system for the application. User
+                accounts can be created, modified, enabled, disabled, and removed.</p>
             </description>
           </provided>
-          <responsibility uuid="11111111-0000-4000-9009-002001001002"
-            provided-uuid="11111111-0000-4000-9009-002001001001">
+          <responsibility uuid="11111111-0000-4000-9009-002001002002" exportable="true"
+            provided-uuid="11111111-0000-4000-9009-002001002001">
             <description>
-              <p>The SaaS system is responsible for configuring and managing accounts created using
-                the inherited IaaS capabilities.</p>
+              <p>The leveraging SaaS customer is responsible for determining the access requirements
+                for their users and formally requesting account creation, modification, enabling,
+                disabling, and removal actions from the CSP.</p>
             </description>
           </responsibility>
-        </by-component>
-
-        <!-- SaaS providers implementation -->
-        <by-component uuid="22222222-0000-4000-9009-002001001000"
-          component-uuid="22222222-0000-4000-9001-000000000001">
-          <description>
-            <p>The SaaS system identifies and selects customer-managed accounts to support customer
-              operations.</p>
-          </description>
-          <inherited uuid="22222222-0000-4000-9009-002001001001"
-            provided-uuid="11111111-0000-4000-9009-002001001001"
-            implemented-by="11111111-0000-4000-9000-100000000001">
-            <description>
-              <p>The SaaS system inherits the account management capabilities provided by the IaaS
-                system.</p>
-            </description>
-          </inherited>
-          <satisfied uuid="22222222-0000-4000-9009-002001001002"
-            responsibility-uuid="11111111-0000-4000-9009-002001001002"
-            inherited-uuid="22222222-0000-4000-9009-002001001001">
-            <description>
-              <p>The SaaS system satisfies the responsibility to configure and manage accounts using
-                the inherited IaaS capabilities.</p>
-            </description>
-            <responsible-role role-id="admin">
-              <party-uuid>22222222-0000-4000-9000-100000000001</party-uuid>
-            </responsible-role>
-          </satisfied>
-        </by-component>
-
-      </statement>
-    </implemented-requirement>
-
-    <!-- Fully inherited IA-2 Control -->
-    <implemented-requirement uuid="11111111-0000-4000-9009-012000000000" control-id="ia-2">
-      <statement uuid="11111111-0000-4000-9009-012001000000" statement-id="ia-2_stmt">
-        <by-component uuid="11111111-0000-4000-9009-012001001000"
-          component-uuid="11111111-0000-4000-9001-000000000002">
-          <description>
-            <p>The IaaS system uniquely identifies and authenticates organizational users.</p>
-          </description>
-          <provided uuid="11111111-0000-4000-9009-012001001001" exportable="true"
-            implemented-by="11111111-0000-4000-9000-100000000001">
-            <description>
-              <p>The IaaS system provides authentication capabilities that can be fully inherited by
-                the SaaS system.</p>
-            </description>
-          </provided>
-        </by-component>
-        <by-component uuid="22222222-0000-4000-9009-012001001000"
-          component-uuid="22222222-0000-4000-9001-000000000001">
-          <description>
-            <p>The SaaS system fully inherits the authentication capabilities provided by the IaaS
-              system.</p>
-          </description>
-          <inherited uuid="22222222-0000-4000-9009-012001001001"
-            provided-uuid="11111111-0000-4000-9009-012001001001"
-            implemented-by="11111111-0000-4000-9000-100000000001">
-            <description><p>authorization is inherited by the specified uuid</p></description>
-          </inherited>
         </by-component>
       </statement>
     </implemented-requirement>
