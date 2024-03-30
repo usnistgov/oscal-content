@@ -20,7 +20,7 @@
     <published>2024-02-01T13:57:28.355446-04:00</published>
     <last-modified>2024-02-01T13:57:28.355446-04:00</last-modified>
     <version>0.3</version>
-    <party-uuid>11111111-0000-4000-9000-100000000001</party-uuid>
+    <ssp-uuid>11111111-0000-4000-9000-100000000001</party-uuid>
   </source-ssp>
   <control-implementation>
     <description>
@@ -34,13 +34,13 @@
           <description>
             <p>Describes how the application satisfies AC-2, Part a.</p>
           </description>
-          <provided uuid="11111111-0000-4000-9009-002001002001" exportable="true">
+          <provided uuid="11111111-0000-4000-9009-002001002001">
             <description>
               <p>The CSP maintains the core user access management system for the application. User
                 accounts can be created, modified, enabled, disabled, and removed.</p>
             </description>
           </provided>
-          <responsibility uuid="11111111-0000-4000-9009-002001002002" exportable="true"
+          <responsibility uuid="11111111-0000-4000-9009-002001002002" 
             provided-uuid="11111111-0000-4000-9009-002001002001">
             <description>
               <p>The leveraging SaaS customer is responsible for determining the access requirements
