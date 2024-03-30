@@ -184,7 +184,14 @@ validate-xml-content: $(GEN_XML_FILES) ## Validate XML files
 #
 .PHONY: validate-xml-by-cli
 validate-xml-by-cli: $(OSCAL_CLI_INSTALL_PATH) ## Validate XML files by directory using OSCAL CLI Tool
-	@echo "Validating XML files by directory using OSCAL CLI Tool"
+		@current_branch=$$(git rev-parse --abbrev-ref HEAD); \
+	if [ "$$current_branch" = "main" ] || [ "$$current_branch" = "develop" ]; then \
+		echo "Validating XML files by directory using OSCAL CLI Tool on branch $$current_branch"; \
+		$(OSCAL_CLI_INSTALL_PATH)/bin/$(OSCAL_CLI_BIN) --version; \
+	else \
+		echo "Skipping XML validation: not on main or develop branch"; \
+		exit
+	fi
 	@$(OSCAL_CLI_INSTALL_PATH)/bin/$(OSCAL_CLI_BIN) --version
 	@echo "latest oscal-cli version is $(OSCAL_CLI_VERSION)"
 	@echo "Validating OSCAL content with $(OSCAL_CLI_INSTALL_PATH)/bin/oscal-cli version $(OSCAL_CLI_VERSION)"
