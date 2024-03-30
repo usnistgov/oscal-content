@@ -1,4 +1,5 @@
 SHELL:=/usr/bin/env bash
+BRANCH_NAME := $(shell git rev-parse --abbrev-ref HEAD)
 
 .PHONY: help
 # Run "make" or "make help" to get a list of user targets
@@ -184,14 +185,8 @@ validate-xml-content: $(GEN_XML_FILES) ## Validate XML files
 #
 .PHONY: validate-xml-by-cli
 validate-xml-by-cli: $(OSCAL_CLI_INSTALL_PATH) ## Validate XML files by directory using OSCAL CLI Tool
-		@current_branch=$$(git rev-parse --abbrev-ref HEAD); \
-	if [ "$$current_branch" = "main" ] || [ "$$current_branch" = "develop" ]; then \
-		echo "Validating XML files by directory using OSCAL CLI Tool on branch $$current_branch"; \
-		$(OSCAL_CLI_INSTALL_PATH)/bin/$(OSCAL_CLI_BIN) --version; \
-	else \
-		echo "Skipping XML validation: not on main or develop branch"; \
-		exit
-	fi
+ifeq ($(BRANCH_NAME),develop)
+	@echo "Validating XML files by directory using OSCAL CLI Tool"
 	@$(OSCAL_CLI_INSTALL_PATH)/bin/$(OSCAL_CLI_BIN) --version
 	@echo "latest oscal-cli version is $(OSCAL_CLI_VERSION)"
 	@echo "Validating OSCAL content with $(OSCAL_CLI_INSTALL_PATH)/bin/oscal-cli version $(OSCAL_CLI_VERSION)"
@@ -203,7 +198,22 @@ validate-xml-by-cli: $(OSCAL_CLI_INSTALL_PATH) ## Validate XML files by director
 			$(OSCAL_CLI_INSTALL_PATH)/bin/oscal-cli "$$example_type" validate "$$xml_file"; \
 		done \
 	done
-
+else ifeq ($(BRANCH_NAME),main)
+	@echo "Validating XML files by directory using OSCAL CLI Tool"
+	@$(OSCAL_CLI_INSTALL_PATH)/bin/$(OSCAL_CLI_BIN) --version
+	@echo "latest oscal-cli version is $(OSCAL_CLI_VERSION)"
+	@echo "Validating OSCAL content with $(OSCAL_CLI_INSTALL_PATH)/bin/oscal-cli version $(OSCAL_CLI_VERSION)"
+	@find $(SRC_DIR)/examples -mindepth 1 -maxdepth 1 -type d | while read example_dir; do \
+		example_type=$$(basename "$$example_dir"); \
+		echo "Processing example type: $$example_type"; \
+		find "$$example_dir" -name '*.xml' | while read xml_file; do \
+			echo "Validating $$xml_file with OSCAL CLI as $$example_type"; \
+			$(OSCAL_CLI_INSTALL_PATH)/bin/oscal-cli "$$example_type" validate "$$xml_file"; \
+		done \
+	done
+else
+	@echo "Skipping XML validation. Only runs on 'develop' and 'main' branches."
+endif
 .PHONY: clean-xml-content
 clean-xml-content: ## Clean generated XML content
 	@echo Cleaning XML content
