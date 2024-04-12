@@ -60,7 +60,7 @@ jobs:
           retention-days: 5
       - name: Publish Artifacts
         if: github.repository == env.HOME_REPO && github.ref == 'refs/heads/main'
-        uses: stefanzweifel/git-auto-commit-action@8756aa072ef5b4a080af5dc8fef36c5d586e521d
+        uses: stefanzweifel/git-auto-commit-action@8621497c8c39c72f3e2a999a26b4ca1b5058a842
         with:
           push_options: --force
           commit_message: Publishing auto-converted artifacts [skip ci]
