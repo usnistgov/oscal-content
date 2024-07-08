@@ -39,6 +39,7 @@
    </metadata>
    <group class="family" id="ac">
       <title>Access Control</title>
+      <prop name="label" value="AC"/>
       <control class="SP800-53" id="ac-1">
          <title>Access Control Policy and Procedures</title>
          <param id="ac-1_prm_1">
@@ -7362,6 +7363,7 @@
    </group>
    <group class="family" id="at">
       <title>Awareness and Training</title>
+      <prop name="label" value="AT"/>
       <control class="SP800-53" id="at-1">
          <title>Security Awareness and Training Policy and Procedures</title>
          <param id="at-1_prm_1">
@@ -8053,6 +8055,7 @@
    </group>
    <group class="family" id="au">
       <title>Audit and Accountability</title>
+      <prop name="label" value="AU"/>
       <control class="SP800-53" id="au-1">
          <title>Audit and Accountability Policy and Procedures</title>
          <param id="au-1_prm_1">
@@ -11648,6 +11651,7 @@
    </group>
    <group class="family" id="ca">
       <title>Security Assessment and Authorization</title>
+      <prop name="label" value="CA"/>
       <control class="SP800-53" id="ca-1">
          <title>Security Assessment and Authorization Policy and Procedures</title>
          <param id="ca-1_prm_1">
@@ -13368,6 +13372,7 @@
    </group>
    <group class="family" id="cm">
       <title>Configuration Management</title>
+      <prop name="label" value="CM"/>
       <control class="SP800-53" id="cm-1">
          <title>Configuration Management Policy and Procedures</title>
          <param id="cm-1_prm_1">
@@ -17167,6 +17172,7 @@
    </group>
    <group class="family" id="cp">
       <title>Contingency Planning</title>
+      <prop name="label" value="CP"/>
       <control class="SP800-53" id="cp-1">
          <title>Contingency Planning Policy and Procedures</title>
          <param id="cp-1_prm_1">
@@ -19997,6 +20003,7 @@
    </group>
    <group class="family" id="ia">
       <title>Identification and Authentication</title>
+      <prop name="label" value="IA"/>
       <control class="SP800-53" id="ia-1">
          <title>Identification and Authentication Policy and Procedures</title>
          <param id="ia-1_prm_1">
@@ -23484,6 +23491,7 @@
    </group>
    <group class="family" id="ir">
       <title>Incident Response</title>
+      <prop name="label" value="IR"/>
       <control class="SP800-53" id="ir-1">
          <title>Incident Response Policy and Procedures</title>
          <param id="ir-1_prm_1">
@@ -25589,6 +25597,7 @@
    </group>
    <group class="family" id="ma">
       <title>Maintenance</title>
+      <prop name="label" value="MA"/>
       <control class="SP800-53" id="ma-1">
          <title>System Maintenance Policy and Procedures</title>
          <param id="ma-1_prm_1">
@@ -27473,6 +27482,7 @@
    </group>
    <group class="family" id="mp">
       <title>Media Protection</title>
+      <prop name="label" value="MP"/>
       <control class="SP800-53" id="mp-1">
          <title>Media Protection Policy and Procedures</title>
          <param id="mp-1_prm_1">
@@ -29019,6 +29029,7 @@
    </group>
    <group class="family" id="pe">
       <title>Physical and Environmental Protection</title>
+      <prop name="label" value="PE"/>
       <control class="SP800-53" id="pe-1">
          <title>Physical and Environmental Protection Policy and Procedures</title>
          <param id="pe-1_prm_1">
@@ -32264,6 +32275,7 @@
    </group>
    <group class="family" id="pl">
       <title>Planning</title>
+      <prop name="label" value="PL"/>
       <control class="SP800-53" id="pl-1">
          <title>Security Planning Policy and Procedures</title>
          <param id="pl-1_prm_1">
@@ -33248,6 +33260,7 @@
    </group>
    <group class="family" id="ps">
       <title>Personnel Security</title>
+      <prop name="label" value="PS"/>
       <control class="SP800-53" id="ps-1">
          <title>Personnel Security Policy and Procedures</title>
          <param id="ps-1_prm_1">
@@ -34483,6 +34496,7 @@
    </group>
    <group class="family" id="ra">
       <title>Risk Assessment</title>
+      <prop name="label" value="RA"/>
       <control class="SP800-53" id="ra-1">
          <title>Risk Assessment Policy and Procedures</title>
          <param id="ra-1_prm_1">
@@ -35613,6 +35627,7 @@
    </group>
    <group class="family" id="sa">
       <title>System and Services Acquisition</title>
+      <prop name="label" value="SA"/>
       <control class="SP800-53" id="sa-1">
          <title>System and Services Acquisition Policy and Procedures</title>
          <param id="sa-1_prm_1">
@@ -41654,6 +41669,7 @@
    </group>
    <group class="family" id="sc">
       <title>System and Communications Protection</title>
+      <prop name="label" value="SC"/>
       <control class="SP800-53" id="sc-1">
          <title>System and Communications Protection Policy and Procedures</title>
          <param id="sc-1_prm_1">
@@ -48670,6 +48686,7 @@
    </group>
    <group class="family" id="si">
       <title>System and Information Integrity</title>
+      <prop name="label" value="SI"/>
       <control class="SP800-53" id="si-1">
          <title>System and Information Integrity Policy and Procedures</title>
          <param id="si-1_prm_1">
@@ -54410,6 +54427,7 @@
    </group>
    <group class="family" id="pm">
       <title>Program Management</title>
+      <prop name="label" value="PM"/>
       <control class="SP800-53" id="pm-1">
          <title>Information Security Program Plan</title>
          <param id="pm-1_prm_1">
