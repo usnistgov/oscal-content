@@ -36,7 +36,7 @@ plan-of-action-and-milestones:
       collected: "2023-06-02T08:31:20-04:00"
       expires: "2023-07-01T00:00:00-04:00"
       remarks: |-
-        The assessor's security automation platform analyzed all roles specific to the GoodRead Product Team, not those managed by the Office of Information Technology. The `IFA-GoodRead-SystemEnginer` role in their respective AwesomeCloud account permitted use of the following high-risk actions.
+        The assessor's security automation platform analyzed all roles specific to the GoodRead Product Team, not those managed by the Office of Information Technology. The `IFA-GoodRead-SystemEngineer` role in their respective AwesomeCloud account permitted use of the following high-risk actions.
 
         * awesomecloud:auditlog:DeleteAccountAuditLog
         * awesomecloud:secmon:AdministerConfigurations
@@ -66,12 +66,12 @@ plan-of-action-and-milestones:
               value: high
       mitigating-factors:
         - uuid: 401c15c9-ad6b-4d4a-a591-7d53a3abb3b6
-          description: The GoodRead application is designed and implemented to only allow access to the administrative functions for those with PAO staff fole via the VPN via network configuration between the IFA Enterprise Support Systems and the GoodRead AwesomeCloud account. Additionally, the load balanacer configuration only allows access to view shortlinks from the public internet.
+          description: The GoodRead application is designed and implemented to only allow access to the administrative functions for those with PAO staff role via the VPN via network configuration between the IFA Enterprise Support Systems and the GoodRead AwesomeCloud account. Additionally, the load balancer configuration only allows access to view shortlinks from the public internet.
       deadline: "2024-01-01T05:00:00-04:00"
       remediations:
         - uuid: d28873f7-0a45-476d-9cd3-1d2ec0b8bca1
           lifecycle: planned
-          title: 'IFA-GOODREAD-RISK1-RESPONSE: IFA GoodRead Prouct Team Response'
+          title: 'IFA-GOODREAD-RISK1-RESPONSE: IFA GoodRead Product Team Response'
           description: The GoodRead Product Team does not have sufficient personnel and budget to implement the required changes in their use of the Django Framework and its configuration in this quarter. With the consultation of the ISSO and the assessor, the owner of the GoodRead system has decided to accept this risk until the end of December 2023. From September to December, budget will be available for the Good Read Product Team's developer and system engineer to completely disable the functionality that is the source of the risk and its originating finding.
           props:
             - name: type
@@ -80,7 +80,7 @@ plan-of-action-and-milestones:
             - uuid: f8b1d4cb-d1a9-4932-9859-2e93b325f287
               type: milestone
               title: End of Year Project Management Report of Developed Remediations
-              description: The owner, ISSO, and product team of the GoodRead Project intend to complete the necessary development between September 2023 and December 2023. Whether or not the necessary development for remedation is complete, the product team's project manager will submit the final annual report. They will identify this work item and whether it has been completed.
+              description: The owner, ISSO, and product team of the GoodRead Project intend to complete the necessary development between September 2023 and December 2023. Whether or not the necessary development for remediation is complete, the product team's project manager will submit the final annual report. They will identify this work item and whether it has been completed.
               timing:
                 within-date-range:
                   start: "2023-09-29T09:00:00-04:00"
@@ -93,7 +93,7 @@ plan-of-action-and-milestones:
       statement: |-
         An account without proper least privilege design and implementation can be used to surreptitiously add, change, or delete cloud infrastructure to the too managing all links to IFA's communication to public citizens, potentially causing significant harm with no forensic evidence to recover the system. Regardless of the extent and duration of a potential incident, such a configuration greatly increases the risk of an insider threat if there were likely to a potential insider threat in the GoodRead Product Team.
 
-        If such an insider threat existed and acted with this misconfigruatio, the resulting event could cause significant financial and reputational risk to IFA's Administrator, executive staff, and the agency overall.
+        If such an insider threat existed and acted with this misconfiguration, the resulting event could cause significant financial and reputational risk to IFA's Administrator, executive staff, and the agency overall.
       status: open
       characterizations:
         - origin:
@@ -111,8 +111,8 @@ plan-of-action-and-milestones:
       remediations:
         - uuid: 4676b126-ba6d-40cc-9dc8-f2aa677b03ee
           lifecycle: planned
-          title: 'IFA-GOODREAD-RISK1-RESPONSE: IFA GoodRead Prouct Team Response'
-          description: The GoodRead Product Team does not have siginficant mitigations or compensating controls to counter this risk, even if likelihood is low. The IFA CISO has cited ongoing guidance that potential insider threat risks be prioritized above alternative categories of risk for this quarter. Additionally, there is sufficient budget and unallocated time for the GoodRead and Office of Information Technology system engineers to modify AwesomeCloud IAM roles on or before the next continuous monitoring cycle beginning in July 2023. The planned completion data is June 23, 2023.
+          title: 'IFA-GOODREAD-RISK1-RESPONSE: IFA GoodRead Product Team Response'
+          description: The GoodRead Product Team does not have significant mitigations or compensating controls to counter this risk, even if likelihood is low. The IFA CISO has cited ongoing guidance that potential insider threat risks be prioritized above alternative categories of risk for this quarter. Additionally, there is sufficient budget and unallocated time for the GoodRead and Office of Information Technology system engineers to modify AwesomeCloud IAM roles on or before the next continuous monitoring cycle beginning in July 2023. The planned completion data is June 23, 2023.
           props:
             - name: type
               value: mitigate
@@ -130,7 +130,7 @@ plan-of-action-and-milestones:
   poam-items:
     - uuid: e174dfb9-0ae3-4a8f-8e7c-081527b84337
       title: Update Django Framework Configuration to Disable Default Admin Panel
-      description: Budget and technical staff are needed to re-design and re-implement a part of the GoodRead application's use of a web appplication programming framework to mitigate the risk of low privilege users directly modifying the database of this application. This application is a high-visibility service and integral to future operations of the IFA Office of Public Affairs and its staff.
+      description: Budget and technical staff are needed to re-design and re-implement a part of the GoodRead application's use of a web application programming framework to mitigate the risk of low privilege users directly modifying the database of this application. This application is a high-visibility service and integral to future operations of the IFA Office of Public Affairs and its staff.
       related-observations:
         - observation-uuid: 0c4de4fc-9bde-46af-b6fe-3b5e78194dcf
       related-risks:

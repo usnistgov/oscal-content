@@ -155,7 +155,7 @@ Cust-A    Cust-B    Cust-C
       <component uuid="22222222-0000-4000-9001-000000000003" type="appliance">
          <title>Access Control Appliance</title>
          <description>
-            <p>An access control virtual appliance, wich performs XYZ functions.</p>
+            <p>An access control virtual appliance that performs XYZ functions.</p>
          </description>
          <prop name="implementation-point" value="internal" />
          <prop name="virtual" value="yes" />
