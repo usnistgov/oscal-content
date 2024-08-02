@@ -180,7 +180,7 @@ Cust-A    Cust-B    Cust-C
                         <provided uuid="11111111-0000-4000-9009-002001001001">
                             <description>
                                 <p>Consumer-appropriate description of what a leveraging system may
-                                    inherite from THIS SYSTEM in the context of satisfying
+                                    inherit from THIS SYSTEM in the context of satisfying
                                     satisfaction of AC-2, part a.</p>
                             </description>
                             <responsible-role role-id="poc-for-customers">

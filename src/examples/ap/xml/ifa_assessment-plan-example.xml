@@ -52,7 +52,7 @@
                 </description>
             </step>
             <step uuid="3d0297de-e47b-4360-b9c3-cf5c425f86cd">
-                <title>Obtain Applcation Access Provided by Product Team</title>
+                <title>Obtain Application Access Provided by Product Team</title>
                 <description>
                     <p>The assessor will obtain non-privileged account credentials with the PAO
                         staff role to test this role in the application does not permit excessive
