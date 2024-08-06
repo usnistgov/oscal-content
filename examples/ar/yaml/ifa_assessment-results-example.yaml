@@ -100,7 +100,7 @@ assessment-results:
           collected: "2023-06-02T08:31:20-04:00"
           expires: "2023-07-01T00:00:00-04:00"
           remarks: |-
-            The assessor's security automation platform analyzed all roles specific to the GoodRead Product Team, not those managed by the Office of Information Technology. The `IFA-GoodRead-SystemEngineer` role in their respective AwesomeCloud account permitted use of the following high-risk actions.
+            The assessor's security automation platform analyzed all roles specific to the GoodRead Product Team, not those managed by the Office of Information Technology. The `IFA-GoodRead-SystemEnginer` role in their respective AwesomeCloud account permitted use of the following high-risk actions.
 
             * awesomecloud:auditlog:DeleteAccountAuditLog
             * awesomecloud:secmon:AdministerConfigurations
@@ -127,7 +127,7 @@ assessment-results:
           statement: |-
             An account without proper least privilege design and implementation can be used to surreptitiously add, change, or delete cloud infrastructure to the too managing all links to IFA's communication to public citizens, potentially causing significant harm with no forensic evidence to recover the system. Regardless of the extent and duration of a potential incident, such a configuration greatly increases the risk of an insider threat if there were likely to a potential insider threat in the GoodRead Product Team.
 
-            If such an insider threat existed and acted with this misconfiguration, the resulting event could cause significant financial and reputational risk to IFA's Administrator, executive staff, and the agency overall.
+            If such an insider threat existed and acted with this misconfigruatio, the resulting event could cause significant financial and reputational risk to IFA's Administrator, executive staff, and the agency overall.
           status: investigating
       findings:
         - uuid: 45d8a6c2-1368-4bad-9ba0-7141f0a32889

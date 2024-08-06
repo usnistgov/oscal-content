@@ -43,7 +43,7 @@ assessment-plan:
             title: Obtain Credentials and Access to AwesomeCloud Account for IFA GoodRead System
             description: The assessor will obtain access to the GoodRead Product Team's AwesomeCloud account with their single sign-on credentials to a read-only assessor role.
           - uuid: 3d0297de-e47b-4360-b9c3-cf5c425f86cd
-            title: Obtain Application Access Provided by Product Team
+            title: Obtain Applcation Access Provided by Product Team
             description: The assessor will obtain non-privileged account credentials with the PAO staff role to test this role in the application does not permit excessive administrative operations.
           - uuid: 64ca1ef6-3ad4-4747-97c6-40890222463f
             title: Confirm Load Balancer Blocks Access to Admin Frontend from Internet

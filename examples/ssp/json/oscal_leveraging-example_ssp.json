@@ -150,7 +150,7 @@
           "uuid": "22222222-0000-4000-9001-000000000003",
           "type": "appliance",
           "title": "Access Control Appliance",
-          "description": "An access control virtual appliance that performs XYZ functions.",
+          "description": "An access control virtual appliance, wich performs XYZ functions.",
           "props": [
             {
               "name": "implementation-point",
