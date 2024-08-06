@@ -145,7 +145,7 @@
             <remarks>
                 <p>The assessor's security automation platform analyzed all roles specific to the
                     GoodRead Product Team, not those managed by the Office of Information
-                    Technology. The <code>IFA-GoodRead-SystemEnginer</code> role in their respective
+                    Technology. The <code>IFA-GoodRead-SystemEngineer</code> role in their respective
                     AwesomeCloud account permitted use of the following high-risk actions.</p>
                 <ul>
                     <li>awesomecloud:auditlog:DeleteAccountAuditLog</li>
@@ -188,7 +188,7 @@
                     Regardless of the extent and duration of a potential incident, such a
                     configuration greatly increases the risk of an insider threat if there were
                     likely to a potential insider threat in the GoodRead Product Team.</p>
-                <p>If such an insider threat existed and acted with this misconfigruatio, the
+                <p>If such an insider threat existed and acted with this misconfigruation, the
                     resulting event could cause significant financial and reputational risk to IFA's
                     Administrator, executive staff, and the agency overall.</p>
             </statement>

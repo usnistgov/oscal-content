@@ -38,7 +38,7 @@
         <remarks>
             <p>The assessor's security automation platform analyzed all roles specific to the
                 GoodRead Product Team, not those managed by the Office of Information Technology.
-                The <code>IFA-GoodRead-SystemEnginer</code> role in their respective AwesomeCloud
+                The <code>IFA-GoodRead-SystemEngineer</code> role in their respective AwesomeCloud
                 account permitted use of the following high-risk actions.</p>
             <ul>
                 <li>awesomecloud:auditlog:DeleteAccountAuditLog</li>
@@ -75,7 +75,7 @@
         <mitigating-factor uuid="401c15c9-ad6b-4d4a-a591-7d53a3abb3b6">
             <description>
                 <p>The GoodRead application is designed and implemented to only allow access to the
-                    administrative functions for those with PAO staff fole via the VPN via network
+                    administrative functions for those with PAO staff role via the VPN via network
                     configuration between the IFA Enterprise Support Systems and the GoodRead
                     AwesomeCloud account. Additionally, the load balanacer configuration only allows
                     access to view shortlinks from the public internet.</p>
@@ -83,7 +83,7 @@
         </mitigating-factor>
         <deadline>2024-01-01T05:00:00-04:00</deadline>
         <response uuid="d28873f7-0a45-476d-9cd3-1d2ec0b8bca1" lifecycle="planned">
-            <title>IFA-GOODREAD-RISK1-RESPONSE: IFA GoodRead Prouct Team Response</title>
+            <title>IFA-GOODREAD-RISK1-RESPONSE: IFA GoodRead Product Team Response</title>
             <description>
                 <p>The GoodRead Product Team does not have sufficient personnel and budget to
                     implement the required changes in their use of the Django Framework and its
@@ -100,7 +100,7 @@
                 <description>
                     <p>The owner, ISSO, and product team of the GoodRead Project intend to complete
                         the necessary development between September 2023 and December 2023. Whether
-                        or not the necessary development for remedation is complete, the product
+                        or not the necessary development for remediation is complete, the product
                         team's project manager will submit the final annual report. They will
                         identify this work item and whether it has been completed.</p>
                 </description>
@@ -129,7 +129,7 @@
                 duration of a potential incident, such a configuration greatly increases the risk of
                 an insider threat if there were likely to a potential insider threat in the GoodRead
                 Product Team.</p>
-            <p>If such an insider threat existed and acted with this misconfigruatio, the resulting
+            <p>If such an insider threat existed and acted with this n, the resulting
                 event could cause significant financial and reputational risk to IFA's
                 Administrator, executive staff, and the agency overall.</p>
         </statement>
@@ -143,9 +143,9 @@
         </characterization>
         <deadline>2023-06-23T17:00:00-04:00</deadline>
         <response uuid="4676b126-ba6d-40cc-9dc8-f2aa677b03ee" lifecycle="planned">
-            <title>IFA-GOODREAD-RISK1-RESPONSE: IFA GoodRead Prouct Team Response</title>
+            <title>IFA-GOODREAD-RISK1-RESPONSE: IFA GoodRead Product Team Response</title>
             <description>
-                <p>The GoodRead Product Team does not have siginficant mitigations or compensating
+                <p>The GoodRead Product Team does not have significant mitigations or compensating
                     controls to counter this risk, even if likelihood is low. The IFA CISO has cited
                     ongoing guidance that potential insider threat risks be prioritized above
                     alternative categories of risk for this quarter. Additionally, there is
@@ -177,7 +177,7 @@
         <title>Update Django Framework Configuration to Disable Default Admin Panel</title>
         <description>
             <p>Budget and technical staff are needed to re-design and re-implement a part of the
-                GoodRead application's use of a web appplication programming framework to mitigate
+                GoodRead application's use of a web application programming framework to mitigate
                 the risk of low privilege users directly modifying the database of this application.
                 This application is a high-visibility service and integral to future operations of
                 the IFA Office of Public Affairs and its staff.</p>
