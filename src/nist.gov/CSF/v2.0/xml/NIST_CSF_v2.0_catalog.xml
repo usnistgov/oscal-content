@@ -1,0 +1,2012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 https://github.com/usnistgov/OSCAL/releases/download/v1.1.1/oscal_catalog_schema.xsd"
+    uuid="b59a8a3b-6240-483a-95fc-1db565870a86">
+    <metadata>
+        <title>NIST Cybersecurity Framework 2.0</title>
+        <last-modified>2024-10-31T20:21:55-07:00</last-modified>
+        <version>0.0.1</version>
+        <oscal-version>1.1.2</oscal-version>
+        <!-- prop name="generated-by" value="CyberESI Consulting Group CPRT-to-OSCAL Conversion Tool"/ -->
+        <prop name="keywords"
+            value="critical infrastructure, cybersecurity, information security, information system, OSCAL, Open Security Controls Assessment Language, security functions, security requirements, system, system security"/>
+        <link rel="alternate" href="3ab41d8a-66e3-4732-ae28-07405dad5127"/>
+        <link rel="canonical" href="0451580b-8ef9-4f52-9182-bc887d6cf369"/>
+        <role id="publisher">
+            <title>Document converter to OSCAL</title>
+        </role>
+        <role id="author">
+            <title>Document content author</title>
+        </role>
+        <role id="contact">
+            <title>Contact</title>
+        </role>
+        <party type="organization" uuid="f550d94e-0f01-415f-a1e2-c8188c9ff4a5">
+            <name>National Institute of Standards and Technology</name>
+            <email-address>cyberframework@nist.gov</email-address>
+            <address>
+                <addr-line>National Institute of Standards and Technology</addr-line>
+                <addr-line>Attn: Applied Cybersecurity Division</addr-line>
+                <addr-line>Information Technology Laboratory</addr-line>
+                <addr-line>100 Bureau Drive (Mail Stop 2000)</addr-line>
+                <city>Gaithersburg</city>
+                <state>MD</state>
+                <postal-code>20899-2000</postal-code>
+            </address>
+        </party>
+        <responsible-party role-id="publisher">
+            <party-uuid>f550d94e-0f01-415f-a1e2-c8188c9ff4a5</party-uuid>
+        </responsible-party>
+        <responsible-party role-id="author">
+            <party-uuid>f550d94e-0f01-415f-a1e2-c8188c9ff4a5</party-uuid>
+        </responsible-party>
+        <responsible-party role-id="contact">
+            <party-uuid>f550d94e-0f01-415f-a1e2-c8188c9ff4a5</party-uuid>
+        </responsible-party>
+    </metadata>
+    <group class="function" id="GV">
+        <title>GOVERN</title>
+        <part name="instruction" id="GV_stmt">
+            <p>Establish and monitor the organization's cybersecurity risk management strategy,
+                expectations, and policy</p>
+        </part>
+        <control class="category" id="GV.OC">
+            <title>Organizational Context</title>
+            <part name="statement" id="GV.OC_stmt">
+                <p>The circumstances - mission, stakeholder expectations, and legal, regulatory, and
+                    contractual requirements - surrounding the organization's cybersecurity risk
+                    management decisions are understood (formerly ID.BE)</p>
+            </part>
+            <control class="subcategory" id="GV.OC-01">
+                <title>GV.OC-01</title>
+                <part name="statement" id="GV.OC-01_stmt">
+                    <p>The organizational mission is understood and informs cybersecurity risk
+                        management (formerly ID.BE-02, ID.BE-03)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.OC-01.1">
+                    <p>Share the organization's mission (e.g., through vision and mission
+                        statements, marketing, and service strategies) to provide a basis for
+                        identifying risks that may impede that mission</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.OC-02">
+                <title>GV.OC-02</title>
+                <part name="statement" id="GV.OC-02_stmt">
+                    <p>Internal and external stakeholders are determined, and their needs and
+                        expectations regarding cybersecurity risk management are understood</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.OC-02.2">
+                    <p>Identify relevant internal stakeholders and their cybersecurity-related
+                        expectations (e.g., performance and risk expectations of officers,
+                        directors, and advisors; cultural expectations of employees)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.OC-03">
+                <title>GV.OC-03</title>
+                <part name="statement" id="GV.OC-03_stmt">
+                    <p>Legal, regulatory, and contractual requirements regarding cybersecurity -
+                        including privacy and civil liberties obligations - are understood and
+                        managed (formerly ID.GV-03)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.OC-03.4">
+                    <p>Determine a process to track and manage legal and regulatory requirements
+                        regarding protection of individuals' information (e.g., Health Insurance
+                        Portability and Accountability Act, California Consumer Privacy Act, General
+                        Data Protection Regulation)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.OC-04">
+                <title>GV.OC-04</title>
+                <part name="statement" id="GV.OC-04_stmt">
+                    <p>Critical objectives, capabilities, and services that stakeholders depend on
+                        or expect from the organization are determined and communicated (formerly
+                        ID.BE-04, ID.BE-05)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.OC-04.7">
+                    <p>Establish criteria for determining the criticality of capabilities and
+                        services as viewed by internal and external stakeholders</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.OC-05">
+                <title>GV.OC-05</title>
+                <part name="statement" id="GV.OC-05_stmt">
+                    <p>Outcomes, capabilities, and services that the organization depends on are
+                        determined and communicated (formerly ID.BE-01, ID.BE-04)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.OC-05.10">
+                    <p>Create an inventory of the organization's dependencies on external resources
+                        (e.g., facilities, cloud-based hosting providers) and their relationships to
+                        organizational assets and business functions</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="GV.RM">
+            <title>Risk Management Strategy</title>
+            <part name="statement" id="GV.RM_stmt">
+                <p>The organization's priorities, constraints, risk tolerance and appetite
+                    statements, and assumptions are established, communicated, and used to support
+                    operational risk decisions (formerly ID.RM)</p>
+            </part>
+            <control class="subcategory" id="GV.RM-01">
+                <title>GV.RM-01</title>
+                <part name="statement" id="GV.RM-01_stmt">
+                    <p>Risk management objectives are established and agreed to by organizational
+                        stakeholders (formerly ID.RM-01)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.RM-01.12">
+                    <p>Update near-term and long-term cybersecurity risk management objectives as
+                        part of annual strategic planning and when major changes occur</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.RM-02">
+                <title>GV.RM-02</title>
+                <part name="statement" id="GV.RM-02_stmt">
+                    <p>Risk appetite and risk tolerance statements are determined, communicated, and
+                        maintained (formerly ID.RM-02, ID.RM-03)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.RM-02.15">
+                    <p>Determine and communicate risk appetite statements that convey expectations
+                        about the appropriate level of risk for the organization</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.RM-03">
+                <title>GV.RM-03</title>
+                <part name="statement" id="GV.RM-03_stmt">
+                    <p>Enterprise risk management processes include cybersecurity risk management
+                        activities and outcomes (formerly ID.GV-04)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.RM-03.18">
+                    <p>Aggregate and manage cybersecurity risks alongside other enterprise risks
+                        (e.g., compliance, financial, regulatory)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.RM-04">
+                <title>GV.RM-04</title>
+                <part name="statement" id="GV.RM-04_stmt">
+                    <p>Strategic direction that describes appropriate risk response options is
+                        established and communicated</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.RM-04.21">
+                    <p>Specify criteria for accepting and avoiding cybersecurity risk for various
+                        classifications of data</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.RM-05">
+                <title>GV.RM-05</title>
+                <part name="statement" id="GV.RM-05_stmt">
+                    <p>Lines of communication across the organization are established for
+                        cybersecurity risks, including risks from suppliers and other third
+                        parties</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.RM-05.24">
+                    <p>Determine how to update senior executives, directors, and management on the
+                        organization's cybersecurity posture at agreed-upon intervals</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.RM-06">
+                <title>GV.RM-06</title>
+                <part name="statement" id="GV.RM-06_stmt">
+                    <p>A standardized method for calculating, documenting, categorizing, and
+                        prioritizing cybersecurity risks is established and communicated</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.RM-06.27">
+                    <p>Establish criteria for using a quantitative approach to cybersecurity risk
+                        analysis, and specify probability and exposure formulas</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.RM-07">
+                <title>GV.RM-07</title>
+                <part name="statement" id="GV.RM-07_stmt">
+                    <p>Strategic opportunities (i.e., positive risks) are identified and included in
+                        organizational cybersecurity risk discussions</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.RM-07.31">
+                    <p>Define and communicate guidance and methods for identifying opportunities and
+                        including them in risk discussions (e.g., strengths, weaknesses,
+                        opportunities, and threats [SWOT] analysis)</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="GV.SC">
+            <title>Cybersecurity Supply Chain Risk Management</title>
+            <part name="statement" id="GV.SC_stmt">
+                <p>Cyber supply chain risk management processes are identified, established,
+                    managed, monitored, and improved by organizational stakeholders (formerly
+                    ID.SC)</p>
+            </part>
+            <control class="subcategory" id="GV.SC-01">
+                <title>GV.SC-01</title>
+                <part name="statement" id="GV.SC-01_stmt">
+                    <p>A cybersecurity supply chain risk management program, strategy, objectives,
+                        policies, and processes are established and agreed to by organizational
+                        stakeholders (formerly ID.SC-01)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.SC-01.34">
+                    <p>Establish a strategy that expresses the objectives of the cybersecurity
+                        supply chain risk management program</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.SC-02">
+                <title>GV.SC-02</title>
+                <part name="statement" id="GV.SC-02_stmt">
+                    <p>Cybersecurity roles and responsibilities for suppliers, customers, and
+                        partners are established, communicated, and coordinated internally and
+                        externally (formerly ID.AM-06)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.SC-02.38">
+                    <p>Identify one or more specific roles or positions that will be responsible and
+                        accountable for planning, resourcing, and executing cybersecurity supply
+                        chain risk management activities</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.SC-03">
+                <title>GV.SC-03</title>
+                <part name="statement" id="GV.SC-03_stmt">
+                    <p>Cybersecurity supply chain risk management is integrated into cybersecurity
+                        and enterprise risk management, risk assessment, and improvement processes
+                        (formerly ID.SC-02)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.SC-03.46">
+                    <p>Identify areas of alignment and overlap with cybersecurity and enterprise
+                        risk management</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.SC-04">
+                <title>GV.SC-04</title>
+                <part name="statement" id="GV.SC-04_stmt">
+                    <p>Suppliers are known and prioritized by criticality</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.SC-04.50">
+                    <p>Develop criteria for supplier criticality based on, for example, the
+                        sensitivity of data processed or possessed by suppliers, the degree of
+                        access to the organization's systems, and the importance of the products or
+                        services to the organization's mission</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.SC-05">
+                <title>GV.SC-05</title>
+                <part name="statement" id="GV.SC-05_stmt">
+                    <p>Requirements to address cybersecurity risks in supply chains are established,
+                        prioritized, and integrated into contracts and other types of agreements
+                        with suppliers and other relevant third parties (formerly ID.SC-03)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.SC-05.52">
+                    <p>Establish security requirements for suppliers, products, and services
+                        commensurate with their criticality level and potential impact if
+                        compromised</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.SC-06">
+                <title>GV.SC-06</title>
+                <part name="statement" id="GV.SC-06_stmt">
+                    <p>Planning and due diligence are performed to reduce risks before entering into
+                        formal supplier or other third-party relationships</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.SC-06.62">
+                    <p>Perform thorough due diligence on prospective suppliers that is consistent
+                        with procurement planning and commensurate with the level of risk,
+                        criticality, and complexity of each supplier relationship</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.SC-07">
+                <title>GV.SC-07</title>
+                <part name="statement" id="GV.SC-07_stmt">
+                    <p>The risks posed by a supplier, their products and services, and other third
+                        parties are identified, recorded, prioritized, assessed, responded to, and
+                        monitored over the course of the relationship (formerly ID.SC-02,
+                        ID.SC-04)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.SC-07.66">
+                    <p>Adjust assessment formats and frequencies based on the third party's
+                        reputation and the criticality of the products or services they provide</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.SC-08">
+                <title>GV.SC-08</title>
+                <part name="statement" id="GV.SC-08_stmt">
+                    <p>Relevant suppliers and other third parties are included in incident planning,
+                        response, and recovery activities (formerly ID.SC-05)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.SC-08.71">
+                    <p>Define and use rules and protocols for reporting incident response and
+                        recovery activities and the status between the organization and its
+                        suppliers</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.SC-09">
+                <title>GV.SC-09</title>
+                <part name="statement" id="GV.SC-09_stmt">
+                    <p>Supply chain security practices are integrated into cybersecurity and
+                        enterprise risk management programs, and their performance is monitored
+                        throughout the technology product and service life cycle</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.SC-09.76">
+                    <p>Policies and procedures require provenance records for all acquired
+                        technology products and services</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.SC-10">
+                <title>GV.SC-10</title>
+                <part name="statement" id="GV.SC-10_stmt">
+                    <p>Cybersecurity supply chain risk management plans include provisions for
+                        activities that occur after the conclusion of a partnership or service
+                        agreement</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.SC-10.81">
+                    <p>Establish processes for terminating critical relationships under both normal
+                        and adverse circumstances</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="GV.RR">
+            <title>Roles, Responsibilities, and Authorities</title>
+            <part name="statement" id="GV.RR_stmt">
+                <p>Cybersecurity roles, responsibilities, and authorities to foster accountability,
+                    performance assessment, and continuous improvement are established and
+                    communicated (formerly ID.GV-02)</p>
+            </part>
+            <control class="subcategory" id="GV.RR-01">
+                <title>GV.RR-01</title>
+                <part name="statement" id="GV.RR-01_stmt">
+                    <p>Organizational leadership is responsible and accountable for cybersecurity
+                        risk and fosters a culture that is risk-aware, ethical, and continually
+                        improving</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.RR-01.88">
+                    <p>Leaders (e.g., directors) agree on their roles and responsibilities in
+                        developing, implementing, and assessing the organization's cybersecurity
+                        strategy</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.RR-02">
+                <title>GV.RR-02</title>
+                <part name="statement" id="GV.RR-02_stmt">
+                    <p>Roles, responsibilities, and authorities related to cybersecurity risk
+                        management are established, communicated, understood, and enforced (formerly
+                        ID.AM-06, ID.GV-02, DE.DP-01)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.RR-02.92">
+                    <p>Document risk management roles and responsibilities in policy</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.RR-03">
+                <title>GV.RR-03</title>
+                <part name="statement" id="GV.RR-03_stmt">
+                    <p>Adequate resources are allocated commensurate with cybersecurity risk
+                        strategy, roles and responsibilities, and policies</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.RR-03.97">
+                    <p>Conduct periodic management reviews to ensure that those given cybersecurity
+                        risk management responsibilities have the necessary authority</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.RR-04">
+                <title>GV.RR-04</title>
+                <part name="statement" id="GV.RR-04_stmt">
+                    <p>Cybersecurity is included in human resources practices (formerly
+                        PR.IP-11)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.RR-04.100">
+                    <p>Integrate cybersecurity risk management considerations into human resources
+                        processes (e.g., personnel screening, onboarding, change notification,
+                        offboarding)</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="GV.PO">
+            <title>Policies, Processes, and Procedures</title>
+            <part name="statement" id="GV.PO_stmt">
+                <p>Organizational cybersecurity policies, processes, and procedures are established,
+                    communicated, and enforced (formerly ID.GV-01)</p>
+            </part>
+            <control class="subcategory" id="GV.PO-01">
+                <title>GV.PO-01</title>
+                <part name="statement" id="GV.PO-01_stmt">
+                    <p>Policies, processes, and procedures for managing cybersecurity risks are
+                        established based on organizational context, cybersecurity strategy, and
+                        priorities and are communicated and enforced (formerly ID.GV-01)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.PO-01.104">
+                    <p>Create, disseminate, and maintain a risk management policy with statements of
+                        management intent, expectations, and direction</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.PO-02">
+                <title>GV.PO-02</title>
+                <part name="statement" id="GV.PO-02_stmt">
+                    <p>Policies, processes, and procedures for managing cybersecurity risks are
+                        reviewed, updated, communicated, and enforced to reflect changes in
+                        requirements, threats, technology, and organizational mission (formerly
+                        ID.GV-01)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.PO-02.109">
+                    <p>Update policies based on periodic reviews of cybersecurity risk management
+                        results to ensure that policies and supporting processes adequately maintain
+                        risk at an acceptable level</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="GV.OV">
+            <title>Oversight</title>
+            <part name="statement" id="GV.OV_stmt">
+                <p>Results of organization-wide cybersecurity risk management activities and
+                    performance are used to inform, improve, and adjust the risk management
+                    strategy</p>
+            </part>
+            <control class="subcategory" id="GV.OV-01">
+                <title>GV.OV-01</title>
+                <part name="statement" id="GV.OV-01_stmt">
+                    <p>Cybersecurity risk management strategy outcomes are reviewed to inform and
+                        adjust strategy and direction</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.OV-01.113">
+                    <p>Measure how well the risk management strategy and risk results have helped
+                        leaders make decisions and achieve organizational objectives</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.OV-02">
+                <title>GV.OV-02</title>
+                <part name="statement" id="GV.OV-02_stmt">
+                    <p>The cybersecurity risk management strategy is reviewed and adjusted to ensure
+                        coverage of organizational requirements and risks</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.OV-02.115">
+                    <p>Review audit findings to confirm whether the existing cybersecurity strategy
+                        has ensured compliance with internal and external requirements</p>
+                </part>
+            </control>
+            <control class="subcategory" id="GV.OV-03">
+                <title>GV.OV-03</title>
+                <part name="statement" id="GV.OV-03_stmt">
+                    <p>Organizational cybersecurity risk management performance is measured and
+                        reviewed to confirm and adjust strategic direction</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="GV.OV-03.118">
+                    <p>Review key performance indicators (KPIs) to ensure that organization-wide
+                        policies and procedures achieve objectives</p>
+                </part>
+            </control>
+        </control>
+    </group>
+    <group class="function" id="ID">
+        <title>IDENTIFY</title>
+        <part name="instruction" id="ID_stmt">
+            <p>Help determine the current cybersecurity risk to the organization</p>
+        </part>
+        <control class="category" id="ID.AM">
+            <title>Asset Management</title>
+            <part name="statement" id="ID.AM_stmt">
+                <p>Assets (e.g., data, hardware software, systems, facilities, services, people)
+                    that enable the organization to achieve business purposes are identified and
+                    managed consistent with their relative importance to organizational objectives
+                    and the organization's risk strategy</p>
+            </part>
+            <control class="subcategory" id="ID.AM-01">
+                <title>ID.AM-01</title>
+                <part name="statement" id="ID.AM-01_stmt">
+                    <p>Inventories of hardware managed by the organization are maintained</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="ID.AM-01.121">
+                    <p>Maintain inventories for all types of hardware, including IT, IoT, OT, and
+                        mobile devices</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.AM-02">
+                <title>ID.AM-02</title>
+                <part name="statement" id="ID.AM-02_stmt">
+                    <p>Inventories of software, services, and systems managed by the organization
+                        are maintained</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="ID.AM-02.123">
+                    <p>Maintain inventories for all types of software and services, including
+                        commercial-off-the-shelf, open-source, custom applications, API services,
+                        and cloud-based applications and services</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.AM-03">
+                <title>ID.AM-03</title>
+                <part name="statement" id="ID.AM-03_stmt">
+                    <p>Representations of the organization's authorized network communication and
+                        internal and external network data flows are maintained (formerly ID.AM-03,
+                        DE.AE-01)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="ID.AM-03.126">
+                    <p>Maintain baselines of communication and data flows within the organization's
+                        wired and wireless networks</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.AM-04">
+                <title>ID.AM-04</title>
+                <part name="statement" id="ID.AM-04_stmt">
+                    <p>Inventories of services provided by suppliers are maintained</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="ID.AM-04.129">
+                    <p>Inventory all external services used by the organization, including
+                        third-party infrastructure-as-a-service (IaaS), platform-as-a-service
+                        (PaaS), and software-as-a-service (SaaS) offerings; APIs; and other
+                        externally hosted application services</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.AM-05">
+                <title>ID.AM-05</title>
+                <part name="statement" id="ID.AM-05_stmt">
+                    <p>Assets are prioritized based on classification, criticality, resources, and
+                        impact on the mission</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="ID.AM-05.131">
+                    <p>Define criteria for prioritizing each class of assets</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.AM-06">
+                <title>ID.AM-06</title>
+                <part name="statement" id="ID.AM-06_stmt">
+                    <p>Dropped (moved to GV.RR-02, GV.SC-02)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.AM-07">
+                <title>ID.AM-07</title>
+                <part name="statement" id="ID.AM-07_stmt">
+                    <p>Inventories of data and corresponding metadata for designated data types are
+                        maintained</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="ID.AM-07.134">
+                    <p>Maintain a list of the designated data types of interest (e.g., personally
+                        identifiable information, protected health information, financial account
+                        numbers, organization intellectual property)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.AM-08">
+                <title>ID.AM-08</title>
+                <part name="statement" id="ID.AM-08_stmt">
+                    <p>Systems, hardware, software, and services are managed throughout their life
+                        cycle (formerly PR.DS-03, PR.IP-02, PR.MA-01, PR.MA-02)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="ID.AM-08.138">
+                    <p>Integrate cybersecurity considerations throughout the life cycles of systems,
+                        hardware, software, and services</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="ID.BE">
+            <title>Business Environment</title>
+            <part name="statement" id="ID.BE_stmt">
+                <p>Dropped (moved to GV.OC)</p>
+            </part>
+            <control class="subcategory" id="ID.BE-01">
+                <title>ID.BE-01</title>
+                <part name="statement" id="ID.BE-01_stmt">
+                    <p>Dropped (moved to GV.OC-05)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.BE-02">
+                <title>ID.BE-02</title>
+                <part name="statement" id="ID.BE-02_stmt">
+                    <p>Dropped (moved to GV.OC-01)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.BE-03">
+                <title>ID.BE-03</title>
+                <part name="statement" id="ID.BE-03_stmt">
+                    <p>Dropped (moved to GV.OC-01)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.BE-04">
+                <title>ID.BE-04</title>
+                <part name="statement" id="ID.BE-04_stmt">
+                    <p>Dropped (moved to GV.OC-04, GV.OC-05)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.BE-05">
+                <title>ID.BE-05</title>
+                <part name="statement" id="ID.BE-05_stmt">
+                    <p>Dropped (moved to GV.OC-04)</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="ID.GV">
+            <title>Governance</title>
+            <part name="statement" id="ID.GV_stmt">
+                <p>Dropped (moved to GV)</p>
+            </part>
+            <control class="subcategory" id="ID.GV-01">
+                <title>ID.GV-01</title>
+                <part name="statement" id="ID.GV-01_stmt">
+                    <p>Dropped (moved to GV.PO)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.GV-02">
+                <title>ID.GV-02</title>
+                <part name="statement" id="ID.GV-02_stmt">
+                    <p>Dropped (moved to GV.RR-02)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.GV-03">
+                <title>ID.GV-03</title>
+                <part name="statement" id="ID.GV-03_stmt">
+                    <p>Dropped (moved to GV.OC-03)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.GV-04">
+                <title>ID.GV-04</title>
+                <part name="statement" id="ID.GV-04_stmt">
+                    <p>Dropped (moved to GV.RM-03)</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="ID.RA">
+            <title>Risk Assessment</title>
+            <part name="statement" id="ID.RA_stmt">
+                <p>The organization understands the cybersecurity risk to the organization, assets,
+                    and individuals.</p>
+            </part>
+            <control class="subcategory" id="ID.RA-01">
+                <title>ID.RA-01</title>
+                <part name="statement" id="ID.RA-01_stmt">
+                    <p>Vulnerabilities in assets are identified, validated, and recorded (formerly
+                        ID.RA-01, PR.IP-12, DE.CM-08)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="ID.RA-01.144">
+                    <p>Use vulnerability management technologies to identify unpatched and
+                        misconfigured software</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.RA-02">
+                <title>ID.RA-02</title>
+                <part name="statement" id="ID.RA-02_stmt">
+                    <p>Cyber threat intelligence is received from information sharing forums and
+                        sources</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="ID.RA-02.149">
+                    <p>Configure cybersecurity tools and technologies with detection or response
+                        capabilities to securely ingest cyber threat intelligence feeds</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.RA-03">
+                <title>ID.RA-03</title>
+                <part name="statement" id="ID.RA-03_stmt">
+                    <p>Internal and external threats to the organization are identified and
+                        recorded</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="ID.RA-03.152">
+                    <p>Use cyber threat intelligence to maintain awareness of the types of threat
+                        actors likely to target the organization and the TTPs they are likely to
+                        use</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.RA-04">
+                <title>ID.RA-04</title>
+                <part name="statement" id="ID.RA-04_stmt">
+                    <p>Potential impacts and likelihoods of threats exploiting vulnerabilities are
+                        identified and recorded</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="ID.RA-04.155">
+                    <p>Business leaders and cybersecurity risk management practitioners work
+                        together to estimate the likelihood and impact of risk scenarios and record
+                        them in risk registers</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.RA-05">
+                <title>ID.RA-05</title>
+                <part name="statement" id="ID.RA-05_stmt">
+                    <p>Threats, vulnerabilities, likelihoods, and impacts are used to determine risk
+                        and inform risk prioritization</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="ID.RA-05.158">
+                    <p>Develop threat models to better understand risks to the data and identify
+                        appropriate risk responses</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.RA-06">
+                <title>ID.RA-06</title>
+                <part name="statement" id="ID.RA-06_stmt">
+                    <p>Risk responses are chosen from the available options, prioritized, planned,
+                        tracked, and communicated (formerly ID.RA-06, RS.MI-03)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="ID.RA-06.160">
+                    <p>Apply the vulnerability management plan's criteria for deciding whether to
+                        accept, transfer, mitigate, or avoid risk</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.RA-07">
+                <title>ID.RA-07</title>
+                <part name="statement" id="ID.RA-07_stmt">
+                    <p>Changes and exceptions are managed, assessed for risk impact, recorded, and
+                        tracked (formerly part of PR.IP-03)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="ID.RA-07.165">
+                    <p>Implement and follow procedures for the formal documentation, review,
+                        testing, and approval of proposed changes and requested exceptions</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.RA-08">
+                <title>ID.RA-08</title>
+                <part name="statement" id="ID.RA-08_stmt">
+                    <p>Processes for receiving, analyzing, and responding to vulnerability
+                        disclosures are established (formerly RS.AN-05)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="ID.RA-08.169">
+                    <p>Conduct vulnerability information sharing between the organization and its
+                        suppliers following the rules and protocols defined in contracts</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.RA-09">
+                <title>ID.RA-09</title>
+                <part name="statement" id="ID.RA-09_stmt">
+                    <p>The authenticity and integrity of hardware and software are assessed prior to
+                        acquisition and use (formerly PR.DS-08)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="ID.RA-09.171">
+                    <p>Assess the authenticity and cybersecurity of critical technology products and
+                        services prior to acquisition and use</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="ID.RM">
+            <title>Risk Management Strategy</title>
+            <part name="statement" id="ID.RM_stmt">
+                <p>Dropped (moved to GV.RM)</p>
+            </part>
+            <control class="subcategory" id="ID.RM-01">
+                <title>ID.RM-01</title>
+                <part name="statement" id="ID.RM-01_stmt">
+                    <p>Dropped (moved to GV.RM-01)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.RM-02">
+                <title>ID.RM-02</title>
+                <part name="statement" id="ID.RM-02_stmt">
+                    <p>Dropped (moved to GV.RM-02)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.RM-03">
+                <title>ID.RM-03</title>
+                <part name="statement" id="ID.RM-03_stmt">
+                    <p>Dropped (moved to GV.RM-02)</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="ID.SC">
+            <title>Supply Chain Risk Management</title>
+            <part name="statement" id="ID.SC_stmt">
+                <p>Dropped (moved to GV.SC)</p>
+            </part>
+            <control class="subcategory" id="ID.SC-01">
+                <title>ID.SC-01</title>
+                <part name="statement" id="ID.SC-01_stmt">
+                    <p>Dropped (moved to GV.SC-01)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.SC-02">
+                <title>ID.SC-02</title>
+                <part name="statement" id="ID.SC-02_stmt">
+                    <p>Dropped (moved to GV.SC-03, GV.SC-07)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.SC-03">
+                <title>ID.SC-03</title>
+                <part name="statement" id="ID.SC-03_stmt">
+                    <p>Dropped (moved to GV.SC-05)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.SC-04">
+                <title>ID.SC-04</title>
+                <part name="statement" id="ID.SC-04_stmt">
+                    <p>Dropped (moved to GV.SC-07)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.SC-05">
+                <title>ID.SC-05</title>
+                <part name="statement" id="ID.SC-05_stmt">
+                    <p>Dropped (moved to GV.SC-08, ID.IM-02)</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="ID.IM">
+            <title>Improvement</title>
+            <part name="statement" id="ID.IM_stmt">
+                <p>Improvements to organizational cybersecurity risk management processes,
+                    procedures and activities are identified across all Framework Functions</p>
+            </part>
+            <control class="subcategory" id="ID.IM-01">
+                <title>ID.IM-01</title>
+                <part name="statement" id="ID.IM-01_stmt">
+                    <p>Continuous evaluation is applied to identify improvements</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="ID.IM-01.172">
+                    <p>Perform self-assessments of critical services that take current threats and
+                        TTPs into consideration</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.IM-02">
+                <title>ID.IM-02</title>
+                <part name="statement" id="ID.IM-02_stmt">
+                    <p>Security tests and exercises, including those done in coordination with
+                        suppliers and relevant third parties, are conducted to identify improvements
+                        (formerly ID.SC-05, PR.IP-10, DE.DP-03)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="ID.IM-02.175">
+                    <p>Identify improvements for future incident response activities based on
+                        findings from incident response assessments (e.g., tabletop exercises and
+                        simulations, tests, internal reviews, independent audits)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.IM-03">
+                <title>ID.IM-03</title>
+                <part name="statement" id="ID.IM-03_stmt">
+                    <p>Lessons learned during execution of operational processes, procedures, and
+                        activities are used to identify improvements (formerly PR.IP-07, PR.IP-08,
+                        DE.DP-05, RS.IM-01, RS.IM-02, RC.IM-01, RC.IM-02)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="ID.IM-03.181">
+                    <p>Conduct collaborative lessons learned sessions with suppliers</p>
+                </part>
+            </control>
+            <control class="subcategory" id="ID.IM-04">
+                <title>ID.IM-04</title>
+                <part name="statement" id="ID.IM-04_stmt">
+                    <p>Cybersecurity plans that affect operations are communicated, maintained, and
+                        improved (formerly PR.IP-09)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="ID.IM-04.184">
+                    <p>Establish contingency plans (e.g., incident response, business continuity,
+                        disaster recovery) for responding to and recovering from adverse events that
+                        can interfere with operations, expose confidential information, or otherwise
+                        endanger the organization's mission and viability</p>
+                </part>
+            </control>
+        </control>
+    </group>
+    <group class="function" id="PR">
+        <title>PROTECT</title>
+        <part name="instruction" id="PR_stmt">
+            <p>Use safeguards to prevent or reduce cybersecurity risk</p>
+        </part>
+        <control class="category" id="PR.AA">
+            <title>Identity Management, Authentication, and Access Control</title>
+            <part name="statement" id="PR.AA_stmt">
+                <p>Access to physical and logical assets is limited to authorized users, services,
+                    and hardware, and is managed commensurate with the assessed risk of unauthorized
+                    access (formerly PR.AC)</p>
+            </part>
+            <control class="subcategory" id="PR.AA-01">
+                <title>PR.AA-01</title>
+                <part name="statement" id="PR.AA-01_stmt">
+                    <p>Identities and credentials for authorized users, services, and hardware are
+                        managed by the organization (formerly PR.AC-01)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.AA-01.189">
+                    <p>Initiate requests for new access or additional access for employees,
+                        contractors, and others, and track, review, and fulfill the requests, with
+                        permission from system or data owners when needed</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.AA-02">
+                <title>PR.AA-02</title>
+                <part name="statement" id="PR.AA-02_stmt">
+                    <p>Identities are proofed and bound to credentials based on the context of
+                        interactions (formerly PR.AC-06)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.AA-02.193">
+                    <p>Verify a person's claimed identity at enrollment time using government-issued
+                        identity credentials (e.g., passport, visa, driver's license)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.AA-03">
+                <title>PR.AA-03</title>
+                <part name="statement" id="PR.AA-03_stmt">
+                    <p>Users, services, and hardware are authenticated (formerly PR.AC-03,
+                        PR.AC-07)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.AA-03.195">
+                    <p>Require multifactor authentication</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.AA-04">
+                <title>PR.AA-04</title>
+                <part name="statement" id="PR.AA-04_stmt">
+                    <p>Identity assertions are protected, conveyed, and verified</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.AA-04.198">
+                    <p>Protect identity assertions that are used to convey authentication and user
+                        information through single sign-on systems</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.AA-05">
+                <title>PR.AA-05</title>
+                <part name="statement" id="PR.AA-05_stmt">
+                    <p>Access permissions, entitlements, and authorizations are defined in a policy,
+                        managed, enforced, and reviewed, and incorporate the principles of least
+                        privilege and separation of duties (formerly PR.AC-01, PR.AC-03,
+                        PR.AC-04)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.AA-05.201">
+                    <p>Review logical and physical access privileges periodically and whenever
+                        someone changes roles or leaves the organization, and promptly rescind
+                        privileges that are no longer needed</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.AA-06">
+                <title>PR.AA-06</title>
+                <part name="statement" id="PR.AA-06_stmt">
+                    <p>Physical access to assets is managed, monitored, and enforced commensurate
+                        with risk (formerly PR.AC-02, PR.PT-04)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.AA-06.205">
+                    <p>Use security guards, security cameras, locked entrances, alarm systems, and
+                        other physical controls to monitor facilities and restrict access</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="PR.AC">
+            <title>Identity Management, Authentication and Access Control</title>
+            <part name="statement" id="PR.AC_stmt">
+                <p>Dropped (moved to PR.AA)</p>
+            </part>
+            <control class="subcategory" id="PR.AC-01">
+                <title>PR.AC-01</title>
+                <part name="statement" id="PR.AC-01_stmt">
+                    <p>Dropped (moved to PR.AA-01, PR.AA-05)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.AC-02">
+                <title>PR.AC-02</title>
+                <part name="statement" id="PR.AC-02_stmt">
+                    <p>Dropped (moved to PR.AA-06)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.AC-03">
+                <title>PR.AC-03</title>
+                <part name="statement" id="PR.AC-03_stmt">
+                    <p>Dropped (moved to PR.AA-03, PR.AA-05, PR.IR-01)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.AC-04">
+                <title>PR.AC-04</title>
+                <part name="statement" id="PR.AC-04_stmt">
+                    <p>Dropped (moved to PR.AA-05)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.AC-05">
+                <title>PR.AC-05</title>
+                <part name="statement" id="PR.AC-05_stmt">
+                    <p>Dropped (moved to PR.IR-01)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.AC-06">
+                <title>PR.AC-06</title>
+                <part name="statement" id="PR.AC-06_stmt">
+                    <p>Dropped (moved to PR.AA-02)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.AC-07">
+                <title>PR.AC-07</title>
+                <part name="statement" id="PR.AC-07_stmt">
+                    <p>Dropped (moved to PR.AA-03)</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="PR.AT">
+            <title>Awareness and Training</title>
+            <part name="statement" id="PR.AT_stmt">
+                <p>The organization's personnel are provided cybersecurity awareness and training so
+                    they can perform their cybersecurity-related tasks</p>
+            </part>
+            <control class="subcategory" id="PR.AT-01">
+                <title>PR.AT-01</title>
+                <part name="statement" id="PR.AT-01_stmt">
+                    <p>Users are provided awareness and training so they possess the knowledge and
+                        skills to perform general tasks with security risks in mind (formerly
+                        PR.AT-01, PR.AT-03, RS.CO-01)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.AT-01.208">
+                    <p>Provide basic cybersecurity awareness and training to employees, contractors,
+                        partners, suppliers, and all other users of the organization's non-public
+                        resources</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.AT-02">
+                <title>PR.AT-02</title>
+                <part name="statement" id="PR.AT-02_stmt">
+                    <p>Individuals in specialized roles are provided awareness and training so they
+                        possess the knowledge and skills to perform relevant tasks with security
+                        risks in mind (formerly PR.AT-02, PR.AT-03, PR.AT-04, PR.AT-05)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.AT-02.213">
+                    <p>Identify the specialized roles within the organization that require
+                        additional cybersecurity training, such as physical and cybersecurity
+                        personnel, finance personnel, senior leadership, and anyone with access to
+                        business-critical data</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.AT-03">
+                <title>PR.AT-03</title>
+                <part name="statement" id="PR.AT-03_stmt">
+                    <p>Dropped (moved to PR.AT-01, PR.AT-02)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.AT-04">
+                <title>PR.AT-04</title>
+                <part name="statement" id="PR.AT-04_stmt">
+                    <p>Dropped (moved to PR.AT-02)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.AT-05">
+                <title>PR.AT-05</title>
+                <part name="statement" id="PR.AT-05_stmt">
+                    <p>Dropped (moved to PR.AT-02)</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="PR.DS">
+            <title>Data Security</title>
+            <part name="statement" id="PR.DS_stmt">
+                <p>Data is managed consistent with the organization's risk strategy to protect the
+                    confidentiality, integrity, and availability of information</p>
+            </part>
+            <control class="subcategory" id="PR.DS-01">
+                <title>PR.DS-01</title>
+                <part name="statement" id="PR.DS-01_stmt">
+                    <p>The confidentiality, integrity, and availability of data-at-rest are
+                        protected (formerly PR.DS-01, PR-DS.05, PR.DS-06, PR.PT-02)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.DS-01.217">
+                    <p>Use encryption, digital signatures, and cryptographic hashes to protect the
+                        confidentiality and integrity of stored data in files, databases, virtual
+                        machine disk images, container images, and other resources</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.DS-02">
+                <title>PR.DS-02</title>
+                <part name="statement" id="PR.DS-02_stmt">
+                    <p>The confidentiality, integrity, and availability of data-in-transit are
+                        protected (formerly PR.DS-02, PR.DS-05)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.DS-02.222">
+                    <p>Use encryption, digital signatures, and cryptographic hashes to protect the
+                        confidentiality and integrity of network communications</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.DS-03">
+                <title>PR.DS-03</title>
+                <part name="statement" id="PR.DS-03_stmt">
+                    <p>Dropped (moved to ID.AM-08)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.DS-04">
+                <title>PR.DS-04</title>
+                <part name="statement" id="PR.DS-04_stmt">
+                    <p>Dropped (moved to PR.IR-04)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.DS-05">
+                <title>PR.DS-05</title>
+                <part name="statement" id="PR.DS-05_stmt">
+                    <p>Dropped (moved to PR.DS-01, PR-DS-02, PR.DS-10)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.DS-06">
+                <title>PR.DS-06</title>
+                <part name="statement" id="PR.DS-06_stmt">
+                    <p>Dropped (moved to PR.DS-01, DE.CM-09)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.DS-07">
+                <title>PR.DS-07</title>
+                <part name="statement" id="PR.DS-07_stmt">
+                    <p>Dropped (moved to PR.IR-01)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.DS-08">
+                <title>PR.DS-08</title>
+                <part name="statement" id="PR.DS-08_stmt">
+                    <p>Dropped (moved to ID.RA-09, DE.CM-09)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.DS-09">
+                <title>PR.DS-09</title>
+                <part name="statement" id="PR.DS-09_stmt">
+                    <p>Data is managed throughout its life cycle, including destruction (formerly
+                        PR.IP-06)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.DS-09.226">
+                    <p>Securely destroy stored data based on the organization's data retention
+                        policy using the prescribed destruction method</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.DS-10">
+                <title>PR.DS-10</title>
+                <part name="statement" id="PR.DS-10_stmt">
+                    <p>The confidentiality, integrity, and availability of data-in-use are protected
+                        (formerly PR.DS-05)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.DS-10.229">
+                    <p>Remove data that must remain confidential (e.g., from processors and memory)
+                        as soon as it is no longer needed</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.DS-11">
+                <title>PR.DS-11</title>
+                <part name="statement" id="PR.DS-11_stmt">
+                    <p>Backups of data are created, protected, maintained, and tested (formerly
+                        PR.IP-04)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.DS-11.231">
+                    <p>Continuously back up critical data in near-real-time, and back up other data
+                        frequently at agreed-upon schedules</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="PR.IP">
+            <title>Information Protection Processes and Procedures</title>
+            <part name="statement" id="PR.IP_stmt">
+                <p>Dropped (moved to other Categories and Functions)</p>
+            </part>
+            <control class="subcategory" id="PR.IP-01">
+                <title>PR.IP-01</title>
+                <part name="statement" id="PR.IP-01_stmt">
+                    <p>Dropped (moved to PR.PS-01)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.IP-02">
+                <title>PR.IP-02</title>
+                <part name="statement" id="PR.IP-02_stmt">
+                    <p>Dropped (moved to ID.AM-08)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.IP-03">
+                <title>PR.IP-03</title>
+                <part name="statement" id="PR.IP-03_stmt">
+                    <p>Dropped (moved to PR.PS-01, ID.RA-07)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.IP-04">
+                <title>PR.IP-04</title>
+                <part name="statement" id="PR.IP-04_stmt">
+                    <p>Dropped (moved to PR.DS-11)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.IP-05">
+                <title>PR.IP-05</title>
+                <part name="statement" id="PR.IP-05_stmt">
+                    <p>Dropped (moved to PR.IR-02)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.IP-06">
+                <title>PR.IP-06</title>
+                <part name="statement" id="PR.IP-06_stmt">
+                    <p>Dropped (moved to PR.DS-09)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.IP-07">
+                <title>PR.IP-07</title>
+                <part name="statement" id="PR.IP-07_stmt">
+                    <p>Dropped (moved to ID.IM-03)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.IP-08">
+                <title>PR.IP-08</title>
+                <part name="statement" id="PR.IP-08_stmt">
+                    <p>Dropped (moved to ID.IM-03)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.IP-09">
+                <title>PR.IP-09</title>
+                <part name="statement" id="PR.IP-09_stmt">
+                    <p>Dropped (moved to ID.IM-04)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.IP-10">
+                <title>PR.IP-10</title>
+                <part name="statement" id="PR.IP-10_stmt">
+                    <p>Dropped (moved to ID.IM-02)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.IP-11">
+                <title>PR.IP-11</title>
+                <part name="statement" id="PR.IP-11_stmt">
+                    <p>Dropped (moved to GV.RR-04)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.IP-12">
+                <title>PR.IP-12</title>
+                <part name="statement" id="PR.IP-12_stmt">
+                    <p>Dropped (moved to ID.RA-01, PR.PS-02)</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="PR.MA">
+            <title>Maintenance</title>
+            <part name="statement" id="PR.MA_stmt">
+                <p>Dropped (moved to ID.AM-08)</p>
+            </part>
+            <control class="subcategory" id="PR.MA-01">
+                <title>PR.MA-01</title>
+                <part name="statement" id="PR.MA-01_stmt">
+                    <p>Dropped (moved to ID.AM-08, PR.PS-03)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.MA-02">
+                <title>PR.MA-02</title>
+                <part name="statement" id="PR.MA-02_stmt">
+                    <p>Dropped (moved to ID.AM-08, PR.PS-02)</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="PR.PT">
+            <title>Protective Technology</title>
+            <part name="statement" id="PR.PT_stmt">
+                <p>Dropped (moved to other Protect Categories)</p>
+            </part>
+            <control class="subcategory" id="PR.PT-01">
+                <title>PR.PT-01</title>
+                <part name="statement" id="PR.PT-01_stmt">
+                    <p>Dropped (moved to PR.PS-04)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.PT-02">
+                <title>PR.PT-02</title>
+                <part name="statement" id="PR.PT-02_stmt">
+                    <p>Dropped (moved to PR.DS-01, PR.PS-01)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.PT-03">
+                <title>PR.PT-03</title>
+                <part name="statement" id="PR.PT-03_stmt">
+                    <p>Dropped (moved to PR.PS-01)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.PT-04">
+                <title>PR.PT-04</title>
+                <part name="statement" id="PR.PT-04_stmt">
+                    <p>Dropped (moved to PR.AA-07, PR.IR-01)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.PT-05">
+                <title>PR.PT-05</title>
+                <part name="statement" id="PR.PT-05_stmt">
+                    <p>Dropped (moved to PR.IR-04)</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="PR.PS">
+            <title>Platform Security</title>
+            <part name="statement" id="PR.PS_stmt">
+                <p>The hardware, software (e.g., firmware, operating systems, applications), and
+                    services of physical and virtual platforms are managed consistent with the
+                    organization's risk strategy to protect their confidentiality, integrity, and
+                    availability</p>
+            </part>
+            <control class="subcategory" id="PR.PS-01">
+                <title>PR.PS-01</title>
+                <part name="statement" id="PR.PS-01_stmt">
+                    <p>Configuration management practices are applied (formerly PR.IP-01, PR.IP-03,
+                        PR.PT-02, PR.PT-03)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.PS-01.235">
+                    <p>Establish, test, deploy, and maintain hardened baselines that enforce the
+                        organization's cybersecurity policies and provide only essential
+                        capabilities (i.e., principle of least functionality)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.PS-02">
+                <title>PR.PS-02</title>
+                <part name="statement" id="PR.PS-02_stmt">
+                    <p>Software is maintained, replaced, and removed commensurate with risk
+                        (formerly PR.IP-12, PR.MA-02)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.PS-02.237">
+                    <p>Perform routine and emergency patching within the timeframes specified in the
+                        vulnerability management plan</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.PS-03">
+                <title>PR.PS-03</title>
+                <part name="statement" id="PR.PS-03_stmt">
+                    <p>Hardware is maintained, replaced, and removed commensurate with risk
+                        (formerly PR.MA-01)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.PS-03.243">
+                    <p>Replace hardware when it lacks needed security capabilities or when it cannot
+                        support software with needed security capabilities</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.PS-04">
+                <title>PR.PS-04</title>
+                <part name="statement" id="PR.PS-04_stmt">
+                    <p>Log records are generated and made available for continuous monitoring
+                        (formerly PR.PT-01)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.PS-04.246">
+                    <p>Configure all operating systems, applications, and services (including
+                        cloud-based services) to generate log records</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.PS-05">
+                <title>PR.PS-05</title>
+                <part name="statement" id="PR.PS-05_stmt">
+                    <p>Installation and execution of unauthorized software are prevented</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.PS-05.249">
+                    <p>When risk warrants it, restrict software execution to permitted products only
+                        or deny the execution of prohibited and unauthorized software</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.PS-06">
+                <title>PR.PS-06</title>
+                <part name="statement" id="PR.PS-06_stmt">
+                    <p>Secure software development practices are integrated and their performance is
+                        monitored throughout the software development life cycle</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.PS-06.253">
+                    <p>Protect all components of organization-developed software from tampering and
+                        unauthorized access</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="PR.IR">
+            <title>Technology Infrastructure Resilience</title>
+            <part name="statement" id="PR.IR_stmt">
+                <p>Security architectures are managed with the organization's risk strategy to
+                    protect asset confidentiality, integrity, and availability, and organizational
+                    resilience</p>
+            </part>
+            <control class="subcategory" id="PR.IR-01">
+                <title>PR.IR-01</title>
+                <part name="statement" id="PR.IR-01_stmt">
+                    <p>Networks and environments are protected from unauthorized logical access and
+                        usage (formerly PR.AC-03, PR.AC-05, PR.DS-07, PR.PT-04)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.IR-01.256">
+                    <p>Logically segment organization networks and cloud-based platforms according
+                        to trust boundaries and platform types (e.g., IT, IoT, OT, mobile, guests),
+                        and permit required communications only between segments</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.IR-02">
+                <title>PR.IR-02</title>
+                <part name="statement" id="PR.IR-02_stmt">
+                    <p>The organization's technology assets are protected from environmental threats
+                        (formerly PR.IP-05)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.IR-02.260">
+                    <p>Protect organizational equipment from known environmental threats, such as
+                        flooding, fire, wind, and excessive heat and humidity</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.IR-03">
+                <title>PR.IR-03</title>
+                <part name="statement" id="PR.IR-03_stmt">
+                    <p>Mechanisms are implemented to achieve resilience requirements in normal and
+                        adverse situations (formerly PR.PT-05)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.IR-03.262">
+                    <p>Avoid single points of failure in systems and infrastructure</p>
+                </part>
+            </control>
+            <control class="subcategory" id="PR.IR-04">
+                <title>PR.IR-04</title>
+                <part name="statement" id="PR.IR-04_stmt">
+                    <p>Adequate resource capacity to ensure availability is maintained (formerly
+                        PR.DS-04)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="PR.IR-04.265">
+                    <p>Monitor usage of storage, power, compute, network bandwidth, and other
+                        resources</p>
+                </part>
+            </control>
+        </control>
+    </group>
+    <group class="function" id="DE">
+        <title>DETECT</title>
+        <part name="instruction" id="DE_stmt">
+            <p>Find and analyze possible cybersecurity attacks and compromises</p>
+        </part>
+        <control class="category" id="DE.CM">
+            <title>Continuous Monitoring</title>
+            <part name="statement" id="DE.CM_stmt">
+                <p>Assets are monitored to find anomalies, indicators of compromise, and other
+                    potentially adverse events</p>
+            </part>
+            <control class="subcategory" id="DE.CM-01">
+                <title>DE.CM-01</title>
+                <part name="statement" id="DE.CM-01_stmt">
+                    <p>Networks and network services are monitored to find potentially adverse
+                        events (formerly DE.CM-01, DE.CM-04, DE.CM-05, DE.CM-07)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="DE.CM-01.267">
+                    <p>Monitor DNS, BGP, and other network services for adverse events</p>
+                </part>
+            </control>
+            <control class="subcategory" id="DE.CM-02">
+                <title>DE.CM-02</title>
+                <part name="statement" id="DE.CM-02_stmt">
+                    <p>The physical environment is monitored to find potentially adverse events</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="DE.CM-02.272">
+                    <p>Monitor logs from physical access control systems (e.g., badge readers) to
+                        find unusual access patterns (e.g., deviations from the norm) and failed
+                        access attempts</p>
+                </part>
+            </control>
+            <control class="subcategory" id="DE.CM-03">
+                <title>DE.CM-03</title>
+                <part name="statement" id="DE.CM-03_stmt">
+                    <p>Personnel activity and technology usage are monitored to find potentially
+                        adverse events (formerly DE.CM-03, DE.CM-07)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="DE.CM-03.276">
+                    <p>Use behavior analytics software to detect anomalous user activity to mitigate
+                        insider threats</p>
+                </part>
+            </control>
+            <control class="subcategory" id="DE.CM-04">
+                <title>DE.CM-04</title>
+                <part name="statement" id="DE.CM-04_stmt">
+                    <p>Dropped (moved to DE.CM-01, DE.CM-09)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="DE.CM-05">
+                <title>DE.CM-05</title>
+                <part name="statement" id="DE.CM-05_stmt">
+                    <p>Dropped (moved to DE.CM-01, DE.CM-09)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="DE.CM-06">
+                <title>DE.CM-06</title>
+                <part name="statement" id="DE.CM-06_stmt">
+                    <p>External service provider activities and services are monitored to find
+                        potentially adverse events (formerly DE.CM-06, DE.CM-07)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="DE.CM-06.279">
+                    <p>Monitor remote administration and maintenance activities that external
+                        providers perform on organizational systems</p>
+                </part>
+            </control>
+            <control class="subcategory" id="DE.CM-07">
+                <title>DE.CM-07</title>
+                <part name="statement" id="DE.CM-07_stmt">
+                    <p>Dropped (moved to DE.CM-01, DE.CM-03, DE.CM-06, DE.CM-09)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="DE.CM-08">
+                <title>DE.CM-08</title>
+                <part name="statement" id="DE.CM-08_stmt">
+                    <p>Dropped (moved to ID.RA-01)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="DE.CM-09">
+                <title>DE.CM-09</title>
+                <part name="statement" id="DE.CM-09_stmt">
+                    <p>Computing hardware and software, runtime environments, and their data are
+                        monitored to find potentially adverse events (formerly PR.DS-06, PR.DS-08,
+                        DE.CM-04, DE.CM-05, DE.CM-07)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="DE.CM-09.281">
+                    <p>Monitor email, web, file sharing, collaboration services, and other common
+                        attack vectors to detect malware, phishing, data leaks and exfiltration, and
+                        other adverse events</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="DE.AE">
+            <title>Adverse Event Analysis</title>
+            <part name="statement" id="DE.AE_stmt">
+                <p>Anomalies, indicators of compromise, and other potentially adverse events are
+                    analyzed to characterize the events and detect cybersecurity incidents (formerly
+                    DE.AE, DE.DP-02)</p>
+            </part>
+            <control class="subcategory" id="DE.AE-01">
+                <title>DE.AE-01</title>
+                <part name="statement" id="DE.AE-01_stmt">
+                    <p>Dropped (moved to ID.AM-03)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="DE.AE-02">
+                <title>DE.AE-02</title>
+                <part name="statement" id="DE.AE-02_stmt">
+                    <p>Potentially adverse events are analyzed to better understand associated
+                        activities</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="DE.AE-02.285">
+                    <p>Use security information and event management (SIEM) or other tools to
+                        continuously monitor log events for known malicious and suspicious
+                        activity</p>
+                </part>
+            </control>
+            <control class="subcategory" id="DE.AE-03">
+                <title>DE.AE-03</title>
+                <part name="statement" id="DE.AE-03_stmt">
+                    <p>Information is correlated from multiple sources</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="DE.AE-03.289">
+                    <p>Constantly transfer log data generated by other sources to a relatively small
+                        number of log servers</p>
+                </part>
+            </control>
+            <control class="subcategory" id="DE.AE-04">
+                <title>DE.AE-04</title>
+                <part name="statement" id="DE.AE-04_stmt">
+                    <p>The estimated impact and scope of adverse events are determined</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="DE.AE-04.292">
+                    <p>Use SIEMs or other tools to estimate impact and scope, and review and refine
+                        the estimates</p>
+                </part>
+            </control>
+            <control class="subcategory" id="DE.AE-05">
+                <title>DE.AE-05</title>
+                <part name="statement" id="DE.AE-05_stmt">
+                    <p>Dropped (moved to DE.AE-08)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="DE.AE-06">
+                <title>DE.AE-06</title>
+                <part name="statement" id="DE.AE-06_stmt">
+                    <p>Information on adverse events is provided to authorized staff and tools
+                        (formerly DE.DP-04)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="DE.AE-06.294">
+                    <p>Use cybersecurity software to generate alerts and provide them to the
+                        security operations center (SOC), incident responders, and incident response
+                        tools</p>
+                </part>
+            </control>
+            <control class="subcategory" id="DE.AE-07">
+                <title>DE.AE-07</title>
+                <part name="statement" id="DE.AE-07_stmt">
+                    <p>Cyber threat intelligence and other contextual information are integrated
+                        into the analysis</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="DE.AE-07.298">
+                    <p>Securely provide cyber threat intelligence feeds to detection technologies,
+                        processes, and personnel</p>
+                </part>
+            </control>
+            <control class="subcategory" id="DE.AE-08">
+                <title>DE.AE-08</title>
+                <part name="statement" id="DE.AE-08_stmt">
+                    <p>Incidents are declared when adverse events meet the defined incident criteria
+                        (formerly DE.AE-05)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="DE.AE-08.301">
+                    <p>Apply incident criteria to known and assumed characteristics of activity in
+                        order to determine whether an incident should be declared</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="DE.DP">
+            <title>Detection Processes</title>
+            <part name="statement" id="DE.DP_stmt">
+                <p>Dropped (moved to other Categories and Functions)</p>
+            </part>
+            <control class="subcategory" id="DE.DP-01">
+                <title>DE.DP-01</title>
+                <part name="statement" id="DE.DP-01_stmt">
+                    <p>Dropped (moved to GV.RR-02)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="DE.DP-02">
+                <title>DE.DP-02</title>
+                <part name="statement" id="DE.DP-02_stmt">
+                    <p>Dropped (moved to DE.AE)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="DE.DP-03">
+                <title>DE.DP-03</title>
+                <part name="statement" id="DE.DP-03_stmt">
+                    <p>Dropped (moved to ID.IM-02)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="DE.DP-04">
+                <title>DE.DP-04</title>
+                <part name="statement" id="DE.DP-04_stmt">
+                    <p>Dropped (moved to DE.AE-06)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="DE.DP-05">
+                <title>DE.DP-05</title>
+                <part name="statement" id="DE.DP-05_stmt">
+                    <p>Dropped (moved to ID.IM-03)</p>
+                </part>
+            </control>
+        </control>
+    </group>
+    <group class="function" id="RS">
+        <title>RESPOND</title>
+        <part name="instruction" id="RS_stmt">
+            <p>Take action regarding a detected cybersecurity incident</p>
+        </part>
+        <control class="category" id="RS.RP">
+            <title>Response Planning</title>
+            <part name="statement" id="RS.RP_stmt">
+                <p>Dropped (moved to RS.MA)</p>
+            </part>
+            <control class="subcategory" id="RS.RP-01">
+                <title>RS.RP-01</title>
+                <part name="statement" id="RS.RP-01_stmt">
+                    <p>Dropped (moved to RS.MA-01)</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="RS.MA">
+            <title>Incident Management</title>
+            <part name="statement" id="RS.MA_stmt">
+                <p>Responses to detected cybersecurity incidents are managed (formerly RS.RP)</p>
+            </part>
+            <control class="subcategory" id="RS.MA-01">
+                <title>RS.MA-01</title>
+                <part name="statement" id="RS.MA-01_stmt">
+                    <p>The incident response plan is executed once an incident is declared in
+                        coordination with relevant third parties (formerly RS.RP-01, RS.CO-04)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="RS.MA-01.303">
+                    <p>Detection technologies automatically report confirmed incidents</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RS.MA-02">
+                <title>RS.MA-02</title>
+                <part name="statement" id="RS.MA-02_stmt">
+                    <p>Incident reports are triaged and validated (formerly RS.AN-01, RS.AN-02)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="RS.MA-02.306">
+                    <p>Preliminarily review incident reports to confirm that they are
+                        cybersecurity-related and necessitate incident response activities</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RS.MA-03">
+                <title>RS.MA-03</title>
+                <part name="statement" id="RS.MA-03_stmt">
+                    <p>Incidents are categorized and prioritized (formerly RS.AN-04, RS.AN-02)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="RS.MA-03.308">
+                    <p>Further review and categorize incidents based on the type of incident (e.g.,
+                        data breach, ransomware, DDoS, account compromise)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RS.MA-04">
+                <title>RS.MA-04</title>
+                <part name="statement" id="RS.MA-04_stmt">
+                    <p>Incidents are escalated or elevated as needed (formerly RS.AN-02,
+                        RS.CO-04)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="RS.MA-04.311">
+                    <p>Track and validate the status of all ongoing incidents</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RS.MA-05">
+                <title>RS.MA-05</title>
+                <part name="statement" id="RS.MA-05_stmt">
+                    <p>The criteria for initiating incident recovery are applied</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="RS.MA-05.313">
+                    <p>Apply incident recovery criteria to known and assumed characteristics of the
+                        incident to determine whether incident recovery processes should be
+                        initiated</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="RS.AN">
+            <title>Incident Analysis</title>
+            <part name="statement" id="RS.AN_stmt">
+                <p>Investigation is conducted to ensure effective response and support forensics and
+                    recovery activities</p>
+            </part>
+            <control class="subcategory" id="RS.AN-01">
+                <title>RS.AN-01</title>
+                <part name="statement" id="RS.AN-01_stmt">
+                    <p>Dropped (moved to RS.MA-02)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RS.AN-02">
+                <title>RS.AN-02</title>
+                <part name="statement" id="RS.AN-02_stmt">
+                    <p>Dropped (moved to RS.MA-02, RS.MA-03, RS.MA-04)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RS.AN-03">
+                <title>RS.AN-03</title>
+                <part name="statement" id="RS.AN-03_stmt">
+                    <p>Analysis is performed to determine what has taken place during an incident
+                        and the root cause of the incident</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="RS.AN-03.315">
+                    <p>Determine the sequence of events that occurred during the incident and which
+                        assets and resources were involved in each event</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RS.AN-04">
+                <title>RS.AN-04</title>
+                <part name="statement" id="RS.AN-04_stmt">
+                    <p>Dropped (moved to RS.MA-03)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RS.AN-05">
+                <title>RS.AN-05</title>
+                <part name="statement" id="RS.AN-05_stmt">
+                    <p>Dropped (moved to ID.RA-08)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RS.AN-06">
+                <title>RS.AN-06</title>
+                <part name="statement" id="RS.AN-06_stmt">
+                    <p>Actions performed during an investigation are recorded and the records'
+                        integrity and provenance are preserved (formerly part of RS.AN-03)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="RS.AN-06.319">
+                    <p>Require each incident responder and others (e.g., system administrators,
+                        cybersecurity engineers) who perform incident response tasks to record their
+                        actions and make the record immutable</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RS.AN-07">
+                <title>RS.AN-07</title>
+                <part name="statement" id="RS.AN-07_stmt">
+                    <p>Incident data and metadata are collected, and their integrity and provenance
+                        are preserved</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="RS.AN-07.321">
+                    <p>Collect, preserve, and safeguard the integrity of all pertinent incident data
+                        and metadata (e.g., data source, date/time of collection) based on evidence
+                        preservation and chain-of-custody procedures</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RS.AN-08">
+                <title>RS.AN-08</title>
+                <part name="statement" id="RS.AN-08_stmt">
+                    <p>The incident's magnitude is estimated and validated</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="RS.AN-08.322">
+                    <p>Review other potential targets of the incident to search for indicators of
+                        compromise and evidence of persistence</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="RS.CO">
+            <title>Incident Response Reporting and Communication</title>
+            <part name="statement" id="RS.CO_stmt">
+                <p>Response activities are coordinated with internal and external stakeholders as
+                    required by laws, regulations, or policies</p>
+            </part>
+            <control class="subcategory" id="RS.CO-01">
+                <title>RS.CO-01</title>
+                <part name="statement" id="RS.CO-01_stmt">
+                    <p>Dropped (moved to PR.AT-01)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RS.CO-02">
+                <title>RS.CO-02</title>
+                <part name="statement" id="RS.CO-02_stmt">
+                    <p>Internal and external stakeholders are notified of incidents</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="RS.CO-02.324">
+                    <p>Follow the organization's breach notification procedures after discovering a
+                        data breach incident, including notifying affected customers</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RS.CO-03">
+                <title>RS.CO-03</title>
+                <part name="statement" id="RS.CO-03_stmt">
+                    <p>Information is shared with designated internal and external stakeholders
+                        (formerly RS.CO-03, RS.CO-05)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="RS.CO-03.327">
+                    <p>Securely share information consistent with response plans and information
+                        sharing agreements</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RS.CO-04">
+                <title>RS.CO-04</title>
+                <part name="statement" id="RS.CO-04_stmt">
+                    <p>Dropped (moved to RS.MA-01, RS.MA-04)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RS.CO-05">
+                <title>RS.CO-05</title>
+                <part name="statement" id="RS.CO-05_stmt">
+                    <p>Dropped (moved to RS.CO-03)</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="RS.MI">
+            <title>Incident Mitigation</title>
+            <part name="statement" id="RS.MI_stmt">
+                <p>Activities are performed to prevent expansion of an event and mitigate its
+                    effects</p>
+            </part>
+            <control class="subcategory" id="RS.MI-01">
+                <title>RS.MI-01</title>
+                <part name="statement" id="RS.MI-01_stmt">
+                    <p>Incidents are contained</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="RS.MI-01.333">
+                    <p>Cybersecurity technologies (e.g., antivirus software) and cybersecurity
+                        features of other technologies (e.g., operating systems, network
+                        infrastructure devices) automatically perform containment actions</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RS.MI-02">
+                <title>RS.MI-02</title>
+                <part name="statement" id="RS.MI-02_stmt">
+                    <p>Incidents are eradicated</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="RS.MI-02.337">
+                    <p>Cybersecurity technologies and cybersecurity features of other technologies
+                        (e.g., operating systems, network infrastructure devices) automatically
+                        perform eradication actions</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RS.MI-03">
+                <title>RS.MI-03</title>
+                <part name="statement" id="RS.MI-03_stmt">
+                    <p>Dropped (moved to ID.RA-06)</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="RS.IM">
+            <title>Improvements</title>
+            <part name="statement" id="RS.IM_stmt">
+                <p>Dropped (moved to ID.IM)</p>
+            </part>
+            <control class="subcategory" id="RS.IM-01">
+                <title>RS.IM-01</title>
+                <part name="statement" id="RS.IM-01_stmt">
+                    <p>Dropped (moved to ID.IM-03)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RS.IM-02">
+                <title>RS.IM-02</title>
+                <part name="statement" id="RS.IM-02_stmt">
+                    <p>Dropped (moved to ID.IM-03)</p>
+                </part>
+            </control>
+        </control>
+    </group>
+    <group class="function" id="RC">
+        <title>RECOVER</title>
+        <part name="instruction" id="RC_stmt">
+            <p>Restore assets and operations that were impacted by a cybersecurity incident</p>
+        </part>
+        <control class="category" id="RC.RP">
+            <title>Incident Recovery Plan Execution</title>
+            <part name="statement" id="RC.RP_stmt">
+                <p>Restoration activities are performed to ensure operational availability of
+                    systems and services affected by cybersecurity incidents</p>
+            </part>
+            <control class="subcategory" id="RC.RP-01">
+                <title>RC.RP-01</title>
+                <part name="statement" id="RC.RP-01_stmt">
+                    <p>The recovery portion of the incident response plan is executed once initiated
+                        from the incident response process</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="RC.RP-01.340">
+                    <p>Begin recovery procedures during or after incident response processes</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RC.RP-02">
+                <title>RC.RP-02</title>
+                <part name="statement" id="RC.RP-02_stmt">
+                    <p>Recovery actions are determined, scoped, prioritized, and performed</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="RC.RP-02.342">
+                    <p>Select recovery actions based on the criteria defined in the incident
+                        response plan and available resources</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RC.RP-03">
+                <title>RC.RP-03</title>
+                <part name="statement" id="RC.RP-03_stmt">
+                    <p>The integrity of backups and other restoration assets is verified before
+                        using them for restoration</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="RC.RP-03.344">
+                    <p>Check restoration assets for indicators of compromise, file corruption, and
+                        other integrity issues before use</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RC.RP-04">
+                <title>RC.RP-04</title>
+                <part name="statement" id="RC.RP-04_stmt">
+                    <p>Critical mission functions and cybersecurity risk management are considered
+                        to establish post-incident operational norms</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="RC.RP-04.345">
+                    <p>Use business impact and system categorization records (including service
+                        delivery objectives) to validate that essential services are restored in the
+                        appropriate order</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RC.RP-05">
+                <title>RC.RP-05</title>
+                <part name="statement" id="RC.RP-05_stmt">
+                    <p>The integrity of restored assets is verified, systems and services are
+                        restored, and normal operating status is confirmed</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="RC.RP-05.348">
+                    <p>Check restored assets for indicators of compromise and remediation of root
+                        causes of the incident before production use</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RC.RP-06">
+                <title>RC.RP-06</title>
+                <part name="statement" id="RC.RP-06_stmt">
+                    <p>The criteria for determining the end of incident recovery are applied, and
+                        incident-related documentation is completed</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="RC.RP-06.350">
+                    <p>Prepare an after-action report that documents the incident itself, the
+                        response and recovery actions taken, and lessons learned</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="RC.CO">
+            <title>Incident Recovery Communication</title>
+            <part name="statement" id="RC.CO_stmt">
+                <p>Restoration activities are coordinated with internal and external parties</p>
+            </part>
+            <control class="subcategory" id="RC.CO-01">
+                <title>RC.CO-01</title>
+                <part name="statement" id="RC.CO-01_stmt">
+                    <p>Dropped (moved to RC.CO-04)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RC.CO-02">
+                <title>RC.CO-02</title>
+                <part name="statement" id="RC.CO-02_stmt">
+                    <p>Dropped (moved to RC.CO-04)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RC.CO-03">
+                <title>RC.CO-03</title>
+                <part name="statement" id="RC.CO-03_stmt">
+                    <p>Recovery activities and progress in restoring operational capabilities are
+                        communicated to designated internal and external stakeholders</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="RC.CO-03.352">
+                    <p>Securely share recovery information, including restoration progress,
+                        consistent with response plans and information sharing agreements</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RC.CO-04">
+                <title>RC.CO-04</title>
+                <part name="statement" id="RC.CO-04_stmt">
+                    <p>Public updates on incident recovery are properly shared using approved
+                        methods and messaging (formerly RC.CO-01, RC.CO-02)</p>
+                </part>
+                <part name="example" ns="https://csrc.nist.gov/ns/csf" id="RC.CO-04.356">
+                    <p>Follow the organization's breach notification procedures for recovering from
+                        a data breach incident</p>
+                </part>
+            </control>
+        </control>
+        <control class="category" id="RC.IM">
+            <title>Improvements</title>
+            <part name="statement" id="RC.IM_stmt">
+                <p>Dropped (moved to ID.IM)</p>
+            </part>
+            <control class="subcategory" id="RC.IM-01">
+                <title>RC.IM-01</title>
+                <part name="statement" id="RC.IM-01_stmt">
+                    <p>Dropped (moved to ID.IM-03)</p>
+                </part>
+            </control>
+            <control class="subcategory" id="RC.IM-02">
+                <title>RC.IM-02</title>
+                <part name="statement" id="RC.IM-02_stmt">
+                    <p>Dropped (moved to ID.IM-03)</p>
+                </part>
+            </control>
+        </control>
+    </group>
+    <back-matter>
+        <resource uuid="3ab41d8a-66e3-4732-ae28-07405dad5127">
+            <title>The NIST Cybersecurity Framework 2.0 (PDF)</title>
+            <rlink media-type="application/pdf"
+                href="https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.ipd.pdf"/>
+        </resource>
+        <resource uuid="0451580b-8ef9-4f52-9182-bc887d6cf369">
+            <title>The NIST Cybersecurity Framework 2.0 (DOI link)</title>
+            <rlink media-type="application/pdf" href="https://doi.org/10.6028/NIST.CSWP.29.ipd"/>
+        </resource>
+    </back-matter>
+</catalog>
