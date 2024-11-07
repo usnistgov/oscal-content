@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <assessment-results
-    uuid="ec0dad37-54e0-40fd-a925-6d0bdea94c0d"
+    uuid="7d0221ac-91a2-4798-94a2-c310224fa42b"
     xmlns="http://csrc.nist.gov/ns/oscal/1.0">
     <metadata>
-        <title>IFA GoodRead Continuous Monitoring Assessment Results June 2023</title>
-        <last-modified>2024-02-01T13:57:28.355446-04:00</last-modified>
-        <version>202306-002</version>
+        <title>IFA Assessment Results</title>
+        <last-modified>2024-11-07T16:10:00.000000-00:00</last-modified>
+        <version>1.0</version>
         <oscal-version>1.1.2</oscal-version>
+        <revisions>
+            <revision>
+              <title>IFA GoodRead Continuous Monitoring Assessment Results June 2023</title>
+              <last-modified>2024-02-01T13:57:28.355446-04:00</last-modified>
+              <version>202306-002</version>
+              <oscal-version>1.1.2</oscal-version>
+              <link rel="version-history" href="#ec0dad37-54e0-40fd-a925-6d0bdea94c0d"/>
+              <remarks>
+                <p>This OSCAL version of the IFA Assessemnt Results was importing an nonexisting Assessment Plan.</p>
+              </remarks>
+            </revision>
+        </revisions>
         <role id="assessor">
             <title>IFA Security Controls Assessor</title>
         </role>
@@ -23,7 +35,7 @@
             <party-uuid>e7730080-71ce-4b20-bec4-84f33136fd58</party-uuid>
         </responsible-party>
     </metadata>
-    <import-ap href="./ap.oscal.xml" />
+    <import-ap href="../../ap/xml/ifa_assessemnt-plan-example.xml" />
     <local-definitions>
         <activity uuid="cf5d53fe-6043-4c68-9ed6-6b258909febf">
             <title>Test System Elements for Least Privilege Design and Implementation</title>
@@ -219,4 +231,10 @@
             <associated-risk risk-uuid="0cfa750e-3553-47ba-a7ba-cf84a884d261" />
         </finding>
     </result>
+    <back-matter>
+        <resource uuid="ec0dad37-54e0-40fd-a925-6d0bdea94c0d">
+            <title>IFA GoodRead Continuous Monitoring Assessment Results June 2023</title>
+            <rlink href="https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.3.0.zip"/>
+        </resource>
+    </back-matter>
 </assessment-results>
