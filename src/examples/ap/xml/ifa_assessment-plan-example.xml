@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <assessment-plan
-    uuid="60077e84-e62f-4375-8c6c-b0e0d4560c5f"
+    uuid="3b0d6eb5-a3d3-435e-af68-fb2e643426b7"
     xmlns="http://csrc.nist.gov/ns/oscal/1.0">
     <metadata>
-        <title>IFA GoodRead Assessment Plan</title>
-        <last-modified>2024-02-01T13:57:28.355446-04:00</last-modified>
-        <version>1.0</version>
+        <title>IFA Assessment Plan</title>
+        <last-modified>2024-11-07T11:33:28.355446-04:00</last-modified>
+        <version>1.0.1</version>
         <oscal-version>1.1.2</oscal-version>
+        <revisions>
+            <revision>
+              <title>IFA GoodRead Assessment Plan</title>
+              <last-modified>2024-02-01T13:57:28.355446-04:00</last-modified>
+              <version>1.0</version>
+              <oscal-version>1.1.2</oscal-version>
+              <link rel="version-history" href="#60077e84-e62f-4375-8c6c-b0e0d4560c5f"/>
+              <remarks>
+                <p>This OSCAL version of the IFA Assessemnt Plan was importing an nonexisting SSP.</p>
+              </remarks>
+            </revision>
+        </revisions>
         <role id="assessor">
             <title>IFA Security Control Assessor</title>
         </role>
@@ -23,7 +35,7 @@
             <party-uuid>e7730080-71ce-4b20-bec4-84f33136fd58</party-uuid>
         </responsible-party>
     </metadata>
-    <import-ssp href="../3-implementation/ssp.oscal.xml" />
+    <import-ssp href="../../ssp/xml/ifa_ssp-example.xml" />
     <local-definitions>
         <activity uuid="52277182-1ba3-4cb6-8d96-b1b97aaf9d6b">
             <title>Examine System Elements for Least Privilege Design and Implementation</title>
@@ -126,4 +138,10 @@
             </ul>
         </remarks>
     </task>
+    <back-matter>
+        <resource uuid="60077e84-e62f-4375-8c6c-b0e0d4560c5f">
+            <title>IFA GoodRead Assessment Plan</title>
+            <rlink href="https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.3.0.zip"/>
+        </resource>
+    </back-matter>
 </assessment-plan>
