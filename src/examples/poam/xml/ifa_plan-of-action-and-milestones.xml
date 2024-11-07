@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plan-of-action-and-milestones
-    uuid="714210d2-f8df-448c-be3e-e2213816cf79"
+    uuid="6374b585-dfeb-481d-bf08-5a97c49851fc"
     xmlns="http://csrc.nist.gov/ns/oscal/1.0">
     <metadata>
-        <title>IFA GoodRead Plan of Action and Milestones</title>
-        <last-modified>2024-02-01T13:57:28.355446-04:00</last-modified>
-        <version>1.1</version>
+        <title>IFA Plan of Action and Milestones</title>
+        <last-modified>2024-11-07T16:57:28.355446-04:00</last-modified>
+        <version>1.2</version>
         <oscal-version>1.1.2</oscal-version>
+        <revisions>
+            <revision>
+                <title>IFA GoodRead Plan of Action and Milestones</title>
+                <last-modified>2024-02-01T13:57:28.355446-04:00</last-modified>
+              <version>1.1</version>
+              <oscal-version>1.1.2</oscal-version>
+              <link rel="version-history" href="#714210d2-f8df-448c-be3e-e2213816cf79"/>
+              <remarks>
+                <p>This OSCAL version of the IFA Plan of Actions and Milestones was importing an nonexisting SSP.</p>
+              </remarks>
+            </revision>
+        </revisions>
     </metadata>
-    <import-ssp href="../5-authorize/ssp.oscal.xml" />
+    <import-ssp href="../../ssp/xml/ifa_ssp-example.xml" />
     <system-id identifier-type="http://ietf.org/rfc/rfc4122">8101e04d-8305-4e73-bb95-6b59f645b143</system-id>
     <observation uuid="0c4de4fc-9bde-46af-b6fe-3b5e78194dcf">
         <title>Django Framework Examination</title>
@@ -195,4 +207,10 @@
         <related-observation observation-uuid="8807eb6e-0c05-43bc-8438-799739615e34" />
         <associated-risk risk-uuid="1c65d2d3-7735-47fa-8f68-a236744beab7" />
     </poam-item>
+    <back-matter>
+        <resource uuid="714210d2-f8df-448c-be3e-e2213816cf79">
+            <title>IFA GoodRead Plan of Action and Milestones</title>
+            <rlink href="https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.3.0.zip"/>
+        </resource>
+    </back-matter>
 </plan-of-action-and-milestones>
