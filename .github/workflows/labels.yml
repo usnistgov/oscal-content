@@ -12,7 +12,7 @@ jobs:
     name: DefaultLabelsActions
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
       - uses: lannonbr/issue-label-manager-action@e8dbcd8198e86a1e98d5372e55db976fed9ba6f7
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
