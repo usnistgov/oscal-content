@@ -51,7 +51,7 @@ jobs:
         run: |
           zip ${{ runner.temp }}/generated-content.zip -r README.md examples/ nist.gov/
         working-directory: ${{ github.workspace }}
-      - uses: actions/upload-artifact@5d5d22a31266ced268874388b861e4b58bb5c2f3
+      - uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08
         if: always()
         with:
           name: generated-content
