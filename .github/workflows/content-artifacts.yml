@@ -34,7 +34,7 @@ jobs:
       - name: Install xmllint
         run: sudo apt-get install -y libxml2-utils          
       - name: Cache generated content for OSCAL build artifacts
-        uses: actions/cache@ab5e6d0c87105b4c9c2047343972218f562e4319
+        uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684
         with:
           path: |
             build/oscal/build/node_modules
