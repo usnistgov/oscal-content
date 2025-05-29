@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model schematypens="http://www.w3.org/2001/XMLSchema" type="application/xml" href="https://github.com/usnistgov/OSCAL/releases/download/v1.1.1/oscal_complete_schema.xsd"?>
 <profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="6a917bb8-b705-4b60-bcf9-6f10bdf24d3b">
+         uuid="fcc95403-65b7-4972-8d18-7ef2de53c0b1">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 5.1.1 PRIVACY BASELINE</title>
-      <last-modified>2023-12-04T14:55:00.000000-04:00</last-modified>
-      <version>5.1.1+u4</version>
-      <oscal-version>1.1.2</oscal-version>
+      <last-modified>2025-05-29T16:16:00.000000-00:00</last-modified>
+      <version>5.1.1+u5</version>
+      <oscal-version>1.1.3</oscal-version>
       <role id="creator">
          <title>Document Creator</title>
       </role>
