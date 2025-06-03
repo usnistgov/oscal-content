@@ -10,7 +10,7 @@ on:
 jobs:
   add-to-project:
     name: Add issue to project
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/add-to-project@31b3f3ccdc584546fc445612dec3f38ff5edb41c
         with:
