@@ -66139,7 +66139,7 @@
         <prop name="label" class="sp800-53a" value="SA-24"/>
         <p>Determine if:</p>
         <part id="sa-24_obj.a" name="assessment-objective">
-          <prop name="label" class="sp800-53a" value="SA-24.a."/>
+          <prop name="label" class="sp800-53a" value="SA-24a."/>
           <part id="sa-24_obj.a.1" name="assessment-objective">
             <prop name="label" class="sp800-53a" value="SA-24a.01"/>
             <p>organizational systems, system components, or system services achieve cyber resiliency through <insert type="param" id-ref="sa-24_odp.01"/>;</p>
