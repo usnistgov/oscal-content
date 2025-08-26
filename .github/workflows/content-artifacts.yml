@@ -33,9 +33,7 @@ jobs:
           token: ${{ secrets.COMMIT_TOKEN }}
       - name: Install xmllint
         run: 
-          sudo apt-get update
-          sudo apt-get upgrade
-          sudo apt-get install -y libxml2-utils          
+          sudo apt-get update && sudo apt-get upgrade && sudo apt-get install -y libxml2-utils          
       - name: Cache generated content for OSCAL build artifacts
         uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684
         with:
