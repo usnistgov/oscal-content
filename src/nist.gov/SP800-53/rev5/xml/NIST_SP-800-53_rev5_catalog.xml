@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-model schematypens="http://www.w3.org/2001/XMLSchema" type="application/xml" href="https://github.com/usnistgov/OSCAL/releases/download/v1.1.1/oscal_complete_schema.xsd"?><catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="163f49fd-89a9-4c36-9596-84e20bffcb6d">
   <metadata>
     <title>Electronic (OSCAL) Version of NIST SP 800-53 Rev 5.1.1 Controls and SP 800-53A Rev 5.1.1 Assessment Procedures</title>
-    <last-modified>2025-07-06T20:10:16.00000-00:00</last-modified>
-    <version>5.1.1+u5</version>
+    <last-modified>2025-08-24T20:10:16.00000-00:00</last-modified>
+    <!-- TBD - update version 5.2 or 5.1.1+u6 -->
+    <version>5.1.1+u6</version>
     <oscal-version>1.1.3</oscal-version>
     <revisions>
       <revision>
@@ -121,6 +122,12 @@
     <responsible-party role-id="contact-creator">
       <party-uuid>98c78f9b-5d50-4b01-b47f-d16801e8d0ab</party-uuid>
     </responsible-party>
+    <!-- TBD - review the comment, in particular the 800-53 version -->
+    <remarks>
+      <p>This OSCAL representation of the NIST SP 800-53 Revision 5.2.0 provides updates to 
+      the 800-53 v5.1.1 which support “securely and reliably deploy[ing] patches and updates", 
+      and update the representation to OSCAL v1.1.3. </p>
+    </remarks>
   </metadata>
   <group class="family" id="ac">
     <title>Access Control</title>
@@ -58736,6 +58743,7 @@
       <link rel="reference" href="#9be5d661-421f-41ad-854e-86f98b811891"/>
       <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
       <link rel="reference" href="#98d415ca-7281-4064-9931-0c366637e324"/>
+      <link rel="reference" href="#61ccf0f4-d3e7-42db-9796-ce6cb1c85989"/>
       <link rel="related" href="#pl-8"/>
       <link rel="related" href="#pm-7"/>
       <link rel="related" href="#ra-2"/>
@@ -65890,6 +65898,266 @@
         <part name="assessment-objects">
           <p>Organizational processes for the modification of design, augmentation, or reconfiguration of systems or system components</p>
           <p>mechanisms supporting and/or implementing design modification, augmentation, or reconfiguration of systems or system components</p>
+        </part>
+      </part>
+    </control>
+    <!-- [NEW CONTROL v5.2.0]: SA-24] -->
+    <control class="SP800-53" id="sa-24">
+      <title>Design For Cyber Resiliency</title>
+      <param id="sa-24_odp.01">
+        <prop name="alt-identifier" value="sa-24_prm_1"/>
+        <prop name="label" class="sp800-53a" value="SA-24_ODP[01]"/>
+        <label>cyber resiliency goals</label>
+        <guideline>
+          <p>cyber resiliency goals are defined;</p>
+        </guideline>
+      </param>
+      <param id="sa-24_odp.02">
+        <prop name="alt-identifier" value="sa-24_prm_2"/>
+        <prop name="label" class="sp800-53a" value="SA-24_ODP[02]"/>
+        <label>cyber resiliency objectives</label>
+        <guideline>
+          <p>cyber resiliency objectives are defined;</p>
+        </guideline>
+      </param>
+      <param id="sa-24_odp.03">
+        <prop name="alt-identifier" value="sa-24_prm_3"/>
+        <prop name="label" class="sp800-53a" value="SA-24_ODP[03]"/>
+        <label>cyber resiliency techniques</label>
+        <guideline>
+          <p>cyber resiliency techniques are defined;</p>
+        </guideline>
+      </param>
+      <param id="sa-24_odp.04">
+        <prop name="alt-identifier" value="sa-24_prm_4"/>
+        <prop name="label" class="sp800-53a" value="SA-24_ODP[04]"/>
+        <label>cyber resiliency implementation approaches</label>
+        <guideline>
+          <p>cyber resiliency implementation approaches are defined;</p>
+        </guideline>
+      </param>
+            <param id="sa-24_odp.05">
+        <prop name="alt-identifier" value="sa-24_prm_5"/>
+        <prop name="label" class="sp800-53a" value="SA-24_ODP[05]"/>
+        <label>cyber resiliency design principles</label>
+        <guideline>
+          <p>cyber resiliency design principles are defined;</p>
+        </guideline>
+      </param>
+      <prop name="label" class="zero-padded" value="SA-24"/>
+        <prop name="label" value="SA-24"/>
+      <prop name="label" class="sp800-53a" value="SA-24"/>
+      <prop name="sort-id" value="sa-24"/>
+      <prop ns="http://csrc.nist.gov/ns/rmf" name="implementation-level" value="organization"/>
+      <!-- prop ns="http://csrc.nist.gov/ns/rmf" name="contributes-to-assurance" value="true"/ -->
+      <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
+      <link rel="reference" href="#08b07465-dbdc-48d6-8a0b-37279602ac16"/>
+      <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
+      <link rel="reference" href="#61ccf0f4-d3e7-42db-9796-ce6cb1c85989"/>
+      <link rel="related" href="#ca-7"/>
+      <link rel="related" href="#cp-2"/>
+      <link rel="related" href="#cp-4"/>
+      <link rel="related" href="#cp-9"/>
+      <link rel="related" href="#cp-10"/>
+      <link rel="related" href="#cp-11"/>
+      <link rel="related" href="#cp-12"/>
+      <link rel="related" href="#cp-13"/>
+      <link rel="related" href="#ia-10"/>
+      <link rel="related" href="#ir-4"/>
+      <link rel="related" href="#ir-5"/>
+      <link rel="related" href="#pe-11"/>
+      <link rel="related" href="#pe-17"/>
+      <link rel="related" href="#pl-8"/>
+      <link rel="related" href="#pm-7"/>
+      <link rel="related" href="#pm-16"/>
+      <link rel="related" href="#pm-30"/>
+      <link rel="related" href="#pm-31"/>
+      <link rel="related" href="#ra-3"/>
+      <link rel="related" href="#ra-5"/>
+      <link rel="related" href="#ra-9"/>
+      <link rel="related" href="#ra-10"/>
+      <link rel="related" href="#sa-3"/>
+      <link rel="related" href="#sa-8"/>
+      <link rel="related" href="#sa-9"/>
+      <link rel="related" href="#sa-17"/>
+      <link rel="related" href="#sc-3"/>
+      <link rel="related" href="#sc-5"/>
+      <link rel="related" href="#sc-7"/>
+      <link rel="related" href="#sc-10"/>
+      <link rel="related" href="#sc-11"/>
+      <link rel="related" href="#sc-29"/>
+      <link rel="related" href="#sc-30"/>
+      <link rel="related" href="#sc-34"/>
+      <link rel="related" href="#sc-35"/>
+      <link rel="related" href="#sc-36"/>
+      <link rel="related" href="#sc-37"/>
+      <link rel="related" href="#sc-39"/>
+      <link rel="related" href="#sc-44"/>
+      <link rel="related" href="#sc-47"/>
+      <link rel="related" href="#sc-48"/>
+      <link rel="related" href="#sc-49"/>
+      <link rel="related" href="#sc-50"/>
+      <link rel="related" href="#sc-52"/>
+      <link rel="related" href="#si-3"/>
+      <link rel="related" href="#si-4"/>
+      <link rel="related" href="#si-6"/>
+      <link rel="related" href="#si-7"/>
+      <link rel="related" href="#si-10"/>
+      <link rel="related" href="#si-14"/>
+      <link rel="related" href="#si-15"/>
+      <link rel="related" href="#si-16"/>
+      <link rel="related" href="#si-19"/>
+      <link rel="related" href="#si-20"/>
+      <link rel="related" href="#si-21"/>
+      <link rel="related" href="#si-22"/>
+      <link rel="related" href="#si-23"/>
+      <link rel="related" href="#sr-3"/>
+      <link rel="related" href="#sr-4"/>
+      <link rel="related" href="#sr-5"/>
+      <link rel="related" href="#sr-6"/>
+      <link rel="related" href="#sr-7"/>
+      <link rel="related" href="#sr-9"/>
+      <link rel="related" href="#sr-10"/>
+      <link rel="related" href="#sr-11"/>         
+      <part name="statement" id="sa-24_smt">
+        <part name="item" id="sa-24_smt.a">
+          <prop name="label" value="a."/>
+          <p>Design organizational systems, system components, or system services to achieve cyber resiliency by:</p>
+          <part name="item" id="sa-24_smt.a.1">
+            <prop name="label" value="1."/>
+            <p>Defining the following cyber resiliency goals: <insert type="param" id-ref="sa-24_odp.01"/>.</p>
+          </part>
+          <part name="item" id="sa-24_smt.a.2">
+            <prop name="label" value="2."/>
+            <p>Defining the following cyber resiliency objectives: <insert type="param" id-ref="sa-24_odp.02"/>.</p>
+          </part>
+          <part name="item" id="sa-24_smt.a.3">
+            <prop name="label" value="3."/>
+            <p>Defining the following cyber resiliency techniques: <insert type="param" id-ref="sa-24_odp.03"/>.</p>
+          </part>
+          <part name="item" id="sa-24_smt.a.4">
+            <prop name="label" value="4."/>
+            <p>Defining the following cyber resiliency implementation approaches: <insert type="param" id-ref="sa-24_odp.04"/>.</p>
+          </part>
+          <part name="item" id="sa-24_smt.a.5">
+            <prop name="label" value="5."/>
+            <p>Defining the following cyber resiliency design principles: <insert type="param" id-ref="sa-24_odp.05"/>.</p>
+          </part>
+        </part>
+        <part name="item" id="sa-24_smt.b">
+          <prop name="label" value="b."/>
+          <p>Implement the selected cyber resiliency goals, objectives, techniques, implementation approaches, and design principles as part of an organizational risk management process or systems security engineering process.</p>
+        </part>
+      </part>
+      <part name="guidance" id="sa-24_gdn">
+          <p>Cyber resiliency is critical to ensuring the survivability of mission critical systems and high value assets. Cyber resiliency focuses on limiting the damage from adversity or the conditions that can cause a loss of assets. Damage can affect: (1) organizations (e.g., loss of reputation, increased existential risk); (2) missions or business functions (e.g., decreased capability to complete current missions and to accomplish future missions); (3) security (e.g., decreased capability to achieve security objectives or to prevent, detect, and respond to cyber incidents); (4) systems (e.g., unauthorized use of system resources or decreased capability to meet system requirements); or (5) specific system elements (e.g., physical destruction; corruption, modification, or fabrication of information).</p>
+          <p>Cyber resiliency goals are intended to help organizations maintain a state of informed preparedness for adversity, continue essential mission or business functions despite adversity, restore mission or business functions during and after adversity, and modify mission or business functions and their supporting capabilities in response to predicted changes in technical, operational, or threat environments.</p>
+          <p>NIST SP 800-160, Volume 2 provides additional information on the Cyber Resiliency Engineering Framework to include detailed descriptions of cyber resiliency goals, objectives, techniques, implementation approaches, and design principles. NIST SP 800-160, Vol 1 provides additional information on achieving cyber resiliency as an emergent property of an engineered system.</p>
+       </part>       
+      <part id="sa-24_obj" name="assessment-objective">
+        <prop name="label" class="sp800-53a" value="SA-24"/>
+        <p>Determine if:</p>
+        <part id="sa-24_obj.a" name="assessment-objective">
+          <!-- TBD: review value below for consistency SA-24a. and SA-24a.01 or SA-24.a.01 ...-->
+          <prop name="label" class="sp800-53a" value="SA-24.a."/>
+          <part id="sa-24_obj.a.1" name="assessment-objective">
+            <!-- prop name="label" class="sp800-53a" value="SA-24.a.01"/ -->
+            <prop name="label" class="sp800-53a" value="SA-24a.01"/>
+            <p>organizational systems, system components, or system services achieve cyber resiliency through <insert type="param" id-ref="sa-24_odp.01"/>;</p>
+            <link rel="assessment-for" href="#sa-24_smt.a.1"/>
+          </part>
+          <part id="sa-24_obj.a.2" name="assessment-objective">
+            <!-- prop name="label" class="sp800-53a" value="SA-24.a.02"/ -->
+            <prop name="label" class="sp800-53a" value="SA-24a.02"/>
+            <p>organizational systems, system components, or system services achieve cyber resiliency through <insert type="param" id-ref="sa-24_odp.02"/>;</p>
+            <link rel="assessment-for" href="#sa-24_smt.a.2"/>
+          </part>
+          <part id="sa-24_obj.a.3" name="assessment-objective">
+            <!-- prop name="label" class="sp800-53a" value="SA-24.a.03"/ -->
+            <prop name="label" class="sp800-53a" value="SA-24a.03"/>
+            <p>organizational systems, system components, or system services achieve cyber resiliency through <insert type="param" id-ref="sa-24_odp.03"/>;</p>
+            <link rel="assessment-for" href="#sa-24_smt.a.3"/>
+          </part>
+            <part id="sa-24_obj.a.4" name="assessment-objective">
+            <!-- prop name="label" class="sp800-53a" value="SA-24.a.04"/ -->
+            <prop name="label" class="sp800-53a" value="SA-24a.04"/>
+            <p><p>organizational systems, system components, or system services achieve cyber resiliency through <insert type="param" id-ref="sa-24_odp.04"/>;</p>
+            <link rel="assessment-for" href="#sa-24_smt.a.4"/>
+          </part>
+          <part id="sa-24_obj.a-5" name="assessment-objective">
+            <!-- prop name="label" class="sp800-53a" value="SA-24.a.05"/ -->
+            <prop name="label" class="sp800-53a" value="SA-24a.05"/>
+            <p><p>organizational systems, system components, or system services achieve cyber resiliency through <insert type="param" id-ref="sa-24_odp.05"/>;</p>
+            <link rel="assessment-for" href="#ac-2_smt.a.5"/>
+          </part>
+        </part/>
+        <part id="sa-24_obj.b" name="assessment-objective">
+          <!-- TBD: review value below for consistency SA-2SA-24b.[01] or SA-24.b[01] ...-->
+          <prop name="label" class="sp800-53a" value="SA-24b."/>
+          <part id="sa-24_obj.b-1" name="assessment-objective">
+            <!-- prop name="label" class="sp800-53a" value="SA-24.b[01]"/ -->
+            <prop name="label" class="sp800-53a" value="SA-24b.[01]"/>
+            <p>selected cyber resiliency goals are implemented as part of an organizational risk management process of systems security engineering process;</p>
+            <link rel="assessment-for" href="#ac-2_smt.b"/>
+          </part>
+          <part id="sa-24_obj.b-2" name="assessment-objective">
+            <!-- prop name="label" class="sp800-53a" value="SA-24.b[02]"/ -->
+            <prop name="label" class="sp800-53a" value="SA-24b.[02]"/>
+            <p>selected cyber resiliency objectives are implemented as part of an organizational risk management process of systems security engineering process;</p>
+            <link rel="assessment-for" href="#ac-2_smt.b"/>
+          </part>
+          <part id="sa-24_obj.b-3" name="assessment-objective">
+            <!-- prop name="label" class="sp800-53a" value="SA-24.b[03]"/ -->
+            <prop name="label" class="sp800-53a" value="SA-24b.[03]"/>
+            <p>selected cyber resiliency techniques are implemented as part of an organizational risk management process of systems security engineering process;</p>
+            <link rel="assessment-for" href="#ac-2_smt.b"/>
+          </part>
+          <part id="sa-24_obj.b-4" name="assessment-objective">
+            <!-- prop name="label" class="sp800-53a" value="SA-24.b[04]"/ -->
+            <prop name="label" class="sp800-53a" value="SA-24b.[04]"/>
+            <p>selected cyber resiliency implementation approaches are implemented as part of an organizational risk management process of systems security engineering process;</p>
+            <link rel="assessment-for" href="#ac-2_smt.b"/>
+          </part>
+          <part id="sa-24_obj.b-5" name="assessment-objective">
+            <!-- prop name="label" class="sp800-53a" value="SA-24.b[05]"/ -->
+            <prop name="label" class="sp800-53a" value="SA-24b.[05]"/>
+            <p>selected cyber resiliency design principles are implemented as part of an organizational risk management process of systems security engineering process.</p>
+            <link rel="assessment-for" href="#ac-2_smt.b"/>
+          </part>
+        </part/>
+      </part>
+      <part id="sa-24_asm-examine" name="assessment-method">
+        <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="EXAMINE"/>
+        <prop name="label" class="sp800-53a" value="SA-24-Examine"/>
+        <part name="assessment-objects">
+          <p>System and services acquisition policy;</p> 
+          <p>system and services acquisition procedures;</p> 
+          <p>assessment and authorization procedures; </p>
+          <p>procedures addressing cyber resiliency goals, objectives, techniques, implementation approaches, and design principles used in the specification, design, development, implementation, and modification of the system; </p>
+          <p>system design documentation; </p>
+          <p>security and privacy requirements and specifications for the system; </p>
+          <p>system security plan;</p>
+          <p>privacy plan; </p>
+          <p>privacy impact assessment; </p>
+          <p>privacy risk assessment documentation.</p>
+        </part>
+      </part>
+      <part id="sa-24_asm-interview" name="assessment-method">
+        <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="INTERVIEW"/>
+        <prop name="label" class="sp800-53a" value="SA-24-Interview"/>
+        <part name="assessment-objects">
+          <p>Organizational personnel with acquisition/contracting responsibilities; </p>
+          <p>organizational personnel with information security and privacy responsibilities; </p>
+          <p>organizational personnel with system specification, design, development, implementation, and modification responsibilities; </p>
+          <p>system developers.</p>
+        </part>
+      </part>
+      <part id="sa-24_asm-test" name="assessment-method">
+        <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="TEST"/>
+        <prop name="label" class="sp800-53a" value="SA-24-Test"/>
+        <part name="assessment-objects">
+          <p>Organizational processes for applying cyber resiliency principles in system specification, design, development, implementation, and modification;</p>
+          <p>mechanisms supporting the application of cyber resiliency principles in system specification, design, development, implementation, and modification.</p>
         </part>
       </part>
     </control>
@@ -76377,6 +76645,7 @@
         </part>
       </part>
     </control>
+    <!-- [UPDATED CONTROL v5.2.0]: SI-02 -->
     <control class="SP800-53" id="si-2">
       <title>Flaw Remediation</title>
       <param id="si-02_odp">
@@ -76399,6 +76668,7 @@
       <link rel="reference" href="#155f941a-cba9-4afd-9ca6-5d040d697ba9"/>
       <link rel="reference" href="#20db4e66-e257-450c-b2e4-2bb9a62a2c88"/>
       <link rel="reference" href="#aa5d04e0-6090-4e17-84d4-b9963d55fc2c"/>
+      <link rel="reference" href="#fe209006-bfd4-4033-a79a-9fee1adaf373"/>
       <link rel="related" href="#ca-5"/>
       <link rel="related" href="#cm-3"/>
       <link rel="related" href="#cm-4"/>
@@ -76433,8 +76703,9 @@
         </part>
       </part>
       <part name="guidance" id="si-2_gdn">
-        <p>The need to remediate system flaws applies to all types of software and firmware. Organizations identify systems affected by software flaws, including potential vulnerabilities resulting from those flaws, and report this information to designated organizational personnel with information security and privacy responsibilities. Security-relevant updates include patches, service packs, and malicious code signatures. Organizations also address flaws discovered during assessments, continuous monitoring, incident response activities, and system error handling. By incorporating flaw remediation into configuration management processes, required remediation actions can be tracked and verified.</p>
-        <p>Organization-defined time periods for updating security-relevant software and firmware may vary based on a variety of risk factors, including the security category of the system, the criticality of the update (i.e., severity of the vulnerability related to the discovered flaw), the organizational risk tolerance, the mission supported by the system, or the threat environment. Some types of flaw remediation may require more testing than other types. Organizations determine the type of testing needed for the specific type of flaw remediation activity under consideration and the types of changes that are to be configuration-managed. In some situations, organizations may determine that the testing of software or firmware updates is not necessary or practical, such as when implementing simple malicious code signature updates. In testing decisions, organizations consider whether security-relevant software or firmware updates are obtained from authorized sources with appropriate digital signatures.</p>
+        <p>The need to remediate system flaws applies to all types of software and firmware. Organizations identify systems affected by software flaws, including potential vulnerabilities resulting from those flaws, and report this information to designated organizational personnel with information security and privacy responsibilities. Organizations consider establishing a controlled patching environment for mission-critical systems. Security-relevant updates include patches, service packs, and malicious code signatures. Organizations also address flaws discovered during assessments, continuous monitoring, incident response activities, and system error handling. By incorporating flaw remediation into configuration management processes, required remediation actions can be tracked and verified.</p>
+        <p>Organization-defined time periods for updating security-relevant software and firmware may vary based on a variety of risk factors, including the security category of the system, the criticality of the update (i.e., severity of the vulnerability related to the discovered flaw), the organizational risk tolerance, the mission supported by the system, or the threat environment. Some types of flaw remediation may require more testing than other types. Organizations determine the type of testing needed for the specific type of flaw remediation activity under consideration and the types of changes that are to be configuration-managed. Flaw remediation testing addresses both effectiveness of addressing security issues and for potential side effects on functionality, system and system component performance and operations. When implementing remediation activities, organizations consider the order and timing of updates to validate correct execution within the system environment, and to support system and component availability needs (i.e., implementing a staggered deployment strategy). In some situations, organizations may determine that the testing of software or firmware updates is not necessary or practical, such as when implementing simple malicious code signature updates. In testing decisions, organizations consider whether security-relevant software or firmware updates are obtained from authorized sources with appropriate digital signatures.</p>
+        <p>When implementing remediation activities, organizations consider the order and timing of updates to validate correct execution within the system environment, and to support system and component availability needs (i.e., implementing a staggered deployment strategy). Organizations verify that software and firmware updates come from authorized sources prior to downloading.</p>
       </part>
       <part id="si-2_obj" name="assessment-objective">
         <prop name="label" class="sp800-53a" value="SI-02"/>
@@ -76791,7 +77062,7 @@
           <p>Install <insert type="param" id-ref="si-02.05_odp.01"/> automatically to <insert type="param" id-ref="si-02.05_odp.02"/>.</p>
         </part>
         <part name="guidance" id="si-2.5_gdn">
-          <p>Due to system integrity and availability concerns, organizations consider the methodology used to carry out automatic updates. Organizations balance the need to ensure that the updates are installed as soon as possible with the need to maintain configuration management and control with any mission or operational impacts that automatic updates might impose.</p>
+          <p>Due to system integrity and availability concerns, organizations consider the methodology used to carry out automatic updates. Organizations balance the need to ensure that the updates are installed as soon as possible with the need to maintain configuration management and control with any mission or operational impacts that automatic updates might impose (i.e., implementing a staggered deployment strategy).</p>
         </part>
         <part id="si-2.5_obj" name="assessment-objective">
           <prop name="label" class="sp800-53a" value="SI-02(05)"/>
@@ -76894,7 +77165,112 @@
           </part>
         </part>
       </control>
+      <!--  [NEW CONTROL ENHANCEMENT v5.2.0]: SI-02(07)-->
+      <control class="SP800-53-enhancement" id="si-2.7">
+      <title>Root Cause Analysis</title>
+      <!--param id="si-02.07_odp">
+        <prop name="alt-identifier" value="si-2.6_prm_1"/>
+        <prop name="label" class="sp800-53a" value="SI-02(06)_ODP"/>
+        <label>software and firmware components</label>
+        <guideline>
+          <p>software and firmware components to be removed after updated versions have been installed are defined;</p>
+        </guideline>
+      </param -->
+      <prop name="label" class="zero-padded" value="SI-02(07)"/>
+      <prop name="label" value="SI-2(7)"/>
+      <prop name="label" class="sp800-53a" value="SI-02(07)"/>
+      <prop name="sort-id" value="si-02.07"/>
+      <!-- prop ns="http://csrc.nist.gov/ns/rmf" name="implementation-level" value="organization"/>
+      <prop ns="http://csrc.nist.gov/ns/rmf" name="implementation-level" value="system"/ -->
+      <link rel="required" href="#si-2"/>
+      <part name="statement" id="si-2.7_smt">
+        <part name="item" id="si-2.7_smt.a">
+          <prop name="label" value="a."/>
+          <p>Conduct root cause analysis to identify underlying causes of issues or failures.</p>
+        </part>
+        <part name="item" id="si-2.7_smt.b">
+          <prop name="label" value="b."/>
+          <p>Develop actions to address the root cause of the issue or failure.</p>
+        </part>
+        <part name="item" id="si-2.7_smt.c">
+          <prop name="label" value="c."/>
+          <p>Implement the actions and monitor the implementation for effectiveness.</p>
+        </part>
+      </part>
+      <part name="guidance" id="si-2.7_gdn">
+        <p>Root cause analysis includes a wide range of approaches, tools, and techniques to systematically identify the underlying cause of issues or failures to systems and systems components (hardware, software, and firmware). Organizations consider the severity of the incident to determine what root cause analysis method is used and how quickly implementation of the remediation actions. The root cause analysis includes a timeline, missed warning signs, key decisions, gaps, mitigations, and verification of effectiveness. The actions identified to address the source of the issue are implemented and integrated into applicable organizational policy, procedures, and control implementation.</p>
+      </part>
+      <part id="si-2.7_obj" name="assessment-objective">
+        <prop name="label" class="sp800-53a" value="SI-02(07)"/>
+        <p>Determine if:</p>
+          <part id="si-2.7_obj.a" name="assessment-objective">
+            <!-- TBD: Discuss inconsistencies found in the word document -->
+            <!-- prop name="label" class="sp800-53a" value="SI-02(07)(a)"/ -->
+            <prop name="label" class="sp800-53a" value="SI-02(07)a."/>
+            <p>Root cause analysis is conducted to identify underlying causes of issues or failures</p>
+            <link rel="assessment-for" href="#si-2.7_smt.a"/>
+          </part>
+          <part id="si-2.7_obj.b" name="assessment-objective">
+            <!-- TBD: Discuss inconsistencies found in the word document -->
+            <!-- prop name="label" class="sp800-53a" value="SI-02(07)(b)"/ -->
+            <prop name="label" class="sp800-53a" value="SI-02(07)b."/>
+            <p>Actions to address the root cause of the issue of failure are developed</p>
+            <link rel="assessment-for" href="#si-2.7_smt.b"/>
+          </part>
+          <part id="si-2.7_obj.c" name="assessment-objective">
+            <!-- TBD: Discuss inconsistencies found in the word document -->
+            <!-- prop name="label" class="sp800-53a" value="SI-02(07)(a)"/ -->
+            <prop name="label" class="sp800-53a" value="SI-02(07)c."/>
+              <part id="si-2.7_obj.c-1" name="assessment-objective">
+                <p>The actions (defined in ----TBD---- SI-02(07)b.) are implemented</p>
+                <link rel="assessment-for" href="#si-2.7_smt.c"/>
+              </part>
+              <part id="si-2.7_obj.c-2" name="assessment-objective">
+                <p>The implementation of actions is monitored for effectiveness.</p>
+                <link rel="assessment-for" href="#si-2.7_smt.c"/>
+              </part>
+          </part>
+        <link rel="assessment-for" href="#si-2.7_smt"/>
+      </part>
+      <part id="si-2.7_asm-examine" name="assessment-method">
+        <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="EXAMINE"/>
+        <prop name="label" class="sp800-53a" value="SI-02(07)-Examine"/>
+        <part name="assessment-objects">
+          <p>System and information integrity policy;</p> 
+          <p>system and information integrity procedures; </p>
+          <p>procedures addressing flaw remediation; </p>
+          <p>procedures addressing root cause analysis/process improvement; </p>
+          <p>system design documentation; </p>
+          <p>system configuration settings and associated documentation; </p>
+          <p>system audit records; </p>
+          <p>system security and privacy plan; </p>
+          <p>other relevant documents or records</p>
+        </part>
+      </part>
+      <part id="si-2.7_asm-interview" name="assessment-method">
+        <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="INTERVIEW"/>
+        <prop name="label" class="sp800-53a" value="SI-02(07)-Interview"/>
+        <part name="assessment-objects">
+          <p>System/network administrators;</p>
+          <p>organizational personnel with information security and privacy responsibilities;</p> 
+          <p>organizational personnel responsible for installing, configuring, and/or maintaining the system;</p> 
+          <p>organizational personnel responsible for flaw remediation;</p> 
+          <p>organizational personnel with configuration management responsibilities</p>
+        </part>
+      </part>
+       <part id="si-2.7_asm-test" name="assessment-method">
+         <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="TEST"/>
+         <prop name="label" class="sp800-53a" value="SI-02(07)-Test"/>
+         <part name="assessment-objects">
+            <p>Organizational processes for identifying, reporting, and correcting system flaws; </p>
+            <p>organizational process for installing software and firmware updates; </p>
+            <p>mechanisms supporting and/or implementing the reporting and correcting of system flaws; </p>
+            <p>mechanisms supporting and/or implementing testing software and firmware updates</p>
+          </part>
+        </part>
+      </control>
     </control>
+    <!-- END ENHANCEMENT-->
     <control class="SP800-53" id="si-3">
       <title>Malicious Code Protection</title>
       <param id="si-03_odp.01">
@@ -88461,6 +88837,13 @@
         <text>Chandramouli R, Rose SW (2013) Secure Domain Name System (DNS) Deployment Guide. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-81-2.</text>
       </citation>
       <rlink href="https://doi.org/10.6028/NIST.SP.800-81-2"/>
+    </resource>
+     <resource uuid="fe209006-bfd4-4033-a79a-9fee1adaf373">
+      <title>SP 800-81-3</title>
+      <citation>
+        <text>Scott Rose, Liu C. (Infoblox), Gibson R (Infoblox) (2025) Secure Domain Name System (DNS) Deployment Guide. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-81-3.</text>
+      </citation>
+      <rlink href="https://doi.org/10.6028/NIST.SP.800-81r3.idp"/>
     </resource>
     <resource uuid="6264c85d-19f5-408a-aa44-d737daaf311e">
       <title>SP 800-82</title>
