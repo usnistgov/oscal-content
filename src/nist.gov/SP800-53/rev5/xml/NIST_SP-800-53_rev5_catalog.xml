@@ -2,8 +2,7 @@
   <metadata>
     <title>Electronic (OSCAL) Version of NIST SP 800-53 Rev 5.1.1 Controls and SP 800-53A Rev 5.1.1 Assessment Procedures</title>
     <last-modified>2025-08-24T20:10:16.00000-00:00</last-modified>
-    <!-- TBD - update version 5.2 or 5.1.1+u6 -->
-    <version>5.1.1+u6</version>
+    <version>5.2.0</version>
     <oscal-version>1.1.3</oscal-version>
     <revisions>
       <revision>
@@ -122,11 +121,8 @@
     <responsible-party role-id="contact-creator">
       <party-uuid>98c78f9b-5d50-4b01-b47f-d16801e8d0ab</party-uuid>
     </responsible-party>
-    <!-- TBD - review the comment, in particular the 800-53 version -->
     <remarks>
-      <p>This OSCAL representation of the NIST SP 800-53 Revision 5.2.0 provides updates to 
-      the 800-53 v5.1.1 which support “securely and reliably deploy[ing] patches and updates", 
-      and update the representation to OSCAL v1.1.3. </p>
+      <p>This OSCAL representation of the NIST SP 800-53 Revision 5.2.0 provides updates to the 800-53 v5.1.1 which support “securely and reliably deploy[ing] patches and updates".</p>
     </remarks>
   </metadata>
   <group class="family" id="ac">
@@ -57274,6 +57270,7 @@
         </part>
       </control>
     </control>
+    <!-- [UPDATED CONTROL in v5.2.0] -->
     <control class="SP800-53" id="sa-4">
       <title>Acquisition Process</title>
       <param id="sa-04_odp.01">
@@ -57376,6 +57373,7 @@
         <p>Security and privacy functional requirements are typically derived from the high-level security and privacy requirements described in <a href="#sa-2">SA-2</a> . The derived requirements include security and privacy capabilities, functions, and mechanisms. Strength requirements associated with such capabilities, functions, and mechanisms include degree of correctness, completeness, resistance to tampering or bypass, and resistance to direct attack. Assurance requirements include development processes, procedures, and methodologies as well as the evidence from development and assessment activities that provide grounds for confidence that the required functionality is implemented and possesses the required strength of mechanism. <a href="#e3cc0520-a366-4fc9-abc2-5272db7e3564">SP 800-160-1</a> describes the process of requirements engineering as part of the system development life cycle.</p>
         <p>Controls can be viewed as descriptions of the safeguards and protection capabilities appropriate for achieving the particular security and privacy objectives of the organization and for reflecting the security and privacy requirements of stakeholders. Controls are selected and implemented in order to satisfy system requirements and include developer and organizational responsibilities. Controls can include technical, administrative, and physical aspects. In some cases, the selection and implementation of a control may necessitate additional specification by the organization in the form of derived requirements or instantiated control parameter values. The derived requirements and control parameter values may be necessary to provide the appropriate level of implementation detail for controls within the system development life cycle.</p>
         <p>Security and privacy documentation requirements address all stages of the system development life cycle. Documentation provides user and administrator guidance for the implementation and operation of controls. The level of detail required in such documentation is based on the security categorization or classification level of the system and the degree to which organizations depend on the capabilities, functions, or mechanisms to meet risk response expectations. Requirements can include mandated configuration settings that specify allowed functions, ports, protocols, and services. Acceptance criteria for systems, system components, and system services are defined in the same manner as the criteria for any organizational acquisition or procurement.</p>
+        <p>Organizations can determine other requirements that support security and operations, to include responsibilities for the organization and developer, and notification and timing requirements for support, maintenance and updates.</p>
       </part>
       <part id="sa-4_obj" name="assessment-objective">
         <prop name="label" class="sp800-53a" value="SA-04"/>
@@ -58374,6 +58372,7 @@
         </part>
       </control>
     </control>
+    <!-- [UPDATED CONTROL in v5.2.0] -->
     <control class="SP800-53" id="sa-5">
       <title>System Documentation</title>
       <param id="sa-05_odp.01">
@@ -58461,7 +58460,7 @@
         </part>
       </part>
       <part name="guidance" id="sa-5_gdn">
-        <p>System documentation helps personnel understand the implementation and operation of controls. Organizations consider establishing specific measures to determine the quality and completeness of the content provided. System documentation may be used to support the management of supply chain risk, incident response, and other functions. Personnel or roles that require documentation include system owners, system security officers, and system administrators. Attempts to obtain documentation include contacting manufacturers or suppliers and conducting web-based searches. The inability to obtain documentation may occur due to the age of the system or component or the lack of support from developers and contractors. When documentation cannot be obtained, organizations may need to recreate the documentation if it is essential to the implementation or operation of the controls. The protection provided for the documentation is commensurate with the security category or classification of the system. Documentation that addresses system vulnerabilities may require an increased level of protection. Secure operation of the system includes initially starting the system and resuming secure system operation after a lapse in system operation.</p>
+        <p>System artifacts and documentation created by the developer helps organizational personnel understand the implementation and operation of controls. Organizations consider establishing specific measures to determine the quality and completeness of the content provided. System documentation may be used to delineate roles, responsibilities and expectations of the developer and organization, support the management of supply chain risk, incident response, flaw remediation, and other functions. Personnel or roles that require documentation include system owners, system security officers, and system administrators. Attempts to obtain documentation include contacting manufacturers or suppliers and conducting web-based searches. The inability to obtain documentation may occur due to the age of the system or component or the lack of support from developers and contractors. When documentation cannot be obtained, organizations may need to recreate the documentation if it is essential to the implementation or operation of the controls. The protection provided for the documentation is commensurate with the security category or classification of the system. Documentation that addresses system vulnerabilities may require an increased level of protection. Secure operation of the system includes initially starting the system and resuming secure system operation after a lapse in system operation. An example of least privilege in software development is minimizing the functions that operate with elevated privileges (e.g., limiting the tools and functionality that operate in kernel mode)</p>
       </part>
       <part id="sa-5_obj" name="assessment-objective">
         <prop name="label" class="sp800-53a" value="SA-05"/>
@@ -64576,6 +64575,88 @@
           </part>
         </part>
       </control>
+      <!-- [NEW CONTROL ENHANCEMENT in v5.2.0]-->
+       <control class="SP800-53-enhancement" id="sa-15.13">
+        <title>Logging Syntax</title>
+        <param id="sa-15.13_odp.01">
+          <prop name="alt-identifier" value="sa-15.13_prm_1"/>
+          <prop name="label" class="sp800-53a" value="SA-15.13_ODP[01]"/>
+          <label>secure logging format(s)</label>
+          <guideline>
+            <p>secure logging format(s) are defined;</p>
+          </guideline>
+        </param>
+        <param id="sa-15.13_odp.02">
+          <prop name="alt-identifier" value="sa-15.13_prm_2"/>
+          <prop name="label" class="sp800-53a" value="SA-15.13_ODP[02]"/>
+          <label>events types to log</label>
+          <guideline>
+            <p>events types to log are defined;</p>
+          </guideline>
+        </param>
+         <param id="sa-15.13_odp.03">
+          <prop name="alt-identifier" value="sa-15.13_prm_3"/>
+          <prop name="label" class="sp800-53a" value="SA-15.13_ODP[03]"/>
+          <label>level of detail to log</label>
+          <guideline>
+            <p>level of detail to log is defined;</p>
+          </guideline>
+        </param>
+        <prop name="label" class="zero-padded" value="SA-15(13)"/>
+        <prop name="label" value="SA-15(13)"/>
+        <prop name="label" class="sp800-53a" value="SA-15(13)"/>
+        <prop name="sort-id" value="sa-15.13"/>
+        <prop ns="http://csrc.nist.gov/ns/rmf" name="implementation-level" value="organization"/>
+        <prop ns="http://csrc.nist.gov/ns/rmf" name="contributes-to-assurance" value="true"/>
+        <link rel="required" href="#sa-15"/>
+        <link rel="related" href="#au-2"/>
+        <link rel="related" href="#au-3"/>
+        <link rel="related" href="#ir-4"/>
+        <link rel="related" href="#ir-8"/>
+        <link rel="related" href="#sa-5"/>
+        <part name="statement" id="sa-15.13_smt">
+          <p>Require the developer of the system or system component to minimize the use of personally identifiable information in development and test environments.</p>
+        </part>
+        <part name="guidance" id="sa-15.13_gdn">
+          <p>In support of better incident response and the ability to more quickly reconstruct security-related actions, identifying specific requirements for secure logging facilitates the ability to connect application-produced audit event logs with operational data.  Event types are consistent with the event types defined in <a href="#au-2">AU-02</a>.</p>
+        </part>
+        <part id="sa-15.13_obj" name="assessment-objective">
+          <prop name="label" class="sp800-53a" value="SA-15(13)"/>
+          <p>Determine if:</p>
+          <p>the developer of the system, system component, or system service uses <insert type="param" id-ref="sa-15.13_odp.01"/> to log <insert type="param" id-ref="sa-15.13_odp.02"/> at <insert type="param" id-ref="sa-15.13_odp.03"/>.</p>
+          <link rel="assessment-for" href="#sa-15.13_smt"/>
+        </part>
+        <part id="sa-15.13_asm-examine" name="assessment-method">
+          <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="EXAMINE"/>
+          <prop name="label" class="sp800-53a" value="SA-15(12)-Examine"/>
+          <part name="assessment-objects">
+            <p>System and services acquisition policy; </p>
+            <p>solicitation documentation; </p>
+            <p>acquisition documentation; </p>
+            <p>service level agreements; </p>
+            <p>acquisition contracts for the system, system component, or system service; </p>
+            <p>requirements for logging format, event types, and level of detail;</p> 
+            <p>documentation evidence of requirements for logging format, event types, and level of detail;</p> 
+            <p>system security plan; other relevant documents or records.</p>
+          </part>
+        </part>
+        <part id="sa-15.13_asm-interview" name="assessment-method">
+          <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="INTERVIEW"/>
+          <prop name="label" class="sp800-53a" value="SA-15(13)-Interview"/>
+          <part name="assessment-objects">
+            <p>Organizational personnel with system and service acquisition responsibilities; </p>
+            <p>organizational personnel with information security responsibilities; </p>
+            <p>system developer</p>
+          </part>
+        </part>
+        <part id="sa-15.13_asm-test" name="assessment-method">
+          <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="TEST"/>
+          <prop name="label" class="sp800-53a" value="SA-15(13)-Test"/>
+          <part name="assessment-objects">
+            <p>Developer logs for the system, system component, or system service.</p>
+          </part>
+        </part>
+      </control>
     </control>
     <control class="SP800-53" id="sa-16">
       <title>Developer-provided Training</title>
@@ -65901,7 +65982,7 @@
         </part>
       </part>
     </control>
-    <!-- [NEW CONTROL v5.2.0]: SA-24] -->
+    <!-- [NEW CONTROL in v5.2.0] -->
     <control class="SP800-53" id="sa-24">
       <title>Design For Cyber Resiliency</title>
       <param id="sa-24_odp.01">
@@ -65949,7 +66030,7 @@
       <prop name="label" class="sp800-53a" value="SA-24"/>
       <prop name="sort-id" value="sa-24"/>
       <prop ns="http://csrc.nist.gov/ns/rmf" name="implementation-level" value="organization"/>
-      <!-- prop ns="http://csrc.nist.gov/ns/rmf" name="contributes-to-assurance" value="true"/ -->
+      <prop ns="http://csrc.nist.gov/ns/rmf" name="contributes-to-assurance" value="true"/>
       <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
       <link rel="reference" href="#08b07465-dbdc-48d6-8a0b-37279602ac16"/>
       <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
@@ -65997,7 +66078,7 @@
       <link rel="related" href="#sc-48"/>
       <link rel="related" href="#sc-49"/>
       <link rel="related" href="#sc-50"/>
-      <link rel="related" href="#sc-52"/>
+      <link rel="related" href="#sc-51"/>
       <link rel="related" href="#si-3"/>
       <link rel="related" href="#si-4"/>
       <link rel="related" href="#si-6"/>
@@ -66058,73 +66139,61 @@
         <prop name="label" class="sp800-53a" value="SA-24"/>
         <p>Determine if:</p>
         <part id="sa-24_obj.a" name="assessment-objective">
-          <!-- TBD: review value below for consistency SA-24a. and SA-24a.01 or SA-24.a.01 ...-->
           <prop name="label" class="sp800-53a" value="SA-24.a."/>
           <part id="sa-24_obj.a.1" name="assessment-objective">
-            <!-- prop name="label" class="sp800-53a" value="SA-24.a.01"/ -->
             <prop name="label" class="sp800-53a" value="SA-24a.01"/>
             <p>organizational systems, system components, or system services achieve cyber resiliency through <insert type="param" id-ref="sa-24_odp.01"/>;</p>
             <link rel="assessment-for" href="#sa-24_smt.a.1"/>
           </part>
           <part id="sa-24_obj.a.2" name="assessment-objective">
-            <!-- prop name="label" class="sp800-53a" value="SA-24.a.02"/ -->
             <prop name="label" class="sp800-53a" value="SA-24a.02"/>
             <p>organizational systems, system components, or system services achieve cyber resiliency through <insert type="param" id-ref="sa-24_odp.02"/>;</p>
             <link rel="assessment-for" href="#sa-24_smt.a.2"/>
           </part>
           <part id="sa-24_obj.a.3" name="assessment-objective">
-            <!-- prop name="label" class="sp800-53a" value="SA-24.a.03"/ -->
             <prop name="label" class="sp800-53a" value="SA-24a.03"/>
             <p>organizational systems, system components, or system services achieve cyber resiliency through <insert type="param" id-ref="sa-24_odp.03"/>;</p>
             <link rel="assessment-for" href="#sa-24_smt.a.3"/>
           </part>
-            <part id="sa-24_obj.a.4" name="assessment-objective">
-            <!-- prop name="label" class="sp800-53a" value="SA-24.a.04"/ -->
+          <part id="sa-24_obj.a.4" name="assessment-objective">
             <prop name="label" class="sp800-53a" value="SA-24a.04"/>
-            <p><p>organizational systems, system components, or system services achieve cyber resiliency through <insert type="param" id-ref="sa-24_odp.04"/>;</p>
+            <p>organizational systems, system components, or system services achieve cyber resiliency through <insert type="param" id-ref="sa-24_odp.04"/>;</p>
             <link rel="assessment-for" href="#sa-24_smt.a.4"/>
           </part>
           <part id="sa-24_obj.a-5" name="assessment-objective">
-            <!-- prop name="label" class="sp800-53a" value="SA-24.a.05"/ -->
             <prop name="label" class="sp800-53a" value="SA-24a.05"/>
-            <p><p>organizational systems, system components, or system services achieve cyber resiliency through <insert type="param" id-ref="sa-24_odp.05"/>;</p>
+            <p>organizational systems, system components, or system services achieve cyber resiliency through <insert type="param" id-ref="sa-24_odp.05"/>;</p>
             <link rel="assessment-for" href="#ac-2_smt.a.5"/>
           </part>
-        </part/>
+        </part>
         <part id="sa-24_obj.b" name="assessment-objective">
-          <!-- TBD: review value below for consistency SA-2SA-24b.[01] or SA-24.b[01] ...-->
           <prop name="label" class="sp800-53a" value="SA-24b."/>
           <part id="sa-24_obj.b-1" name="assessment-objective">
-            <!-- prop name="label" class="sp800-53a" value="SA-24.b[01]"/ -->
             <prop name="label" class="sp800-53a" value="SA-24b.[01]"/>
             <p>selected cyber resiliency goals are implemented as part of an organizational risk management process of systems security engineering process;</p>
             <link rel="assessment-for" href="#ac-2_smt.b"/>
           </part>
           <part id="sa-24_obj.b-2" name="assessment-objective">
-            <!-- prop name="label" class="sp800-53a" value="SA-24.b[02]"/ -->
             <prop name="label" class="sp800-53a" value="SA-24b.[02]"/>
             <p>selected cyber resiliency objectives are implemented as part of an organizational risk management process of systems security engineering process;</p>
             <link rel="assessment-for" href="#ac-2_smt.b"/>
           </part>
           <part id="sa-24_obj.b-3" name="assessment-objective">
-            <!-- prop name="label" class="sp800-53a" value="SA-24.b[03]"/ -->
             <prop name="label" class="sp800-53a" value="SA-24b.[03]"/>
             <p>selected cyber resiliency techniques are implemented as part of an organizational risk management process of systems security engineering process;</p>
             <link rel="assessment-for" href="#ac-2_smt.b"/>
           </part>
           <part id="sa-24_obj.b-4" name="assessment-objective">
-            <!-- prop name="label" class="sp800-53a" value="SA-24.b[04]"/ -->
             <prop name="label" class="sp800-53a" value="SA-24b.[04]"/>
             <p>selected cyber resiliency implementation approaches are implemented as part of an organizational risk management process of systems security engineering process;</p>
             <link rel="assessment-for" href="#ac-2_smt.b"/>
           </part>
           <part id="sa-24_obj.b-5" name="assessment-objective">
-            <!-- prop name="label" class="sp800-53a" value="SA-24.b[05]"/ -->
             <prop name="label" class="sp800-53a" value="SA-24b.[05]"/>
             <p>selected cyber resiliency design principles are implemented as part of an organizational risk management process of systems security engineering process.</p>
             <link rel="assessment-for" href="#ac-2_smt.b"/>
           </part>
-        </part/>
+        </part>
       </part>
       <part id="sa-24_asm-examine" name="assessment-method">
         <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="EXAMINE"/>
@@ -76645,7 +76714,7 @@
         </part>
       </part>
     </control>
-    <!-- [UPDATED CONTROL v5.2.0]: SI-02 -->
+    <!-- [UPDATED CONTROL v5.2.0] -->
     <control class="SP800-53" id="si-2">
       <title>Flaw Remediation</title>
       <param id="si-02_odp">
@@ -76668,7 +76737,7 @@
       <link rel="reference" href="#155f941a-cba9-4afd-9ca6-5d040d697ba9"/>
       <link rel="reference" href="#20db4e66-e257-450c-b2e4-2bb9a62a2c88"/>
       <link rel="reference" href="#aa5d04e0-6090-4e17-84d4-b9963d55fc2c"/>
-      <link rel="reference" href="#fe209006-bfd4-4033-a79a-9fee1adaf373"/>
+      <link rel="reference" href="#fe209006-bfd4-4033-a79a-9fee1adaf372"/>
       <link rel="related" href="#ca-5"/>
       <link rel="related" href="#cm-3"/>
       <link rel="related" href="#cm-4"/>
@@ -77165,112 +77234,126 @@
           </part>
         </part>
       </control>
-      <!--  [NEW CONTROL ENHANCEMENT v5.2.0]: SI-02(07)-->
+      <!--  [NEW CONTROL ENHANCEMENT in v5.2.0] -->
       <control class="SP800-53-enhancement" id="si-2.7">
-      <title>Root Cause Analysis</title>
-      <!--param id="si-02.07_odp">
-        <prop name="alt-identifier" value="si-2.6_prm_1"/>
-        <prop name="label" class="sp800-53a" value="SI-02(06)_ODP"/>
-        <label>software and firmware components</label>
-        <guideline>
-          <p>software and firmware components to be removed after updated versions have been installed are defined;</p>
-        </guideline>
-      </param -->
-      <prop name="label" class="zero-padded" value="SI-02(07)"/>
-      <prop name="label" value="SI-2(7)"/>
-      <prop name="label" class="sp800-53a" value="SI-02(07)"/>
-      <prop name="sort-id" value="si-02.07"/>
-      <!-- prop ns="http://csrc.nist.gov/ns/rmf" name="implementation-level" value="organization"/>
-      <prop ns="http://csrc.nist.gov/ns/rmf" name="implementation-level" value="system"/ -->
-      <link rel="required" href="#si-2"/>
-      <part name="statement" id="si-2.7_smt">
-        <part name="item" id="si-2.7_smt.a">
-          <prop name="label" value="a."/>
-          <p>Conduct root cause analysis to identify underlying causes of issues or failures.</p>
-        </part>
-        <part name="item" id="si-2.7_smt.b">
-          <prop name="label" value="b."/>
-          <p>Develop actions to address the root cause of the issue or failure.</p>
-        </part>
-        <part name="item" id="si-2.7_smt.c">
-          <prop name="label" value="c."/>
-          <p>Implement the actions and monitor the implementation for effectiveness.</p>
-        </part>
-      </part>
-      <part name="guidance" id="si-2.7_gdn">
-        <p>Root cause analysis includes a wide range of approaches, tools, and techniques to systematically identify the underlying cause of issues or failures to systems and systems components (hardware, software, and firmware). Organizations consider the severity of the incident to determine what root cause analysis method is used and how quickly implementation of the remediation actions. The root cause analysis includes a timeline, missed warning signs, key decisions, gaps, mitigations, and verification of effectiveness. The actions identified to address the source of the issue are implemented and integrated into applicable organizational policy, procedures, and control implementation.</p>
-      </part>
-      <part id="si-2.7_obj" name="assessment-objective">
+        <title>Root Cause Analysis</title>
+        <prop name="label" class="zero-padded" value="SI-02(07)"/>
+        <prop name="label" value="SI-2(7)"/>
         <prop name="label" class="sp800-53a" value="SI-02(07)"/>
-        <p>Determine if:</p>
-          <part id="si-2.7_obj.a" name="assessment-objective">
-            <!-- TBD: Discuss inconsistencies found in the word document -->
-            <!-- prop name="label" class="sp800-53a" value="SI-02(07)(a)"/ -->
-            <prop name="label" class="sp800-53a" value="SI-02(07)a."/>
-            <p>Root cause analysis is conducted to identify underlying causes of issues or failures</p>
-            <link rel="assessment-for" href="#si-2.7_smt.a"/>
+        <prop name="sort-id" value="si-02.07"/>
+        <prop ns="http://csrc.nist.gov/ns/rmf" name="implementation-level" value="organization"/>
+        <prop ns="http://csrc.nist.gov/ns/rmf" name="implementation-level" value="system"/>
+        <link rel="required" href="#si-2"/>
+        <link rel="related" href="#ac-1"/>
+        <link rel="related" href="#at-1"/>
+        <link rel="related" href="#au-1"/>
+        <link rel="related" href="#ca-1"/>
+        <link rel="related" href="#cm-1"/>
+        <link rel="related" href="#cp-1"/>
+        <link rel="related" href="#ia-1"/>
+        <link rel="related" href="#ir-1"/>
+        <link rel="related" href="#ma-1"/>
+        <link rel="related" href="#mp-1"/>
+        <link rel="related" href="#pe-1"/>
+        <link rel="related" href="#pl-1"/>
+        <link rel="related" href="#pm-1"/>
+        <link rel="related" href="#ps-1"/>
+        <link rel="related" href="#pt-1"/>
+        <link rel="related" href="#ra-1"/>
+        <link rel="related" href="#sa-1"/>
+        <link rel="related" href="#sc-1"/>
+        <link rel="related" href="#si-1"/>
+        <link rel="related" href="#sr-1"/>
+        <link rel="related" href="#au-2"/>
+        <link rel="related" href="#ca-7"/>
+        <link rel="related" href="#ir-6"/>
+        <link rel="related" href="#ir-8"/>
+        <link rel="related" href="#ma-3"/>
+        <link rel="related" href="#ra-5"/>
+        <link rel="related" href="#sa-11"/>
+        <link rel="related" href="#sa-15"/>
+        <link rel="related" href="#sr-8"/>
+        <part name="statement" id="si-2.7_smt">
+          <part name="item" id="si-2.7_smt.a">
+            <prop name="label" value="a."/>
+            <p>Conduct root cause analysis to identify underlying causes of issues or failures.</p>
           </part>
-          <part id="si-2.7_obj.b" name="assessment-objective">
-            <!-- TBD: Discuss inconsistencies found in the word document -->
-            <!-- prop name="label" class="sp800-53a" value="SI-02(07)(b)"/ -->
-            <prop name="label" class="sp800-53a" value="SI-02(07)b."/>
-            <p>Actions to address the root cause of the issue of failure are developed</p>
-            <link rel="assessment-for" href="#si-2.7_smt.b"/>
+          <part name="item" id="si-2.7_smt.b">
+            <prop name="label" value="b."/>
+            <p>Develop actions to address the root cause of the issue or failure.</p>
           </part>
-          <part id="si-2.7_obj.c" name="assessment-objective">
-            <!-- TBD: Discuss inconsistencies found in the word document -->
-            <!-- prop name="label" class="sp800-53a" value="SI-02(07)(a)"/ -->
-            <prop name="label" class="sp800-53a" value="SI-02(07)c."/>
-              <part id="si-2.7_obj.c-1" name="assessment-objective">
-                <p>The actions (defined in ----TBD---- SI-02(07)b.) are implemented</p>
-                <link rel="assessment-for" href="#si-2.7_smt.c"/>
-              </part>
-              <part id="si-2.7_obj.c-2" name="assessment-objective">
-                <p>The implementation of actions is monitored for effectiveness.</p>
-                <link rel="assessment-for" href="#si-2.7_smt.c"/>
-              </part>
-          </part>
-        <link rel="assessment-for" href="#si-2.7_smt"/>
-      </part>
-      <part id="si-2.7_asm-examine" name="assessment-method">
-        <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="EXAMINE"/>
-        <prop name="label" class="sp800-53a" value="SI-02(07)-Examine"/>
-        <part name="assessment-objects">
-          <p>System and information integrity policy;</p> 
-          <p>system and information integrity procedures; </p>
-          <p>procedures addressing flaw remediation; </p>
-          <p>procedures addressing root cause analysis/process improvement; </p>
-          <p>system design documentation; </p>
-          <p>system configuration settings and associated documentation; </p>
-          <p>system audit records; </p>
-          <p>system security and privacy plan; </p>
-          <p>other relevant documents or records</p>
-        </part>
-      </part>
-      <part id="si-2.7_asm-interview" name="assessment-method">
-        <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="INTERVIEW"/>
-        <prop name="label" class="sp800-53a" value="SI-02(07)-Interview"/>
-        <part name="assessment-objects">
-          <p>System/network administrators;</p>
-          <p>organizational personnel with information security and privacy responsibilities;</p> 
-          <p>organizational personnel responsible for installing, configuring, and/or maintaining the system;</p> 
-          <p>organizational personnel responsible for flaw remediation;</p> 
-          <p>organizational personnel with configuration management responsibilities</p>
-        </part>
-      </part>
-       <part id="si-2.7_asm-test" name="assessment-method">
-         <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="TEST"/>
-         <prop name="label" class="sp800-53a" value="SI-02(07)-Test"/>
-         <part name="assessment-objects">
-            <p>Organizational processes for identifying, reporting, and correcting system flaws; </p>
-            <p>organizational process for installing software and firmware updates; </p>
-            <p>mechanisms supporting and/or implementing the reporting and correcting of system flaws; </p>
-            <p>mechanisms supporting and/or implementing testing software and firmware updates</p>
+          <part name="item" id="si-2.7_smt.c">
+            <prop name="label" value="c."/>
+            <p>Implement the actions and monitor the implementation for effectiveness.</p>
           </part>
         </part>
+        <part name="guidance" id="si-2.7_gdn">
+          <p>Root cause analysis includes a wide range of approaches, tools, and techniques to systematically identify the underlying cause of issues or failures to systems and systems components (hardware, software, and firmware). Organizations consider the severity of the incident to determine what root cause analysis method is used and how quickly implementation of the remediation actions. The root cause analysis includes a timeline, missed warning signs, key decisions, gaps, mitigations, and verification of effectiveness. The actions identified to address the source of the issue are implemented and integrated into applicable organizational policy, procedures, and control implementation.</p>
+        </part>
+        <part id="si-2.7_obj" name="assessment-objective">
+          <prop name="label" class="sp800-53a" value="SI-02(07)"/>
+          <p>Determine if:</p>
+            <part id="si-2.7_obj.a" name="assessment-objective">
+              <prop name="label" class="sp800-53a" value="SI-02(07)a."/>
+              <p>Root cause analysis is conducted to identify underlying causes of issues or failures</p>
+              <link rel="assessment-for" href="#si-2.7_smt.a"/>
+            </part>
+            <part id="si-2.7_obj.b" name="assessment-objective">
+              <prop name="label" class="sp800-53a" value="SI-02(07)b."/>
+              <p>Actions to address the root cause of the issue of failure are developed</p>
+              <link rel="assessment-for" href="#si-2.7_smt.b"/>
+            </part>
+            <part id="si-2.7_obj.c" name="assessment-objective">
+              <prop name="label" class="sp800-53a" value="SI-02(07)c."/>
+                <part id="si-2.7_obj.c-1" name="assessment-objective">
+                  <p>The actions (defined in <a href="#si-2.7_smt.b">SI-02(07)b.</a>) are implemented</p>
+                  <link rel="assessment-for" href="#si-2.7_smt.c"/>
+                </part>
+                <part id="si-2.7_obj.c-2" name="assessment-objective">
+                  <p>The implementation of actions is monitored for effectiveness.</p>
+                  <link rel="assessment-for" href="#si-2.7_smt.c"/>
+                </part>
+            </part>
+          <link rel="assessment-for" href="#si-2.7_smt"/>
+        </part>
+        <part id="si-2.7_asm-examine" name="assessment-method">
+          <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="EXAMINE"/>
+          <prop name="label" class="sp800-53a" value="SI-02(07)-Examine"/>
+          <part name="assessment-objects">
+            <p>System and information integrity policy;</p> 
+            <p>system and information integrity procedures; </p>
+            <p>procedures addressing flaw remediation; </p>
+            <p>procedures addressing root cause analysis/process improvement; </p>
+            <p>system design documentation; </p>
+            <p>system configuration settings and associated documentation; </p>
+            <p>system audit records; </p>
+            <p>system security and privacy plan; </p>
+            <p>other relevant documents or records</p>
+          </part>
+        </part>
+        <part id="si-2.7_asm-interview" name="assessment-method">
+          <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="INTERVIEW"/>
+          <prop name="label" class="sp800-53a" value="SI-02(07)-Interview"/>
+          <part name="assessment-objects">
+            <p>System/network administrators;</p>
+            <p>organizational personnel with information security and privacy responsibilities;</p> 
+            <p>organizational personnel responsible for installing, configuring, and/or maintaining the system;</p> 
+            <p>organizational personnel responsible for flaw remediation;</p> 
+            <p>organizational personnel with configuration management responsibilities</p>
+          </part>
+        </part>
+        <part id="si-2.7_asm-test" name="assessment-method">
+          <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="TEST"/>
+          <prop name="label" class="sp800-53a" value="SI-02(07)-Test"/>
+          <part name="assessment-objects">
+             <p>Organizational processes for identifying, reporting, and correcting system flaws; </p>
+             <p>organizational process for installing software and firmware updates; </p>
+             <p>mechanisms supporting and/or implementing the reporting and correcting of system flaws; </p>
+             <p>mechanisms supporting and/or implementing testing software and firmware updates</p>
+           </part>
+         </part>
       </control>
     </control>
-    <!-- END ENHANCEMENT-->
     <control class="SP800-53" id="si-3">
       <title>Malicious Code Protection</title>
       <param id="si-03_odp.01">
@@ -81425,6 +81508,7 @@
         <prop name="status" value="withdrawn"/>
         <link rel="moved-to" href="#cm-7.6"/>
       </control>
+      <!-- [UPDATED CONTROL ENHANCEMENT v5.2.0] -->
       <control class="SP800-53-enhancement" id="si-7.12">
         <title>Integrity Verification</title>
         <param id="si-07.12_odp">
@@ -81443,12 +81527,14 @@
         <prop ns="http://csrc.nist.gov/ns/rmf" name="implementation-level" value="system"/>
         <prop ns="http://csrc.nist.gov/ns/rmf" name="contributes-to-assurance" value="true"/>
         <link rel="required" href="#si-7"/>
+        <link rel="related" href="#si-2"/>
         <link rel="related" href="#cm-11"/>
+        <link rel="reference" href="#fe209006-bfd4-4033-a79a-9fee1adaf372"/>
         <part name="statement" id="si-7.12_smt">
           <p>Require that the integrity of the following user-installed software be verified prior to execution: <insert type="param" id-ref="si-07.12_odp"/>.</p>
         </part>
         <part name="guidance" id="si-7.12_gdn">
-          <p>Organizations verify the integrity of user-installed software prior to execution to reduce the likelihood of executing malicious code or programs that contains errors from unauthorized modifications. Organizations consider the practicality of approaches to verifying software integrity, including the availability of trustworthy checksums from software developers and vendors.</p>
+          <p>Organizations verify the integrity of user-installed software prior to execution to reduce the likelihood of executing malicious code or programs that contains errors from unauthorized modifications. Organizations consider the source of the software, ensuring the software and updates come from authorized sources and/or sites, and the practicality of approaches to verifying software integrity, including the availability of trustworthy checksums from software developers and vendors.</p>
         </part>
         <part id="si-7.12_obj" name="assessment-objective">
           <prop name="label" class="sp800-53a" value="SI-07(12)"/>
@@ -88837,13 +88923,6 @@
         <text>Chandramouli R, Rose SW (2013) Secure Domain Name System (DNS) Deployment Guide. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-81-2.</text>
       </citation>
       <rlink href="https://doi.org/10.6028/NIST.SP.800-81-2"/>
-    </resource>
-     <resource uuid="fe209006-bfd4-4033-a79a-9fee1adaf373">
-      <title>SP 800-81-3</title>
-      <citation>
-        <text>Scott Rose, Liu C. (Infoblox), Gibson R (Infoblox) (2025) Secure Domain Name System (DNS) Deployment Guide. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-81-3.</text>
-      </citation>
-      <rlink href="https://doi.org/10.6028/NIST.SP.800-81r3.idp"/>
     </resource>
     <resource uuid="6264c85d-19f5-408a-aa44-d737daaf311e">
       <title>SP 800-82</title>
