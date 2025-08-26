@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model schematypens="http://www.w3.org/2001/XMLSchema" type="application/xml" href="https://github.com/usnistgov/OSCAL/releases/download/v1.1.1/oscal_complete_schema.xsd"?>
 <profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="a440a2cb-6dfc-4fda-bd10-b98f43be0fc9">
+         uuid="c37487e7-63a4-4508-9513-7f52854ffabe">
    <metadata>
       <title>Electronic (OSCAL) Version of NIST Special Publication 800-53 Revision 5.1.1 HIGH IMPACT BASELINE</title>
-      <last-modified>2025-07-06T20:10:17.00000-00:00</last-modified>
-      <version>5.1.1+u5</version>
+      <last-modified>2025-08-26T15:10:16.00000-00:00</last-modified>
+      <version>5.2.0</version>
       <oscal-version>1.1.3</oscal-version>
           <role id="creator">
       <title>OSCAL Version Creator</title>
