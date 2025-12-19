@@ -1,12 +1,21 @@
 {
   "catalog": {
-    "uuid": "720a010b-253c-4a94-bb65-cb58400966f5",
+    "uuid": "b0489b61-000d-481c-a859-4d9d29018901",
     "metadata": {
       "title": "NIST Cybersecurity Framework 2.0",
-      "published": "2025-05-29T10:16:00-05:00",
-      "last-modified": "2025-05-14T12:08:20.050176-05:00",
-      "version": "1.0.0",
+      "published": "2025-12-19T14:32:32.446015-05:00",
+      "last-modified": "2025-12-19T14:32:32.261108-05:00",
+      "version": "1.0.1",
       "oscal-version": "v1.1.3",
+      "revisions": [
+        {
+          "title": "NIST Cybersecurity Framework 2.0",
+          "last-modified": "2025-12-19T14:32:32.261108-05:00",
+          "version": "1.0.1",
+          "oscal-version": "v1.1.3",
+          "remarks": "This revision of the OSCAL representation of the NIST Cybersecurity Framework 2.0 provides a bug fix for withdrawn categories and subcategories."
+        }
+      ],
       "props": [
         {
           "name": "framework-identifier",
@@ -2201,6 +2210,20 @@
                   {
                     "name": "label",
                     "value": "ID.AM-06"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "GV.RR-02",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "GV.SC-02",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -2365,6 +2388,16 @@
               {
                 "name": "label",
                 "value": "Business Environment (ID.BE)"
+              },
+              {
+                "name": "status",
+                "value": "withdrawn"
+              }
+            ],
+            "links": [
+              {
+                "href": "GV.OC",
+                "rel": "incorporated_into"
               }
             ],
             "parts": [
@@ -2386,6 +2419,16 @@
                   {
                     "name": "label",
                     "value": "ID.BE-01"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "GV.OC-05",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -2408,6 +2451,16 @@
                   {
                     "name": "label",
                     "value": "ID.BE-02"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "GV.OC-01",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -2430,6 +2483,16 @@
                   {
                     "name": "label",
                     "value": "ID.BE-03"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "GV.OC-01",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -2452,6 +2515,20 @@
                   {
                     "name": "label",
                     "value": "ID.BE-04"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "GV.OC-04",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "GV.OC-05",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -2474,6 +2551,16 @@
                   {
                     "name": "label",
                     "value": "ID.BE-05"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "GV.OC-04",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -2498,6 +2585,16 @@
               {
                 "name": "label",
                 "value": "Governance (ID.GV)"
+              },
+              {
+                "name": "status",
+                "value": "withdrawn"
+              }
+            ],
+            "links": [
+              {
+                "href": "GV",
+                "rel": "incorporated_into"
               }
             ],
             "parts": [
@@ -2519,6 +2616,24 @@
                   {
                     "name": "label",
                     "value": "ID.GV-01"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "GV.PO",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "GV.PO-01",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "GV.PO-02",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -2541,6 +2656,24 @@
                   {
                     "name": "label",
                     "value": "ID.GV-02"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "GV.RR",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "GV.OC-02",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "GV.RR-02",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -2563,6 +2696,16 @@
                   {
                     "name": "label",
                     "value": "ID.GV-03"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "GV.OC-03",
+                    "rel": "moved_to"
                   }
                 ],
                 "parts": [
@@ -2585,6 +2728,16 @@
                   {
                     "name": "label",
                     "value": "ID.GV-04"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "GV.RM-04",
+                    "rel": "moved_to"
                   }
                 ],
                 "parts": [
@@ -3337,6 +3490,16 @@
               {
                 "name": "label",
                 "value": "Risk Management Strategy (ID.RM)"
+              },
+              {
+                "name": "status",
+                "value": "withdrawn"
+              }
+            ],
+            "links": [
+              {
+                "href": "GV.RM",
+                "rel": "incorporated_into"
               }
             ],
             "parts": [
@@ -3358,6 +3521,24 @@
                   {
                     "name": "label",
                     "value": "ID.RM-01"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "GV.RM-01",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "GV.RM-06",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "GV.RR-03",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -3380,6 +3561,20 @@
                   {
                     "name": "label",
                     "value": "ID.RM-02"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "GV.RM-02",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "GV.RM-04",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -3402,6 +3597,16 @@
                   {
                     "name": "label",
                     "value": "ID.RM-03"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "GV.RM-02",
+                    "rel": "moved_to"
                   }
                 ],
                 "parts": [
@@ -3426,6 +3631,16 @@
               {
                 "name": "label",
                 "value": "Supply Chain Risk Management (ID.SC)"
+              },
+              {
+                "name": "status",
+                "value": "withdrawn"
+              }
+            ],
+            "links": [
+              {
+                "href": "GV.SC",
+                "rel": "incorporated_into"
               }
             ],
             "parts": [
@@ -3447,6 +3662,32 @@
                   {
                     "name": "label",
                     "value": "ID.SC-01"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "GV.RM-05",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "GV.SC-01",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "GV.SC-06",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "GV.SC-09",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "GV.SC-10",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -3469,6 +3710,32 @@
                   {
                     "name": "label",
                     "value": "ID.SC-02"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "GV.OC-02",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "GV.SC-03",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "GV.SC-04",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "GV.SC-07",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "ID.RA-10",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -3491,6 +3758,16 @@
                   {
                     "name": "label",
                     "value": "ID.SC-03"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "GV.SC-05",
+                    "rel": "moved_to"
                   }
                 ],
                 "parts": [
@@ -3513,6 +3790,20 @@
                   {
                     "name": "label",
                     "value": "ID.SC-04"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "GV.SC-07",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "ID.RA-10",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -3535,6 +3826,20 @@
                   {
                     "name": "label",
                     "value": "ID.SC-05"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "GV.SC-08",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "ID.IM-02",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -3907,6 +4212,16 @@
               {
                 "name": "label",
                 "value": "Identity Management, Authentication and Access Control (PR.AC)"
+              },
+              {
+                "name": "status",
+                "value": "withdrawn"
+              }
+            ],
+            "links": [
+              {
+                "href": "PR.AA",
+                "rel": "moved_to"
               }
             ],
             "parts": [
@@ -3928,6 +4243,20 @@
                   {
                     "name": "label",
                     "value": "PR.AC-01"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.AA-01",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "PR.AA-05",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -3950,6 +4279,16 @@
                   {
                     "name": "label",
                     "value": "PR.AC-02"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.AA-06",
+                    "rel": "moved_to"
                   }
                 ],
                 "parts": [
@@ -3972,6 +4311,24 @@
                   {
                     "name": "label",
                     "value": "PR.AC-03"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.AA-03",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "PR.AA-05",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "PR.IR-01",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -3994,6 +4351,16 @@
                   {
                     "name": "label",
                     "value": "PR.AC-04"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.AA-05",
+                    "rel": "moved_to"
                   }
                 ],
                 "parts": [
@@ -4016,6 +4383,16 @@
                   {
                     "name": "label",
                     "value": "PR.AC-05"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.IR-01",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -4038,6 +4415,16 @@
                   {
                     "name": "label",
                     "value": "PR.AC-06"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.AA-02",
+                    "rel": "moved_to"
                   }
                 ],
                 "parts": [
@@ -4060,6 +4447,16 @@
                   {
                     "name": "label",
                     "value": "PR.AC-07"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.AA-03",
+                    "rel": "moved_to"
                   }
                 ],
                 "parts": [
@@ -4222,6 +4619,20 @@
                   {
                     "name": "label",
                     "value": "PR.AT-03"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.AT-01",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "PR.AT-02",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -4244,6 +4655,16 @@
                   {
                     "name": "label",
                     "value": "PR.AT-04"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.AT-02",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -4266,6 +4687,16 @@
                   {
                     "name": "label",
                     "value": "PR.AT-05"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.AT-02",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -4422,6 +4853,20 @@
                   {
                     "name": "label",
                     "value": "PR.DS-03"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "ID.AM-08",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "PR.PS-03",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -4444,6 +4889,16 @@
                   {
                     "name": "label",
                     "value": "PR.DS-04"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.IR-04",
+                    "rel": "moved_to"
                   }
                 ],
                 "parts": [
@@ -4466,6 +4921,24 @@
                   {
                     "name": "label",
                     "value": "PR.DS-05"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.DS-01",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "PR.DS-02",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "PR.DS-10",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -4488,6 +4961,20 @@
                   {
                     "name": "label",
                     "value": "PR.DS-06"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.DS-01",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "DE.CM-09",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -4510,6 +4997,16 @@
                   {
                     "name": "label",
                     "value": "PR.DS-07"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.IR-01",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -4532,6 +5029,20 @@
                   {
                     "name": "label",
                     "value": "PR.DS-08"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "ID.RA-09",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "DE.CM-09",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -4648,6 +5159,10 @@
               {
                 "name": "label",
                 "value": "Information Protection Processes and Procedures (PR.IP)"
+              },
+              {
+                "name": "status",
+                "value": "withdrawn"
               }
             ],
             "parts": [
@@ -4669,6 +5184,16 @@
                   {
                     "name": "label",
                     "value": "PR.IP-01"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.PS-01",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -4691,6 +5216,20 @@
                   {
                     "name": "label",
                     "value": "PR.IP-02"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "ID.AM-08",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "PR.PS-06",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -4713,6 +5252,20 @@
                   {
                     "name": "label",
                     "value": "PR.IP-03"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "ID.RA-07",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "PR.PS-01",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -4735,6 +5288,16 @@
                   {
                     "name": "label",
                     "value": "PR.IP-04"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.DS-11",
+                    "rel": "moved_to"
                   }
                 ],
                 "parts": [
@@ -4757,6 +5320,16 @@
                   {
                     "name": "label",
                     "value": "PR.IP-05"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.IR-02",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -4779,6 +5352,16 @@
                   {
                     "name": "label",
                     "value": "PR.IP-06"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "ID.AM-08",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -4801,6 +5384,20 @@
                   {
                     "name": "label",
                     "value": "PR.IP-07"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "ID.IM",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "ID.IM-03",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -4823,6 +5420,16 @@
                   {
                     "name": "label",
                     "value": "PR.IP-08"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "ID.IM-03",
+                    "rel": "moved_to"
                   }
                 ],
                 "parts": [
@@ -4845,6 +5452,16 @@
                   {
                     "name": "label",
                     "value": "PR.IP-09"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "ID.IM-04",
+                    "rel": "moved_to"
                   }
                 ],
                 "parts": [
@@ -4867,6 +5484,20 @@
                   {
                     "name": "label",
                     "value": "PR.IP-10"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "ID.IM-02",
+                    "rel": "moved_to"
+                  },
+                  {
+                    "href": "ID.IM-04",
+                    "rel": "moved_to"
                   }
                 ],
                 "parts": [
@@ -4889,6 +5520,16 @@
                   {
                     "name": "label",
                     "value": "PR.IP-11"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "GV.RR-04",
+                    "rel": "moved_to"
                   }
                 ],
                 "parts": [
@@ -4911,6 +5552,20 @@
                   {
                     "name": "label",
                     "value": "PR.IP-12"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "ID.RA-01",
+                    "rel": "moved_to"
+                  },
+                  {
+                    "href": "PR.PS-02",
+                    "rel": "moved_to"
                   }
                 ],
                 "parts": [
@@ -5143,6 +5798,16 @@
               {
                 "name": "label",
                 "value": "Maintenance (PR.MA)"
+              },
+              {
+                "name": "status",
+                "value": "withdrawn"
+              }
+            ],
+            "links": [
+              {
+                "href": "ID.AM-08",
+                "rel": "incorporated_into"
               }
             ],
             "parts": [
@@ -5164,6 +5829,20 @@
                   {
                     "name": "label",
                     "value": "PR.MA-01"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "ID.AM-08",
+                    "rel": "moved_to"
+                  },
+                  {
+                    "href": "PR.PS-03",
+                    "rel": "moved_to"
                   }
                 ],
                 "parts": [
@@ -5186,6 +5865,20 @@
                   {
                     "name": "label",
                     "value": "PR.MA-02"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "ID.AM-08",
+                    "rel": "moved_to"
+                  },
+                  {
+                    "href": "PR.PS-02",
+                    "rel": "moved_to"
                   }
                 ],
                 "parts": [
@@ -5540,6 +6233,10 @@
               {
                 "name": "label",
                 "value": "Protective Technology (PR.PT)"
+              },
+              {
+                "name": "status",
+                "value": "withdrawn"
               }
             ],
             "parts": [
@@ -5561,6 +6258,16 @@
                   {
                     "name": "label",
                     "value": "PR.PT-01"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.PS-04",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -5583,6 +6290,20 @@
                   {
                     "name": "label",
                     "value": "PR.PT-02"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.DS-01",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "PR.PS-01",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -5605,6 +6326,16 @@
                   {
                     "name": "label",
                     "value": "PR.PT-03"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.PS-01",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -5627,6 +6358,20 @@
                   {
                     "name": "label",
                     "value": "PR.PT-04"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.AA-06",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "PR.IR-01",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -5649,6 +6394,16 @@
                   {
                     "name": "label",
                     "value": "PR.PT-05"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.IR-03",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -5719,6 +6474,16 @@
                   {
                     "name": "label",
                     "value": "DE.AE-01"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "ID.AM-03",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -5879,6 +6644,16 @@
                   {
                     "name": "label",
                     "value": "DE.AE-05"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "DE.AE-08",
+                    "rel": "moved_to"
                   }
                 ],
                 "parts": [
@@ -6219,6 +6994,20 @@
                   {
                     "name": "label",
                     "value": "DE.CM-04"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "DE.CM-01",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "DE.CM-09",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -6241,6 +7030,20 @@
                   {
                     "name": "label",
                     "value": "DE.CM-05"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "DE.CM-01",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "DE.CM-09",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -6303,6 +7106,28 @@
                   {
                     "name": "label",
                     "value": "DE.CM-07"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "DE.CM-01",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "DE.CM-03",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "DE.CM-06",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "DE.CM-09",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -6325,6 +7150,16 @@
                   {
                     "name": "label",
                     "value": "DE.CM-08"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "ID.RA-01",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -6407,6 +7242,10 @@
               {
                 "name": "label",
                 "value": "Detection Processes (DE.DP)"
+              },
+              {
+                "name": "status",
+                "value": "withdrawn"
               }
             ],
             "parts": [
@@ -6428,6 +7267,16 @@
                   {
                     "name": "label",
                     "value": "DE.DP-01"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "GV.RR-02",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -6450,6 +7299,16 @@
                   {
                     "name": "label",
                     "value": "DE.DP-02"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "DE.AE",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -6472,6 +7331,16 @@
                   {
                     "name": "label",
                     "value": "DE.DP-03"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "ID.IM-02",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -6494,6 +7363,16 @@
                   {
                     "name": "label",
                     "value": "DE.DP-04"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "DE.AE-06",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -6516,6 +7395,20 @@
                   {
                     "name": "label",
                     "value": "DE.DP-05"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "ID.IM",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "ID.IM-03",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -6586,6 +7479,16 @@
                   {
                     "name": "label",
                     "value": "RS.AN-01"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "RS.MA-02",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -6608,6 +7511,24 @@
                   {
                     "name": "label",
                     "value": "RS.AN-02"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "RS.MA-02",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "RS.MA-03",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "RS.MA-04",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -6682,6 +7603,16 @@
                   {
                     "name": "label",
                     "value": "RS.AN-04"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "RS.MA-03",
+                    "rel": "moved_to"
                   }
                 ],
                 "parts": [
@@ -6704,6 +7635,16 @@
                   {
                     "name": "label",
                     "value": "RS.AN-05"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "ID.RA-08",
+                    "rel": "moved_to"
                   }
                 ],
                 "parts": [
@@ -6864,6 +7805,16 @@
                   {
                     "name": "label",
                     "value": "RS.CO-01"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "PR.AT-01",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -7008,6 +7959,20 @@
                   {
                     "name": "label",
                     "value": "RS.CO-04"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "RS.MA-01",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "RS.MA-04",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -7030,6 +7995,16 @@
                   {
                     "name": "label",
                     "value": "RS.CO-05"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "RS.CO-03",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -7054,6 +8029,16 @@
               {
                 "name": "label",
                 "value": "Improvements (RS.IM)"
+              },
+              {
+                "name": "status",
+                "value": "withdrawn"
+              }
+            ],
+            "links": [
+              {
+                "href": "ID.IM",
+                "rel": "incorporated_into"
               }
             ],
             "parts": [
@@ -7075,6 +8060,20 @@
                   {
                     "name": "label",
                     "value": "RS.IM-01"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "ID.IM-03",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "ID.IM-04",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -7097,6 +8096,16 @@
                   {
                     "name": "label",
                     "value": "RS.IM-02"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "ID.IM-03",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -7495,6 +8504,16 @@
                   {
                     "name": "label",
                     "value": "RS.MI-03"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "ID.RA-06",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -7519,6 +8538,10 @@
               {
                 "name": "label",
                 "value": "Response Planning (RS.RP)"
+              },
+              {
+                "name": "status",
+                "value": "withdrawn"
               }
             ],
             "parts": [
@@ -7540,6 +8563,16 @@
                   {
                     "name": "label",
                     "value": "RS.RP-01"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "RS.MA-01",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -7610,6 +8643,16 @@
                   {
                     "name": "label",
                     "value": "RC.CO-01"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "RC.CO-04",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -7632,6 +8675,16 @@
                   {
                     "name": "label",
                     "value": "RC.CO-02"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "RC.CO-04",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -7754,6 +8807,16 @@
               {
                 "name": "label",
                 "value": "Improvements (RC.IM)"
+              },
+              {
+                "name": "status",
+                "value": "withdrawn"
+              }
+            ],
+            "links": [
+              {
+                "href": "ID.IM",
+                "rel": "incorporated_into"
               }
             ],
             "parts": [
@@ -7775,6 +8838,20 @@
                   {
                     "name": "label",
                     "value": "RC.IM-01"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "ID.IM-03",
+                    "rel": "incorporated_into"
+                  },
+                  {
+                    "href": "ID.IM-04",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
@@ -7797,6 +8874,16 @@
                   {
                     "name": "label",
                     "value": "RC.IM-02"
+                  },
+                  {
+                    "name": "status",
+                    "value": "withdrawn"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "ID.IM-03",
+                    "rel": "incorporated_into"
                   }
                 ],
                 "parts": [
