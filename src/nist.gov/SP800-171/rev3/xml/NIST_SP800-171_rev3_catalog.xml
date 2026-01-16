@@ -982,7 +982,7 @@
             </param>
             <param id="A.03.01.08.ODP.04">
                 <prop name="label" value="A.03.01.08.ODP[04]" />
-                <label></label>
+                <label>time period</label>
                 <usage>
                     <p>organization-defined time period</p>
                 </usage>
@@ -1130,7 +1130,7 @@
             </param>
             <param id="A.03.01.10.ODP.02">
                 <prop name="label" value="A.03.01.10.ODP[02]" />
-                <label></label>
+                <label>time period</label>
                 <usage>
                     <p>organization-defined time period</p>
                 </usage>
