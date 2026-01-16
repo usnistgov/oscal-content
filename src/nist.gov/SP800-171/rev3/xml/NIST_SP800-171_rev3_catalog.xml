@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="98cf22b5-912b-4efc-a622-4cf49f42ac13">
+<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="b1e4def8-5f2d-4cbe-a7f8-7b9c6bfb9cb8">
     <metadata>
         <title>Electronic (OSCAL) Version of Protecting Controlled Unclassified Information in Nonfederal Systems and
             Organizations</title>
-        <published>2025-07-03T16:37:46.02276-04:00</published>
-        <last-modified>2025-07-06T21:01:17.00000-00:00</last-modified>
-        <version>1.0.0</version>
+        <published>2026-01-05T10:24:35.675-05:00</published>
+        <last-modified>2026-01-05T10:24:35.693009-05:00</last-modified>
+        <version>1.0.1</version>
         <oscal-version>v1.1.3</oscal-version>
+        <revisions>
+            <revision>
+                <title>NIST SP 800-171 Rev 3</title>
+                <last-modified>2026-01-05T10:24:35.693009-05:00</last-modified>
+                <version>1.0.1</version>
+                <oscal-version>v1.1.3</oscal-version>
+                <remarks>
+                    <p>This revision of the OSCAL representation of the NIST SP 800-171 Rev 3 provides a bug fix for empty statements in security requirements.</p>
+                </remarks>
+            </revision>
+        </revisions>
         <prop name="framework-identifier" ns="https://csrc.nist.gov/ns/cprt" value="SP_800_171" />
         <prop name="framework-version-identifier" ns="https://csrc.nist.gov/ns/cprt"
             value="SP_800_171_3_0_0" />
@@ -446,7 +457,10 @@
             <link href="#e0aa4a13-03cc-4b86-be6c-80225af5c3af" rel="reference" />
             <link href="#6aba579a-f262-4bf9-a8e7-6820ea63de34" rel="reference" />
             <link href="#a58bb8d1-1534-4ba0-b86c-11072b59ec98" rel="reference" />
-            <part id="statement_03.01.02" name="statement" class="security_requirement"></part>
+            <part id="statement_03.01.02" name="statement" class="security_requirement">
+                <p>Enforce approved authorizations for logical access to CUI and system resources in
+                    accordance with applicable access control policies.</p>
+</part>
             <part id="guidance_D-03.01.02" name="guidance">
                 <p>Access control policies control access between active entities or subjects (i.e.,
                     users or system processes acting on behalf of users) and passive entities or
@@ -507,7 +521,10 @@
             <link href="#a10063e9-0afe-4e96-9bb0-f308c8179077" rel="reference" />
             <link href="#276c6996-e72e-409e-a5dc-f9a53435028b" rel="reference" />
             <link href="#3d61b0ab-28ea-40e4-b231-ba750516968b" rel="reference" />
-            <part id="statement_03.01.03" name="statement" class="security_requirement"></part>
+            <part id="statement_03.01.03" name="statement" class="security_requirement">
+                <p>Enforce approved authorizations for controlling the flow of CUI within the system
+                    and between connected systems.</p>
+</part>
             <part id="guidance_D-03.01.03" name="guidance">
                 <p>Information flow control regulates where CUI can transit within a system and
                     between systems (in contrast to who is allowed to access the information) and
@@ -1067,7 +1084,10 @@
             <prop name="sort-id" value="03.01.09" />
             <prop name="label" value="System Use Notification (03.01.09)" />
             <link href="#e8e9d62c-b3ca-4285-b88f-3db08a1509fa" rel="reference" />
-            <part id="statement_03.01.09" name="statement" class="security_requirement"></part>
+            <part id="statement_03.01.09" name="statement" class="security_requirement">
+                <p>Display a system use notification message with privacy and security notices
+                    consistent with applicable CUI rules before granting access to the system.</p>
+</part>
             <part id="guidance_D-03.01.09" name="guidance">
                 <p>System use notifications can be implemented using messages or warning banners.
                     The messages or warning banners are displayed before individuals log in to a
@@ -1232,7 +1252,10 @@
             <prop name="sort-id" value="03.01.11" />
             <prop name="label" value="Session Termination (03.01.11)" />
             <link href="#fe6e872e-39da-4949-a8e4-63670f03386e" rel="reference" />
-            <part id="statement_03.01.11" name="statement" class="security_requirement"></part>
+            <part id="statement_03.01.11" name="statement" class="security_requirement">
+                <p>Terminate a user session automatically after <insert type="param"
+                        id-ref="A.03.01.11.ODP.01" />.</p>
+</part>
             <part id="guidance_D-03.01.11" name="guidance">
                 <p>This requirement addresses the termination of user-initiated logical sessions in
                     contrast to the termination of network connections that are associated with
@@ -3373,7 +3396,10 @@
             <link href="#ee7a6c0f-4d87-4bef-a353-ca0e7ee09073" rel="reference" />
             <link href="#e95ca7ce-1251-4a4c-ad90-296e3895001b" rel="reference" />
             <link href="#73d621e1-ab3d-4958-b4d0-2ab05338b934" rel="reference" />
-            <part id="statement_03.04.05" name="statement" class="security_requirement"></part>
+            <part id="statement_03.04.05" name="statement" class="security_requirement">
+                <p>Define, document, approve, and enforce physical and logical access restrictions
+                    associated with changes to the system.</p>
+</part>
             <part id="guidance_D-03.04.05" name="guidance">
                 <p>Changes to the hardware, software, or firmware components of the system or the
                     operational procedures related to the system can have potentially significant
@@ -4174,7 +4200,10 @@
             <prop name="label" value="Device Identification and Authentication (03.05.02)" />
             <link href="#ecd0479b-72b6-42cd-b678-cebc75d87b1f" rel="reference" />
             <link href="#900b7a48-6d75-4177-aaa6-137d817232c7" rel="reference" />
-            <part id="statement_03.05.02" name="statement" class="security_requirement"></part>
+            <part id="statement_03.05.02" name="statement" class="security_requirement">
+                <p>Uniquely identify and authenticate <insert type="param"
+                        id-ref="A.03.05.02.ODP.01" /> before establishing a system connection.</p>
+</part>
             <part id="guidance_D-03.05.02" name="guidance">
                 <p>Devices that require unique device-to-device identification and authentication
                     are defined by type, device, or a combination of type and device.
@@ -4236,7 +4265,10 @@
             <link href="#67ce4ecf-5a60-4cfa-8df9-b4eb26bf8e49" rel="reference" />
             <link href="#47920758-65e0-4635-84ee-cab9044da725" rel="reference" />
             <link href="#900b7a48-6d75-4177-aaa6-137d817232c7" rel="reference" />
-            <part id="statement_03.05.03" name="statement" class="security_requirement"></part>
+            <part id="statement_03.05.03" name="statement" class="security_requirement">
+                <p>Implement multi-factor authentication for access to privileged and non-privileged
+                    accounts.</p>
+</part>
             <part id="guidance_D-03.05.03" name="guidance">
                 <p>This requirement applies to user accounts. Multi-factor authentication requires
                     the use of two or more different factors to achieve authentication. The
@@ -4293,7 +4325,10 @@
             <prop name="label" value="Replay-Resistant Authentication (03.05.04)" />
             <link href="#0c5cc89a-d10f-42cf-a8c3-ef84141eef50" rel="reference" />
             <link href="#900b7a48-6d75-4177-aaa6-137d817232c7" rel="reference" />
-            <part id="statement_03.05.04" name="statement" class="security_requirement"></part>
+            <part id="statement_03.05.04" name="statement" class="security_requirement">
+                <p>Implement replay-resistant authentication mechanisms for access to privileged and
+                    non-privileged accounts.</p>
+</part>
             <part id="guidance_D-03.05.04" name="guidance">
                 <p>Authentication processes resist replay attacks if it is impractical to
                     successfully authenticate by recording or replaying previous authentication
@@ -4625,7 +4660,9 @@
             <prop name="sort-id" value="03.05.11" />
             <prop name="label" value="Authentication Feedback (03.05.11)" />
             <link href="#2648e6d1-8618-48f6-8847-be83a99e0818" rel="reference" />
-            <part id="statement_03.05.11" name="statement" class="security_requirement"></part>
+            <part id="statement_03.05.11" name="statement" class="security_requirement">
+                <p>Obscure feedback of authentication information during the authentication process.</p>
+</part>
             <part id="guidance_D-03.05.11" name="guidance">
                 <p>Authentication feedback does not provide information that would allow
                     unauthorized individuals to compromise authentication mechanisms. For example,
@@ -4858,7 +4895,11 @@
             <link href="#a249da1e-0a36-4942-ae4e-e84bb7b78b51" rel="reference" />
             <link href="#6af8bc6f-a2ce-4b74-bc88-507d5bbc0c33" rel="reference" />
             <link href="#46da9c8c-ae0f-4088-85a8-aa218b7f4de0" rel="reference" />
-            <part id="statement_03.06.01" name="statement" class="security_requirement"></part>
+            <part id="statement_03.06.01" name="statement" class="security_requirement">
+                <p>Implement an incident-handling capability that is consistent with the incident
+                    response plan and includes preparation, detection and analysis, containment,
+                    eradication, and recovery.</p>
+</part>
             <part id="guidance_D-03.06.01" name="guidance">
                 <p>Incident-related information can be obtained from a variety of sources, including
                     audit monitoring, network monitoring, physical access monitoring, user and
@@ -5069,7 +5110,10 @@
             <prop name="label" value="Incident Response Testing (03.06.03)" />
             <link href="#5e56bdf5-cedb-42ae-988e-feec7f3ae98b" rel="reference" />
             <link href="#49c62ac0-6eb3-4bce-ae3d-4bffd33290fe" rel="reference" />
-            <part id="statement_03.06.03" name="statement" class="security_requirement"></part>
+            <part id="statement_03.06.03" name="statement" class="security_requirement">
+                <p>Test the effectiveness of the incident response capability <insert type="param"
+                        id-ref="A.03.06.03.ODP.01" />.</p>
+</part>
             <part id="guidance_D-03.06.03" name="guidance">
                 <p>Organizations test incident response capabilities to determine their
                     effectiveness and identify potential weaknesses or deficiencies. Incident
@@ -5728,7 +5772,9 @@
             <link href="#6cefb03a-c051-45bd-bd34-8d819e38c1d5" rel="reference" />
             <link href="#226b6921-eab4-4662-b0df-f2f6049eb782" rel="reference" />
             <link href="#c3256cd6-5ed6-42df-b2f9-0bff7fb8d8c9" rel="reference" />
-            <part id="statement_03.08.01" name="statement" class="security_requirement"></part>
+            <part id="statement_03.08.01" name="statement" class="security_requirement">
+                <p>Physically control and securely store system media that contain CUI.</p>
+</part>
             <part id="guidance_D-03.08.01" name="guidance">
                 <p>System media include digital and non-digital media. Digital media include
                     diskettes, flash drives, magnetic tapes, external or removable solid state or
@@ -5786,7 +5832,9 @@
             <prop name="label" value="Media Access (03.08.02)" />
             <link href="#db611cd9-b2d3-4885-b016-31ed93f78598" rel="reference" />
             <link href="#226b6921-eab4-4662-b0df-f2f6049eb782" rel="reference" />
-            <part id="statement_03.08.02" name="statement" class="security_requirement"></part>
+            <part id="statement_03.08.02" name="statement" class="security_requirement">
+                <p>Restrict access to CUI on system media to authorized personnel or roles.</p>
+</part>
             <part id="guidance_D-03.08.02" name="guidance">
                 <p>System media include digital and non-digital media. Access to CUI on system media
                     can be restricted by physically controlling such media. This includes conducting
@@ -5836,7 +5884,10 @@
             <prop name="label" value="Media Sanitization (03.08.03)" />
             <link href="#b76b4068-efbd-4c42-9aee-d93844c963d8" rel="reference" />
             <link href="#c3256cd6-5ed6-42df-b2f9-0bff7fb8d8c9" rel="reference" />
-            <part id="statement_03.08.03" name="statement" class="security_requirement"></part>
+            <part id="statement_03.08.03" name="statement" class="security_requirement">
+                <p>Sanitize system media that contain CUI prior to disposal, release out of
+                    organizational control, or release for reuse.</p>
+</part>
             <part id="guidance_D-03.08.03" name="guidance">
                 <p>Media sanitization applies to digital and non-digital media that are subject to
                     disposal or reuse, whether or not the media are considered removable. Examples
@@ -5892,7 +5943,10 @@
             <prop name="sort-id" value="03.08.04" />
             <prop name="label" value="Media Marking (03.08.04)" />
             <link href="#7b44c40d-973a-4fa0-a477-e400e64b98e3" rel="reference" />
-            <part id="statement_03.08.04" name="statement" class="security_requirement"></part>
+            <part id="statement_03.08.04" name="statement" class="security_requirement">
+                <p>Mark system media that contain CUI to indicate distribution limitations, handling
+                    caveats, and applicable CUI markings.</p>
+</part>
             <part id="guidance_D-03.08.04" name="guidance">
                 <p>System media include digital and non-digital media. Marking refers to the use or
                     application of human-readable security attributes. Labeling refers to the use of
@@ -6876,7 +6930,10 @@
             <prop name="sort-id" value="03.10.08" />
             <prop name="label" value="Access Control for Transmission (03.10.08)" />
             <link href="#faf017f0-641d-44ca-ae6d-34dcdcf0184b" rel="reference" />
-            <part id="statement_03.10.08" name="statement" class="security_requirement"></part>
+            <part id="statement_03.10.08" name="statement" class="security_requirement">
+                <p>Control physical access to system distribution and transmission lines within
+                    organizational facilities.</p>
+</part>
             <part id="guidance_D-03.10.08" name="guidance">
                 <p>Safeguarding measures applied to system distribution and transmission lines
                     prevent accidental damage, disruption, and physical tampering. Such measures may
@@ -7197,7 +7254,9 @@
             <link href="#d7469545-b483-4820-b7a1-b64841239a93" rel="reference" />
             <link href="#8d1fb520-63c6-441b-a4ba-974c8d98ef71" rel="reference" />
             <link href="#4cd3f53c-8e18-43d2-8fb5-82c1eeb45582" rel="reference" />
-            <part id="statement_03.11.04" name="statement" class="security_requirement"></part>
+            <part id="statement_03.11.04" name="statement" class="security_requirement">
+                <p>Respond to findings from security assessments, monitoring, and audits.</p>
+</part>
             <part id="guidance_D-03.11.04" name="guidance">
                 <p>This requirement addresses the need to determine an appropriate response to risk
                     before generating a plan of action and milestones (POAM) entry. It may be
@@ -7269,7 +7328,11 @@
             <link href="#8d1fb520-63c6-441b-a4ba-974c8d98ef71" rel="reference" />
             <link href="#7af9ad3c-594d-43b8-a527-de9f622421e0" rel="reference" />
             <link href="#60b7ef54-4422-4a73-99ab-854410a7e716" rel="reference" />
-            <part id="statement_03.12.01" name="statement" class="security_requirement"></part>
+            <part id="statement_03.12.01" name="statement" class="security_requirement">
+                <p>Assess the security requirements for the system and its environment of operation <insert
+                        type="param" id-ref="A.03.12.01.ODP.01" /> to determine if the requirements
+                    have been satisfied.</p>
+</part>
             <part id="guidance_D-03.12.01" name="guidance">
                 <p>By assessing the security requirements, organizations determine whether the
                     necessary safeguards and countermeasures are implemented correctly, operating as
@@ -7424,7 +7487,10 @@
             <link href="#8d1fb520-63c6-441b-a4ba-974c8d98ef71" rel="reference" />
             <link href="#4cd3f53c-8e18-43d2-8fb5-82c1eeb45582" rel="reference" />
             <link href="#60b7ef54-4422-4a73-99ab-854410a7e716" rel="reference" />
-            <part id="statement_03.12.03" name="statement" class="security_requirement"></part>
+            <part id="statement_03.12.03" name="statement" class="security_requirement">
+                <p>Develop and implement a system-level continuous monitoring strategy that includes
+                    ongoing monitoring and security assessments.</p>
+</part>
             <part id="guidance_D-03.12.03" name="guidance">
                 <p>Continuous monitoring at the system level facilitates ongoing awareness of the
                     system security posture to support risk management decisions. The terms
@@ -7746,7 +7812,10 @@
             <prop name="sort-id" value="03.13.04" />
             <prop name="label" value="Information in Shared System Resources (03.13.04)" />
             <link href="#1f34e010-fb4a-42e2-ae2f-2d5a611a8581" rel="reference" />
-            <part id="statement_03.13.04" name="statement" class="security_requirement"></part>
+            <part id="statement_03.13.04" name="statement" class="security_requirement">
+                <p>Prevent unauthorized and unintended information transfer via shared system
+                    resources.</p>
+</part>
             <part id="guidance_D-03.13.04" name="guidance">
                 <p>Preventing unauthorized and unintended information transfer via shared system
                     resources stops information produced by the actions of prior users or roles (or
@@ -7814,7 +7883,10 @@
             <link href="#905fc293-cebb-4cc6-90d6-c95ed047090b" rel="reference" />
             <link href="#0bb2b4eb-d888-4ef1-b612-5ad3ac27a41a" rel="reference" />
             <link href="#a58bb8d1-1534-4ba0-b86c-11072b59ec98" rel="reference" />
-            <part id="statement_03.13.06" name="statement" class="security_requirement"></part>
+            <part id="statement_03.13.06" name="statement" class="security_requirement">
+                <p>Deny network communications traffic by default, and allow network communications
+                    traffic by exception.</p>
+</part>
             <part id="guidance_D-03.13.06" name="guidance">
                 <p>This requirement applies to inbound and outbound network communications traffic
                     at the system boundary and at identified points within the system. A deny-all,
@@ -7890,7 +7962,10 @@
             <link href="#e0aa4a13-03cc-4b86-be6c-80225af5c3af" rel="reference" />
             <link href="#6aba579a-f262-4bf9-a8e7-6820ea63de34" rel="reference" />
             <link href="#a58bb8d1-1534-4ba0-b86c-11072b59ec98" rel="reference" />
-            <part id="statement_03.13.08" name="statement" class="security_requirement"></part>
+            <part id="statement_03.13.08" name="statement" class="security_requirement">
+                <p>Implement cryptographic mechanisms to prevent the unauthorized disclosure of CUI
+                    during transmission and while in storage.</p>
+</part>
             <part id="guidance_D-03.13.08" name="guidance">
                 <p>This requirement applies to internal and external networks and any system
                     components that can transmit CUI, including servers, notebook computers, desktop
@@ -7969,7 +8044,11 @@
             <prop name="sort-id" value="03.13.09" />
             <prop name="label" value="Network Disconnect (03.13.09)" />
             <link href="#f70cb413-b2ce-416a-a89d-cd27549d01b4" rel="reference" />
-            <part id="statement_03.13.09" name="statement" class="security_requirement"></part>
+            <part id="statement_03.13.09" name="statement" class="security_requirement">
+                <p>Terminate the network connection associated with a communications session at the
+                    end of the session or after <insert type="param" id-ref="A.03.13.09.ODP.01" />
+                    of inactivity.</p>
+</part>
             <part id="guidance_D-03.13.09" name="guidance">
                 <p>This requirement applies to internal and external networks. Terminating network
                     connections associated with communications sessions includes deallocating TCP/IP
@@ -8037,7 +8116,11 @@
             <link href="#e0aa4a13-03cc-4b86-be6c-80225af5c3af" rel="reference" />
             <link href="#6aba579a-f262-4bf9-a8e7-6820ea63de34" rel="reference" />
             <link href="#900b7a48-6d75-4177-aaa6-137d817232c7" rel="reference" />
-            <part id="statement_03.13.10" name="statement" class="security_requirement"></part>
+            <part id="statement_03.13.10" name="statement" class="security_requirement">
+                <p>Establish and manage cryptographic keys in the system in accordance with the
+                    following key management requirements: <insert type="param"
+                        id-ref="A.03.13.10.ODP.01" />.</p>
+</part>
             <part id="guidance_D-03.13.10" name="guidance">
                 <p>Cryptographic keys can be established and managed using either manual procedures
                     or automated mechanisms supported by manual procedures. Organizations satisfy
@@ -8105,7 +8188,10 @@
             <prop name="label" value="Cryptographic Protection (03.13.11)" />
             <link href="#2d31b72b-97a1-497f-b99d-79f01dce0dc5" rel="reference" />
             <link href="#ee7a6c0f-4d87-4bef-a353-ca0e7ee09073" rel="reference" />
-            <part id="statement_03.13.11" name="statement" class="security_requirement"></part>
+            <part id="statement_03.13.11" name="statement" class="security_requirement">
+                <p>Implement the following types of cryptography to protect the confidentiality of
+                    CUI: <insert type="param" id-ref="A.03.13.11.ODP.01" />.</p>
+</part>
             <part id="guidance_D-03.13.11" name="guidance">
                 <p>Cryptography is implemented in accordance with applicable laws, Executive Orders,
                     directives, regulations, policies, standards, and guidelines. FIPS-validated
@@ -8324,7 +8410,9 @@
             <link href="#2afcb88d-1586-4f5a-8438-2f84c98eff27" rel="reference" />
             <link href="#a58bb8d1-1534-4ba0-b86c-11072b59ec98" rel="reference" />
             <link href="#53577f0d-fdba-4e18-a195-a04ea7c68e2e" rel="reference" />
-            <part id="statement_03.13.15" name="statement" class="security_requirement"></part>
+            <part id="statement_03.13.15" name="statement" class="security_requirement">
+                <p>Protect the authenticity of communications sessions.</p>
+</part>
             <part id="guidance_D-03.13.15" name="guidance">
                 <p>Protecting session authenticity addresses communications protection at the
                     session level, not at the packet level. Such protection establishes grounds for
@@ -8841,7 +8929,11 @@
             <prop name="sort-id" value="03.14.08" />
             <prop name="label" value="Information Management and Retention (03.14.08)" />
             <link href="#b885e0fc-d253-46df-831f-47198e312eb3" rel="reference" />
-            <part id="statement_03.14.08" name="statement" class="security_requirement"></part>
+            <part id="statement_03.14.08" name="statement" class="security_requirement">
+                <p>Manage and retain CUI within the system and CUI output from the system in
+                    accordance with applicable laws, Executive Orders, directives, regulations,
+                    policies, standards, guidelines, and operational requirements.</p>
+</part>
             <part id="guidance_D-03.14.08" name="guidance">
                 <p>Federal agencies consider data retention requirements for nonfederal
                     organizations. Retaining CUI on nonfederal systems after contracts or agreements
@@ -9309,7 +9401,11 @@
             <link href="#a10063e9-0afe-4e96-9bb0-f308c8179077" rel="reference" />
             <link href="#fa117c16-587d-4163-a421-e35553768633" rel="reference" />
             <link href="#2e702ac1-d107-4251-b12e-6816b9f20747" rel="reference" />
-            <part id="statement_03.16.01" name="statement" class="security_requirement"></part>
+            <part id="statement_03.16.01" name="statement" class="security_requirement">
+                <p>Apply the following systems security engineering principles to the development or
+                    modification of the system and system components: <insert type="param"
+                        id-ref="A.03.16.01.ODP.01" />.</p>
+</part>
             <part id="guidance_D-03.16.01" name="guidance">
                 <p>Organizations apply systems security engineering principles to new development
                     systems. For legacy systems, organizations apply systems security engineering
@@ -9732,7 +9828,10 @@
             <link href="#b7e352b7-6344-4b4e-8a78-090010eb4d36" rel="reference" />
             <link href="#a249da1e-0a36-4942-ae4e-e84bb7b78b51" rel="reference" />
             <link href="#d7469545-b483-4820-b7a1-b64841239a93" rel="reference" />
-            <part id="statement_03.17.02" name="statement" class="security_requirement"></part>
+            <part id="statement_03.17.02" name="statement" class="security_requirement">
+                <p>Develop and implement acquisition strategies, contract tools, and procurement
+                    methods to identify, protect against, and mitigate supply chain risks.</p>
+</part>
             <part id="guidance_D-03.17.02" name="guidance">
                 <p>The acquisition process provides an important vehicle for protecting the supply
                     chain. There are many useful tools and techniques available, including obscuring
