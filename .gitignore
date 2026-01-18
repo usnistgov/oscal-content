@@ -5,3 +5,6 @@ yq
 jq
 .DS_Store
 build/oscal-cli/
+# Personal workflow documentation
+CONTINUE_IN_OSCAL_REPO.md
+NIST800-60.md

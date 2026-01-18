@@ -1,0 +1,4288 @@
+{
+  "metadata": {
+    "title": "NIST SP 800-60 Volume II Information Types",
+    "version": "Revision 1",
+    "published": "2008-08-01",
+    "last-modified": "2008-08-01",
+    "oscal-version": "1.1.2",
+    "document-type": "information-type-catalog",
+    "source": "NIST Special Publication 800-60 Volume II Revision 1"
+  },
+  "information-types": [
+    {
+      "uuid": "119affd7-1792-4dd4-8ca7-5457a847bc4a",
+      "title": "Corrective Action",
+      "description": "Corrective Action - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.1.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "9003d231-1d7d-4190-8467-89fa0ba0626a",
+      "title": "Program Evaluation",
+      "description": "Program Evaluation - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.1.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "48e0c1fa-6dd0-4aa2-876b-37d8fe50e290",
+      "title": "Program Monitoring",
+      "description": "Program Monitoring - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.1.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "971be9e1-fa9c-4bc2-afe3-c04035c9ebb9",
+      "title": "Policy and Guidance Development",
+      "description": "Policy and Guidance Development - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.2.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "2bb6cd41-a2bc-4287-991d-dbc7447bcf17",
+      "title": "Public Comment Tracking",
+      "description": "Public Comment Tracking - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.2.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "29922cc8-f9ea-4eb1-a5ce-21e5fa668bba",
+      "title": "Regulatory Creation",
+      "description": "Regulatory Creation - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.2.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "f6c1fe5b-8476-4da5-ae85-ba45f4bdb552",
+      "title": "Rule Publication",
+      "description": "Rule Publication - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.2.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "08427ad2-368d-4e03-8101-68bdbfe13457",
+      "title": "Budget Formulation",
+      "description": "Budget Formulation - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.3.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "42b56bd3-e79c-4aa3-a300-e9314f8856c9",
+      "title": "Capital Planning",
+      "description": "Capital Planning - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.3.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "f1ab491b-c4fb-4df9-a1aa-4ba9f2b21326",
+      "title": "Enterprise Architecture",
+      "description": "Enterprise Architecture - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.3.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "71e8b639-e131-4fc1-9757-0fcdea26663d",
+      "title": "Strategic Planning",
+      "description": "Strategic Planning - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.3.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "6589b551-1e72-4fc8-8373-00438036dc8a",
+      "title": "Budget Execution",
+      "description": "Budget Execution - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.3.5"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "9392fbc2-1c27-41da-b5fa-db711aaa2d2c",
+      "title": "Workforce Planning",
+      "description": "Workforce Planning - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.3.6"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "f5b413d3-f6fc-4f3a-9cce-56ebf056dde5",
+      "title": "Management Improvement",
+      "description": "Management Improvement - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.3.7"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "2894263c-f15a-4da6-9aff-210088d5b812",
+      "title": "Budget and Performance Integration",
+      "description": "Budget and Performance Integration - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.3.8"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "1487e4fc-f5c7-4856-82d4-e614ca91d67b",
+      "title": "Tax and Fiscal Policy",
+      "description": "Tax and Fiscal Policy - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.3.9"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "f71e4ff4-703f-4c16-afea-c7514a78a353",
+      "title": "Contingency Planning",
+      "description": "Contingency Planning - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.4.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "811d43c1-9274-4721-805d-67765d485b4d",
+      "title": "Continuity of Operations",
+      "description": "Continuity of Operations - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.4.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "3d1e9296-0a42-4a96-ab35-7516823e535f",
+      "title": "Service Recovery",
+      "description": "Service Recovery - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.4.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "43ad1be5-4300-4634-b04c-c790bf0de3df",
+      "title": "Debt Collection",
+      "description": "Debt Collection - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.5.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "93a566f3-a900-4137-ac58-d22801219db5",
+      "title": "User Fee Collection",
+      "description": "User Fee Collection - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.5.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "a88e2b8b-d9bc-4349-9f6c-c44cf0d919cf",
+      "title": "Federal Asset Sales",
+      "description": "Federal Asset Sales - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.5.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "49605217-d57a-4238-b826-52b839610700",
+      "title": "Customer Services",
+      "description": "Customer Services - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.6.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "6f31bc53-eb0e-41dd-92bc-7d71d1d3835c",
+      "title": "Official Information Dissemination",
+      "description": "Official Information Dissemination - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.6.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "789e8716-89d4-4718-9c2d-68cd2f08ba65",
+      "title": "Product Outreach",
+      "description": "Product Outreach - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.6.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "da13b74a-8bd5-41f7-b629-5881fd4cf6cf",
+      "title": "Public Relations",
+      "description": "Public Relations - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.6.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "b57388c1-56b2-432a-9e13-cba37bb16e3e",
+      "title": "Legislation Tracking",
+      "description": "Legislation Tracking - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.7.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "4c4d72f6-f8dc-426c-a132-74b627a5b314",
+      "title": "Legislation Testimony",
+      "description": "Legislation Testimony - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.7.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "fe82cc22-7b09-48cb-af77-00d9bad957f6",
+      "title": "Proposal Development",
+      "description": "Proposal Development - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.7.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "1529fb5a-eb08-4b28-931e-468e4dc2fc57",
+      "title": "Congressional Liaison Operations",
+      "description": "Congressional Liaison Operations - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.7.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "1c196024-175d-408d-b368-2a75c49147ce",
+      "title": "Central Fiscal Operations",
+      "description": "Central Fiscal Operations - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.8.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "a25f110f-2779-4ce6-ae16-20eee4f0bdd2",
+      "title": "Legislative Functions",
+      "description": "Legislative Functions - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.8.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "15a73e69-3e7d-47a8-8bec-2afbf4363773",
+      "title": "Executive Functions",
+      "description": "Executive Functions - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.8.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "d33ce03a-8985-4a4f-a6a5-538127ab3b40",
+      "title": "Central Property Management",
+      "description": "Central Property Management - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.8.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "4da73c59-4fe9-44c8-a252-97b6c01a6647",
+      "title": "Central Personnel Management",
+      "description": "Central Personnel Management - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.8.5"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "93d8f6b5-989a-4994-87eb-723a3965a22b",
+      "title": "Taxation Management",
+      "description": "Taxation Management - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.8.6"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "cbc50829-c186-459a-9486-9ef29c22b3b4",
+      "title": "Central Records and Statistics Management",
+      "description": "Central Records and Statistics Management - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.8.7"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "e54c3a2a-a2ff-4e27-beb3-a809a5c5a02c",
+      "title": "Income Information",
+      "description": "Income Information - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.8.8"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "e6d70dc4-d2ea-4e0a-838a-577e1606ad3f",
+      "title": "Personal Identity and Authentication",
+      "description": "Personal Identity and Authentication - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.8.9"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "842332de-4820-4f17-9a36-b3fe71348710",
+      "title": "Entitlement Event",
+      "description": "Entitlement Event - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.8.10"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "284627bb-3a5a-4a1b-96da-4428faea29a0",
+      "title": "Representative Payee Information",
+      "description": "Representative Payee Information - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.8.11"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "2bdc67bb-d7f6-4c01-acf3-b5d3989d9c33",
+      "title": "General Information",
+      "description": "General Information - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.2.8.12"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "42d7713e-abab-4b3d-bbe4-baecb1f17672",
+      "title": "Facilities, Fleet, and Equipment Management",
+      "description": "Facilities, Fleet, and Equipment Management - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.1.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "f7e660fd-19dc-48f5-ba16-4451bbd8c7b6",
+      "title": "Help Desk Services",
+      "description": "Help Desk Services - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.1.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "d19867ce-c06f-4372-9c0a-363c9a3298cd",
+      "title": "Security Management",
+      "description": "Security Management - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.1.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "1f5464ee-4832-4c7f-8206-bdaff353d1ab",
+      "title": "Travel",
+      "description": "Travel - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.1.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "a13c40c4-f1c6-44e6-9856-55e12fc1009d",
+      "title": "Workplace Policy Development and Management",
+      "description": "Workplace Policy Development and Management - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.1.5"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "1011cf23-160a-4a03-b51d-7b13329e5442",
+      "title": "Assets and Liability Management",
+      "description": "Assets and Liability Management - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.2.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "4e46d2ff-abb6-4514-af0e-dd53450f3f57",
+      "title": "Reporting and Information",
+      "description": "Reporting and Information - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.2.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "b3bb07a2-4044-4b27-838a-384f25d1ee72",
+      "title": "Funds Control",
+      "description": "Funds Control - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.2.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "dd4076cd-f3bd-4b41-bf0b-e87a2f517502",
+      "title": "Accounting",
+      "description": "Accounting - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.2.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "1f020135-1a40-4a09-a363-ab56be69fa24",
+      "title": "Payments",
+      "description": "Payments - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.2.5"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "58540521-0fc3-405c-ab56-5dfe7bc2ee8d",
+      "title": "Collections and Receivables",
+      "description": "Collections and Receivables - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.2.6"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "d6874607-3dc6-4e44-b324-3caebaae6388",
+      "title": "Cost Accounting/Performance Measurement",
+      "description": "Cost Accounting/Performance Measurement - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.2.7"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "be2bd4a1-2e52-4473-a6f6-2b82d6aabec2",
+      "title": "HR Strategy",
+      "description": "HR Strategy - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.3.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "9fdeb89c-217a-4b11-a614-823dbcf638e8",
+      "title": "Staff Acquisition",
+      "description": "Staff Acquisition - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.3.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "b56f5fbd-340e-4d05-b8ad-b82d6e911305",
+      "title": "Organization & Position Management",
+      "description": "Organization & Position Management - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.3.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "3d166b2a-2348-43e4-a94c-afb97df6844b",
+      "title": "Compensation Management",
+      "description": "Compensation Management - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.3.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "42a44cd9-1917-4226-9b58-edad9ce19b86",
+      "title": "Benefits Management",
+      "description": "Benefits Management - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.3.5"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "78498bcc-de9d-4013-98d0-4d3bd57c78f5",
+      "title": "Employee Performance Management",
+      "description": "Employee Performance Management - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.3.6"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "bdd5cd05-63f3-4aa7-ada9-70b2ae675dba",
+      "title": "Employee Relations",
+      "description": "Employee Relations - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.3.7"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "2ee7bfde-3049-4591-ba82-dddef604d408",
+      "title": "Labor Relations",
+      "description": "Labor Relations - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.3.8"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "650a1ffa-5a80-416a-accf-e3284a49dad4",
+      "title": "Separation Management",
+      "description": "Separation Management - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.3.9"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "abd3fb7d-6205-4174-8cdf-e6d25608a451",
+      "title": "Human Resources Development",
+      "description": "Human Resources Development - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.3.10"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "3315530d-420c-42f1-98e4-7857aab2b26d",
+      "title": "Goods Acquisition",
+      "description": "Goods Acquisition - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.4.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "096d2cdf-fb75-4d7f-ad37-15847fdb020e",
+      "title": "Inventory Control",
+      "description": "Inventory Control - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.4.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "291b9420-0c94-4e9d-83b1-4612ce8fb436",
+      "title": "Logistics Management",
+      "description": "Logistics Management - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.4.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "f91584ba-0c35-49c5-a198-4cf551610c8b",
+      "title": "Services Acquisition",
+      "description": "Services Acquisition - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.4.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "af938626-d8b0-4ada-9fb5-8eb64d61df97",
+      "title": "System Development",
+      "description": "System Development - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.5.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "536f9322-c97d-48d3-9d77-dd5a12f747d5",
+      "title": "Lifecycle/Change Management",
+      "description": "Lifecycle/Change Management - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.5.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "565414bf-0100-420d-b7d1-021cb37ce2ec",
+      "title": "System Maintenance",
+      "description": "System Maintenance - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.5.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "3496ca55-d88b-437d-af39-7840fc2ad0d9",
+      "title": "IT Infrastructure Maintenance",
+      "description": "IT Infrastructure Maintenance - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.5.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "abb42986-c4c8-44a5-aede-8c07f8c5ed86",
+      "title": "Information Security",
+      "description": "Information Security - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.5.5"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "14ebe8be-cb13-40f0-98a2-44eab0bd2c32",
+      "title": "Record Retention",
+      "description": "Record Retention - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.5.6"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "35d8dd20-4405-4e88-bab2-27a9cb47e487",
+      "title": "Information Management",
+      "description": "Information Management - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.5.7"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "79d992f2-364c-4ce8-8f63-4167d63a5e8c",
+      "title": "System and Network Monitoring",
+      "description": "System and Network Monitoring - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.5.8"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "542d7b01-b8b8-41b9-95b3-b83a3b4d7980",
+      "title": "Information Sharing",
+      "description": "Information Sharing - Management and Support information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "C.3.5.9"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "a1563169-d1bd-43b6-8f76-0352b14a96e3",
+      "title": "Defense and National Security",
+      "description": "Defense and National Security - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-high",
+        "selected": "fips-199-high"
+      },
+      "integrity-impact": {
+        "base": "fips-199-high",
+        "selected": "fips-199-high"
+      },
+      "availability-impact": {
+        "base": "fips-199-high",
+        "selected": "fips-199-high"
+      }
+    },
+    {
+      "uuid": "65f30b34-de4c-4c40-a8a0-0fc6477711e4",
+      "title": "Border and Transportation Security",
+      "description": "Border and Transportation Security - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.2.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      }
+    },
+    {
+      "uuid": "f1e38237-4a29-45a6-b3a1-d0fc3d1f97df",
+      "title": "Key Asset and Critical Infrastructure Protection",
+      "description": "Key Asset and Critical Infrastructure Protection - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.2.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      }
+    },
+    {
+      "uuid": "b42c78fc-4444-40a9-9b85-21c7c280fbfd",
+      "title": "Catastrophic Defense",
+      "description": "Catastrophic Defense - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.2.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-high",
+        "selected": "fips-199-high"
+      }
+    },
+    {
+      "uuid": "eeabe293-4256-428c-a25f-869c42b460b4",
+      "title": "Executive Functions (EOP)",
+      "description": "Executive Functions (EOP) - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.2.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "fa393cfd-3408-43fb-b75d-6a0d64cdf798",
+      "title": "Intelligence Operations",
+      "description": "Intelligence Operations - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-high",
+        "selected": "fips-199-high"
+      },
+      "integrity-impact": {
+        "base": "fips-199-high",
+        "selected": "fips-199-high"
+      },
+      "availability-impact": {
+        "base": "fips-199-high",
+        "selected": "fips-199-high"
+      }
+    },
+    {
+      "uuid": "c26bc749-4977-4099-a8b1-9a74436b9bdc",
+      "title": "Disaster Monitoring and Prediction",
+      "description": "Disaster Monitoring and Prediction - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.4.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      }
+    },
+    {
+      "uuid": "41142005-db43-46d6-8507-c11019007f44",
+      "title": "Disaster Preparedness and Planning",
+      "description": "Disaster Preparedness and Planning - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.4.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "061c98b3-adbe-4eb5-9d5f-f2e7632951dc",
+      "title": "Disaster Repair and Restoration",
+      "description": "Disaster Repair and Restoration - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.4.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      }
+    },
+    {
+      "uuid": "86703323-6d0b-4181-bb8f-e53e9b9944dc",
+      "title": "Emergency Response",
+      "description": "Emergency Response - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.4.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-high",
+        "selected": "fips-199-high"
+      }
+    },
+    {
+      "uuid": "b7d5e846-ee9e-40d1-977b-0970993323f8",
+      "title": "Foreign Affairs",
+      "description": "Foreign Affairs - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.5.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "19fd986c-7785-4de1-8c32-8693d620bbcf",
+      "title": "International Development and Humanitarian Aid",
+      "description": "International Development and Humanitarian Aid - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.5.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "273cb18b-ef28-4898-8dde-f299616d7fe8",
+      "title": "Global Trade",
+      "description": "Global Trade - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.5.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "2d4fc928-ff87-4ab7-9fd1-bf49a83d676e",
+      "title": "Water Resource Management",
+      "description": "Water Resource Management - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.6.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "4ed79c3a-0e9d-4837-98ff-480e214a9ed7",
+      "title": "Conservation, Marine and Land Management",
+      "description": "Conservation, Marine and Land Management - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.6.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "c16692fc-3fd8-476a-8552-74fff8798e51",
+      "title": "Recreational Resource Management and Tourism",
+      "description": "Recreational Resource Management and Tourism - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.6.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "15b35978-fa5e-45c2-b3cf-9aa0e5f997de",
+      "title": "Agricultural Innovation and Services",
+      "description": "Agricultural Innovation and Services - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.6.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "373c8055-f4dd-4613-93f6-3caae4a3ad05",
+      "title": "Energy Supply",
+      "description": "Energy Supply - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.7.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      }
+    },
+    {
+      "uuid": "c5dbe51a-2dc4-4ea3-bcd5-503529254aca",
+      "title": "Energy Conservation and Preparedness",
+      "description": "Energy Conservation and Preparedness - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.7.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "f7d8972b-50e7-416e-9954-4764fa99325b",
+      "title": "Energy Resource Management",
+      "description": "Energy Resource Management - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.7.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "397a9aa9-9ddc-4e6e-a5a8-ac3a51134b28",
+      "title": "Energy Production",
+      "description": "Energy Production - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.7.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      }
+    },
+    {
+      "uuid": "3dcf6d82-b11b-4308-aa6e-4964e4dca625",
+      "title": "Environmental Monitoring and Forecasting",
+      "description": "Environmental Monitoring and Forecasting - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.8.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "3bed70ce-6107-44af-bbfc-7822b9112d54",
+      "title": "Environmental Remediation",
+      "description": "Environmental Remediation - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.8.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "08d82aa0-78ae-4c01-a150-d1d587508e9b",
+      "title": "Pollution Prevention and Control",
+      "description": "Pollution Prevention and Control - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.8.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "b42872cf-199d-49c4-81f6-f335f9f3e86b",
+      "title": "Business and Industry Development",
+      "description": "Business and Industry Development - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.9.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "6f3c6455-f916-454e-a049-2e14dafe048a",
+      "title": "Intellectual Property Protection",
+      "description": "Intellectual Property Protection - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.9.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "964d1873-8047-47dc-82ff-9fcc19b29cf5",
+      "title": "Financial Sector Oversight",
+      "description": "Financial Sector Oversight - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.9.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      }
+    },
+    {
+      "uuid": "bc7cac23-944b-44ae-9a51-25babb5a0633",
+      "title": "Industry Sector Income Stabilization",
+      "description": "Industry Sector Income Stabilization - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.9.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "dac6f3aa-3070-4ed8-8029-bdda714c1e67",
+      "title": "Homeownership Promotion",
+      "description": "Homeownership Promotion - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.10.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "3a506280-6fdf-42fa-8b45-f3bcce36136c",
+      "title": "Community and Regional Development",
+      "description": "Community and Regional Development - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.10.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "306b0ac0-4ee1-4dd8-8dba-a752dd9c94ef",
+      "title": "Social Services",
+      "description": "Social Services - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.10.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "19169bbc-5b55-4b7a-b531-3ba4eeb1910f",
+      "title": "Postal Services",
+      "description": "Postal Services - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.10.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      }
+    },
+    {
+      "uuid": "b7747f4f-492c-4fa0-a1f1-83a1802eabb0",
+      "title": "Ground Transportation",
+      "description": "Ground Transportation - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.11.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      }
+    },
+    {
+      "uuid": "b4168c41-34db-4c72-9c8f-6387ebba00bb",
+      "title": "Water Transportation",
+      "description": "Water Transportation - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.11.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      }
+    },
+    {
+      "uuid": "d3b48f0d-11e7-4db6-9387-4bf3fcaedf9a",
+      "title": "Air Transportation",
+      "description": "Air Transportation - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.11.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-high",
+        "selected": "fips-199-high"
+      }
+    },
+    {
+      "uuid": "d9a04204-f1f2-4976-9f3e-3dbbaee8675c",
+      "title": "Space Operations",
+      "description": "Space Operations - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.11.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      }
+    },
+    {
+      "uuid": "ce0f2dac-9246-4aa7-96b8-ccd49d057c8b",
+      "title": "Elementary, Secondary, and Vocational Education",
+      "description": "Elementary, Secondary, and Vocational Education - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.12.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "916b24d6-fa7d-436d-9416-f2a3ed4f8240",
+      "title": "Higher Education",
+      "description": "Higher Education - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.12.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "6d8fb838-09e1-4436-9677-9db31eaece6a",
+      "title": "Cultural and Historic Preservation",
+      "description": "Cultural and Historic Preservation - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.12.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "94f636e9-b7bd-4ce6-8960-6de883e22934",
+      "title": "Cultural and Historic Exhibition",
+      "description": "Cultural and Historic Exhibition - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.12.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "eab7fa61-b4eb-4076-8f72-752e707e9057",
+      "title": "Training and Employment",
+      "description": "Training and Employment - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.13.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "89e25fd4-e5b0-42b1-88b9-f148ecaae373",
+      "title": "Labor Rights Management",
+      "description": "Labor Rights Management - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.13.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "ea8f558c-7dc1-42ee-8d7b-e5ac27403b2a",
+      "title": "Worker Safety",
+      "description": "Worker Safety - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.13.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "962169ce-88ed-480a-92e7-660001da53ec",
+      "title": "Access to Care",
+      "description": "Access to Care - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.14.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      }
+    },
+    {
+      "uuid": "44c5a9bc-2bb0-485b-ade3-bf9863f6889a",
+      "title": "Population Health Management and Consumer Safety",
+      "description": "Population Health Management and Consumer Safety - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.14.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      }
+    },
+    {
+      "uuid": "2fe9c4f8-1351-4cc8-a91e-62a74ff90d19",
+      "title": "Health Care Administration",
+      "description": "Health Care Administration - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.14.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "ec42b227-8dfc-4b71-9c4a-6cef8fbc24c1",
+      "title": "Health Care Delivery Services",
+      "description": "Health Care Delivery Services - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.14.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-high",
+        "selected": "fips-199-high"
+      },
+      "integrity-impact": {
+        "base": "fips-199-high",
+        "selected": "fips-199-high"
+      },
+      "availability-impact": {
+        "base": "fips-199-high",
+        "selected": "fips-199-high"
+      }
+    },
+    {
+      "uuid": "91668485-9370-40eb-8711-167fc66eca92",
+      "title": "Health Care Research and Practitioner Education",
+      "description": "Health Care Research and Practitioner Education - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.14.5"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "67b7bde2-4baf-4976-b70d-dbc765dae50c",
+      "title": "General Retirement and Disability",
+      "description": "General Retirement and Disability - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.15.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "7611d300-5319-4d6c-9c11-83af1e746972",
+      "title": "Unemployment Compensation",
+      "description": "Unemployment Compensation - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.15.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "1d935be0-0acc-4c28-961b-d353b93137f5",
+      "title": "Housing Assistance",
+      "description": "Housing Assistance - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.15.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "d66ad024-dac1-46b1-9565-ef9f9b83aefb",
+      "title": "Food and Nutrition Assistance",
+      "description": "Food and Nutrition Assistance - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.15.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "807f6832-3687-4e51-ac4e-c6b18b000b96",
+      "title": "Survivor Compensation",
+      "description": "Survivor Compensation - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.15.5"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "d0c2a713-1539-41c7-aa57-a3c89d3047da",
+      "title": "Criminal Apprehension",
+      "description": "Criminal Apprehension - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.16.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      }
+    },
+    {
+      "uuid": "8156315a-340c-4c8a-a252-0f1172766d67",
+      "title": "Criminal Investigation and Surveillance",
+      "description": "Criminal Investigation and Surveillance - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.16.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-high",
+        "selected": "fips-199-high"
+      },
+      "integrity-impact": {
+        "base": "fips-199-high",
+        "selected": "fips-199-high"
+      },
+      "availability-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      }
+    },
+    {
+      "uuid": "0e278951-6403-4df4-9c59-93a2764c1d1b",
+      "title": "Citizen Protection",
+      "description": "Citizen Protection - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.16.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      }
+    },
+    {
+      "uuid": "b65638e5-05d8-4981-a562-f5065de99286",
+      "title": "Leadership Protection",
+      "description": "Leadership Protection - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.16.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-high",
+        "selected": "fips-199-high"
+      }
+    },
+    {
+      "uuid": "9a888797-8c81-45a6-96b9-52d012507d91",
+      "title": "Property Protection",
+      "description": "Property Protection - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.16.5"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "57c3cf03-543e-4bd1-96c2-32e1511a934a",
+      "title": "Substance Control",
+      "description": "Substance Control - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.16.6"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "4711ce0f-cc2d-4a8f-8ec8-f53feabb9c96",
+      "title": "Crime Prevention",
+      "description": "Crime Prevention - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.16.7"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "e071a04c-ca74-4b88-bed2-54a1baadf854",
+      "title": "Trade Law Enforcement",
+      "description": "Trade Law Enforcement - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.16.8"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "3e180b8f-210d-447e-a3f3-867352f443d4",
+      "title": "Judicial Hearings",
+      "description": "Judicial Hearings - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.17.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "470cdc93-14ba-4a61-9053-e45db5fc3a6e",
+      "title": "Legal Defense",
+      "description": "Legal Defense - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.17.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "b0b50534-5d93-4eda-b3ee-48ee07b2882b",
+      "title": "Legal Investigation",
+      "description": "Legal Investigation - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.17.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "a2d6c59a-d60d-4346-ae7e-8f245c0836c1",
+      "title": "Legal Prosecution and Litigation",
+      "description": "Legal Prosecution and Litigation - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.17.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "da038e0c-8edc-473f-a617-61df730f10fa",
+      "title": "Resolution Facilitation",
+      "description": "Resolution Facilitation - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.17.5"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "02efd10b-11d4-46fc-a81c-cb68d7ce84a5",
+      "title": "Criminal Incarceration",
+      "description": "Criminal Incarceration - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.18.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      }
+    },
+    {
+      "uuid": "0dd55bad-a442-4144-a64d-8b7e8a3c65e8",
+      "title": "Criminal Rehabilitation",
+      "description": "Criminal Rehabilitation - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.18.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "c46a5648-671d-4607-9be6-a5c6c022606c",
+      "title": "Scientific and Technological Research and Innovation",
+      "description": "Scientific and Technological Research and Innovation - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.19.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "aedaf2b0-1bfd-4733-bbaa-4494cebcdc62",
+      "title": "Space Exploration and Innovation",
+      "description": "Space Exploration and Innovation - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.19.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      }
+    },
+    {
+      "uuid": "4cd690b3-1eda-48a4-88e9-6452203f8e2e",
+      "title": "Research and Development",
+      "description": "Research and Development - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.20.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "b582295b-e8fc-4482-a90d-fe33598a306b",
+      "title": "General Purpose Data and Statistics",
+      "description": "General Purpose Data and Statistics - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.20.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "30553ba6-0f45-4658-9fd2-31905b717ba1",
+      "title": "Advising and Consulting",
+      "description": "Advising and Consulting - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.20.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "115b7625-073b-4d0e-ad3d-e640bc73bd0f",
+      "title": "Knowledge Dissemination",
+      "description": "Knowledge Dissemination - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.20.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "a51944f4-2b00-4578-a1ea-26ea95f5720d",
+      "title": "Inspections and Auditing",
+      "description": "Inspections and Auditing - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.21.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "a26fdd42-f7e8-4cc8-8937-ce4d9356f746",
+      "title": "Standards Setting/Reporting Guideline Development",
+      "description": "Standards Setting/Reporting Guideline Development - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.21.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "c9b440da-4f3d-4b57-b91a-aeb8e6a72e0d",
+      "title": "Permits and Licensing",
+      "description": "Permits and Licensing - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.21.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "8d27d4a4-61c9-48e8-8716-e4449a6481e7",
+      "title": "Manufacturing",
+      "description": "Manufacturing - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.22.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "95d371cc-2f4a-4932-a660-841084d42d5b",
+      "title": "Construction",
+      "description": "Construction - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.22.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "ce939cd6-870a-4447-8da2-eab91554d7b0",
+      "title": "Public Resources, Facility and Infrastructure Management",
+      "description": "Public Resources, Facility and Infrastructure Management - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.22.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      }
+    },
+    {
+      "uuid": "dc7579bc-4adb-45c1-aedc-72830ac0459d",
+      "title": "Information Infrastructure Management",
+      "description": "Information Infrastructure Management - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.22.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      }
+    },
+    {
+      "uuid": "e4c20aed-79d9-4bc3-8050-1a775a8c3803",
+      "title": "Federal Grants (Non-State)",
+      "description": "Federal Grants (Non-State) - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.23.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "f96e67f5-eb34-4dbf-a834-f5d9d1af70d1",
+      "title": "Direct Transfers to Individuals",
+      "description": "Direct Transfers to Individuals - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.23.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "a71ac257-f0f4-4f19-958a-1b4badc70bdf",
+      "title": "Subsidies",
+      "description": "Subsidies - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.23.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "0b75d278-8dd4-4b57-bafd-4ddf09588361",
+      "title": "Tax Credits",
+      "description": "Tax Credits - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.23.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "3b403c2b-b8d6-47f5-82a6-341b18474f38",
+      "title": "Direct Loans",
+      "description": "Direct Loans - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.24.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "24238fbf-ea29-4562-8578-c1436cdd6278",
+      "title": "Loan Guarantees",
+      "description": "Loan Guarantees - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.24.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "69163c66-abc5-4789-947b-69e68e899d81",
+      "title": "General Insurance",
+      "description": "General Insurance - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.24.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "6ce20122-7732-4e11-8eba-376c77373a8e",
+      "title": "Formula Grants",
+      "description": "Formula Grants - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.25.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "bffabc93-8466-4321-aa9a-5bcf8124b142",
+      "title": "Project/Competitive Grants",
+      "description": "Project/Competitive Grants - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.25.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "e5736b7a-7605-4d71-8c42-9b8afabc6bab",
+      "title": "Earmarked Grants",
+      "description": "Earmarked Grants - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.25.3"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "fc62c5ce-4aca-47f7-8a16-b8238afefc67",
+      "title": "State Loans",
+      "description": "State Loans - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.25.4"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-moderate",
+        "selected": "fips-199-moderate"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    },
+    {
+      "uuid": "8cf0b780-cd77-4102-a63d-28d89532e2dc",
+      "title": "Military Operations",
+      "description": "Military Operations - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.26.1"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-high",
+        "selected": "fips-199-high"
+      },
+      "integrity-impact": {
+        "base": "fips-199-high",
+        "selected": "fips-199-high"
+      },
+      "availability-impact": {
+        "base": "fips-199-high",
+        "selected": "fips-199-high"
+      }
+    },
+    {
+      "uuid": "0d2f6866-5658-44d4-9956-58845e5b3da3",
+      "title": "Civilian Operations",
+      "description": "Civilian Operations - Mission-based information type from NIST SP 800-60",
+      "categorizations": [
+        {
+          "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+          "information-type-ids": [
+            "D.26.2"
+          ]
+        }
+      ],
+      "confidentiality-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "integrity-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      },
+      "availability-impact": {
+        "base": "fips-199-low",
+        "selected": "fips-199-low"
+      }
+    }
+  ]
+}
