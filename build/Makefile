@@ -190,9 +190,14 @@ validate-xml-by-cli: $(OSCAL_CLI_INSTALL_PATH) ## Validate XML files by director
 	@echo "Validating OSCAL content with $(OSCAL_CLI_INSTALL_PATH)/bin/oscal-cli version $(OSCAL_CLI_VERSION)"
 	@find $(SRC_DIR)/examples -mindepth 1 -maxdepth 1 -type d | while read example_dir; do \
 		example_type=$$(basename "$$example_dir"); \
-		echo "Processing example type: $$example_type"; \
 		find "$$example_dir" -name '*.xml' | while read xml_file; do \
-			echo "Validating $$xml_file with OSCAL CLI as $$example_type"; \
+		if [[ "$$xml_file" == *"resolved-profile_catalog.xml" ]]; then \
+			example_type="catalog"; \
+		fi; \
+		if [[ "$$xml_file" == *"profile.xml" ]]; then \
+			example_type="profile"; \
+		fi; \
+		echo "=== Validating $$xml_file with OSCAL CLI as $$example_type"; \
 			$(OSCAL_CLI_INSTALL_PATH)/bin/oscal-cli "$$example_type" validate "$$xml_file"; \
 		done \
 	done

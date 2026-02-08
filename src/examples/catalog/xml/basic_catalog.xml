@@ -39,13 +39,13 @@
                <p>A cross link has been established with a choppy syntax: <a href="#s1.1.2">(choppy)</a>.</p>
             </part>
             <part id="s1.1.1_gdn" name="guidance">
-               <part id="s1.1.1_gdn.1" name="objective">
+               <part id="s1.1.1_gdn.1" name="assessment-objective">
                   <p>Allocation of information security responsibilities should be done in accordance with the information security policies. Responsibilities for the protection of individual assets and for carrying out specific information security processes should be identified. Responsibilities for information security risk management activities and in particular for acceptance of residual risks should be defined. These responsibilities should be supplemented, where necessary, with more detailed guidance for specific sites and information processing facilities. Local responsibilities for the protection of assets and for carrying out specific security processes should be defined.</p>
                </part>
-               <part id="s1.1.1_gdn.2" name="objective">
+               <part id="s1.1.1_gdn.2" name="assessment-objective">
                   <p>Individuals with allocated information security responsibilities may delegate security tasks to others. Nevertheless they remain accountable and should determine that any delegated tasks have been correctly performed.</p>
                </part>
-               <part id="s1.1.1_gdn.3" name="objective">
+               <part id="s1.1.1_gdn.3" name="assessment-objective">
                   <p>Areas for which individuals are responsible should be stated. In particular the following should take place:</p>
                   <ol>
                      <li>the assets and information security processes should be identified and defined;</li>

@@ -10,7 +10,7 @@
       <p>The following document is used in the OSCAL Profile Tutorial and builds on the catalog created for the OSCAL Catalog Tutorial</p>
     </remarks>
   </metadata>
-  <import href="../../catalog/xml/basic-catalog.xml">
+  <import href="../../catalog/xml/basic_catalog.xml">
     <include-controls>
       <matching pattern="s1.1.*"/>
     </include-controls>
