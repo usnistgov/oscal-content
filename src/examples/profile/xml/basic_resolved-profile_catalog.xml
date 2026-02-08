@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="3e580e28-a4b3-48a0-96bd-38f3429de413">
+<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="bb89b98c-2fe4-46be-9b26-7b4a8b476107">
     <metadata>
         <title>Sample Security Profile
             <em>For Demonstration</em> and Testing
         </title>
-        <last-modified>2025-08-26T22:08:53.936316Z</last-modified>
+        <last-modified>2026-02-08T01:25:19.668313Z</last-modified>
         <version>1.0</version>
         <oscal-version>1.1.3</oscal-version>
         <prop name="resolution-tool" value="libOSCAL-Java"/>
-        <link href="file:///Users/miorga/Desktop/ALL_PROJECTS/GH/_usnistgov/oscal-content/src/examples/profile/xml/basic-profile.xml" rel="source-profile"/>
+        <link href="basic_profile.xml" rel="source-profile"/>
     </metadata>
     <control id="s1.1.1">
         <title>Information security roles and responsibilities</title>
@@ -38,13 +38,13 @@
             </p>
         </part>
         <part id="s1.1.1_gdn" name="guidance">
-            <part id="s1.1.1_gdn.1" name="objective">
+            <part id="s1.1.1_gdn.1" name="assessment-objective">
                 <p>Allocation of information security responsibilities should be done in accordance with the information security policies. Responsibilities for the protection of individual assets and for carrying out specific information security processes should be identified. Responsibilities for information security risk management activities and in particular for acceptance of residual risks should be defined. These responsibilities should be supplemented, where necessary, with more detailed guidance for specific sites and information processing facilities. Local responsibilities for the protection of assets and for carrying out specific security processes should be defined.</p>
             </part>
-            <part id="s1.1.1_gdn.2" name="objective">
+            <part id="s1.1.1_gdn.2" name="assessment-objective">
                 <p>Individuals with allocated information security responsibilities may delegate security tasks to others. Nevertheless they remain accountable and should determine that any delegated tasks have been correctly performed.</p>
             </part>
-            <part id="s1.1.1_gdn.3" name="objective">
+            <part id="s1.1.1_gdn.3" name="assessment-objective">
                 <p>Areas for which individuals are responsible should be stated. In particular the following should take place:</p>
                 <ol>
                     <li>the assets and information security processes should be identified and defined;</li>
@@ -54,7 +54,7 @@
                     <li>coordination and oversight of information security aspects of supplier relationships should be identified and documented.</li>
                 </ol>
             </part>
-            <part id="s1.1.1_gdn.4" name="item">
+            <part id="s1.1.1_gdn.4" name="assessment-objective">
                 <p>Users of devices running Gnome can adjust the inactivity timeout using the following link: https://help.gnome.org/admin/system-admin-guide/stable/desktop-lockscreen.html.en</p>
             </part>
         </part>
