@@ -30,8 +30,8 @@
     </set-parameter>
     <alter control-id="s1.1.1">
       <add position="after" by-id="s1.1.1_gdn.3">
-        <part id="s1.1.1_gdn.4" name="item">
-          <p>Users of devices running Gnome can adjust the inactivity timeout using the following link: https://help.gnome.org/admin/system-admin-guide/stable/desktop-lockscreen.html.en</p>
+        <part id="s1.1.1_gdn.4" name="assessment-objective" class="assessment-objective">
+          <p>Users of devices running Gnome may adjust the inactivity timeout using the following link: https://help.gnome.org/admin/system-admin-guide/stable/desktop-lockscreen.html.en</p>
         </part>
       </add>
     </alter>
