@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model schematypens="http://www.w3.org/2001/XMLSchema" type="application/xml" href="https://github.com/usnistgov/OSCAL/releases/download/v1.1.1/oscal_complete_schema.xsd"?><catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="5ba2a3ba-1aa2-47d8-ad69-5beef7372b98">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model schematypens="http://www.w3.org/2001/XMLSchema" type="application/xml" href="https://github.com/usnistgov/OSCAL/releases/download/v1.1.1/oscal_complete_schema.xsd"?>
+  <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="ea7c7688-79c5-463b-a91b-0650f2d98623">
   <metadata>
     <title>Electronic (OSCAL) Version of NIST SP 800-53 Rev 5.2.0 Controls and SP 800-53A Rev 5.2.0 Assessment Procedures</title>
-    <last-modified>2025-08-26T14:33:16.00000-00:00</last-modified>
+    <last-modified>2026-05-11T16:01:09.00000-00:00</last-modified>
     <version>5.2.0</version>
-    <oscal-version>1.1.3</oscal-version>
+    <oscal-version>1.2.2</oscal-version>
     <revisions>
       <revision>
         <title>Electronic Version of NIST SP 800-53 Rev 5 Controls and SP 800-53A Rev 5 Assessment Procedures</title>
@@ -65,6 +66,16 @@
           <p>This revision of the OSCAL representation of the NIST SP 800-53 Revision 5.1.1 published on November, 7, 2023, provides bug fixes.</p>
         </remarks>
       </revision>
+      <revision>
+        <title>Electronic (OSCAL) Version of NIST SP 800-53 Rev 5.2.0 Controls and SP 800-53A Rev 5.2.0 Assessment Procedures</title>
+        <last-modified>2025-08-26T14:33:16.00000-00:00</last-modified>
+        <version>5.2.0</version>
+        <oscal-version>1.1.3</oscal-version>
+        <link rel="version-history" href="#5ba2a3ba-1aa2-47d8-ad69-5beef7372b98"/>
+        <remarks>
+          <p>This OSCAL representation of the NIST SP 800-53 Revision 5.2.0 provides updates to the 800-53 v5.1.1 which support users to “securely and reliably deploy patches and updates".</p>
+        </remarks>
+      </revision>
     </revisions>
     <prop name="keywords" value="Assessment, assessment plan, assurance, availability, computer security, confidentiality, control, control assessment, cybersecurity, FISMA, information security, information system, integrity, personally identifiable information, OSCAL, Open Security Controls Assessment Language, Privacy Act, privacy controls, privacy functions, privacy requirements, Risk Management Framework, security controls, security functions, security requirements, system, system security"/>
     <link rel="alternate" href="#c3397cc9-83c6-4459-adb2-836739dc1b94"/>
@@ -122,7 +133,7 @@
       <party-uuid>98c78f9b-5d50-4b01-b47f-d16801e8d0ab</party-uuid>
     </responsible-party>
     <remarks>
-      <p>This OSCAL representation of the NIST SP 800-53 Revision 5.2.0 provides updates to the 800-53 v5.1.1 which support “securely and reliably deploy[ing] patches and updates".</p>
+      <p></p>
     </remarks>
   </metadata>
   <group class="family" id="ac">
@@ -89087,6 +89098,10 @@
     <resource uuid="cb35e1b6-0467-4234-96ba-224045914965">
       <title>NIST SP 800-53 Rev 5.1.1 content in OSCAL 1.1.2, with minor bug fixes</title>
       <rlink href="https://github.com/usnistgov/oscal-content/releases/tag/v1.3.0"/>
+    </resource>
+    <resource uuid="5ba2a3ba-1aa2-47d8-ad69-5beef7372b98">
+      <title>NIST SP 800-53 Rev 5.2.0 content in OSCAL 1.1.3, with minor bug fixes</title>
+      <rlink href="https://github.com/usnistgov/oscal-content/releases/tag/v1.4.0"/>
     </resource>
   </back-matter>
 </catalog>
