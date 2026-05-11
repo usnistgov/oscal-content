@@ -133,7 +133,7 @@
       <party-uuid>98c78f9b-5d50-4b01-b47f-d16801e8d0ab</party-uuid>
     </responsible-party>
     <remarks>
-      <p></p>
+      <p>This electronic version of NIST SP 800-53 Rev 5.2.0 Controls and SP 800-53A Rev 5.2.0 Assessment Procedures in OSCAL v1.2.2 only upgrades OSCAL version without any content changes.</p>
     </remarks>
   </metadata>
   <group class="family" id="ac">
