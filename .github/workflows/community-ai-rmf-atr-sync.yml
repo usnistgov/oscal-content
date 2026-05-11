@@ -1,0 +1,213 @@
+name: Community AI RMF (ATR) Upstream Sync
+
+# This workflow keeps the vendored community AI RMF catalog at
+# src/examples/catalog/json/community-ai-rmf-atr/ai-rmf-atr-catalog.json
+# in sync with its upstream source at
+# https://github.com/Agent-Threat-Rule/ai-rmf-oscal-catalog
+#
+# Schedule: Mondays 06:00 UTC (weekly check for upstream changes).
+# Manual: workflow_dispatch trigger for on-demand re-sync.
+#
+# Output: a DRAFT pull request against the default branch.
+# This workflow does NOT auto-merge. The NIST OSCAL Team retains
+# full editorial control over what lands.
+#
+# Provenance: workflow added as part of usnistgov/OSCAL#2234, Path 1
+# (community example with no implicit NIST endorsement).
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  UPSTREAM_REPO: Agent-Threat-Rule/ai-rmf-oscal-catalog
+  UPSTREAM_BRANCH: main
+  UPSTREAM_CATALOG_PATH: catalogs/ai-rmf-v0.4.json
+  VENDORED_PATH: src/examples/catalog/json/community-ai-rmf-atr/ai-rmf-atr-catalog.json
+  SYNC_METADATA_PATH: src/examples/catalog/json/community-ai-rmf-atr/SYNC.md
+  TARGET_OSCAL_VERSION: '1.1.3'
+
+jobs:
+  sync:
+    # DISABLED BY DEFAULT. The NIST OSCAL Team must explicitly opt in by
+    # changing `if: false` to `if: true`. This protects against the workflow
+    # running on schedule without explicit maintainer approval — a courtesy
+    # to NIST since the workflow lives in oscal-content's .github/workflows/
+    # rather than the community contributor's own repository.
+    if: false
+    name: Check upstream and propose update
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Fetch upstream catalog
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/atr-sync
+          curl -sSfL \
+            -o /tmp/atr-sync/upstream-catalog.json \
+            "https://raw.githubusercontent.com/${UPSTREAM_REPO}/${UPSTREAM_BRANCH}/${UPSTREAM_CATALOG_PATH}"
+          UPSTREAM_SHA=$(curl -sSfL \
+            "https://api.github.com/repos/${UPSTREAM_REPO}/commits/${UPSTREAM_BRANCH}" \
+            | jq -r .sha)
+          echo "UPSTREAM_SHA=$UPSTREAM_SHA" >> "$GITHUB_ENV"
+          echo "Fetched upstream catalog (commit $UPSTREAM_SHA)"
+
+      - name: Apply OSCAL version downgrade
+        # The upstream catalog targets OSCAL 1.2.2. NIST oscal-content
+        # predominantly uses 1.1.3 for published profiles. Downgrade for
+        # consistency with the rest of oscal-content's NIST-authored content.
+        # The transformation is mechanical: only the oscal-version string
+        # and the last-modified timestamp change. All structural OSCAL
+        # constructs used by this catalog are available in 1.1.3.
+        run: |
+          set -euo pipefail
+          python3 << 'PYEOF'
+          import json, os
+          from datetime import datetime, timezone
+
+          with open('/tmp/atr-sync/upstream-catalog.json') as f:
+              d = json.load(f)
+
+          target = os.environ['TARGET_OSCAL_VERSION']
+          meta = d['catalog']['metadata']
+          orig = meta.get('oscal-version')
+          meta['oscal-version'] = target
+          meta['last-modified'] = datetime.now(timezone.utc).strftime(
+              '%Y-%m-%dT%H:%M:%S.000-00:00'
+          )
+
+          base_remarks = meta.get('remarks', '').strip()
+          vendoring_note = (
+              "\n\nThis copy is vendored into the usnistgov/oscal-content "
+              "repository under .github/workflows/community-ai-rmf-atr-sync.yml. "
+              "Upstream maintenance happens at the source repository. This "
+              "catalog is NOT authored by NIST. NIST has not endorsed this "
+              "artifact. The OSCAL representation of the NIST AI Risk "
+              "Management Framework is on hold at NIST per "
+              "usnistgov/OSCAL#2234; this community catalog exists to unblock "
+              "downstream OSCAL profile work."
+          )
+          if 'community-ai-rmf-atr-sync.yml' not in base_remarks:
+              meta['remarks'] = base_remarks + vendoring_note
+
+          with open('/tmp/atr-sync/downgraded-catalog.json', 'w') as f:
+              json.dump(d, f, indent=2)
+
+          print(f"oscal-version: {orig} -> {target}")
+          print(f"last-modified: {meta['last-modified']}")
+          PYEOF
+
+      - name: Diff against currently-vendored catalog
+        id: diff
+        run: |
+          set -euo pipefail
+          if ! [ -f "${VENDORED_PATH}" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "VENDORED_PATH does not exist yet — first vendoring"
+            exit 0
+          fi
+          if diff -q /tmp/atr-sync/downgraded-catalog.json "${VENDORED_PATH}" >/dev/null; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes — vendored catalog already up to date"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Changes detected against vendored copy"
+            diff -u "${VENDORED_PATH}" /tmp/atr-sync/downgraded-catalog.json | head -50 || true
+          fi
+
+      - name: Validate downgraded catalog against OSCAL 1.1.3 schema
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          curl -sSfL \
+            -o /tmp/atr-sync/oscal_catalog_schema.json \
+            "https://github.com/usnistgov/OSCAL/releases/download/v${TARGET_OSCAL_VERSION}/oscal_catalog_schema.json"
+
+          # Use Python jsonschema since ajv strict-mode rejects $defs across drafts.
+          # Format checks (uri, date-time) are not enforced; structural validity is.
+          python3 -m pip install --quiet jsonschema
+          python3 << 'PYEOF'
+          import json, sys
+          from jsonschema import Draft7Validator
+
+          with open('/tmp/atr-sync/oscal_catalog_schema.json') as f:
+              schema = json.load(f)
+          with open('/tmp/atr-sync/downgraded-catalog.json') as f:
+              data = json.load(f)
+
+          v = Draft7Validator(schema)
+          errors = list(v.iter_errors(data))
+          if errors:
+              for e in errors[:5]:
+                  print(f"VALIDATION ERROR: {e.message[:200]}")
+                  print(f"  path: {list(e.path)[:8]}")
+              sys.exit(1)
+          print("Catalog validates against OSCAL 1.1.3 schema")
+          PYEOF
+
+      - name: Write to vendored location
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          mkdir -p "$(dirname "${VENDORED_PATH}")"
+          cp /tmp/atr-sync/downgraded-catalog.json "${VENDORED_PATH}"
+
+          # Update SYNC.md metadata
+          DATE=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          # Use python to do a robust regex replacement of the upstream-commit line.
+          python3 << PYEOF
+          import re
+          with open("${SYNC_METADATA_PATH}") as f:
+              s = f.read()
+          s = re.sub(
+              r'\| Upstream commit \| .*\|',
+              f'| Upstream commit | ${UPSTREAM_SHA} |',
+              s,
+              count=1
+          )
+          s = re.sub(
+              r'\| Vendored at \| .*\|',
+              f'| Vendored at | ${DATE} |',
+              s,
+              count=1
+          )
+          with open("${SYNC_METADATA_PATH}", "w") as f:
+              f.write(s)
+          PYEOF
+
+      - name: Open draft PR
+        if: steps.diff.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: community-ai-rmf-atr-sync/${{ github.run_id }}
+          base: ${{ github.event.repository.default_branch }}
+          draft: true
+          title: 'chore(community-ai-rmf-atr): sync vendored catalog from upstream'
+          commit-message: |
+            chore(community-ai-rmf-atr): sync vendored catalog from upstream
+
+            Upstream: ${{ env.UPSTREAM_REPO }}@${{ env.UPSTREAM_SHA }}
+            Target OSCAL version: ${{ env.TARGET_OSCAL_VERSION }}
+          body: |
+            Automated sync from the community AI RMF catalog upstream.
+
+            - Upstream repository: ${{ env.UPSTREAM_REPO }}
+            - Upstream commit: ${{ env.UPSTREAM_SHA }}
+            - Target OSCAL version: ${{ env.TARGET_OSCAL_VERSION }} (downgraded from upstream 1.2.2)
+
+            This PR is DRAFT and will NOT be auto-merged. NIST OSCAL Team
+            maintainers retain editorial control over what lands. See
+            `src/examples/catalog/json/community-ai-rmf-atr/SYNC.md` for the
+            sync mechanism and `.github/workflows/community-ai-rmf-atr-sync.yml`
+            for the workflow definition.
+
+            Tracking: usnistgov/OSCAL#2234 (Path 1, community example).

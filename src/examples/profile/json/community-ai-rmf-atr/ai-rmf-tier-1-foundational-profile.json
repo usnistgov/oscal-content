@@ -1,0 +1,137 @@
+{
+  "profile": {
+    "uuid": "1a9d9829-4c56-5619-8a33-9d04dff5b683",
+    "metadata": {
+      "title": "AI RMF Tier 1 Foundational Profile (community example)",
+      "last-modified": "2026-05-11T19:15:06.000-00:00",
+      "version": "0.4.0",
+      "oscal-version": "1.1.3",
+      "parties": [
+        {
+          "uuid": "a8c98b3d-2e15-5cd6-9e75-b8a1f8f7e3d2",
+          "type": "person",
+          "name": "Adam Lin",
+          "short-name": "alin",
+          "email-addresses": [
+            "adam@agentthreatrule.org"
+          ],
+          "addresses": [
+            {
+              "addr-lines": [
+                "Agent Threat Rules community"
+              ],
+              "country": "TW",
+              "type": "work"
+            }
+          ],
+          "props": [
+            {
+              "name": "role",
+              "ns": "https://github.com/Agent-Threat-Rule",
+              "value": "founding-maintainer"
+            }
+          ],
+          "remarks": "Adam Lin is the founding maintainer of the Agent Threat Rules (ATR) project. He is NOT a NIST employee or contractor. He has no affiliation with the NIST OSCAL Team. This party entry exists solely to document community provenance per OSCAL responsible-party requirements."
+        },
+        {
+          "uuid": "b2d3e4f5-6789-50ab-91cd-2e4f6a8b0c1d",
+          "type": "organization",
+          "name": "Agent Threat Rules community",
+          "short-name": "ATR community",
+          "props": [
+            {
+              "name": "homepage",
+              "ns": "https://github.com/Agent-Threat-Rule",
+              "value": "https://github.com/Agent-Threat-Rule/agent-threat-rules"
+            }
+          ],
+          "links": [
+            {
+              "href": "https://github.com/Agent-Threat-Rule/ai-rmf-oscal-catalog",
+              "rel": "canonical"
+            },
+            {
+              "href": "https://github.com/Agent-Threat-Rule/ai-rmf-oscal-catalog/blob/main/LICENSE",
+              "rel": "license"
+            }
+          ],
+          "remarks": "The Agent Threat Rules (ATR) community is an external open-source project. It is NOT a NIST program, working group, or partner. The community maintains the upstream community AI RMF OSCAL catalog under CC0 1.0 at github.com/Agent-Threat-Rule/ai-rmf-oscal-catalog."
+        }
+      ],
+      "remarks": "Tier 1 \u2014 Foundational worked example. Selects 18 controls covering the minimum viable AI risk management surface for low-risk, internal AI use. Includes foundational governance (legal compliance, executive accountability, trustworthy AI integration, AI inventory, role definitions, safety culture, incident sharing); minimum context mapping (intended purposes, task definition, human oversight, impact identification); minimum measurement (metric selection, TEVV documentation, safety and security evaluation); and minimum risk treatment (proceed/no-go determination, risk responses, incident communication). This is a worked example, not a normative baseline. Released under CC0 1.0. Not endorsed by NIST.\n\nPROVENANCE AND DISCLAIMERS:\n\nThis profile is a community-authored worked example of an OSCAL Profile\nderived from the open Agent Threat Rules (ATR) community-contributed AI RMF\ncatalog. It is NOT authored by NIST, NOT endorsed by NIST, and NOT a NIST\npublication. Any consumer should treat this artifact as community output and\nNOT as authoritative AI RMF baseline guidance.\n\nThe NIST AI RMF Core (NIST AI 100-1) remains the authoritative source for\nthe AI Risk Management Framework. The NIST OSCAL Team is the authoritative\nsource for any official OSCAL representation of the AI RMF, when such an\nartifact is published. The OSCAL representation of the AI RMF is currently\non hold at NIST per usnistgov/OSCAL#2234.\n\nProvenance:\n- Upstream catalog: github.com/Agent-Threat-Rule/ai-rmf-oscal-catalog (CC0 1.0)\n- Profile author: ATR community (NOT NIST)\n- Profile license: CC0 1.0 (public domain)\n- This vendored copy: usnistgov/oscal-content/src/examples/profile/...\n- Sync workflow: .github/workflows/community-ai-rmf-atr-sync.yml\n- Tracking issue: usnistgov/OSCAL#2234\n\nPROFILE RESOLUTION SPECIFICATION KNOWN-EDGE-CASE AUDIT:\n\nThe OSCAL Profile Resolution Specification has the following open issues at\nthe time of authoring this profile (verified against the live tracker on\n2026-05-11). Each is checked against this profile and the imported catalog\nto confirm it does not affect resolved-catalog correctness:\n\n1. usnistgov/OSCAL#2233 ('Profile Resolution \"As-Is\" Can Yield Invalid\n   Catalogs'): This profile uses 'include-controls' import-type, not the\n   'as-is' import behaviour described in the issue. Verified not applicable.\n\n2. usnistgov/OSCAL#2231 ('No Provision for Group ID Collision in Profile\n   Syntax or Profile Resolution'): The imported catalog uses unique group\n   IDs (ai-rmf-gv, ai-rmf-mp, ai-rmf-ms, ai-rmf-mg at top level, with\n   numbered subgroups ai-rmf-gv-1 through ai-rmf-mg-4). No collision risk\n   from this profile's include selection.\n\n3. usnistgov/OSCAL#2166 ('Profile resolution test for merge functionality\n   fails.'): This profile uses 'merge.flat' (the simplest merge mode) and\n   does not depend on 'merge.combine' behaviour where the issue surfaces.\n   Verified not applicable to this profile's resolved-catalog output.\n\n4. usnistgov/OSCAL#1314 ('Profile resolution: clarification needed wrt\n   pruning'): This profile uses explicit include-all OR explicit 'with-ids'\n   selection of named controls. No pruning ambiguity arises because every\n   selected control is fully retained.\n\nThis audit is the result of the profile author having read the issue\ndescriptions and traced each against this profile's import + include\nbehaviour. Any change to the upstream catalog or this profile's include\nselection invalidates this audit; the sync workflow at\n.github/workflows/community-ai-rmf-atr-sync.yml regenerates this audit\nwhen either is modified.",
+      "responsible-parties": [
+        {
+          "role-id": "prepared-by",
+          "party-uuids": [
+            "b2d3e4f5-6789-50ab-91cd-2e4f6a8b0c1d"
+          ],
+          "remarks": "Prepared by the ATR community. NIST did NOT prepare this profile."
+        },
+        {
+          "role-id": "prepared-for",
+          "party-uuids": [
+            "b2d3e4f5-6789-50ab-91cd-2e4f6a8b0c1d"
+          ],
+          "remarks": "Prepared for use as a community OSCAL example. Not prepared on behalf of NIST or any NIST program."
+        },
+        {
+          "role-id": "approved-by",
+          "party-uuids": [
+            "b2d3e4f5-6789-50ab-91cd-2e4f6a8b0c1d"
+          ],
+          "remarks": "Approved by the ATR community. NIST has NOT approved this profile."
+        }
+      ]
+    },
+    "imports": [
+      {
+        "href": "../../catalog/xml/community-ai-rmf-atr/ai-rmf-atr-catalog.xml",
+        "include-controls": [
+          {
+            "with-ids": [
+              "ai-rmf-gv-1.1",
+              "ai-rmf-gv-1.2",
+              "ai-rmf-gv-1.6",
+              "ai-rmf-gv-2.1",
+              "ai-rmf-gv-2.3",
+              "ai-rmf-gv-4.1",
+              "ai-rmf-gv-4.3",
+              "ai-rmf-mp-1.1",
+              "ai-rmf-mp-2.1",
+              "ai-rmf-mp-3.5",
+              "ai-rmf-mp-5.1",
+              "ai-rmf-ms-1.1",
+              "ai-rmf-ms-2.1",
+              "ai-rmf-ms-2.6",
+              "ai-rmf-ms-2.7",
+              "ai-rmf-mg-1.1",
+              "ai-rmf-mg-1.3",
+              "ai-rmf-mg-4.3"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "as-is": true
+    },
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "e2a8751c-6aff-571a-a121-9d925775e5ca",
+          "title": "AI RMF community OSCAL catalog (v0.4)",
+          "description": "Resolves to the v0.4 catalog generated by src/generator.py from this repository. Two rlinks are provided: the canonical HTTPS URL on GitHub for production use, and a relative filesystem path for local validation runs.",
+          "rlinks": [
+            {
+              "href": "https://raw.githubusercontent.com/Agent-Threat-Rule/ai-rmf-oscal-catalog/main/catalogs/ai-rmf-v0.4.json"
+            },
+            {
+              "href": "../catalogs/ai-rmf-v0.4.json"
+            }
+          ],
+          "remarks": "First rlink is preferred when validating from outside this repository. Second rlink works when validating from inside the repo (relative to profiles/)."
+        }
+      ]
+    }
+  }
+}
