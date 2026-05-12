@@ -19,6 +19,9 @@ artifacts: copy-readmes copy-xml-content resolve-xml-profiles convert-min-json-c
 .PHONY: checks
 checks: validate-xml-content validate-json-content validate-yaml-content validate-xml-by-cli ## Check all content with schema and other validation methods
 
+.PHONY: validate
+validate: validate-xml-content validate-json-content validate-yaml-content ## Validate all content with schemas only
+
 .PHONY: clean
 clean: clean-core-artifacts clean-readmes clean-json-content clean-xml-content clean-yaml-content ## Clean all generated content
 
