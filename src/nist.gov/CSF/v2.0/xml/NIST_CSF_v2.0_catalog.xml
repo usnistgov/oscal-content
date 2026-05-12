@@ -4,11 +4,23 @@
     xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 https://github.com/usnistgov/OSCAL/releases/download/v1.1.3/oscal_catalog_schema.xsd" 
     uuid="720a010b-253c-4a94-bb65-cb58400966f5">
     <metadata>
-        <title>NIST Cybersecurity Framework 2.0</title>
-        <published>2025-05-29T10:16:00-05:00</published>
-        <last-modified>2025-05-14T12:08:20.050176-05:00</last-modified>
+        <title>Electronic Version of NIST Cybersecurity Framework 2.0</title>
+        <published>2026-05-13T12:30:00-00:00</published>
+        <last-modified>2026-05-11T16:01:09.00000-00:00</last-modified>
         <version>1.0.0</version>
-        <oscal-version>v1.1.3</oscal-version>
+        <oscal-version>v1.2.2</oscal-version>
+        <revisions>
+            <revision>
+                <title>NIST Cybersecurity Framework 2.0</title>
+                <last-modified>2025-05-14T12:08:20.050176-05:00</last-modified>
+                <version>1.0.0</version>
+                <oscal-version>v1.1.3</oscal-version>
+                <link rel="version-history" href="720a010b-253c-4a94-bb65-cb58400966f5"/>
+                <remarks>
+                    <p>OSCAL v1.1.3 representation of the content of NIST Cybersecurity Framework 2.0.</p>
+                </remarks>
+            </revision>
+        </revisions>
         <prop name="framework-identifier" ns="https://csrc.nist.gov/ns/cprt" value="CSF" />
         <prop name="framework-version-identifier" ns="https://csrc.nist.gov/ns/cprt"
             value="CSF_2_0_0" />
@@ -4143,6 +4155,10 @@
         <resource uuid="a7f54afa-16cf-4200-a043-85aa554b93e4">
             <title>The NIST Cybersecurity Framework</title>
             <rlink href="https://www.nist.gov/cyberframework" media-type="application/html" />
+        </resource>
+        <resource uuid="720a010b-253c-4a94-bb65-cb58400966f5">
+            <title>NIST CSF v2.0 content in OSCAL 1.1.3</title>
+            <rlink href="https://github.com/usnistgov/oscal-content/releases/tag/v1.4.0"/>
         </resource>
     </back-matter>
 </catalog>
