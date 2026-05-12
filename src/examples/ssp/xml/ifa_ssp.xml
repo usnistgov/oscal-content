@@ -279,7 +279,7 @@
         </implemented-requirement>
     </control-implementation>
     <back-matter>
-        <resource uuid="60077e84-e62f-4375-8c6c-b0e0d4560c5f">
+        <resource uuid="5e139edd-86aa-4b65-8431-1192bd276658">
             <title>IFA SYSTEM1234 System Security Plan</title>
             <rlink media-type="application/oscal.ssp+zip" href="https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.4.0.zip"/>
         </resource>
