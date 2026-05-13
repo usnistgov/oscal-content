@@ -52,7 +52,7 @@
         </role>
         <party uuid="98c78f9b-5d50-4b01-b47f-d16801e8d0ab" type="organization">
             <name>OSCAL Program</name>
-            <short-name>NIST</short-name>
+            <short-name>NIST OSCAL</short-name>
             <email-address>oscal@nist.gov</email-address>
             <address>
                 <addr-line>National Institute of Standards and Technology</addr-line>
