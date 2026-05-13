@@ -95,7 +95,7 @@
             <link href="#31bf29e8-67f8-4379-b08e-f6f9deab7809" rel="external_reference"/>
             <part id="ES-03.01.01E" name="statement">
                 <p>Enforce dual authorization for
-                    <insert type="param" id-ref=A.03.01.01E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.01.01E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.01.01E" name="guidance" class="discussion">
@@ -126,7 +126,7 @@
             </part>
             <part id="DS-A.03.01.01E" name="assessment-objective">
                 <p>dual authorization is enforced for
-                    <insert type="param" id-ref=A.03.01.01E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.01.01E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.01.01E" rel="assessment-for"/>
             </part>
@@ -187,7 +187,7 @@
             <link href="#bd81756e-61ac-44e9-bc3d-5b3aa015d3cb" rel="external_reference"/>
             <part id="ES-03.01.02E" name="statement">
                 <p>Restrict the use of non-organizationally owned systems or system components to process, store, or transmit CUI using
-                    <insert type="param" id-ref=A.03.01.02E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.01.02E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.01.02E" name="guidance" class="discussion">
@@ -220,7 +220,7 @@
             </part>
             <part id="DS-A.03.01.02E" name="assessment-objective">
                 <p>the use of non-organizationally owned systems or system components to process, store, or transmit CUI is restricted using
-                    <insert type="param" id-ref=A.03.01.02E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.01.02E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.01.02E" rel="assessment-for"/>
             </part>
@@ -294,8 +294,8 @@
             <link href="#c3bd8782-2f5d-4d24-8b91-b88afab25422" rel="external_reference"/>
             <part id="ES-03.01.04E" name="statement">
                 <p>Limit the number of concurrent sessions for each
-                    <insert type="param" id-ref=A.03.01.04E.ODP.01"/> to
-                    <insert type="param" id-ref=A.03.01.04E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.01.04E.ODP.01"/> to
+                    <insert type="param" id-ref="A.03.01.04E.ODP.02"/>.
                 </p>
             </part>
             <part id="D-03.01.04E" name="guidance" class="discussion">
@@ -326,8 +326,8 @@
             </part>
             <part id="DS-A.03.01.04E" name="assessment-objective">
                 <p>the number of concurrent sessions for each
-                    <insert type="param" id-ref=A.03.01.04E.ODP.01"/> is limited to
-                    <insert type="param" id-ref=A.03.01.04E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.01.04E.ODP.01"/> is limited to
+                    <insert type="param" id-ref="A.03.01.04E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.01.04E" rel="assessment-for"/>
             </part>
@@ -625,13 +625,13 @@
                 <part id="ES-03.01.08E-a" name="item">
                     <prop name="label" value="ES-03.01.08E-a"/>
                     <p>Monitor system accounts for
-                        <insert type="param" id-ref=A.03.01.08E.ODP.01"/>.
+                        <insert type="param" id-ref="A.03.01.08E.ODP.01"/>.
                     </p>
                 </part>
                 <part id="ES-03.01.08E-b" name="item">
                     <prop name="label" value="ES-03.01.08E-b"/>
                     <p>Report atypical usage of system accounts to
-                        <insert type="param" id-ref=A.03.01.08E.ODP.02"/>.
+                        <insert type="param" id-ref="A.03.01.08E.ODP.02"/>.
                     </p>
                 </part>
             </part>
@@ -653,13 +653,13 @@
             </part>
             <part id="DS-A.03.01.08E.a" name="assessment-objective">
                 <p>system accounts are monitored for
-                    <insert type="param" id-ref=A.03.01.08E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.01.08E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.01.08E-a" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.01.08E.b" name="assessment-objective">
                 <p>atypical usage of system accounts is reported to
-                    <insert type="param" id-ref=A.03.01.08E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.01.08E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.01.08E-b" rel="assessment-for"/>
             </part>
@@ -720,7 +720,7 @@
                 <part id="ES-03.01.09E-b" name="item">
                     <prop name="label" value="ES-03.01.09E-b"/>
                     <p>Control access based upon
-                        <insert type="param" id-ref=A.03.01.09E.ODP.01"/>.
+                        <insert type="param" id-ref="A.03.01.09E.ODP.01"/>.
                     </p>
                 </part>
             </part>
@@ -760,7 +760,7 @@
             </part>
             <part id="DS-A.03.01.09E.b" name="assessment-objective">
                 <p>access is controlled based upon
-                    <insert type="param" id-ref=A.03.01.09E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.01.09E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.01.09E-b" rel="assessment-for"/>
             </part>
@@ -854,9 +854,9 @@
             <link href="#19071bfa-b136-4df5-9f64-eed511ed4f1d" rel="external_reference"/>
             <part id="ES-03.01.10E" name="statement">
                 <p>Use
-                    <insert type="param" id-ref=A.03.01.10E.ODP.01"/> associated with
-                    <insert type="param" id-ref=A.03.01.10E.ODP.02"/> to enforce
-                    <insert type="param" id-ref=A.03.01.10E.ODP.03"/> as a basis for flow control decisions.
+                    <insert type="param" id-ref="A.03.01.10E.ODP.01"/> associated with
+                    <insert type="param" id-ref="A.03.01.10E.ODP.02"/> to enforce
+                    <insert type="param" id-ref="A.03.01.10E.ODP.03"/> as a basis for flow control decisions.
                 </p>
             </part>
             <part id="D-03.01.10E" name="guidance" class="discussion">
@@ -887,11 +887,11 @@
             </part>
             <part id="DS-A.03.01.10E" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.01.10E.ODP.01"/> associated with
-                    <insert type="param" id-ref=A.03.01.10E.ODP.02"/>,
-                    <insert type="param" id-ref=A.03.01.10E.ODP.03"/>, and
-                    <insert type="param" id-ref=A.03.01.10E.ODP.04"/> are used to enforce
-                    <insert type="param" id-ref=A.03.01.10E.ODP.05"/> as a basis for flow control decisions.
+                    <insert type="param" id-ref="A.03.01.10E.ODP.01"/> associated with
+                    <insert type="param" id-ref="A.03.01.10E.ODP.02"/>,
+                    <insert type="param" id-ref="A.03.01.10E.ODP.03"/>, and
+                    <insert type="param" id-ref="A.03.01.10E.ODP.04"/> are used to enforce
+                    <insert type="param" id-ref="A.03.01.10E.ODP.05"/> as a basis for flow control decisions.
                 </p>
                 <link href="#ES-03.01.10E" rel="assessment-for"/>
             </part>
@@ -951,7 +951,7 @@
                 <part id="ES-03.01.11E-b" name="item">
                     <prop name="label" value="ES-03.01.11E-b"/>
                     <p>Control access based upon
-                        <insert type="param" id-ref=A.03.01.11E.ODP.01"/>.
+                        <insert type="param" id-ref="A.03.01.11E.ODP.01"/>.
                     </p>
                 </part>
             </part>
@@ -987,7 +987,7 @@
             </part>
             <part id="DS-A.03.01.11E.b" name="assessment-objective">
                 <p>access is controlled based upon
-                    <insert type="param" id-ref=A.03.01.11E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.01.11E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.01.11E-b" rel="assessment-for"/>
             </part>
@@ -1042,7 +1042,7 @@
             <link href="#b2875d20-46a1-4d35-9fce-87946fa192dc" rel="external_reference"/>
             <part id="ES-03.01.12E" name="statement">
                 <p>Separate CUI flows logically or physically using
-                    <insert type="param" id-ref=A.03.01.12E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.01.12E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.01.12E" name="guidance" class="discussion">
@@ -1073,7 +1073,7 @@
             </part>
             <part id="DS-A.03.01.12E" name="assessment-objective">
                 <p>CUI flows are logically or physically separated using
-                    <insert type="param" id-ref=A.03.01.12E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.01.12E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.01.12E" rel="assessment-for"/>
             </part>
@@ -1130,7 +1130,7 @@
             <link href="#845c9b4b-0491-4b5b-a8a7-4d4a6b8619f0" rel="external_reference"/>
             <part id="ES-03.01.13E" name="statement">
                 <p>Enforce information flow control based on
-                    <insert type="param" id-ref=A.03.01.13E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.01.13E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.01.13E" name="guidance" class="discussion">
@@ -1161,7 +1161,7 @@
             </part>
             <part id="DS-A.03.01.13E" name="assessment-objective">
                 <p>information flow control based on
-                    <insert type="param" id-ref=A.03.01.13E.ODP.01"/> is enforced.
+                    <insert type="param" id-ref="A.03.01.13E.ODP.01"/> is enforced.
                 </p>
                 <link href="#ES-03.01.13E" rel="assessment-for"/>
             </part>
@@ -1244,15 +1244,15 @@
                 <part id="ES-03.01.14E-a" name="item">
                     <prop name="label" value="ES-03.01.14E-a"/>
                     <p>Enforce information flow control using
-                        <insert type="param" id-ref=A.03.01.14E.ODP.01"/> as a basis for flow control decisions for
-                        <insert type="param" id-ref=A.03.01.14E.ODP.02"/>.
+                        <insert type="param" id-ref="A.03.01.14E.ODP.01"/> as a basis for flow control decisions for
+                        <insert type="param" id-ref="A.03.01.14E.ODP.02"/>.
                     </p>
                 </part>
                 <part id="ES-03.01.14E-b" name="item">
                     <prop name="label" value="ES-03.01.14E-b"/>
                     <p>
-                        <insert type="param" id-ref=A.03.01.14E.ODP.03"/> data after a filter processing failure in accordance with
-                        <insert type="param" id-ref=A.03.01.14E.ODP.04"/>.
+                        <insert type="param" id-ref="A.03.01.14E.ODP.03"/> data after a filter processing failure in accordance with
+                        <insert type="param" id-ref="A.03.01.14E.ODP.04"/>.
                     </p>
                 </part>
             </part>
@@ -1284,15 +1284,15 @@
             </part>
             <part id="DS-A.03.01.14E.a" name="assessment-objective">
                 <p>information flow control is enforced using
-                    <insert type="param" id-ref=A.03.01.14E.ODP.01"/> as a basis for flow control decisions for
-                    <insert type="param" id-ref=A.03.01.14E.ODP.02"/> .
+                    <insert type="param" id-ref="A.03.01.14E.ODP.01"/> as a basis for flow control decisions for
+                    <insert type="param" id-ref="A.03.01.14E.ODP.02"/> .
                 </p>
                 <link href="#ES-03.01.14E-a" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.01.14E.b" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.01.14E.ODP.03"/> data after a filter processing failure in accordance with
-                    <insert type="param" id-ref=A.03.01.14E.ODP.04"/>.
+                    <insert type="param" id-ref="A.03.01.14E.ODP.03"/> data after a filter processing failure in accordance with
+                    <insert type="param" id-ref="A.03.01.14E.ODP.04"/>.
                 </p>
                 <link href="#ES-03.01.14E-b" rel="assessment-for"/>
             </part>
@@ -1348,7 +1348,7 @@
             <link href="#e46a035a-76a4-4b73-b89b-3d884550b205" rel="external_reference"/>
             <part id="ES-03.01.15E" name="statement">
                 <p>Use
-                    <insert type="param" id-ref=A.03.01.15E.ODP.01"/> to validate data that is essential for information flow decisions when transferring CUI between security domains.
+                    <insert type="param" id-ref="A.03.01.15E.ODP.01"/> to validate data that is essential for information flow decisions when transferring CUI between security domains.
                 </p>
             </part>
             <part id="D-03.01.15E" name="guidance" class="discussion">
@@ -1379,7 +1379,7 @@
             </part>
             <part id="DS-A.03.01.15E" name="assessment-objective">
                 <p>when transferring information between security domains,
-                    <insert type="param" id-ref=A.03.01.15E.ODP.01"/> are used to validate data that is essential for information flow decisions.
+                    <insert type="param" id-ref="A.03.01.15E.ODP.01"/> are used to validate data that is essential for information flow decisions.
                 </p>
                 <link href="#ES-03.01.15E" rel="assessment-for"/>
             </part>
@@ -1434,7 +1434,7 @@
             <link href="#58950fbc-6437-4e7b-b044-2ef2da2a6fd2" rel="external_reference"/>
             <part id="ES-03.01.16E" name="statement">
                 <p>Decompose CUI into
-                    <insert type="param" id-ref=A.03.01.16E.ODP.01"/> for submission to policy enforcement mechanisms when transferring CUI between different security domains.
+                    <insert type="param" id-ref="A.03.01.16E.ODP.01"/> for submission to policy enforcement mechanisms when transferring CUI between different security domains.
                 </p>
             </part>
             <part id="D-03.01.16E" name="guidance" class="discussion">
@@ -1465,7 +1465,7 @@
             </part>
             <part id="DS-A.03.01.16E" name="assessment-objective">
                 <p>when transferring information between different security domains, CUI is decomposed into
-                    <insert type="param" id-ref=A.03.01.16E.ODP.01"/> for submission to policy enforcement mechanisms
+                    <insert type="param" id-ref="A.03.01.16E.ODP.01"/> for submission to policy enforcement mechanisms
                 </p>
                 <link href="#ES-03.01.16E" rel="assessment-for"/>
             </part>
@@ -1529,13 +1529,13 @@
                 <part id="ES-03.01.17E-a" name="item">
                     <prop name="label" value="ES-03.01.17E-a"/>
                     <p>Examine CUI for the presence of
-                        <insert type="param" id-ref=A.03.01.17E.ODP.01"/> when transferring information between different security domains.
+                        <insert type="param" id-ref="A.03.01.17E.ODP.01"/> when transferring information between different security domains.
                     </p>
                 </part>
                 <part id="ES-03.01.17E-b" name="item">
                     <prop name="label" value="ES-03.01.17E-b"/>
                     <p>Prohibit the transfer of the CUI defined in 03.01.17E.a in accordance with the
-                        <insert type="param" id-ref=A.03.01.17E.ODP.02"/>.
+                        <insert type="param" id-ref="A.03.01.17E.ODP.02"/>.
                     </p>
                 </part>
             </part>
@@ -1567,13 +1567,13 @@
             </part>
             <part id="DS-A.03.01.17E.a" name="assessment-objective">
                 <p>when transferring information between different security domains, information is examined for the presence of
-                    <insert type="param" id-ref=A.03.01.17E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.01.17E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.01.17E-a" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.01.17E.b" name="assessment-objective">
                 <p>the transfer of CUI defined in 03.01.17E.a is prohibited in accordance with
-                    <insert type="param" id-ref=A.03.01.17E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.01.17E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.01.17E-b" rel="assessment-for"/>
             </part>
@@ -1668,7 +1668,7 @@
                     <part id="ES-03.02.01E-a-2" name="item">
                         <prop name="label" value="ES-03.02.01E-a-2"/>
                         <p>On recognizing suspicious communications and anomalous behavior in systems using
-                            <insert type="param" id-ref=A.03.02.01E.ODP.01"/>, and
+                            <insert type="param" id-ref="A.03.02.01E.ODP.01"/>, and
                         </p>
                     </part>
                     <part id="ES-03.02.01E-a-3" name="item">
@@ -1679,8 +1679,8 @@
                 <part id="ES-03.02.01E-b" name="item">
                     <prop name="label" value="ES-03.02.01E-b"/>
                     <p>Update security literacy training content
-                        <insert type="param" id-ref=A.03.02.01E.ODP.02"/> and following
-                        <insert type="param" id-ref=A.03.02.01E.ODP.03"/>.
+                        <insert type="param" id-ref="A.03.02.01E.ODP.02"/> and following
+                        <insert type="param" id-ref="A.03.02.01E.ODP.03"/>.
                     </p>
                 </part>
             </part>
@@ -1716,7 +1716,7 @@
             </part>
             <part id="DS-A.03.02.01E.a.02" name="assessment-objective">
                 <p>security literacy training on recognizing suspicious communications and anomalous behavior in systems using
-                    <insert type="param" id-ref=A.03.02.01E.ODP.01"/> is provided to system users.
+                    <insert type="param" id-ref="A.03.02.01E.ODP.01"/> is provided to system users.
                 </p>
                 <link href="#ES-03.02.01E-a-2" rel="assessment-for"/>
             </part>
@@ -1726,13 +1726,13 @@
             </part>
             <part id="DS-A.03.02.01E.b.01" name="assessment-objective">
                 <p>security literacy training content is updated
-                    <insert type="param" id-ref=A.03.02.01E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.02.01E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.02.01E-b" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.02.01E.b.02" name="assessment-objective">
                 <p>security literacy training content is updated following
-                    <insert type="param" id-ref=A.03.02.01E.ODP.03"/>
+                    <insert type="param" id-ref="A.03.02.01E.ODP.03"/>
                 </p>
                 <link href="#ES-03.02.01E-b" rel="assessment-for"/>
             </part>
@@ -1847,7 +1847,7 @@
             <link href="#4e91e018-7f06-4b35-9e11-82ec63730a82" rel="external_reference"/>
             <part id="ES-03.02.03E" name="statement">
                 <p>Provide feedback on organizational training results to the following personnel
-                    <insert type="param" id-ref=A.03.02.03E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.02.03E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.02.03E" name="guidance" class="discussion">
@@ -1878,7 +1878,7 @@
             </part>
             <part id="DS-A.03.02.03E" name="assessment-objective">
                 <p>feedback on organizational training results is provided to
-                    <insert type="param" id-ref=A.03.02.03E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.02.03E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.02.03E" rel="assessment-for"/>
             </part>
@@ -1927,7 +1927,7 @@
             <link href="#b78d8b19-021f-4995-8805-d7d7236472b7" rel="external_reference"/>
             <part id="ES-03.02.04E" name="statement">
                 <p>Train
-                    <insert type="param" id-ref=A.03.02.04E.ODP.01"/> to detect counterfeit system components.
+                    <insert type="param" id-ref="A.03.02.04E.ODP.01"/> to detect counterfeit system components.
                 </p>
             </part>
             <part id="D-03.02.04E" name="guidance" class="discussion">
@@ -1958,7 +1958,7 @@
             </part>
             <part id="DS-A.03.02.04E" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.02.04E.ODP.01"/> are trained to detect counterfeit system components.
+                    <insert type="param" id-ref="A.03.02.04E.ODP.01"/> are trained to detect counterfeit system components.
                 </p>
                 <link href="#ES-03.02.04E" rel="assessment-for"/>
             </part>
@@ -2114,9 +2114,9 @@
             <link href="#a4e9d937-ba64-4e9e-af1f-52d7c0a8236b" rel="external_reference"/>
             <part id="ES-03.03.02E" name="statement">
                 <p>Provide an alert within
-                    <insert type="param" id-ref=A.03.03.02E.ODP.01"/> to
-                    <insert type="param" id-ref=A.03.03.02E.ODP.02"/> when the following audit failure events occur:
-                    <insert type="param" id-ref=A.03.03.02E.ODP.03"/>.
+                    <insert type="param" id-ref="A.03.03.02E.ODP.01"/> to
+                    <insert type="param" id-ref="A.03.03.02E.ODP.02"/> when the following audit failure events occur:
+                    <insert type="param" id-ref="A.03.03.02E.ODP.03"/>.
                 </p>
             </part>
             <part id="D-03.03.02E" name="guidance" class="discussion">
@@ -2147,9 +2147,9 @@
             </part>
             <part id="DS-A.03.03.02E" name="assessment-objective">
                 <p>an alert is provided within
-                    <insert type="param" id-ref=A.03.03.02E.ODP.01"/> to
-                    <insert type="param" id-ref=A.03.03.02E.ODP.02"/> when
-                    <insert type="param" id-ref=A.03.03.02E.ODP.03"/> occur.
+                    <insert type="param" id-ref="A.03.03.02E.ODP.01"/> to
+                    <insert type="param" id-ref="A.03.03.02E.ODP.02"/> when
+                    <insert type="param" id-ref="A.03.03.02E.ODP.03"/> occur.
                 </p>
                 <link href="#ES-03.03.02E" rel="assessment-for"/>
             </part>
@@ -2210,8 +2210,8 @@
             <link href="#ff8de932-aeb4-44e4-bcdd-dd64f65b296c" rel="external_reference"/>
             <part id="ES-03.03.03E" name="statement">
                 <p>Enforce dual authorization for
-                    <insert type="param" id-ref=A.03.03.03E.ODP.01"/> of
-                    <insert type="param" id-ref=A.03.03.03E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.03.03E.ODP.01"/> of
+                    <insert type="param" id-ref="A.03.03.03E.ODP.02"/>.
                 </p>
             </part>
             <part id="D-03.03.03E" name="guidance" class="discussion">
@@ -2242,8 +2242,8 @@
             </part>
             <part id="DS-A.03.03.03E" name="assessment-objective">
                 <p>dual authorization is enforced for the
-                    <insert type="param" id-ref=A.03.03.03E.ODP.01"/> of
-                    <insert type="param" id-ref=A.03.03.03E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.03.03E.ODP.01"/> of
+                    <insert type="param" id-ref="A.03.03.03E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.03.03E" rel="assessment-for"/>
             </part>
@@ -2310,7 +2310,7 @@
             <link href="#4b4b1f2b-40f9-4240-a2dc-8d222dc6a562" rel="external_reference"/>
             <part id="ES-03.03.04E" name="statement">
                 <p>Integrate analysis of audit records with analysis of
-                    <insert type="param" id-ref=A.03.03.04E.ODP.01"/> to further enhance the ability to identify inappropriate or unusual activity.
+                    <insert type="param" id-ref="A.03.03.04E.ODP.01"/> to further enhance the ability to identify inappropriate or unusual activity.
                 </p>
             </part>
             <part id="D-03.03.04E" name="guidance" class="discussion">
@@ -2341,7 +2341,7 @@
             </part>
             <part id="DS-A.03.03.04E" name="assessment-objective">
                 <p>analysis of audit records is integrated with analysis of
-                    <insert type="param" id-ref=A.03.03.04E.ODP.01"/> to further enhance the ability to identify inappropriate or unusual activity.
+                    <insert type="param" id-ref="A.03.03.04E.ODP.01"/> to further enhance the ability to identify inappropriate or unusual activity.
                 </p>
                 <link href="#ES-03.03.04E" rel="assessment-for"/>
             </part>
@@ -2443,13 +2443,13 @@
                 <part id="ES-03.04.02E-a" name="item">
                     <prop name="label" value="ES-03.04.02E-a"/>
                     <p>Detect the presence of unauthorized or misconfigured system components using
-                        <insert type="param" id-ref=A.03.04.02E.ODP.01"/>.
+                        <insert type="param" id-ref="A.03.04.02E.ODP.01"/>.
                     </p>
                 </part>
                 <part id="ES-03.04.02E-b" name="item">
                     <prop name="label" value="ES-03.04.02E-b"/>
                     <p>Take the following actions when unauthorized or misconfigured components are detected:
-                        <insert type="param" id-ref=A.03.04.02E.ODP.02"/> .
+                        <insert type="param" id-ref="A.03.04.02E.ODP.02"/> .
                     </p>
                 </part>
             </part>
@@ -2493,13 +2493,13 @@
             </part>
             <part id="DS-A.03.04.02E.a" name="assessment-objective">
                 <p>the presence of unauthorized or misconfigured system components is detected using
-                    <insert type="param" id-ref=A.03.04.02E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.04.02E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.04.02E-a" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.04.02E.b" name="assessment-objective">
                 <p>one or more of the following actions is/are taken when unauthorized or misconfigured system components are detected:
-                    <insert type="param" id-ref=A.03.04.02E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.04.02E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.04.02E-b" rel="assessment-for"/>
             </part>
@@ -2606,7 +2606,7 @@
             <link href="#773926cc-773e-46ac-945d-92478081b511" rel="external_reference"/>
             <part id="ES-03.04.03E" name="statement">
                 <p>Maintain the currency, completeness, accuracy, and availability of the inventory of system components using
-                    <insert type="param" id-ref=A.03.04.03E_prm_1"/>.
+                    <insert type="param" id-ref="A.03.04.03E_prm_1"/>.
                 </p>
             </part>
             <part id="D-03.04.03E" name="guidance" class="discussion">
@@ -2647,25 +2647,25 @@
             </part>
             <part id="DS-A.03.04.03E.01" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.04.03E.ODP.01"/> are used to maintain the currency of the system component inventory.
+                    <insert type="param" id-ref="A.03.04.03E.ODP.01"/> are used to maintain the currency of the system component inventory.
                 </p>
                 <link href="#ES-03.04.03E" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.04.03E.02" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.04.03E.ODP.02"/> are used to maintain the completeness of the system component inventory.
+                    <insert type="param" id-ref="A.03.04.03E.ODP.02"/> are used to maintain the completeness of the system component inventory.
                 </p>
                 <link href="#ES-03.04.03E" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.04.03E.03" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.04.03E.ODP.03"/> are used to maintain the accuracy of the system component inventory.
+                    <insert type="param" id-ref="A.03.04.03E.ODP.03"/> are used to maintain the accuracy of the system component inventory.
                 </p>
                 <link href="#ES-03.04.03E" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.04.03E.04" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.04.03E.ODP.04"/> are used to maintain the availability of the system component inventory.
+                    <insert type="param" id-ref="A.03.04.03E.ODP.04"/> are used to maintain the availability of the system component inventory.
                 </p>
                 <link href="#ES-03.04.03E" rel="assessment-for"/>
             </part>
@@ -2728,7 +2728,7 @@
             <link href="#2c095e86-5096-41fa-9017-f008ff84b4da" rel="external_reference"/>
             <part id="ES-03.04.04E" name="statement">
                 <p>Maintain the currency, completeness, accuracy, and availability of the baseline configuration of the system using
-                    <insert type="param" id-ref=A.03.04.04E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.04.04E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.04.04E" name="guidance" class="discussion">
@@ -2769,25 +2769,25 @@
             </part>
             <part id="DS-A.03.04.04E.01" name="assessment-objective">
                 <p>the currency of the baseline configuration of the system is maintained using
-                    <insert type="param" id-ref=A.03.04.04E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.04.04E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.04.04E" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.04.04E.02" name="assessment-objective">
                 <p>the completeness of the baseline configuration of the system is maintained using
-                    <insert type="param" id-ref=A.03.04.04E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.04.04E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.04.04E" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.04.04E.03" name="assessment-objective">
                 <p>the accuracy of the baseline configuration of the system is maintained using
-                    <insert type="param" id-ref=A.03.04.04E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.04.04E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.04.04E" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.04.04E.04" name="assessment-objective">
                 <p>the availability of the baseline configuration of the system is maintained using
-                    <insert type="param" id-ref=A.03.04.04E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.04.04E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.04.04E" rel="assessment-for"/>
             </part>
@@ -2859,7 +2859,7 @@
             <link href="#dfd91a2e-cacc-4a41-82ca-4f313cfd5ace" rel="external_reference"/>
             <part id="ES-03.04.05E" name="statement">
                 <p>Enforce dual authorization for implementing changes to
-                    <insert type="param" id-ref=A.03.04.05E_prm_1"/>.
+                    <insert type="param" id-ref="A.03.04.05E_prm_1"/>.
                 </p>
             </part>
             <part id="D-03.04.05E" name="guidance" class="discussion">
@@ -2890,13 +2890,13 @@
             </part>
             <part id="DS-A.03.04.05E.01" name="assessment-objective">
                 <p>dual authorization for implementing changes to
-                    <insert type="param" id-ref=A.03.04.05E.ODP.01"/> is enforced.
+                    <insert type="param" id-ref="A.03.04.05E.ODP.01"/> is enforced.
                 </p>
                 <link href="#ES-03.04.05E" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.04.05E.02" name="assessment-objective">
                 <p>dual authorization for implementing changes to
-                    <insert type="param" id-ref=A.03.04.05E.ODP.02"/> is enforced.
+                    <insert type="param" id-ref="A.03.04.05E.ODP.02"/> is enforced.
                 </p>
                 <link href="#ES-03.04.05E" rel="assessment-for"/>
             </part>
@@ -2960,7 +2960,7 @@
             <link href="#3ad9454b-7a02-42b7-b90c-d4920bb18777" rel="external_reference"/>
             <part id="ES-03.04.06E" name="statement">
                 <p>Retain
-                    <insert type="param" id-ref=A.03.04.06E.ODP.01"/> previous versions of baseline configurations of the system to support rollback.
+                    <insert type="param" id-ref="A.03.04.06E.ODP.01"/> previous versions of baseline configurations of the system to support rollback.
                 </p>
             </part>
             <part id="D-03.04.06E" name="guidance" class="discussion">
@@ -3001,7 +3001,7 @@
             </part>
             <part id="DS-A.03.04.06E" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.04.06E.ODP.01"/> previous versions of baseline configurations of the system are retained to support rollback.
+                    <insert type="param" id-ref="A.03.04.06E.ODP.01"/> previous versions of baseline configurations of the system are retained to support rollback.
                 </p>
                 <link href="#ES-03.04.06E" rel="assessment-for"/>
             </part>
@@ -3219,7 +3219,7 @@
             <link href="#a6207520-295d-4c60-9450-949356317cac" rel="external_reference"/>
             <part id="ES-03.05.01E" name="statement">
                 <p>Authenticate
-                    <insert type="param" id-ref=A.03.05.01E.ODP.01"/> before establishing a system connection using bidirectional authentication that is cryptographically based.
+                    <insert type="param" id-ref="A.03.05.01E.ODP.01"/> before establishing a system connection using bidirectional authentication that is cryptographically based.
                 </p>
             </part>
             <part id="D-03.05.01E" name="guidance" class="discussion">
@@ -3260,7 +3260,7 @@
             </part>
             <part id="DS-A.03.05.01E" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.05.01E.ODP.01"/> are authenticated before establishing a system connection using bidirectional authentication that is cryptographically based.
+                    <insert type="param" id-ref="A.03.05.01E.ODP.01"/> are authenticated before establishing a system connection using bidirectional authentication that is cryptographically based.
                 </p>
                 <link href="#ES-03.05.01E" rel="assessment-for"/>
             </part>
@@ -3328,13 +3328,13 @@
                 <part id="ES-03.05.02E-a" name="item">
                     <prop name="label" value="ES-03.05.02E-a"/>
                     <p>Employ
-                        <insert type="param" id-ref=A.03.05.02E.ODP.01"/> to generate and manage passwords.
+                        <insert type="param" id-ref="A.03.05.02E.ODP.01"/> to generate and manage passwords.
                     </p>
                 </part>
                 <part id="ES-03.05.02E-b" name="item">
                     <prop name="label" value="ES-03.05.02E-b"/>
                     <p>Protect the passwords using
-                        <insert type="param" id-ref=A.03.05.02E.ODP.02"/>.
+                        <insert type="param" id-ref="A.03.05.02E.ODP.02"/>.
                     </p>
                 </part>
             </part>
@@ -3366,13 +3366,13 @@
             </part>
             <part id="DS-A.03.05.02E.a" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.05.02E.ODP.01"/> are employed to generate and manage passwords.
+                    <insert type="param" id-ref="A.03.05.02E.ODP.01"/> are employed to generate and manage passwords.
                 </p>
                 <link href="#ES-03.05.02E-a" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.05.02E.b" name="assessment-objective">
                 <p>passwords are protected using
-                    <insert type="param" id-ref=A.03.05.02E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.05.02E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.05.02E-b" rel="assessment-for"/>
             </part>
@@ -3426,7 +3426,7 @@
             <link href="#7f33ea69-e0a7-4ffd-a405-559bfce23674" rel="external_reference"/>
             <part id="ES-03.05.03E" name="statement">
                 <p>Handle device identification and authentication based on attestation by
-                    <insert type="param" id-ref=A.03.05.03E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.05.03E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.05.03E" name="guidance" class="discussion">
@@ -3467,7 +3467,7 @@
             </part>
             <part id="DS-A.03.05.03E" name="assessment-objective">
                 <p>device identification and authentication are handled based on attestation by
-                    <insert type="param" id-ref=A.03.05.03E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.05.03E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.05.03E" rel="assessment-for"/>
             </part>
@@ -3598,7 +3598,7 @@
             <link href="#625e2402-ce8d-48d6-b4a9-00bd50b980e3" rel="external_reference"/>
             <part id="ES-03.05.05E" name="statement">
                 <p>Prohibit the use of cached authenticators after
-                    <insert type="param" id-ref=A.03.05.05E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.05.05E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.05.05E" name="guidance" class="discussion">
@@ -3629,7 +3629,7 @@
             </part>
             <part id="DS-A.03.05.05E" name="assessment-objective">
                 <p>the use of cached authenticators is prohibited after
-                    <insert type="param" id-ref=A.03.05.05E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.05.05E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.05.05E" rel="assessment-for"/>
             </part>
@@ -3789,8 +3789,8 @@
             <link href="#99879d5e-31a2-431b-938d-1363b026de07" rel="external_reference"/>
             <part id="ES-03.05.07E" name="statement">
                 <p>Employ identity providers and authorization servers to manage user, device, and non-person entity identities, attributes, and access rights that support authentication and authorization decisions in accordance with
-                    <insert type="param" id-ref=A.03.05.07E.ODP.01"/> using
-                    <insert type="param" id-ref=A.03.05.07E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.05.07E.ODP.01"/> using
+                    <insert type="param" id-ref="A.03.05.07E.ODP.02"/>.
                 </p>
             </part>
             <part id="D-03.05.07E" name="guidance" class="discussion">
@@ -3821,22 +3821,22 @@
             </part>
             <part id="DS-A.03.05.07E.01" name="assessment-objective">
                 <p>identity providers are employed to manage user, device, and non-person entity identities, attributes, and access rights supporting authentication decisions in accordance with
-                    <insert type="param" id-ref=A.03.05.07E.ODP.01"/> using
-                    <insert type="param" id-ref=A.03.05.07E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.05.07E.ODP.01"/> using
+                    <insert type="param" id-ref="A.03.05.07E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.05.07E" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.05.07E.02" name="assessment-objective">
                 <p>identity providers are employed to manage user, device, and non-person entity identities, attributes, and access rights supporting authorization decisions in accordance with
-                    <insert type="param" id-ref=A.03.05.07E.ODP.01"/> using
-                    <insert type="param" id-ref=A.03.05.07E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.05.07E.ODP.01"/> using
+                    <insert type="param" id-ref="A.03.05.07E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.05.07E" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.05.07E.03" name="assessment-objective">
                 <p>authorization servers are employed to manage user, device, and non-person entity identities, attributes, and access rights supporting authentication decisions in accordance with
-                    <insert type="param" id-ref=A.03.05.07E.ODP.01"/> using
-                    <insert type="param" id-ref=A.03.05.07E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.05.07E.ODP.01"/> using
+                    <insert type="param" id-ref="A.03.05.07E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.05.07E" rel="assessment-for"/>
             </part>
@@ -3973,7 +3973,7 @@
             <link href="#6549e81c-17b2-4153-8e2a-90b49cc149f5" rel="external_reference"/>
             <part id="ES-03.06.02E" name="statement">
                 <p>Establish and maintain an integrated incident response team that can be deployed to any location identified by the organization in
-                    <insert type="param" id-ref=A.03.06.02E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.06.02E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.06.02E" name="guidance" class="discussion">
@@ -4032,7 +4032,7 @@
             </part>
             <part id="DS-A.03.06.02E.03" name="assessment-objective">
                 <p>the integrated incident response team can be deployed to any location identified by the organization in
-                    <insert type="param" id-ref=A.03.06.02E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.06.02E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.06.02E" rel="assessment-for"/>
             </part>
@@ -4078,7 +4078,7 @@
             <link href="#f180ad71-6c1c-4756-bb93-b80767a52f98" rel="external_reference"/>
             <part id="ES-03.06.03E" name="statement">
                 <p>Analyze anomalous or suspected adversarial behavior in or related to
-                    <insert type="param" id-ref=A.03.06.03E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.06.03E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.06.03E" name="guidance" class="discussion">
@@ -4099,7 +4099,7 @@
             </part>
             <part id="DS-A.03.06.03E" name="assessment-objective">
                 <p>anomalous or suspected adversarial behavior in or related to
-                    <insert type="param" id-ref=A.03.06.03E.ODP.01"/> is analyzed.
+                    <insert type="param" id-ref="A.03.06.03E.ODP.01"/> is analyzed.
                 </p>
                 <link href="#ES-03.06.03E" rel="assessment-for"/>
             </part>
@@ -4187,7 +4187,7 @@
             <link href="#93b92a8b-bca2-44dd-a915-e4d7735c3e75" rel="external_reference"/>
             <part id="ES-03.06.04E" name="statement">
                 <p>Track incidents and collect and analyze incident information using
-                    <insert type="param" id-ref=A.03.06.04E_prm_1"/>.
+                    <insert type="param" id-ref="A.03.06.04E_prm_1"/>.
                 </p>
             </part>
             <part id="D-03.06.04E" name="guidance" class="discussion">
@@ -4208,19 +4208,19 @@
             </part>
             <part id="DS-A.03.06.04E.01" name="assessment-objective">
                 <p>incidents are tracked using
-                    <insert type="param" id-ref=A.03.06.04E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.06.04E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.06.04E" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.06.04E.02" name="assessment-objective">
                 <p>incident information is collected using
-                    <insert type="param" id-ref=A.03.06.04E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.06.04E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.06.04E" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.06.04E.03" name="assessment-objective">
                 <p>incident information is analyzed using
-                    <insert type="param" id-ref=A.03.06.04E.ODP.03"/>.
+                    <insert type="param" id-ref="A.03.06.04E.ODP.03"/>.
                 </p>
                 <link href="#ES-03.06.04E" rel="assessment-for"/>
             </part>
@@ -4345,7 +4345,7 @@
             <link href="#e1fde113-1bf1-4822-a218-d81be0b790be" rel="external_reference"/>
             <part id="ES-03.08.01E" name="statement">
                 <p>Enforce dual authorization for the sanitization of
-                    <insert type="param" id-ref=A.03.08.01E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.08.01E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.08.01E" name="guidance" class="discussion">
@@ -4376,7 +4376,7 @@
             </part>
             <part id="DS-A.03.08.01E" name="assessment-objective">
                 <p>dual authorization for the sanitization of
-                    <insert type="param" id-ref=A.03.08.01E.ODP.01"/> is enforced.
+                    <insert type="param" id-ref="A.03.08.01E.ODP.01"/> is enforced.
                 </p>
                 <link href="#ES-03.08.01E" rel="assessment-for"/>
             </part>
@@ -4433,7 +4433,7 @@
             <link href="#a6892981-eb36-48a1-8a1b-3ee95e9afe59" rel="external_reference"/>
             <part id="ES-03.08.02E" name="statement">
                 <p>Enforce dual authorization for the deletion or destruction of
-                    <insert type="param" id-ref=A.03.08.02E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.08.02E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.08.02E" name="guidance" class="discussion">
@@ -4464,7 +4464,7 @@
             </part>
             <part id="DS-A.03.08.02E" name="assessment-objective">
                 <p>dual authorization for the deletion or destruction of
-                    <insert type="param" id-ref=A.03.08.02E.ODP.01"/> is enforced.
+                    <insert type="param" id-ref="A.03.08.02E.ODP.01"/> is enforced.
                 </p>
                 <link href="#ES-03.08.02E" rel="assessment-for"/>
             </part>
@@ -4539,7 +4539,7 @@
             <link href="#ca993761-8fd9-47e8-931a-8d83ba6b3080" rel="external_reference"/>
             <part id="ES-03.08.03E" name="statement">
                 <p>Test backup information
-                    <insert type="param" id-ref=A.03.08.03E_prm_1"/> to verify media reliability and information integrity.
+                    <insert type="param" id-ref="A.03.08.03E_prm_1"/> to verify media reliability and information integrity.
                 </p>
             </part>
             <part id="D-03.08.03E" name="guidance" class="discussion">
@@ -4580,13 +4580,13 @@
             </part>
             <part id="DS-A.03.08.03E.01" name="assessment-objective">
                 <p>backup information is tested
-                    <insert type="param" id-ref=A.03.08.03E.ODP.01"/> to verify media reliability.
+                    <insert type="param" id-ref="A.03.08.03E.ODP.01"/> to verify media reliability.
                 </p>
                 <link href="#ES-03.08.03E" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.08.03E.02" name="assessment-objective">
                 <p>backup information is tested
-                    <insert type="param" id-ref=A.03.08.03E.ODP.02"/> to verify information integrity.
+                    <insert type="param" id-ref="A.03.08.03E.ODP.02"/> to verify information integrity.
                 </p>
                 <link href="#ES-03.08.03E" rel="assessment-for"/>
             </part>
@@ -4655,7 +4655,7 @@
             <link href="#83ab460d-592c-41d8-99d1-9a20351c55d4" rel="external_reference"/>
             <part id="ES-03.08.04E" name="statement">
                 <p>Provide for the recovery and reconstitution of the system to a known state within
-                    <insert type="param" id-ref=A.03.08.04E_prm_1"/> after a disruption, compromise, or failure.
+                    <insert type="param" id-ref="A.03.08.04E_prm_1"/> after a disruption, compromise, or failure.
                 </p>
             </part>
             <part id="D-03.08.04E" name="guidance" class="discussion">
@@ -4676,13 +4676,13 @@
             </part>
             <part id="DS-A.03.08.04E.01" name="assessment-objective">
                 <p>the recovery of the system to a known state is provided within
-                    <insert type="param" id-ref=A.03.08.04E.ODP.01"/> after a disruption, compromise, or failure.
+                    <insert type="param" id-ref="A.03.08.04E.ODP.01"/> after a disruption, compromise, or failure.
                 </p>
                 <link href="#ES-03.08.04E" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.08.04E.02" name="assessment-objective">
                 <p>the reconstitution of the system to a known state is provided within
-                    <insert type="param" id-ref=A.03.08.04E.ODP.02"/> after a disruption, compromise, or failure.
+                    <insert type="param" id-ref="A.03.08.04E.ODP.02"/> after a disruption, compromise, or failure.
                 </p>
                 <link href="#ES-03.08.04E" rel="assessment-for"/>
             </part>
@@ -4781,7 +4781,7 @@
                 <part id="ES-03.09.03E-b" name="item">
                     <prop name="label" value="ES-03.09.03E-b"/>
                     <p>Review and update the access agreements
-                        <insert type="param" id-ref=A.03.09.03E_prm_1"/>.
+                        <insert type="param" id-ref="A.03.09.03E_prm_1"/>.
                     </p>
                 </part>
                 <part id="ES-03.09.03E-c" name="item">
@@ -4794,7 +4794,7 @@
                     <part id="ES-03.09.03E-c-2" name="item">
                         <prop name="label" value="ES-03.09.03E-c-2"/>
                         <p>Re-sign access agreements to maintain access to systems when access agreements have been updated or
-                            <insert type="param" id-ref=A.03.09.03E_prm_1"/>.
+                            <insert type="param" id-ref="A.03.09.03E_prm_1"/>.
                         </p>
                     </part>
                 </part>
@@ -4821,13 +4821,13 @@
             </part>
             <part id="DS-A.03.09.03E.b.01" name="assessment-objective">
                 <p>access agreements are reviewed
-                    <insert type="param" id-ref=A.03.09.03E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.09.03E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.09.03E-b" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.09.03E.b.02" name="assessment-objective">
                 <p>access agreements are updated
-                    <insert type="param" id-ref=A.03.09.03E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.09.03E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.09.03E-b" rel="assessment-for"/>
             </part>
@@ -4837,7 +4837,7 @@
             </part>
             <part id="DS-A.03.09.03E.c.02" name="assessment-objective">
                 <p>individuals requiring access to CUI and systems processing, storing, or transmitting CUI re-sign access agreements to maintain access when access agreements have been updated or
-                    <insert type="param" id-ref=A.03.09.03E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.09.03E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.09.03E-c-2" rel="assessment-for"/>
             </part>
@@ -4892,7 +4892,7 @@
             <link href="#6266bc38-a0e8-450d-a231-843c87fb28ef" rel="external_reference"/>
             <part id="ES-03.09.04E" name="statement">
                 <p>Verify that individuals accessing a system that processes, stores, or transmits CUI meet
-                    <insert type="param" id-ref=A.03.09.04E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.09.04E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.09.04E" name="guidance" class="discussion">
@@ -4913,7 +4913,7 @@
             </part>
             <part id="DS-A.03.09.04E" name="assessment-objective">
                 <p>individuals accessing a system processing, storing, or transmitting CUI meet
-                    <insert type="param" id-ref=A.03.09.04E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.09.04E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.09.04E" rel="assessment-for"/>
             </part>
@@ -5054,7 +5054,7 @@
                 <part id="ES-03.10.02E-a" name="item">
                     <prop name="label" value="ES-03.10.02E-a"/>
                     <p>Authorize and control
-                        <insert type="param" id-ref=A.03.10.02E_prm_1"/> entering and exiting the facility.
+                        <insert type="param" id-ref="A.03.10.02E_prm_1"/> entering and exiting the facility.
                     </p>
                 </part>
                 <part id="ES-03.10.02E-b" name="item">
@@ -5080,25 +5080,25 @@
             </part>
             <part id="DS-A.03.10.02E.a.01" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.10.02E.ODP.01"/> are authorized when entering the facility.
+                    <insert type="param" id-ref="A.03.10.02E.ODP.01"/> are authorized when entering the facility.
                 </p>
                 <link href="#ES-03.10.02E-a" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.10.02E.a.02" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.10.02E.ODP.01"/> are controlled when entering the facility.
+                    <insert type="param" id-ref="A.03.10.02E.ODP.01"/> are controlled when entering the facility.
                 </p>
                 <link href="#ES-03.10.02E-a" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.10.02E.a.03" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.10.02E.ODP.02"/> are authorized when exiting the facility.
+                    <insert type="param" id-ref="A.03.10.02E.ODP.02"/> are authorized when exiting the facility.
                 </p>
                 <link href="#ES-03.10.02E-a" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.10.02E.a.04" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.10.02E.ODP.02"/> are controlled when exiting the facility.
+                    <insert type="param" id-ref="A.03.10.02E.ODP.02"/> are controlled when exiting the facility.
                 </p>
                 <link href="#ES-03.10.02E-a" rel="assessment-for"/>
             </part>
@@ -5257,7 +5257,7 @@
                 <part id="ES-03.11.02E-b" name="item">
                     <prop name="label" value="ES-03.11.02E-b"/>
                     <p>Employ the threat-hunting capability
-                        <insert type="param" id-ref=A.03.11.02E.ODP.01"/>.
+                        <insert type="param" id-ref="A.03.11.02E.ODP.01"/>.
                     </p>
                 </part>
             </part>
@@ -5315,7 +5315,7 @@
             </part>
             <part id="DS-A.03.11.02E.b" name="assessment-objective">
                 <p>the threat-hunting capability is employed
-                    <insert type="param" id-ref=A.03.11.02E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.11.02E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.11.02E-b" rel="assessment-for"/>
             </part>
@@ -5388,8 +5388,8 @@
             <link href="#b59cd2f1-e57b-4e7c-88dd-aafa1d82d364" rel="external_reference"/>
             <part id="ES-03.11.03E" name="statement">
                 <p>Employ the following advanced automation and analytics capabilities to predict and identify risks to
-                    <insert type="param" id-ref=A.03.11.03E.ODP.01"/>:
-                    <insert type="param" id-ref=A.03.11.03E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.11.03E.ODP.01"/>:
+                    <insert type="param" id-ref="A.03.11.03E.ODP.02"/>.
                 </p>
             </part>
             <part id="D-03.11.03E" name="guidance" class="discussion">
@@ -5430,15 +5430,15 @@
             </part>
             <part id="DS-A.03.11.03E.01" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.11.03E.ODP.01"/> are employed to predict and identify risks to
-                    <insert type="param" id-ref=A.03.11.03E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.11.03E.ODP.01"/> are employed to predict and identify risks to
+                    <insert type="param" id-ref="A.03.11.03E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.11.03E" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.11.03E.02" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.11.03E.ODP.03"/> are employed to predict and identify risks to
-                    <insert type="param" id-ref=A.03.11.03E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.11.03E.ODP.03"/> are employed to predict and identify risks to
+                    <insert type="param" id-ref="A.03.11.03E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.11.03E" rel="assessment-for"/>
             </part>
@@ -5539,7 +5539,7 @@
             <link href="#af1f6523-8f19-41a1-bda6-97453f0e98c4" rel="external_reference"/>
             <part id="ES-03.11.08E" name="statement">
                 <p>Determine the current cyber threat environment on an ongoing basis using
-                    <insert type="param" id-ref=A.03.11.08E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.11.08E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.11.08E" name="guidance" class="discussion">
@@ -5560,7 +5560,7 @@
             </part>
             <part id="DS-A.03.11.08E" name="assessment-objective">
                 <p>the current cyber threat environment is determined on an ongoing basis using
-                    <insert type="param" id-ref=A.03.11.08E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.11.08E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.11.08E" rel="assessment-for"/>
             </part>
@@ -5626,8 +5626,8 @@
             <link href="#fe4ddff3-fafc-4de7-9dc2-76027d796507" rel="external_reference"/>
             <part id="ES-03.11.09E" name="statement">
                 <p>Discover, collect, and distribute to
-                    <insert type="param" id-ref=A.03.11.09E.ODP.01"/>, indicators of compromise provided by
-                    <insert type="param" id-ref=A.03.11.09E.ODP.02"/> .
+                    <insert type="param" id-ref="A.03.11.09E.ODP.01"/>, indicators of compromise provided by
+                    <insert type="param" id-ref="A.03.11.09E.ODP.02"/> .
                 </p>
             </part>
             <part id="D-03.11.09E" name="guidance" class="discussion">
@@ -5648,20 +5648,20 @@
             </part>
             <part id="DS-A.03.11.09E.01" name="assessment-objective">
                 <p>indicators of compromise provided by
-                    <insert type="param" id-ref=A.03.11.09E.ODP.01"/> are discovered.
+                    <insert type="param" id-ref="A.03.11.09E.ODP.01"/> are discovered.
                 </p>
                 <link href="#ES-03.11.09E" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.11.09E.02" name="assessment-objective">
                 <p>indicators of compromise provided by
-                    <insert type="param" id-ref=A.03.11.09E.ODP.01"/> are collected.
+                    <insert type="param" id-ref="A.03.11.09E.ODP.01"/> are collected.
                 </p>
                 <link href="#ES-03.11.09E" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.11.09E.03" name="assessment-objective">
                 <p>indicators of compromise provided by
-                    <insert type="param" id-ref=A.03.11.09E.ODP.01"/> are distributed to
-                    <insert type="param" id-ref=A.03.11.09E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.11.09E.ODP.01"/> are distributed to
+                    <insert type="param" id-ref="A.03.11.09E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.11.09E" rel="assessment-for"/>
             </part>
@@ -5732,8 +5732,8 @@
             <link href="#490d4b64-4f60-4516-b1e4-1a4d642e624a" rel="external_reference"/>
             <part id="ES-03.11.10E" name="statement">
                 <p>Identify critical system components and functions by performing a criticality analysis for
-                    <insert type="param" id-ref=A.03.11.10E.ODP.01"/> at
-                    <insert type="param" id-ref=A.03.11.10E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.11.10E.ODP.01"/> at
+                    <insert type="param" id-ref="A.03.11.10E.ODP.02"/>.
                 </p>
             </part>
             <part id="D-03.11.10E" name="guidance" class="discussion">
@@ -5754,8 +5754,8 @@
             </part>
             <part id="DS-A.03.11.10E" name="assessment-objective">
                 <p>critical system components and functions are identified by performing a criticality analysis for
-                    <insert type="param" id-ref=A.03.11.10E.ODP.01"/> at
-                    <insert type="param" id-ref=A.03.11.10E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.11.10E.ODP.01"/> at
+                    <insert type="param" id-ref="A.03.11.10E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.11.10E" rel="assessment-for"/>
             </part>
@@ -5810,7 +5810,7 @@
             <link href="#269bc7f2-4333-48cd-a2fe-b440894c5a17" rel="external_reference"/>
             <part id="ES-03.11.11E" name="statement">
                 <p>Determine information about the system that is discoverable and take
-                    <insert type="param" id-ref=A.03.11.11E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.11.11E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.11.11E" name="guidance" class="discussion">
@@ -5835,7 +5835,7 @@
             </part>
             <part id="DS-A.03.11.11E.02" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.11.11E.ODP.01"/> are taken when information about the system is confirmed as discoverable.
+                    <insert type="param" id-ref="A.03.11.11E.ODP.01"/> are taken when information about the system is confirmed as discoverable.
                 </p>
                 <link href="#ES-03.11.11E" rel="assessment-for"/>
             </part>
@@ -6002,8 +6002,8 @@
             <link href="#c3565db2-c3e1-4be8-a9d0-0ea9b2734ebd" rel="external_reference"/>
             <part id="ES-03.12.01E" name="statement">
                 <p>Conduct penetration testing
-                    <insert type="param" id-ref=A.03.12.01E.ODP.01"/> on
-                    <insert type="param" id-ref=A.03.12.01E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.12.01E.ODP.01"/> on
+                    <insert type="param" id-ref="A.03.12.01E.ODP.02"/>.
                 </p>
             </part>
             <part id="D-03.12.01E" name="guidance" class="discussion">
@@ -6044,8 +6044,8 @@
             </part>
             <part id="DS-A.03.12.01E" name="assessment-objective">
                 <p>penetration testing is conducted
-                    <insert type="param" id-ref=A.03.12.01E.ODP.01"/> on
-                    <insert type="param" id-ref=A.03.12.01E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.12.01E.ODP.01"/> on
+                    <insert type="param" id-ref="A.03.12.01E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.12.01E" rel="assessment-for"/>
             </part>
@@ -6275,7 +6275,7 @@
                 <part id="ES-03.12.04E-a" name="item">
                     <prop name="label" value="ES-03.12.04E-a"/>
                     <p>Authorize internal connections of
-                        <insert type="param" id-ref=A.03.12.04E.ODP.01"/> to the system.
+                        <insert type="param" id-ref="A.03.12.04E.ODP.01"/> to the system.
                     </p>
                 </part>
                 <part id="ES-03.12.04E-b" name="item">
@@ -6285,13 +6285,13 @@
                 <part id="ES-03.12.04E-c" name="item">
                     <prop name="label" value="ES-03.12.04E-c"/>
                     <p>Terminate internal system connections after
-                        <insert type="param" id-ref=A.03.12.04E.ODP.02"/>.
+                        <insert type="param" id-ref="A.03.12.04E.ODP.02"/>.
                     </p>
                 </part>
                 <part id="ES-03.12.04E-d" name="item">
                     <prop name="label" value="ES-03.12.04E-d"/>
                     <p>Review
-                        <insert type="param" id-ref=A.03.12.04E.ODP.03"/> the continued need for each internal connection.
+                        <insert type="param" id-ref="A.03.12.04E.ODP.03"/> the continued need for each internal connection.
                     </p>
                 </part>
             </part>
@@ -6323,7 +6323,7 @@
             </part>
             <part id="DS-A.03.12.04E.a" name="assessment-objective">
                 <p>internal connections of
-                    <insert type="param" id-ref=A.03.12.04E.ODP.01"/> to the system are authorized.
+                    <insert type="param" id-ref="A.03.12.04E.ODP.01"/> to the system are authorized.
                 </p>
                 <link href="#ES-03.12.04E-a" rel="assessment-for"/>
             </part>
@@ -6341,13 +6341,13 @@
             </part>
             <part id="DS-A.03.12.04E.c" name="assessment-objective">
                 <p>internal system connections are terminated after
-                    <insert type="param" id-ref=A.03.12.04E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.12.04E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.12.04E-c" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.12.04E.d" name="assessment-objective">
                 <p>the continued need for each internal connection is reviewed
-                    <insert type="param" id-ref=A.03.12.04E.ODP.03"/>.
+                    <insert type="param" id-ref="A.03.12.04E.ODP.03"/>.
                 </p>
                 <link href="#ES-03.12.04E-d" rel="assessment-for"/>
             </part>
@@ -6413,7 +6413,7 @@
             <link href="#8a04b6e3-2555-4529-82e5-901d5d48bf9f" rel="external_reference"/>
             <part id="ES-03.13.01E" name="statement">
                 <p>Employ a diverse set of information technologies for the following system components in the implementation of the system:
-                    <insert type="param" id-ref=A.03.13.01E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.13.01E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.13.01E" name="guidance" class="discussion">
@@ -6454,7 +6454,7 @@
             </part>
             <part id="DS-A.03.13.01E" name="assessment-objective">
                 <p>a diverse set of information technologies is employed for
-                    <insert type="param" id-ref=A.03.13.01E.ODP.01"/> in the implementation of the system.
+                    <insert type="param" id-ref="A.03.13.01E.ODP.01"/> in the implementation of the system.
                 </p>
                 <link href="#ES-03.13.01E" rel="assessment-for"/>
             </part>
@@ -6513,7 +6513,7 @@
             <link href="#a588e5c9-bbbd-44b0-9ce7-ad3f63a1b70a" rel="external_reference"/>
             <part id="ES-03.13.02E" name="statement">
                 <p>Employ
-                    <insert type="param" id-ref=A.03.13.02E.ODP.01"/> to introduce randomness into organizational operations and assets.
+                    <insert type="param" id-ref="A.03.13.02E.ODP.01"/> to introduce randomness into organizational operations and assets.
                 </p>
             </part>
             <part id="D-03.13.02E" name="guidance" class="discussion">
@@ -6557,7 +6557,7 @@
             </part>
             <part id="DS-A.03.13.02E" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.13.02E.ODP.01"/> are employed to introduce randomness into organizational operations and assets.
+                    <insert type="param" id-ref="A.03.13.02E.ODP.01"/> are employed to introduce randomness into organizational operations and assets.
                 </p>
                 <link href="#ES-03.13.02E" rel="assessment-for"/>
             </part>
@@ -6617,7 +6617,7 @@
             <link href="#21be8a83-d199-4135-836a-5261bf4f9819" rel="external_reference"/>
             <part id="ES-03.13.03E" name="statement">
                 <p>Employ the following concealment and misdirection techniques to mislead adversaries:
-                    <insert type="param" id-ref=A.03.13.03E.ODP.01"/> .
+                    <insert type="param" id-ref="A.03.13.03E.ODP.01"/> .
                 </p>
             </part>
             <part id="D-03.13.03E" name="guidance" class="discussion">
@@ -6661,7 +6661,7 @@
             </part>
             <part id="DS-A.03.13.03E" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.13.03E.ODP.01"/> are used to mislead adversaries.
+                    <insert type="param" id-ref="A.03.13.03E.ODP.01"/> are used to mislead adversaries.
                 </p>
                 <link href="#ES-03.13.03E" rel="assessment-for"/>
             </part>
@@ -6716,7 +6716,7 @@
             <link href="#138ce585-a7aa-4547-8240-fd0afdaa9f12" rel="external_reference"/>
             <part id="ES-03.13.04E" name="statement">
                 <p>Employ boundary protection mechanisms to isolate
-                    <insert type="param" id-ref=A.03.13.04E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.13.04E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.13.04E" name="guidance" class="discussion">
@@ -6757,7 +6757,7 @@
             </part>
             <part id="DS-A.03.13.04E" name="assessment-objective">
                 <p>boundary protection mechanisms are employed to isolate
-                    <insert type="param" id-ref=A.03.13.04E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.13.04E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.13.04E" rel="assessment-for"/>
             </part>
@@ -6838,8 +6838,8 @@
             <link href="#3051df2e-43ae-488c-a681-011a26e0295d" rel="external_reference"/>
             <part id="ES-03.13.05E" name="statement">
                 <p>Change the location of
-                    <insert type="param" id-ref=A.03.13.05E.ODP.02"/>
-                    <insert type="param" id-ref=A.03.13.05E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.13.05E.ODP.02"/>
+                    <insert type="param" id-ref="A.03.13.05E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.13.05E" name="guidance" class="discussion">
@@ -6880,8 +6880,8 @@
             </part>
             <part id="DS-A.03.13.05E" name="assessment-objective">
                 <p>the location of
-                    <insert type="param" id-ref=A.03.13.05E.ODP.01"/> is changed
-                    <insert type="param" id-ref=A.03.13.05E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.13.05E.ODP.01"/> is changed
+                    <insert type="param" id-ref="A.03.13.05E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.13.05E" rel="assessment-for"/>
             </part>
@@ -6936,7 +6936,7 @@
             <link href="#f74165ba-b4e4-4db1-ac19-920c1bae3755" rel="external_reference"/>
             <part id="ES-03.13.06E" name="statement">
                 <p>Include within organizational systems the following platform independent applications:
-                    <insert type="param" id-ref=A.03.13.06E.ODP.01"/> .
+                    <insert type="param" id-ref="A.03.13.06E.ODP.01"/> .
                 </p>
             </part>
             <part id="D-03.13.06E" name="guidance" class="discussion">
@@ -6957,7 +6957,7 @@
             </part>
             <part id="DS-A.03.13.06E" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.13.06E.ODP.01"/> are implemented within organizational systems.
+                    <insert type="param" id-ref="A.03.13.06E.ODP.01"/> are implemented within organizational systems.
                 </p>
                 <link href="#ES-03.13.06E" rel="assessment-for"/>
             </part>
@@ -7016,7 +7016,7 @@
             <link href="#ebf73c4c-2ed3-4bf6-9622-3f478ea2de19" rel="external_reference"/>
             <part id="ES-03.13.07E" name="statement">
                 <p>Employ virtualization techniques to support the deployment of a diversity of operating systems and applications that are changed
-                    <insert type="param" id-ref=A.03.13.07E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.13.07E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.13.07E" name="guidance" class="discussion">
@@ -7057,7 +7057,7 @@
             </part>
             <part id="DS-A.03.13.07E" name="assessment-objective">
                 <p>virtualization techniques are employed to support the deployment of a diverse range of operating systems and applications that are changed
-                    <insert type="param" id-ref=A.03.13.07E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.13.07E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.13.07E" rel="assessment-for"/>
             </part>
@@ -7198,7 +7198,7 @@
             <link href="#95fb039d-3545-402c-a17a-86e1e6e87eac" rel="external_reference"/>
             <part id="ES-03.13.09E" name="statement">
                 <p>Isolate
-                    <insert type="param" id-ref=A.03.13.09E.ODP.01"/> from other internal system components by implementing physically separate subnetworks with managed interfaces to other components of the system.
+                    <insert type="param" id-ref="A.03.13.09E.ODP.01"/> from other internal system components by implementing physically separate subnetworks with managed interfaces to other components of the system.
                 </p>
             </part>
             <part id="D-03.13.09E" name="guidance" class="discussion">
@@ -7229,7 +7229,7 @@
             </part>
             <part id="DS-A.03.13.09E" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.13.09E.ODP.01"/> are isolated from other internal system components by implementing physically separate subnetworks with managed interfaces to other components of the system.
+                    <insert type="param" id-ref="A.03.13.09E.ODP.01"/> are isolated from other internal system components by implementing physically separate subnetworks with managed interfaces to other components of the system.
                 </p>
                 <link href="#ES-03.13.09E" rel="assessment-for"/>
             </part>
@@ -7368,7 +7368,7 @@
             <link href="#9b7ff92a-3a53-41b7-a650-32aa59e68dc6" rel="external_reference"/>
             <part id="ES-03.13.11E" name="statement">
                 <p>Employ minimal functionality and information storage on the following system components:
-                    <insert type="param" id-ref=A.03.13.11E.ODP.01"/> .
+                    <insert type="param" id-ref="A.03.13.11E.ODP.01"/> .
                 </p>
             </part>
             <part id="D-03.13.11E" name="guidance" class="discussion">
@@ -7399,13 +7399,13 @@
             </part>
             <part id="DS-A.03.13.11E.01" name="assessment-objective">
                 <p>minimal functionality for
-                    <insert type="param" id-ref=A.03.13.11E.ODP.01"/> is employed.
+                    <insert type="param" id-ref="A.03.13.11E.ODP.01"/> is employed.
                 </p>
                 <link href="#ES-03.13.11E" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.13.11E.02" name="assessment-objective">
                 <p>minimal information storage on
-                    <insert type="param" id-ref=A.03.13.11E.ODP.01"/> is employed.
+                    <insert type="param" id-ref="A.03.13.11E.ODP.01"/> is employed.
                 </p>
                 <link href="#ES-03.13.11E" rel="assessment-for"/>
             </part>
@@ -7482,14 +7482,14 @@
                 <part id="ES-03.13.12E-a" name="item">
                     <prop name="label" value="ES-03.13.12E-a"/>
                     <p>
-                        <insert type="param" id-ref=A.03.13.12E.ODP.01"/> the effects of the following types of denial-of-service events:
-                        <insert type="param" id-ref=A.03.13.12E.ODP.02"/>.
+                        <insert type="param" id-ref="A.03.13.12E.ODP.01"/> the effects of the following types of denial-of-service events:
+                        <insert type="param" id-ref="A.03.13.12E.ODP.02"/>.
                     </p>
                 </part>
                 <part id="ES-03.13.12E-b" name="item">
                     <prop name="label" value="ES-03.13.12E-b"/>
                     <p>Employ the following safeguards to prevent the denial-of-service events
-                        <insert type="param" id-ref=A.03.13.12E.ODP.03"/>.
+                        <insert type="param" id-ref="A.03.13.12E.ODP.03"/>.
                     </p>
                 </part>
             </part>
@@ -7531,14 +7531,14 @@
             </part>
             <part id="DS-A.03.13.12E.a" name="assessment-objective">
                 <p>the effects of
-                    <insert type="param" id-ref=A.03.13.12E.ODP.01"/> are
-                    <insert type="param" id-ref=A.03.13.12E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.13.12E.ODP.01"/> are
+                    <insert type="param" id-ref="A.03.13.12E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.13.12E-a" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.13.12E.b" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.13.12E.ODP.03"/> are employed to protect against or limit the effects of denial-of-service events.
+                    <insert type="param" id-ref="A.03.13.12E.ODP.03"/> are employed to protect against or limit the effects of denial-of-service events.
                 </p>
                 <link href="#ES-03.13.12E-b" rel="assessment-for"/>
             </part>
@@ -7612,9 +7612,9 @@
             <link href="#04a6063a-dd8c-4551-a37c-671fac148ada" rel="external_reference"/>
             <part id="ES-03.13.13E" name="statement">
                 <p>
-                    <insert type="param" id-ref=A.03.13.13E.ODP.01"/> disable or remove
-                    <insert type="param" id-ref=A.03.13.13E.ODP.02"/> on the following systems or system components:
-                    <insert type="param" id-ref=A.03.13.13E.ODP.03"/>.
+                    <insert type="param" id-ref="A.03.13.13E.ODP.01"/> disable or remove
+                    <insert type="param" id-ref="A.03.13.13E.ODP.02"/> on the following systems or system components:
+                    <insert type="param" id-ref="A.03.13.13E.ODP.03"/>.
                 </p>
             </part>
             <part id="D-03.13.13E" name="guidance" class="discussion">
@@ -7645,9 +7645,9 @@
             </part>
             <part id="DS-A.03.13.13E" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.13.13E.ODP.01"/> are
-                    <insert type="param" id-ref=A.03.13.13E.ODP.02"/> disabled or removed on
-                    <insert type="param" id-ref=A.03.13.13E.ODP.03"/>.
+                    <insert type="param" id-ref="A.03.13.13E.ODP.01"/> are
+                    <insert type="param" id-ref="A.03.13.13E.ODP.02"/> disabled or removed on
+                    <insert type="param" id-ref="A.03.13.13E.ODP.03"/>.
                 </p>
                 <link href="#ES-03.13.13E" rel="assessment-for"/>
             </part>
@@ -7708,7 +7708,7 @@
             <link href="#18665b72-8cbf-407d-b989-476eeebfcb94" rel="external_reference"/>
             <part id="ES-03.13.14E" name="statement">
                 <p>Employ a detonation chamber capability within
-                    <insert type="param" id-ref=A.03.13.14E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.13.14E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.13.14E" name="guidance" class="discussion">
@@ -7749,7 +7749,7 @@
             </part>
             <part id="DS-A.03.13.14E" name="assessment-objective">
                 <p>a detonation chamber capability is employed within the
-                    <insert type="param" id-ref=A.03.13.14E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.13.14E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.13.14E" rel="assessment-for"/>
             </part>
@@ -7810,8 +7810,8 @@
             <link href="#e4c82123-b3ae-4c4c-98f6-ea4bea002bb3" rel="external_reference"/>
             <part id="ES-03.13.15E" name="statement">
                 <p>Implement
-                    <insert type="param" id-ref=A.03.13.15E.ODP.01"/> separate subnetworks to isolate the following critical system components and functions:
-                    <insert type="param" id-ref=A.03.13.15E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.13.15E.ODP.01"/> separate subnetworks to isolate the following critical system components and functions:
+                    <insert type="param" id-ref="A.03.13.15E.ODP.02"/>.
                 </p>
             </part>
             <part id="D-03.13.15E" name="guidance" class="discussion">
@@ -7852,8 +7852,8 @@
             </part>
             <part id="DS-A.03.13.15E" name="assessment-objective">
                 <p>subnetworks are separated
-                    <insert type="param" id-ref=A.03.13.15E.ODP.01"/> to isolate
-                    <insert type="param" id-ref=A.03.13.15E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.13.15E.ODP.01"/> to isolate
+                    <insert type="param" id-ref="A.03.13.15E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.13.15E" rel="assessment-for"/>
             </part>
@@ -7933,9 +7933,9 @@
             <link href="#117fcbce-07f0-43fb-a079-e7dab1db227d" rel="external_reference"/>
             <part id="ES-03.13.16E" name="statement">
                 <p>Partition the system into
-                    <insert type="param" id-ref=A.03.13.16E.ODP.02"/> residing in separate
-                    <insert type="param" id-ref=A.03.13.16E.ODP.01"/> domains or environments based on
-                    <insert type="param" id-ref=A.03.13.16E.ODP.03"/>.
+                    <insert type="param" id-ref="A.03.13.16E.ODP.02"/> residing in separate
+                    <insert type="param" id-ref="A.03.13.16E.ODP.01"/> domains or environments based on
+                    <insert type="param" id-ref="A.03.13.16E.ODP.03"/>.
                 </p>
             </part>
             <part id="D-03.13.16E" name="guidance" class="discussion">
@@ -7976,9 +7976,9 @@
             </part>
             <part id="DS-A.03.13.16E" name="assessment-objective">
                 <p>the system is partitioned into
-                    <insert type="param" id-ref=A.03.13.16E.ODP.01"/> residing in separate
-                    <insert type="param" id-ref=A.03.13.16E.ODP.02"/> security domains or environments based on
-                    <insert type="param" id-ref=A.03.13.16E.ODP.03"/>.
+                    <insert type="param" id-ref="A.03.13.16E.ODP.01"/> residing in separate
+                    <insert type="param" id-ref="A.03.13.16E.ODP.02"/> security domains or environments based on
+                    <insert type="param" id-ref="A.03.13.16E.ODP.03"/>.
                 </p>
                 <link href="#ES-03.13.16E" rel="assessment-for"/>
             </part>
@@ -8109,13 +8109,13 @@
                 <part id="ES-03.14.01E-a" name="item">
                     <prop name="label" value="ES-03.14.01E-a"/>
                     <p>Employ integrity verification tools to detect unauthorized changes to the following software, firmware, and information:
-                        <insert type="param" id-ref=A.03.14.01E_prm_1"/>.
+                        <insert type="param" id-ref="A.03.14.01E_prm_1"/>.
                     </p>
                 </part>
                 <part id="ES-03.14.01E-b" name="item">
                     <prop name="label" value="ES-03.14.01E-b"/>
                     <p>Take the following actions when unauthorized changes to the software, firmware, and information are detected:
-                        <insert type="param" id-ref=A.03.14.01E_prm_2"/>.
+                        <insert type="param" id-ref="A.03.14.01E_prm_2"/>.
                     </p>
                 </part>
             </part>
@@ -8147,37 +8147,37 @@
             </part>
             <part id="DS-A.03.14.01E.a.01" name="assessment-objective">
                 <p>integrity verification tools are employed to detect unauthorized changes to
-                    <insert type="param" id-ref=A.03.14.01E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.14.01E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.14.01E-a" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.14.01E.a.02" name="assessment-objective">
                 <p>integrity verification tools are employed to detect unauthorized changes to
-                    <insert type="param" id-ref=A.03.14.01E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.14.01E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.14.01E-a" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.14.01E.a.03" name="assessment-objective">
                 <p>integrity verification tools are employed to detect unauthorized changes to
-                    <insert type="param" id-ref=A.03.14.01E.ODP.03"/>.
+                    <insert type="param" id-ref="A.03.14.01E.ODP.03"/>.
                 </p>
                 <link href="#ES-03.14.01E-a" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.14.01E.b.01" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.14.01E.ODP.04"/> are taken when unauthorized changes to software are detected.
+                    <insert type="param" id-ref="A.03.14.01E.ODP.04"/> are taken when unauthorized changes to software are detected.
                 </p>
                 <link href="#ES-03.14.01E-b" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.14.01E.b.02" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.14.01E.ODP.05"/> are taken when unauthorized changes to firmware are detected.
+                    <insert type="param" id-ref="A.03.14.01E.ODP.05"/> are taken when unauthorized changes to firmware are detected.
                 </p>
                 <link href="#ES-03.14.01E-b" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.14.01E.b.03" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.14.01E.ODP.06"/> are taken when unauthorized changes to information are detected.
+                    <insert type="param" id-ref="A.03.14.01E.ODP.06"/> are taken when unauthorized changes to information are detected.
                 </p>
                 <link href="#ES-03.14.01E-b" rel="assessment-for"/>
             </part>
@@ -8253,7 +8253,7 @@
             <link href="#adf73f5c-2f89-46a2-a396-0de1155d5ba2" rel="external_reference"/>
             <part id="ES-03.14.04E" name="statement">
                 <p>Obtain software and data employed during system component and service refreshes from the following trusted sources:
-                    <insert type="param" id-ref=A.03.14.04E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.14.04E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.14.04E" name="guidance" class="discussion">
@@ -8284,7 +8284,7 @@
             </part>
             <part id="DS-A.03.14.04E" name="assessment-objective">
                 <p>the software and data used during system component and service refreshes are obtained from
-                    <insert type="param" id-ref=A.03.14.04E.ODP.01"/> .
+                    <insert type="param" id-ref="A.03.14.04E.ODP.01"/> .
                 </p>
                 <link href="#ES-03.14.04E" rel="assessment-for"/>
             </part>
@@ -8373,7 +8373,7 @@
                 <part id="ES-03.14.05E-a" name="item">
                     <prop name="label" value="ES-03.14.05E-a"/>
                     <p>
-                        <insert type="param" id-ref=A.03.14.05E.ODP.01"/>.
+                        <insert type="param" id-ref="A.03.14.05E.ODP.01"/>.
                     </p>
                 </part>
                 <part id="ES-03.14.05E-b" name="item">
@@ -8409,7 +8409,7 @@
             </part>
             <part id="DS-A.03.14.05E.a" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.14.05E.ODP.01"/> is performed.
+                    <insert type="param" id-ref="A.03.14.05E.ODP.01"/> is performed.
                 </p>
                 <link href="#ES-03.14.05E-a" rel="assessment-for"/>
             </part>
@@ -8624,8 +8624,8 @@
             <link href="#1459a6a5-b679-4bdc-ab0b-4ddd92428c0a" rel="external_reference"/>
             <part id="ES-03.14.08E" name="statement">
                 <p>Perform an integrity check of
-                    <insert type="param" id-ref=A.03.14.08E_prm_1"/>
-                    <insert type="param" id-ref=A.03.14.08E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.14.08E_prm_1"/>
+                    <insert type="param" id-ref="A.03.14.08E.ODP.02"/>.
                 </p>
             </part>
             <part id="D-03.14.08E" name="guidance" class="discussion">
@@ -8656,22 +8656,22 @@
             </part>
             <part id="DS-A.03.14.08E.01" name="assessment-objective">
                 <p>an integrity check of
-                    <insert type="param" id-ref=A.03.14.08E.ODP.01"/> is performed
-                    <insert type="param" id-ref=A.03.14.08E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.14.08E.ODP.01"/> is performed
+                    <insert type="param" id-ref="A.03.14.08E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.14.08E" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.14.08E.02" name="assessment-objective">
                 <p>an integrity check of
-                    <insert type="param" id-ref=A.03.14.08E.ODP.05"/> is performed
-                    <insert type="param" id-ref=A.03.14.08E.ODP.06"/>.
+                    <insert type="param" id-ref="A.03.14.08E.ODP.05"/> is performed
+                    <insert type="param" id-ref="A.03.14.08E.ODP.06"/>.
                 </p>
                 <link href="#ES-03.14.08E" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.14.08E.03" name="assessment-objective">
                 <p>an integrity check of
-                    <insert type="param" id-ref=A.03.14.08E.ODP.09"/> is performed
-                    <insert type="param" id-ref=A.03.14.08E.ODP.10"/>.
+                    <insert type="param" id-ref="A.03.14.08E.ODP.09"/> is performed
+                    <insert type="param" id-ref="A.03.14.08E.ODP.10"/>.
                 </p>
                 <link href="#ES-03.14.08E" rel="assessment-for"/>
             </part>
@@ -8835,8 +8835,8 @@
             <link href="#d793c207-dfae-49c1-a3fe-275357ccd5e0" rel="external_reference"/>
             <part id="ES-03.14.10E" name="statement">
                 <p>Implement the following mechanisms to protect the integrity of boot firmware in
-                    <insert type="param" id-ref=A.03.14.10E.ODP.01"/>:
-                    <insert type="param" id-ref=A.03.14.10E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.14.10E.ODP.01"/>:
+                    <insert type="param" id-ref="A.03.14.10E.ODP.02"/>.
                 </p>
             </part>
             <part id="D-03.14.10E" name="guidance" class="discussion">
@@ -8867,8 +8867,8 @@
             </part>
             <part id="DS-A.03.14.10E" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.14.10E.ODP.01"/> are implemented to protect the integrity of boot firmware in
-                    <insert type="param" id-ref=A.03.14.10E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.14.10E.ODP.01"/> are implemented to protect the integrity of boot firmware in
+                    <insert type="param" id-ref="A.03.14.10E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.14.10E" rel="assessment-for"/>
             </part>
@@ -8927,7 +8927,7 @@
             <link href="#9e227fcf-f52c-4041-b5b3-f1092eba1722" rel="external_reference"/>
             <part id="ES-03.14.11E" name="statement">
                 <p>Incorporate the detection of the following unauthorized changes into the organizational incident response capability:
-                    <insert type="param" id-ref=A.03.14.11E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.14.11E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.14.11E" name="guidance" class="discussion">
@@ -8948,7 +8948,7 @@
             </part>
             <part id="DS-A.03.14.11E" name="assessment-objective">
                 <p>the detection of
-                    <insert type="param" id-ref=A.03.14.11E.ODP.01"/> are incorporated into the organizational incident response capability.
+                    <insert type="param" id-ref="A.03.14.11E.ODP.01"/> are incorporated into the organizational incident response capability.
                 </p>
                 <link href="#ES-03.14.11E" rel="assessment-for"/>
             </part>
@@ -9006,7 +9006,7 @@
             <link href="#1e23e735-ce8a-4926-a059-62917d299f90" rel="external_reference"/>
             <part id="ES-03.14.12E" name="statement">
                 <p>Check the validity of the following information inputs:
-                    <insert type="param" id-ref=A.03.14.12E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.14.12E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.14.12E" name="guidance" class="discussion">
@@ -9027,7 +9027,7 @@
             </part>
             <part id="DS-A.03.14.12E" name="assessment-objective">
                 <p>the validity of the
-                    <insert type="param" id-ref=A.03.14.12E.ODP.01"/> is checked.
+                    <insert type="param" id-ref="A.03.14.12E.ODP.01"/> is checked.
                 </p>
                 <link href="#ES-03.14.12E" rel="assessment-for"/>
             </part>
@@ -9092,7 +9092,7 @@
                 <part id="ES-03.14.13E-b" name="item">
                     <prop name="label" value="ES-03.14.13E-b"/>
                     <p>Reveal error messages only to
-                        <insert type="param" id-ref=A.03.14.13E.ODP.01"/>.
+                        <insert type="param" id-ref="A.03.14.13E.ODP.01"/>.
                     </p>
                 </part>
             </part>
@@ -9118,7 +9118,7 @@
             </part>
             <part id="DS-A.03.14.13E.b" name="assessment-objective">
                 <p>error messages are revealed only to
-                    <insert type="param" id-ref=A.03.14.13E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.14.13E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.14.13E-b" rel="assessment-for"/>
             </part>
@@ -9176,7 +9176,7 @@
             <link href="#c1f8b5b2-745f-4fad-866a-52c879617eb2" rel="external_reference"/>
             <part id="ES-03.14.14E" name="statement">
                 <p>Implement the following safeguards to protect the system memory from unauthorized code execution:
-                    <insert type="param" id-ref=A.03.14.14E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.14.14E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.14.14E" name="guidance" class="discussion">
@@ -9207,7 +9207,7 @@
             </part>
             <part id="DS-A.03.14.14E" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.14.14E.ODP.01"/> are implemented to protect the system memory from unauthorized code execution.
+                    <insert type="param" id-ref="A.03.14.14E.ODP.01"/> are implemented to protect the system memory from unauthorized code execution.
                 </p>
                 <link href="#ES-03.14.14E" rel="assessment-for"/>
             </part>
@@ -9290,20 +9290,20 @@
                 <part id="ES-03.14.15E-a" name="item">
                     <prop name="label" value="ES-03.14.15E-a"/>
                     <p>Implement non-persistent
-                        <insert type="param" id-ref=A.03.14.15E.ODP.01"/>.
+                        <insert type="param" id-ref="A.03.14.15E.ODP.01"/>.
                     </p>
                 </part>
                 <part id="ES-03.14.15E-b" name="item">
                     <prop name="label" value="ES-03.14.15E-b"/>
                     <p>Initiate non-persistent
-                        <insert type="param" id-ref=A.03.14.15E.ODP.01"/> from a known state.
+                        <insert type="param" id-ref="A.03.14.15E.ODP.01"/> from a known state.
                     </p>
                 </part>
                 <part id="ES-03.14.15E-c" name="item">
                     <prop name="label" value="ES-03.14.15E-c"/>
                     <p>Terminate non-persistent
-                        <insert type="param" id-ref=A.03.14.15E.ODP.02"/>
-                        <insert type="param" id-ref=A.03.14.15E.ODP.01"/>.
+                        <insert type="param" id-ref="A.03.14.15E.ODP.02"/>
+                        <insert type="param" id-ref="A.03.14.15E.ODP.01"/>.
                     </p>
                 </part>
             </part>
@@ -9346,20 +9346,20 @@
             </part>
             <part id="DS-A.03.14.15E.a" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.14.15E.ODP.01"/> are implemented.
+                    <insert type="param" id-ref="A.03.14.15E.ODP.01"/> are implemented.
                 </p>
                 <link href="#ES-03.14.15E-a" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.14.15E.b" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.14.15E.ODP.01"/> are initiated from a known state.
+                    <insert type="param" id-ref="A.03.14.15E.ODP.01"/> are initiated from a known state.
                 </p>
                 <link href="#ES-03.14.15E-b" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.14.15E.c" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.14.15E.ODP.01"/> are terminated
-                    <insert type="param" id-ref=A.03.14.15E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.14.15E.ODP.01"/> are terminated
+                    <insert type="param" id-ref="A.03.14.15E.ODP.02"/>.
                 </p>
                 <link href="#ES-03.14.15E-c" rel="assessment-for"/>
             </part>
@@ -9414,7 +9414,7 @@
             <link href="#53381f5b-db26-46ca-9d15-e87a315aacd2" rel="external_reference"/>
             <part id="ES-03.14.16E" name="statement">
                 <p>Embed data or capabilities in the following systems or system components to determine if CUI has been exfiltrated or improperly removed from the organization:
-                    <insert type="param" id-ref=A.03.14.16E.ODP.01"/> .
+                    <insert type="param" id-ref="A.03.14.16E.ODP.01"/> .
                 </p>
             </part>
             <part id="D-03.14.16E" name="guidance" class="discussion">
@@ -9437,7 +9437,7 @@
             </part>
             <part id="DS-A.03.14.16E" name="assessment-objective">
                 <p>data or capabilities are embedded in
-                    <insert type="param" id-ref=A.03.14.16E.ODP.01"/> to determine if CUI has been exfiltrated or improperly removed from the organization.
+                    <insert type="param" id-ref="A.03.14.16E.ODP.01"/> to determine if CUI has been exfiltrated or improperly removed from the organization.
                 </p>
                 <link href="#ES-03.14.16E" rel="assessment-for"/>
             </part>
@@ -9503,8 +9503,8 @@
             <link href="#bfa6b5c5-af66-4636-9e43-81da8442debc" rel="external_reference"/>
             <part id="ES-03.14.17E" name="statement">
                 <p>Alert
-                    <insert type="param" id-ref=A.03.14.17E.ODP.01"/> when the following system-generated indications of compromise or potential compromise occur:
-                    <insert type="param" id-ref=A.03.14.17E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.14.17E.ODP.01"/> when the following system-generated indications of compromise or potential compromise occur:
+                    <insert type="param" id-ref="A.03.14.17E.ODP.02"/>.
                 </p>
             </part>
             <part id="D-03.14.17E" name="guidance" class="discussion">
@@ -9525,8 +9525,8 @@
             </part>
             <part id="DS-A.03.14.17E" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.14.17E.ODP.01"/> are alerted when system-generated
-                    <insert type="param" id-ref=A.03.14.17E.ODP.02"/> occur.
+                    <insert type="param" id-ref="A.03.14.17E.ODP.01"/> are alerted when system-generated
+                    <insert type="param" id-ref="A.03.14.17E.ODP.02"/> occur.
                 </p>
                 <link href="#ES-03.14.17E" rel="assessment-for"/>
             </part>
@@ -9608,9 +9608,9 @@
             <link href="#8ac7e0f0-2899-41c1-80a5-2edee2123d55" rel="external_reference"/>
             <part id="ES-03.14.18E" name="statement">
                 <p>Alert
-                    <insert type="param" id-ref=A.03.14.18E.ODP.01"/> using
-                    <insert type="param" id-ref=A.03.14.18E.ODP.02"/> when the following indications of inappropriate or unusual activities with security implications occur:
-                    <insert type="param" id-ref=A.03.14.18E.ODP.03"/>.
+                    <insert type="param" id-ref="A.03.14.18E.ODP.01"/> using
+                    <insert type="param" id-ref="A.03.14.18E.ODP.02"/> when the following indications of inappropriate or unusual activities with security implications occur:
+                    <insert type="param" id-ref="A.03.14.18E.ODP.03"/>.
                 </p>
             </part>
             <part id="D-03.14.18E" name="guidance" class="discussion">
@@ -9631,9 +9631,9 @@
             </part>
             <part id="DS-A.03.14.18E" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.14.18E.ODP.01"/> are alerted using
-                    <insert type="param" id-ref=A.03.14.18E.ODP.02"/> when
-                    <insert type="param" id-ref=A.03.14.18E.ODP.03"/> indicate inappropriate or unusual activities with security implications.
+                    <insert type="param" id-ref="A.03.14.18E.ODP.01"/> are alerted using
+                    <insert type="param" id-ref="A.03.14.18E.ODP.02"/> when
+                    <insert type="param" id-ref="A.03.14.18E.ODP.03"/> indicate inappropriate or unusual activities with security implications.
                 </p>
                 <link href="#ES-03.14.18E" rel="assessment-for"/>
             </part>
@@ -9794,7 +9794,7 @@
                 <part id="ES-03.15.01E-b" name="item">
                     <prop name="label" value="ES-03.15.01E-b"/>
                     <p>Review and update the security architecture
-                        <insert type="param" id-ref=A.03.15.01E.ODP.01"/> to reflect changes in the enterprise architecture.
+                        <insert type="param" id-ref="A.03.15.01E.ODP.01"/> to reflect changes in the enterprise architecture.
                     </p>
                 </part>
                 <part id="ES-03.15.01E-c" name="item">
@@ -9843,7 +9843,7 @@
             </part>
             <part id="DS-A.03.15.01E.b" name="assessment-objective">
                 <p>the security architecture is reviewed and updated
-                    <insert type="param" id-ref=A.03.15.01E.ODP.01"/> to reflect changes in the enterprise architecture.
+                    <insert type="param" id-ref="A.03.15.01E.ODP.01"/> to reflect changes in the enterprise architecture.
                 </p>
                 <link href="#ES-03.15.01E-b" rel="assessment-for"/>
             </part>
@@ -9924,8 +9924,8 @@
                 <part id="ES-03.15.02E-b" name="item">
                     <prop name="label" value="ES-03.15.02E-b"/>
                     <p>Allocate
-                        <insert type="param" id-ref=A.03.15.02E.ODP.01"/> to
-                        <insert type="param" id-ref=A.03.15.02E.ODP.02"/>.
+                        <insert type="param" id-ref="A.03.15.02E.ODP.01"/> to
+                        <insert type="param" id-ref="A.03.15.02E.ODP.02"/>.
                     </p>
                 </part>
                 <part id="ES-03.15.02E-c" name="item">
@@ -9976,8 +9976,8 @@
             </part>
             <part id="DS-A.03.15.02E.b" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.15.02E.ODP.01"/> are allocated to
-                    <insert type="param" id-ref=A.03.15.02E.ODP.02"/> .
+                    <insert type="param" id-ref="A.03.15.02E.ODP.01"/> are allocated to
+                    <insert type="param" id-ref="A.03.15.02E.ODP.02"/> .
                 </p>
                 <link href="#ES-03.15.02E-b" rel="assessment-for"/>
             </part>
@@ -10050,8 +10050,8 @@
             <link href="#725c61c7-e7f0-4267-8180-98e775bbe618" rel="external_reference"/>
             <part id="ES-03.15.03E" name="statement">
                 <p>Require that
-                    <insert type="param" id-ref=A.03.15.03E.ODP.01"/> allocated to
-                    <insert type="param" id-ref=A.03.15.03E.ODP.02"/> are obtained from different suppliers.
+                    <insert type="param" id-ref="A.03.15.03E.ODP.01"/> allocated to
+                    <insert type="param" id-ref="A.03.15.03E.ODP.02"/> are obtained from different suppliers.
                 </p>
             </part>
             <part id="D-03.15.03E" name="guidance" class="discussion">
@@ -10092,8 +10092,8 @@
             </part>
             <part id="DS-A.03.15.03E" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.15.03E.ODP.01"/> that are allocated to
-                    <insert type="param" id-ref=A.03.15.03E.ODP.02"/> are obtained from different suppliers.
+                    <insert type="param" id-ref="A.03.15.03E.ODP.01"/> that are allocated to
+                    <insert type="param" id-ref="A.03.15.03E.ODP.02"/> are obtained from different suppliers.
                 </p>
                 <link href="#ES-03.15.03E" rel="assessment-for"/>
             </part>
@@ -10162,8 +10162,8 @@
             <link href="#c731fad4-9153-42f4-a0ef-814f9c1ef808" rel="external_reference"/>
             <part id="ES-03.16.01E" name="statement">
                 <p>Employ
-                    <insert type="param" id-ref=A.03.16.01E.ODP.01"/> on
-                    <insert type="param" id-ref=A.03.16.01E.ODP.02"/> supporting mission-essential services or functions to increase the trustworthiness in those systems or components.
+                    <insert type="param" id-ref="A.03.16.01E.ODP.01"/> on
+                    <insert type="param" id-ref="A.03.16.01E.ODP.02"/> supporting mission-essential services or functions to increase the trustworthiness in those systems or components.
                 </p>
             </part>
             <part id="D-03.16.01E" name="guidance" class="discussion">
@@ -10194,8 +10194,8 @@
             </part>
             <part id="DS-A.03.16.01E" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.16.01E.ODP.01"/> is/are employed to
-                    <insert type="param" id-ref=A.03.16.01E.ODP.02"/> supporting mission-essential services or functions to increase the trustworthiness in those systems or components.
+                    <insert type="param" id-ref="A.03.16.01E.ODP.01"/> is/are employed to
+                    <insert type="param" id-ref="A.03.16.01E.ODP.02"/> supporting mission-essential services or functions to increase the trustworthiness in those systems or components.
                 </p>
                 <link href="#ES-03.16.01E" rel="assessment-for"/>
             </part>
@@ -10265,7 +10265,7 @@
             <link href="#749c52bb-59bc-49c9-9cfa-42c58d857a76" rel="external_reference"/>
             <part id="ES-03.17.01E" name="statement">
                 <p>Establish agreements and procedures with entities involved in the supply chain for the system, system component, or system service for the
-                    <insert type="param" id-ref=A.03.17.01E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.17.01E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.17.01E" name="guidance" class="discussion">
@@ -10296,7 +10296,7 @@
             </part>
             <part id="DS-A.03.17.01E" name="assessment-objective">
                 <p>agreements and procedures are established with entities involved in the supply chain for the system, system components, or system service for
-                    <insert type="param" id-ref=A.03.17.01E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.17.01E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.17.01E" rel="assessment-for"/>
             </part>
@@ -10385,8 +10385,8 @@
             <link href="#1ce8d129-4368-4bfb-ae43-20904a8599c2" rel="external_reference"/>
             <part id="ES-03.17.02E" name="statement">
                 <p>Inspect the following systems or system components
-                    <insert type="param" id-ref=A.03.17.02E.ODP.01"/> to detect tampering:
-                    <insert type="param" id-ref=A.03.17.02E.ODP.02"/>.
+                    <insert type="param" id-ref="A.03.17.02E.ODP.01"/> to detect tampering:
+                    <insert type="param" id-ref="A.03.17.02E.ODP.02"/>.
                 </p>
             </part>
             <part id="D-03.17.02E" name="guidance" class="discussion">
@@ -10407,8 +10407,8 @@
             </part>
             <part id="DS-A.03.17.02E" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.17.02E.ODP.01"/> are inspected
-                    <insert type="param" id-ref=A.03.17.02E.ODP.02"/> to detect tampering.
+                    <insert type="param" id-ref="A.03.17.02E.ODP.01"/> are inspected
+                    <insert type="param" id-ref="A.03.17.02E.ODP.02"/> to detect tampering.
                 </p>
                 <link href="#ES-03.17.02E" rel="assessment-for"/>
             </part>
@@ -10501,7 +10501,7 @@
                 <part id="ES-03.17.03E-b" name="item">
                     <prop name="label" value="ES-03.17.03E-b"/>
                     <p>Report counterfeit system components to
-                        <insert type="param" id-ref=A.03.17.03E.ODP.01"/>.
+                        <insert type="param" id-ref="A.03.17.03E.ODP.01"/>.
                     </p>
                 </part>
             </part>
@@ -10549,7 +10549,7 @@
             </part>
             <part id="DS-A.03.17.03E.b" name="assessment-objective">
                 <p>counterfeit system components are reported to
-                    <insert type="param" id-ref=A.03.17.03E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.17.03E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.17.03E-b" rel="assessment-for"/>
             </part>
@@ -10618,7 +10618,7 @@
             <link href="#129dab69-a27f-4387-a9db-4057f20775e4" rel="external_reference"/>
             <part id="ES-03.17.04E" name="statement">
                 <p>Document, monitor, and maintain valid provenance of the following systems, system components, and associated CUI:
-                    <insert type="param" id-ref=A.03.17.04E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.17.04E.ODP.01"/>.
                 </p>
             </part>
             <part id="D-03.17.04E" name="guidance" class="discussion">
@@ -10639,19 +10639,19 @@
             </part>
             <part id="DS-A.03.17.04E.01" name="assessment-objective">
                 <p>valid provenance is documented for
-                    <insert type="param" id-ref=A.03.17.04E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.17.04E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.17.04E" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.17.04E.02" name="assessment-objective">
                 <p>valid provenance is monitored for
-                    <insert type="param" id-ref=A.03.17.04E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.17.04E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.17.04E" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.17.04E.03" name="assessment-objective">
                 <p>valid provenance is maintained for
-                    <insert type="param" id-ref=A.03.17.04E.ODP.01"/>.
+                    <insert type="param" id-ref="A.03.17.04E.ODP.01"/>.
                 </p>
                 <link href="#ES-03.17.04E" rel="assessment-for"/>
             </part>
@@ -10718,8 +10718,8 @@
             <link href="#375fe16f-ac94-4eef-b536-c5f2122e6bd7" rel="external_reference"/>
             <part id="ES-03.17.05E" name="statement">
                 <p>Employ
-                    <insert type="param" id-ref=A.03.17.05E.ODP.01"/> and conduct
-                    <insert type="param" id-ref=A.03.17.05E.ODP.02"/> to ensure the integrity of the system and system components by validating the internal composition and provenance of critical or mission-essential technologies, products, and services.
+                    <insert type="param" id-ref="A.03.17.05E.ODP.01"/> and conduct
+                    <insert type="param" id-ref="A.03.17.05E.ODP.02"/> to ensure the integrity of the system and system components by validating the internal composition and provenance of critical or mission-essential technologies, products, and services.
                 </p>
             </part>
             <part id="D-03.17.05E" name="guidance" class="discussion">
@@ -10740,13 +10740,13 @@
             </part>
             <part id="DS-A.03.17.05E.01" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.17.05E.ODP.01"/> are employed to ensure the integrity of the system and system components.
+                    <insert type="param" id-ref="A.03.17.05E.ODP.01"/> are employed to ensure the integrity of the system and system components.
                 </p>
                 <link href="#ES-03.17.05E" rel="assessment-for"/>
             </part>
             <part id="DS-A.03.17.05E.02" name="assessment-objective">
                 <p>
-                    <insert type="param" id-ref=A.03.17.05E.ODP.02"/> is conducted to ensure the integrity of the system and system components.
+                    <insert type="param" id-ref="A.03.17.05E.ODP.02"/> is conducted to ensure the integrity of the system and system components.
                 </p>
                 <link href="#ES-03.17.05E" rel="assessment-for"/>
             </part>
