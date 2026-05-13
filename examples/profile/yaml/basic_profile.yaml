@@ -1,0 +1,35 @@
+profile:
+  uuid: 7db89308-6616-4b8a-8fe9-d2d9f2bb5292
+  metadata:
+    title: 'Sample Security Profile *For Demonstration* and Testing '
+    published: "2026-05-13T12:30:00.00000-00:00"
+    last-modified: "2026-05-12T02:46:09.00000-00:00"
+    version: 1.1.0
+    oscal-version: 1.2.2
+    remarks: The following document is used in the OSCAL Profile Tutorial and builds on the catalog created for the OSCAL Catalog Tutorial
+  imports:
+    - href: ../../catalog/xml/basic_catalog.xml
+      include-controls:
+        - matching:
+            - pattern: s1.1.*
+        - with-ids:
+            - s2.1.1
+      exclude-controls:
+        - with-ids:
+            - s2.1.2
+  merge:
+    flat: {}
+  modify:
+    set-parameters:
+      - param-id: s1.1.1-prm_2
+        label: a duration (maximum 30 minutes)
+    alters:
+      - control-id: s1.1.1
+        adds:
+          - position: after
+            by-id: s1.1.1_gdn.3
+            parts:
+              - id: s1.1.1_gdn.4
+                name: assessment-objective
+                class: assessment-objective
+                prose: 'Users of devices running Gnome may adjust the inactivity timeout using the following link: https://help.gnome.org/admin/system-admin-guide/stable/desktop-lockscreen.html.en'

@@ -1,12 +1,40 @@
 {
   "catalog": {
-    "uuid": "98cf22b5-912b-4efc-a622-4cf49f42ac13",
+    "uuid": "e369897e-ed2b-4927-a193-99186ee1673e",
     "metadata": {
       "title": "Electronic (OSCAL) Version of Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations",
-      "published": "2025-07-03T16:37:46.02276-04:00",
-      "last-modified": "2025-07-06T21:01:17.00000-00:00",
-      "version": "1.0.0",
-      "oscal-version": "v1.1.3",
+      "published": "2026-05-13T12:30:00-00:00",
+      "last-modified": "2026-05-12T01:01:09.00000-00:00",
+      "version": "1.1.0",
+      "oscal-version": "v1.2.2",
+      "revisions": [
+        {
+          "title": "Electronic (OSCAL) Version of Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations",
+          "last-modified": "2026-01-05T10:24:35.693009-05:00",
+          "version": "1.0.1",
+          "oscal-version": "v1.1.3",
+          "links": [
+            {
+              "href": "b1e4def8-5f2d-4cbe-a7f8-7b9c6bfb9cb8",
+              "rel": "version-history"
+            }
+          ],
+          "remarks": "This revision of the OSCAL representation of the NIST SP 800-171 Rev 3 provides a bug fix for empty statements in security requirements."
+        },
+        {
+          "title": "Electronic (OSCAL) Version of Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations",
+          "last-modified": "2025-07-06T21:01:17.00000-00:00",
+          "version": "1.0.0",
+          "oscal-version": "v1.1.3",
+          "links": [
+            {
+              "href": "98cf22b5-912b-4efc-a622-4cf49f42ac13",
+              "rel": "version-history"
+            }
+          ],
+          "remarks": "OSCAL v1.1.3 representation of the content of SP800-171 Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations."
+        }
+      ],
       "props": [
         {
           "name": "framework-identifier",
@@ -66,7 +94,7 @@
           "uuid": "98c78f9b-5d50-4b01-b47f-d16801e8d0ab",
           "type": "organization",
           "name": "OSCAL Program",
-          "short-name": "NIST",
+          "short-name": "NIST OSCAL",
           "email-addresses": [
             "oscal@nist.gov"
           ],
@@ -117,13 +145,13 @@
         {
           "role-id": "publisher",
           "party-uuids": [
-            "985fea3e-a6e5-4a57-ba3d-74f063bc8fa2"
+            "4809f9d2-fdb1-47b0-b444-11271f09ff22"
           ]
         },
         {
           "role-id": "contact-publisher",
           "party-uuids": [
-            "985fea3e-a6e5-4a57-ba3d-74f063bc8fa2"
+            "4809f9d2-fdb1-47b0-b444-11271f09ff22"
           ]
         },
         {
@@ -955,7 +983,8 @@
               {
                 "id": "statement_03.01.02",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Enforce approved authorizations for logical access to CUI and system resources in accordance with applicable access control policies."
               },
               {
                 "id": "guidance_D-03.01.02",
@@ -1073,7 +1102,8 @@
               {
                 "id": "statement_03.01.03",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Enforce approved authorizations for controlling the flow of CUI within the system and between connected systems."
               },
               {
                 "id": "guidance_D-03.01.03",
@@ -1891,7 +1921,7 @@
                     "value": "A.03.01.08.ODP[04]"
                   }
                 ],
-                "label": "",
+                "label": "time period",
                 "usage": "organization-defined time period",
                 "guidelines": [
                   {
@@ -2058,7 +2088,8 @@
               {
                 "id": "statement_03.01.09",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Display a system use notification message with privacy and security notices consistent with applicable CUI rules before granting access to the system."
               },
               {
                 "id": "guidance_D-03.01.09",
@@ -2159,7 +2190,7 @@
                     "value": "A.03.01.10.ODP[02]"
                   }
                 ],
-                "label": "",
+                "label": "time period",
                 "usage": "organization-defined time period",
                 "guidelines": [
                   {
@@ -2362,7 +2393,8 @@
               {
                 "id": "statement_03.01.11",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Terminate a user session automatically after {{ insert: param, A.03.01.11.ODP.01 }}."
               },
               {
                 "id": "guidance_D-03.01.11",
@@ -6472,7 +6504,8 @@
               {
                 "id": "statement_03.04.05",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Define, document, approve, and enforce physical and logical access restrictions associated with changes to the system."
               },
               {
                 "id": "guidance_D-03.04.05",
@@ -7965,7 +7998,8 @@
               {
                 "id": "statement_03.05.02",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Uniquely identify and authenticate {{ insert: param, A.03.05.02.ODP.01 }} before establishing a system connection."
               },
               {
                 "id": "guidance_D-03.05.02",
@@ -8079,7 +8113,8 @@
               {
                 "id": "statement_03.05.03",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Implement multi-factor authentication for access to privileged and non-privileged accounts."
               },
               {
                 "id": "guidance_D-03.05.03",
@@ -8189,7 +8224,8 @@
               {
                 "id": "statement_03.05.04",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Implement replay-resistant authentication mechanisms for access to privileged and non-privileged accounts."
               },
               {
                 "id": "guidance_D-03.05.04",
@@ -8866,7 +8902,8 @@
               {
                 "id": "statement_03.05.11",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Obscure feedback of authentication information during the authentication process."
               },
               {
                 "id": "guidance_D-03.05.11",
@@ -9312,7 +9349,8 @@
               {
                 "id": "statement_03.06.01",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Implement an incident-handling capability that is consistent with the incident response plan and includes preparation, detection and analysis, containment, eradication, and recovery."
               },
               {
                 "id": "guidance_D-03.06.01",
@@ -9719,7 +9757,8 @@
               {
                 "id": "statement_03.06.03",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Test the effectiveness of the incident response capability {{ insert: param, A.03.06.03.ODP.01 }}."
               },
               {
                 "id": "guidance_D-03.06.03",
@@ -11061,7 +11100,8 @@
               {
                 "id": "statement_03.08.01",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Physically control and securely store system media that contain CUI."
               },
               {
                 "id": "guidance_D-03.08.01",
@@ -11171,7 +11211,8 @@
               {
                 "id": "statement_03.08.02",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Restrict access to CUI on system media to authorized personnel or roles."
               },
               {
                 "id": "guidance_D-03.08.02",
@@ -11270,7 +11311,8 @@
               {
                 "id": "statement_03.08.03",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Sanitize system media that contain CUI prior to disposal, release out of organizational control, or release for reuse."
               },
               {
                 "id": "guidance_D-03.08.03",
@@ -11365,7 +11407,8 @@
               {
                 "id": "statement_03.08.04",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Mark system media that contain CUI to indicate distribution limitations, handling caveats, and applicable CUI markings."
               },
               {
                 "id": "guidance_D-03.08.04",
@@ -13310,7 +13353,8 @@
               {
                 "id": "statement_03.10.08",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Control physical access to system distribution and transmission lines within organizational facilities."
               },
               {
                 "id": "guidance_D-03.10.08",
@@ -13909,7 +13953,8 @@
               {
                 "id": "statement_03.11.04",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Respond to findings from security assessments, monitoring, and audits."
               },
               {
                 "id": "guidance_D-03.11.04",
@@ -14077,7 +14122,8 @@
               {
                 "id": "statement_03.12.01",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Assess the security requirements for the system and its environment of operation {{ insert: param, A.03.12.01.ODP.01 }} to determine if the requirements have been satisfied."
               },
               {
                 "id": "guidance_D-03.12.01",
@@ -14418,7 +14464,8 @@
               {
                 "id": "statement_03.12.03",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Develop and implement a system-level continuous monitoring strategy that includes ongoing monitoring and security assessments."
               },
               {
                 "id": "guidance_D-03.12.03",
@@ -15072,7 +15119,8 @@
               {
                 "id": "statement_03.13.04",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Prevent unauthorized and unintended information transfer via shared system resources."
               },
               {
                 "id": "guidance_D-03.13.04",
@@ -15211,7 +15259,8 @@
               {
                 "id": "statement_03.13.06",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Deny network communications traffic by default, and allow network communications traffic by exception."
               },
               {
                 "id": "guidance_D-03.13.06",
@@ -15426,7 +15475,8 @@
               {
                 "id": "statement_03.13.08",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Implement cryptographic mechanisms to prevent the unauthorized disclosure of CUI during transmission and while in storage."
               },
               {
                 "id": "guidance_D-03.13.08",
@@ -15550,7 +15600,8 @@
               {
                 "id": "statement_03.13.09",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Terminate the network connection associated with a communications session at the end of the session or after {{ insert: param, A.03.13.09.ODP.01 }} of inactivity."
               },
               {
                 "id": "guidance_D-03.13.09",
@@ -15695,7 +15746,8 @@
               {
                 "id": "statement_03.13.10",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Establish and manage cryptographic keys in the system in accordance with the following key management requirements: {{ insert: param, A.03.13.10.ODP.01 }}."
               },
               {
                 "id": "guidance_D-03.13.10",
@@ -15823,7 +15875,8 @@
               {
                 "id": "statement_03.13.11",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Implement the following types of cryptography to protect the confidentiality of CUI: {{ insert: param, A.03.13.11.ODP.01 }}."
               },
               {
                 "id": "guidance_D-03.13.11",
@@ -16264,7 +16317,8 @@
               {
                 "id": "statement_03.13.15",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Protect the authenticity of communications sessions."
               },
               {
                 "id": "guidance_D-03.13.15",
@@ -17239,7 +17293,8 @@
               {
                 "id": "statement_03.14.08",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Manage and retain CUI within the system and CUI output from the system in accordance with applicable laws, Executive Orders, directives, regulations, policies, standards, guidelines, and operational requirements."
               },
               {
                 "id": "guidance_D-03.14.08",
@@ -18237,7 +18292,8 @@
               {
                 "id": "statement_03.16.01",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Apply the following systems security engineering principles to the development or modification of the system and system components: {{ insert: param, A.03.16.01.ODP.01 }}."
               },
               {
                 "id": "guidance_D-03.16.01",
@@ -18961,7 +19017,8 @@
               {
                 "id": "statement_03.17.02",
                 "name": "statement",
-                "class": "security_requirement"
+                "class": "security_requirement",
+                "prose": "Develop and implement acquisition strategies, contract tools, and procurement methods to identify, protect against, and mitigate supply chain risks."
               },
               {
                 "id": "guidance_D-03.17.02",
@@ -21461,6 +21518,15 @@
           "rlinks": [
             {
               "href": "https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SI-12"
+            }
+          ]
+        },
+        {
+          "uuid": "98cf22b5-912b-4efc-a622-4cf49f42ac13",
+          "title": "Electronic (OSCAL) Version of Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations",
+          "rlinks": [
+            {
+              "href": "https://github.com/usnistgov/oscal-content/releases/tag/v1.4.0"
             }
           ]
         }

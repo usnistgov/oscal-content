@@ -4,9 +4,9 @@
          uuid="0e15a0fe-fa2a-40e9-847d-53e8c13e60f0">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 4 LOW IMPACT BASELINE</title>
-      <last-modified>2023-10-12T00:00:00.000000-04:00</last-modified>
+      <last-modified>2026-05-11T16:16:09.00000-00:00</last-modified>
       <version>2015-01-22</version>
-      <oscal-version>1.1.1</oscal-version>
+      <oscal-version>1.2.2</oscal-version>
       <role id="creator">
          <title>Document Creator</title>
       </role>

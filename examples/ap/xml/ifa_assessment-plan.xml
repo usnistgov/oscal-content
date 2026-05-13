@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<assessment-plan uuid="97f36be8-fec0-4fa6-bcdf-e3f838eba040"
+<assessment-plan uuid="74c1f5ed-7b04-49e4-a89b-f8b0120715fd"
     xmlns="http://csrc.nist.gov/ns/oscal/1.0">
     <metadata>
         <title>IFA SYSTEM1234 Assessment Plan</title>
-        <last-modified>2025-07-06T15:05:10.355446-04:00</last-modified>
+        <published>2026-05-13T12:30:00.00000-00:00</published>
+        <last-modified>2026-05-12T02:36:09.00000-00:00</last-modified>
         <version>1.1.0</version>
-        <oscal-version>1.1.3</oscal-version>
+        <oscal-version>1.2.2</oscal-version>
         <revisions>
             <revision>
                 <title>IFA GoodRead Assessment Plan</title>
@@ -15,6 +16,16 @@
                 <link rel="version-history" href="#60077e84-e62f-4375-8c6c-b0e0d4560c5f"/>
                 <remarks>
                     <p>This OSCAL version of the IFA Assessment Plan is part of the v 1.3.0 OSCAL content release.</p>
+                </remarks>
+            </revision>
+            <revision>
+                <title>IFA SYSTEM1234 Assessment Plan</title>
+                <last-modified>2025-07-06T15:05:10.355446-04:00</last-modified>
+                <version>1.1.0</version>
+                <oscal-version>1.1.3</oscal-version>
+                <link rel="version-history" href="#97f36be8-fec0-4fa6-bcdf-e3f838eba040"/>
+                <remarks>
+                    <p>This OSCAL version of the IFA Assessment Plan is part of the v 1.4.0 OSCAL content release.</p>
                 </remarks>
             </revision>
         </revisions>
@@ -34,7 +45,7 @@
             <party-uuid>e7730080-71ce-4b20-bec4-84f33136fd58</party-uuid>
         </responsible-party>
         <remarks>
-            <p>In this version of the artifact, the content was updated to OSCAL v1.1.3 and the system name was changed. Additionally errors like importing non-existing SSP were addressed.</p>
+            <p>In this version of the artifact, the content was updated to OSCAL v1.2.2.</p>
         </remarks>
     </metadata>
     <import-ssp href="../../ssp/xml/ifa_ssp.xml" />
@@ -143,9 +154,16 @@
     <back-matter>
         <resource uuid="60077e84-e62f-4375-8c6c-b0e0d4560c5f">
             <title>IFA GoodRead Assessment Plan</title>
-            <rlink href="https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.3.0.zip"/>
+            <rlink media-type="application/oscal+zip" href="https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.3.0.zip"/>
             <remarks>
                 <p>This OSCAL version of the IFA Assessment Plan released with the OSCAL content v1.3.0.</p>
+            </remarks>
+        </resource>       
+        <resource uuid="97f36be8-fec0-4fa6-bcdf-e3f838eba040">
+            <title>IFA SYSTEM1234 Assessment Plan</title>
+            <rlink media-type="application/oscal+zip" href="https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.4.0.zip"/>
+            <remarks>
+                <p>This OSCAL version of the IFA Assessment Plan was released with the OSCAL content v1.4.0.</p>
             </remarks>
         </resource>
     </back-matter>

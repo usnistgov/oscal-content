@@ -1,10 +1,10 @@
 catalog:
-  uuid: 3cf4bfb2-5d22-4a70-be1b-2fb2ad2cf606
+  uuid: eee059c3-2215-44c7-8309-73bf3e4a2333
   metadata:
     title: Electronic (OSCAL) Version of NIST Special Publication 800-53 Revision 5.1.1 HIGH IMPACT BASELINE
-    last-modified: "2025-08-27T00:39:51.321021Z"
+    last-modified: "2026-05-13T05:08:48.658671Z"
     version: 5.2.0
-    oscal-version: 1.1.3
+    oscal-version: 1.2.2
     props:
       - name: resolution-tool
         value: OSCAL Profile Resolver XSLT Pipeline OPRXP

@@ -1,11 +1,28 @@
 catalog:
-  uuid: 98cf22b5-912b-4efc-a622-4cf49f42ac13
+  uuid: e369897e-ed2b-4927-a193-99186ee1673e
   metadata:
     title: Electronic (OSCAL) Version of Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations
-    published: "2025-07-03T16:37:46.02276-04:00"
-    last-modified: "2025-07-06T21:01:17.00000-00:00"
-    version: 1.0.0
-    oscal-version: v1.1.3
+    published: "2026-05-13T12:30:00-00:00"
+    last-modified: "2026-05-12T01:01:09.00000-00:00"
+    version: 1.1.0
+    oscal-version: v1.2.2
+    revisions:
+      - title: Electronic (OSCAL) Version of Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations
+        last-modified: "2026-01-05T10:24:35.693009-05:00"
+        version: 1.0.1
+        oscal-version: v1.1.3
+        links:
+          - href: b1e4def8-5f2d-4cbe-a7f8-7b9c6bfb9cb8
+            rel: version-history
+        remarks: This revision of the OSCAL representation of the NIST SP 800-171 Rev 3 provides a bug fix for empty statements in security requirements.
+      - title: Electronic (OSCAL) Version of Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations
+        last-modified: "2025-07-06T21:01:17.00000-00:00"
+        version: 1.0.0
+        oscal-version: v1.1.3
+        links:
+          - href: 98cf22b5-912b-4efc-a622-4cf49f42ac13
+            rel: version-history
+        remarks: OSCAL v1.1.3 representation of the content of SP800-171 Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations.
     props:
       - name: framework-identifier
         ns: https://csrc.nist.gov/ns/cprt
@@ -39,7 +56,7 @@ catalog:
       - uuid: 98c78f9b-5d50-4b01-b47f-d16801e8d0ab
         type: organization
         name: OSCAL Program
-        short-name: NIST
+        short-name: NIST OSCAL
         email-addresses:
           - oscal@nist.gov
         addresses:
@@ -72,10 +89,10 @@ catalog:
           - 98c78f9b-5d50-4b01-b47f-d16801e8d0ab
       - role-id: publisher
         party-uuids:
-          - 985fea3e-a6e5-4a57-ba3d-74f063bc8fa2
+          - 4809f9d2-fdb1-47b0-b444-11271f09ff22
       - role-id: contact-publisher
         party-uuids:
-          - 985fea3e-a6e5-4a57-ba3d-74f063bc8fa2
+          - 4809f9d2-fdb1-47b0-b444-11271f09ff22
       - role-id: contact-creator
         party-uuids:
           - 98c78f9b-5d50-4b01-b47f-d16801e8d0ab
@@ -564,6 +581,7 @@ catalog:
             - id: statement_03.01.02
               name: statement
               class: security_requirement
+              prose: Enforce approved authorizations for logical access to CUI and system resources in accordance with applicable access control policies.
             - id: guidance_D-03.01.02
               name: guidance
               prose: Access control policies control access between active entities or subjects (i.e., users or system processes acting on behalf of users) and passive entities or objects (i.e., devices, files, records, domains) in organizational systems. Types of system access include remote access and access to systems that communicate through external networks, such as the internet. Access enforcement mechanisms can also be employed at the application and service levels to provide increased protection for CUI. This recognizes that the system can host many applications and services in support of mission and business functions. Access control policies are defined in [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.15.01) 03.15.01.
@@ -649,6 +667,7 @@ catalog:
             - id: statement_03.01.03
               name: statement
               class: security_requirement
+              prose: Enforce approved authorizations for controlling the flow of CUI within the system and between connected systems.
             - id: guidance_D-03.01.03
               name: guidance
               prose: Information flow control regulates where CUI can transit within a system and between systems (in contrast to who is allowed to access the information) and without regard to subsequent accesses to that information. Flow control restrictions include keeping CUI from being transmitted in the clear to the internet, blocking external communications traffic that claims to be sourced from within the organization, restricting requests to the internet that are not from the internal web proxy server, and limiting CUI transfers between organizations based on data structures and content. Transferring CUI between organizations may require an agreement that specifies how the information flow is enforced (see [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.12.05)03.12.05). Transferring CUI between systems that represent different security domains with different security policies introduces the risk that such transfers violate one or more domain security policies. In such situations, information owners or stewards provide guidance at designated policy enforcement points between interconnected systems. Organizations consider mandating specific architectural solutions when required to enforce specific security policies. Enforcement includes prohibiting CUI transfers between interconnected systems (i.e., allowing information access only), employing hardware mechanisms to enforce one-way information flows, and implementing trustworthy regrading mechanisms to reassign security attributes and security labels. Organizations commonly use information flow control policies and enforcement mechanisms to control the flow of CUI between designated sources and destinations (e.g., networks, individuals, and devices) within systems and between interconnected systems. Flow control is based on characteristics of the information or the information path. Enforcement occurs in boundary protection devices (e.g., encrypted tunnels, routers, gateways, and firewalls) that use rule sets or establish configuration settings that restrict system services, provide a packet-filtering capability based on header information, or provide a message-filtering capability based on message content (e.g., implementing key word searches or using document characteristics). Organizations also consider the trustworthiness of filtering and inspection mechanisms (i.e., hardware, firmware, and software components) that are critical to information flow enforcement.
@@ -1214,7 +1233,7 @@ catalog:
               props:
                 - name: label
                   value: A.03.01.08.ODP[04]
-              label: ""
+              label: time period
               usage: organization-defined time period
               guidelines:
                 - prose: the time period for an account or node to be locked is defined (if selected).
@@ -1322,6 +1341,7 @@ catalog:
             - id: statement_03.01.09
               name: statement
               class: security_requirement
+              prose: Display a system use notification message with privacy and security notices consistent with applicable CUI rules before granting access to the system.
             - id: guidance_D-03.01.09
               name: guidance
               prose: System use notifications can be implemented using messages or warning banners. The messages or warning banners are displayed before individuals log in to a system that processes, stores, or transmits CUI. System use notifications are used for access via logon interfaces with human users and are not required when human interfaces do not exist. Organizations consider whether a secondary use notification is needed to access applications or other system resources after the initial network logon. Posters or other printed materials may be used in lieu of an automated system message. This requirement is related to [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.15.03) 03.15.03.
@@ -1402,7 +1422,7 @@ catalog:
               props:
                 - name: label
                   value: A.03.01.10.ODP[02]
-              label: ""
+              label: time period
               usage: organization-defined time period
               guidelines:
                 - prose: the time period of inactivity after which a device lock is initiated is defined (if selected).
@@ -1532,6 +1552,7 @@ catalog:
             - id: statement_03.01.11
               name: statement
               class: security_requirement
+              prose: 'Terminate a user session automatically after {{ insert: param, A.03.01.11.ODP.01 }}.'
             - id: guidance_D-03.01.11
               name: guidance
               prose: This requirement addresses the termination of user-initiated logical sessions in contrast to the termination of network connections that are associated with communications sessions (i.e., disconnecting from the network) in [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.13.09)03.13.09. A logical session is initiated whenever a user (or processes acting on behalf of a user) accesses a system. Logical sessions can be terminated (and thus terminate user access) without terminating network sessions. Session termination ends all system processes associated with a user’s logical session except those processes that are created by the user (i.e., session owner) to continue after the session is terminated. Conditions or trigger events that require automatic session termination can include organization-defined periods of user inactivity, time-of-day restrictions on system use, and targeted responses to certain types of incidents.
@@ -4216,6 +4237,7 @@ catalog:
             - id: statement_03.04.05
               name: statement
               class: security_requirement
+              prose: Define, document, approve, and enforce physical and logical access restrictions associated with changes to the system.
             - id: guidance_D-03.04.05
               name: guidance
               prose: Changes to the hardware, software, or firmware components of the system or the operational procedures related to the system can have potentially significant effects on the security of the system. Therefore, organizations permit only qualified and authorized individuals to access the system for the purpose of initiating changes. Access restrictions include physical and logical access controls, software libraries, workflow automation, media libraries, abstract layers (i.e., changes implemented into external interfaces rather than directly into the system), and change windows (i.e., changes occur only during specified times).
@@ -5244,6 +5266,7 @@ catalog:
             - id: statement_03.05.02
               name: statement
               class: security_requirement
+              prose: 'Uniquely identify and authenticate {{ insert: param, A.03.05.02.ODP.01 }} before establishing a system connection.'
             - id: guidance_D-03.05.02
               name: guidance
               prose: Devices that require unique device-to-device identification and authentication are defined by type, device, or a combination of type and device. Organization-defined device types include devices that are not owned by the organization. Systems use shared known information (e.g., Media Access Control .MAC, Transmission Control Protocol/Internet Protocol .TCP/IP addresses) for device identification or organizational authentication solutions (e.g., Institute of Electrical and Electronics Engineers .IEEE 802.1x and Extensible Authentication Protocol .EAP, RADIUS server with EAP-Transport Layer Security .TLS authentication, Kerberos) to identify and authenticate devices on local and wide area networks. Public Key Infrastructure (PKI) and certificate revocation checking for the certificates exchanged can be included as part of device authentication.
@@ -5327,6 +5350,7 @@ catalog:
             - id: statement_03.05.03
               name: statement
               class: security_requirement
+              prose: Implement multi-factor authentication for access to privileged and non-privileged accounts.
             - id: guidance_D-03.05.03
               name: guidance
               prose: 'This requirement applies to user accounts. Multi-factor authentication requires the use of two or more different factors to achieve authentication. The authentication factors are defined as follows: something you know (e.g., a personal identification number .PIN), something you have (e.g., a physical authenticator, such as a cryptographic private key), or something you are (e.g., a biometric). Multi-factor authentication solutions that feature physical authenticators include hardware authenticators that provide time-based or challenge-response outputs and smart cards. In addition to authenticating users at the system level, organizations may also employ authentication mechanisms at the application level to provide increased information security.'
@@ -5408,6 +5432,7 @@ catalog:
             - id: statement_03.05.04
               name: statement
               class: security_requirement
+              prose: Implement replay-resistant authentication mechanisms for access to privileged and non-privileged accounts.
             - id: guidance_D-03.05.04
               name: guidance
               prose: Authentication processes resist replay attacks if it is impractical to successfully authenticate by recording or replaying previous authentication messages. Replay-resistant techniques include protocols that use nonces or challenges, such as time synchronous or challenge-response one-time authenticators.
@@ -5843,6 +5868,7 @@ catalog:
             - id: statement_03.05.11
               name: statement
               class: security_requirement
+              prose: Obscure feedback of authentication information during the authentication process.
             - id: guidance_D-03.05.11
               name: guidance
               prose: Authentication feedback does not provide information that would allow unauthorized individuals to compromise authentication mechanisms. For example, for desktop or notebook systems with relatively large monitors, the threat may be significant (commonly referred to as shoulder surfing). For mobile devices with small displays, this threat may be less significant and is balanced against the increased likelihood of input errors due to small keyboards. Therefore, the means of obscuring authenticator feedback is selected accordingly. Obscuring feedback includes displaying asterisks when users type passwords into input devices or displaying feedback for a limited time before fully obscuring it.
@@ -6122,6 +6148,7 @@ catalog:
             - id: statement_03.06.01
               name: statement
               class: security_requirement
+              prose: Implement an incident-handling capability that is consistent with the incident response plan and includes preparation, detection and analysis, containment, eradication, and recovery.
             - id: guidance_D-03.06.01
               name: guidance
               prose: Incident-related information can be obtained from a variety of sources, including audit monitoring, network monitoring, physical access monitoring, user and administrator reports, and reported supply chain events. An effective incident handling capability involves coordination among many organizational entities, including mission and business owners, system owners, human resources offices, physical and personnel security offices, legal departments, operations personnel, and procurement offices.
@@ -6395,6 +6422,7 @@ catalog:
             - id: statement_03.06.03
               name: statement
               class: security_requirement
+              prose: 'Test the effectiveness of the incident response capability {{ insert: param, A.03.06.03.ODP.01 }}.'
             - id: guidance_D-03.06.03
               name: guidance
               prose: Organizations test incident response capabilities to determine their effectiveness and identify potential weaknesses or deficiencies. Incident response testing includes the use of checklists, walk-through or tabletop exercises, and simulations. Incident response testing can include a determination of the effects of incident response on organizational operations, organizational assets, and individuals. Qualitative and quantitative data can help determine the effectiveness of incident response processes.
@@ -7260,6 +7288,7 @@ catalog:
             - id: statement_03.08.01
               name: statement
               class: security_requirement
+              prose: Physically control and securely store system media that contain CUI.
             - id: guidance_D-03.08.01
               name: guidance
               prose: System media include digital and non-digital media. Digital media include diskettes, flash drives, magnetic tapes, external or removable solid state or magnetic drives, compact discs, and digital versatile discs. Non-digital media include paper and microfilm. Physically controlling stored media includes conducting inventories, establishing procedures to allow individuals to check out and return media to libraries, and maintaining accountability for stored media. Secure storage includes a locked drawer, desk, or cabinet or a controlled media library. Controlled areas provide physical and procedural controls to meet the requirements established for protecting information and systems. Sanitization techniques (e.g., destroying, cryptographically erasing, clearing, and purging) prevent the disclosure of CUI to unauthorized individuals. The sanitization process removes CUI from media such that the information cannot be retrieved or reconstructed.
@@ -7338,6 +7367,7 @@ catalog:
             - id: statement_03.08.02
               name: statement
               class: security_requirement
+              prose: Restrict access to CUI on system media to authorized personnel or roles.
             - id: guidance_D-03.08.02
               name: guidance
               prose: System media include digital and non-digital media. Access to CUI on system media can be restricted by physically controlling such media. This includes conducting inventories, ensuring that procedures are in place to allow individuals to check out and return media to the media library, and maintaining accountability for stored media. For digital media, access to CUI can be restricted by using cryptographic means. Encrypting data in storage or at rest is addressed in [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.13.08) 03.13.08.
@@ -7414,6 +7444,7 @@ catalog:
             - id: statement_03.08.03
               name: statement
               class: security_requirement
+              prose: Sanitize system media that contain CUI prior to disposal, release out of organizational control, or release for reuse.
             - id: guidance_D-03.08.03
               name: guidance
               prose: Media sanitization applies to digital and non-digital media that are subject to disposal or reuse, whether or not the media are considered removable. Examples include digital media in scanners, copiers, printers, notebook computers, mobile devices, workstations, network components, and non-digital media. The sanitization process removes CUI from media such that the information cannot be retrieved or reconstructed. Sanitization techniques (e.g., cryptographically erasing, clearing, purging, and destroying) prevent the disclosure of CUI to unauthorized individuals when such media are reused or released for disposal. NARA policies control the sanitization process for media that contain CUI and may require destruction when other methods cannot be applied to the media.
@@ -7496,6 +7527,7 @@ catalog:
             - id: statement_03.08.04
               name: statement
               class: security_requirement
+              prose: Mark system media that contain CUI to indicate distribution limitations, handling caveats, and applicable CUI markings.
             - id: guidance_D-03.08.04
               name: guidance
               prose: System media include digital and non-digital media. Marking refers to the use or application of human-readable security attributes. Labeling refers to the use of security attributes for internal system data structures. Digital media include diskettes, magnetic tapes, external or removable solid state or magnetic drives, flash drives, compact discs, and digital versatile discs. Non-digital media include paper and microfilm. CUI is defined by NARA along with marking, safeguarding, and dissemination requirements for such information.
@@ -8787,6 +8819,7 @@ catalog:
             - id: statement_03.10.08
               name: statement
               class: security_requirement
+              prose: Control physical access to system distribution and transmission lines within organizational facilities.
             - id: guidance_D-03.10.08
               name: guidance
               prose: Safeguarding measures applied to system distribution and transmission lines prevent accidental damage, disruption, and physical tampering. Such measures may also be necessary to prevent eavesdropping or the modification of unencrypted transmissions. Safeguarding measures used to control physical access to system distribution and transmission lines include disconnected or locked spare jacks, locked wiring closets, cabling protection with conduit or cable trays, and wiretapping sensors.
@@ -9203,6 +9236,7 @@ catalog:
             - id: statement_03.11.04
               name: statement
               class: security_requirement
+              prose: Respond to findings from security assessments, monitoring, and audits.
             - id: guidance_D-03.11.04
               name: guidance
               prose: This requirement addresses the need to determine an appropriate response to risk before generating a plan of action and milestones (POAM) entry. It may be possible to mitigate the risk immediately so that a POAM entry is not needed. However, a POAM entry is generated if the risk response is to mitigate the identified risk and the mitigation cannot be completed immediately.
@@ -9311,6 +9345,7 @@ catalog:
             - id: statement_03.12.01
               name: statement
               class: security_requirement
+              prose: 'Assess the security requirements for the system and its environment of operation {{ insert: param, A.03.12.01.ODP.01 }} to determine if the requirements have been satisfied.'
             - id: guidance_D-03.12.01
               name: guidance
               prose: By assessing the security requirements, organizations determine whether the necessary safeguards and countermeasures are implemented correctly, operating as intended, and producing the desired outcome. Security assessments identify weaknesses in the system and provide the essential information needed to make risk-based decisions. Security assessment reports document assessment results in sufficient detail as deemed necessary by the organization to determine the accuracy and completeness of the reports. Security assessment results are provided to the individuals or roles appropriate for the types of assessments being conducted.
@@ -9526,6 +9561,7 @@ catalog:
             - id: statement_03.12.03
               name: statement
               class: security_requirement
+              prose: Develop and implement a system-level continuous monitoring strategy that includes ongoing monitoring and security assessments.
             - id: guidance_D-03.12.03
               name: guidance
               prose: Continuous monitoring at the system level facilitates ongoing awareness of the system security posture to support risk management decisions. The terms continuous and ongoing imply that organizations assess and monitor their systems at a frequency that is sufficient to support risk-based decisions. Different types of security requirements may require different monitoring frequencies.
@@ -9972,6 +10008,7 @@ catalog:
             - id: statement_03.13.04
               name: statement
               class: security_requirement
+              prose: Prevent unauthorized and unintended information transfer via shared system resources.
             - id: guidance_D-03.13.04
               name: guidance
               prose: Preventing unauthorized and unintended information transfer via shared system resources stops information produced by the actions of prior users or roles (or actions of processes acting on behalf of prior users or roles) from being available to current users or roles (or current processes acting on behalf of current users or roles) that obtain access to shared system resources after those resources have been released back to the system. Information in shared system resources also applies to encrypted representations of information. In other contexts, the control of information in shared system resources is referred to as object reuse and residual information protection. Information in shared system resources does not address information remanence, which refers to the residual representation of data that has been nominally deleted, covert channels (including storage and timing channels) in which shared system resources are manipulated to violate information flow restrictions, or components within systems for which there are only single users or roles.
@@ -10064,6 +10101,7 @@ catalog:
             - id: statement_03.13.06
               name: statement
               class: security_requirement
+              prose: Deny network communications traffic by default, and allow network communications traffic by exception.
             - id: guidance_D-03.13.06
               name: guidance
               prose: This requirement applies to inbound and outbound network communications traffic at the system boundary and at identified points within the system. A deny-all, allow-by-exception network communications traffic policy ensures that only essential and approved connections are allowed.
@@ -10196,6 +10234,7 @@ catalog:
             - id: statement_03.13.08
               name: statement
               class: security_requirement
+              prose: Implement cryptographic mechanisms to prevent the unauthorized disclosure of CUI during transmission and while in storage.
             - id: guidance_D-03.13.08
               name: guidance
               prose: This requirement applies to internal and external networks and any system components that can transmit CUI, including servers, notebook computers, desktop computers, mobile devices, printers, copiers, scanners, facsimile machines, and radios. Unprotected communication paths are susceptible to interception and modification. Encryption protects CUI from unauthorized disclosure during transmission and while in storage. Cryptographic mechanisms that protect the confidentiality of CUI during transmission include TLS and IPsec. Information in storage (i.e., information at rest) refers to the state of CUI when it is not in process or in transit and resides on internal or external storage devices, storage area network devices, and databases. Protecting CUI in storage does not focus on the type of storage device or the frequency of access to that device but rather on the state of the information. This requirement relates to [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.13.11) 03.13.11.
@@ -10293,6 +10332,7 @@ catalog:
             - id: statement_03.13.09
               name: statement
               class: security_requirement
+              prose: 'Terminate the network connection associated with a communications session at the end of the session or after {{ insert: param, A.03.13.09.ODP.01 }} of inactivity.'
             - id: guidance_D-03.13.09
               name: guidance
               prose: This requirement applies to internal and external networks. Terminating network connections associated with communications sessions includes deallocating TCP/IP addresses or port pairs at the operating system level or deallocating networking assignments at the application level if multiple application sessions are using a single network connection. Time periods of inactivity may be established by organizations and include time periods by type of network access or for specific network accesses.
@@ -10387,6 +10427,7 @@ catalog:
             - id: statement_03.13.10
               name: statement
               class: security_requirement
+              prose: 'Establish and manage cryptographic keys in the system in accordance with the following key management requirements: {{ insert: param, A.03.13.10.ODP.01 }}.'
             - id: guidance_D-03.13.10
               name: guidance
               prose: Cryptographic keys can be established and managed using either manual procedures or automated mechanisms supported by manual procedures. Organizations satisfy key establishment and management requirements in accordance with applicable federal laws, Executive Orders, policies, directives, regulations, and standards that specify appropriate options, levels, and parameters. This requirement is related to [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.13.11) 03.13.11.
@@ -10475,6 +10516,7 @@ catalog:
             - id: statement_03.13.11
               name: statement
               class: security_requirement
+              prose: 'Implement the following types of cryptography to protect the confidentiality of CUI: {{ insert: param, A.03.13.11.ODP.01 }}.'
             - id: guidance_D-03.13.11
               name: guidance
               prose: Cryptography is implemented in accordance with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines. FIPS-validated cryptography is recommended for the protection of CUI.
@@ -10787,6 +10829,7 @@ catalog:
             - id: statement_03.13.15
               name: statement
               class: security_requirement
+              prose: Protect the authenticity of communications sessions.
             - id: guidance_D-03.13.15
               name: guidance
               prose: Protecting session authenticity addresses communications protection at the session level, not at the packet level. Such protection establishes grounds for confidence at both ends of the communications sessions in the ongoing identities of other parties and the validity of the transmitted information. Authenticity protection includes protecting against adversary-in-the-middle attacks, session hijacking, and the insertion of false information into sessions.
@@ -11429,6 +11472,7 @@ catalog:
             - id: statement_03.14.08
               name: statement
               class: security_requirement
+              prose: Manage and retain CUI within the system and CUI output from the system in accordance with applicable laws, Executive Orders, directives, regulations, policies, standards, guidelines, and operational requirements.
             - id: guidance_D-03.14.08
               name: guidance
               prose: Federal agencies consider data retention requirements for nonfederal organizations. Retaining CUI on nonfederal systems after contracts or agreements have concluded increases the attack surface for those systems and the risk of the information being compromised. NARA provides federal policy and guidance on records retention and schedules.
@@ -12041,6 +12085,7 @@ catalog:
             - id: statement_03.16.01
               name: statement
               class: security_requirement
+              prose: 'Apply the following systems security engineering principles to the development or modification of the system and system components: {{ insert: param, A.03.16.01.ODP.01 }}.'
             - id: guidance_D-03.16.01
               name: guidance
               prose: Organizations apply systems security engineering principles to new development systems. For legacy systems, organizations apply systems security engineering principles to system modifications to the extent feasible, given the current state of hardware, software, and firmware components. The application of systems security engineering principles helps to develop trustworthy, secure, and resilient systems and reduce the susceptibility of organizations to disruptions, hazards, and threats. Examples include developing layered protections; establishing security policies, architectures, and controls as the foundation for system design; incorporating security requirements into the system development life cycle; delineating physical and logical security boundaries; ensuring that developers are trained on how to build trustworthy secure software; and performing threat modeling to identify use cases, threat agents, attack vectors and patterns, design patterns, and compensating controls needed to mitigate risk. Organizations that apply security engineering principles can facilitate the development of trustworthy, secure systems, system components, and system services; reduce risks to acceptable levels; and make informed risk-management decisions.
@@ -12553,6 +12598,7 @@ catalog:
             - id: statement_03.17.02
               name: statement
               class: security_requirement
+              prose: Develop and implement acquisition strategies, contract tools, and procurement methods to identify, protect against, and mitigate supply chain risks.
             - id: guidance_D-03.17.02
               name: guidance
               prose: The acquisition process provides an important vehicle for protecting the supply chain. There are many useful tools and techniques available, including obscuring the end use of a system or system component, using blind purchases, requiring tamperevident packaging, or using trusted or controlled distribution. The results from a supply chain risk assessment can inform the strategies, tools, and methods that are most applicable to the situation. Tools and techniques may provide protections against unauthorized production, theft, tampering, the insertion of counterfeits, the insertion of malicious software or backdoors, and poor development practices throughout the system life cycle. Organizations also consider providing incentives for suppliers to implement safeguards, promote transparency in their processes and security practices, provide contract language that addresses the prohibition of tainted or counterfeit components, and restrict purchases from untrustworthy suppliers. Organizations consider providing training, education, and awareness programs for personnel regarding supply chain risks, available mitigation strategies, and when the programs should be employed. Methods for reviewing and protecting development plans, documentation, and evidence are commensurate with the security requirements of the organization. Contracts may specify documentation protection requirements.
@@ -13804,3 +13850,7 @@ catalog:
         title: SI-12
         rlinks:
           - href: https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SI-12
+      - uuid: 98cf22b5-912b-4efc-a622-4cf49f42ac13
+        title: Electronic (OSCAL) Version of Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations
+        rlinks:
+          - href: https://github.com/usnistgov/oscal-content/releases/tag/v1.4.0

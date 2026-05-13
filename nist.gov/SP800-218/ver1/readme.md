@@ -1,4 +1,4 @@
-# NIST Special Publication (SP) 800-218 v1 Digitalized in OSCAL Formats
+# NIST Special Publication (SP) 800-171 Rev 3 Digitalized in OSCAL Formats
 
 This subdirectory contains the NIST Special Publication (SP) 800-218 version 1.1: [_Secure Software Development Framework (SSDF) Version 1.1: Recommendations for Mitigating the Risk of Software Vulnerabilities_](https://doi.org/10.6028/NIST.SP.800-218) in OSCAL formats.
 

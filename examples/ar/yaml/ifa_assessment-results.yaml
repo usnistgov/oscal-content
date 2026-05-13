@@ -1,10 +1,10 @@
 assessment-results:
-  uuid: 8da1dfe1-4aec-48e2-bacb-431ad61486c2
+  uuid: f90f8cd3-8b97-4f6e-a79c-86076723ac49
   metadata:
     title: IFA SYSTEM1234 Assessment Results
-    last-modified: "2025-07-06T14:10:00.000000-00:00"
+    last-modified: "2026-05-12T02:46:09.00000-00:00"
     version: 1.0.0
-    oscal-version: 1.1.3
+    oscal-version: 1.2.2
     revisions:
       - title: IFA GoodRead Continuous Monitoring Assessment Results June 2023
         last-modified: "2024-02-01T13:57:28.355446-04:00"
@@ -14,6 +14,14 @@ assessment-results:
           - href: '#ec0dad37-54e0-40fd-a925-6d0bdea94c0d'
             rel: version-history
         remarks: This OSCAL version of the IFA Assessment Results was importing an nonexisting Assessment Plan.
+      - title: IFA SYSTEM1234 Continuous Monitoring Assessment Results
+        last-modified: "2025-07-06T15:05:10.355446-04:00"
+        version: 202306-002
+        oscal-version: 1.1.3
+        links:
+          - href: '#8da1dfe1-4aec-48e2-bacb-431ad61486c2'
+            rel: version-history
+        remarks: This OSCAL version of the IFA Assessment Results is part of OSCAL content v1.1.3 release.
     roles:
       - id: assessor
         title: IFA Security Controls Assessor
@@ -167,3 +175,9 @@ assessment-results:
         title: IFA GoodRead Continuous Monitoring Assessment Results June 2023
         rlinks:
           - href: https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.3.0.zip
+            media-type: application/oscal+zip
+      - uuid: 8da1dfe1-4aec-48e2-bacb-431ad61486c2
+        title: IFA SYSTEM1234 Continuous Monitoring Assessment Results
+        rlinks:
+          - href: https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.4.0.zip
+            media-type: application/oscal+zip

@@ -1,11 +1,20 @@
 catalog:
   uuid: 720a010b-253c-4a94-bb65-cb58400966f5
   metadata:
-    title: NIST Cybersecurity Framework 2.0
-    published: "2025-05-29T10:16:00-05:00"
-    last-modified: "2025-05-14T12:08:20.050176-05:00"
-    version: 1.0.0
-    oscal-version: v1.1.3
+    title: Electronic Version of NIST Cybersecurity Framework 2.0
+    published: "2026-05-13T12:30:00-00:00"
+    last-modified: "2026-05-11T16:01:09.00000-00:00"
+    version: 1.2.0
+    oscal-version: v1.2.2
+    revisions:
+      - title: NIST Cybersecurity Framework 2.0
+        last-modified: "2025-05-14T12:08:20.050176-05:00"
+        version: 1.0.0
+        oscal-version: v1.1.3
+        links:
+          - href: 720a010b-253c-4a94-bb65-cb58400966f5
+            rel: version-history
+        remarks: OSCAL v1.2.2 representation of the NIST Cybersecurity Framework 2.0 with bug fixes for withdrawn categories and subcategories.
     props:
       - name: framework-identifier
         ns: https://csrc.nist.gov/ns/cprt
@@ -1338,6 +1347,13 @@ catalog:
                   value: 00002.00001.00006
                 - name: label
                   value: ID.AM-06
+                - name: status
+                  value: withdrawn
+              links:
+                - href: GV.RR-02
+                  rel: incorporated_into
+                - href: GV.SC-02
+                  rel: incorporated_into
               parts:
                 - id: ID.AM-06_statement
                   name: statement
@@ -1438,6 +1454,11 @@ catalog:
               value: "00002.00002"
             - name: label
               value: Business Environment (ID.BE)
+            - name: status
+              value: withdrawn
+          links:
+            - href: GV.OC
+              rel: incorporated_into
           parts:
             - id: ID.BE_statement
               name: statement
@@ -1450,6 +1471,11 @@ catalog:
                   value: 00002.00002.00001
                 - name: label
                   value: ID.BE-01
+                - name: status
+                  value: withdrawn
+              links:
+                - href: GV.OC-05
+                  rel: incorporated_into
               parts:
                 - id: ID.BE-01_statement
                   name: statement
@@ -1462,6 +1488,11 @@ catalog:
                   value: 00002.00002.00002
                 - name: label
                   value: ID.BE-02
+                - name: status
+                  value: withdrawn
+              links:
+                - href: GV.OC-01
+                  rel: incorporated_into
               parts:
                 - id: ID.BE-02_statement
                   name: statement
@@ -1474,6 +1505,11 @@ catalog:
                   value: 00002.00002.00003
                 - name: label
                   value: ID.BE-03
+                - name: status
+                  value: withdrawn
+              links:
+                - href: GV.OC-01
+                  rel: incorporated_into
               parts:
                 - id: ID.BE-03_statement
                   name: statement
@@ -1486,6 +1522,13 @@ catalog:
                   value: 00002.00002.00004
                 - name: label
                   value: ID.BE-04
+                - name: status
+                  value: withdrawn
+              links:
+                - href: GV.OC-04
+                  rel: incorporated_into
+                - href: GV.OC-05
+                  rel: incorporated_into
               parts:
                 - id: ID.BE-04_statement
                   name: statement
@@ -1498,6 +1541,11 @@ catalog:
                   value: 00002.00002.00005
                 - name: label
                   value: ID.BE-05
+                - name: status
+                  value: withdrawn
+              links:
+                - href: GV.OC-04
+                  rel: incorporated_into
               parts:
                 - id: ID.BE-05_statement
                   name: statement
@@ -1510,6 +1558,11 @@ catalog:
               value: "00002.00003"
             - name: label
               value: Governance (ID.GV)
+            - name: status
+              value: withdrawn
+          links:
+            - href: GV
+              rel: incorporated_into
           parts:
             - id: ID.GV_statement
               name: statement
@@ -1522,6 +1575,15 @@ catalog:
                   value: 00002.00003.00001
                 - name: label
                   value: ID.GV-01
+                - name: status
+                  value: withdrawn
+              links:
+                - href: GV.PO
+                  rel: incorporated_into
+                - href: GV.PO-01
+                  rel: incorporated_into
+                - href: GV.PO-02
+                  rel: incorporated_into
               parts:
                 - id: ID.GV-01_statement
                   name: statement
@@ -1534,6 +1596,15 @@ catalog:
                   value: 00002.00003.00002
                 - name: label
                   value: ID.GV-02
+                - name: status
+                  value: withdrawn
+              links:
+                - href: GV.RR
+                  rel: incorporated_into
+                - href: GV.OC-02
+                  rel: incorporated_into
+                - href: GV.RR-02
+                  rel: incorporated_into
               parts:
                 - id: ID.GV-02_statement
                   name: statement
@@ -1546,6 +1617,11 @@ catalog:
                   value: 00002.00003.00003
                 - name: label
                   value: ID.GV-03
+                - name: status
+                  value: withdrawn
+              links:
+                - href: GV.OC-03
+                  rel: moved_to
               parts:
                 - id: ID.GV-03_statement
                   name: statement
@@ -1558,6 +1634,11 @@ catalog:
                   value: 00002.00003.00004
                 - name: label
                   value: ID.GV-04
+                - name: status
+                  value: withdrawn
+              links:
+                - href: GV.RM-04
+                  rel: moved_to
               parts:
                 - id: ID.GV-04_statement
                   name: statement
@@ -2012,6 +2093,11 @@ catalog:
               value: "00002.00005"
             - name: label
               value: Risk Management Strategy (ID.RM)
+            - name: status
+              value: withdrawn
+          links:
+            - href: GV.RM
+              rel: incorporated_into
           parts:
             - id: ID.RM_statement
               name: statement
@@ -2024,6 +2110,15 @@ catalog:
                   value: 00002.00005.00001
                 - name: label
                   value: ID.RM-01
+                - name: status
+                  value: withdrawn
+              links:
+                - href: GV.RM-01
+                  rel: incorporated_into
+                - href: GV.RM-06
+                  rel: incorporated_into
+                - href: GV.RR-03
+                  rel: incorporated_into
               parts:
                 - id: ID.RM-01_statement
                   name: statement
@@ -2036,6 +2131,13 @@ catalog:
                   value: 00002.00005.00002
                 - name: label
                   value: ID.RM-02
+                - name: status
+                  value: withdrawn
+              links:
+                - href: GV.RM-02
+                  rel: incorporated_into
+                - href: GV.RM-04
+                  rel: incorporated_into
               parts:
                 - id: ID.RM-02_statement
                   name: statement
@@ -2048,6 +2150,11 @@ catalog:
                   value: 00002.00005.00003
                 - name: label
                   value: ID.RM-03
+                - name: status
+                  value: withdrawn
+              links:
+                - href: GV.RM-02
+                  rel: moved_to
               parts:
                 - id: ID.RM-03_statement
                   name: statement
@@ -2060,6 +2167,11 @@ catalog:
               value: "00002.00006"
             - name: label
               value: Supply Chain Risk Management (ID.SC)
+            - name: status
+              value: withdrawn
+          links:
+            - href: GV.SC
+              rel: incorporated_into
           parts:
             - id: ID.SC_statement
               name: statement
@@ -2072,6 +2184,19 @@ catalog:
                   value: 00002.00006.00001
                 - name: label
                   value: ID.SC-01
+                - name: status
+                  value: withdrawn
+              links:
+                - href: GV.RM-05
+                  rel: incorporated_into
+                - href: GV.SC-01
+                  rel: incorporated_into
+                - href: GV.SC-06
+                  rel: incorporated_into
+                - href: GV.SC-09
+                  rel: incorporated_into
+                - href: GV.SC-10
+                  rel: incorporated_into
               parts:
                 - id: ID.SC-01_statement
                   name: statement
@@ -2084,6 +2209,19 @@ catalog:
                   value: 00002.00006.00002
                 - name: label
                   value: ID.SC-02
+                - name: status
+                  value: withdrawn
+              links:
+                - href: GV.OC-02
+                  rel: incorporated_into
+                - href: GV.SC-03
+                  rel: incorporated_into
+                - href: GV.SC-04
+                  rel: incorporated_into
+                - href: GV.SC-07
+                  rel: incorporated_into
+                - href: ID.RA-10
+                  rel: incorporated_into
               parts:
                 - id: ID.SC-02_statement
                   name: statement
@@ -2096,6 +2234,11 @@ catalog:
                   value: 00002.00006.00003
                 - name: label
                   value: ID.SC-03
+                - name: status
+                  value: withdrawn
+              links:
+                - href: GV.SC-05
+                  rel: moved_to
               parts:
                 - id: ID.SC-03_statement
                   name: statement
@@ -2108,6 +2251,13 @@ catalog:
                   value: 00002.00006.00004
                 - name: label
                   value: ID.SC-04
+                - name: status
+                  value: withdrawn
+              links:
+                - href: GV.SC-07
+                  rel: incorporated_into
+                - href: ID.RA-10
+                  rel: incorporated_into
               parts:
                 - id: ID.SC-04_statement
                   name: statement
@@ -2120,6 +2270,13 @@ catalog:
                   value: 00002.00006.00005
                 - name: label
                   value: ID.SC-05
+                - name: status
+                  value: withdrawn
+              links:
+                - href: GV.SC-08
+                  rel: incorporated_into
+                - href: ID.IM-02
+                  rel: incorporated_into
               parts:
                 - id: ID.SC-05_statement
                   name: statement
@@ -2342,6 +2499,11 @@ catalog:
               value: "00003.00002"
             - name: label
               value: Identity Management, Authentication and Access Control (PR.AC)
+            - name: status
+              value: withdrawn
+          links:
+            - href: PR.AA
+              rel: moved_to
           parts:
             - id: PR.AC_statement
               name: statement
@@ -2354,6 +2516,13 @@ catalog:
                   value: 00003.00002.00001
                 - name: label
                   value: PR.AC-01
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.AA-01
+                  rel: incorporated_into
+                - href: PR.AA-05
+                  rel: incorporated_into
               parts:
                 - id: PR.AC-01_statement
                   name: statement
@@ -2366,6 +2535,11 @@ catalog:
                   value: 00003.00002.00002
                 - name: label
                   value: PR.AC-02
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.AA-06
+                  rel: moved_to
               parts:
                 - id: PR.AC-02_statement
                   name: statement
@@ -2378,6 +2552,15 @@ catalog:
                   value: 00003.00002.00003
                 - name: label
                   value: PR.AC-03
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.AA-03
+                  rel: incorporated_into
+                - href: PR.AA-05
+                  rel: incorporated_into
+                - href: PR.IR-01
+                  rel: incorporated_into
               parts:
                 - id: PR.AC-03_statement
                   name: statement
@@ -2390,6 +2573,11 @@ catalog:
                   value: 00003.00002.00004
                 - name: label
                   value: PR.AC-04
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.AA-05
+                  rel: moved_to
               parts:
                 - id: PR.AC-04_statement
                   name: statement
@@ -2402,6 +2590,11 @@ catalog:
                   value: 00003.00002.00005
                 - name: label
                   value: PR.AC-05
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.IR-01
+                  rel: incorporated_into
               parts:
                 - id: PR.AC-05_statement
                   name: statement
@@ -2414,6 +2607,11 @@ catalog:
                   value: 00003.00002.00006
                 - name: label
                   value: PR.AC-06
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.AA-02
+                  rel: moved_to
               parts:
                 - id: PR.AC-06_statement
                   name: statement
@@ -2426,6 +2624,11 @@ catalog:
                   value: 00003.00002.00006
                 - name: label
                   value: PR.AC-07
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.AA-03
+                  rel: moved_to
               parts:
                 - id: PR.AC-07_statement
                   name: statement
@@ -2523,6 +2726,13 @@ catalog:
                   value: 00003.00003.00003
                 - name: label
                   value: PR.AT-03
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.AT-01
+                  rel: incorporated_into
+                - href: PR.AT-02
+                  rel: incorporated_into
               parts:
                 - id: PR.AT-03_statement
                   name: statement
@@ -2535,6 +2745,11 @@ catalog:
                   value: 00003.00003.00004
                 - name: label
                   value: PR.AT-04
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.AT-02
+                  rel: incorporated_into
               parts:
                 - id: PR.AT-04_statement
                   name: statement
@@ -2547,6 +2762,11 @@ catalog:
                   value: 00003.00003.00005
                 - name: label
                   value: PR.AT-05
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.AT-02
+                  rel: incorporated_into
               parts:
                 - id: PR.AT-05_statement
                   name: statement
@@ -2640,6 +2860,13 @@ catalog:
                   value: 00003.00004.00003
                 - name: label
                   value: PR.DS-03
+                - name: status
+                  value: withdrawn
+              links:
+                - href: ID.AM-08
+                  rel: incorporated_into
+                - href: PR.PS-03
+                  rel: incorporated_into
               parts:
                 - id: PR.DS-03_statement
                   name: statement
@@ -2652,6 +2879,11 @@ catalog:
                   value: 00003.00004.00004
                 - name: label
                   value: PR.DS-04
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.IR-04
+                  rel: moved_to
               parts:
                 - id: PR.DS-04_statement
                   name: statement
@@ -2664,6 +2896,15 @@ catalog:
                   value: 00003.00004.00005
                 - name: label
                   value: PR.DS-05
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.DS-01
+                  rel: incorporated_into
+                - href: PR.DS-02
+                  rel: incorporated_into
+                - href: PR.DS-10
+                  rel: incorporated_into
               parts:
                 - id: PR.DS-05_statement
                   name: statement
@@ -2676,6 +2917,13 @@ catalog:
                   value: 00003.00004.00006
                 - name: label
                   value: PR.DS-06
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.DS-01
+                  rel: incorporated_into
+                - href: DE.CM-09
+                  rel: incorporated_into
               parts:
                 - id: PR.DS-06_statement
                   name: statement
@@ -2688,6 +2936,11 @@ catalog:
                   value: 00003.00004.00007
                 - name: label
                   value: PR.DS-07
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.IR-01
+                  rel: incorporated_into
               parts:
                 - id: PR.DS-07_statement
                   name: statement
@@ -2700,6 +2953,13 @@ catalog:
                   value: 00003.00004.00008
                 - name: label
                   value: PR.DS-08
+                - name: status
+                  value: withdrawn
+              links:
+                - href: ID.RA-09
+                  rel: incorporated_into
+                - href: DE.CM-09
+                  rel: incorporated_into
               parts:
                 - id: PR.DS-08_statement
                   name: statement
@@ -2768,6 +3028,8 @@ catalog:
               value: "00003.00005"
             - name: label
               value: Information Protection Processes and Procedures (PR.IP)
+            - name: status
+              value: withdrawn
           parts:
             - id: PR.IP_statement
               name: statement
@@ -2780,6 +3042,11 @@ catalog:
                   value: 00003.00005.00001
                 - name: label
                   value: PR.IP-01
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.PS-01
+                  rel: incorporated_into
               parts:
                 - id: PR.IP-01_statement
                   name: statement
@@ -2792,6 +3059,13 @@ catalog:
                   value: 00003.00005.00002
                 - name: label
                   value: PR.IP-02
+                - name: status
+                  value: withdrawn
+              links:
+                - href: ID.AM-08
+                  rel: incorporated_into
+                - href: PR.PS-06
+                  rel: incorporated_into
               parts:
                 - id: PR.IP-02_statement
                   name: statement
@@ -2804,6 +3078,13 @@ catalog:
                   value: 00003.00005.00003
                 - name: label
                   value: PR.IP-03
+                - name: status
+                  value: withdrawn
+              links:
+                - href: ID.RA-07
+                  rel: incorporated_into
+                - href: PR.PS-01
+                  rel: incorporated_into
               parts:
                 - id: PR.IP-03_statement
                   name: statement
@@ -2816,6 +3097,11 @@ catalog:
                   value: 00003.00005.00004
                 - name: label
                   value: PR.IP-04
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.DS-11
+                  rel: moved_to
               parts:
                 - id: PR.IP-04_statement
                   name: statement
@@ -2828,6 +3114,11 @@ catalog:
                   value: 00003.00005.00005
                 - name: label
                   value: PR.IP-05
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.IR-02
+                  rel: incorporated_into
               parts:
                 - id: PR.IP-05_statement
                   name: statement
@@ -2840,6 +3131,11 @@ catalog:
                   value: 00003.00005.00006
                 - name: label
                   value: PR.IP-06
+                - name: status
+                  value: withdrawn
+              links:
+                - href: ID.AM-08
+                  rel: incorporated_into
               parts:
                 - id: PR.IP-06_statement
                   name: statement
@@ -2852,6 +3148,13 @@ catalog:
                   value: 00003.00005.00007
                 - name: label
                   value: PR.IP-07
+                - name: status
+                  value: withdrawn
+              links:
+                - href: ID.IM
+                  rel: incorporated_into
+                - href: ID.IM-03
+                  rel: incorporated_into
               parts:
                 - id: PR.IP-07_statement
                   name: statement
@@ -2864,6 +3167,11 @@ catalog:
                   value: 00003.00005.00008
                 - name: label
                   value: PR.IP-08
+                - name: status
+                  value: withdrawn
+              links:
+                - href: ID.IM-03
+                  rel: moved_to
               parts:
                 - id: PR.IP-08_statement
                   name: statement
@@ -2876,6 +3184,11 @@ catalog:
                   value: 00003.00005.00009
                 - name: label
                   value: PR.IP-09
+                - name: status
+                  value: withdrawn
+              links:
+                - href: ID.IM-04
+                  rel: moved_to
               parts:
                 - id: PR.IP-09_statement
                   name: statement
@@ -2888,6 +3201,13 @@ catalog:
                   value: 00003.00005.00010
                 - name: label
                   value: PR.IP-10
+                - name: status
+                  value: withdrawn
+              links:
+                - href: ID.IM-02
+                  rel: moved_to
+                - href: ID.IM-04
+                  rel: moved_to
               parts:
                 - id: PR.IP-10_statement
                   name: statement
@@ -2900,6 +3220,11 @@ catalog:
                   value: 00003.00005.00011
                 - name: label
                   value: PR.IP-11
+                - name: status
+                  value: withdrawn
+              links:
+                - href: GV.RR-04
+                  rel: moved_to
               parts:
                 - id: PR.IP-11_statement
                   name: statement
@@ -2912,6 +3237,13 @@ catalog:
                   value: 00003.00005.00012
                 - name: label
                   value: PR.IP-12
+                - name: status
+                  value: withdrawn
+              links:
+                - href: ID.RA-01
+                  rel: moved_to
+                - href: PR.PS-02
+                  rel: moved_to
               parts:
                 - id: PR.IP-12_statement
                   name: statement
@@ -3049,6 +3381,11 @@ catalog:
               value: "00003.00006"
             - name: label
               value: Maintenance (PR.MA)
+            - name: status
+              value: withdrawn
+          links:
+            - href: ID.AM-08
+              rel: incorporated_into
           parts:
             - id: PR.MA_statement
               name: statement
@@ -3061,6 +3398,13 @@ catalog:
                   value: 00003.00006.00001
                 - name: label
                   value: PR.MA-01
+                - name: status
+                  value: withdrawn
+              links:
+                - href: ID.AM-08
+                  rel: moved_to
+                - href: PR.PS-03
+                  rel: moved_to
               parts:
                 - id: PR.MA-01_statement
                   name: statement
@@ -3073,6 +3417,13 @@ catalog:
                   value: 00003.00006.00002
                 - name: label
                   value: PR.MA-02
+                - name: status
+                  value: withdrawn
+              links:
+                - href: ID.AM-08
+                  rel: moved_to
+                - href: PR.PS-02
+                  rel: moved_to
               parts:
                 - id: PR.MA-02_statement
                   name: statement
@@ -3286,6 +3637,8 @@ catalog:
               value: "00003.00007"
             - name: label
               value: Protective Technology (PR.PT)
+            - name: status
+              value: withdrawn
           parts:
             - id: PR.PT_statement
               name: statement
@@ -3298,6 +3651,11 @@ catalog:
                   value: 00003.00007.00001
                 - name: label
                   value: PR.PT-01
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.PS-04
+                  rel: incorporated_into
               parts:
                 - id: PR.PT-01_statement
                   name: statement
@@ -3310,6 +3668,13 @@ catalog:
                   value: 00003.00007.00002
                 - name: label
                   value: PR.PT-02
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.DS-01
+                  rel: incorporated_into
+                - href: PR.PS-01
+                  rel: incorporated_into
               parts:
                 - id: PR.PT-02_statement
                   name: statement
@@ -3322,6 +3687,11 @@ catalog:
                   value: 00003.00007.00003
                 - name: label
                   value: PR.PT-03
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.PS-01
+                  rel: incorporated_into
               parts:
                 - id: PR.PT-03_statement
                   name: statement
@@ -3334,6 +3704,13 @@ catalog:
                   value: 00003.00007.00004
                 - name: label
                   value: PR.PT-04
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.AA-06
+                  rel: incorporated_into
+                - href: PR.IR-01
+                  rel: incorporated_into
               parts:
                 - id: PR.PT-04_statement
                   name: statement
@@ -3346,6 +3723,11 @@ catalog:
                   value: 00003.00007.00005
                 - name: label
                   value: PR.PT-05
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.IR-03
+                  rel: incorporated_into
               parts:
                 - id: PR.PT-05_statement
                   name: statement
@@ -3384,6 +3766,11 @@ catalog:
                   value: 00004.00001.00001
                 - name: label
                   value: DE.AE-01
+                - name: status
+                  value: withdrawn
+              links:
+                - href: ID.AM-03
+                  rel: incorporated_into
               parts:
                 - id: DE.AE-01_statement
                   name: statement
@@ -3480,6 +3867,11 @@ catalog:
                   value: 00004.00001.00005
                 - name: label
                   value: DE.AE-05
+                - name: status
+                  value: withdrawn
+              links:
+                - href: DE.AE-08
+                  rel: moved_to
               parts:
                 - id: DE.AE-05_statement
                   name: statement
@@ -3685,6 +4077,13 @@ catalog:
                   value: 00004.00002.00004
                 - name: label
                   value: DE.CM-04
+                - name: status
+                  value: withdrawn
+              links:
+                - href: DE.CM-01
+                  rel: incorporated_into
+                - href: DE.CM-09
+                  rel: incorporated_into
               parts:
                 - id: DE.CM-04_statement
                   name: statement
@@ -3697,6 +4096,13 @@ catalog:
                   value: 00004.00002.00005
                 - name: label
                   value: DE.CM-05
+                - name: status
+                  value: withdrawn
+              links:
+                - href: DE.CM-01
+                  rel: incorporated_into
+                - href: DE.CM-09
+                  rel: incorporated_into
               parts:
                 - id: DE.CM-05_statement
                   name: statement
@@ -3733,6 +4139,17 @@ catalog:
                   value: 00004.00002.00007
                 - name: label
                   value: DE.CM-07
+                - name: status
+                  value: withdrawn
+              links:
+                - href: DE.CM-01
+                  rel: incorporated_into
+                - href: DE.CM-03
+                  rel: incorporated_into
+                - href: DE.CM-06
+                  rel: incorporated_into
+                - href: DE.CM-09
+                  rel: incorporated_into
               parts:
                 - id: DE.CM-07_statement
                   name: statement
@@ -3745,6 +4162,11 @@ catalog:
                   value: 00004.00002.00008
                 - name: label
                   value: DE.CM-08
+                - name: status
+                  value: withdrawn
+              links:
+                - href: ID.RA-01
+                  rel: incorporated_into
               parts:
                 - id: DE.CM-08_statement
                   name: statement
@@ -3793,6 +4215,8 @@ catalog:
               value: "00004.00003"
             - name: label
               value: Detection Processes (DE.DP)
+            - name: status
+              value: withdrawn
           parts:
             - id: DE.DP_statement
               name: statement
@@ -3805,6 +4229,11 @@ catalog:
                   value: 00004.00003.00001
                 - name: label
                   value: DE.DP-01
+                - name: status
+                  value: withdrawn
+              links:
+                - href: GV.RR-02
+                  rel: incorporated_into
               parts:
                 - id: DE.DP-01_statement
                   name: statement
@@ -3817,6 +4246,11 @@ catalog:
                   value: 00004.00003.00002
                 - name: label
                   value: DE.DP-02
+                - name: status
+                  value: withdrawn
+              links:
+                - href: DE.AE
+                  rel: incorporated_into
               parts:
                 - id: DE.DP-02_statement
                   name: statement
@@ -3829,6 +4263,11 @@ catalog:
                   value: 00004.00003.00003
                 - name: label
                   value: DE.DP-03
+                - name: status
+                  value: withdrawn
+              links:
+                - href: ID.IM-02
+                  rel: incorporated_into
               parts:
                 - id: DE.DP-03_statement
                   name: statement
@@ -3841,6 +4280,11 @@ catalog:
                   value: 00004.00003.00004
                 - name: label
                   value: DE.DP-04
+                - name: status
+                  value: withdrawn
+              links:
+                - href: DE.AE-06
+                  rel: incorporated_into
               parts:
                 - id: DE.DP-04_statement
                   name: statement
@@ -3853,6 +4297,13 @@ catalog:
                   value: 00004.00003.00005
                 - name: label
                   value: DE.DP-05
+                - name: status
+                  value: withdrawn
+              links:
+                - href: ID.IM
+                  rel: incorporated_into
+                - href: ID.IM-03
+                  rel: incorporated_into
               parts:
                 - id: DE.DP-05_statement
                   name: statement
@@ -3891,6 +4342,11 @@ catalog:
                   value: 00005.00003.00001
                 - name: label
                   value: RS.AN-01
+                - name: status
+                  value: withdrawn
+              links:
+                - href: RS.MA-02
+                  rel: incorporated_into
               parts:
                 - id: RS.AN-01_statement
                   name: statement
@@ -3903,6 +4359,15 @@ catalog:
                   value: 00005.00003.00002
                 - name: label
                   value: RS.AN-02
+                - name: status
+                  value: withdrawn
+              links:
+                - href: RS.MA-02
+                  rel: incorporated_into
+                - href: RS.MA-03
+                  rel: incorporated_into
+                - href: RS.MA-04
+                  rel: incorporated_into
               parts:
                 - id: RS.AN-02_statement
                   name: statement
@@ -3947,6 +4412,11 @@ catalog:
                   value: 00005.00003.00004
                 - name: label
                   value: RS.AN-04
+                - name: status
+                  value: withdrawn
+              links:
+                - href: RS.MA-03
+                  rel: moved_to
               parts:
                 - id: RS.AN-04_statement
                   name: statement
@@ -3959,6 +4429,11 @@ catalog:
                   value: 00005.00003.00005
                 - name: label
                   value: RS.AN-05
+                - name: status
+                  value: withdrawn
+              links:
+                - href: ID.RA-08
+                  rel: moved_to
               parts:
                 - id: RS.AN-05_statement
                   name: statement
@@ -4052,6 +4527,11 @@ catalog:
                   value: 00005.00004.00001
                 - name: label
                   value: RS.CO-01
+                - name: status
+                  value: withdrawn
+              links:
+                - href: PR.AT-01
+                  rel: incorporated_into
               parts:
                 - id: RS.CO-01_statement
                   name: statement
@@ -4140,6 +4620,13 @@ catalog:
                   value: 00005.00004.00004
                 - name: label
                   value: RS.CO-04
+                - name: status
+                  value: withdrawn
+              links:
+                - href: RS.MA-01
+                  rel: incorporated_into
+                - href: RS.MA-04
+                  rel: incorporated_into
               parts:
                 - id: RS.CO-04_statement
                   name: statement
@@ -4152,6 +4639,11 @@ catalog:
                   value: 00005.00004.00005
                 - name: label
                   value: RS.CO-05
+                - name: status
+                  value: withdrawn
+              links:
+                - href: RS.CO-03
+                  rel: incorporated_into
               parts:
                 - id: RS.CO-05_statement
                   name: statement
@@ -4164,6 +4656,11 @@ catalog:
               value: "00005.00006"
             - name: label
               value: Improvements (RS.IM)
+            - name: status
+              value: withdrawn
+          links:
+            - href: ID.IM
+              rel: incorporated_into
           parts:
             - id: RS.IM_statement
               name: statement
@@ -4176,6 +4673,13 @@ catalog:
                   value: 00005.00006.00001
                 - name: label
                   value: RS.IM-01
+                - name: status
+                  value: withdrawn
+              links:
+                - href: ID.IM-03
+                  rel: incorporated_into
+                - href: ID.IM-04
+                  rel: incorporated_into
               parts:
                 - id: RS.IM-01_statement
                   name: statement
@@ -4188,6 +4692,11 @@ catalog:
                   value: 00005.00006.00002
                 - name: label
                   value: RS.IM-02
+                - name: status
+                  value: withdrawn
+              links:
+                - href: ID.IM-03
+                  rel: incorporated_into
               parts:
                 - id: RS.IM-02_statement
                   name: statement
@@ -4426,6 +4935,11 @@ catalog:
                   value: 00005.00005.00003
                 - name: label
                   value: RS.MI-03
+                - name: status
+                  value: withdrawn
+              links:
+                - href: ID.RA-06
+                  rel: incorporated_into
               parts:
                 - id: RS.MI-03_statement
                   name: statement
@@ -4438,6 +4952,8 @@ catalog:
               value: "00005.00002"
             - name: label
               value: Response Planning (RS.RP)
+            - name: status
+              value: withdrawn
           parts:
             - id: RS.RP_statement
               name: statement
@@ -4450,6 +4966,11 @@ catalog:
                   value: 00005.00002.00001
                 - name: label
                   value: RS.RP-01
+                - name: status
+                  value: withdrawn
+              links:
+                - href: RS.MA-01
+                  rel: incorporated_into
               parts:
                 - id: RS.RP-01_statement
                   name: statement
@@ -4488,6 +5009,11 @@ catalog:
                   value: 00006.00002.00001
                 - name: label
                   value: RC.CO-01
+                - name: status
+                  value: withdrawn
+              links:
+                - href: RC.CO-04
+                  rel: incorporated_into
               parts:
                 - id: RC.CO-01_statement
                   name: statement
@@ -4500,6 +5026,11 @@ catalog:
                   value: 00006.00002.00002
                 - name: label
                   value: RC.CO-02
+                - name: status
+                  value: withdrawn
+              links:
+                - href: RC.CO-04
+                  rel: incorporated_into
               parts:
                 - id: RC.CO-02_statement
                   name: statement
@@ -4572,6 +5103,11 @@ catalog:
               value: "00006.00002"
             - name: label
               value: Improvements (RC.IM)
+            - name: status
+              value: withdrawn
+          links:
+            - href: ID.IM
+              rel: incorporated_into
           parts:
             - id: RC.IM_statement
               name: statement
@@ -4584,6 +5120,13 @@ catalog:
                   value: 00006.00002.00001
                 - name: label
                   value: RC.IM-01
+                - name: status
+                  value: withdrawn
+              links:
+                - href: ID.IM-03
+                  rel: incorporated_into
+                - href: ID.IM-04
+                  rel: incorporated_into
               parts:
                 - id: RC.IM-01_statement
                   name: statement
@@ -4596,6 +5139,11 @@ catalog:
                   value: 00006.00002.00002
                 - name: label
                   value: RC.IM-02
+                - name: status
+                  value: withdrawn
+              links:
+                - href: ID.IM-03
+                  rel: incorporated_into
               parts:
                 - id: RC.IM-02_statement
                   name: statement
@@ -4774,3 +5322,7 @@ catalog:
         rlinks:
           - href: https://www.nist.gov/cyberframework
             media-type: application/html
+      - uuid: 720a010b-253c-4a94-bb65-cb58400966f5
+        title: NIST CSF v2.0 content in OSCAL 1.1.3
+        rlinks:
+          - href: https://github.com/usnistgov/oscal-content/releases/tag/v1.4.0

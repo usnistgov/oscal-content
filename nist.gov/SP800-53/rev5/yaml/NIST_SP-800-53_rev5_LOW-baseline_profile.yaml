@@ -1,10 +1,10 @@
 profile:
-  uuid: 0ca7f474-ac9f-406d-b013-27553e61fabd
+  uuid: 201765f8-6d45-4941-8789-9eef2effd7d0
   metadata:
     title: Electronic (OSCAL) Version of NIST Special Publication 800-53 Revision 5.2.0 LOW IMPACT BASELINE
-    last-modified: "2025-08-26T15:10:16.00000-00:00"
+    last-modified: "2026-05-11T16:10:16.00000-00:00"
     version: 5.2.0
-    oscal-version: 1.1.3
+    oscal-version: 1.2.2
     roles:
       - id: creator
         title: OSCAL Version Creator

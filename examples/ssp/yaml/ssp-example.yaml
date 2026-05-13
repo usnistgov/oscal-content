@@ -1,10 +1,11 @@
 system-security-plan:
-  uuid: cff8385f-108e-40a5-8f7a-82f3dc0eaba8
+  uuid: 7db89308-6616-4b8a-8fe9-d2d9f2bb5292
   metadata:
     title: Enterprise Logging and Auditing System Security Plan
-    last-modified: "2025-08-26T18:17:28.355446-04:00"
-    version: "1.2"
-    oscal-version: 1.1.3
+    published: "2026-05-13T12:30:00.00000-00:00"
+    last-modified: "2026-05-12T02:46:09.00000-00:00"
+    version: 1.2.0
+    oscal-version: 1.2.2
     roles:
       - id: legal-officer
         title: Legal Officer

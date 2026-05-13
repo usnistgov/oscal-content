@@ -1,11 +1,12 @@
 {
   "plan-of-action-and-milestones": {
-    "uuid": "6374b585-dfeb-481d-bf08-5a97c49851fc",
+    "uuid": "4a202b62-38e0-40ac-9bf0-d595d5df7c28",
     "metadata": {
       "title": "IFA SYSTEM1234 Plan of Action and Milestones (POAM)",
-      "last-modified": "2024-11-07T16:57:28.355446-04:00",
-      "version": "1.2",
-      "oscal-version": "1.1.3",
+      "published": "2026-05-13T12:30:10.00000-00:00",
+      "last-modified": "2026-05-12T02:46:09.00000-00:00",
+      "version": "1.2.1",
+      "oscal-version": "1.2.2",
       "revisions": [
         {
           "title": "IFA GoodRead Plan of Action and Milestones",
@@ -19,6 +20,19 @@
             }
           ],
           "remarks": "This OSCAL version of the IFA Plan of Actions and Milestones was importing an nonexisting SSP."
+        },
+        {
+          "title": "IFA SYSTEM1234 Plan of Action and Milestones",
+          "last-modified": "2024-02-01T13:57:28.355446-04:00",
+          "version": "1.2",
+          "oscal-version": "1.1.3",
+          "links": [
+            {
+              "href": "#6374b585-dfeb-481d-bf08-5a97c49851fc",
+              "rel": "version-history"
+            }
+          ],
+          "remarks": "This OSCAL version of the IFA Plan of Actions and Milestones was published with OSCAL content v1.4.0."
         }
       ]
     },
@@ -67,7 +81,7 @@
         ],
         "collected": "2023-06-02T08:31:20-04:00",
         "expires": "2023-07-01T00:00:00-04:00",
-        "remarks": "The assessor's security automation platform analyzed all roles specific to the SYSTEM1234 Product Team, not those managed by the Office of Information Technology. The `IFA-SYSTEM1234-SystemEngineer` role in their respective AwesomeCloud account permitted use of the following high-risk actions.\n\n* awesomecloud:auditlog:DeleteAccountAuditLog\n* awesomecloud:secmon:AdministerConfigurations\n\n\nBoth of these actions are overly permissive and not appropriate for the business function of the staff member assigned this role."
+        "remarks": "The assessor's security automation platform analyzed all roles specific to the SYSTEM1234 Product Team, not those managed by the Office of Information Technology. The `IFA-SYSTEM1234-SystemEngineer` role in their respective AwesomeCloud account permitted use of the following high-risk actions. \n\n* awesomecloud:auditlog:DeleteAccountAuditLog\n* awesomecloud:secmon:AdministerConfigurations\n\n\nBoth of these actions are overly permissive and not appropriate for the business function of the staff member assigned this role."
       }
     ],
     "risks": [
@@ -247,7 +261,17 @@
           "title": "IFA GoodRead Plan of Action and Milestones",
           "rlinks": [
             {
-              "href": "https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.3.0.zip"
+              "href": "https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.3.0.zip",
+              "media-type": "application/oscal+zip"
+            }
+          ]
+        },
+        {
+          "uuid": "6374b585-dfeb-481d-bf08-5a97c49851fc",
+          "title": "IFA SYSTEM1234 Plan of Action and Milestones",
+          "rlinks": [
+            {
+              "href": "https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.4.0.zip"
             }
           ]
         }

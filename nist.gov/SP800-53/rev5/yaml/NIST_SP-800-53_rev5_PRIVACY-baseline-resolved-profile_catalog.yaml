@@ -1,10 +1,10 @@
 catalog:
-  uuid: e6a32060-7395-471a-9c4c-e603e61c9a02
+  uuid: 76996c98-965d-4202-bd74-e8baf65c99f5
   metadata:
     title: Electronic (OSCAL) Version of NIST Special Publication 800-53 Revision 5.2.0 PRIVACY BASELINE
-    last-modified: "2025-08-27T00:39:50.246082Z"
+    last-modified: "2026-05-13T05:08:47.708155Z"
     version: 5.2.0
-    oscal-version: 1.1.3
+    oscal-version: 1.2.2
     props:
       - name: resolution-tool
         value: OSCAL Profile Resolver XSLT Pipeline OPRXP
@@ -541,158 +541,89 @@ catalog:
                     Organizational personnel with access control responsibilities
 
                     organizational personnel with information security with information security and privacy responsibilities
-        - id: ac-3
-          class: SP800-53
-          title: Access Enforcement
+        - id: ac-3.14
+          class: SP800-53-enhancement
+          title: Individual Access
+          params:
+            - id: ac-03.14_odp.01
+              props:
+                - name: alt-identifier
+                  value: ac-3.14_prm_1
+                - name: label
+                  value: AC-03(14)_ODP[01]
+                  class: sp800-53a
+              label: mechanisms
+              guidelines:
+                - prose: mechanisms enabling individuals to have access to elements of their personally identifiable information are defined;
+            - id: ac-03.14_odp.02
+              props:
+                - name: alt-identifier
+                  value: ac-3.14_prm_2
+                - name: label
+                  value: AC-03(14)_ODP[02]
+                  class: sp800-53a
+              label: elements
+              guidelines:
+                - prose: elements of personally identifiable information to which individuals have access are defined;
           props:
             - name: label
-              value: AC-03
+              value: AC-03(14)
               class: zero-padded
             - name: label
-              value: AC-3
+              value: AC-3(14)
             - name: label
-              value: AC-03
+              value: AC-03(14)
               class: sp800-53a
             - name: sort-id
-              value: ac-03
+              value: ac-03.14
             - name: implementation-level
               ns: http://csrc.nist.gov/ns/rmf
               value: system
           links:
-            - href: '#18e71fec-c6fd-475a-925a-5d8495cf8455'
-              rel: reference
-            - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
-              rel: reference
-            - href: '#110e26af-4765-49e1-8740-6750f83fcda1'
-              rel: reference
-            - href: '#e7942589-e267-4a5a-a3d9-f39a7aae81f0'
-              rel: reference
-            - href: '#8306620b-1920-4d73-8b21-12008528595f'
-              rel: reference
-            - href: '#2956e175-f674-43f4-b1b9-e074ad9fc39c'
-              rel: reference
-            - href: '#388a3aa2-5d85-4bad-b8a3-77db80d63c4f'
-              rel: reference
-            - href: '#7f473f21-fdbf-4a6c-81a1-0ab95919609d'
-              rel: reference
-            - href: '#ac-2'
+            - href: '#ac-3'
+              rel: required
+            - href: '#ia-8'
               rel: related
-            - href: '#ac-4'
+            - href: '#pm-22'
               rel: related
-            - href: '#ac-5'
+            - href: '#pm-20'
               rel: related
-            - href: '#ac-6'
+            - href: '#pm-21'
               rel: related
-            - href: '#ac-16'
-              rel: related
-            - href: '#ac-17'
-              rel: related
-            - href: '#ac-18'
-              rel: related
-            - href: '#ac-19'
-              rel: related
-            - href: '#ac-20'
-              rel: related
-            - href: '#ac-21'
-              rel: related
-            - href: '#ac-22'
-              rel: related
-            - href: '#ac-24'
-              rel: related
-            - href: '#ac-25'
-              rel: related
-            - href: '#at-2'
-              rel: related
-            - href: '#at-3'
-              rel: related
-            - href: '#au-9'
-              rel: related
-            - href: '#ca-9'
-              rel: related
-            - href: '#cm-5'
-              rel: related
-            - href: '#cm-11'
-              rel: related
-            - href: '#ia-2'
-              rel: related
-            - href: '#ia-5'
-              rel: related
-            - href: '#ia-6'
-              rel: related
-            - href: '#ia-7'
-              rel: related
-            - href: '#ia-11'
-              rel: related
-            - href: '#ia-13'
-              rel: related
-            - href: '#ma-3'
-              rel: related
-            - href: '#ma-4'
-              rel: related
-            - href: '#ma-5'
-              rel: related
-            - href: '#mp-4'
-              rel: related
-            - href: '#pm-2'
-              rel: related
-            - href: '#ps-3'
-              rel: related
-            - href: '#pt-2'
-              rel: related
-            - href: '#pt-3'
-              rel: related
-            - href: '#sa-17'
-              rel: related
-            - href: '#sc-2'
-              rel: related
-            - href: '#sc-3'
-              rel: related
-            - href: '#sc-4'
-              rel: related
-            - href: '#sc-12'
-              rel: related
-            - href: '#sc-13'
-              rel: related
-            - href: '#sc-28'
-              rel: related
-            - href: '#sc-31'
-              rel: related
-            - href: '#sc-34'
-              rel: related
-            - href: '#si-4'
-              rel: related
-            - href: '#si-8'
+            - href: '#pt-6'
               rel: related
           parts:
-            - id: ac-3_smt
+            - id: ac-3.14_smt
               name: statement
-              prose: Enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies.
-            - id: ac-3_gdn
+              prose: 'Provide {{ insert: param, ac-03.14_odp.01 }} to enable individuals to have access to the following elements of their personally identifiable information: {{ insert: param, ac-03.14_odp.02 }}.'
+            - id: ac-3.14_gdn
               name: guidance
-              prose: Access control policies control access between active entities or subjects (i.e., users or processes acting on behalf of users) and passive entities or objects (i.e., devices, files, records, domains) in organizational systems. In addition to enforcing authorized access at the system level and recognizing that systems can host many applications and services in support of mission and business functions, access enforcement mechanisms can also be employed at the application and service level to provide increased information security and privacy. In contrast to logical access controls that are implemented within the system, physical access controls are addressed by the controls in the Physical and Environmental Protection ( [PE](#pe) ) family.
-            - id: ac-3_obj
+              prose: Individual access affords individuals the ability to review personally identifiable information about them held within organizational records, regardless of format. Access helps individuals to develop an understanding about how their personally identifiable information is being processed. It can also help individuals ensure that their data is accurate. Access mechanisms can include request forms and application interfaces. For federal agencies, [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) processes can be located in systems of record notices and on agency websites. Access to certain types of records may not be appropriate (e.g., for federal agencies, law enforcement records within a system of records may be exempt from disclosure under the [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) ) or may require certain levels of authentication assurance. Organizational personnel consult with the senior agency official for privacy and legal counsel to determine appropriate mechanisms and access rights or limitations.
+            - id: ac-3.14_obj
               name: assessment-objective
               props:
                 - name: label
-                  value: AC-03
+                  value: AC-03(14)
                   class: sp800-53a
-              prose: approved authorizations for logical access to information and system resources are enforced in accordance with applicable access control policies.
+              prose: ' {{ insert: param, ac-03.14_odp.01 }} are provided to enable individuals to have access to {{ insert: param, ac-03.14_odp.02 }} of their personally identifiable information.'
               links:
-                - href: '#ac-3_smt'
+                - href: '#ac-3.14_smt'
                   rel: assessment-for
-            - id: ac-3_asm-examine
+            - id: ac-3.14_asm-examine
               name: assessment-method
               props:
                 - name: method
                   ns: http://csrc.nist.gov/ns/rmf
                   value: EXAMINE
                 - name: label
-                  value: AC-03-Examine
+                  value: AC-03(14)-Examine
                   class: sp800-53a
               parts:
                 - name: assessment-objects
                   prose: |-
-                    Access control policy
+                    Access mechanisms (e.g., request forms and application interfaces)
+
+                    access control policy
 
                     procedures addressing access enforcement
 
@@ -700,7 +631,7 @@ catalog:
 
                     system configuration settings and associated documentation
 
-                    list of approved authorizations (user privileges)
+                    documentation regarding access to an individual’s personally identifiable information
 
                     system audit records
 
@@ -708,15 +639,19 @@ catalog:
 
                     privacy plan
 
+                    privacy impact assessment
+
+                    privacy assessment findings and/or reports
+
                     other relevant documents or records
-            - id: ac-3_asm-interview
+            - id: ac-3.14_asm-interview
               name: assessment-method
               props:
                 - name: method
                   ns: http://csrc.nist.gov/ns/rmf
                   value: INTERVIEW
                 - name: label
-                  value: AC-03-Interview
+                  value: AC-03(14)-Interview
                   class: sp800-53a
               parts:
                 - name: assessment-objects
@@ -727,157 +662,22 @@ catalog:
 
                     organizational personnel with information security and privacy responsibilities
 
-                    system developers
-            - id: ac-3_asm-test
+                    legal counsel
+            - id: ac-3.14_asm-test
               name: assessment-method
               props:
                 - name: method
                   ns: http://csrc.nist.gov/ns/rmf
                   value: TEST
                 - name: label
-                  value: AC-03-Test
+                  value: AC-03(14)-Test
                   class: sp800-53a
               parts:
                 - name: assessment-objects
-                  prose: Mechanisms implementing access control policy
-          controls:
-            - id: ac-3.14
-              class: SP800-53-enhancement
-              title: Individual Access
-              params:
-                - id: ac-03.14_odp.01
-                  props:
-                    - name: alt-identifier
-                      value: ac-3.14_prm_1
-                    - name: label
-                      value: AC-03(14)_ODP[01]
-                      class: sp800-53a
-                  label: mechanisms
-                  guidelines:
-                    - prose: mechanisms enabling individuals to have access to elements of their personally identifiable information are defined;
-                - id: ac-03.14_odp.02
-                  props:
-                    - name: alt-identifier
-                      value: ac-3.14_prm_2
-                    - name: label
-                      value: AC-03(14)_ODP[02]
-                      class: sp800-53a
-                  label: elements
-                  guidelines:
-                    - prose: elements of personally identifiable information to which individuals have access are defined;
-              props:
-                - name: label
-                  value: AC-03(14)
-                  class: zero-padded
-                - name: label
-                  value: AC-3(14)
-                - name: label
-                  value: AC-03(14)
-                  class: sp800-53a
-                - name: sort-id
-                  value: ac-03.14
-                - name: implementation-level
-                  ns: http://csrc.nist.gov/ns/rmf
-                  value: system
-              links:
-                - href: '#ac-3'
-                  rel: required
-                - href: '#ia-8'
-                  rel: related
-                - href: '#pm-22'
-                  rel: related
-                - href: '#pm-20'
-                  rel: related
-                - href: '#pm-21'
-                  rel: related
-                - href: '#pt-6'
-                  rel: related
-              parts:
-                - id: ac-3.14_smt
-                  name: statement
-                  prose: 'Provide {{ insert: param, ac-03.14_odp.01 }} to enable individuals to have access to the following elements of their personally identifiable information: {{ insert: param, ac-03.14_odp.02 }}.'
-                - id: ac-3.14_gdn
-                  name: guidance
-                  prose: Individual access affords individuals the ability to review personally identifiable information about them held within organizational records, regardless of format. Access helps individuals to develop an understanding about how their personally identifiable information is being processed. It can also help individuals ensure that their data is accurate. Access mechanisms can include request forms and application interfaces. For federal agencies, [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) processes can be located in systems of record notices and on agency websites. Access to certain types of records may not be appropriate (e.g., for federal agencies, law enforcement records within a system of records may be exempt from disclosure under the [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) ) or may require certain levels of authentication assurance. Organizational personnel consult with the senior agency official for privacy and legal counsel to determine appropriate mechanisms and access rights or limitations.
-                - id: ac-3.14_obj
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: AC-03(14)
-                      class: sp800-53a
-                  prose: ' {{ insert: param, ac-03.14_odp.01 }} are provided to enable individuals to have access to {{ insert: param, ac-03.14_odp.02 }} of their personally identifiable information.'
-                  links:
-                    - href: '#ac-3.14_smt'
-                      rel: assessment-for
-                - id: ac-3.14_asm-examine
-                  name: assessment-method
-                  props:
-                    - name: method
-                      ns: http://csrc.nist.gov/ns/rmf
-                      value: EXAMINE
-                    - name: label
-                      value: AC-03(14)-Examine
-                      class: sp800-53a
-                  parts:
-                    - name: assessment-objects
-                      prose: |-
-                        Access mechanisms (e.g., request forms and application interfaces)
+                  prose: |-
+                    Mechanisms implementing access enforcement functions
 
-                        access control policy
-
-                        procedures addressing access enforcement
-
-                        system design documentation
-
-                        system configuration settings and associated documentation
-
-                        documentation regarding access to an individual’s personally identifiable information
-
-                        system audit records
-
-                        system security plan
-
-                        privacy plan
-
-                        privacy impact assessment
-
-                        privacy assessment findings and/or reports
-
-                        other relevant documents or records
-                - id: ac-3.14_asm-interview
-                  name: assessment-method
-                  props:
-                    - name: method
-                      ns: http://csrc.nist.gov/ns/rmf
-                      value: INTERVIEW
-                    - name: label
-                      value: AC-03(14)-Interview
-                      class: sp800-53a
-                  parts:
-                    - name: assessment-objects
-                      prose: |-
-                        Organizational personnel with access enforcement responsibilities
-
-                        system/network administrators
-
-                        organizational personnel with information security and privacy responsibilities
-
-                        legal counsel
-                - id: ac-3.14_asm-test
-                  name: assessment-method
-                  props:
-                    - name: method
-                      ns: http://csrc.nist.gov/ns/rmf
-                      value: TEST
-                    - name: label
-                      value: AC-03(14)-Test
-                      class: sp800-53a
-                  parts:
-                    - name: assessment-objects
-                      prose: |-
-                        Mechanisms implementing access enforcement functions
-
-                        mechanisms enabling individual access to personally identifiable information
+                    mechanisms enabling individual access to personally identifiable information
     - id: at
       class: family
       title: Awareness and Training
@@ -3190,168 +2990,64 @@ catalog:
               parts:
                 - name: assessment-objects
                   prose: Mechanisms implementing system auditing
-        - id: au-3
-          class: SP800-53
-          title: Content of Audit Records
+        - id: au-3.3
+          class: SP800-53-enhancement
+          title: Limit Personally Identifiable Information Elements
+          params:
+            - id: au-03.03_odp
+              props:
+                - name: alt-identifier
+                  value: au-3.3_prm_1
+                - name: label
+                  value: AU-03(03)_ODP
+                  class: sp800-53a
+              label: elements
+              guidelines:
+                - prose: elements identified in the privacy risk assessment are defined;
           props:
             - name: label
-              value: AU-03
+              value: AU-03(03)
               class: zero-padded
             - name: label
-              value: AU-3
+              value: AU-3(3)
             - name: label
-              value: AU-03
+              value: AU-03(03)
               class: sp800-53a
             - name: sort-id
-              value: au-03
+              value: au-03.03
             - name: implementation-level
               ns: http://csrc.nist.gov/ns/rmf
-              value: system
+              value: organization
           links:
-            - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
-              rel: reference
-            - href: '#98d415ca-7281-4064-9931-0c366637e324'
-              rel: reference
-            - href: '#au-2'
-              rel: related
-            - href: '#au-8'
-              rel: related
-            - href: '#au-12'
-              rel: related
-            - href: '#au-14'
-              rel: related
-            - href: '#ma-4'
-              rel: related
-            - href: '#pl-9'
-              rel: related
-            - href: '#sa-8'
-              rel: related
-            - href: '#si-7'
-              rel: related
-            - href: '#si-11'
+            - href: '#au-3'
+              rel: required
+            - href: '#ra-3'
               rel: related
           parts:
-            - id: au-3_smt
+            - id: au-3.3_smt
               name: statement
-              prose: 'Ensure that audit records contain information that establishes the following:'
-              parts:
-                - id: au-3_smt.a
-                  name: item
-                  props:
-                    - name: label
-                      value: a.
-                  prose: What type of event occurred;
-                - id: au-3_smt.b
-                  name: item
-                  props:
-                    - name: label
-                      value: b.
-                  prose: When the event occurred;
-                - id: au-3_smt.c
-                  name: item
-                  props:
-                    - name: label
-                      value: c.
-                  prose: Where the event occurred;
-                - id: au-3_smt.d
-                  name: item
-                  props:
-                    - name: label
-                      value: d.
-                  prose: Source of the event;
-                - id: au-3_smt.e
-                  name: item
-                  props:
-                    - name: label
-                      value: e.
-                  prose: Outcome of the event; and
-                - id: au-3_smt.f
-                  name: item
-                  props:
-                    - name: label
-                      value: f.
-                  prose: Identity of any individuals, subjects, or objects/entities associated with the event.
-            - id: au-3_gdn
+              prose: 'Limit personally identifiable information contained in audit records to the following elements identified in the privacy risk assessment: {{ insert: param, au-03.03_odp }}.'
+            - id: au-3.3_gdn
               name: guidance
-              prose: Audit record content that may be necessary to support the auditing function includes event descriptions (item a), time stamps (item b), source and destination addresses (item c), user or process identifiers (items d and f), success or fail indications (item e), and filenames involved (items a, c, e, and f) . Event outcomes include indicators of event success or failure and event-specific results, such as the system security and privacy posture after the event occurred. Organizations consider how audit records can reveal information about individuals that may give rise to privacy risks and how best to mitigate such risks. For example, there is the potential to reveal personally identifiable information in the audit trail, especially if the trail records inputs or is based on patterns or time of usage.
-            - id: au-3_obj
+              prose: Limiting personally identifiable information in audit records when such information is not needed for operational purposes helps reduce the level of privacy risk created by a system.
+            - id: au-3.3_obj
               name: assessment-objective
               props:
                 - name: label
-                  value: AU-03
+                  value: AU-03(03)
                   class: sp800-53a
-              parts:
-                - id: au-3_obj.a
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: AU-03a.
-                      class: sp800-53a
-                  prose: audit records contain information that establishes what type of event occurred;
-                  links:
-                    - href: '#au-3_smt.a'
-                      rel: assessment-for
-                - id: au-3_obj.b
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: AU-03b.
-                      class: sp800-53a
-                  prose: audit records contain information that establishes when the event occurred;
-                  links:
-                    - href: '#au-3_smt.b'
-                      rel: assessment-for
-                - id: au-3_obj.c
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: AU-03c.
-                      class: sp800-53a
-                  prose: audit records contain information that establishes where the event occurred;
-                  links:
-                    - href: '#au-3_smt.c'
-                      rel: assessment-for
-                - id: au-3_obj.d
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: AU-03d.
-                      class: sp800-53a
-                  prose: audit records contain information that establishes the source of the event;
-                  links:
-                    - href: '#au-3_smt.d'
-                      rel: assessment-for
-                - id: au-3_obj.e
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: AU-03e.
-                      class: sp800-53a
-                  prose: audit records contain information that establishes the outcome of the event;
-                  links:
-                    - href: '#au-3_smt.e'
-                      rel: assessment-for
-                - id: au-3_obj.f
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: AU-03f.
-                      class: sp800-53a
-                  prose: audit records contain information that establishes the identity of any individuals, subjects, or objects/entities associated with the event.
-                  links:
-                    - href: '#au-3_smt.f'
-                      rel: assessment-for
+              prose: 'personally identifiable information contained in audit records is limited to {{ insert: param, au-03.03_odp }} identified in the privacy risk assessment.'
               links:
-                - href: '#au-3_smt'
+                - href: '#au-3.3_smt'
                   rel: assessment-for
-            - id: au-3_asm-examine
+            - id: au-3.3_asm-examine
               name: assessment-method
               props:
                 - name: method
                   ns: http://csrc.nist.gov/ns/rmf
                   value: EXAMINE
                 - name: label
-                  value: AU-03-Examine
+                  value: AU-03(03)-Examine
                   class: sp800-53a
               parts:
                 - name: assessment-objects
@@ -3361,6 +3057,10 @@ catalog:
                     system security plan
 
                     privacy plan
+
+                    privacy risk assessment
+
+                    privacy risk assessment results
 
                     procedures addressing content of audit records
 
@@ -3372,17 +3072,17 @@ catalog:
 
                     system audit records
 
-                    system incident reports
+                    third party contracts
 
                     other relevant documents or records
-            - id: au-3_asm-interview
+            - id: au-3.3_asm-interview
               name: assessment-method
               props:
                 - name: method
                   ns: http://csrc.nist.gov/ns/rmf
                   value: INTERVIEW
                 - name: label
-                  value: AU-03-Interview
+                  value: AU-03(03)-Interview
                   class: sp800-53a
               parts:
                 - name: assessment-objects
@@ -3392,135 +3092,20 @@ catalog:
                     organizational personnel with information security and privacy responsibilities
 
                     system/network administrators
-            - id: au-3_asm-test
+
+                    system developers
+            - id: au-3.3_asm-test
               name: assessment-method
               props:
                 - name: method
                   ns: http://csrc.nist.gov/ns/rmf
                   value: TEST
                 - name: label
-                  value: AU-03-Test
+                  value: AU-03(03)-Test
                   class: sp800-53a
               parts:
                 - name: assessment-objects
-                  prose: Mechanisms implementing system auditing of auditable events
-          controls:
-            - id: au-3.3
-              class: SP800-53-enhancement
-              title: Limit Personally Identifiable Information Elements
-              params:
-                - id: au-03.03_odp
-                  props:
-                    - name: alt-identifier
-                      value: au-3.3_prm_1
-                    - name: label
-                      value: AU-03(03)_ODP
-                      class: sp800-53a
-                  label: elements
-                  guidelines:
-                    - prose: elements identified in the privacy risk assessment are defined;
-              props:
-                - name: label
-                  value: AU-03(03)
-                  class: zero-padded
-                - name: label
-                  value: AU-3(3)
-                - name: label
-                  value: AU-03(03)
-                  class: sp800-53a
-                - name: sort-id
-                  value: au-03.03
-                - name: implementation-level
-                  ns: http://csrc.nist.gov/ns/rmf
-                  value: organization
-              links:
-                - href: '#au-3'
-                  rel: required
-                - href: '#ra-3'
-                  rel: related
-              parts:
-                - id: au-3.3_smt
-                  name: statement
-                  prose: 'Limit personally identifiable information contained in audit records to the following elements identified in the privacy risk assessment: {{ insert: param, au-03.03_odp }}.'
-                - id: au-3.3_gdn
-                  name: guidance
-                  prose: Limiting personally identifiable information in audit records when such information is not needed for operational purposes helps reduce the level of privacy risk created by a system.
-                - id: au-3.3_obj
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: AU-03(03)
-                      class: sp800-53a
-                  prose: 'personally identifiable information contained in audit records is limited to {{ insert: param, au-03.03_odp }} identified in the privacy risk assessment.'
-                  links:
-                    - href: '#au-3.3_smt'
-                      rel: assessment-for
-                - id: au-3.3_asm-examine
-                  name: assessment-method
-                  props:
-                    - name: method
-                      ns: http://csrc.nist.gov/ns/rmf
-                      value: EXAMINE
-                    - name: label
-                      value: AU-03(03)-Examine
-                      class: sp800-53a
-                  parts:
-                    - name: assessment-objects
-                      prose: |-
-                        Audit and accountability policy
-
-                        system security plan
-
-                        privacy plan
-
-                        privacy risk assessment
-
-                        privacy risk assessment results
-
-                        procedures addressing content of audit records
-
-                        system design documentation
-
-                        system configuration settings and associated documentation
-
-                        list of organization-defined auditable events
-
-                        system audit records
-
-                        third party contracts
-
-                        other relevant documents or records
-                - id: au-3.3_asm-interview
-                  name: assessment-method
-                  props:
-                    - name: method
-                      ns: http://csrc.nist.gov/ns/rmf
-                      value: INTERVIEW
-                    - name: label
-                      value: AU-03(03)-Interview
-                      class: sp800-53a
-                  parts:
-                    - name: assessment-objects
-                      prose: |-
-                        Organizational personnel with audit and accountability responsibilities
-
-                        organizational personnel with information security and privacy responsibilities
-
-                        system/network administrators
-
-                        system developers
-                - id: au-3.3_asm-test
-                  name: assessment-method
-                  props:
-                    - name: method
-                      ns: http://csrc.nist.gov/ns/rmf
-                      value: TEST
-                    - name: label
-                      value: AU-03(03)-Test
-                      class: sp800-53a
-                  parts:
-                    - name: assessment-objects
-                      prose: system audit capability
+                  prose: system audit capability
         - id: au-11
           class: SP800-53
           title: Audit Record Retention
@@ -9307,297 +8892,114 @@ catalog:
         - name: label
           value: PE
       controls:
-        - id: pe-8
-          class: SP800-53
-          title: Visitor Access Records
+        - id: pe-8.3
+          class: SP800-53-enhancement
+          title: Limit Personally Identifiable Information Elements
           params:
-            - id: pe-08_odp.01
+            - id: pe-08.03_odp
               props:
                 - name: alt-identifier
-                  value: pe-8_prm_1
+                  value: pe-8.3_prm_1
                 - name: label
-                  value: PE-08_ODP[01]
+                  value: PE-08(03)_ODP
                   class: sp800-53a
-              label: time period
+              label: elements
               guidelines:
-                - prose: time period for which to maintain visitor access records for the facility where the system resides is defined;
-            - id: pe-08_odp.02
-              props:
-                - name: alt-identifier
-                  value: pe-8_prm_2
-                - name: label
-                  value: PE-08_ODP[02]
-                  class: sp800-53a
-              label: frequency
-              guidelines:
-                - prose: the frequency at which to review visitor access records is defined;
-            - id: pe-08_odp.03
-              props:
-                - name: alt-identifier
-                  value: pe-8_prm_3
-                - name: label
-                  value: PE-08_ODP[03]
-                  class: sp800-53a
-              label: personnel
-              guidelines:
-                - prose: personnel to whom visitor access records anomalies are reported to is/are defined;
+                - prose: elements identified in the privacy risk assessment to limit personally identifiable information contained in visitor access logs are defined;
           props:
             - name: label
-              value: PE-08
+              value: PE-08(03)
               class: zero-padded
             - name: label
-              value: PE-8
+              value: PE-8(3)
             - name: label
-              value: PE-08
+              value: PE-08(03)
               class: sp800-53a
             - name: sort-id
-              value: pe-08
+              value: pe-08.03
             - name: implementation-level
               ns: http://csrc.nist.gov/ns/rmf
               value: organization
-            - name: contributes-to-assurance
-              ns: http://csrc.nist.gov/ns/rmf
-              value: "true"
           links:
-            - href: '#pe-2'
+            - href: '#pe-8'
+              rel: required
+            - href: '#ra-3'
               rel: related
-            - href: '#pe-3'
-              rel: related
-            - href: '#pe-6'
+            - href: '#sa-8'
               rel: related
           parts:
-            - id: pe-8_smt
+            - id: pe-8.3_smt
               name: statement
-              parts:
-                - id: pe-8_smt.a
-                  name: item
-                  props:
-                    - name: label
-                      value: a.
-                  prose: 'Maintain visitor access records to the facility where the system resides for {{ insert: param, pe-08_odp.01 }};'
-                - id: pe-8_smt.b
-                  name: item
-                  props:
-                    - name: label
-                      value: b.
-                  prose: 'Review visitor access records {{ insert: param, pe-08_odp.02 }} ; and'
-                - id: pe-8_smt.c
-                  name: item
-                  props:
-                    - name: label
-                      value: c.
-                  prose: 'Report anomalies in visitor access records to {{ insert: param, pe-08_odp.03 }}.'
-            - id: pe-8_gdn
+              prose: 'Limit personally identifiable information contained in visitor access records to the following elements identified in the privacy risk assessment: {{ insert: param, pe-08.03_odp }}.'
+            - id: pe-8.3_gdn
               name: guidance
-              prose: Visitor access records include the names and organizations of individuals visiting, visitor signatures, forms of identification, dates of access, entry and departure times, purpose of visits, and the names and organizations of individuals visited. Access record reviews determine if access authorizations are current and are still required to support organizational mission and business functions. Access records are not required for publicly accessible areas.
-            - id: pe-8_obj
+              prose: Organizations may have requirements that specify the contents of visitor access records. Limiting personally identifiable information in visitor access records when such information is not needed for operational purposes helps reduce the level of privacy risk created by a system.
+            - id: pe-8.3_obj
               name: assessment-objective
               props:
                 - name: label
-                  value: PE-08
+                  value: PE-08(03)
                   class: sp800-53a
-              parts:
-                - id: pe-8_obj.a
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: PE-08a.
-                      class: sp800-53a
-                  prose: 'visitor access records for the facility where the system resides are maintained for {{ insert: param, pe-08_odp.01 }};'
-                  links:
-                    - href: '#pe-8_smt.a'
-                      rel: assessment-for
-                - id: pe-8_obj.b
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: PE-08b.
-                      class: sp800-53a
-                  prose: 'visitor access records are reviewed {{ insert: param, pe-08_odp.02 }};'
-                  links:
-                    - href: '#pe-8_smt.b'
-                      rel: assessment-for
-                - id: pe-8_obj.c
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: PE-08c.
-                      class: sp800-53a
-                  prose: 'visitor access records anomalies are reported to {{ insert: param, pe-08_odp.03 }}.'
-                  links:
-                    - href: '#pe-8_smt.c'
-                      rel: assessment-for
+              prose: 'personally identifiable information contained in visitor access records is limited to {{ insert: param, pe-08.03_odp }} identified in the privacy risk assessment.'
               links:
-                - href: '#pe-8_smt'
+                - href: '#pe-8.3_smt'
                   rel: assessment-for
-            - id: pe-8_asm-examine
+            - id: pe-8.3_asm-examine
               name: assessment-method
               props:
                 - name: method
                   ns: http://csrc.nist.gov/ns/rmf
                   value: EXAMINE
                 - name: label
-                  value: PE-08-Examine
+                  value: PE-08(03)-Examine
                   class: sp800-53a
               parts:
                 - name: assessment-objects
                   prose: |-
                     Physical and environmental protection policy
 
-                    procedures addressing visitor access records
+                    personally identifiable information processing policy
 
-                    visitor access control logs or records
+                    privacy risk assessment documentation
 
-                    visitor access record or log reviews
+                    privacy impact assessment
+
+                    visitor access records
+
+                    personally identifiable information inventory
 
                     system security plan
 
                     privacy plan
 
-                    privacy impact assessment
-
-                    privacy risk assessment documentation
-
                     other relevant documents or records
-            - id: pe-8_asm-interview
+            - id: pe-8.3_asm-interview
               name: assessment-method
               props:
                 - name: method
                   ns: http://csrc.nist.gov/ns/rmf
                   value: INTERVIEW
                 - name: label
-                  value: PE-08-Interview
+                  value: PE-08(03)-Interview
                   class: sp800-53a
               parts:
                 - name: assessment-objects
                   prose: |-
-                    Organizational personnel with visitor access record responsibilities
+                    Organizational personnel with visitor access records responsibilities
 
                     organizational personnel with information security and privacy responsibilities
-            - id: pe-8_asm-test
+            - id: pe-8.3_asm-test
               name: assessment-method
               props:
                 - name: method
                   ns: http://csrc.nist.gov/ns/rmf
                   value: TEST
                 - name: label
-                  value: PE-08-Test
+                  value: PE-08(03)-Test
                   class: sp800-53a
               parts:
                 - name: assessment-objects
-                  prose: |-
-                    Organizational processes for maintaining and reviewing visitor access records
-
-                    mechanisms supporting and/or implementing the maintenance and review of visitor access records
-          controls:
-            - id: pe-8.3
-              class: SP800-53-enhancement
-              title: Limit Personally Identifiable Information Elements
-              params:
-                - id: pe-08.03_odp
-                  props:
-                    - name: alt-identifier
-                      value: pe-8.3_prm_1
-                    - name: label
-                      value: PE-08(03)_ODP
-                      class: sp800-53a
-                  label: elements
-                  guidelines:
-                    - prose: elements identified in the privacy risk assessment to limit personally identifiable information contained in visitor access logs are defined;
-              props:
-                - name: label
-                  value: PE-08(03)
-                  class: zero-padded
-                - name: label
-                  value: PE-8(3)
-                - name: label
-                  value: PE-08(03)
-                  class: sp800-53a
-                - name: sort-id
-                  value: pe-08.03
-                - name: implementation-level
-                  ns: http://csrc.nist.gov/ns/rmf
-                  value: organization
-              links:
-                - href: '#pe-8'
-                  rel: required
-                - href: '#ra-3'
-                  rel: related
-                - href: '#sa-8'
-                  rel: related
-              parts:
-                - id: pe-8.3_smt
-                  name: statement
-                  prose: 'Limit personally identifiable information contained in visitor access records to the following elements identified in the privacy risk assessment: {{ insert: param, pe-08.03_odp }}.'
-                - id: pe-8.3_gdn
-                  name: guidance
-                  prose: Organizations may have requirements that specify the contents of visitor access records. Limiting personally identifiable information in visitor access records when such information is not needed for operational purposes helps reduce the level of privacy risk created by a system.
-                - id: pe-8.3_obj
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: PE-08(03)
-                      class: sp800-53a
-                  prose: 'personally identifiable information contained in visitor access records is limited to {{ insert: param, pe-08.03_odp }} identified in the privacy risk assessment.'
-                  links:
-                    - href: '#pe-8.3_smt'
-                      rel: assessment-for
-                - id: pe-8.3_asm-examine
-                  name: assessment-method
-                  props:
-                    - name: method
-                      ns: http://csrc.nist.gov/ns/rmf
-                      value: EXAMINE
-                    - name: label
-                      value: PE-08(03)-Examine
-                      class: sp800-53a
-                  parts:
-                    - name: assessment-objects
-                      prose: |-
-                        Physical and environmental protection policy
-
-                        personally identifiable information processing policy
-
-                        privacy risk assessment documentation
-
-                        privacy impact assessment
-
-                        visitor access records
-
-                        personally identifiable information inventory
-
-                        system security plan
-
-                        privacy plan
-
-                        other relevant documents or records
-                - id: pe-8.3_asm-interview
-                  name: assessment-method
-                  props:
-                    - name: method
-                      ns: http://csrc.nist.gov/ns/rmf
-                      value: INTERVIEW
-                    - name: label
-                      value: PE-08(03)-Interview
-                      class: sp800-53a
-                  parts:
-                    - name: assessment-objects
-                      prose: |-
-                        Organizational personnel with visitor access records responsibilities
-
-                        organizational personnel with information security and privacy responsibilities
-                - id: pe-8.3_asm-test
-                  name: assessment-method
-                  props:
-                    - name: method
-                      ns: http://csrc.nist.gov/ns/rmf
-                      value: TEST
-                    - name: label
-                      value: PE-08(03)-Test
-                      class: sp800-53a
-                  parts:
-                    - name: assessment-objects
-                      prose: Organizational processes for maintaining and reviewing visitor access records
+                  prose: Organizational processes for maintaining and reviewing visitor access records
     - id: pl
       class: family
       title: Planning
@@ -12427,289 +11829,165 @@ catalog:
                     Organizational processes for plan of action and milestones development, review, maintenance, and reporting
 
                     mechanisms supporting plans of action and milestones
-        - id: pm-5
-          class: SP800-53
-          title: System Inventory
+        - id: pm-5.1
+          class: SP800-53-enhancement
+          title: Inventory of Personally Identifiable Information
           params:
-            - id: pm-05_odp
+            - id: pm-05.01_odp
               props:
                 - name: alt-identifier
-                  value: pm-5_prm_1
+                  value: pm-5.1_prm_1
                 - name: label
-                  value: PM-05_ODP
+                  value: PM-05(01)_ODP
                   class: sp800-53a
               label: frequency
               guidelines:
-                - prose: the frequency at which to update the inventory of organizational systems is defined;
+                - prose: the frequency at which to update the inventory of systems, applications, and projects that process personally identifiable information is defined;
           props:
             - name: label
-              value: PM-05
+              value: PM-05(01)
               class: zero-padded
             - name: label
-              value: PM-5
+              value: PM-5(1)
             - name: label
-              value: PM-05
+              value: PM-05(01)
               class: sp800-53a
             - name: sort-id
-              value: pm-05
+              value: pm-05.01
             - name: implementation-level
               ns: http://csrc.nist.gov/ns/rmf
               value: organization
           links:
-            - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
-              rel: reference
-            - href: '#98d415ca-7281-4064-9931-0c366637e324'
-              rel: reference
+            - href: '#pm-5'
+              rel: required
+            - href: '#ac-3'
+              rel: related
+            - href: '#cm-8'
+              rel: related
+            - href: '#cm-12'
+              rel: related
+            - href: '#cm-13'
+              rel: related
+            - href: '#pl-8'
+              rel: related
+            - href: '#pm-22'
+              rel: related
+            - href: '#pt-3'
+              rel: related
+            - href: '#pt-5'
+              rel: related
+            - href: '#si-12'
+              rel: related
+            - href: '#si-18'
+              rel: related
           parts:
-            - id: pm-5_smt
+            - id: pm-5.1_smt
               name: statement
-              prose: 'Develop and update {{ insert: param, pm-05_odp }} an inventory of organizational systems.'
-            - id: pm-5_gdn
+              prose: 'Establish, maintain, and update {{ insert: param, pm-05.01_odp }} an inventory of all systems, applications, and projects that process personally identifiable information.'
+            - id: pm-5.1_gdn
               name: guidance
-              prose: ' [OMB A-130](#27847491-5ce1-4f6a-a1e4-9e483782f0ef) provides guidance on developing systems inventories and associated reporting requirements. System inventory refers to an organization-wide inventory of systems, not system components as described in [CM-8](#cm-8).'
-            - id: pm-5_obj
+              prose: An inventory of systems, applications, and projects that process personally identifiable information supports the mapping of data actions, providing individuals with privacy notices, maintaining accurate personally identifiable information, and limiting the processing of personally identifiable information when such information is not needed for operational purposes. Organizations may use this inventory to ensure that systems only process the personally identifiable information for authorized purposes and that this processing is still relevant and necessary for the purpose specified therein.
+            - id: pm-5.1_obj
               name: assessment-objective
               props:
                 - name: label
-                  value: PM-05
+                  value: PM-05(01)
                   class: sp800-53a
               parts:
-                - id: pm-5_obj-1
+                - id: pm-5.1_obj-1
                   name: assessment-objective
                   props:
                     - name: label
-                      value: PM-05[01]
+                      value: PM-05(01)[01]
                       class: sp800-53a
-                  prose: an inventory of organizational systems is developed;
+                  prose: an inventory of all systems, applications, and projects that process personally identifiable information is established;
                   links:
-                    - href: '#pm-5_smt'
+                    - href: '#pm-5.1_smt'
                       rel: assessment-for
-                - id: pm-5_obj-2
+                - id: pm-5.1_obj-2
                   name: assessment-objective
                   props:
                     - name: label
-                      value: PM-05[02]
+                      value: PM-05(01)[02]
                       class: sp800-53a
-                  prose: 'the inventory of organizational systems is updated {{ insert: param, pm-05_odp }}.'
+                  prose: an inventory of all systems, applications, and projects that process personally identifiable information is maintained;
                   links:
-                    - href: '#pm-5_smt'
+                    - href: '#pm-5.1_smt'
+                      rel: assessment-for
+                - id: pm-5.1_obj-3
+                  name: assessment-objective
+                  props:
+                    - name: label
+                      value: PM-05(01)[03]
+                      class: sp800-53a
+                  prose: 'an inventory of all systems, applications, and projects that process personally identifiable information is updated {{ insert: param, pm-05.01_odp }}.'
+                  links:
+                    - href: '#pm-5.1_smt'
                       rel: assessment-for
               links:
-                - href: '#pm-5_smt'
+                - href: '#pm-5.1_smt'
                   rel: assessment-for
-            - id: pm-5_asm-examine
+            - id: pm-5.1_asm-examine
               name: assessment-method
               props:
                 - name: method
                   ns: http://csrc.nist.gov/ns/rmf
                   value: EXAMINE
                 - name: label
-                  value: PM-05-Examine
+                  value: PM-05(01)-Examine
                   class: sp800-53a
               parts:
                 - name: assessment-objects
                   prose: |-
-                    Information security program plan
-
-                    system inventory
-
-                    procedures addressing system inventory development and maintenance
+                    Procedures addressing system inventory development, maintenance, and updates
 
                     OMB FISMA reporting guidance
 
+                    privacy program plan
+
+                    information security program plan
+
+                    personally identifiable information processing policy
+
+                    system inventory
+
+                    personally identifiable information inventory
+
+                    data mapping documentation
+
                     other relevant documents or records
-            - id: pm-5_asm-interview
+            - id: pm-5.1_asm-interview
               name: assessment-method
               props:
                 - name: method
                   ns: http://csrc.nist.gov/ns/rmf
                   value: INTERVIEW
                 - name: label
-                  value: PM-05-Interview
+                  value: PM-05(01)-Interview
                   class: sp800-53a
               parts:
                 - name: assessment-objects
                   prose: |-
-                    Organizational personnel with information security program planning and plan implementation responsibilities
+                    Organizational personnel with privacy program planning and plan implementation responsibilities
 
                     organizational personnel responsible for developing and maintaining the system inventory
 
-                    organizational personnel with information security responsibilities
-            - id: pm-5_asm-test
+                    organizational personnel with information security and privacy responsibilities
+            - id: pm-5.1_asm-test
               name: assessment-method
               props:
                 - name: method
                   ns: http://csrc.nist.gov/ns/rmf
                   value: TEST
                 - name: label
-                  value: PM-05-Test
+                  value: PM-05(01)-Test
                   class: sp800-53a
               parts:
                 - name: assessment-objects
                   prose: |-
-                    Organizational processes for system inventory development and maintenance
+                    Organizational processes for system inventory development, maintenance, and updates
 
                     mechanisms supporting the system inventory
-          controls:
-            - id: pm-5.1
-              class: SP800-53-enhancement
-              title: Inventory of Personally Identifiable Information
-              params:
-                - id: pm-05.01_odp
-                  props:
-                    - name: alt-identifier
-                      value: pm-5.1_prm_1
-                    - name: label
-                      value: PM-05(01)_ODP
-                      class: sp800-53a
-                  label: frequency
-                  guidelines:
-                    - prose: the frequency at which to update the inventory of systems, applications, and projects that process personally identifiable information is defined;
-              props:
-                - name: label
-                  value: PM-05(01)
-                  class: zero-padded
-                - name: label
-                  value: PM-5(1)
-                - name: label
-                  value: PM-05(01)
-                  class: sp800-53a
-                - name: sort-id
-                  value: pm-05.01
-                - name: implementation-level
-                  ns: http://csrc.nist.gov/ns/rmf
-                  value: organization
-              links:
-                - href: '#pm-5'
-                  rel: required
-                - href: '#ac-3'
-                  rel: related
-                - href: '#cm-8'
-                  rel: related
-                - href: '#cm-12'
-                  rel: related
-                - href: '#cm-13'
-                  rel: related
-                - href: '#pl-8'
-                  rel: related
-                - href: '#pm-22'
-                  rel: related
-                - href: '#pt-3'
-                  rel: related
-                - href: '#pt-5'
-                  rel: related
-                - href: '#si-12'
-                  rel: related
-                - href: '#si-18'
-                  rel: related
-              parts:
-                - id: pm-5.1_smt
-                  name: statement
-                  prose: 'Establish, maintain, and update {{ insert: param, pm-05.01_odp }} an inventory of all systems, applications, and projects that process personally identifiable information.'
-                - id: pm-5.1_gdn
-                  name: guidance
-                  prose: An inventory of systems, applications, and projects that process personally identifiable information supports the mapping of data actions, providing individuals with privacy notices, maintaining accurate personally identifiable information, and limiting the processing of personally identifiable information when such information is not needed for operational purposes. Organizations may use this inventory to ensure that systems only process the personally identifiable information for authorized purposes and that this processing is still relevant and necessary for the purpose specified therein.
-                - id: pm-5.1_obj
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: PM-05(01)
-                      class: sp800-53a
-                  parts:
-                    - id: pm-5.1_obj-1
-                      name: assessment-objective
-                      props:
-                        - name: label
-                          value: PM-05(01)[01]
-                          class: sp800-53a
-                      prose: an inventory of all systems, applications, and projects that process personally identifiable information is established;
-                      links:
-                        - href: '#pm-5.1_smt'
-                          rel: assessment-for
-                    - id: pm-5.1_obj-2
-                      name: assessment-objective
-                      props:
-                        - name: label
-                          value: PM-05(01)[02]
-                          class: sp800-53a
-                      prose: an inventory of all systems, applications, and projects that process personally identifiable information is maintained;
-                      links:
-                        - href: '#pm-5.1_smt'
-                          rel: assessment-for
-                    - id: pm-5.1_obj-3
-                      name: assessment-objective
-                      props:
-                        - name: label
-                          value: PM-05(01)[03]
-                          class: sp800-53a
-                      prose: 'an inventory of all systems, applications, and projects that process personally identifiable information is updated {{ insert: param, pm-05.01_odp }}.'
-                      links:
-                        - href: '#pm-5.1_smt'
-                          rel: assessment-for
-                  links:
-                    - href: '#pm-5.1_smt'
-                      rel: assessment-for
-                - id: pm-5.1_asm-examine
-                  name: assessment-method
-                  props:
-                    - name: method
-                      ns: http://csrc.nist.gov/ns/rmf
-                      value: EXAMINE
-                    - name: label
-                      value: PM-05(01)-Examine
-                      class: sp800-53a
-                  parts:
-                    - name: assessment-objects
-                      prose: |-
-                        Procedures addressing system inventory development, maintenance, and updates
-
-                        OMB FISMA reporting guidance
-
-                        privacy program plan
-
-                        information security program plan
-
-                        personally identifiable information processing policy
-
-                        system inventory
-
-                        personally identifiable information inventory
-
-                        data mapping documentation
-
-                        other relevant documents or records
-                - id: pm-5.1_asm-interview
-                  name: assessment-method
-                  props:
-                    - name: method
-                      ns: http://csrc.nist.gov/ns/rmf
-                      value: INTERVIEW
-                    - name: label
-                      value: PM-05(01)-Interview
-                      class: sp800-53a
-                  parts:
-                    - name: assessment-objects
-                      prose: |-
-                        Organizational personnel with privacy program planning and plan implementation responsibilities
-
-                        organizational personnel responsible for developing and maintaining the system inventory
-
-                        organizational personnel with information security and privacy responsibilities
-                - id: pm-5.1_asm-test
-                  name: assessment-method
-                  props:
-                    - name: method
-                      ns: http://csrc.nist.gov/ns/rmf
-                      value: TEST
-                    - name: label
-                      value: PM-05(01)-Test
-                      class: sp800-53a
-                  parts:
-                    - name: assessment-objects
-                      prose: |-
-                        Organizational processes for system inventory development, maintenance, and updates
-
-                        mechanisms supporting the system inventory
         - id: pm-6
           class: SP800-53
           title: Measures of Performance
@@ -23259,241 +22537,76 @@ catalog:
                     organizational processes for developing acquisition contracts
 
                     mechanisms supporting and/or implementing acquisitions and the inclusion of security and privacy requirements in contracts
-        - id: sa-8
-          class: SP800-53
-          title: Security and Privacy Engineering Principles
+        - id: sa-8.33
+          class: SP800-53-enhancement
+          title: Minimization
           params:
-            - id: sa-8_prm_1
+            - id: sa-08.33_odp
               props:
-                - name: aggregates
-                  ns: http://csrc.nist.gov/ns/rmf
-                  value: sa-08_odp.01
-                - name: aggregates
-                  ns: http://csrc.nist.gov/ns/rmf
-                  value: sa-08_odp.02
-              label: organization-defined systems security and privacy engineering principles
-            - id: sa-08_odp.01
-              props:
+                - name: alt-identifier
+                  value: sa-8.33_prm_1
                 - name: label
-                  value: SA-08_ODP[01]
+                  value: SA-08(33)_ODP
                   class: sp800-53a
-              label: systems security engineering principles
+              label: processes
               guidelines:
-                - prose: systems security engineering principles are defined;
-            - id: sa-08_odp.02
-              props:
-                - name: label
-                  value: SA-08_ODP[02]
-                  class: sp800-53a
-              label: privacy engineering principles
-              guidelines:
-                - prose: privacy engineering principles are defined;
+                - prose: processes that implement the privacy principle of minimization are defined;
           props:
             - name: label
-              value: SA-08
+              value: SA-08(33)
               class: zero-padded
             - name: label
-              value: SA-8
+              value: SA-8(33)
             - name: label
-              value: SA-08
+              value: SA-08(33)
               class: sp800-53a
             - name: sort-id
-              value: sa-08
+              value: sa-08.33
             - name: implementation-level
               ns: http://csrc.nist.gov/ns/rmf
               value: organization
+            - name: implementation-level
+              ns: http://csrc.nist.gov/ns/rmf
+              value: system
             - name: contributes-to-assurance
               ns: http://csrc.nist.gov/ns/rmf
               value: "true"
           links:
-            - href: '#18e71fec-c6fd-475a-925a-5d8495cf8455'
-              rel: reference
-            - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
-              rel: reference
-            - href: '#628d22a1-6a11-4784-bc59-5cd9497b5445'
-              rel: reference
-            - href: '#599fb53d-5041-444e-a7fe-640d6d30ad05'
-              rel: reference
-            - href: '#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8'
-              rel: reference
-            - href: '#a21aef46-7330-48a0-b2e1-c5bb8b2dd11d'
-              rel: reference
-            - href: '#e72fde0b-6fc2-497e-a9db-d8fce5a11b8a'
-              rel: reference
-            - href: '#9be5d661-421f-41ad-854e-86f98b811891'
-              rel: reference
-            - href: '#e3cc0520-a366-4fc9-abc2-5272db7e3564'
-              rel: reference
-            - href: '#98d415ca-7281-4064-9931-0c366637e324'
-              rel: reference
-            - href: '#61ccf0f4-d3e7-42db-9796-ce6cb1c85989'
-              rel: reference
-            - href: '#pl-8'
+            - href: '#sa-8'
+              rel: required
+            - href: '#pe-8'
               rel: related
-            - href: '#pm-7'
+            - href: '#pm-25'
               rel: related
-            - href: '#ra-2'
+            - href: '#sc-42'
               rel: related
-            - href: '#ra-3'
-              rel: related
-            - href: '#ra-9'
-              rel: related
-            - href: '#sa-3'
-              rel: related
-            - href: '#sa-4'
-              rel: related
-            - href: '#sa-15'
-              rel: related
-            - href: '#sa-17'
-              rel: related
-            - href: '#sa-20'
-              rel: related
-            - href: '#sc-2'
-              rel: related
-            - href: '#sc-3'
-              rel: related
-            - href: '#sc-32'
-              rel: related
-            - href: '#sc-39'
-              rel: related
-            - href: '#sr-2'
-              rel: related
-            - href: '#sr-3'
-              rel: related
-            - href: '#sr-4'
-              rel: related
-            - href: '#sr-5'
+            - href: '#si-12'
               rel: related
           parts:
-            - id: sa-8_smt
+            - id: sa-8.33_smt
               name: statement
-              prose: 'Apply the following systems security and privacy engineering principles in the specification, design, development, implementation, and modification of the system and system components: {{ insert: param, sa-8_prm_1 }}.'
-            - id: sa-8_gdn
+              prose: 'Implement the privacy principle of minimization using {{ insert: param, sa-08.33_odp }}.'
+            - id: sa-8.33_gdn
               name: guidance
-              prose: |-
-                Systems security and privacy engineering principles are closely related to and implemented throughout the system development life cycle (see [SA-3](#sa-3) ). Organizations can apply systems security and privacy engineering principles to new systems under development or to systems undergoing upgrades. For existing systems, organizations apply systems security and privacy engineering principles to system upgrades and modifications to the extent feasible, given the current state of hardware, software, and firmware components within those systems.
-
-                The application of systems security and privacy engineering principles helps organizations develop trustworthy, secure, and resilient systems and reduces the susceptibility to disruptions, hazards, threats, and the creation of privacy problems for individuals. Examples of system security engineering principles include: developing layered protections; establishing security and privacy policies, architecture, and controls as the foundation for design and development; incorporating security and privacy requirements into the system development life cycle; delineating physical and logical security boundaries; ensuring that developers are trained on how to build secure software; tailoring controls to meet organizational needs; and performing threat modeling to identify use cases, threat agents, attack vectors and patterns, design patterns, and compensating controls needed to mitigate risk.
-
-                Organizations that apply systems security and privacy engineering concepts and principles can facilitate the development of trustworthy, secure systems, system components, and system services; reduce risk to acceptable levels; and make informed risk management decisions. System security engineering principles can also be used to protect against certain supply chain risks, including incorporating tamper-resistant hardware into a design.
-            - id: sa-8_obj
+              prose: The principle of minimization states that organizations should only process personally identifiable information that is directly relevant and necessary to accomplish an authorized purpose and should only maintain personally identifiable information for as long as is necessary to accomplish the purpose. Organizations have processes in place, consistent with applicable laws and policies, to implement the principle of minimization.
+            - id: sa-8.33_obj
               name: assessment-objective
               props:
                 - name: label
-                  value: SA-08
+                  value: SA-08(33)
                   class: sp800-53a
-              parts:
-                - id: sa-8_obj-1
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: SA-08[01]
-                      class: sp800-53a
-                  prose: ' {{ insert: param, sa-08_odp.01 }} are applied in the specification of the system and system components;'
-                  links:
-                    - href: '#sa-8_smt'
-                      rel: assessment-for
-                - id: sa-8_obj-2
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: SA-08[02]
-                      class: sp800-53a
-                  prose: ' {{ insert: param, sa-08_odp.01 }} are applied in the design of the system and system components;'
-                  links:
-                    - href: '#sa-8_smt'
-                      rel: assessment-for
-                - id: sa-8_obj-3
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: SA-08[03]
-                      class: sp800-53a
-                  prose: ' {{ insert: param, sa-08_odp.01 }} are applied in the development of the system and system components;'
-                  links:
-                    - href: '#sa-8_smt'
-                      rel: assessment-for
-                - id: sa-8_obj-4
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: SA-08[04]
-                      class: sp800-53a
-                  prose: ' {{ insert: param, sa-08_odp.01 }} are applied in the implementation of the system and system components;'
-                  links:
-                    - href: '#sa-8_smt'
-                      rel: assessment-for
-                - id: sa-8_obj-5
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: SA-08[05]
-                      class: sp800-53a
-                  prose: ' {{ insert: param, sa-08_odp.01 }} are applied in the modification of the system and system components;'
-                  links:
-                    - href: '#sa-8_smt'
-                      rel: assessment-for
-                - id: sa-8_obj-6
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: SA-08[06]
-                      class: sp800-53a
-                  prose: ' {{ insert: param, sa-08_odp.02 }} are applied in the specification of the system and system components;'
-                  links:
-                    - href: '#sa-8_smt'
-                      rel: assessment-for
-                - id: sa-8_obj-7
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: SA-08[07]
-                      class: sp800-53a
-                  prose: ' {{ insert: param, sa-08_odp.02 }} are applied in the design of the system and system components;'
-                  links:
-                    - href: '#sa-8_smt'
-                      rel: assessment-for
-                - id: sa-8_obj-8
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: SA-08[08]
-                      class: sp800-53a
-                  prose: ' {{ insert: param, sa-08_odp.02 }} are applied in the development of the system and system components;'
-                  links:
-                    - href: '#sa-8_smt'
-                      rel: assessment-for
-                - id: sa-8_obj-9
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: SA-08[09]
-                      class: sp800-53a
-                  prose: ' {{ insert: param, sa-08_odp.02 }} are applied in the implementation of the system and system components;'
-                  links:
-                    - href: '#sa-8_smt'
-                      rel: assessment-for
-                - id: sa-8_obj-10
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: SA-08[10]
-                      class: sp800-53a
-                  prose: ' {{ insert: param, sa-08_odp.02 }} are applied in the modification of the system and system components.'
-                  links:
-                    - href: '#sa-8_smt'
-                      rel: assessment-for
+              prose: 'the privacy principle of minimization is implemented using {{ insert: param, sa-08.33_odp }}.'
               links:
-                - href: '#sa-8_smt'
+                - href: '#sa-8.33_smt'
                   rel: assessment-for
-            - id: sa-8_asm-examine
+            - id: sa-8.33_asm-examine
               name: assessment-method
               props:
                 - name: method
                   ns: http://csrc.nist.gov/ns/rmf
                   value: EXAMINE
                 - name: label
-                  value: SA-08-Examine
+                  value: SA-08(33)-Examine
                   class: sp800-53a
               parts:
                 - name: assessment-objects
@@ -23502,13 +22615,19 @@ catalog:
 
                     system and services acquisition procedures
 
-                    assessment and authorization procedures
+                    personally identifiable information processing policy
 
-                    procedures addressing security and privacy engineering principles used in the specification, design, development, implementation, and modification of the system
+                    procedures addressing the minimization of personally identifiable information in system design
 
                     system design documentation
 
-                    security and privacy requirements and specifications for the system
+                    system configuration settings and associated documentation
+
+                    change control records
+
+                    information security and privacy requirements and specifications for the system
+
+                    system security and privacy architecture
 
                     system security plan
 
@@ -23519,180 +22638,44 @@ catalog:
                     privacy risk assessment documentation
 
                     other relevant documents or records
-            - id: sa-8_asm-interview
+            - id: sa-8.33_asm-interview
               name: assessment-method
               props:
                 - name: method
                   ns: http://csrc.nist.gov/ns/rmf
                   value: INTERVIEW
                 - name: label
-                  value: SA-08-Interview
+                  value: SA-08(33)-Interview
                   class: sp800-53a
               parts:
                 - name: assessment-objects
                   prose: |-
-                    Organizational personnel with acquisition/contracting responsibilities
-
-                    organizational personnel with information security and privacy responsibilities
+                    Organizational personnel with information security and privacy responsibilities
 
                     organizational personnel with system specification, design, development, implementation, and modification responsibilities
 
                     system developers
-            - id: sa-8_asm-test
+            - id: sa-8.33_asm-test
               name: assessment-method
               props:
                 - name: method
                   ns: http://csrc.nist.gov/ns/rmf
                   value: TEST
                 - name: label
-                  value: SA-08-Test
+                  value: SA-08(33)-Test
                   class: sp800-53a
               parts:
                 - name: assessment-objects
                   prose: |-
-                    Organizational processes for applying security and privacy engineering principles in system specification, design, development, implementation, and modification
+                    Organizational processes for applying the privacy design principle of minimization in system specification, design, development, implementation, and modification
 
-                    mechanisms supporting the application of security and privacy engineering principles in system specification, design, development, implementation, and modification
-          controls:
-            - id: sa-8.33
-              class: SP800-53-enhancement
-              title: Minimization
-              params:
-                - id: sa-08.33_odp
-                  props:
-                    - name: alt-identifier
-                      value: sa-8.33_prm_1
-                    - name: label
-                      value: SA-08(33)_ODP
-                      class: sp800-53a
-                  label: processes
-                  guidelines:
-                    - prose: processes that implement the privacy principle of minimization are defined;
-              props:
-                - name: label
-                  value: SA-08(33)
-                  class: zero-padded
-                - name: label
-                  value: SA-8(33)
-                - name: label
-                  value: SA-08(33)
-                  class: sp800-53a
-                - name: sort-id
-                  value: sa-08.33
-                - name: implementation-level
-                  ns: http://csrc.nist.gov/ns/rmf
-                  value: organization
-                - name: implementation-level
-                  ns: http://csrc.nist.gov/ns/rmf
-                  value: system
-                - name: contributes-to-assurance
-                  ns: http://csrc.nist.gov/ns/rmf
-                  value: "true"
-              links:
-                - href: '#sa-8'
-                  rel: required
-                - href: '#pe-8'
-                  rel: related
-                - href: '#pm-25'
-                  rel: related
-                - href: '#sc-42'
-                  rel: related
-                - href: '#si-12'
-                  rel: related
-              parts:
-                - id: sa-8.33_smt
-                  name: statement
-                  prose: 'Implement the privacy principle of minimization using {{ insert: param, sa-08.33_odp }}.'
-                - id: sa-8.33_gdn
-                  name: guidance
-                  prose: The principle of minimization states that organizations should only process personally identifiable information that is directly relevant and necessary to accomplish an authorized purpose and should only maintain personally identifiable information for as long as is necessary to accomplish the purpose. Organizations have processes in place, consistent with applicable laws and policies, to implement the principle of minimization.
-                - id: sa-8.33_obj
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: SA-08(33)
-                      class: sp800-53a
-                  prose: 'the privacy principle of minimization is implemented using {{ insert: param, sa-08.33_odp }}.'
-                  links:
-                    - href: '#sa-8.33_smt'
-                      rel: assessment-for
-                - id: sa-8.33_asm-examine
-                  name: assessment-method
-                  props:
-                    - name: method
-                      ns: http://csrc.nist.gov/ns/rmf
-                      value: EXAMINE
-                    - name: label
-                      value: SA-08(33)-Examine
-                      class: sp800-53a
-                  parts:
-                    - name: assessment-objects
-                      prose: |-
-                        System and services acquisition policy
+                    mechanisms supporting the application of the security design principle of sufficient documentation in system specification, design, development, implementation, and modification
 
-                        system and services acquisition procedures
+                    mechanisms that enforce security and privacy policy
 
-                        personally identifiable information processing policy
+                    organizational processes for managing change configuration
 
-                        procedures addressing the minimization of personally identifiable information in system design
-
-                        system design documentation
-
-                        system configuration settings and associated documentation
-
-                        change control records
-
-                        information security and privacy requirements and specifications for the system
-
-                        system security and privacy architecture
-
-                        system security plan
-
-                        privacy plan
-
-                        privacy impact assessment
-
-                        privacy risk assessment documentation
-
-                        other relevant documents or records
-                - id: sa-8.33_asm-interview
-                  name: assessment-method
-                  props:
-                    - name: method
-                      ns: http://csrc.nist.gov/ns/rmf
-                      value: INTERVIEW
-                    - name: label
-                      value: SA-08(33)-Interview
-                      class: sp800-53a
-                  parts:
-                    - name: assessment-objects
-                      prose: |-
-                        Organizational personnel with information security and privacy responsibilities
-
-                        organizational personnel with system specification, design, development, implementation, and modification responsibilities
-
-                        system developers
-                - id: sa-8.33_asm-test
-                  name: assessment-method
-                  props:
-                    - name: method
-                      ns: http://csrc.nist.gov/ns/rmf
-                      value: TEST
-                    - name: label
-                      value: SA-08(33)-Test
-                      class: sp800-53a
-                  parts:
-                    - name: assessment-objects
-                      prose: |-
-                        Organizational processes for applying the privacy design principle of minimization in system specification, design, development, implementation, and modification
-
-                        mechanisms supporting the application of the security design principle of sufficient documentation in system specification, design, development, implementation, and modification
-
-                        mechanisms that enforce security and privacy policy
-
-                        organizational processes for managing change configuration
-
-                        mechanisms supporting configuration control
+                    mechanisms supporting configuration control
         - id: sa-9
           class: SP800-53
           title: External System Services
@@ -24301,211 +23284,174 @@ catalog:
         - name: label
           value: SC
       controls:
-        - id: sc-7
-          class: SP800-53
-          title: Boundary Protection
+        - id: sc-7.24
+          class: SP800-53-enhancement
+          title: Personally Identifiable Information
           params:
-            - id: sc-07_odp
+            - id: sc-07.24_odp
               props:
                 - name: alt-identifier
-                  value: sc-7_prm_1
+                  value: sc-7.24_prm_1
                 - name: label
-                  value: SC-07_ODP
+                  value: SC-07(24)_ODP
                   class: sp800-53a
-              select:
-                choice:
-                  - physically
-                  - logically
+              label: processing rules
+              guidelines:
+                - prose: processing rules for systems that process personally identifiable information are defined;
           props:
             - name: label
-              value: SC-07
+              value: SC-07(24)
               class: zero-padded
             - name: label
-              value: SC-7
+              value: SC-7(24)
             - name: label
-              value: SC-07
+              value: SC-07(24)
               class: sp800-53a
             - name: sort-id
-              value: sc-07
+              value: sc-07.24
+            - name: implementation-level
+              ns: http://csrc.nist.gov/ns/rmf
+              value: organization
             - name: implementation-level
               ns: http://csrc.nist.gov/ns/rmf
               value: system
           links:
-            - href: '#27847491-5ce1-4f6a-a1e4-9e483782f0ef'
-              rel: reference
-            - href: '#628d22a1-6a11-4784-bc59-5cd9497b5445'
-              rel: reference
-            - href: '#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8'
-              rel: reference
-            - href: '#a7f0e897-29a3-45c4-bd88-40dfef0e034a'
-              rel: reference
-            - href: '#d4d7c760-2907-403b-8b2a-767ca5370ecd'
-              rel: reference
-            - href: '#f5edfe51-d1f2-422e-9b27-5d0e90b49c72'
-              rel: reference
-            - href: '#ac-4'
+            - href: '#sc-7'
+              rel: required
+            - href: '#pt-2'
               rel: related
-            - href: '#ac-17'
-              rel: related
-            - href: '#ac-18'
-              rel: related
-            - href: '#ac-19'
-              rel: related
-            - href: '#ac-20'
-              rel: related
-            - href: '#au-13'
-              rel: related
-            - href: '#ca-3'
-              rel: related
-            - href: '#cm-2'
-              rel: related
-            - href: '#cm-4'
-              rel: related
-            - href: '#cm-7'
-              rel: related
-            - href: '#cm-10'
-              rel: related
-            - href: '#cp-8'
-              rel: related
-            - href: '#cp-10'
-              rel: related
-            - href: '#ir-4'
-              rel: related
-            - href: '#ma-4'
-              rel: related
-            - href: '#pe-3'
-              rel: related
-            - href: '#pl-8'
-              rel: related
-            - href: '#pm-12'
-              rel: related
-            - href: '#sa-8'
-              rel: related
-            - href: '#sa-17'
-              rel: related
-            - href: '#sc-5'
-              rel: related
-            - href: '#sc-26'
-              rel: related
-            - href: '#sc-32'
-              rel: related
-            - href: '#sc-35'
-              rel: related
-            - href: '#sc-43'
+            - href: '#si-15'
               rel: related
           parts:
-            - id: sc-7_smt
+            - id: sc-7.24_smt
               name: statement
+              prose: 'For systems that process personally identifiable information:'
               parts:
-                - id: sc-7_smt.a
+                - id: sc-7.24_smt.a
                   name: item
                   props:
                     - name: label
-                      value: a.
-                  prose: Monitor and control communications at the external managed interfaces to the system and at key internal managed interfaces within the system;
-                - id: sc-7_smt.b
+                      value: (a)
+                  prose: 'Apply the following processing rules to data elements of personally identifiable information: {{ insert: param, sc-07.24_odp }};'
+                - id: sc-7.24_smt.b
                   name: item
                   props:
                     - name: label
-                      value: b.
-                  prose: 'Implement subnetworks for publicly accessible system components that are {{ insert: param, sc-07_odp }} separated from internal organizational networks; and'
-                - id: sc-7_smt.c
+                      value: (b)
+                  prose: Monitor for permitted processing at the external interfaces to the system and at key internal boundaries within the system;
+                - id: sc-7.24_smt.c
                   name: item
                   props:
                     - name: label
-                      value: c.
-                  prose: Connect to external networks or systems only through managed interfaces consisting of boundary protection devices arranged in accordance with an organizational security and privacy architecture.
-            - id: sc-7_gdn
+                      value: (c)
+                  prose: Document each processing exception; and
+                - id: sc-7.24_smt.d
+                  name: item
+                  props:
+                    - name: label
+                      value: (d)
+                  prose: Review and remove exceptions that are no longer supported.
+            - id: sc-7.24_gdn
               name: guidance
-              prose: Managed interfaces include gateways, routers, firewalls, guards, network-based malicious code analysis, virtualization systems, or encrypted tunnels implemented within a security architecture. Subnetworks that are physically or logically separated from internal networks are referred to as demilitarized zones or DMZs. Restricting or prohibiting interfaces within organizational systems includes restricting external web traffic to designated web servers within managed interfaces, prohibiting external traffic that appears to be spoofing internal addresses, and prohibiting internal traffic that appears to be spoofing external addresses. [SP 800-189](#f5edfe51-d1f2-422e-9b27-5d0e90b49c72) provides additional information on source address validation techniques to prevent ingress and egress of traffic with spoofed addresses. Commercial telecommunications services are provided by network components and consolidated management systems shared by customers. These services may also include third party-provided access lines and other service elements. Such services may represent sources of increased risk despite contract security provisions. Boundary protection may be implemented as a common control for all or part of an organizational network such that the boundary to be protected is greater than a system-specific boundary (i.e., an authorization boundary).
-            - id: sc-7_obj
+              prose: Managing the processing of personally identifiable information is an important aspect of protecting an individual’s privacy. Applying, monitoring for, and documenting exceptions to processing rules ensure that personally identifiable information is processed only in accordance with established privacy requirements.
+            - id: sc-7.24_obj
               name: assessment-objective
               props:
                 - name: label
-                  value: SC-07
+                  value: SC-07(24)
                   class: sp800-53a
               parts:
-                - id: sc-7_obj.a
+                - id: sc-7.24_obj.a
                   name: assessment-objective
                   props:
                     - name: label
-                      value: SC-07a.
+                      value: SC-07(24)(a)
+                      class: sp800-53a
+                  prose: ' {{ insert: param, sc-07.24_odp }} are applied to data elements of personally identifiable information on systems that process personally identifiable information;'
+                  links:
+                    - href: '#sc-7.24_smt.a'
+                      rel: assessment-for
+                - id: sc-7.24_obj.b
+                  name: assessment-objective
+                  props:
+                    - name: label
+                      value: SC-07(24)(b)
                       class: sp800-53a
                   parts:
-                    - id: sc-7_obj.a-1
+                    - id: sc-7.24_obj.b-1
                       name: assessment-objective
                       props:
                         - name: label
-                          value: SC-07a.[01]
+                          value: SC-07(24)(b)[01]
                           class: sp800-53a
-                      prose: communications at external managed interfaces to the system are monitored;
+                      prose: permitted processing is monitored at the external interfaces to the systems that process personally identifiable information;
                       links:
-                        - href: '#sc-7_smt.a'
+                        - href: '#sc-7.24_smt.b'
                           rel: assessment-for
-                    - id: sc-7_obj.a-2
+                    - id: sc-7.24_obj.b-2
                       name: assessment-objective
                       props:
                         - name: label
-                          value: SC-07a.[02]
+                          value: SC-07(24)(b)[02]
                           class: sp800-53a
-                      prose: communications at external managed interfaces to the system are controlled;
+                      prose: permitted processing is monitored at key internal boundaries within the systems that process personally identifiable information;
                       links:
-                        - href: '#sc-7_smt.a'
-                          rel: assessment-for
-                    - id: sc-7_obj.a-3
-                      name: assessment-objective
-                      props:
-                        - name: label
-                          value: SC-07a.[03]
-                          class: sp800-53a
-                      prose: communications at key internal managed interfaces within the system are monitored;
-                      links:
-                        - href: '#sc-7_smt.a'
-                          rel: assessment-for
-                    - id: sc-7_obj.a-4
-                      name: assessment-objective
-                      props:
-                        - name: label
-                          value: SC-07a.[04]
-                          class: sp800-53a
-                      prose: communications at key internal managed interfaces within the system are controlled;
-                      links:
-                        - href: '#sc-7_smt.a'
+                        - href: '#sc-7.24_smt.b'
                           rel: assessment-for
                   links:
-                    - href: '#sc-7_smt.a'
+                    - href: '#sc-7.24_smt.b'
                       rel: assessment-for
-                - id: sc-7_obj.b
+                - id: sc-7.24_obj.c
                   name: assessment-objective
                   props:
                     - name: label
-                      value: SC-07b.
+                      value: SC-07(24)(c)
                       class: sp800-53a
-                  prose: 'subnetworks for publicly accessible system components are {{ insert: param, sc-07_odp }} separated from internal organizational networks;'
+                  prose: each processing exception is documented for systems that process personally identifiable information;
                   links:
-                    - href: '#sc-7_smt.b'
+                    - href: '#sc-7.24_smt.c'
                       rel: assessment-for
-                - id: sc-7_obj.c
+                - id: sc-7.24_obj.d
                   name: assessment-objective
                   props:
                     - name: label
-                      value: SC-07c.
+                      value: SC-07(24)(d)
                       class: sp800-53a
-                  prose: external networks or systems are only connected to through managed interfaces consisting of boundary protection devices arranged in accordance with an organizational security and privacy architecture.
+                  parts:
+                    - id: sc-7.24_obj.d-1
+                      name: assessment-objective
+                      props:
+                        - name: label
+                          value: SC-07(24)(d)[01]
+                          class: sp800-53a
+                      prose: exceptions for systems that process personally identifiable information are reviewed;
+                      links:
+                        - href: '#sc-7.24_smt.d'
+                          rel: assessment-for
+                    - id: sc-7.24_obj.d-2
+                      name: assessment-objective
+                      props:
+                        - name: label
+                          value: SC-07(24)(d)[02]
+                          class: sp800-53a
+                      prose: exceptions for systems that process personally identifiable information that are no longer supported are removed.
+                      links:
+                        - href: '#sc-7.24_smt.d'
+                          rel: assessment-for
                   links:
-                    - href: '#sc-7_smt.c'
+                    - href: '#sc-7.24_smt.d'
                       rel: assessment-for
               links:
-                - href: '#sc-7_smt'
+                - href: '#sc-7.24_smt'
                   rel: assessment-for
-            - id: sc-7_asm-examine
+            - id: sc-7.24_asm-examine
               name: assessment-method
               props:
                 - name: method
                   ns: http://csrc.nist.gov/ns/rmf
                   value: EXAMINE
                 - name: label
-                  value: SC-07-Examine
+                  value: SC-07(24)-Examine
                   class: sp800-53a
               parts:
                 - name: assessment-objects
@@ -24514,281 +23460,58 @@ catalog:
 
                     procedures addressing boundary protection
 
+                    personally identifiable information processing policies
+
                     list of key internal boundaries of the system
 
                     system design documentation
 
-                    boundary protection hardware and software
-
                     system configuration settings and associated documentation
 
-                    enterprise security architecture documentation
+                    enterprise security and privacy architecture documentation
 
                     system audit records
 
                     system security plan
 
+                    privacy plan
+
+                    personally identifiable information inventory documentation
+
+                    data mapping documentation
+
                     other relevant documents or records
-            - id: sc-7_asm-interview
+            - id: sc-7.24_asm-interview
               name: assessment-method
               props:
                 - name: method
                   ns: http://csrc.nist.gov/ns/rmf
                   value: INTERVIEW
                 - name: label
-                  value: SC-07-Interview
+                  value: SC-07(24)-Interview
                   class: sp800-53a
               parts:
                 - name: assessment-objects
                   prose: |-
                     System/network administrators
 
-                    organizational personnel with information security responsibilities
+                    organizational personnel with information security and privacy responsibilities
 
                     system developer
 
                     organizational personnel with boundary protection responsibilities
-            - id: sc-7_asm-test
+            - id: sc-7.24_asm-test
               name: assessment-method
               props:
                 - name: method
                   ns: http://csrc.nist.gov/ns/rmf
                   value: TEST
                 - name: label
-                  value: SC-07-Test
+                  value: SC-07(24)-Test
                   class: sp800-53a
               parts:
                 - name: assessment-objects
                   prose: Mechanisms implementing boundary protection capabilities
-          controls:
-            - id: sc-7.24
-              class: SP800-53-enhancement
-              title: Personally Identifiable Information
-              params:
-                - id: sc-07.24_odp
-                  props:
-                    - name: alt-identifier
-                      value: sc-7.24_prm_1
-                    - name: label
-                      value: SC-07(24)_ODP
-                      class: sp800-53a
-                  label: processing rules
-                  guidelines:
-                    - prose: processing rules for systems that process personally identifiable information are defined;
-              props:
-                - name: label
-                  value: SC-07(24)
-                  class: zero-padded
-                - name: label
-                  value: SC-7(24)
-                - name: label
-                  value: SC-07(24)
-                  class: sp800-53a
-                - name: sort-id
-                  value: sc-07.24
-                - name: implementation-level
-                  ns: http://csrc.nist.gov/ns/rmf
-                  value: organization
-                - name: implementation-level
-                  ns: http://csrc.nist.gov/ns/rmf
-                  value: system
-              links:
-                - href: '#sc-7'
-                  rel: required
-                - href: '#pt-2'
-                  rel: related
-                - href: '#si-15'
-                  rel: related
-              parts:
-                - id: sc-7.24_smt
-                  name: statement
-                  prose: 'For systems that process personally identifiable information:'
-                  parts:
-                    - id: sc-7.24_smt.a
-                      name: item
-                      props:
-                        - name: label
-                          value: (a)
-                      prose: 'Apply the following processing rules to data elements of personally identifiable information: {{ insert: param, sc-07.24_odp }};'
-                    - id: sc-7.24_smt.b
-                      name: item
-                      props:
-                        - name: label
-                          value: (b)
-                      prose: Monitor for permitted processing at the external interfaces to the system and at key internal boundaries within the system;
-                    - id: sc-7.24_smt.c
-                      name: item
-                      props:
-                        - name: label
-                          value: (c)
-                      prose: Document each processing exception; and
-                    - id: sc-7.24_smt.d
-                      name: item
-                      props:
-                        - name: label
-                          value: (d)
-                      prose: Review and remove exceptions that are no longer supported.
-                - id: sc-7.24_gdn
-                  name: guidance
-                  prose: Managing the processing of personally identifiable information is an important aspect of protecting an individual’s privacy. Applying, monitoring for, and documenting exceptions to processing rules ensure that personally identifiable information is processed only in accordance with established privacy requirements.
-                - id: sc-7.24_obj
-                  name: assessment-objective
-                  props:
-                    - name: label
-                      value: SC-07(24)
-                      class: sp800-53a
-                  parts:
-                    - id: sc-7.24_obj.a
-                      name: assessment-objective
-                      props:
-                        - name: label
-                          value: SC-07(24)(a)
-                          class: sp800-53a
-                      prose: ' {{ insert: param, sc-07.24_odp }} are applied to data elements of personally identifiable information on systems that process personally identifiable information;'
-                      links:
-                        - href: '#sc-7.24_smt.a'
-                          rel: assessment-for
-                    - id: sc-7.24_obj.b
-                      name: assessment-objective
-                      props:
-                        - name: label
-                          value: SC-07(24)(b)
-                          class: sp800-53a
-                      parts:
-                        - id: sc-7.24_obj.b-1
-                          name: assessment-objective
-                          props:
-                            - name: label
-                              value: SC-07(24)(b)[01]
-                              class: sp800-53a
-                          prose: permitted processing is monitored at the external interfaces to the systems that process personally identifiable information;
-                          links:
-                            - href: '#sc-7.24_smt.b'
-                              rel: assessment-for
-                        - id: sc-7.24_obj.b-2
-                          name: assessment-objective
-                          props:
-                            - name: label
-                              value: SC-07(24)(b)[02]
-                              class: sp800-53a
-                          prose: permitted processing is monitored at key internal boundaries within the systems that process personally identifiable information;
-                          links:
-                            - href: '#sc-7.24_smt.b'
-                              rel: assessment-for
-                      links:
-                        - href: '#sc-7.24_smt.b'
-                          rel: assessment-for
-                    - id: sc-7.24_obj.c
-                      name: assessment-objective
-                      props:
-                        - name: label
-                          value: SC-07(24)(c)
-                          class: sp800-53a
-                      prose: each processing exception is documented for systems that process personally identifiable information;
-                      links:
-                        - href: '#sc-7.24_smt.c'
-                          rel: assessment-for
-                    - id: sc-7.24_obj.d
-                      name: assessment-objective
-                      props:
-                        - name: label
-                          value: SC-07(24)(d)
-                          class: sp800-53a
-                      parts:
-                        - id: sc-7.24_obj.d-1
-                          name: assessment-objective
-                          props:
-                            - name: label
-                              value: SC-07(24)(d)[01]
-                              class: sp800-53a
-                          prose: exceptions for systems that process personally identifiable information are reviewed;
-                          links:
-                            - href: '#sc-7.24_smt.d'
-                              rel: assessment-for
-                        - id: sc-7.24_obj.d-2
-                          name: assessment-objective
-                          props:
-                            - name: label
-                              value: SC-07(24)(d)[02]
-                              class: sp800-53a
-                          prose: exceptions for systems that process personally identifiable information that are no longer supported are removed.
-                          links:
-                            - href: '#sc-7.24_smt.d'
-                              rel: assessment-for
-                      links:
-                        - href: '#sc-7.24_smt.d'
-                          rel: assessment-for
-                  links:
-                    - href: '#sc-7.24_smt'
-                      rel: assessment-for
-                - id: sc-7.24_asm-examine
-                  name: assessment-method
-                  props:
-                    - name: method
-                      ns: http://csrc.nist.gov/ns/rmf
-                      value: EXAMINE
-                    - name: label
-                      value: SC-07(24)-Examine
-                      class: sp800-53a
-                  parts:
-                    - name: assessment-objects
-                      prose: |-
-                        System and communications protection policy
-
-                        procedures addressing boundary protection
-
-                        personally identifiable information processing policies
-
-                        list of key internal boundaries of the system
-
-                        system design documentation
-
-                        system configuration settings and associated documentation
-
-                        enterprise security and privacy architecture documentation
-
-                        system audit records
-
-                        system security plan
-
-                        privacy plan
-
-                        personally identifiable information inventory documentation
-
-                        data mapping documentation
-
-                        other relevant documents or records
-                - id: sc-7.24_asm-interview
-                  name: assessment-method
-                  props:
-                    - name: method
-                      ns: http://csrc.nist.gov/ns/rmf
-                      value: INTERVIEW
-                    - name: label
-                      value: SC-07(24)-Interview
-                      class: sp800-53a
-                  parts:
-                    - name: assessment-objects
-                      prose: |-
-                        System/network administrators
-
-                        organizational personnel with information security and privacy responsibilities
-
-                        system developer
-
-                        organizational personnel with boundary protection responsibilities
-                - id: sc-7.24_asm-test
-                  name: assessment-method
-                  props:
-                    - name: method
-                      ns: http://csrc.nist.gov/ns/rmf
-                      value: TEST
-                    - name: label
-                      value: SC-07(24)-Test
-                      class: sp800-53a
-                  parts:
-                    - name: assessment-objects
-                      prose: Mechanisms implementing boundary protection capabilities
     - id: si
       class: family
       title: System and Information Integrity
@@ -26815,12 +25538,6 @@ catalog:
           text: Boyens JM, Paulsen C, Moorthy R, Bartol N (2015) Supply Chain Risk Management Practices for Federal Information Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-161.
         rlinks:
           - href: https://doi.org/10.6028/NIST.SP.800-161
-      - uuid: 2956e175-f674-43f4-b1b9-e074ad9fc39c
-        title: SP 800-162
-        citation:
-          text: Hu VC, Ferraiolo DF, Kuhn R, Schnitzer A, Sandlin K, Miller R, Scarfone KA (2014) Guide to Attribute Based Access Control (ABAC) Definition and Considerations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-162, Includes updates as of August 2, 2019.
-        rlinks:
-          - href: https://doi.org/10.6028/NIST.SP.800-162
       - uuid: 7dbd6d9f-29d6-4d1d-9766-f2d77ff3c849
         title: SP 800-171
         citation:
@@ -26833,12 +25550,6 @@ catalog:
           text: 'Ross RS, Pillitteri VY, Graubart RD, Guissanie G, Wagner R, Bodeau D (2020) Enhanced Security Requirements for Protecting Controlled Unclassified Information: A Supplement to NIST Special Publication 800-171 (Final Public Draft). (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-172.'
         rlinks:
           - href: https://doi.org/10.6028/NIST.SP.800-172-draft
-      - uuid: 388a3aa2-5d85-4bad-b8a3-77db80d63c4f
-        title: SP 800-178
-        citation:
-          text: 'Ferraiolo DF, Hu VC, Kuhn R, Chandramouli R (2016) A Comparison of Attribute Based Access Control (ABAC) Standards for Data Service Applications: Extensible Access Control Markup Language (XACML) and Next Generation Access Control (NGAC). (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-178.'
-        rlinks:
-          - href: https://doi.org/10.6028/NIST.SP.800-178
       - uuid: 276bd50a-7e58-48e5-a405-8c8cb91d7a5f
         title: SP 800-181
         citation:
@@ -26857,12 +25568,6 @@ catalog:
           text: Garfinkel S (2016) De-Identifying Government Datasets. (National Institute of Standards and Technology, Gaithersburg, MD), Second Draft NIST Special Publication (SP) 800-188.
         rlinks:
           - href: https://csrc.nist.gov/publications/detail/sp/800-188/draft
-      - uuid: f5edfe51-d1f2-422e-9b27-5d0e90b49c72
-        title: SP 800-189
-        citation:
-          text: 'Sriram K, Montgomery D (2019) Resilient Interdomain Traffic Exchange: BGP Security and DDoS Mitigation. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-189.'
-        rlinks:
-          - href: https://doi.org/10.6028/NIST.SP.800-189
       - uuid: 30eb758a-2707-4bca-90ad-949a74d4eb16
         title: SP 800-18
         citation:
@@ -26893,12 +25598,6 @@ catalog:
           text: 'Joint Task Force Transformation Initiative (2011) Managing Information Security Risk: Organization, Mission, and Information System View. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-39.'
         rlinks:
           - href: https://doi.org/10.6028/NIST.SP.800-39
-      - uuid: a7f0e897-29a3-45c4-bd88-40dfef0e034a
-        title: SP 800-41
-        citation:
-          text: Scarfone KA, Hoffman P (2009) Guidelines on Firewalls and Firewall Policy. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-41, Rev. 1.
-        rlinks:
-          - href: https://doi.org/10.6028/NIST.SP.800-41r1
       - uuid: 511f6832-23ca-49a3-8c0f-ce493373cab8
         title: SP 800-50
         citation:
@@ -26923,24 +25622,6 @@ catalog:
           text: Chew E, Swanson MA, Stine KM, Bartol N, Brown A, Robinson W (2008) Performance Measurement Guide for Information Security. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-55, Rev. 1.
         rlinks:
           - href: https://doi.org/10.6028/NIST.SP.800-55r1
-      - uuid: 110e26af-4765-49e1-8740-6750f83fcda1
-        title: SP 800-57-1
-        citation:
-          text: 'Barker EB (2020) Recommendation for Key Management: Part 1 – General. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-57 Part 1, Rev. 5.'
-        rlinks:
-          - href: https://doi.org/10.6028/NIST.SP.800-57pt1r5
-      - uuid: e7942589-e267-4a5a-a3d9-f39a7aae81f0
-        title: SP 800-57-2
-        citation:
-          text: 'Barker EB, Barker WC (2019) Recommendation for Key Management: Part 2 – Best Practices for Key Management Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-57 Part 2, Rev. 1.'
-        rlinks:
-          - href: https://doi.org/10.6028/NIST.SP.800-57pt2r1
-      - uuid: 8306620b-1920-4d73-8b21-12008528595f
-        title: SP 800-57-3
-        citation:
-          text: 'Barker EB, Dang QH (2015) Recommendation for Key Management, Part 3: Application-Specific Key Management Guidance. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-57 Part 3, Rev. 1.'
-        rlinks:
-          - href: https://doi.org/10.6028/NIST.SP.800-57pt3r1
       - uuid: e72fde0b-6fc2-497e-a9db-d8fce5a11b8a
         title: SP 800-60-1
         citation:
@@ -26977,12 +25658,6 @@ catalog:
           text: Cooper DA, Ferraiolo H, Mehta KL, Francomacaro S, Chandramouli R, Mohler J (2015) Interfaces for Personal Identity Verification. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-73-4, Includes updates as of February 8, 2016.
         rlinks:
           - href: https://doi.org/10.6028/NIST.SP.800-73-4
-      - uuid: d4d7c760-2907-403b-8b2a-767ca5370ecd
-        title: SP 800-77
-        citation:
-          text: Barker EB, Dang QH, Frankel SE, Scarfone KA, Wouters P (2020) Guide to IPsec VPNs. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-77, Rev. 1.
-        rlinks:
-          - href: https://doi.org/10.6028/NIST.SP.800-77r1
       - uuid: 3dd249b0-f57d-44ba-a03e-c3eab1b835ff
         title: SP 800-83
         citation:

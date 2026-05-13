@@ -1,11 +1,12 @@
 {
   "assessment-plan": {
-    "uuid": "97f36be8-fec0-4fa6-bcdf-e3f838eba040",
+    "uuid": "74c1f5ed-7b04-49e4-a89b-f8b0120715fd",
     "metadata": {
       "title": "IFA SYSTEM1234 Assessment Plan",
-      "last-modified": "2025-07-06T15:05:10.355446-04:00",
+      "published": "2026-05-13T12:30:00.00000-00:00",
+      "last-modified": "2026-05-12T02:36:09.00000-00:00",
       "version": "1.1.0",
-      "oscal-version": "1.1.3",
+      "oscal-version": "1.2.2",
       "revisions": [
         {
           "title": "IFA GoodRead Assessment Plan",
@@ -19,6 +20,19 @@
             }
           ],
           "remarks": "This OSCAL version of the IFA Assessment Plan is part of the v 1.3.0 OSCAL content release."
+        },
+        {
+          "title": "IFA SYSTEM1234 Assessment Plan",
+          "last-modified": "2025-07-06T15:05:10.355446-04:00",
+          "version": "1.1.0",
+          "oscal-version": "1.1.3",
+          "links": [
+            {
+              "href": "#97f36be8-fec0-4fa6-bcdf-e3f838eba040",
+              "rel": "version-history"
+            }
+          ],
+          "remarks": "This OSCAL version of the IFA Assessment Plan is part of the v 1.4.0 OSCAL content release."
         }
       ],
       "roles": [
@@ -57,7 +71,7 @@
           ]
         }
       ],
-      "remarks": "In this version of the artifact, the content was updated to OSCAL v1.1.3 and the system name was changed. Additionally errors like importing non-existing SSP were addressed."
+      "remarks": "In this version of the artifact, the content was updated to OSCAL v1.2.2."
     },
     "import-ssp": {
       "href": "../../ssp/xml/ifa_ssp.xml"
@@ -182,10 +196,22 @@
           "title": "IFA GoodRead Assessment Plan",
           "rlinks": [
             {
-              "href": "https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.3.0.zip"
+              "href": "https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.3.0.zip",
+              "media-type": "application/oscal+zip"
             }
           ],
           "remarks": "This OSCAL version of the IFA Assessment Plan released with the OSCAL content v1.3.0."
+        },
+        {
+          "uuid": "97f36be8-fec0-4fa6-bcdf-e3f838eba040",
+          "title": "IFA SYSTEM1234 Assessment Plan",
+          "rlinks": [
+            {
+              "href": "https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.4.0.zip",
+              "media-type": "application/oscal+zip"
+            }
+          ],
+          "remarks": "This OSCAL version of the IFA Assessment Plan was released with the OSCAL content v1.4.0."
         }
       ]
     }

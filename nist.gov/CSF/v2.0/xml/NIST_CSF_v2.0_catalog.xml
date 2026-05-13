@@ -4,11 +4,23 @@
     xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 https://github.com/usnistgov/OSCAL/releases/download/v1.1.3/oscal_catalog_schema.xsd" 
     uuid="720a010b-253c-4a94-bb65-cb58400966f5">
     <metadata>
-        <title>NIST Cybersecurity Framework 2.0</title>
-        <published>2025-05-29T10:16:00-05:00</published>
-        <last-modified>2025-05-14T12:08:20.050176-05:00</last-modified>
-        <version>1.0.0</version>
-        <oscal-version>v1.1.3</oscal-version>
+        <title>Electronic Version of NIST Cybersecurity Framework 2.0</title>
+        <published>2026-05-13T12:30:00-00:00</published>
+        <last-modified>2026-05-11T16:01:09.00000-00:00</last-modified>
+        <version>1.2.0</version>
+        <oscal-version>v1.2.2</oscal-version>
+        <revisions>
+            <revision>
+                <title>NIST Cybersecurity Framework 2.0</title>
+                <last-modified>2025-05-14T12:08:20.050176-05:00</last-modified>
+                <version>1.0.0</version>
+                <oscal-version>v1.1.3</oscal-version>
+                <link rel="version-history" href="720a010b-253c-4a94-bb65-cb58400966f5"/>
+                <remarks>
+                    <p>OSCAL v1.2.2 representation of the NIST Cybersecurity Framework 2.0 with bug fixes for withdrawn categories and subcategories.</p>
+                </remarks>
+            </revision>
+        </revisions>
         <prop name="framework-identifier" ns="https://csrc.nist.gov/ns/cprt" value="CSF" />
         <prop name="framework-version-identifier" ns="https://csrc.nist.gov/ns/cprt"
             value="CSF_2_0_0" />
@@ -1272,6 +1284,9 @@
                 <title>ID.AM-06</title>
                 <prop name="sort-id" value="00002.00001.00006" />
                 <prop name="label" value="ID.AM-06" />
+                <prop name="status" value="withdrawn" />
+                <link href="GV.RR-02" rel="incorporated_into" />
+                <link href="GV.SC-02" rel="incorporated_into" />
                 <part id="ID.AM-06_statement" name="statement">
                     <p>Cybersecurity roles and responsibilities for the entire workforce and
                         third-party stakeholders (e.g., suppliers, customers, partners) are
@@ -1368,11 +1383,15 @@
             <title>Business Environment</title>
             <prop name="sort-id" value="00002.00002" />
             <prop name="label" value="Business Environment (ID.BE)" />
+            <prop name="status" value="withdrawn" />
+            <link href="GV.OC" rel="incorporated_into" />
             <part id="ID.BE_statement" name="statement"></part>
             <control id="ID.BE-01" class="subcategory">
                 <title>ID.BE-01</title>
                 <prop name="sort-id" value="00002.00002.00001" />
                 <prop name="label" value="ID.BE-01" />
+                <prop name="status" value="withdrawn" />
+                <link href="GV.OC-05" rel="incorporated_into" />
                 <part id="ID.BE-01_statement" name="statement">
                     <p>The organization’s role in the supply chain is identified and communicated</p>
                 </part>
@@ -1381,6 +1400,8 @@
                 <title>ID.BE-02</title>
                 <prop name="sort-id" value="00002.00002.00002" />
                 <prop name="label" value="ID.BE-02" />
+                <prop name="status" value="withdrawn" />
+                <link href="GV.OC-01" rel="incorporated_into" />
                 <part id="ID.BE-02_statement" name="statement">
                     <p>The organization’s place in critical infrastructure and its industry sector
                         is identified and communicated</p>
@@ -1390,6 +1411,8 @@
                 <title>ID.BE-03</title>
                 <prop name="sort-id" value="00002.00002.00003" />
                 <prop name="label" value="ID.BE-03" />
+                <prop name="status" value="withdrawn" />
+                <link href="GV.OC-01" rel="incorporated_into" />
                 <part id="ID.BE-03_statement" name="statement">
                     <p>Priorities for organizational mission, objectives, and activities are
                         established and communicated</p>
@@ -1399,6 +1422,9 @@
                 <title>ID.BE-04</title>
                 <prop name="sort-id" value="00002.00002.00004" />
                 <prop name="label" value="ID.BE-04" />
+                <prop name="status" value="withdrawn" />
+                <link href="GV.OC-04" rel="incorporated_into" />
+                <link href="GV.OC-05" rel="incorporated_into" />
                 <part id="ID.BE-04_statement" name="statement">
                     <p>Dependencies and critical functions for delivery of critical services are
                         established</p>
@@ -1408,6 +1434,8 @@
                 <title>ID.BE-05</title>
                 <prop name="sort-id" value="00002.00002.00005" />
                 <prop name="label" value="ID.BE-05" />
+                <prop name="status" value="withdrawn" />
+                <link href="GV.OC-04" rel="incorporated_into" />
                 <part id="ID.BE-05_statement" name="statement">
                     <p>Resilience requirements to support delivery of critical services are
                         established for all operating states (e.g. under duress/attack, during
@@ -1419,11 +1447,17 @@
             <title>Governance</title>
             <prop name="sort-id" value="00002.00003" />
             <prop name="label" value="Governance (ID.GV)" />
+            <prop name="status" value="withdrawn" />
+            <link href="GV" rel="incorporated_into" />
             <part id="ID.GV_statement" name="statement"></part>
             <control id="ID.GV-01" class="subcategory">
                 <title>ID.GV-01</title>
                 <prop name="sort-id" value="00002.00003.00001" />
                 <prop name="label" value="ID.GV-01" />
+                <prop name="status" value="withdrawn" />
+                <link href="GV.PO" rel="incorporated_into" />
+                <link href="GV.PO-01" rel="incorporated_into" />
+                <link href="GV.PO-02" rel="incorporated_into" />
                 <part id="ID.GV-01_statement" name="statement">
                     <p>Organizational cybersecurity policy is established and communicated</p>
                 </part>
@@ -1432,6 +1466,10 @@
                 <title>ID.GV-02</title>
                 <prop name="sort-id" value="00002.00003.00002" />
                 <prop name="label" value="ID.GV-02" />
+                <prop name="status" value="withdrawn" />
+                <link href="GV.RR" rel="incorporated_into" />
+                <link href="GV.OC-02" rel="incorporated_into" />
+                <link href="GV.RR-02" rel="incorporated_into" />
                 <part id="ID.GV-02_statement" name="statement">
                     <p>Cybersecurity roles and responsibilities are coordinated and aligned with
                         internal roles and external partners</p>
@@ -1441,6 +1479,8 @@
                 <title>ID.GV-03</title>
                 <prop name="sort-id" value="00002.00003.00003" />
                 <prop name="label" value="ID.GV-03" />
+                <prop name="status" value="withdrawn" />
+                <link href="GV.OC-03" rel="moved_to" />
                 <part id="ID.GV-03_statement" name="statement">
                     <p>Legal and regulatory requirements regarding cybersecurity, including privacy
                         and civil liberties obligations, are understood and managed</p>
@@ -1450,6 +1490,8 @@
                 <title>ID.GV-04</title>
                 <prop name="sort-id" value="00002.00003.00004" />
                 <prop name="label" value="ID.GV-04" />
+                <prop name="status" value="withdrawn" />
+                <link href="GV.RM-04" rel="moved_to" />
                 <part id="ID.GV-04_statement" name="statement">
                     <p>Governance and risk management processes address cybersecurity risks</p>
                 </part>
@@ -1867,11 +1909,17 @@
             <title>Risk Management Strategy</title>
             <prop name="sort-id" value="00002.00005" />
             <prop name="label" value="Risk Management Strategy (ID.RM)" />
+            <prop name="status" value="withdrawn" />
+            <link href="GV.RM" rel="incorporated_into" />
             <part id="ID.RM_statement" name="statement"></part>
             <control id="ID.RM-01" class="subcategory">
                 <title>ID.RM-01</title>
                 <prop name="sort-id" value="00002.00005.00001" />
                 <prop name="label" value="ID.RM-01" />
+                <prop name="status" value="withdrawn" />
+                <link href="GV.RM-01" rel="incorporated_into" />
+                <link href="GV.RM-06" rel="incorporated_into" />
+                <link href="GV.RR-03" rel="incorporated_into" />
                 <part id="ID.RM-01_statement" name="statement">
                     <p>Risk management processes are established, managed, and agreed to by
                         organizational stakeholders</p>
@@ -1881,6 +1929,9 @@
                 <title>ID.RM-02</title>
                 <prop name="sort-id" value="00002.00005.00002" />
                 <prop name="label" value="ID.RM-02" />
+                <prop name="status" value="withdrawn" />
+                <link href="GV.RM-02" rel="incorporated_into" />
+                <link href="GV.RM-04" rel="incorporated_into" />
                 <part id="ID.RM-02_statement" name="statement">
                     <p>Organizational risk tolerance is determined and clearly expressed</p>
                 </part>
@@ -1889,6 +1940,8 @@
                 <title>ID.RM-03</title>
                 <prop name="sort-id" value="00002.00005.00003" />
                 <prop name="label" value="ID.RM-03" />
+                <prop name="status" value="withdrawn" />
+                <link href="GV.RM-02" rel="moved_to" />
                 <part id="ID.RM-03_statement" name="statement">
                     <p>The organization’s determination of risk tolerance is informed by its role in
                         critical infrastructure and sector specific risk analysis</p>
@@ -1899,11 +1952,19 @@
             <title>Supply Chain Risk Management</title>
             <prop name="sort-id" value="00002.00006" />
             <prop name="label" value="Supply Chain Risk Management (ID.SC)" />
+            <prop name="status" value="withdrawn" />
+            <link href="GV.SC" rel="incorporated_into" />
             <part id="ID.SC_statement" name="statement"></part>
             <control id="ID.SC-01" class="subcategory">
                 <title>ID.SC-01</title>
                 <prop name="sort-id" value="00002.00006.00001" />
                 <prop name="label" value="ID.SC-01" />
+                <prop name="status" value="withdrawn" />
+                <link href="GV.RM-05" rel="incorporated_into" />
+                <link href="GV.SC-01" rel="incorporated_into" />
+                <link href="GV.SC-06" rel="incorporated_into" />
+                <link href="GV.SC-09" rel="incorporated_into" />
+                <link href="GV.SC-10" rel="incorporated_into" />
                 <part id="ID.SC-01_statement" name="statement">
                     <p>Cyber supply chain risk management processes are identified, established,
                         assessed, managed, and agreed to by organizational stakeholders</p>
@@ -1913,6 +1974,12 @@
                 <title>ID.SC-02</title>
                 <prop name="sort-id" value="00002.00006.00002" />
                 <prop name="label" value="ID.SC-02" />
+                <prop name="status" value="withdrawn" />
+                <link href="GV.OC-02" rel="incorporated_into" />
+                <link href="GV.SC-03" rel="incorporated_into" />
+                <link href="GV.SC-04" rel="incorporated_into" />
+                <link href="GV.SC-07" rel="incorporated_into" />
+                <link href="ID.RA-10" rel="incorporated_into" />
                 <part id="ID.SC-02_statement" name="statement">
                     <p>Suppliers and third party partners of information systems, components, and
                         services are identified, prioritized, and assessed using a cyber supply
@@ -1923,6 +1990,8 @@
                 <title>ID.SC-03</title>
                 <prop name="sort-id" value="00002.00006.00003" />
                 <prop name="label" value="ID.SC-03" />
+                <prop name="status" value="withdrawn" />
+                <link href="GV.SC-05" rel="moved_to" />
                 <part id="ID.SC-03_statement" name="statement">
                     <p>Contracts with suppliers and third-party partners are used to implement
                         appropriate measures designed to meet the objectives of an organization’s
@@ -1933,6 +2002,9 @@
                 <title>ID.SC-04</title>
                 <prop name="sort-id" value="00002.00006.00004" />
                 <prop name="label" value="ID.SC-04" />
+                <prop name="status" value="withdrawn" />
+                <link href="GV.SC-07" rel="incorporated_into" />
+                <link href="ID.RA-10" rel="incorporated_into" />
                 <part id="ID.SC-04_statement" name="statement">
                     <p>Suppliers and third-party partners are routinely assessed using audits, test
                         results, or other forms of evaluations to confirm they are meeting their
@@ -1943,6 +2015,9 @@
                 <title>ID.SC-05</title>
                 <prop name="sort-id" value="00002.00006.00005" />
                 <prop name="label" value="ID.SC-05" />
+                <prop name="status" value="withdrawn" />
+                <link href="GV.SC-08" rel="incorporated_into" />
+                <link href="ID.IM-02" rel="incorporated_into" />
                 <part id="ID.SC-05_statement" name="statement">
                     <p>Response and recovery planning and testing are conducted with suppliers and
                         third-party providers</p>
@@ -2149,11 +2224,16 @@
             <prop name="sort-id" value="00003.00002" />
             <prop name="label"
                 value="Identity Management, Authentication and Access Control (PR.AC)" />
+            <prop name="status" value="withdrawn" />
+            <link href="PR.AA" rel="moved_to" />
             <part id="PR.AC_statement" name="statement"></part>
             <control id="PR.AC-01" class="subcategory">
                 <title>PR.AC-01</title>
                 <prop name="sort-id" value="00003.00002.00001" />
                 <prop name="label" value="PR.AC-01" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.AA-01" rel="incorporated_into" />
+                <link href="PR.AA-05" rel="incorporated_into" />
                 <part id="PR.AC-01_statement" name="statement">
                     <p>Identities and credentials are issued, managed, verified, revoked, and
                         audited for authorized devices, users and processes</p>
@@ -2163,6 +2243,8 @@
                 <title>PR.AC-02</title>
                 <prop name="sort-id" value="00003.00002.00002" />
                 <prop name="label" value="PR.AC-02" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.AA-06" rel="moved_to" />
                 <part id="PR.AC-02_statement" name="statement">
                     <p>Physical access to assets is managed and protected</p>
                 </part>
@@ -2171,6 +2253,10 @@
                 <title>PR.AC-03</title>
                 <prop name="sort-id" value="00003.00002.00003" />
                 <prop name="label" value="PR.AC-03" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.AA-03" rel="incorporated_into" />
+                <link href="PR.AA-05" rel="incorporated_into" />
+                <link href="PR.IR-01" rel="incorporated_into" />
                 <part id="PR.AC-03_statement" name="statement">
                     <p>Remote access is managed</p>
                 </part>
@@ -2179,6 +2265,8 @@
                 <title>PR.AC-04</title>
                 <prop name="sort-id" value="00003.00002.00004" />
                 <prop name="label" value="PR.AC-04" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.AA-05" rel="moved_to" />
                 <part id="PR.AC-04_statement" name="statement">
                     <p>Access permissions and authorizations are managed, incorporating the
                         principles of least privilege and separation of duties</p>
@@ -2188,6 +2276,8 @@
                 <title>PR.AC-05</title>
                 <prop name="sort-id" value="00003.00002.00005" />
                 <prop name="label" value="PR.AC-05" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.IR-01" rel="incorporated_into" />
                 <part id="PR.AC-05_statement" name="statement">
                     <p>Network integrity is protected (e.g., network segregation, network
                         segmentation)</p>
@@ -2197,6 +2287,8 @@
                 <title>PR.AC-06</title>
                 <prop name="sort-id" value="00003.00002.00006" />
                 <prop name="label" value="PR.AC-06" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.AA-02" rel="moved_to" />
                 <part id="PR.AC-06_statement" name="statement">
                     <p>Identities are proofed and bound to credentials and asserted in interactions</p>
                 </part>
@@ -2205,6 +2297,8 @@
                 <title>PR.AC-07</title>
                 <prop name="sort-id" value="00003.00002.00006" />
                 <prop name="label" value="PR.AC-07" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.AA-03" rel="moved_to" />
                 <part id="PR.AC-07_statement" name="statement">
                     <p>Users, devices, and other assets are authenticated (e.g., single-factor,
                         multi-factor) commensurate with the risk of the transaction (e.g.,
@@ -2301,6 +2395,9 @@
                 <title>PR.AT-03</title>
                 <prop name="sort-id" value="00003.00003.00003" />
                 <prop name="label" value="PR.AT-03" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.AT-01" rel="incorporated_into" />
+                <link href="PR.AT-02" rel="incorporated_into" />
                 <part id="PR.AT-03_statement" name="statement">
                     <p>Third-party stakeholders (e.g., suppliers, customers, partners) understand
                         their roles and responsibilities</p>
@@ -2310,6 +2407,8 @@
                 <title>PR.AT-04</title>
                 <prop name="sort-id" value="00003.00003.00004" />
                 <prop name="label" value="PR.AT-04" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.AT-02" rel="incorporated_into" />
                 <part id="PR.AT-04_statement" name="statement">
                     <p>Senior executives understand their roles and responsibilities</p>
                 </part>
@@ -2318,6 +2417,8 @@
                 <title>PR.AT-05</title>
                 <prop name="sort-id" value="00003.00003.00005" />
                 <prop name="label" value="PR.AT-05" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.AT-02" rel="incorporated_into" />
                 <part id="PR.AT-05_statement" name="statement">
                     <p>Physical and cybersecurity personnel understand their roles and
                         responsibilities</p>
@@ -2399,6 +2500,9 @@
                 <title>PR.DS-03</title>
                 <prop name="sort-id" value="00003.00004.00003" />
                 <prop name="label" value="PR.DS-03" />
+                <prop name="status" value="withdrawn" />
+                <link href="ID.AM-08" rel="incorporated_into" />
+                <link href="PR.PS-03" rel="incorporated_into" />
                 <part id="PR.DS-03_statement" name="statement">
                     <p>Assets are formally managed throughout removal, transfers, and disposition</p>
                 </part>
@@ -2407,6 +2511,8 @@
                 <title>PR.DS-04</title>
                 <prop name="sort-id" value="00003.00004.00004" />
                 <prop name="label" value="PR.DS-04" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.IR-04" rel="moved_to" />
                 <part id="PR.DS-04_statement" name="statement">
                     <p>Adequate capacity to ensure availability is maintained</p>
                 </part>
@@ -2415,6 +2521,10 @@
                 <title>PR.DS-05</title>
                 <prop name="sort-id" value="00003.00004.00005" />
                 <prop name="label" value="PR.DS-05" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.DS-01" rel="incorporated_into" />
+                <link href="PR.DS-02" rel="incorporated_into" />
+                <link href="PR.DS-10" rel="incorporated_into" />
                 <part id="PR.DS-05_statement" name="statement">
                     <p>Protections against data leaks are implemented</p>
                 </part>
@@ -2423,6 +2533,9 @@
                 <title>PR.DS-06</title>
                 <prop name="sort-id" value="00003.00004.00006" />
                 <prop name="label" value="PR.DS-06" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.DS-01" rel="incorporated_into" />
+                <link href="DE.CM-09" rel="incorporated_into" />
                 <part id="PR.DS-06_statement" name="statement">
                     <p>Integrity checking mechanisms are used to verify software, firmware, and
                         information integrity</p>
@@ -2432,6 +2545,8 @@
                 <title>PR.DS-07</title>
                 <prop name="sort-id" value="00003.00004.00007" />
                 <prop name="label" value="PR.DS-07" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.IR-01" rel="incorporated_into" />
                 <part id="PR.DS-07_statement" name="statement">
                     <p>The development and testing environment(s) are separate from the production
                         environment</p>
@@ -2441,6 +2556,9 @@
                 <title>PR.DS-08</title>
                 <prop name="sort-id" value="00003.00004.00008" />
                 <prop name="label" value="PR.DS-08" />
+                <prop name="status" value="withdrawn" />
+                <link href="ID.RA-09" rel="incorporated_into" />
+                <link href="DE.CM-09" rel="incorporated_into" />
                 <part id="PR.DS-08_statement" name="statement">
                     <p>Integrity checking mechanisms are used to verify hardware integrity</p>
                 </part>
@@ -2499,11 +2617,14 @@
             <title>Information Protection Processes and Procedures</title>
             <prop name="sort-id" value="00003.00005" />
             <prop name="label" value="Information Protection Processes and Procedures (PR.IP)" />
+            <prop name="status" value="withdrawn" />
             <part id="PR.IP_statement" name="statement"></part>
             <control id="PR.IP-01" class="subcategory">
                 <title>PR.IP-01</title>
                 <prop name="sort-id" value="00003.00005.00001" />
                 <prop name="label" value="PR.IP-01" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.PS-01" rel="incorporated_into" />
                 <part id="PR.IP-01_statement" name="statement">
                     <p>A baseline configuration of information technology/industrial control systems
                         is created and maintained incorporating security principles (e.g. concept of
@@ -2514,6 +2635,9 @@
                 <title>PR.IP-02</title>
                 <prop name="sort-id" value="00003.00005.00002" />
                 <prop name="label" value="PR.IP-02" />
+                <prop name="status" value="withdrawn" />
+                <link href="ID.AM-08" rel="incorporated_into" />
+                <link href="PR.PS-06" rel="incorporated_into" />
                 <part id="PR.IP-02_statement" name="statement">
                     <p>A System Development Life Cycle to manage systems is implemented</p>
                 </part>
@@ -2522,6 +2646,9 @@
                 <title>PR.IP-03</title>
                 <prop name="sort-id" value="00003.00005.00003" />
                 <prop name="label" value="PR.IP-03" />
+                <prop name="status" value="withdrawn" />
+                <link href="ID.RA-07" rel="incorporated_into" />
+                <link href="PR.PS-01" rel="incorporated_into" />
                 <part id="PR.IP-03_statement" name="statement">
                     <p>Configuration change control processes are in place</p>
                 </part>
@@ -2530,6 +2657,8 @@
                 <title>PR.IP-04</title>
                 <prop name="sort-id" value="00003.00005.00004" />
                 <prop name="label" value="PR.IP-04" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.DS-11" rel="moved_to" />
                 <part id="PR.IP-04_statement" name="statement">
                     <p>Backups of information are conducted, maintained, and tested</p>
                 </part>
@@ -2538,6 +2667,8 @@
                 <title>PR.IP-05</title>
                 <prop name="sort-id" value="00003.00005.00005" />
                 <prop name="label" value="PR.IP-05" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.IR-02" rel="incorporated_into" />
                 <part id="PR.IP-05_statement" name="statement">
                     <p>Policy and regulations regarding the physical operating environment for
                         organizational assets are met</p>
@@ -2547,6 +2678,8 @@
                 <title>PR.IP-06</title>
                 <prop name="sort-id" value="00003.00005.00006" />
                 <prop name="label" value="PR.IP-06" />
+                <prop name="status" value="withdrawn" />
+                <link href="ID.AM-08" rel="incorporated_into" />
                 <part id="PR.IP-06_statement" name="statement">
                     <p>Data is destroyed according to policy</p>
                 </part>
@@ -2555,6 +2688,9 @@
                 <title>PR.IP-07</title>
                 <prop name="sort-id" value="00003.00005.00007" />
                 <prop name="label" value="PR.IP-07" />
+                <prop name="status" value="withdrawn" />
+                <link href="ID.IM" rel="incorporated_into" />
+                <link href="ID.IM-03" rel="incorporated_into" />
                 <part id="PR.IP-07_statement" name="statement">
                     <p>Protection processes are improved</p>
                 </part>
@@ -2563,6 +2699,8 @@
                 <title>PR.IP-08</title>
                 <prop name="sort-id" value="00003.00005.00008" />
                 <prop name="label" value="PR.IP-08" />
+                <prop name="status" value="withdrawn" />
+                <link href="ID.IM-03" rel="moved_to" />
                 <part id="PR.IP-08_statement" name="statement">
                     <p>Effectiveness of protection technologies is shared</p>
                 </part>
@@ -2571,6 +2709,8 @@
                 <title>PR.IP-09</title>
                 <prop name="sort-id" value="00003.00005.00009" />
                 <prop name="label" value="PR.IP-09" />
+                <prop name="status" value="withdrawn" />
+                <link href="ID.IM-04" rel="moved_to" />
                 <part id="PR.IP-09_statement" name="statement">
                     <p>Response plans (Incident Response and Business Continuity) and recovery plans
                         (Incident Recovery and Disaster Recovery) are in place and managed</p>
@@ -2580,6 +2720,9 @@
                 <title>PR.IP-10</title>
                 <prop name="sort-id" value="00003.00005.00010" />
                 <prop name="label" value="PR.IP-10" />
+                <prop name="status" value="withdrawn" />
+                <link href="ID.IM-02" rel="moved_to" />
+                <link href="ID.IM-04" rel="moved_to" />
                 <part id="PR.IP-10_statement" name="statement">
                     <p>Response and recovery plans are tested</p>
                 </part>
@@ -2588,6 +2731,8 @@
                 <title>PR.IP-11</title>
                 <prop name="sort-id" value="00003.00005.00011" />
                 <prop name="label" value="PR.IP-11" />
+                <prop name="status" value="withdrawn" />
+                <link href="GV.RR-04" rel="moved_to" />
                 <part id="PR.IP-11_statement" name="statement">
                     <p>Cybersecurity is included in human resources practices (e.g., deprovisioning,
                         personnel screening)</p>
@@ -2597,6 +2742,9 @@
                 <title>PR.IP-12</title>
                 <prop name="sort-id" value="00003.00005.00012" />
                 <prop name="label" value="PR.IP-12" />
+                <prop name="status" value="withdrawn" />
+                <link href="ID.RA-01" rel="moved_to" />
+                <link href="PR.PS-02" rel="moved_to" />
                 <part id="PR.IP-12_statement" name="statement">
                     <p>A vulnerability management plan is developed and implemented</p>
                 </part>
@@ -2719,11 +2867,16 @@
             <title>Maintenance</title>
             <prop name="sort-id" value="00003.00006" />
             <prop name="label" value="Maintenance (PR.MA)" />
+            <prop name="status" value="withdrawn" />
+            <link href="ID.AM-08" rel="incorporated_into" />
             <part id="PR.MA_statement" name="statement"></part>
             <control id="PR.MA-01" class="subcategory">
                 <title>PR.MA-01</title>
                 <prop name="sort-id" value="00003.00006.00001" />
                 <prop name="label" value="PR.MA-01" />
+                <prop name="status" value="withdrawn" />
+                <link href="ID.AM-08" rel="moved_to" />
+                <link href="PR.PS-03" rel="moved_to" />
                 <part id="PR.MA-01_statement" name="statement">
                     <p>Maintenance and repair of organizational assets are performed and logged,
                         with approved and controlled tools</p>
@@ -2733,6 +2886,9 @@
                 <title>PR.MA-02</title>
                 <prop name="sort-id" value="00003.00006.00002" />
                 <prop name="label" value="PR.MA-02" />
+                <prop name="status" value="withdrawn" />
+                <link href="ID.AM-08" rel="moved_to" />
+                <link href="PR.PS-02" rel="moved_to" />
                 <part id="PR.MA-02_statement" name="statement">
                     <p>Remote maintenance of organizational assets is approved, logged, and
                         performed in a manner that prevents unauthorized access</p>
@@ -2924,11 +3080,14 @@
             <title>Protective Technology</title>
             <prop name="sort-id" value="00003.00007" />
             <prop name="label" value="Protective Technology (PR.PT)" />
+            <prop name="status" value="withdrawn" />
             <part id="PR.PT_statement" name="statement"></part>
             <control id="PR.PT-01" class="subcategory">
                 <title>PR.PT-01</title>
                 <prop name="sort-id" value="00003.00007.00001" />
                 <prop name="label" value="PR.PT-01" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.PS-04" rel="incorporated_into" />
                 <part id="PR.PT-01_statement" name="statement">
                     <p>Audit/log records are determined, documented, implemented, and reviewed in
                         accordance with policy</p>
@@ -2938,6 +3097,9 @@
                 <title>PR.PT-02</title>
                 <prop name="sort-id" value="00003.00007.00002" />
                 <prop name="label" value="PR.PT-02" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.DS-01" rel="incorporated_into" />
+                <link href="PR.PS-01" rel="incorporated_into" />
                 <part id="PR.PT-02_statement" name="statement">
                     <p>Removable media is protected and its use restricted according to policy</p>
                 </part>
@@ -2946,6 +3108,8 @@
                 <title>PR.PT-03</title>
                 <prop name="sort-id" value="00003.00007.00003" />
                 <prop name="label" value="PR.PT-03" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.PS-01" rel="incorporated_into" />
                 <part id="PR.PT-03_statement" name="statement">
                     <p>The principle of least functionality is incorporated by configuring systems
                         to provide only essential capabilities</p>
@@ -2955,6 +3119,9 @@
                 <title>PR.PT-04</title>
                 <prop name="sort-id" value="00003.00007.00004" />
                 <prop name="label" value="PR.PT-04" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.AA-06" rel="incorporated_into" />
+                <link href="PR.IR-01" rel="incorporated_into" />
                 <part id="PR.PT-04_statement" name="statement">
                     <p>Communications and control networks are protected</p>
                 </part>
@@ -2963,6 +3130,8 @@
                 <title>PR.PT-05</title>
                 <prop name="sort-id" value="00003.00007.00005" />
                 <prop name="label" value="PR.PT-05" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.IR-03" rel="incorporated_into" />
                 <part id="PR.PT-05_statement" name="statement">
                     <p>Mechanisms (e.g., failsafe, load balancing, hot swap) are implemented to
                         achieve resilience requirements in normal and adverse situations</p>
@@ -2989,6 +3158,8 @@
                 <title>DE.AE-01</title>
                 <prop name="sort-id" value="00004.00001.00001" />
                 <prop name="label" value="DE.AE-01" />
+                <prop name="status" value="withdrawn" />
+                <link href="ID.AM-03" rel="incorporated_into" />
                 <part id="DE.AE-01_statement" name="statement">
                     <p>A baseline of network operations and expected data flows for users and
                         systems is established and managed</p>
@@ -3072,6 +3243,8 @@
                 <title>DE.AE-05</title>
                 <prop name="sort-id" value="00004.00001.00005" />
                 <prop name="label" value="DE.AE-05" />
+                <prop name="status" value="withdrawn" />
+                <link href="DE.AE-08" rel="moved_to" />
                 <part id="DE.AE-05_statement" name="statement">
                     <p>Incident alert thresholds are established</p>
                 </part>
@@ -3252,6 +3425,9 @@
                 <title>DE.CM-04</title>
                 <prop name="sort-id" value="00004.00002.00004" />
                 <prop name="label" value="DE.CM-04" />
+                <prop name="status" value="withdrawn" />
+                <link href="DE.CM-01" rel="incorporated_into" />
+                <link href="DE.CM-09" rel="incorporated_into" />
                 <part id="DE.CM-04_statement" name="statement">
                     <p>Malicious code is detected</p>
                 </part>
@@ -3260,6 +3436,9 @@
                 <title>DE.CM-05</title>
                 <prop name="sort-id" value="00004.00002.00005" />
                 <prop name="label" value="DE.CM-05" />
+                <prop name="status" value="withdrawn" />
+                <link href="DE.CM-01" rel="incorporated_into" />
+                <link href="DE.CM-09" rel="incorporated_into" />
                 <part id="DE.CM-05_statement" name="statement">
                     <p>Unauthorized mobile code is detected</p>
                 </part>
@@ -3290,6 +3469,11 @@
                 <title>DE.CM-07</title>
                 <prop name="sort-id" value="00004.00002.00007" />
                 <prop name="label" value="DE.CM-07" />
+                <prop name="status" value="withdrawn" />
+                <link href="DE.CM-01" rel="incorporated_into" />
+                <link href="DE.CM-03" rel="incorporated_into" />
+                <link href="DE.CM-06" rel="incorporated_into" />
+                <link href="DE.CM-09" rel="incorporated_into" />
                 <part id="DE.CM-07_statement" name="statement">
                     <p>Monitoring for unauthorized personnel, connections, devices, and software is
                         performed</p>
@@ -3299,6 +3483,8 @@
                 <title>DE.CM-08</title>
                 <prop name="sort-id" value="00004.00002.00008" />
                 <prop name="label" value="DE.CM-08" />
+                <prop name="status" value="withdrawn" />
+                <link href="ID.RA-01" rel="incorporated_into" />
                 <part id="DE.CM-08_statement" name="statement">
                     <p>Vulnerability scans are performed</p>
                 </part>
@@ -3343,11 +3529,14 @@
             <title>Detection Processes</title>
             <prop name="sort-id" value="00004.00003" />
             <prop name="label" value="Detection Processes (DE.DP)" />
+            <prop name="status" value="withdrawn" />
             <part id="DE.DP_statement" name="statement"></part>
             <control id="DE.DP-01" class="subcategory">
                 <title>DE.DP-01</title>
                 <prop name="sort-id" value="00004.00003.00001" />
                 <prop name="label" value="DE.DP-01" />
+                <prop name="status" value="withdrawn" />
+                <link href="GV.RR-02" rel="incorporated_into" />
                 <part id="DE.DP-01_statement" name="statement">
                     <p>Roles and responsibilities for detection are well defined to ensure
                         accountability</p>
@@ -3357,6 +3546,8 @@
                 <title>DE.DP-02</title>
                 <prop name="sort-id" value="00004.00003.00002" />
                 <prop name="label" value="DE.DP-02" />
+                <prop name="status" value="withdrawn" />
+                <link href="DE.AE" rel="incorporated_into" />
                 <part id="DE.DP-02_statement" name="statement">
                     <p>Detection activities comply with all applicable requirements</p>
                 </part>
@@ -3365,6 +3556,8 @@
                 <title>DE.DP-03</title>
                 <prop name="sort-id" value="00004.00003.00003" />
                 <prop name="label" value="DE.DP-03" />
+                <prop name="status" value="withdrawn" />
+                <link href="ID.IM-02" rel="incorporated_into" />
                 <part id="DE.DP-03_statement" name="statement">
                     <p>Detection processes are tested</p>
                 </part>
@@ -3373,6 +3566,8 @@
                 <title>DE.DP-04</title>
                 <prop name="sort-id" value="00004.00003.00004" />
                 <prop name="label" value="DE.DP-04" />
+                <prop name="status" value="withdrawn" />
+                <link href="DE.AE-06" rel="incorporated_into" />
                 <part id="DE.DP-04_statement" name="statement">
                     <p>Event detection information is communicated</p>
                 </part>
@@ -3381,6 +3576,9 @@
                 <title>DE.DP-05</title>
                 <prop name="sort-id" value="00004.00003.00005" />
                 <prop name="label" value="DE.DP-05" />
+                <prop name="status" value="withdrawn" />
+                <link href="ID.IM" rel="incorporated_into" />
+                <link href="ID.IM-03" rel="incorporated_into" />
                 <part id="DE.DP-05_statement" name="statement">
                     <p>Detection processes are continuously improved</p>
                 </part>
@@ -3406,6 +3604,8 @@
                 <title>RS.AN-01</title>
                 <prop name="sort-id" value="00005.00003.00001" />
                 <prop name="label" value="RS.AN-01" />
+                <prop name="status" value="withdrawn" />
+                <link href="RS.MA-02" rel="incorporated_into" />
                 <part id="RS.AN-01_statement" name="statement">
                     <p>Notifications from detection systems are investigated</p>
                 </part>
@@ -3414,6 +3614,10 @@
                 <title>RS.AN-02</title>
                 <prop name="sort-id" value="00005.00003.00002" />
                 <prop name="label" value="RS.AN-02" />
+                <prop name="status" value="withdrawn" />
+                <link href="RS.MA-02" rel="incorporated_into" />
+                <link href="RS.MA-03" rel="incorporated_into" />
+                <link href="RS.MA-04" rel="incorporated_into" />
                 <part id="RS.AN-02_statement" name="statement">
                     <p>The impact of the incident is understood</p>
                 </part>
@@ -3451,6 +3655,8 @@
                 <title>RS.AN-04</title>
                 <prop name="sort-id" value="00005.00003.00004" />
                 <prop name="label" value="RS.AN-04" />
+                <prop name="status" value="withdrawn" />
+                <link href="RS.MA-03" rel="moved_to" />
                 <part id="RS.AN-04_statement" name="statement">
                     <p>Incidents are categorized consistent with response plans</p>
                 </part>
@@ -3459,6 +3665,8 @@
                 <title>RS.AN-05</title>
                 <prop name="sort-id" value="00005.00003.00005" />
                 <prop name="label" value="RS.AN-05" />
+                <prop name="status" value="withdrawn" />
+                <link href="ID.RA-08" rel="moved_to" />
                 <part id="RS.AN-05_statement" name="statement">
                     <p>Processes are established to receive, analyze and respond to vulnerabilities
                         disclosed to the organization from internal and external sources (e.g.
@@ -3542,6 +3750,8 @@
                 <title>RS.CO-01</title>
                 <prop name="sort-id" value="00005.00004.00001" />
                 <prop name="label" value="RS.CO-01" />
+                <prop name="status" value="withdrawn" />
+                <link href="PR.AT-01" rel="incorporated_into" />
                 <part id="RS.CO-01_statement" name="statement">
                     <p>Personnel know their roles and order of operations when a response is needed</p>
                 </part>
@@ -3621,6 +3831,9 @@
                 <title>RS.CO-04</title>
                 <prop name="sort-id" value="00005.00004.00004" />
                 <prop name="label" value="RS.CO-04" />
+                <prop name="status" value="withdrawn" />
+                <link href="RS.MA-01" rel="incorporated_into" />
+                <link href="RS.MA-04" rel="incorporated_into" />
                 <part id="RS.CO-04_statement" name="statement">
                     <p>Coordination with stakeholders occurs consistent with response plans</p>
                 </part>
@@ -3629,6 +3842,8 @@
                 <title>RS.CO-05</title>
                 <prop name="sort-id" value="00005.00004.00005" />
                 <prop name="label" value="RS.CO-05" />
+                <prop name="status" value="withdrawn" />
+                <link href="RS.CO-03" rel="incorporated_into" />
                 <part id="RS.CO-05_statement" name="statement">
                     <p>Voluntary information sharing occurs with external stakeholders to achieve
                         broader cybersecurity situational awareness</p>
@@ -3639,11 +3854,16 @@
             <title>Improvements</title>
             <prop name="sort-id" value="00005.00006" />
             <prop name="label" value="Improvements (RS.IM)" />
+            <prop name="status" value="withdrawn" />
+            <link href="ID.IM" rel="incorporated_into" />
             <part id="RS.IM_statement" name="statement"></part>
             <control id="RS.IM-01" class="subcategory">
                 <title>RS.IM-01</title>
                 <prop name="sort-id" value="00005.00006.00001" />
                 <prop name="label" value="RS.IM-01" />
+                <prop name="status" value="withdrawn" />
+                <link href="ID.IM-03" rel="incorporated_into" />
+                <link href="ID.IM-04" rel="incorporated_into" />
                 <part id="RS.IM-01_statement" name="statement">
                     <p>Response plans incorporate lessons learned</p>
                 </part>
@@ -3652,6 +3872,8 @@
                 <title>RS.IM-02</title>
                 <prop name="sort-id" value="00005.00006.00002" />
                 <prop name="label" value="RS.IM-02" />
+                <prop name="status" value="withdrawn" />
+                <link href="ID.IM-03" rel="incorporated_into" />
                 <part id="RS.IM-02_statement" name="statement">
                     <p>Response strategies are updated</p>
                 </part>
@@ -3858,6 +4080,8 @@
                 <title>RS.MI-03</title>
                 <prop name="sort-id" value="00005.00005.00003" />
                 <prop name="label" value="RS.MI-03" />
+                <prop name="status" value="withdrawn" />
+                <link href="ID.RA-06" rel="incorporated_into" />
                 <part id="RS.MI-03_statement" name="statement">
                     <p>Newly identified vulnerabilities are mitigated or documented as accepted
                         risks</p>
@@ -3868,11 +4092,14 @@
             <title>Response Planning</title>
             <prop name="sort-id" value="00005.00002" />
             <prop name="label" value="Response Planning (RS.RP)" />
+            <prop name="status" value="withdrawn" />
             <part id="RS.RP_statement" name="statement"></part>
             <control id="RS.RP-01" class="subcategory">
                 <title>RS.RP-01</title>
                 <prop name="sort-id" value="00005.00002.00001" />
                 <prop name="label" value="RS.RP-01" />
+                <prop name="status" value="withdrawn" />
+                <link href="RS.MA-01" rel="incorporated_into" />
                 <part id="RS.RP-01_statement" name="statement">
                     <p>Response plan is executed during or after an incident</p>
                 </part>
@@ -3897,6 +4124,8 @@
                 <title>RC.CO-01</title>
                 <prop name="sort-id" value="00006.00002.00001" />
                 <prop name="label" value="RC.CO-01" />
+                <prop name="status" value="withdrawn" />
+                <link href="RC.CO-04" rel="incorporated_into" />
                 <part id="RC.CO-01_statement" name="statement">
                     <p>Public relations are managed</p>
                 </part>
@@ -3905,6 +4134,8 @@
                 <title>RC.CO-02</title>
                 <prop name="sort-id" value="00006.00002.00002" />
                 <prop name="label" value="RC.CO-02" />
+                <prop name="status" value="withdrawn" />
+                <link href="RC.CO-04" rel="incorporated_into" />
                 <part id="RC.CO-02_statement" name="statement">
                     <p>Reputation is repaired after an incident</p>
                 </part>
@@ -3971,11 +4202,16 @@
             <title>Improvements</title>
             <prop name="sort-id" value="00006.00002" />
             <prop name="label" value="Improvements (RC.IM)" />
+            <prop name="status" value="withdrawn" />
+            <link href="ID.IM" rel="incorporated_into" />
             <part id="RC.IM_statement" name="statement"></part>
             <control id="RC.IM-01" class="subcategory">
                 <title>RC.IM-01</title>
                 <prop name="sort-id" value="00006.00002.00001" />
                 <prop name="label" value="RC.IM-01" />
+                <prop name="status" value="withdrawn" />
+                <link href="ID.IM-03" rel="incorporated_into" />
+                <link href="ID.IM-04" rel="incorporated_into" />
                 <part id="RC.IM-01_statement" name="statement">
                     <p>Recovery plans incorporate lessons learned</p>
                 </part>
@@ -3984,6 +4220,8 @@
                 <title>RC.IM-02</title>
                 <prop name="sort-id" value="00006.00002.00002" />
                 <prop name="label" value="RC.IM-02" />
+                <prop name="status" value="withdrawn" />
+                <link href="ID.IM-03" rel="incorporated_into" />
                 <part id="RC.IM-02_statement" name="statement">
                     <p>Recovery strategies are updated</p>
                 </part>
@@ -4143,6 +4381,10 @@
         <resource uuid="a7f54afa-16cf-4200-a043-85aa554b93e4">
             <title>The NIST Cybersecurity Framework</title>
             <rlink href="https://www.nist.gov/cyberframework" media-type="application/html" />
+        </resource>
+        <resource uuid="720a010b-253c-4a94-bb65-cb58400966f5">
+            <title>NIST CSF v2.0 content in OSCAL 1.1.3</title>
+            <rlink href="https://github.com/usnistgov/oscal-content/releases/tag/v1.4.0"/>
         </resource>
     </back-matter>
 </catalog>

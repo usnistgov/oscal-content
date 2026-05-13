@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-          uuid="e6a32060-7395-471a-9c4c-e603e61c9a02">
+          uuid="76996c98-965d-4202-bd74-e8baf65c99f5">
    <metadata>
       <title>Electronic (OSCAL) Version of NIST Special Publication 800-53 Revision 5.2.0 PRIVACY BASELINE</title>
-      <last-modified>2025-08-27T00:39:50.246082Z</last-modified>
+      <last-modified>2026-05-13T05:08:47.708155Z</last-modified>
       <version>5.2.0</version>
-      <oscal-version>1.1.3</oscal-version>
+      <oscal-version>1.2.2</oscal-version>
       <prop name="resolution-tool"
              value="OSCAL Profile Resolver XSLT Pipeline OPRXP"/>
       <link href="NIST_SP-800-53_rev5_PRIVACY-baseline_profile.xml"
@@ -334,190 +334,85 @@
             </part>
          </part>
       </control>
-      <control class="SP800-53" id="ac-3">
-         <title>Access Enforcement</title>
-         <prop name="label" class="zero-padded" value="AC-03"/>
-         <prop name="label" value="AC-3"/>
-         <prop name="label" class="sp800-53a" value="AC-03"/>
-         <prop name="sort-id" value="ac-03"/>
+      <control class="SP800-53-enhancement" id="ac-3.14">
+         <title>Individual Access</title>
+         <param id="ac-03.14_odp.01">
+            <prop name="alt-identifier" value="ac-3.14_prm_1"/>
+            <prop name="label" class="sp800-53a" value="AC-03(14)_ODP[01]"/>
+            <label>mechanisms</label>
+            <guideline>
+               <p>mechanisms enabling individuals to have access to elements of their personally identifiable information are defined;</p>
+            </guideline>
+         </param>
+         <param id="ac-03.14_odp.02">
+            <prop name="alt-identifier" value="ac-3.14_prm_2"/>
+            <prop name="label" class="sp800-53a" value="AC-03(14)_ODP[02]"/>
+            <label>elements</label>
+            <guideline>
+               <p>elements of personally identifiable information to which individuals have access are defined;</p>
+            </guideline>
+         </param>
+         <prop name="label" class="zero-padded" value="AC-03(14)"/>
+         <prop name="label" value="AC-3(14)"/>
+         <prop name="label" class="sp800-53a" value="AC-03(14)"/>
+         <prop name="sort-id" value="ac-03.14"/>
          <prop ns="http://csrc.nist.gov/ns/rmf"
                 name="implementation-level"
                 value="system"/>
-         <link rel="reference" href="#18e71fec-c6fd-475a-925a-5d8495cf8455"/>
-         <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-         <link rel="reference" href="#110e26af-4765-49e1-8740-6750f83fcda1"/>
-         <link rel="reference" href="#e7942589-e267-4a5a-a3d9-f39a7aae81f0"/>
-         <link rel="reference" href="#8306620b-1920-4d73-8b21-12008528595f"/>
-         <link rel="reference" href="#2956e175-f674-43f4-b1b9-e074ad9fc39c"/>
-         <link rel="reference" href="#388a3aa2-5d85-4bad-b8a3-77db80d63c4f"/>
-         <link rel="reference" href="#7f473f21-fdbf-4a6c-81a1-0ab95919609d"/>
-         <link rel="related" href="#ac-2"/>
-         <link rel="related" href="#ac-4"/>
-         <link rel="related" href="#ac-5"/>
-         <link rel="related" href="#ac-6"/>
-         <link rel="related" href="#ac-16"/>
-         <link rel="related" href="#ac-17"/>
-         <link rel="related" href="#ac-18"/>
-         <link rel="related" href="#ac-19"/>
-         <link rel="related" href="#ac-20"/>
-         <link rel="related" href="#ac-21"/>
-         <link rel="related" href="#ac-22"/>
-         <link rel="related" href="#ac-24"/>
-         <link rel="related" href="#ac-25"/>
-         <link rel="related" href="#at-2"/>
-         <link rel="related" href="#at-3"/>
-         <link rel="related" href="#au-9"/>
-         <link rel="related" href="#ca-9"/>
-         <link rel="related" href="#cm-5"/>
-         <link rel="related" href="#cm-11"/>
-         <link rel="related" href="#ia-2"/>
-         <link rel="related" href="#ia-5"/>
-         <link rel="related" href="#ia-6"/>
-         <link rel="related" href="#ia-7"/>
-         <link rel="related" href="#ia-11"/>
-         <link rel="related" href="#ia-13"/>
-         <link rel="related" href="#ma-3"/>
-         <link rel="related" href="#ma-4"/>
-         <link rel="related" href="#ma-5"/>
-         <link rel="related" href="#mp-4"/>
-         <link rel="related" href="#pm-2"/>
-         <link rel="related" href="#ps-3"/>
-         <link rel="related" href="#pt-2"/>
-         <link rel="related" href="#pt-3"/>
-         <link rel="related" href="#sa-17"/>
-         <link rel="related" href="#sc-2"/>
-         <link rel="related" href="#sc-3"/>
-         <link rel="related" href="#sc-4"/>
-         <link rel="related" href="#sc-12"/>
-         <link rel="related" href="#sc-13"/>
-         <link rel="related" href="#sc-28"/>
-         <link rel="related" href="#sc-31"/>
-         <link rel="related" href="#sc-34"/>
-         <link rel="related" href="#si-4"/>
-         <link rel="related" href="#si-8"/>
-         <part name="statement" id="ac-3_smt">
-            <p>Enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies.</p>
+         <link rel="required" href="#ac-3"/>
+         <link rel="related" href="#ia-8"/>
+         <link rel="related" href="#pm-22"/>
+         <link rel="related" href="#pm-20"/>
+         <link rel="related" href="#pm-21"/>
+         <link rel="related" href="#pt-6"/>
+         <part name="statement" id="ac-3.14_smt">
+            <p>Provide <insert type="param" id-ref="ac-03.14_odp.01"/> to enable individuals to have access to the following elements of their personally identifiable information: <insert type="param" id-ref="ac-03.14_odp.02"/>.</p>
          </part>
-         <part name="guidance" id="ac-3_gdn">
-            <p>Access control policies control access between active entities or subjects (i.e., users or processes acting on behalf of users) and passive entities or objects (i.e., devices, files, records, domains) in organizational systems. In addition to enforcing authorized access at the system level and recognizing that systems can host many applications and services in support of mission and business functions, access enforcement mechanisms can also be employed at the application and service level to provide increased information security and privacy. In contrast to logical access controls that are implemented within the system, physical access controls are addressed by the controls in the Physical and Environmental Protection ( <a href="#pe">PE</a> ) family.</p>
+         <part name="guidance" id="ac-3.14_gdn">
+            <p>Individual access affords individuals the ability to review personally identifiable information about them held within organizational records, regardless of format. Access helps individuals to develop an understanding about how their personally identifiable information is being processed. It can also help individuals ensure that their data is accurate. Access mechanisms can include request forms and application interfaces. For federal agencies, <a href="#18e71fec-c6fd-475a-925a-5d8495cf8455">PRIVACT</a> processes can be located in systems of record notices and on agency websites. Access to certain types of records may not be appropriate (e.g., for federal agencies, law enforcement records within a system of records may be exempt from disclosure under the <a href="#18e71fec-c6fd-475a-925a-5d8495cf8455">PRIVACT</a> ) or may require certain levels of authentication assurance. Organizational personnel consult with the senior agency official for privacy and legal counsel to determine appropriate mechanisms and access rights or limitations.</p>
          </part>
-         <part id="ac-3_obj" name="assessment-objective">
-            <prop name="label" class="sp800-53a" value="AC-03"/>
-            <p>approved authorizations for logical access to information and system resources are enforced in accordance with applicable access control policies.</p>
-            <link rel="assessment-for" href="#ac-3_smt"/>
+         <part id="ac-3.14_obj" name="assessment-objective">
+            <prop name="label" class="sp800-53a" value="AC-03(14)"/>
+            <p>
+               <insert type="param" id-ref="ac-03.14_odp.01"/> are provided to enable individuals to have access to <insert type="param" id-ref="ac-03.14_odp.02"/> of their personally identifiable information.</p>
+            <link rel="assessment-for" href="#ac-3.14_smt"/>
          </part>
-         <part id="ac-3_asm-examine" name="assessment-method">
+         <part id="ac-3.14_asm-examine" name="assessment-method">
             <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="EXAMINE"/>
-            <prop name="label" class="sp800-53a" value="AC-03-Examine"/>
+            <prop name="label" class="sp800-53a" value="AC-03(14)-Examine"/>
             <part name="assessment-objects">
-               <p>Access control policy</p>
+               <p>Access mechanisms (e.g., request forms and application interfaces)</p>
+               <p>access control policy</p>
                <p>procedures addressing access enforcement</p>
                <p>system design documentation</p>
                <p>system configuration settings and associated documentation</p>
-               <p>list of approved authorizations (user privileges)</p>
+               <p>documentation regarding access to an individual’s personally identifiable information</p>
                <p>system audit records</p>
                <p>system security plan</p>
                <p>privacy plan</p>
+               <p>privacy impact assessment</p>
+               <p>privacy assessment findings and/or reports</p>
                <p>other relevant documents or records</p>
             </part>
          </part>
-         <part id="ac-3_asm-interview" name="assessment-method">
+         <part id="ac-3.14_asm-interview" name="assessment-method">
             <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="INTERVIEW"/>
-            <prop name="label" class="sp800-53a" value="AC-03-Interview"/>
+            <prop name="label" class="sp800-53a" value="AC-03(14)-Interview"/>
             <part name="assessment-objects">
                <p>Organizational personnel with access enforcement responsibilities</p>
                <p>system/network administrators</p>
                <p>organizational personnel with information security and privacy responsibilities</p>
-               <p>system developers</p>
+               <p>legal counsel</p>
             </part>
          </part>
-         <part id="ac-3_asm-test" name="assessment-method">
+         <part id="ac-3.14_asm-test" name="assessment-method">
             <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="TEST"/>
-            <prop name="label" class="sp800-53a" value="AC-03-Test"/>
+            <prop name="label" class="sp800-53a" value="AC-03(14)-Test"/>
             <part name="assessment-objects">
-               <p>Mechanisms implementing access control policy</p>
+               <p>Mechanisms implementing access enforcement functions</p>
+               <p>mechanisms enabling individual access to personally identifiable information</p>
             </part>
          </part>
-         <control class="SP800-53-enhancement" id="ac-3.14">
-            <title>Individual Access</title>
-            <param id="ac-03.14_odp.01">
-               <prop name="alt-identifier" value="ac-3.14_prm_1"/>
-               <prop name="label" class="sp800-53a" value="AC-03(14)_ODP[01]"/>
-               <label>mechanisms</label>
-               <guideline>
-                  <p>mechanisms enabling individuals to have access to elements of their personally identifiable information are defined;</p>
-               </guideline>
-            </param>
-            <param id="ac-03.14_odp.02">
-               <prop name="alt-identifier" value="ac-3.14_prm_2"/>
-               <prop name="label" class="sp800-53a" value="AC-03(14)_ODP[02]"/>
-               <label>elements</label>
-               <guideline>
-                  <p>elements of personally identifiable information to which individuals have access are defined;</p>
-               </guideline>
-            </param>
-            <prop name="label" class="zero-padded" value="AC-03(14)"/>
-            <prop name="label" value="AC-3(14)"/>
-            <prop name="label" class="sp800-53a" value="AC-03(14)"/>
-            <prop name="sort-id" value="ac-03.14"/>
-            <prop ns="http://csrc.nist.gov/ns/rmf"
-                   name="implementation-level"
-                   value="system"/>
-            <link rel="required" href="#ac-3"/>
-            <link rel="related" href="#ia-8"/>
-            <link rel="related" href="#pm-22"/>
-            <link rel="related" href="#pm-20"/>
-            <link rel="related" href="#pm-21"/>
-            <link rel="related" href="#pt-6"/>
-            <part name="statement" id="ac-3.14_smt">
-               <p>Provide <insert type="param" id-ref="ac-03.14_odp.01"/> to enable individuals to have access to the following elements of their personally identifiable information: <insert type="param" id-ref="ac-03.14_odp.02"/>.</p>
-            </part>
-            <part name="guidance" id="ac-3.14_gdn">
-               <p>Individual access affords individuals the ability to review personally identifiable information about them held within organizational records, regardless of format. Access helps individuals to develop an understanding about how their personally identifiable information is being processed. It can also help individuals ensure that their data is accurate. Access mechanisms can include request forms and application interfaces. For federal agencies, <a href="#18e71fec-c6fd-475a-925a-5d8495cf8455">PRIVACT</a> processes can be located in systems of record notices and on agency websites. Access to certain types of records may not be appropriate (e.g., for federal agencies, law enforcement records within a system of records may be exempt from disclosure under the <a href="#18e71fec-c6fd-475a-925a-5d8495cf8455">PRIVACT</a> ) or may require certain levels of authentication assurance. Organizational personnel consult with the senior agency official for privacy and legal counsel to determine appropriate mechanisms and access rights or limitations.</p>
-            </part>
-            <part id="ac-3.14_obj" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="AC-03(14)"/>
-               <p>
-                  <insert type="param" id-ref="ac-03.14_odp.01"/> are provided to enable individuals to have access to <insert type="param" id-ref="ac-03.14_odp.02"/> of their personally identifiable information.</p>
-               <link rel="assessment-for" href="#ac-3.14_smt"/>
-            </part>
-            <part id="ac-3.14_asm-examine" name="assessment-method">
-               <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="EXAMINE"/>
-               <prop name="label" class="sp800-53a" value="AC-03(14)-Examine"/>
-               <part name="assessment-objects">
-                  <p>Access mechanisms (e.g., request forms and application interfaces)</p>
-                  <p>access control policy</p>
-                  <p>procedures addressing access enforcement</p>
-                  <p>system design documentation</p>
-                  <p>system configuration settings and associated documentation</p>
-                  <p>documentation regarding access to an individual’s personally identifiable information</p>
-                  <p>system audit records</p>
-                  <p>system security plan</p>
-                  <p>privacy plan</p>
-                  <p>privacy impact assessment</p>
-                  <p>privacy assessment findings and/or reports</p>
-                  <p>other relevant documents or records</p>
-               </part>
-            </part>
-            <part id="ac-3.14_asm-interview" name="assessment-method">
-               <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="INTERVIEW"/>
-               <prop name="label" class="sp800-53a" value="AC-03(14)-Interview"/>
-               <part name="assessment-objects">
-                  <p>Organizational personnel with access enforcement responsibilities</p>
-                  <p>system/network administrators</p>
-                  <p>organizational personnel with information security and privacy responsibilities</p>
-                  <p>legal counsel</p>
-               </part>
-            </part>
-            <part id="ac-3.14_asm-test" name="assessment-method">
-               <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="TEST"/>
-               <prop name="label" class="sp800-53a" value="AC-03(14)-Test"/>
-               <part name="assessment-objects">
-                  <p>Mechanisms implementing access enforcement functions</p>
-                  <p>mechanisms enabling individual access to personally identifiable information</p>
-               </part>
-            </part>
-         </control>
       </control>
    </group>
    <group class="family" id="at">
@@ -1854,188 +1749,71 @@
             </part>
          </part>
       </control>
-      <control class="SP800-53" id="au-3">
-         <title>Content of Audit Records</title>
-         <prop name="label" class="zero-padded" value="AU-03"/>
-         <prop name="label" value="AU-3"/>
-         <prop name="label" class="sp800-53a" value="AU-03"/>
-         <prop name="sort-id" value="au-03"/>
+      <control class="SP800-53-enhancement" id="au-3.3">
+         <title>Limit Personally Identifiable Information Elements</title>
+         <param id="au-03.03_odp">
+            <prop name="alt-identifier" value="au-3.3_prm_1"/>
+            <prop name="label" class="sp800-53a" value="AU-03(03)_ODP"/>
+            <label>elements</label>
+            <guideline>
+               <p>elements identified in the privacy risk assessment are defined;</p>
+            </guideline>
+         </param>
+         <prop name="label" class="zero-padded" value="AU-03(03)"/>
+         <prop name="label" value="AU-3(3)"/>
+         <prop name="label" class="sp800-53a" value="AU-03(03)"/>
+         <prop name="sort-id" value="au-03.03"/>
          <prop ns="http://csrc.nist.gov/ns/rmf"
                 name="implementation-level"
-                value="system"/>
-         <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-         <link rel="reference" href="#98d415ca-7281-4064-9931-0c366637e324"/>
-         <link rel="related" href="#au-2"/>
-         <link rel="related" href="#au-8"/>
-         <link rel="related" href="#au-12"/>
-         <link rel="related" href="#au-14"/>
-         <link rel="related" href="#ma-4"/>
-         <link rel="related" href="#pl-9"/>
-         <link rel="related" href="#sa-8"/>
-         <link rel="related" href="#si-7"/>
-         <link rel="related" href="#si-11"/>
-         <part name="statement" id="au-3_smt">
-            <p>Ensure that audit records contain information that establishes the following:</p>
-            <part name="item" id="au-3_smt.a">
-               <prop name="label" value="a."/>
-               <p>What type of event occurred;</p>
-            </part>
-            <part name="item" id="au-3_smt.b">
-               <prop name="label" value="b."/>
-               <p>When the event occurred;</p>
-            </part>
-            <part name="item" id="au-3_smt.c">
-               <prop name="label" value="c."/>
-               <p>Where the event occurred;</p>
-            </part>
-            <part name="item" id="au-3_smt.d">
-               <prop name="label" value="d."/>
-               <p>Source of the event;</p>
-            </part>
-            <part name="item" id="au-3_smt.e">
-               <prop name="label" value="e."/>
-               <p>Outcome of the event; and</p>
-            </part>
-            <part name="item" id="au-3_smt.f">
-               <prop name="label" value="f."/>
-               <p>Identity of any individuals, subjects, or objects/entities associated with the event.</p>
-            </part>
+                value="organization"/>
+         <link rel="required" href="#au-3"/>
+         <link rel="related" href="#ra-3"/>
+         <part name="statement" id="au-3.3_smt">
+            <p>Limit personally identifiable information contained in audit records to the following elements identified in the privacy risk assessment: <insert type="param" id-ref="au-03.03_odp"/>.</p>
          </part>
-         <part name="guidance" id="au-3_gdn">
-            <p>Audit record content that may be necessary to support the auditing function includes event descriptions (item a), time stamps (item b), source and destination addresses (item c), user or process identifiers (items d and f), success or fail indications (item e), and filenames involved (items a, c, e, and f) . Event outcomes include indicators of event success or failure and event-specific results, such as the system security and privacy posture after the event occurred. Organizations consider how audit records can reveal information about individuals that may give rise to privacy risks and how best to mitigate such risks. For example, there is the potential to reveal personally identifiable information in the audit trail, especially if the trail records inputs or is based on patterns or time of usage.</p>
+         <part name="guidance" id="au-3.3_gdn">
+            <p>Limiting personally identifiable information in audit records when such information is not needed for operational purposes helps reduce the level of privacy risk created by a system.</p>
          </part>
-         <part id="au-3_obj" name="assessment-objective">
-            <prop name="label" class="sp800-53a" value="AU-03"/>
-            <part id="au-3_obj.a" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="AU-03a."/>
-               <p>audit records contain information that establishes what type of event occurred;</p>
-               <link rel="assessment-for" href="#au-3_smt.a"/>
-            </part>
-            <part id="au-3_obj.b" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="AU-03b."/>
-               <p>audit records contain information that establishes when the event occurred;</p>
-               <link rel="assessment-for" href="#au-3_smt.b"/>
-            </part>
-            <part id="au-3_obj.c" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="AU-03c."/>
-               <p>audit records contain information that establishes where the event occurred;</p>
-               <link rel="assessment-for" href="#au-3_smt.c"/>
-            </part>
-            <part id="au-3_obj.d" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="AU-03d."/>
-               <p>audit records contain information that establishes the source of the event;</p>
-               <link rel="assessment-for" href="#au-3_smt.d"/>
-            </part>
-            <part id="au-3_obj.e" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="AU-03e."/>
-               <p>audit records contain information that establishes the outcome of the event;</p>
-               <link rel="assessment-for" href="#au-3_smt.e"/>
-            </part>
-            <part id="au-3_obj.f" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="AU-03f."/>
-               <p>audit records contain information that establishes the identity of any individuals, subjects, or objects/entities associated with the event.</p>
-               <link rel="assessment-for" href="#au-3_smt.f"/>
-            </part>
-            <link rel="assessment-for" href="#au-3_smt"/>
+         <part id="au-3.3_obj" name="assessment-objective">
+            <prop name="label" class="sp800-53a" value="AU-03(03)"/>
+            <p>personally identifiable information contained in audit records is limited to <insert type="param" id-ref="au-03.03_odp"/> identified in the privacy risk assessment.</p>
+            <link rel="assessment-for" href="#au-3.3_smt"/>
          </part>
-         <part id="au-3_asm-examine" name="assessment-method">
+         <part id="au-3.3_asm-examine" name="assessment-method">
             <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="EXAMINE"/>
-            <prop name="label" class="sp800-53a" value="AU-03-Examine"/>
+            <prop name="label" class="sp800-53a" value="AU-03(03)-Examine"/>
             <part name="assessment-objects">
                <p>Audit and accountability policy</p>
                <p>system security plan</p>
                <p>privacy plan</p>
+               <p>privacy risk assessment</p>
+               <p>privacy risk assessment results</p>
                <p>procedures addressing content of audit records</p>
                <p>system design documentation</p>
                <p>system configuration settings and associated documentation</p>
                <p>list of organization-defined auditable events</p>
                <p>system audit records</p>
-               <p>system incident reports</p>
+               <p>third party contracts</p>
                <p>other relevant documents or records</p>
             </part>
          </part>
-         <part id="au-3_asm-interview" name="assessment-method">
+         <part id="au-3.3_asm-interview" name="assessment-method">
             <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="INTERVIEW"/>
-            <prop name="label" class="sp800-53a" value="AU-03-Interview"/>
+            <prop name="label" class="sp800-53a" value="AU-03(03)-Interview"/>
             <part name="assessment-objects">
                <p>Organizational personnel with audit and accountability responsibilities</p>
                <p>organizational personnel with information security and privacy responsibilities</p>
                <p>system/network administrators</p>
+               <p>system developers</p>
             </part>
          </part>
-         <part id="au-3_asm-test" name="assessment-method">
+         <part id="au-3.3_asm-test" name="assessment-method">
             <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="TEST"/>
-            <prop name="label" class="sp800-53a" value="AU-03-Test"/>
+            <prop name="label" class="sp800-53a" value="AU-03(03)-Test"/>
             <part name="assessment-objects">
-               <p>Mechanisms implementing system auditing of auditable events</p>
+               <p>system audit capability</p>
             </part>
          </part>
-         <control class="SP800-53-enhancement" id="au-3.3">
-            <title>Limit Personally Identifiable Information Elements</title>
-            <param id="au-03.03_odp">
-               <prop name="alt-identifier" value="au-3.3_prm_1"/>
-               <prop name="label" class="sp800-53a" value="AU-03(03)_ODP"/>
-               <label>elements</label>
-               <guideline>
-                  <p>elements identified in the privacy risk assessment are defined;</p>
-               </guideline>
-            </param>
-            <prop name="label" class="zero-padded" value="AU-03(03)"/>
-            <prop name="label" value="AU-3(3)"/>
-            <prop name="label" class="sp800-53a" value="AU-03(03)"/>
-            <prop name="sort-id" value="au-03.03"/>
-            <prop ns="http://csrc.nist.gov/ns/rmf"
-                   name="implementation-level"
-                   value="organization"/>
-            <link rel="required" href="#au-3"/>
-            <link rel="related" href="#ra-3"/>
-            <part name="statement" id="au-3.3_smt">
-               <p>Limit personally identifiable information contained in audit records to the following elements identified in the privacy risk assessment: <insert type="param" id-ref="au-03.03_odp"/>.</p>
-            </part>
-            <part name="guidance" id="au-3.3_gdn">
-               <p>Limiting personally identifiable information in audit records when such information is not needed for operational purposes helps reduce the level of privacy risk created by a system.</p>
-            </part>
-            <part id="au-3.3_obj" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="AU-03(03)"/>
-               <p>personally identifiable information contained in audit records is limited to <insert type="param" id-ref="au-03.03_odp"/> identified in the privacy risk assessment.</p>
-               <link rel="assessment-for" href="#au-3.3_smt"/>
-            </part>
-            <part id="au-3.3_asm-examine" name="assessment-method">
-               <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="EXAMINE"/>
-               <prop name="label" class="sp800-53a" value="AU-03(03)-Examine"/>
-               <part name="assessment-objects">
-                  <p>Audit and accountability policy</p>
-                  <p>system security plan</p>
-                  <p>privacy plan</p>
-                  <p>privacy risk assessment</p>
-                  <p>privacy risk assessment results</p>
-                  <p>procedures addressing content of audit records</p>
-                  <p>system design documentation</p>
-                  <p>system configuration settings and associated documentation</p>
-                  <p>list of organization-defined auditable events</p>
-                  <p>system audit records</p>
-                  <p>third party contracts</p>
-                  <p>other relevant documents or records</p>
-               </part>
-            </part>
-            <part id="au-3.3_asm-interview" name="assessment-method">
-               <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="INTERVIEW"/>
-               <prop name="label" class="sp800-53a" value="AU-03(03)-Interview"/>
-               <part name="assessment-objects">
-                  <p>Organizational personnel with audit and accountability responsibilities</p>
-                  <p>organizational personnel with information security and privacy responsibilities</p>
-                  <p>system/network administrators</p>
-                  <p>system developers</p>
-               </part>
-            </part>
-            <part id="au-3.3_asm-test" name="assessment-method">
-               <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="TEST"/>
-               <prop name="label" class="sp800-53a" value="AU-03(03)-Test"/>
-               <part name="assessment-objects">
-                  <p>system audit capability</p>
-               </part>
-            </part>
-         </control>
       </control>
       <control class="SP800-53" id="au-11">
          <title>Audit Record Retention</title>
@@ -5318,174 +5096,67 @@
    <group class="family" id="pe">
       <title>Physical and Environmental Protection</title>
       <prop name="label" value="PE"/>
-      <control class="SP800-53" id="pe-8">
-         <title>Visitor Access Records</title>
-         <param id="pe-08_odp.01">
-            <prop name="alt-identifier" value="pe-8_prm_1"/>
-            <prop name="label" class="sp800-53a" value="PE-08_ODP[01]"/>
-            <label>time period</label>
+      <control class="SP800-53-enhancement" id="pe-8.3">
+         <title>Limit Personally Identifiable Information Elements</title>
+         <param id="pe-08.03_odp">
+            <prop name="alt-identifier" value="pe-8.3_prm_1"/>
+            <prop name="label" class="sp800-53a" value="PE-08(03)_ODP"/>
+            <label>elements</label>
             <guideline>
-               <p>time period for which to maintain visitor access records for the facility where the system resides is defined;</p>
+               <p>elements identified in the privacy risk assessment to limit personally identifiable information contained in visitor access logs are defined;</p>
             </guideline>
          </param>
-         <param id="pe-08_odp.02">
-            <prop name="alt-identifier" value="pe-8_prm_2"/>
-            <prop name="label" class="sp800-53a" value="PE-08_ODP[02]"/>
-            <label>frequency</label>
-            <guideline>
-               <p>the frequency at which to review visitor access records is defined;</p>
-            </guideline>
-         </param>
-         <param id="pe-08_odp.03">
-            <prop name="alt-identifier" value="pe-8_prm_3"/>
-            <prop name="label" class="sp800-53a" value="PE-08_ODP[03]"/>
-            <label>personnel</label>
-            <guideline>
-               <p>personnel to whom visitor access records anomalies are reported to is/are defined;</p>
-            </guideline>
-         </param>
-         <prop name="label" class="zero-padded" value="PE-08"/>
-         <prop name="label" value="PE-8"/>
-         <prop name="label" class="sp800-53a" value="PE-08"/>
-         <prop name="sort-id" value="pe-08"/>
+         <prop name="label" class="zero-padded" value="PE-08(03)"/>
+         <prop name="label" value="PE-8(3)"/>
+         <prop name="label" class="sp800-53a" value="PE-08(03)"/>
+         <prop name="sort-id" value="pe-08.03"/>
          <prop ns="http://csrc.nist.gov/ns/rmf"
                 name="implementation-level"
                 value="organization"/>
-         <prop ns="http://csrc.nist.gov/ns/rmf"
-                name="contributes-to-assurance"
-                value="true"/>
-         <link rel="related" href="#pe-2"/>
-         <link rel="related" href="#pe-3"/>
-         <link rel="related" href="#pe-6"/>
-         <part name="statement" id="pe-8_smt">
-            <part name="item" id="pe-8_smt.a">
-               <prop name="label" value="a."/>
-               <p>Maintain visitor access records to the facility where the system resides for <insert type="param" id-ref="pe-08_odp.01"/>;</p>
-            </part>
-            <part name="item" id="pe-8_smt.b">
-               <prop name="label" value="b."/>
-               <p>Review visitor access records <insert type="param" id-ref="pe-08_odp.02"/> ; and</p>
-            </part>
-            <part name="item" id="pe-8_smt.c">
-               <prop name="label" value="c."/>
-               <p>Report anomalies in visitor access records to <insert type="param" id-ref="pe-08_odp.03"/>.</p>
-            </part>
+         <link rel="required" href="#pe-8"/>
+         <link rel="related" href="#ra-3"/>
+         <link rel="related" href="#sa-8"/>
+         <part name="statement" id="pe-8.3_smt">
+            <p>Limit personally identifiable information contained in visitor access records to the following elements identified in the privacy risk assessment: <insert type="param" id-ref="pe-08.03_odp"/>.</p>
          </part>
-         <part name="guidance" id="pe-8_gdn">
-            <p>Visitor access records include the names and organizations of individuals visiting, visitor signatures, forms of identification, dates of access, entry and departure times, purpose of visits, and the names and organizations of individuals visited. Access record reviews determine if access authorizations are current and are still required to support organizational mission and business functions. Access records are not required for publicly accessible areas.</p>
+         <part name="guidance" id="pe-8.3_gdn">
+            <p>Organizations may have requirements that specify the contents of visitor access records. Limiting personally identifiable information in visitor access records when such information is not needed for operational purposes helps reduce the level of privacy risk created by a system.</p>
          </part>
-         <part id="pe-8_obj" name="assessment-objective">
-            <prop name="label" class="sp800-53a" value="PE-08"/>
-            <part id="pe-8_obj.a" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="PE-08a."/>
-               <p>visitor access records for the facility where the system resides are maintained for <insert type="param" id-ref="pe-08_odp.01"/>;</p>
-               <link rel="assessment-for" href="#pe-8_smt.a"/>
-            </part>
-            <part id="pe-8_obj.b" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="PE-08b."/>
-               <p>visitor access records are reviewed <insert type="param" id-ref="pe-08_odp.02"/>;</p>
-               <link rel="assessment-for" href="#pe-8_smt.b"/>
-            </part>
-            <part id="pe-8_obj.c" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="PE-08c."/>
-               <p>visitor access records anomalies are reported to <insert type="param" id-ref="pe-08_odp.03"/>.</p>
-               <link rel="assessment-for" href="#pe-8_smt.c"/>
-            </part>
-            <link rel="assessment-for" href="#pe-8_smt"/>
+         <part id="pe-8.3_obj" name="assessment-objective">
+            <prop name="label" class="sp800-53a" value="PE-08(03)"/>
+            <p>personally identifiable information contained in visitor access records is limited to <insert type="param" id-ref="pe-08.03_odp"/> identified in the privacy risk assessment.</p>
+            <link rel="assessment-for" href="#pe-8.3_smt"/>
          </part>
-         <part id="pe-8_asm-examine" name="assessment-method">
+         <part id="pe-8.3_asm-examine" name="assessment-method">
             <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="EXAMINE"/>
-            <prop name="label" class="sp800-53a" value="PE-08-Examine"/>
+            <prop name="label" class="sp800-53a" value="PE-08(03)-Examine"/>
             <part name="assessment-objects">
                <p>Physical and environmental protection policy</p>
-               <p>procedures addressing visitor access records</p>
-               <p>visitor access control logs or records</p>
-               <p>visitor access record or log reviews</p>
+               <p>personally identifiable information processing policy</p>
+               <p>privacy risk assessment documentation</p>
+               <p>privacy impact assessment</p>
+               <p>visitor access records</p>
+               <p>personally identifiable information inventory</p>
                <p>system security plan</p>
                <p>privacy plan</p>
-               <p>privacy impact assessment</p>
-               <p>privacy risk assessment documentation</p>
                <p>other relevant documents or records</p>
             </part>
          </part>
-         <part id="pe-8_asm-interview" name="assessment-method">
+         <part id="pe-8.3_asm-interview" name="assessment-method">
             <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="INTERVIEW"/>
-            <prop name="label" class="sp800-53a" value="PE-08-Interview"/>
+            <prop name="label" class="sp800-53a" value="PE-08(03)-Interview"/>
             <part name="assessment-objects">
-               <p>Organizational personnel with visitor access record responsibilities</p>
+               <p>Organizational personnel with visitor access records responsibilities</p>
                <p>organizational personnel with information security and privacy responsibilities</p>
             </part>
          </part>
-         <part id="pe-8_asm-test" name="assessment-method">
+         <part id="pe-8.3_asm-test" name="assessment-method">
             <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="TEST"/>
-            <prop name="label" class="sp800-53a" value="PE-08-Test"/>
+            <prop name="label" class="sp800-53a" value="PE-08(03)-Test"/>
             <part name="assessment-objects">
                <p>Organizational processes for maintaining and reviewing visitor access records</p>
-               <p>mechanisms supporting and/or implementing the maintenance and review of visitor access records</p>
             </part>
          </part>
-         <control class="SP800-53-enhancement" id="pe-8.3">
-            <title>Limit Personally Identifiable Information Elements</title>
-            <param id="pe-08.03_odp">
-               <prop name="alt-identifier" value="pe-8.3_prm_1"/>
-               <prop name="label" class="sp800-53a" value="PE-08(03)_ODP"/>
-               <label>elements</label>
-               <guideline>
-                  <p>elements identified in the privacy risk assessment to limit personally identifiable information contained in visitor access logs are defined;</p>
-               </guideline>
-            </param>
-            <prop name="label" class="zero-padded" value="PE-08(03)"/>
-            <prop name="label" value="PE-8(3)"/>
-            <prop name="label" class="sp800-53a" value="PE-08(03)"/>
-            <prop name="sort-id" value="pe-08.03"/>
-            <prop ns="http://csrc.nist.gov/ns/rmf"
-                   name="implementation-level"
-                   value="organization"/>
-            <link rel="required" href="#pe-8"/>
-            <link rel="related" href="#ra-3"/>
-            <link rel="related" href="#sa-8"/>
-            <part name="statement" id="pe-8.3_smt">
-               <p>Limit personally identifiable information contained in visitor access records to the following elements identified in the privacy risk assessment: <insert type="param" id-ref="pe-08.03_odp"/>.</p>
-            </part>
-            <part name="guidance" id="pe-8.3_gdn">
-               <p>Organizations may have requirements that specify the contents of visitor access records. Limiting personally identifiable information in visitor access records when such information is not needed for operational purposes helps reduce the level of privacy risk created by a system.</p>
-            </part>
-            <part id="pe-8.3_obj" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="PE-08(03)"/>
-               <p>personally identifiable information contained in visitor access records is limited to <insert type="param" id-ref="pe-08.03_odp"/> identified in the privacy risk assessment.</p>
-               <link rel="assessment-for" href="#pe-8.3_smt"/>
-            </part>
-            <part id="pe-8.3_asm-examine" name="assessment-method">
-               <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="EXAMINE"/>
-               <prop name="label" class="sp800-53a" value="PE-08(03)-Examine"/>
-               <part name="assessment-objects">
-                  <p>Physical and environmental protection policy</p>
-                  <p>personally identifiable information processing policy</p>
-                  <p>privacy risk assessment documentation</p>
-                  <p>privacy impact assessment</p>
-                  <p>visitor access records</p>
-                  <p>personally identifiable information inventory</p>
-                  <p>system security plan</p>
-                  <p>privacy plan</p>
-                  <p>other relevant documents or records</p>
-               </part>
-            </part>
-            <part id="pe-8.3_asm-interview" name="assessment-method">
-               <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="INTERVIEW"/>
-               <prop name="label" class="sp800-53a" value="PE-08(03)-Interview"/>
-               <part name="assessment-objects">
-                  <p>Organizational personnel with visitor access records responsibilities</p>
-                  <p>organizational personnel with information security and privacy responsibilities</p>
-               </part>
-            </part>
-            <part id="pe-8.3_asm-test" name="assessment-method">
-               <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="TEST"/>
-               <prop name="label" class="sp800-53a" value="PE-08(03)-Test"/>
-               <part name="assessment-objects">
-                  <p>Organizational processes for maintaining and reviewing visitor access records</p>
-               </part>
-            </part>
-         </control>
       </control>
    </group>
    <group class="family" id="pl">
@@ -7002,160 +6673,91 @@
             </part>
          </part>
       </control>
-      <control class="SP800-53" id="pm-5">
-         <title>System Inventory</title>
-         <param id="pm-05_odp">
-            <prop name="alt-identifier" value="pm-5_prm_1"/>
-            <prop name="label" class="sp800-53a" value="PM-05_ODP"/>
+      <control class="SP800-53-enhancement" id="pm-5.1">
+         <title>Inventory of Personally Identifiable Information</title>
+         <param id="pm-05.01_odp">
+            <prop name="alt-identifier" value="pm-5.1_prm_1"/>
+            <prop name="label" class="sp800-53a" value="PM-05(01)_ODP"/>
             <label>frequency</label>
             <guideline>
-               <p>the frequency at which to update the inventory of organizational systems is defined;</p>
+               <p>the frequency at which to update the inventory of systems, applications, and projects that process personally identifiable information is defined;</p>
             </guideline>
          </param>
-         <prop name="label" class="zero-padded" value="PM-05"/>
-         <prop name="label" value="PM-5"/>
-         <prop name="label" class="sp800-53a" value="PM-05"/>
-         <prop name="sort-id" value="pm-05"/>
+         <prop name="label" class="zero-padded" value="PM-05(01)"/>
+         <prop name="label" value="PM-5(1)"/>
+         <prop name="label" class="sp800-53a" value="PM-05(01)"/>
+         <prop name="sort-id" value="pm-05.01"/>
          <prop ns="http://csrc.nist.gov/ns/rmf"
                 name="implementation-level"
                 value="organization"/>
-         <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-         <link rel="reference" href="#98d415ca-7281-4064-9931-0c366637e324"/>
-         <part name="statement" id="pm-5_smt">
-            <p>Develop and update <insert type="param" id-ref="pm-05_odp"/> an inventory of organizational systems.</p>
+         <link rel="required" href="#pm-5"/>
+         <link rel="related" href="#ac-3"/>
+         <link rel="related" href="#cm-8"/>
+         <link rel="related" href="#cm-12"/>
+         <link rel="related" href="#cm-13"/>
+         <link rel="related" href="#pl-8"/>
+         <link rel="related" href="#pm-22"/>
+         <link rel="related" href="#pt-3"/>
+         <link rel="related" href="#pt-5"/>
+         <link rel="related" href="#si-12"/>
+         <link rel="related" href="#si-18"/>
+         <part name="statement" id="pm-5.1_smt">
+            <p>Establish, maintain, and update <insert type="param" id-ref="pm-05.01_odp"/> an inventory of all systems, applications, and projects that process personally identifiable information.</p>
          </part>
-         <part name="guidance" id="pm-5_gdn">
-            <p>
-               <a href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef">OMB A-130</a> provides guidance on developing systems inventories and associated reporting requirements. System inventory refers to an organization-wide inventory of systems, not system components as described in <a href="#cm-8">CM-8</a>.</p>
+         <part name="guidance" id="pm-5.1_gdn">
+            <p>An inventory of systems, applications, and projects that process personally identifiable information supports the mapping of data actions, providing individuals with privacy notices, maintaining accurate personally identifiable information, and limiting the processing of personally identifiable information when such information is not needed for operational purposes. Organizations may use this inventory to ensure that systems only process the personally identifiable information for authorized purposes and that this processing is still relevant and necessary for the purpose specified therein.</p>
          </part>
-         <part id="pm-5_obj" name="assessment-objective">
-            <prop name="label" class="sp800-53a" value="PM-05"/>
-            <part id="pm-5_obj-1" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="PM-05[01]"/>
-               <p>an inventory of organizational systems is developed;</p>
-               <link rel="assessment-for" href="#pm-5_smt"/>
+         <part id="pm-5.1_obj" name="assessment-objective">
+            <prop name="label" class="sp800-53a" value="PM-05(01)"/>
+            <part id="pm-5.1_obj-1" name="assessment-objective">
+               <prop name="label" class="sp800-53a" value="PM-05(01)[01]"/>
+               <p>an inventory of all systems, applications, and projects that process personally identifiable information is established;</p>
+               <link rel="assessment-for" href="#pm-5.1_smt"/>
             </part>
-            <part id="pm-5_obj-2" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="PM-05[02]"/>
-               <p>the inventory of organizational systems is updated <insert type="param" id-ref="pm-05_odp"/>.</p>
-               <link rel="assessment-for" href="#pm-5_smt"/>
+            <part id="pm-5.1_obj-2" name="assessment-objective">
+               <prop name="label" class="sp800-53a" value="PM-05(01)[02]"/>
+               <p>an inventory of all systems, applications, and projects that process personally identifiable information is maintained;</p>
+               <link rel="assessment-for" href="#pm-5.1_smt"/>
             </part>
-            <link rel="assessment-for" href="#pm-5_smt"/>
+            <part id="pm-5.1_obj-3" name="assessment-objective">
+               <prop name="label" class="sp800-53a" value="PM-05(01)[03]"/>
+               <p>an inventory of all systems, applications, and projects that process personally identifiable information is updated <insert type="param" id-ref="pm-05.01_odp"/>.</p>
+               <link rel="assessment-for" href="#pm-5.1_smt"/>
+            </part>
+            <link rel="assessment-for" href="#pm-5.1_smt"/>
          </part>
-         <part id="pm-5_asm-examine" name="assessment-method">
+         <part id="pm-5.1_asm-examine" name="assessment-method">
             <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="EXAMINE"/>
-            <prop name="label" class="sp800-53a" value="PM-05-Examine"/>
+            <prop name="label" class="sp800-53a" value="PM-05(01)-Examine"/>
             <part name="assessment-objects">
-               <p>Information security program plan</p>
-               <p>system inventory</p>
-               <p>procedures addressing system inventory development and maintenance</p>
+               <p>Procedures addressing system inventory development, maintenance, and updates</p>
                <p>OMB FISMA reporting guidance</p>
+               <p>privacy program plan</p>
+               <p>information security program plan</p>
+               <p>personally identifiable information processing policy</p>
+               <p>system inventory</p>
+               <p>personally identifiable information inventory</p>
+               <p>data mapping documentation</p>
                <p>other relevant documents or records</p>
             </part>
          </part>
-         <part id="pm-5_asm-interview" name="assessment-method">
+         <part id="pm-5.1_asm-interview" name="assessment-method">
             <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="INTERVIEW"/>
-            <prop name="label" class="sp800-53a" value="PM-05-Interview"/>
+            <prop name="label" class="sp800-53a" value="PM-05(01)-Interview"/>
             <part name="assessment-objects">
-               <p>Organizational personnel with information security program planning and plan implementation responsibilities</p>
+               <p>Organizational personnel with privacy program planning and plan implementation responsibilities</p>
                <p>organizational personnel responsible for developing and maintaining the system inventory</p>
-               <p>organizational personnel with information security responsibilities</p>
+               <p>organizational personnel with information security and privacy responsibilities</p>
             </part>
          </part>
-         <part id="pm-5_asm-test" name="assessment-method">
+         <part id="pm-5.1_asm-test" name="assessment-method">
             <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="TEST"/>
-            <prop name="label" class="sp800-53a" value="PM-05-Test"/>
+            <prop name="label" class="sp800-53a" value="PM-05(01)-Test"/>
             <part name="assessment-objects">
-               <p>Organizational processes for system inventory development and maintenance</p>
+               <p>Organizational processes for system inventory development, maintenance, and updates</p>
                <p>mechanisms supporting the system inventory</p>
             </part>
          </part>
-         <control class="SP800-53-enhancement" id="pm-5.1">
-            <title>Inventory of Personally Identifiable Information</title>
-            <param id="pm-05.01_odp">
-               <prop name="alt-identifier" value="pm-5.1_prm_1"/>
-               <prop name="label" class="sp800-53a" value="PM-05(01)_ODP"/>
-               <label>frequency</label>
-               <guideline>
-                  <p>the frequency at which to update the inventory of systems, applications, and projects that process personally identifiable information is defined;</p>
-               </guideline>
-            </param>
-            <prop name="label" class="zero-padded" value="PM-05(01)"/>
-            <prop name="label" value="PM-5(1)"/>
-            <prop name="label" class="sp800-53a" value="PM-05(01)"/>
-            <prop name="sort-id" value="pm-05.01"/>
-            <prop ns="http://csrc.nist.gov/ns/rmf"
-                   name="implementation-level"
-                   value="organization"/>
-            <link rel="required" href="#pm-5"/>
-            <link rel="related" href="#ac-3"/>
-            <link rel="related" href="#cm-8"/>
-            <link rel="related" href="#cm-12"/>
-            <link rel="related" href="#cm-13"/>
-            <link rel="related" href="#pl-8"/>
-            <link rel="related" href="#pm-22"/>
-            <link rel="related" href="#pt-3"/>
-            <link rel="related" href="#pt-5"/>
-            <link rel="related" href="#si-12"/>
-            <link rel="related" href="#si-18"/>
-            <part name="statement" id="pm-5.1_smt">
-               <p>Establish, maintain, and update <insert type="param" id-ref="pm-05.01_odp"/> an inventory of all systems, applications, and projects that process personally identifiable information.</p>
-            </part>
-            <part name="guidance" id="pm-5.1_gdn">
-               <p>An inventory of systems, applications, and projects that process personally identifiable information supports the mapping of data actions, providing individuals with privacy notices, maintaining accurate personally identifiable information, and limiting the processing of personally identifiable information when such information is not needed for operational purposes. Organizations may use this inventory to ensure that systems only process the personally identifiable information for authorized purposes and that this processing is still relevant and necessary for the purpose specified therein.</p>
-            </part>
-            <part id="pm-5.1_obj" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="PM-05(01)"/>
-               <part id="pm-5.1_obj-1" name="assessment-objective">
-                  <prop name="label" class="sp800-53a" value="PM-05(01)[01]"/>
-                  <p>an inventory of all systems, applications, and projects that process personally identifiable information is established;</p>
-                  <link rel="assessment-for" href="#pm-5.1_smt"/>
-               </part>
-               <part id="pm-5.1_obj-2" name="assessment-objective">
-                  <prop name="label" class="sp800-53a" value="PM-05(01)[02]"/>
-                  <p>an inventory of all systems, applications, and projects that process personally identifiable information is maintained;</p>
-                  <link rel="assessment-for" href="#pm-5.1_smt"/>
-               </part>
-               <part id="pm-5.1_obj-3" name="assessment-objective">
-                  <prop name="label" class="sp800-53a" value="PM-05(01)[03]"/>
-                  <p>an inventory of all systems, applications, and projects that process personally identifiable information is updated <insert type="param" id-ref="pm-05.01_odp"/>.</p>
-                  <link rel="assessment-for" href="#pm-5.1_smt"/>
-               </part>
-               <link rel="assessment-for" href="#pm-5.1_smt"/>
-            </part>
-            <part id="pm-5.1_asm-examine" name="assessment-method">
-               <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="EXAMINE"/>
-               <prop name="label" class="sp800-53a" value="PM-05(01)-Examine"/>
-               <part name="assessment-objects">
-                  <p>Procedures addressing system inventory development, maintenance, and updates</p>
-                  <p>OMB FISMA reporting guidance</p>
-                  <p>privacy program plan</p>
-                  <p>information security program plan</p>
-                  <p>personally identifiable information processing policy</p>
-                  <p>system inventory</p>
-                  <p>personally identifiable information inventory</p>
-                  <p>data mapping documentation</p>
-                  <p>other relevant documents or records</p>
-               </part>
-            </part>
-            <part id="pm-5.1_asm-interview" name="assessment-method">
-               <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="INTERVIEW"/>
-               <prop name="label" class="sp800-53a" value="PM-05(01)-Interview"/>
-               <part name="assessment-objects">
-                  <p>Organizational personnel with privacy program planning and plan implementation responsibilities</p>
-                  <p>organizational personnel responsible for developing and maintaining the system inventory</p>
-                  <p>organizational personnel with information security and privacy responsibilities</p>
-               </part>
-            </part>
-            <part id="pm-5.1_asm-test" name="assessment-method">
-               <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="TEST"/>
-               <prop name="label" class="sp800-53a" value="PM-05(01)-Test"/>
-               <part name="assessment-objects">
-                  <p>Organizational processes for system inventory development, maintenance, and updates</p>
-                  <p>mechanisms supporting the system inventory</p>
-               </part>
-            </part>
-         </control>
       </control>
       <control class="SP800-53" id="pm-6">
          <title>Measures of Performance</title>
@@ -12929,152 +12531,58 @@
             </part>
          </part>
       </control>
-      <control class="SP800-53" id="sa-8">
-         <title>Security and Privacy Engineering Principles</title>
-         <param id="sa-8_prm_1">
-            <prop name="aggregates"
-                   ns="http://csrc.nist.gov/ns/rmf"
-                   value="sa-08_odp.01"/>
-            <prop name="aggregates"
-                   ns="http://csrc.nist.gov/ns/rmf"
-                   value="sa-08_odp.02"/>
-            <label>organization-defined systems security and privacy engineering principles</label>
-         </param>
-         <param id="sa-08_odp.01">
-            <prop name="label" class="sp800-53a" value="SA-08_ODP[01]"/>
-            <label>systems security engineering principles</label>
+      <control class="SP800-53-enhancement" id="sa-8.33">
+         <title>Minimization</title>
+         <param id="sa-08.33_odp">
+            <prop name="alt-identifier" value="sa-8.33_prm_1"/>
+            <prop name="label" class="sp800-53a" value="SA-08(33)_ODP"/>
+            <label>processes</label>
             <guideline>
-               <p>systems security engineering principles are defined;</p>
+               <p>processes that implement the privacy principle of minimization are defined;</p>
             </guideline>
          </param>
-         <param id="sa-08_odp.02">
-            <prop name="label" class="sp800-53a" value="SA-08_ODP[02]"/>
-            <label>privacy engineering principles</label>
-            <guideline>
-               <p>privacy engineering principles are defined;</p>
-            </guideline>
-         </param>
-         <prop name="label" class="zero-padded" value="SA-08"/>
-         <prop name="label" value="SA-8"/>
-         <prop name="label" class="sp800-53a" value="SA-08"/>
-         <prop name="sort-id" value="sa-08"/>
+         <prop name="label" class="zero-padded" value="SA-08(33)"/>
+         <prop name="label" value="SA-8(33)"/>
+         <prop name="label" class="sp800-53a" value="SA-08(33)"/>
+         <prop name="sort-id" value="sa-08.33"/>
          <prop ns="http://csrc.nist.gov/ns/rmf"
                 name="implementation-level"
                 value="organization"/>
          <prop ns="http://csrc.nist.gov/ns/rmf"
+                name="implementation-level"
+                value="system"/>
+         <prop ns="http://csrc.nist.gov/ns/rmf"
                 name="contributes-to-assurance"
                 value="true"/>
-         <link rel="reference" href="#18e71fec-c6fd-475a-925a-5d8495cf8455"/>
-         <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-         <link rel="reference" href="#628d22a1-6a11-4784-bc59-5cd9497b5445"/>
-         <link rel="reference" href="#599fb53d-5041-444e-a7fe-640d6d30ad05"/>
-         <link rel="reference" href="#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8"/>
-         <link rel="reference" href="#a21aef46-7330-48a0-b2e1-c5bb8b2dd11d"/>
-         <link rel="reference" href="#e72fde0b-6fc2-497e-a9db-d8fce5a11b8a"/>
-         <link rel="reference" href="#9be5d661-421f-41ad-854e-86f98b811891"/>
-         <link rel="reference" href="#e3cc0520-a366-4fc9-abc2-5272db7e3564"/>
-         <link rel="reference" href="#98d415ca-7281-4064-9931-0c366637e324"/>
-         <link rel="reference" href="#61ccf0f4-d3e7-42db-9796-ce6cb1c85989"/>
-         <link rel="related" href="#pl-8"/>
-         <link rel="related" href="#pm-7"/>
-         <link rel="related" href="#ra-2"/>
-         <link rel="related" href="#ra-3"/>
-         <link rel="related" href="#ra-9"/>
-         <link rel="related" href="#sa-3"/>
-         <link rel="related" href="#sa-4"/>
-         <link rel="related" href="#sa-15"/>
-         <link rel="related" href="#sa-17"/>
-         <link rel="related" href="#sa-20"/>
-         <link rel="related" href="#sc-2"/>
-         <link rel="related" href="#sc-3"/>
-         <link rel="related" href="#sc-32"/>
-         <link rel="related" href="#sc-39"/>
-         <link rel="related" href="#sr-2"/>
-         <link rel="related" href="#sr-3"/>
-         <link rel="related" href="#sr-4"/>
-         <link rel="related" href="#sr-5"/>
-         <part name="statement" id="sa-8_smt">
-            <p>Apply the following systems security and privacy engineering principles in the specification, design, development, implementation, and modification of the system and system components: <insert type="param" id-ref="sa-8_prm_1"/>.</p>
+         <link rel="required" href="#sa-8"/>
+         <link rel="related" href="#pe-8"/>
+         <link rel="related" href="#pm-25"/>
+         <link rel="related" href="#sc-42"/>
+         <link rel="related" href="#si-12"/>
+         <part name="statement" id="sa-8.33_smt">
+            <p>Implement the privacy principle of minimization using <insert type="param" id-ref="sa-08.33_odp"/>.</p>
          </part>
-         <part name="guidance" id="sa-8_gdn">
-            <p>Systems security and privacy engineering principles are closely related to and implemented throughout the system development life cycle (see <a href="#sa-3">SA-3</a> ). Organizations can apply systems security and privacy engineering principles to new systems under development or to systems undergoing upgrades. For existing systems, organizations apply systems security and privacy engineering principles to system upgrades and modifications to the extent feasible, given the current state of hardware, software, and firmware components within those systems.</p>
-            <p>The application of systems security and privacy engineering principles helps organizations develop trustworthy, secure, and resilient systems and reduces the susceptibility to disruptions, hazards, threats, and the creation of privacy problems for individuals. Examples of system security engineering principles include: developing layered protections; establishing security and privacy policies, architecture, and controls as the foundation for design and development; incorporating security and privacy requirements into the system development life cycle; delineating physical and logical security boundaries; ensuring that developers are trained on how to build secure software; tailoring controls to meet organizational needs; and performing threat modeling to identify use cases, threat agents, attack vectors and patterns, design patterns, and compensating controls needed to mitigate risk.</p>
-            <p>Organizations that apply systems security and privacy engineering concepts and principles can facilitate the development of trustworthy, secure systems, system components, and system services; reduce risk to acceptable levels; and make informed risk management decisions. System security engineering principles can also be used to protect against certain supply chain risks, including incorporating tamper-resistant hardware into a design.</p>
+         <part name="guidance" id="sa-8.33_gdn">
+            <p>The principle of minimization states that organizations should only process personally identifiable information that is directly relevant and necessary to accomplish an authorized purpose and should only maintain personally identifiable information for as long as is necessary to accomplish the purpose. Organizations have processes in place, consistent with applicable laws and policies, to implement the principle of minimization.</p>
          </part>
-         <part id="sa-8_obj" name="assessment-objective">
-            <prop name="label" class="sp800-53a" value="SA-08"/>
-            <part id="sa-8_obj-1" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="SA-08[01]"/>
-               <p>
-                  <insert type="param" id-ref="sa-08_odp.01"/> are applied in the specification of the system and system components;</p>
-               <link rel="assessment-for" href="#sa-8_smt"/>
-            </part>
-            <part id="sa-8_obj-2" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="SA-08[02]"/>
-               <p>
-                  <insert type="param" id-ref="sa-08_odp.01"/> are applied in the design of the system and system components;</p>
-               <link rel="assessment-for" href="#sa-8_smt"/>
-            </part>
-            <part id="sa-8_obj-3" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="SA-08[03]"/>
-               <p>
-                  <insert type="param" id-ref="sa-08_odp.01"/> are applied in the development of the system and system components;</p>
-               <link rel="assessment-for" href="#sa-8_smt"/>
-            </part>
-            <part id="sa-8_obj-4" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="SA-08[04]"/>
-               <p>
-                  <insert type="param" id-ref="sa-08_odp.01"/> are applied in the implementation of the system and system components;</p>
-               <link rel="assessment-for" href="#sa-8_smt"/>
-            </part>
-            <part id="sa-8_obj-5" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="SA-08[05]"/>
-               <p>
-                  <insert type="param" id-ref="sa-08_odp.01"/> are applied in the modification of the system and system components;</p>
-               <link rel="assessment-for" href="#sa-8_smt"/>
-            </part>
-            <part id="sa-8_obj-6" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="SA-08[06]"/>
-               <p>
-                  <insert type="param" id-ref="sa-08_odp.02"/> are applied in the specification of the system and system components;</p>
-               <link rel="assessment-for" href="#sa-8_smt"/>
-            </part>
-            <part id="sa-8_obj-7" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="SA-08[07]"/>
-               <p>
-                  <insert type="param" id-ref="sa-08_odp.02"/> are applied in the design of the system and system components;</p>
-               <link rel="assessment-for" href="#sa-8_smt"/>
-            </part>
-            <part id="sa-8_obj-8" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="SA-08[08]"/>
-               <p>
-                  <insert type="param" id-ref="sa-08_odp.02"/> are applied in the development of the system and system components;</p>
-               <link rel="assessment-for" href="#sa-8_smt"/>
-            </part>
-            <part id="sa-8_obj-9" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="SA-08[09]"/>
-               <p>
-                  <insert type="param" id-ref="sa-08_odp.02"/> are applied in the implementation of the system and system components;</p>
-               <link rel="assessment-for" href="#sa-8_smt"/>
-            </part>
-            <part id="sa-8_obj-10" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="SA-08[10]"/>
-               <p>
-                  <insert type="param" id-ref="sa-08_odp.02"/> are applied in the modification of the system and system components.</p>
-               <link rel="assessment-for" href="#sa-8_smt"/>
-            </part>
-            <link rel="assessment-for" href="#sa-8_smt"/>
+         <part id="sa-8.33_obj" name="assessment-objective">
+            <prop name="label" class="sp800-53a" value="SA-08(33)"/>
+            <p>the privacy principle of minimization is implemented using <insert type="param" id-ref="sa-08.33_odp"/>.</p>
+            <link rel="assessment-for" href="#sa-8.33_smt"/>
          </part>
-         <part id="sa-8_asm-examine" name="assessment-method">
+         <part id="sa-8.33_asm-examine" name="assessment-method">
             <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="EXAMINE"/>
-            <prop name="label" class="sp800-53a" value="SA-08-Examine"/>
+            <prop name="label" class="sp800-53a" value="SA-08(33)-Examine"/>
             <part name="assessment-objects">
                <p>System and services acquisition policy</p>
                <p>system and services acquisition procedures</p>
-               <p>assessment and authorization procedures</p>
-               <p>procedures addressing security and privacy engineering principles used in the specification, design, development, implementation, and modification of the system</p>
+               <p>personally identifiable information processing policy</p>
+               <p>procedures addressing the minimization of personally identifiable information in system design</p>
                <p>system design documentation</p>
-               <p>security and privacy requirements and specifications for the system</p>
+               <p>system configuration settings and associated documentation</p>
+               <p>change control records</p>
+               <p>information security and privacy requirements and specifications for the system</p>
+               <p>system security and privacy architecture</p>
                <p>system security plan</p>
                <p>privacy plan</p>
                <p>privacy impact assessment</p>
@@ -13082,104 +12590,26 @@
                <p>other relevant documents or records</p>
             </part>
          </part>
-         <part id="sa-8_asm-interview" name="assessment-method">
+         <part id="sa-8.33_asm-interview" name="assessment-method">
             <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="INTERVIEW"/>
-            <prop name="label" class="sp800-53a" value="SA-08-Interview"/>
+            <prop name="label" class="sp800-53a" value="SA-08(33)-Interview"/>
             <part name="assessment-objects">
-               <p>Organizational personnel with acquisition/contracting responsibilities</p>
-               <p>organizational personnel with information security and privacy responsibilities</p>
+               <p>Organizational personnel with information security and privacy responsibilities</p>
                <p>organizational personnel with system specification, design, development, implementation, and modification responsibilities</p>
                <p>system developers</p>
             </part>
          </part>
-         <part id="sa-8_asm-test" name="assessment-method">
+         <part id="sa-8.33_asm-test" name="assessment-method">
             <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="TEST"/>
-            <prop name="label" class="sp800-53a" value="SA-08-Test"/>
+            <prop name="label" class="sp800-53a" value="SA-08(33)-Test"/>
             <part name="assessment-objects">
-               <p>Organizational processes for applying security and privacy engineering principles in system specification, design, development, implementation, and modification</p>
-               <p>mechanisms supporting the application of security and privacy engineering principles in system specification, design, development, implementation, and modification</p>
+               <p>Organizational processes for applying the privacy design principle of minimization in system specification, design, development, implementation, and modification</p>
+               <p>mechanisms supporting the application of the security design principle of sufficient documentation in system specification, design, development, implementation, and modification</p>
+               <p>mechanisms that enforce security and privacy policy</p>
+               <p>organizational processes for managing change configuration</p>
+               <p>mechanisms supporting configuration control</p>
             </part>
          </part>
-         <control class="SP800-53-enhancement" id="sa-8.33">
-            <title>Minimization</title>
-            <param id="sa-08.33_odp">
-               <prop name="alt-identifier" value="sa-8.33_prm_1"/>
-               <prop name="label" class="sp800-53a" value="SA-08(33)_ODP"/>
-               <label>processes</label>
-               <guideline>
-                  <p>processes that implement the privacy principle of minimization are defined;</p>
-               </guideline>
-            </param>
-            <prop name="label" class="zero-padded" value="SA-08(33)"/>
-            <prop name="label" value="SA-8(33)"/>
-            <prop name="label" class="sp800-53a" value="SA-08(33)"/>
-            <prop name="sort-id" value="sa-08.33"/>
-            <prop ns="http://csrc.nist.gov/ns/rmf"
-                   name="implementation-level"
-                   value="organization"/>
-            <prop ns="http://csrc.nist.gov/ns/rmf"
-                   name="implementation-level"
-                   value="system"/>
-            <prop ns="http://csrc.nist.gov/ns/rmf"
-                   name="contributes-to-assurance"
-                   value="true"/>
-            <link rel="required" href="#sa-8"/>
-            <link rel="related" href="#pe-8"/>
-            <link rel="related" href="#pm-25"/>
-            <link rel="related" href="#sc-42"/>
-            <link rel="related" href="#si-12"/>
-            <part name="statement" id="sa-8.33_smt">
-               <p>Implement the privacy principle of minimization using <insert type="param" id-ref="sa-08.33_odp"/>.</p>
-            </part>
-            <part name="guidance" id="sa-8.33_gdn">
-               <p>The principle of minimization states that organizations should only process personally identifiable information that is directly relevant and necessary to accomplish an authorized purpose and should only maintain personally identifiable information for as long as is necessary to accomplish the purpose. Organizations have processes in place, consistent with applicable laws and policies, to implement the principle of minimization.</p>
-            </part>
-            <part id="sa-8.33_obj" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="SA-08(33)"/>
-               <p>the privacy principle of minimization is implemented using <insert type="param" id-ref="sa-08.33_odp"/>.</p>
-               <link rel="assessment-for" href="#sa-8.33_smt"/>
-            </part>
-            <part id="sa-8.33_asm-examine" name="assessment-method">
-               <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="EXAMINE"/>
-               <prop name="label" class="sp800-53a" value="SA-08(33)-Examine"/>
-               <part name="assessment-objects">
-                  <p>System and services acquisition policy</p>
-                  <p>system and services acquisition procedures</p>
-                  <p>personally identifiable information processing policy</p>
-                  <p>procedures addressing the minimization of personally identifiable information in system design</p>
-                  <p>system design documentation</p>
-                  <p>system configuration settings and associated documentation</p>
-                  <p>change control records</p>
-                  <p>information security and privacy requirements and specifications for the system</p>
-                  <p>system security and privacy architecture</p>
-                  <p>system security plan</p>
-                  <p>privacy plan</p>
-                  <p>privacy impact assessment</p>
-                  <p>privacy risk assessment documentation</p>
-                  <p>other relevant documents or records</p>
-               </part>
-            </part>
-            <part id="sa-8.33_asm-interview" name="assessment-method">
-               <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="INTERVIEW"/>
-               <prop name="label" class="sp800-53a" value="SA-08(33)-Interview"/>
-               <part name="assessment-objects">
-                  <p>Organizational personnel with information security and privacy responsibilities</p>
-                  <p>organizational personnel with system specification, design, development, implementation, and modification responsibilities</p>
-                  <p>system developers</p>
-               </part>
-            </part>
-            <part id="sa-8.33_asm-test" name="assessment-method">
-               <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="TEST"/>
-               <prop name="label" class="sp800-53a" value="SA-08(33)-Test"/>
-               <part name="assessment-objects">
-                  <p>Organizational processes for applying the privacy design principle of minimization in system specification, design, development, implementation, and modification</p>
-                  <p>mechanisms supporting the application of the security design principle of sufficient documentation in system specification, design, development, implementation, and modification</p>
-                  <p>mechanisms that enforce security and privacy policy</p>
-                  <p>organizational processes for managing change configuration</p>
-                  <p>mechanisms supporting configuration control</p>
-               </part>
-            </part>
-         </control>
       </control>
       <control class="SP800-53" id="sa-9">
          <title>External System Services</title>
@@ -13513,267 +12943,130 @@
    <group class="family" id="sc">
       <title>System and Communications Protection</title>
       <prop name="label" value="SC"/>
-      <control class="SP800-53" id="sc-7">
-         <title>Boundary Protection</title>
-         <param id="sc-07_odp">
-            <prop name="alt-identifier" value="sc-7_prm_1"/>
-            <prop name="label" class="sp800-53a" value="SC-07_ODP"/>
-            <select>
-               <choice>physically</choice>
-               <choice>logically</choice>
-            </select>
+      <control class="SP800-53-enhancement" id="sc-7.24">
+         <title>Personally Identifiable Information</title>
+         <param id="sc-07.24_odp">
+            <prop name="alt-identifier" value="sc-7.24_prm_1"/>
+            <prop name="label" class="sp800-53a" value="SC-07(24)_ODP"/>
+            <label>processing rules</label>
+            <guideline>
+               <p>processing rules for systems that process personally identifiable information are defined;</p>
+            </guideline>
          </param>
-         <prop name="label" class="zero-padded" value="SC-07"/>
-         <prop name="label" value="SC-7"/>
-         <prop name="label" class="sp800-53a" value="SC-07"/>
-         <prop name="sort-id" value="sc-07"/>
+         <prop name="label" class="zero-padded" value="SC-07(24)"/>
+         <prop name="label" value="SC-7(24)"/>
+         <prop name="label" class="sp800-53a" value="SC-07(24)"/>
+         <prop name="sort-id" value="sc-07.24"/>
+         <prop ns="http://csrc.nist.gov/ns/rmf"
+                name="implementation-level"
+                value="organization"/>
          <prop ns="http://csrc.nist.gov/ns/rmf"
                 name="implementation-level"
                 value="system"/>
-         <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
-         <link rel="reference" href="#628d22a1-6a11-4784-bc59-5cd9497b5445"/>
-         <link rel="reference" href="#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8"/>
-         <link rel="reference" href="#a7f0e897-29a3-45c4-bd88-40dfef0e034a"/>
-         <link rel="reference" href="#d4d7c760-2907-403b-8b2a-767ca5370ecd"/>
-         <link rel="reference" href="#f5edfe51-d1f2-422e-9b27-5d0e90b49c72"/>
-         <link rel="related" href="#ac-4"/>
-         <link rel="related" href="#ac-17"/>
-         <link rel="related" href="#ac-18"/>
-         <link rel="related" href="#ac-19"/>
-         <link rel="related" href="#ac-20"/>
-         <link rel="related" href="#au-13"/>
-         <link rel="related" href="#ca-3"/>
-         <link rel="related" href="#cm-2"/>
-         <link rel="related" href="#cm-4"/>
-         <link rel="related" href="#cm-7"/>
-         <link rel="related" href="#cm-10"/>
-         <link rel="related" href="#cp-8"/>
-         <link rel="related" href="#cp-10"/>
-         <link rel="related" href="#ir-4"/>
-         <link rel="related" href="#ma-4"/>
-         <link rel="related" href="#pe-3"/>
-         <link rel="related" href="#pl-8"/>
-         <link rel="related" href="#pm-12"/>
-         <link rel="related" href="#sa-8"/>
-         <link rel="related" href="#sa-17"/>
-         <link rel="related" href="#sc-5"/>
-         <link rel="related" href="#sc-26"/>
-         <link rel="related" href="#sc-32"/>
-         <link rel="related" href="#sc-35"/>
-         <link rel="related" href="#sc-43"/>
-         <part name="statement" id="sc-7_smt">
-            <part name="item" id="sc-7_smt.a">
-               <prop name="label" value="a."/>
-               <p>Monitor and control communications at the external managed interfaces to the system and at key internal managed interfaces within the system;</p>
+         <link rel="required" href="#sc-7"/>
+         <link rel="related" href="#pt-2"/>
+         <link rel="related" href="#si-15"/>
+         <part name="statement" id="sc-7.24_smt">
+            <p>For systems that process personally identifiable information:</p>
+            <part name="item" id="sc-7.24_smt.a">
+               <prop name="label" value="(a)"/>
+               <p>Apply the following processing rules to data elements of personally identifiable information: <insert type="param" id-ref="sc-07.24_odp"/>;</p>
             </part>
-            <part name="item" id="sc-7_smt.b">
-               <prop name="label" value="b."/>
-               <p>Implement subnetworks for publicly accessible system components that are <insert type="param" id-ref="sc-07_odp"/> separated from internal organizational networks; and</p>
+            <part name="item" id="sc-7.24_smt.b">
+               <prop name="label" value="(b)"/>
+               <p>Monitor for permitted processing at the external interfaces to the system and at key internal boundaries within the system;</p>
             </part>
-            <part name="item" id="sc-7_smt.c">
-               <prop name="label" value="c."/>
-               <p>Connect to external networks or systems only through managed interfaces consisting of boundary protection devices arranged in accordance with an organizational security and privacy architecture.</p>
+            <part name="item" id="sc-7.24_smt.c">
+               <prop name="label" value="(c)"/>
+               <p>Document each processing exception; and</p>
+            </part>
+            <part name="item" id="sc-7.24_smt.d">
+               <prop name="label" value="(d)"/>
+               <p>Review and remove exceptions that are no longer supported.</p>
             </part>
          </part>
-         <part name="guidance" id="sc-7_gdn">
-            <p>Managed interfaces include gateways, routers, firewalls, guards, network-based malicious code analysis, virtualization systems, or encrypted tunnels implemented within a security architecture. Subnetworks that are physically or logically separated from internal networks are referred to as demilitarized zones or DMZs. Restricting or prohibiting interfaces within organizational systems includes restricting external web traffic to designated web servers within managed interfaces, prohibiting external traffic that appears to be spoofing internal addresses, and prohibiting internal traffic that appears to be spoofing external addresses. <a href="#f5edfe51-d1f2-422e-9b27-5d0e90b49c72">SP 800-189</a> provides additional information on source address validation techniques to prevent ingress and egress of traffic with spoofed addresses. Commercial telecommunications services are provided by network components and consolidated management systems shared by customers. These services may also include third party-provided access lines and other service elements. Such services may represent sources of increased risk despite contract security provisions. Boundary protection may be implemented as a common control for all or part of an organizational network such that the boundary to be protected is greater than a system-specific boundary (i.e., an authorization boundary).</p>
+         <part name="guidance" id="sc-7.24_gdn">
+            <p>Managing the processing of personally identifiable information is an important aspect of protecting an individual’s privacy. Applying, monitoring for, and documenting exceptions to processing rules ensure that personally identifiable information is processed only in accordance with established privacy requirements.</p>
          </part>
-         <part id="sc-7_obj" name="assessment-objective">
-            <prop name="label" class="sp800-53a" value="SC-07"/>
-            <part id="sc-7_obj.a" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="SC-07a."/>
-               <part id="sc-7_obj.a-1" name="assessment-objective">
-                  <prop name="label" class="sp800-53a" value="SC-07a.[01]"/>
-                  <p>communications at external managed interfaces to the system are monitored;</p>
-                  <link rel="assessment-for" href="#sc-7_smt.a"/>
-               </part>
-               <part id="sc-7_obj.a-2" name="assessment-objective">
-                  <prop name="label" class="sp800-53a" value="SC-07a.[02]"/>
-                  <p>communications at external managed interfaces to the system are controlled;</p>
-                  <link rel="assessment-for" href="#sc-7_smt.a"/>
-               </part>
-               <part id="sc-7_obj.a-3" name="assessment-objective">
-                  <prop name="label" class="sp800-53a" value="SC-07a.[03]"/>
-                  <p>communications at key internal managed interfaces within the system are monitored;</p>
-                  <link rel="assessment-for" href="#sc-7_smt.a"/>
-               </part>
-               <part id="sc-7_obj.a-4" name="assessment-objective">
-                  <prop name="label" class="sp800-53a" value="SC-07a.[04]"/>
-                  <p>communications at key internal managed interfaces within the system are controlled;</p>
-                  <link rel="assessment-for" href="#sc-7_smt.a"/>
-               </part>
-               <link rel="assessment-for" href="#sc-7_smt.a"/>
+         <part id="sc-7.24_obj" name="assessment-objective">
+            <prop name="label" class="sp800-53a" value="SC-07(24)"/>
+            <part id="sc-7.24_obj.a" name="assessment-objective">
+               <prop name="label" class="sp800-53a" value="SC-07(24)(a)"/>
+               <p>
+                  <insert type="param" id-ref="sc-07.24_odp"/> are applied to data elements of personally identifiable information on systems that process personally identifiable information;</p>
+               <link rel="assessment-for" href="#sc-7.24_smt.a"/>
             </part>
-            <part id="sc-7_obj.b" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="SC-07b."/>
-               <p>subnetworks for publicly accessible system components are <insert type="param" id-ref="sc-07_odp"/> separated from internal organizational networks;</p>
-               <link rel="assessment-for" href="#sc-7_smt.b"/>
+            <part id="sc-7.24_obj.b" name="assessment-objective">
+               <prop name="label" class="sp800-53a" value="SC-07(24)(b)"/>
+               <part id="sc-7.24_obj.b-1" name="assessment-objective">
+                  <prop name="label" class="sp800-53a" value="SC-07(24)(b)[01]"/>
+                  <p>permitted processing is monitored at the external interfaces to the systems that process personally identifiable information;</p>
+                  <link rel="assessment-for" href="#sc-7.24_smt.b"/>
+               </part>
+               <part id="sc-7.24_obj.b-2" name="assessment-objective">
+                  <prop name="label" class="sp800-53a" value="SC-07(24)(b)[02]"/>
+                  <p>permitted processing is monitored at key internal boundaries within the systems that process personally identifiable information;</p>
+                  <link rel="assessment-for" href="#sc-7.24_smt.b"/>
+               </part>
+               <link rel="assessment-for" href="#sc-7.24_smt.b"/>
             </part>
-            <part id="sc-7_obj.c" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="SC-07c."/>
-               <p>external networks or systems are only connected to through managed interfaces consisting of boundary protection devices arranged in accordance with an organizational security and privacy architecture.</p>
-               <link rel="assessment-for" href="#sc-7_smt.c"/>
+            <part id="sc-7.24_obj.c" name="assessment-objective">
+               <prop name="label" class="sp800-53a" value="SC-07(24)(c)"/>
+               <p>each processing exception is documented for systems that process personally identifiable information;</p>
+               <link rel="assessment-for" href="#sc-7.24_smt.c"/>
             </part>
-            <link rel="assessment-for" href="#sc-7_smt"/>
+            <part id="sc-7.24_obj.d" name="assessment-objective">
+               <prop name="label" class="sp800-53a" value="SC-07(24)(d)"/>
+               <part id="sc-7.24_obj.d-1" name="assessment-objective">
+                  <prop name="label" class="sp800-53a" value="SC-07(24)(d)[01]"/>
+                  <p>exceptions for systems that process personally identifiable information are reviewed;</p>
+                  <link rel="assessment-for" href="#sc-7.24_smt.d"/>
+               </part>
+               <part id="sc-7.24_obj.d-2" name="assessment-objective">
+                  <prop name="label" class="sp800-53a" value="SC-07(24)(d)[02]"/>
+                  <p>exceptions for systems that process personally identifiable information that are no longer supported are removed.</p>
+                  <link rel="assessment-for" href="#sc-7.24_smt.d"/>
+               </part>
+               <link rel="assessment-for" href="#sc-7.24_smt.d"/>
+            </part>
+            <link rel="assessment-for" href="#sc-7.24_smt"/>
          </part>
-         <part id="sc-7_asm-examine" name="assessment-method">
+         <part id="sc-7.24_asm-examine" name="assessment-method">
             <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="EXAMINE"/>
-            <prop name="label" class="sp800-53a" value="SC-07-Examine"/>
+            <prop name="label" class="sp800-53a" value="SC-07(24)-Examine"/>
             <part name="assessment-objects">
                <p>System and communications protection policy</p>
                <p>procedures addressing boundary protection</p>
+               <p>personally identifiable information processing policies</p>
                <p>list of key internal boundaries of the system</p>
                <p>system design documentation</p>
-               <p>boundary protection hardware and software</p>
                <p>system configuration settings and associated documentation</p>
-               <p>enterprise security architecture documentation</p>
+               <p>enterprise security and privacy architecture documentation</p>
                <p>system audit records</p>
                <p>system security plan</p>
+               <p>privacy plan</p>
+               <p>personally identifiable information inventory documentation</p>
+               <p>data mapping documentation</p>
                <p>other relevant documents or records</p>
             </part>
          </part>
-         <part id="sc-7_asm-interview" name="assessment-method">
+         <part id="sc-7.24_asm-interview" name="assessment-method">
             <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="INTERVIEW"/>
-            <prop name="label" class="sp800-53a" value="SC-07-Interview"/>
+            <prop name="label" class="sp800-53a" value="SC-07(24)-Interview"/>
             <part name="assessment-objects">
                <p>System/network administrators</p>
-               <p>organizational personnel with information security responsibilities</p>
+               <p>organizational personnel with information security and privacy responsibilities</p>
                <p>system developer</p>
                <p>organizational personnel with boundary protection responsibilities</p>
             </part>
          </part>
-         <part id="sc-7_asm-test" name="assessment-method">
+         <part id="sc-7.24_asm-test" name="assessment-method">
             <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="TEST"/>
-            <prop name="label" class="sp800-53a" value="SC-07-Test"/>
+            <prop name="label" class="sp800-53a" value="SC-07(24)-Test"/>
             <part name="assessment-objects">
                <p>Mechanisms implementing boundary protection capabilities</p>
             </part>
          </part>
-         <control class="SP800-53-enhancement" id="sc-7.24">
-            <title>Personally Identifiable Information</title>
-            <param id="sc-07.24_odp">
-               <prop name="alt-identifier" value="sc-7.24_prm_1"/>
-               <prop name="label" class="sp800-53a" value="SC-07(24)_ODP"/>
-               <label>processing rules</label>
-               <guideline>
-                  <p>processing rules for systems that process personally identifiable information are defined;</p>
-               </guideline>
-            </param>
-            <prop name="label" class="zero-padded" value="SC-07(24)"/>
-            <prop name="label" value="SC-7(24)"/>
-            <prop name="label" class="sp800-53a" value="SC-07(24)"/>
-            <prop name="sort-id" value="sc-07.24"/>
-            <prop ns="http://csrc.nist.gov/ns/rmf"
-                   name="implementation-level"
-                   value="organization"/>
-            <prop ns="http://csrc.nist.gov/ns/rmf"
-                   name="implementation-level"
-                   value="system"/>
-            <link rel="required" href="#sc-7"/>
-            <link rel="related" href="#pt-2"/>
-            <link rel="related" href="#si-15"/>
-            <part name="statement" id="sc-7.24_smt">
-               <p>For systems that process personally identifiable information:</p>
-               <part name="item" id="sc-7.24_smt.a">
-                  <prop name="label" value="(a)"/>
-                  <p>Apply the following processing rules to data elements of personally identifiable information: <insert type="param" id-ref="sc-07.24_odp"/>;</p>
-               </part>
-               <part name="item" id="sc-7.24_smt.b">
-                  <prop name="label" value="(b)"/>
-                  <p>Monitor for permitted processing at the external interfaces to the system and at key internal boundaries within the system;</p>
-               </part>
-               <part name="item" id="sc-7.24_smt.c">
-                  <prop name="label" value="(c)"/>
-                  <p>Document each processing exception; and</p>
-               </part>
-               <part name="item" id="sc-7.24_smt.d">
-                  <prop name="label" value="(d)"/>
-                  <p>Review and remove exceptions that are no longer supported.</p>
-               </part>
-            </part>
-            <part name="guidance" id="sc-7.24_gdn">
-               <p>Managing the processing of personally identifiable information is an important aspect of protecting an individual’s privacy. Applying, monitoring for, and documenting exceptions to processing rules ensure that personally identifiable information is processed only in accordance with established privacy requirements.</p>
-            </part>
-            <part id="sc-7.24_obj" name="assessment-objective">
-               <prop name="label" class="sp800-53a" value="SC-07(24)"/>
-               <part id="sc-7.24_obj.a" name="assessment-objective">
-                  <prop name="label" class="sp800-53a" value="SC-07(24)(a)"/>
-                  <p>
-                     <insert type="param" id-ref="sc-07.24_odp"/> are applied to data elements of personally identifiable information on systems that process personally identifiable information;</p>
-                  <link rel="assessment-for" href="#sc-7.24_smt.a"/>
-               </part>
-               <part id="sc-7.24_obj.b" name="assessment-objective">
-                  <prop name="label" class="sp800-53a" value="SC-07(24)(b)"/>
-                  <part id="sc-7.24_obj.b-1" name="assessment-objective">
-                     <prop name="label" class="sp800-53a" value="SC-07(24)(b)[01]"/>
-                     <p>permitted processing is monitored at the external interfaces to the systems that process personally identifiable information;</p>
-                     <link rel="assessment-for" href="#sc-7.24_smt.b"/>
-                  </part>
-                  <part id="sc-7.24_obj.b-2" name="assessment-objective">
-                     <prop name="label" class="sp800-53a" value="SC-07(24)(b)[02]"/>
-                     <p>permitted processing is monitored at key internal boundaries within the systems that process personally identifiable information;</p>
-                     <link rel="assessment-for" href="#sc-7.24_smt.b"/>
-                  </part>
-                  <link rel="assessment-for" href="#sc-7.24_smt.b"/>
-               </part>
-               <part id="sc-7.24_obj.c" name="assessment-objective">
-                  <prop name="label" class="sp800-53a" value="SC-07(24)(c)"/>
-                  <p>each processing exception is documented for systems that process personally identifiable information;</p>
-                  <link rel="assessment-for" href="#sc-7.24_smt.c"/>
-               </part>
-               <part id="sc-7.24_obj.d" name="assessment-objective">
-                  <prop name="label" class="sp800-53a" value="SC-07(24)(d)"/>
-                  <part id="sc-7.24_obj.d-1" name="assessment-objective">
-                     <prop name="label" class="sp800-53a" value="SC-07(24)(d)[01]"/>
-                     <p>exceptions for systems that process personally identifiable information are reviewed;</p>
-                     <link rel="assessment-for" href="#sc-7.24_smt.d"/>
-                  </part>
-                  <part id="sc-7.24_obj.d-2" name="assessment-objective">
-                     <prop name="label" class="sp800-53a" value="SC-07(24)(d)[02]"/>
-                     <p>exceptions for systems that process personally identifiable information that are no longer supported are removed.</p>
-                     <link rel="assessment-for" href="#sc-7.24_smt.d"/>
-                  </part>
-                  <link rel="assessment-for" href="#sc-7.24_smt.d"/>
-               </part>
-               <link rel="assessment-for" href="#sc-7.24_smt"/>
-            </part>
-            <part id="sc-7.24_asm-examine" name="assessment-method">
-               <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="EXAMINE"/>
-               <prop name="label" class="sp800-53a" value="SC-07(24)-Examine"/>
-               <part name="assessment-objects">
-                  <p>System and communications protection policy</p>
-                  <p>procedures addressing boundary protection</p>
-                  <p>personally identifiable information processing policies</p>
-                  <p>list of key internal boundaries of the system</p>
-                  <p>system design documentation</p>
-                  <p>system configuration settings and associated documentation</p>
-                  <p>enterprise security and privacy architecture documentation</p>
-                  <p>system audit records</p>
-                  <p>system security plan</p>
-                  <p>privacy plan</p>
-                  <p>personally identifiable information inventory documentation</p>
-                  <p>data mapping documentation</p>
-                  <p>other relevant documents or records</p>
-               </part>
-            </part>
-            <part id="sc-7.24_asm-interview" name="assessment-method">
-               <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="INTERVIEW"/>
-               <prop name="label" class="sp800-53a" value="SC-07(24)-Interview"/>
-               <part name="assessment-objects">
-                  <p>System/network administrators</p>
-                  <p>organizational personnel with information security and privacy responsibilities</p>
-                  <p>system developer</p>
-                  <p>organizational personnel with boundary protection responsibilities</p>
-               </part>
-            </part>
-            <part id="sc-7.24_asm-test" name="assessment-method">
-               <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="TEST"/>
-               <prop name="label" class="sp800-53a" value="SC-07(24)-Test"/>
-               <part name="assessment-objects">
-                  <p>Mechanisms implementing boundary protection capabilities</p>
-               </part>
-            </part>
-         </control>
       </control>
    </group>
    <group class="family" id="si">
@@ -15141,13 +14434,6 @@
          </citation>
          <rlink href="https://doi.org/10.6028/NIST.SP.800-161"/>
       </resource>
-      <resource uuid="2956e175-f674-43f4-b1b9-e074ad9fc39c">
-         <title>SP 800-162</title>
-         <citation>
-            <text>Hu VC, Ferraiolo DF, Kuhn R, Schnitzer A, Sandlin K, Miller R, Scarfone KA (2014) Guide to Attribute Based Access Control (ABAC) Definition and Considerations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-162, Includes updates as of August 2, 2019.</text>
-         </citation>
-         <rlink href="https://doi.org/10.6028/NIST.SP.800-162"/>
-      </resource>
       <resource uuid="7dbd6d9f-29d6-4d1d-9766-f2d77ff3c849">
          <title>SP 800-171</title>
          <citation>
@@ -15161,13 +14447,6 @@
             <text>Ross RS, Pillitteri VY, Graubart RD, Guissanie G, Wagner R, Bodeau D (2020) Enhanced Security Requirements for Protecting Controlled Unclassified Information: A Supplement to NIST Special Publication 800-171 (Final Public Draft). (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-172.</text>
          </citation>
          <rlink href="https://doi.org/10.6028/NIST.SP.800-172-draft"/>
-      </resource>
-      <resource uuid="388a3aa2-5d85-4bad-b8a3-77db80d63c4f">
-         <title>SP 800-178</title>
-         <citation>
-            <text>Ferraiolo DF, Hu VC, Kuhn R, Chandramouli R (2016) A Comparison of Attribute Based Access Control (ABAC) Standards for Data Service Applications: Extensible Access Control Markup Language (XACML) and Next Generation Access Control (NGAC). (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-178.</text>
-         </citation>
-         <rlink href="https://doi.org/10.6028/NIST.SP.800-178"/>
       </resource>
       <resource uuid="276bd50a-7e58-48e5-a405-8c8cb91d7a5f">
          <title>SP 800-181</title>
@@ -15189,13 +14468,6 @@
             <text>Garfinkel S (2016) De-Identifying Government Datasets. (National Institute of Standards and Technology, Gaithersburg, MD), Second Draft NIST Special Publication (SP) 800-188.</text>
          </citation>
          <rlink href="https://csrc.nist.gov/publications/detail/sp/800-188/draft"/>
-      </resource>
-      <resource uuid="f5edfe51-d1f2-422e-9b27-5d0e90b49c72">
-         <title>SP 800-189</title>
-         <citation>
-            <text>Sriram K, Montgomery D (2019) Resilient Interdomain Traffic Exchange: BGP Security and DDoS Mitigation. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-189.</text>
-         </citation>
-         <rlink href="https://doi.org/10.6028/NIST.SP.800-189"/>
       </resource>
       <resource uuid="30eb758a-2707-4bca-90ad-949a74d4eb16">
          <title>SP 800-18</title>
@@ -15232,13 +14504,6 @@
          </citation>
          <rlink href="https://doi.org/10.6028/NIST.SP.800-39"/>
       </resource>
-      <resource uuid="a7f0e897-29a3-45c4-bd88-40dfef0e034a">
-         <title>SP 800-41</title>
-         <citation>
-            <text>Scarfone KA, Hoffman P (2009) Guidelines on Firewalls and Firewall Policy. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-41, Rev. 1.</text>
-         </citation>
-         <rlink href="https://doi.org/10.6028/NIST.SP.800-41r1"/>
-      </resource>
       <resource uuid="511f6832-23ca-49a3-8c0f-ce493373cab8">
          <title>SP 800-50</title>
          <citation>
@@ -15266,27 +14531,6 @@
             <text>Chew E, Swanson MA, Stine KM, Bartol N, Brown A, Robinson W (2008) Performance Measurement Guide for Information Security. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-55, Rev. 1.</text>
          </citation>
          <rlink href="https://doi.org/10.6028/NIST.SP.800-55r1"/>
-      </resource>
-      <resource uuid="110e26af-4765-49e1-8740-6750f83fcda1">
-         <title>SP 800-57-1</title>
-         <citation>
-            <text>Barker EB (2020) Recommendation for Key Management: Part 1 – General. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-57 Part 1, Rev. 5.</text>
-         </citation>
-         <rlink href="https://doi.org/10.6028/NIST.SP.800-57pt1r5"/>
-      </resource>
-      <resource uuid="e7942589-e267-4a5a-a3d9-f39a7aae81f0">
-         <title>SP 800-57-2</title>
-         <citation>
-            <text>Barker EB, Barker WC (2019) Recommendation for Key Management: Part 2 – Best Practices for Key Management Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-57 Part 2, Rev. 1.</text>
-         </citation>
-         <rlink href="https://doi.org/10.6028/NIST.SP.800-57pt2r1"/>
-      </resource>
-      <resource uuid="8306620b-1920-4d73-8b21-12008528595f">
-         <title>SP 800-57-3</title>
-         <citation>
-            <text>Barker EB, Dang QH (2015) Recommendation for Key Management, Part 3: Application-Specific Key Management Guidance. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-57 Part 3, Rev. 1.</text>
-         </citation>
-         <rlink href="https://doi.org/10.6028/NIST.SP.800-57pt3r1"/>
       </resource>
       <resource uuid="e72fde0b-6fc2-497e-a9db-d8fce5a11b8a">
          <title>SP 800-60-1</title>
@@ -15329,13 +14573,6 @@
             <text>Cooper DA, Ferraiolo H, Mehta KL, Francomacaro S, Chandramouli R, Mohler J (2015) Interfaces for Personal Identity Verification. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-73-4, Includes updates as of February 8, 2016.</text>
          </citation>
          <rlink href="https://doi.org/10.6028/NIST.SP.800-73-4"/>
-      </resource>
-      <resource uuid="d4d7c760-2907-403b-8b2a-767ca5370ecd">
-         <title>SP 800-77</title>
-         <citation>
-            <text>Barker EB, Dang QH, Frankel SE, Scarfone KA, Wouters P (2020) Guide to IPsec VPNs. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-77, Rev. 1.</text>
-         </citation>
-         <rlink href="https://doi.org/10.6028/NIST.SP.800-77r1"/>
       </resource>
       <resource uuid="3dd249b0-f57d-44ba-a03e-c3eab1b835ff">
          <title>SP 800-83</title>
