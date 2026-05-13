@@ -70,7 +70,7 @@
         <prop name="label" value="Access Control (3.1)"/>
         <control id="SP_800_172_3_0_0_03.01.01E" class="security_requirement">
             <title>Dual Authorization</title>
-            <param id=A.03.01.01E.ODP.01">
+            <param id="A.03.01.01E.ODP.01">
                 <prop name="label" value="A.03.01.01E.ODP[01]"/>
                 <label>privileged commands and/or other actions</label>
                 <usage>
@@ -162,7 +162,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.01.02E" class="security_requirement">
             <title>Non-Organizationally Owned Systems - Restricted Use</title>
-            <param id=A.03.01.02E.ODP.01">
+            <param id="A.03.01.02E.ODP.01">
                 <prop name="label" value="A.03.01.02E.ODP[01]"/>
                 <label>restrictions</label>
                 <usage>
@@ -264,7 +264,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.01.04E" class="security_requirement">
             <title>Concurrent Session Control</title>
-            <param id=A.03.01.04E.ODP.01">
+            <param id="A.03.01.04E.ODP.01">
                 <prop name="label" value="A.03.01.04E.ODP[01]"/>
                 <label>account and/or account types</label>
                 <usage>
@@ -274,7 +274,7 @@
                     <p>accounts and/or account types for which to limit the number of concurrent sessions is defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.01.04E.ODP.02">
+            <param id="A.03.01.04E.ODP.02">
                 <prop name="label" value="A.03.01.04E.ODP[02]"/>
                 <label>number</label>
                 <usage>
@@ -593,7 +593,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.01.08E" class="security_requirement">
             <title>Account Monitoring for Atypical Usage</title>
-            <param id=A.03.01.08E.ODP.01">
+            <param id="A.03.01.08E.ODP.01">
                 <prop name="label" value="A.03.01.08E.ODP[01]"/>
                 <label>atypical usage</label>
                 <usage>
@@ -603,7 +603,7 @@
                     <p>atypical usage for which to monitor system accounts is defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.01.08E.ODP.02">
+            <param id="A.03.01.08E.ODP.02">
                 <prop name="label" value="A.03.01.08E.ODP[02]"/>
                 <label>personnel or roles</label>
                 <usage>
@@ -694,7 +694,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.01.09E" class="security_requirement">
             <title>Attribute-Based Access Control</title>
-            <param id=A.03.01.09E.ODP.01">
+            <param id="A.03.01.09E.ODP.01">
                 <prop name="label" value="A.03.01.09E.ODP[01]"/>
                 <label>attributes</label>
                 <usage>
@@ -794,7 +794,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.01.10E" class="security_requirement">
             <title>Object Security Attributes</title>
-            <param id=A.03.01.10E.ODP.01">
+            <param id="A.03.01.10E.ODP.01">
                 <prop name="label" value="A.03.01.10E.ODP[01]"/>
                 <label>security attributes</label>
                 <usage>
@@ -804,7 +804,7 @@
                     <p>security attributes to be associated with information, source, and destination objects are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.01.10E.ODP.02">
+            <param id="A.03.01.10E.ODP.02">
                 <prop name="label" value="A.03.01.10E.ODP[02]"/>
                 <label>information objects</label>
                 <usage>
@@ -814,7 +814,7 @@
                     <p>information objects to be associated with information security attributes are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.01.10E.ODP.03">
+            <param id="A.03.01.10E.ODP.03">
                 <prop name="label" value="A.03.01.10E.ODP[03]"/>
                 <label>source objects</label>
                 <usage>
@@ -824,7 +824,7 @@
                     <p>source objects to be associated with information security attributes are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.01.10E.ODP.04">
+            <param id="A.03.01.10E.ODP.04">
                 <prop name="label" value="A.03.01.10E.ODP[04]"/>
                 <label>destination objects</label>
                 <usage>
@@ -834,7 +834,7 @@
                     <p>destination objects to be associated with information security attributes are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.01.10E.ODP.05">
+            <param id="A.03.01.10E.ODP.05">
                 <prop name="label" value="A.03.01.10E.ODP[05]"/>
                 <label>information flow control policies</label>
                 <usage>
@@ -926,7 +926,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.01.11E" class="security_requirement">
             <title>Role-Based Access Control</title>
-            <param id=A.03.01.11E.ODP.01">
+            <param id="A.03.01.11E.ODP.01">
                 <prop name="label" value="A.03.01.11E.ODP[01]"/>
                 <usage>
                     <p>organization-defined roles and users authorized to assume such roles</p>
@@ -1023,7 +1023,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.01.12E" class="security_requirement">
             <title>Physical or Logical Separation of CUI Flows</title>
-            <param id=A.03.01.12E.ODP.01">
+            <param id="A.03.01.12E.ODP.01">
                 <prop name="label" value="A.03.01.12E.ODP[01]"/>
                 <usage>
                     <p>organization-defined mechanisms and/or techniques</p>
@@ -1110,7 +1110,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.01.13E" class="security_requirement">
             <title>Metadata</title>
-            <param id=A.03.01.13E.ODP.01">
+            <param id="A.03.01.13E.ODP.01">
                 <prop name="label" value="A.03.01.13E.ODP[01]"/>
                 <label>metadata</label>
                 <usage>
@@ -1195,7 +1195,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.01.14E" class="security_requirement">
             <title>Security Policy Filters</title>
-            <param id=A.03.01.14E.ODP.01">
+            <param id="A.03.01.14E.ODP.01">
                 <prop name="label" value="A.03.01.14E.ODP[01]"/>
                 <usage>
                     <p>organization-defined security policy filters</p>
@@ -1204,7 +1204,7 @@
                     <p>security policy filers are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.01.14E.ODP.02">
+            <param id="A.03.01.14E.ODP.02">
                 <prop name="label" value="A.03.01.14E.ODP[02]"/>
                 <usage>
                     <p>organization-defined information flows</p>
@@ -1213,7 +1213,7 @@
                     <p>information flows are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.01.14E.ODP.03">
+            <param id="A.03.01.14E.ODP.03">
                 <prop name="label" value="A.03.01.14E.ODP[03]"/>
                 <label>SELECTED PARAMETER VALUE(S)</label>
                 <select how-many="one-or-more">
@@ -1223,7 +1223,7 @@
                     <choice>Quarantine</choice>
                 </select>
             </param>
-            <param id=A.03.01.14E.ODP.04">
+            <param id="A.03.01.14E.ODP.04">
                 <prop name="label" value="A.03.01.14E.ODP[04]"/>
                 <usage>
                     <p>organization-defined security policy</p>
@@ -1328,7 +1328,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.01.15E" class="security_requirement">
             <title>Data Type Identifiers</title>
-            <param id=A.03.01.15E.ODP.01">
+            <param id="A.03.01.15E.ODP.01">
                 <prop name="label" value="A.03.01.15E.ODP[01]"/>
                 <label>data type identifiers</label>
                 <usage>
@@ -1414,7 +1414,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.01.16E" class="security_requirement">
             <title>Decomposition Into Policy-Relevant Subcomponents</title>
-            <param id=A.03.01.16E.ODP.01">
+            <param id="A.03.01.16E.ODP.01">
                 <prop name="label" value="A.03.01.16E.ODP[01]"/>
                 <label>policy-relevant subcomponents</label>
                 <usage>
@@ -1499,7 +1499,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.01.17E" class="security_requirement">
             <title>Detection of Unsanctioned CUI</title>
-            <param id=A.03.01.17E.ODP.01">
+            <param id="A.03.01.17E.ODP.01">
                 <prop name="label" value="A.03.01.17E.ODP[01]"/>
                 <usage>
                     <p>organization-defined unsanctioned information</p>
@@ -1508,7 +1508,7 @@
                     <p>unsanctioned information to be detected is defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.01.17E.ODP.02">
+            <param id="A.03.01.17E.ODP.02">
                 <prop name="label" value="A.03.01.17E.ODP[02]"/>
                 <usage>
                     <p>organization-defined security policy</p>
@@ -1612,7 +1612,7 @@
         <prop name="label" value="Awareness and Training (3.2)"/>
         <control id="SP_800_172_3_0_0_03.02.01E" class="security_requirement">
             <title>Advanced Literacy and Awareness Training</title>
-            <param id=A.03.02.01E.ODP.01">
+            <param id="A.03.02.01E.ODP.01">
                 <prop name="label" value="A.03.02.01E.ODP[01]"/>
                 <label>indicators of malicious code</label>
                 <usage>
@@ -1622,7 +1622,7 @@
                     <p>indicators of malicious code are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.02.01E.ODP.02">
+            <param id="A.03.02.01E.ODP.02">
                 <prop name="label" value="A.03.02.01E.ODP[02]"/>
                 <label>frequency</label>
                 <usage>
@@ -1632,7 +1632,7 @@
                     <p>the frequency at which to update security literacy training content is defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.02.01E.ODP.03">
+            <param id="A.03.02.01E.ODP.03">
                 <prop name="label" value="A.03.02.01E.ODP[03]"/>
                 <label>events</label>
                 <usage>
@@ -1827,7 +1827,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.02.03E" class="security_requirement">
             <title>Literacy and Awareness Training Feedback</title>
-            <param id=A.03.02.03E.ODP.01">
+            <param id="A.03.02.03E.ODP.01">
                 <prop name="label" value="A.03.02.03E.ODP[01]"/>
                 <label>personnel</label>
                 <usage>
@@ -1907,7 +1907,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.02.04E" class="security_requirement">
             <title>Anti-Counterfeit Training</title>
-            <param id=A.03.02.04E.ODP.01">
+            <param id="A.03.02.04E.ODP.01">
                 <prop name="label" value="A.03.02.04E.ODP[01]"/>
                 <label>personnel or roles</label>
                 <usage>
@@ -2074,7 +2074,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.03.02E" class="security_requirement">
             <title>Real-Time Alerts for Audit Processing Failures</title>
-            <param id=A.03.03.02E.ODP.01">
+            <param id="A.03.03.02E.ODP.01">
                 <prop name="label" value="A.03.03.02E.ODP[01]"/>
                 <label>real-time period</label>
                 <usage>
@@ -2084,7 +2084,7 @@
                     <p>real-time period requiring alerts when audit failure events (defined in A.03.03.02E.ODP.03) occur is defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.03.02E.ODP.02">
+            <param id="A.03.03.02E.ODP.02">
                 <prop name="label" value="A.03.03.02E.ODP[02]"/>
                 <label>personnel, roles, and/or locations</label>
                 <usage>
@@ -2094,7 +2094,7 @@
                     <p>personnel, roles, and/or locations to be alerted in real time when audit failure events (defined in A.03.03.02E.ODP.03) occur are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.03.02E.ODP.03">
+            <param id="A.03.03.02E.ODP.03">
                 <prop name="label" value="A.03.03.02E.ODP[03]"/>
                 <label>audit logging failure events</label>
                 <usage>
@@ -2177,7 +2177,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.03.03E" class="security_requirement">
             <title>Dual Authorization for Audit Information and Actions</title>
-            <param id=A.03.03.03E.ODP.01">
+            <param id="A.03.03.03E.ODP.01">
                 <prop name="label" value="A.03.03.03E.ODP[01]"/>
                 <label>SELECTED PARAMETER VALUE(S)</label>
                 <select how-many="one-or-more">
@@ -2185,7 +2185,7 @@
                     <choice>deletion</choice>
                 </select>
             </param>
-            <param id=A.03.03.03E.ODP.02">
+            <param id="A.03.03.03E.ODP.02">
                 <prop name="label" value="A.03.03.03E.ODP[02]"/>
                 <label>audit information</label>
                 <usage>
@@ -2278,7 +2278,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.03.04E" class="security_requirement">
             <title>Integrated Analysis of Audit Records</title>
-            <param id=A.03.03.04E.ODP.01">
+            <param id="A.03.03.04E.ODP.01">
                 <prop name="label" value="A.03.03.04E.ODP[01]"/>
                 <label>SELECTED PARAMETER VALUE(S)</label>
                 <select how-many="one-or-more">
@@ -2290,7 +2290,7 @@
                     </choice>
                 </select>
             </param>
-            <param id=A.03.03.04E.ODP.02">
+            <param id="A.03.03.04E.ODP.02">
                 <prop name="label" value="A.03.03.04E.ODP[02]"/>
                 <label>data/information collected from other sources</label>
                 <usage>
@@ -2393,7 +2393,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.04.02E" class="security_requirement">
             <title>Automated Unauthorized Component Detection</title>
-            <param id=A.03.04.02E.ODP.01">
+            <param id="A.03.04.02E.ODP.01">
                 <prop name="label" value="A.03.04.02E.ODP[01]"/>
                 <label>automated mechanisms</label>
                 <usage>
@@ -2403,7 +2403,7 @@
                     <p>automated mechanisms used to detect the presence of unauthorized or misconfigured system components are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.04.02E.ODP.02">
+            <param id="A.03.04.02E.ODP.02">
                 <prop name="label" value="A.03.04.02E.ODP[02]"/>
                 <label>SELECTED PARAMETER VALUE(S)</label>
                 <select how-many="one-or-more">
@@ -2414,7 +2414,7 @@
                     </choice>
                 </select>
             </param>
-            <param id=A.03.04.02E.ODP.03">
+            <param id="A.03.04.02E.ODP.03">
                 <prop name="label" value="A.03.04.02E.ODP[03]"/>
                 <label>personnel or roles</label>
                 <usage>
@@ -2544,14 +2544,14 @@
         </control>
         <control id="SP_800_172_3_0_0_03.04.03E" class="security_requirement">
             <title>Automated Maintenance of System Component Inventory</title>
-            <param id=A.03.04.03E_prm_1">
+            <param id="A.03.04.03E_prm_1">
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.04.03E.ODP[01]"/>
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.04.03E.ODP[02]"/>
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.04.03E.ODP[03]"/>
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.04.03E.ODP[04]"/>
                 <label>organization-defined automated mechanisms</label>
             </param>
-            <param id=A.03.04.03E.ODP.01">
+            <param id="A.03.04.03E.ODP.01">
                 <prop name="label" value="A.03.04.03E.ODP[01]"/>
                 <label>automated mechanisms</label>
                 <usage>
@@ -2561,7 +2561,7 @@
                     <p>automated mechanisms used to maintain the currency of the system component inventory are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.04.03E.ODP.02">
+            <param id="A.03.04.03E.ODP.02">
                 <prop name="label" value="A.03.04.03E.ODP[02]"/>
                 <label>automated mechanisms</label>
                 <usage>
@@ -2571,7 +2571,7 @@
                     <p>automated mechanisms used to maintain the completeness of the system component inventory are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.04.03E.ODP.03">
+            <param id="A.03.04.03E.ODP.03">
                 <prop name="label" value="A.03.04.03E.ODP[03]"/>
                 <label>automated mechanisms</label>
                 <usage>
@@ -2581,7 +2581,7 @@
                     <p>automated mechanisms used to maintain the accuracy of the system component inventory are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.04.03E.ODP.04">
+            <param id="A.03.04.03E.ODP.04">
                 <prop name="label" value="A.03.04.03E.ODP[04]"/>
                 <label>automated mechanisms</label>
                 <usage>
@@ -2703,7 +2703,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.04.04E" class="security_requirement">
             <title>Automation Support for Baseline Configuration</title>
-            <param id=A.03.04.04E.ODP.01">
+            <param id="A.03.04.04E.ODP.01">
                 <prop name="label" value="A.03.04.04E.ODP[01]"/>
                 <label>automated mechanisms</label>
                 <usage>
@@ -2824,12 +2824,12 @@
         </control>
         <control id="SP_800_172_3_0_0_03.04.05E" class="security_requirement">
             <title>Dual Authorization for System Changes</title>
-            <param id=A.03.04.05E_prm_1">
+            <param id="A.03.04.05E_prm_1">
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.04.05E.ODP[01]"/>
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.04.05E.ODP[02]"/>
                 <label>organization-defined system components and system-level information</label>
             </param>
-            <param id=A.03.04.05E.ODP.01">
+            <param id="A.03.04.05E.ODP.01">
                 <prop name="label" value="A.03.04.05E.ODP[01]"/>
                 <label>system components</label>
                 <usage>
@@ -2839,7 +2839,7 @@
                     <p>system components requiring dual authorization for the implementation of changes are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.04.05E.ODP.02">
+            <param id="A.03.04.05E.ODP.02">
                 <prop name="label" value="A.03.04.05E.ODP[02]"/>
                 <label>system-level information</label>
                 <usage>
@@ -2935,7 +2935,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.04.06E" class="security_requirement">
             <title>Retention of Previous Configurations</title>
-            <param id=A.03.04.06E.ODP.01">
+            <param id="A.03.04.06E.ODP.01">
                 <prop name="label" value="A.03.04.06E.ODP[01]"/>
                 <label>number</label>
                 <usage>
@@ -3199,7 +3199,7 @@
         <prop name="label" value="Identification and Authentication (3.5)"/>
         <control id="SP_800_172_3_0_0_03.05.01E" class="security_requirement">
             <title>Cryptographic Bidirectional Authentication</title>
-            <param id=A.03.05.01E.ODP.01">
+            <param id="A.03.05.01E.ODP.01">
                 <prop name="label" value="A.03.05.01E.ODP[01]"/>
                 <label>devices and/or types of devices</label>
                 <usage>
@@ -3296,7 +3296,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.05.02E" class="security_requirement">
             <title>Password Managers</title>
-            <param id=A.03.05.02E.ODP.01">
+            <param id="A.03.05.02E.ODP.01">
                 <prop name="label" value="A.03.05.02E.ODP[01]"/>
                 <label>password managers</label>
                 <usage>
@@ -3306,7 +3306,7 @@
                     <p>password managers employed for generating and managing passwords are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.05.02E.ODP.02">
+            <param id="A.03.05.02E.ODP.02">
                 <prop name="label" value="A.03.05.02E.ODP[02]"/>
                 <label>safeguards</label>
                 <usage>
@@ -3407,7 +3407,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.05.03E" class="security_requirement">
             <title>Device Attestation</title>
-            <param id=A.03.05.03E.ODP.01">
+            <param id="A.03.05.03E.ODP.01">
                 <prop name="label" value="A.03.05.03E.ODP[01]"/>
                 <usage>
                     <p>organization-defined configuration management process</p>
@@ -3578,7 +3578,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.05.05E" class="security_requirement">
             <title>Expiration of Cached Authenticators</title>
-            <param id=A.03.05.05E.ODP.01">
+            <param id="A.03.05.05E.ODP.01">
                 <prop name="label" value="A.03.05.05E.ODP[01]"/>
                 <label>time period</label>
                 <usage>
@@ -3759,7 +3759,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.05.07E" class="security_requirement">
             <title>Identity Providers and Authorization Servers</title>
-            <param id=A.03.05.07E.ODP.01">
+            <param id="A.03.05.07E.ODP.01">
                 <prop name="label" value="A.03.05.07E.ODP[01]"/>
                 <label>policy</label>
                 <usage>
@@ -3769,7 +3769,7 @@
                     <p>an identification and authentication policy is defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.05.07E.ODP.02">
+            <param id="A.03.05.07E.ODP.02">
                 <prop name="label" value="A.03.05.07E.ODP[02]"/>
                 <label>mechanisms</label>
                 <usage>
@@ -3953,7 +3953,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.06.02E" class="security_requirement">
             <title>Integrated Incident Response Team</title>
-            <param id=A.03.06.02E.ODP.01">
+            <param id="A.03.06.02E.ODP.01">
                 <prop name="label" value="A.03.06.02E.ODP[01]"/>
                 <label>time period</label>
                 <usage>
@@ -4058,7 +4058,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.06.03E" class="security_requirement">
             <title>Behavior Analysis</title>
-            <param id=A.03.06.03E.ODP.01">
+            <param id="A.03.06.03E.ODP.01">
                 <prop name="label" value="A.03.06.03E.ODP[01]"/>
                 <label>environments or resources</label>
                 <usage>
@@ -4136,13 +4136,13 @@
         </control>
         <control id="SP_800_172_3_0_0_03.06.04E" class="security_requirement">
             <title>Automated Tracking, Data Collection, and Analysis for Incident Monitoring</title>
-            <param id=A.03.06.04E_prm_1">
+            <param id="A.03.06.04E_prm_1">
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.06.04E.ODP[01]"/>
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.06.04E.ODP[02]"/>
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.06.04E.ODP[03]"/>
                 <label>organization-defined automated mechanisms</label>
             </param>
-            <param id=A.03.06.04E.ODP.01">
+            <param id="A.03.06.04E.ODP.01">
                 <prop name="label" value="A.03.06.04E.ODP[01]"/>
                 <label>automated mechanisms</label>
                 <usage>
@@ -4152,7 +4152,7 @@
                     <p>automated mechanisms used to track incidents are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.06.04E.ODP.02">
+            <param id="A.03.06.04E.ODP.02">
                 <prop name="label" value="A.03.06.04E.ODP[02]"/>
                 <label>automated mechanisms</label>
                 <usage>
@@ -4162,7 +4162,7 @@
                     <p>automated mechanisms used to collect incident information are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.06.04E.ODP.03">
+            <param id="A.03.06.04E.ODP.03">
                 <prop name="label" value="A.03.06.04E.ODP[03]"/>
                 <label>automated mechanisms</label>
                 <usage>
@@ -4325,7 +4325,7 @@
         <prop name="label" value="Media Protection (3.8)"/>
         <control id="SP_800_172_3_0_0_03.08.01E" class="security_requirement">
             <title>Dual Authorization for Media Sanitization</title>
-            <param id=A.03.08.01E.ODP.01">
+            <param id="A.03.08.01E.ODP.01">
                 <prop name="label" value="A.03.08.01E.ODP[01]"/>
                 <label>system media</label>
                 <usage>
@@ -4413,7 +4413,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.08.02E" class="security_requirement">
             <title>Dual Authorization for System Backup Deletion and Destruction</title>
-            <param id=A.03.08.02E.ODP.01">
+            <param id="A.03.08.02E.ODP.01">
                 <prop name="label" value="A.03.08.02E.ODP[01]"/>
                 <label>system backup information</label>
                 <usage>
@@ -4499,12 +4499,12 @@
         </control>
         <control id="SP_800_172_3_0_0_03.08.03E" class="security_requirement">
             <title>Testing System Backups for Reliability and Integrity</title>
-            <param id=A.03.08.03E_prm_1">
+            <param id="A.03.08.03E_prm_1">
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.08.03E.ODP[01]"/>
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.08.03E.ODP[02]"/>
                 <label>organization-defined frequency</label>
             </param>
-            <param id=A.03.08.03E.ODP.01">
+            <param id="A.03.08.03E.ODP.01">
                 <prop name="label" value="A.03.08.03E.ODP[01]"/>
                 <label>frequency</label>
                 <usage>
@@ -4514,7 +4514,7 @@
                     <p>the frequency at which to test backup information for media reliability is defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.08.03E.ODP.02">
+            <param id="A.03.08.03E.ODP.02">
                 <prop name="label" value="A.03.08.03E.ODP[02]"/>
                 <label>frequency</label>
                 <usage>
@@ -4620,12 +4620,12 @@
         </control>
         <control id="SP_800_172_3_0_0_03.08.04E" class="security_requirement">
             <title>System Recovery and Reconstitution</title>
-            <param id=A.03.08.04E_prm_1">
+            <param id="A.03.08.04E_prm_1">
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.08.04E.ODP[01]"/>
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.08.04E.ODP[02]"/>
                 <label>organization-defined time period consistent with recovery time and recovery point objectives</label>
             </param>
-            <param id=A.03.08.04E.ODP.01">
+            <param id="A.03.08.04E.ODP.01">
                 <prop name="label" value="A.03.08.04E.ODP[01]"/>
                 <label>time period</label>
                 <usage>
@@ -4635,7 +4635,7 @@
                     <p>a time period consistent with recovery time and recovery point objectives for the recovery of the system is determined.</p>
                 </guideline>
             </param>
-            <param id=A.03.08.04E.ODP.02">
+            <param id="A.03.08.04E.ODP.02">
                 <prop name="label" value="A.03.08.04E.ODP[02]"/>
                 <label>time period</label>
                 <usage>
@@ -4740,12 +4740,12 @@
         </control>
         <control id="SP_800_172_3_0_0_03.09.03E" class="security_requirement">
             <title>Access Agreements</title>
-            <param id=A.03.09.03E_prm_1">
+            <param id="A.03.09.03E_prm_1">
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.09.03E.ODP[01]"/>
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.09.03E.ODP[02]"/>
                 <label>organization-defined frequency</label>
             </param>
-            <param id=A.03.09.03E.ODP.01">
+            <param id="A.03.09.03E.ODP.01">
                 <prop name="label" value="A.03.09.03E.ODP[01]"/>
                 <label>frequency</label>
                 <usage>
@@ -4755,7 +4755,7 @@
                     <p>the frequency at which to review and update access agreements is defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.09.03E.ODP.02">
+            <param id="A.03.09.03E.ODP.02">
                 <prop name="label" value="A.03.09.03E.ODP[02]"/>
                 <label>frequency</label>
                 <usage>
@@ -4873,7 +4873,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.09.04E" class="security_requirement">
             <title>Citizenship Requirements</title>
-            <param id=A.03.09.04E.ODP.01">
+            <param id="A.03.09.04E.ODP.01">
                 <prop name="label" value="A.03.09.04E.ODP[01]"/>
                 <usage>
                     <p>organization-defined citizenship requirements</p>
@@ -5017,12 +5017,12 @@
         </control>
         <control id="SP_800_172_3_0_0_03.10.02E" class="security_requirement">
             <title>Delivery and Removal of System Components</title>
-            <param id=A.03.10.02E_prm_1">
+            <param id="A.03.10.02E_prm_1">
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.10.02E.ODP[01]"/>
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.10.02E.ODP[02]"/>
                 <label>organization-defined types of system components</label>
             </param>
-            <param id=A.03.10.02E.ODP.01">
+            <param id="A.03.10.02E.ODP.01">
                 <prop name="label" value="A.03.10.02E.ODP[01]"/>
                 <label>types of system components</label>
                 <usage>
@@ -5032,7 +5032,7 @@
                     <p>the types of system components to be authorized and controlled when entering the facility are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.10.02E.ODP.02">
+            <param id="A.03.10.02E.ODP.02">
                 <prop name="label" value="A.03.10.02E.ODP[02]"/>
                 <label>types of system components</label>
                 <usage>
@@ -5223,7 +5223,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.11.02E" class="security_requirement">
             <title>Threat Hunting</title>
-            <param id=A.03.11.02E.ODP.01">
+            <param id="A.03.11.02E.ODP.01">
                 <prop name="label" value="A.03.11.02E.ODP[01]"/>
                 <label>frequency</label>
                 <usage>
@@ -5348,7 +5348,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.11.03E" class="security_requirement">
             <title>Predictive Cyber Analytics</title>
-            <param id=A.03.11.03E.ODP.01">
+            <param id="A.03.11.03E.ODP.01">
                 <prop name="label" value="A.03.11.03E.ODP[01]"/>
                 <label>advanced automation capabilities</label>
                 <usage>
@@ -5358,7 +5358,7 @@
                     <p>advanced automation capabilities to predict and identify risks are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.11.03E.ODP.02">
+            <param id="A.03.11.03E.ODP.02">
                 <prop name="label" value="A.03.11.03E.ODP[02]"/>
                 <label>systems or system components</label>
                 <usage>
@@ -5368,7 +5368,7 @@
                     <p>systems or system components in which advanced automation and analytics capabilities are to be employed are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.11.03E.ODP.03">
+            <param id="A.03.11.03E.ODP.03">
                 <prop name="label" value="A.03.11.03E.ODP[03]"/>
                 <label>advanced analytics capabilities</label>
                 <usage>
@@ -5519,7 +5519,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.11.08E" class="security_requirement">
             <title>Dynamic Threat Awareness</title>
-            <param id=A.03.11.08E.ODP.01">
+            <param id="A.03.11.08E.ODP.01">
                 <prop name="label" value="A.03.11.08E.ODP[01]"/>
                 <label>means</label>
                 <usage>
@@ -5596,7 +5596,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.11.09E" class="security_requirement">
             <title>Indicators of Compromise</title>
-            <param id=A.03.11.09E.ODP.01">
+            <param id="A.03.11.09E.ODP.01">
                 <prop name="label" value="A.03.11.09E.ODP[01]"/>
                 <label>sources</label>
                 <usage>
@@ -5606,7 +5606,7 @@
                     <p>sources that provide indicators of compromise are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.11.09E.ODP.02">
+            <param id="A.03.11.09E.ODP.02">
                 <prop name="label" value="A.03.11.09E.ODP[02]"/>
                 <label>personnel or roles</label>
                 <usage>
@@ -5702,7 +5702,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.11.10E" class="security_requirement">
             <title>Criticality Analysis</title>
-            <param id=A.03.11.10E.ODP.01">
+            <param id="A.03.11.10E.ODP.01">
                 <prop name="label" value="A.03.11.10E.ODP[01]"/>
                 <label>systems, system components, or system services</label>
                 <usage>
@@ -5712,7 +5712,7 @@
                     <p>systems, system components, or system services to be analyzed for criticality are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.11.10E.ODP.02">
+            <param id="A.03.11.10E.ODP.02">
                 <prop name="label" value="A.03.11.10E.ODP[02]"/>
                 <label>decision points</label>
                 <usage>
@@ -5790,7 +5790,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.11.11E" class="security_requirement">
             <title>Discoverable Information</title>
-            <param id=A.03.11.11E.ODP.01">
+            <param id="A.03.11.11E.ODP.01">
                 <prop name="label" value="A.03.11.11E.ODP[01]"/>
                 <label>corrective actions</label>
                 <usage>
@@ -5967,7 +5967,7 @@
         <prop name="label" value="Security Assessment and Monitoring (3.12)"/>
         <control id="SP_800_172_3_0_0_03.12.01E" class="security_requirement">
             <title>Penetration Testing</title>
-            <param id=A.03.12.01E.ODP.01">
+            <param id="A.03.12.01E.ODP.01">
                 <prop name="label" value="A.03.12.01E.ODP[01]"/>
                 <label>frequency</label>
                 <usage>
@@ -5977,7 +5977,7 @@
                     <p>the frequency at which to conduct penetration testing on systems or system components is defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.12.01E.ODP.02">
+            <param id="A.03.12.01E.ODP.02">
                 <prop name="label" value="A.03.12.01E.ODP[02]"/>
                 <label>systems or system components</label>
                 <usage>
@@ -6233,7 +6233,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.12.04E" class="security_requirement">
             <title>Internal System Connections</title>
-            <param id=A.03.12.04E.ODP.01">
+            <param id="A.03.12.04E.ODP.01">
                 <prop name="label" value="A.03.12.04E.ODP[01]"/>
                 <label>system components or classes of components</label>
                 <usage>
@@ -6243,7 +6243,7 @@
                     <p>system components or classes of components requiring internal connections to the system are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.12.04E.ODP.02">
+            <param id="A.03.12.04E.ODP.02">
                 <prop name="label" value="A.03.12.04E.ODP[02]"/>
                 <label>conditions</label>
                 <usage>
@@ -6253,7 +6253,7 @@
                     <p>conditions requiring the termination of internal connections are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.12.04E.ODP.03">
+            <param id="A.03.12.04E.ODP.03">
                 <prop name="label" value="A.03.12.04E.ODP[03]"/>
                 <label>frequency</label>
                 <usage>
@@ -6388,7 +6388,7 @@
         <prop name="label" value="System and Communications Protection (3.13)"/>
         <control id="SP_800_172_3_0_0_03.13.01E" class="security_requirement">
             <title>Heterogeneity</title>
-            <param id=A.03.13.01E.ODP.01">
+            <param id="A.03.13.01E.ODP.01">
                 <prop name="label" value="A.03.13.01E.ODP[01]"/>
                 <label>system components</label>
                 <usage>
@@ -6488,7 +6488,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.13.02E" class="security_requirement">
             <title>Randomness</title>
-            <param id=A.03.13.02E.ODP.01">
+            <param id="A.03.13.02E.ODP.01">
                 <prop name="label" value="A.03.13.02E.ODP[01]"/>
                 <label>techniques</label>
                 <usage>
@@ -6592,7 +6592,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.13.03E" class="security_requirement">
             <title>Concealment and Misdirection</title>
-            <param id=A.03.13.03E.ODP.01">
+            <param id="A.03.13.03E.ODP.01">
                 <prop name="label" value="A.03.13.03E.ODP[01]"/>
                 <label>concealment and misdirection techniques</label>
                 <usage>
@@ -6696,7 +6696,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.13.04E" class="security_requirement">
             <title>Isolation of System Components</title>
-            <param id=A.03.13.04E.ODP.01">
+            <param id="A.03.13.04E.ODP.01">
                 <prop name="label" value="A.03.13.04E.ODP[01]"/>
                 <label>system components</label>
                 <usage>
@@ -6793,7 +6793,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.13.05E" class="security_requirement">
             <title>Change Processing and Storage Locations</title>
-            <param id=A.03.13.05E.ODP.01">
+            <param id="A.03.13.05E.ODP.01">
                 <prop name="label" value="A.03.13.05E.ODP[01]"/>
                 <label>processing and/or storage</label>
                 <usage>
@@ -6803,7 +6803,7 @@
                     <p>processing and/or storage locations to be changed are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.13.05E.ODP.02">
+            <param id="A.03.13.05E.ODP.02">
                 <prop name="label" value="A.03.13.05E.ODP[02]"/>
                 <label>SELECTED PARAMETER VALUE</label>
                 <select how-many="one">
@@ -6813,7 +6813,7 @@
                     <choice>at random time intervals</choice>
                 </select>
             </param>
-            <param id=A.03.13.05E.ODP.03">
+            <param id="A.03.13.05E.ODP.03">
                 <prop name="label" value="A.03.13.05E.ODP[03]"/>
                 <label>frequency</label>
                 <usage>
@@ -6916,7 +6916,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.13.06E" class="security_requirement">
             <title>Platform-Independent Applications</title>
-            <param id=A.03.13.06E.ODP.01">
+            <param id="A.03.13.06E.ODP.01">
                 <prop name="label" value="A.03.13.06E.ODP[01]"/>
                 <label>platform-independent applications</label>
                 <usage>
@@ -6991,7 +6991,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.13.07E" class="security_requirement">
             <title>Virtualization Techniques</title>
-            <param id=A.03.13.07E.ODP.01">
+            <param id="A.03.13.07E.ODP.01">
                 <prop name="label" value="A.03.13.07E.ODP[01]"/>
                 <label>frequency</label>
                 <usage>
@@ -7178,7 +7178,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.13.09E" class="security_requirement">
             <title>Isolation of Security Tools, Mechanisms, and Support Components</title>
-            <param id=A.03.13.09E.ODP.01">
+            <param id="A.03.13.09E.ODP.01">
                 <prop name="label" value="A.03.13.09E.ODP[01]"/>
                 <label>information security tools, mechanisms, and support components</label>
                 <usage>
@@ -7348,7 +7348,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.13.11E" class="security_requirement">
             <title>Thin Nodes</title>
-            <param id=A.03.13.11E.ODP.01">
+            <param id="A.03.13.11E.ODP.01">
                 <prop name="label" value="A.03.13.11E.ODP[01]"/>
                 <label>system components</label>
                 <usage>
@@ -7437,7 +7437,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.13.12E" class="security_requirement">
             <title>Denial-of-Service Protection</title>
-            <param id=A.03.13.12E.ODP.01">
+            <param id="A.03.13.12E.ODP.01">
                 <prop name="label" value="A.03.13.12E.ODP[01]"/>
                 <label>types of denial-of-service events</label>
                 <usage>
@@ -7447,7 +7447,7 @@
                     <p>the types of denial-of-service events to be protected against or limited are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.13.12E.ODP.02">
+            <param id="A.03.13.12E.ODP.02">
                 <prop name="label" value="A.03.13.12E.ODP[02]"/>
                 <label>SELECTED PARAMETER VALUE</label>
                 <select how-many="one">
@@ -7455,7 +7455,7 @@
                     <choice>Limit</choice>
                 </select>
             </param>
-            <param id=A.03.13.12E.ODP.03">
+            <param id="A.03.13.12E.ODP.03">
                 <prop name="label" value="A.03.13.12E.ODP[03]"/>
                 <label>safeguards</label>
                 <usage>
@@ -7574,7 +7574,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.13.13E" class="security_requirement">
             <title>Port and Input/Output Device Access</title>
-            <param id=A.03.13.13E.ODP.01">
+            <param id="A.03.13.13E.ODP.01">
                 <prop name="label" value="A.03.13.13E.ODP[01]"/>
                 <label>connection ports or input/output devices</label>
                 <usage>
@@ -7584,7 +7584,7 @@
                     <p>connection ports or input/output devices to be disabled or removed are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.13.13E.ODP.02">
+            <param id="A.03.13.13E.ODP.02">
                 <prop name="label" value="A.03.13.13E.ODP[02]"/>
                 <label>SELECTED PARAMETER VALUE</label>
                 <select how-many="one">
@@ -7592,7 +7592,7 @@
                     <choice>Logically</choice>
                 </select>
             </param>
-            <param id=A.03.13.13E.ODP.03">
+            <param id="A.03.13.13E.ODP.03">
                 <prop name="label" value="A.03.13.13E.ODP[03]"/>
                 <label>systems or system components</label>
                 <usage>
@@ -7683,7 +7683,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.13.14E" class="security_requirement">
             <title>Detonation Chambers</title>
-            <param id=A.03.13.14E.ODP.01">
+            <param id="A.03.13.14E.ODP.01">
                 <prop name="label" value="A.03.13.14E.ODP[01]"/>
                 <label>system, system component, or location</label>
                 <usage>
@@ -7782,7 +7782,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.13.15E" class="security_requirement">
             <title>Separate Subnets to Isolate System Components and Functions</title>
-            <param id=A.03.13.15E.ODP.01">
+            <param id="A.03.13.15E.ODP.01">
                 <prop name="label" value="A.03.13.15E.ODP[01]"/>
                 <label>SELECTED PARAMETER VALUE</label>
                 <select how-many="one">
@@ -7790,7 +7790,7 @@
                     <choice>logically</choice>
                 </select>
             </param>
-            <param id=A.03.13.15E.ODP.02">
+            <param id="A.03.13.15E.ODP.02">
                 <prop name="label" value="A.03.13.15E.ODP[02]"/>
                 <label>critical system components and functions</label>
                 <usage>
@@ -7890,7 +7890,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.13.16E" class="security_requirement">
             <title>System Partitioning</title>
-            <param id=A.03.13.16E.ODP.01">
+            <param id="A.03.13.16E.ODP.01">
                 <prop name="label" value="A.03.13.16E.ODP[01]"/>
                 <label>system components</label>
                 <usage>
@@ -7900,7 +7900,7 @@
                     <p>system components to reside in separate physical or logical domains or environments based on circumstances for the physical or logical separation of components are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.13.16E.ODP.02">
+            <param id="A.03.13.16E.ODP.02">
                 <prop name="label" value="A.03.13.16E.ODP[02]"/>
                 <label>SELECTED PARAMETER VALUE</label>
                 <select how-many="one">
@@ -7908,7 +7908,7 @@
                     <choice>logical</choice>
                 </select>
             </param>
-            <param id=A.03.13.16E.ODP.03">
+            <param id="A.03.13.16E.ODP.03">
                 <prop name="label" value="A.03.13.16E.ODP[03]"/>
                 <label>circumstances</label>
                 <usage>
@@ -8020,19 +8020,19 @@
         <prop name="label" value="System and Information Integrity (3.14)"/>
         <control id="SP_800_172_3_0_0_03.14.01E" class="security_requirement">
             <title>Software, Firmware, and Information Integrity</title>
-            <param id=A.03.14.01E_prm_1">
+            <param id="A.03.14.01E_prm_1">
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.14.01E.ODP[01]"/>
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.14.01E.ODP[02]"/>
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.14.01E.ODP[03]"/>
                 <label>organization-defined software, firmware, and information</label>
             </param>
-            <param id=A.03.14.01E_prm_2">
+            <param id="A.03.14.01E_prm_2">
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.14.01E.ODP[04]"/>
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.14.01E.ODP[05]"/>
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.14.01E.ODP[06]"/>
                 <label>organization-defined actions</label>
             </param>
-            <param id=A.03.14.01E.ODP.01">
+            <param id="A.03.14.01E.ODP.01">
                 <prop name="label" value="A.03.14.01E.ODP[01]"/>
                 <label>software</label>
                 <usage>
@@ -8042,7 +8042,7 @@
                     <p>software requiring integrity verification tools to be used to detect unauthorized changes is defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.14.01E.ODP.02">
+            <param id="A.03.14.01E.ODP.02">
                 <prop name="label" value="A.03.14.01E.ODP[02]"/>
                 <label>firmware</label>
                 <usage>
@@ -8052,7 +8052,7 @@
                     <p>firmware requiring integrity verification tools to be used to detect unauthorized changes is defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.14.01E.ODP.03">
+            <param id="A.03.14.01E.ODP.03">
                 <prop name="label" value="A.03.14.01E.ODP[03]"/>
                 <label>information</label>
                 <usage>
@@ -8062,7 +8062,7 @@
                     <p>information requiring integrity verification tools to be used to detect unauthorized changes is defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.14.01E.ODP.04">
+            <param id="A.03.14.01E.ODP.04">
                 <prop name="label" value="A.03.14.01E.ODP[04]"/>
                 <label>actions</label>
                 <usage>
@@ -8072,7 +8072,7 @@
                     <p>actions to be taken when unauthorized changes to software are detected are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.14.01E.ODP.05">
+            <param id="A.03.14.01E.ODP.05">
                 <prop name="label" value="A.03.14.01E.ODP[05]"/>
                 <label>actions</label>
                 <usage>
@@ -8082,7 +8082,7 @@
                     <p>actions to be taken when unauthorized changes to firmware are detected are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.14.01E.ODP.06">
+            <param id="A.03.14.01E.ODP.06">
                 <prop name="label" value="A.03.14.01E.ODP[06]"/>
                 <label>actions</label>
                 <usage>
@@ -8233,7 +8233,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.14.04E" class="security_requirement">
             <title>Refresh From Trusted Sources</title>
-            <param id=A.03.14.04E.ODP.01">
+            <param id="A.03.14.04E.ODP.01">
                 <prop name="label" value="A.03.14.04E.ODP[01]"/>
                 <label>trusted sources</label>
                 <usage>
@@ -8318,7 +8318,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.14.05E" class="security_requirement">
             <title>Non-Persistent Information</title>
-            <param id=A.03.14.05E.ODP.01">
+            <param id="A.03.14.05E.ODP.01">
                 <prop name="label" value="A.03.14.05E.ODP[01]"/>
                 <label>SELECTED PARAMETER VALUE</label>
                 <select how-many="one">
@@ -8331,7 +8331,7 @@
                     </choice>
                 </select>
             </param>
-            <param id=A.03.14.05E.ODP.02">
+            <param id="A.03.14.05E.ODP.02">
                 <prop name="label" value="A.03.14.05E.ODP[02]"/>
                 <label>information</label>
                 <usage>
@@ -8341,7 +8341,7 @@
                     <p>the information to be refreshed is defined (if selected).</p>
                 </guideline>
             </param>
-            <param id=A.03.14.05E.ODP.03">
+            <param id="A.03.14.05E.ODP.03">
                 <prop name="label" value="A.03.14.05E.ODP[03]"/>
                 <label>frequency</label>
                 <usage>
@@ -8351,7 +8351,7 @@
                     <p>the frequency at which to refresh information is defined (if selected).</p>
                 </guideline>
             </param>
-            <param id=A.03.14.05E.ODP.04">
+            <param id="A.03.14.05E.ODP.04">
                 <prop name="label" value="A.03.14.05E.ODP[04]"/>
                 <label>information</label>
                 <usage>
@@ -8467,25 +8467,25 @@
         </control>
         <control id="SP_800_172_3_0_0_03.14.08E" class="security_requirement">
             <title>Integrity Checks</title>
-            <param id=A.03.14.08E_prm_1">
+            <param id="A.03.14.08E_prm_1">
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.14.08E.ODP[01]"/>
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.14.08E.ODP[05]"/>
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.14.08E.ODP[09]"/>
                 <label>organization-defined software, firmware, and information</label>
             </param>
-            <param id=A.03.14.08E_prm_2">
+            <param id="A.03.14.08E_prm_2">
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.14.08E.ODP[03]"/>
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.14.08E.ODP[07]"/>
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.14.08E.ODP[11]"/>
                 <label>organization-defined transitional states or security-relevant events</label>
             </param>
-            <param id=A.03.14.08E_prm_3">
+            <param id="A.03.14.08E_prm_3">
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.14.08E.ODP[04]"/>
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.14.08E.ODP[08]"/>
                 <prop name="aggregates" ns="http://csrc.nist.gov/ns/rmf" value="A.03.14.08E.ODP[12]"/>
                 <label>organization-defined frequency</label>
             </param>
-            <param id=A.03.14.08E.ODP.01">
+            <param id="A.03.14.08E.ODP.01">
                 <prop name="label" value="A.03.14.08E.ODP[01]"/>
                 <label>software</label>
                 <usage>
@@ -8495,7 +8495,7 @@
                     <p>software on which an integrity check is to be performed is defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.14.08E.ODP.02">
+            <param id="A.03.14.08E.ODP.02">
                 <prop name="label" value="A.03.14.08E.ODP[02]"/>
                 <label>SELECTED PARAMETER VALUE(S)</label>
                 <select how-many="one-or-more">
@@ -8508,7 +8508,7 @@
                     </choice>
                 </select>
             </param>
-            <param id=A.03.14.08E.ODP.05">
+            <param id="A.03.14.08E.ODP.05">
                 <prop name="label" value="A.03.14.08E.ODP[05]"/>
                 <label>firmware</label>
                 <usage>
@@ -8518,7 +8518,7 @@
                     <p>firmware on which an integrity check is to be performed is defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.14.08E.ODP.06">
+            <param id="A.03.14.08E.ODP.06">
                 <prop name="label" value="A.03.14.08E.ODP[06]"/>
                 <label>SELECTED PARAMETER VALUE(S)</label>
                 <select how-many="one-or-more">
@@ -8531,7 +8531,7 @@
                     </choice>
                 </select>
             </param>
-            <param id=A.03.14.08E.ODP.09">
+            <param id="A.03.14.08E.ODP.09">
                 <prop name="label" value="A.03.14.08E.ODP[09]"/>
                 <label>information</label>
                 <usage>
@@ -8541,7 +8541,7 @@
                     <p>information on which an integrity check is to be performed is defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.14.08E.ODP.10">
+            <param id="A.03.14.08E.ODP.10">
                 <prop name="label" value="A.03.14.08E.ODP[10]"/>
                 <label>SELECTED PARAMETER VALUE(S)</label>
                 <select how-many="one-or-more">
@@ -8554,7 +8554,7 @@
                     </choice>
                 </select>
             </param>
-            <param id=A.03.14.08E.ODP.03">
+            <param id="A.03.14.08E.ODP.03">
                 <prop name="label" value="A.03.14.08E.ODP[03]"/>
                 <label>transitional states or security-relevant events</label>
                 <usage>
@@ -8564,7 +8564,7 @@
                     <p>transitional states or security-relevant events requiring integrity checks (on software) are defined (if selected).</p>
                 </guideline>
             </param>
-            <param id=A.03.14.08E.ODP.04">
+            <param id="A.03.14.08E.ODP.04">
                 <prop name="label" value="A.03.14.08E.ODP[04]"/>
                 <label>frequency</label>
                 <usage>
@@ -8574,7 +8574,7 @@
                     <p>the frequency at which to perform an integrity check (on software) is defined (if selected).</p>
                 </guideline>
             </param>
-            <param id=A.03.14.08E.ODP.07">
+            <param id="A.03.14.08E.ODP.07">
                 <prop name="label" value="A.03.14.08E.ODP[07]"/>
                 <label>transitional states or security-relevant events</label>
                 <usage>
@@ -8584,7 +8584,7 @@
                     <p>transitional states or security-relevant events requiring integrity checks (on firmware) are defined (if selected).</p>
                 </guideline>
             </param>
-            <param id=A.03.14.08E.ODP.08">
+            <param id="A.03.14.08E.ODP.08">
                 <prop name="label" value="A.03.14.08E.ODP[08]"/>
                 <label>frequency</label>
                 <usage>
@@ -8594,7 +8594,7 @@
                     <p>the frequency at which to perform an integrity check (on firmware) is defined (if selected).</p>
                 </guideline>
             </param>
-            <param id=A.03.14.08E.ODP.11">
+            <param id="A.03.14.08E.ODP.11">
                 <prop name="label" value="A.03.14.08E.ODP[11]"/>
                 <label>transitional states or security-relevant events</label>
                 <usage>
@@ -8604,7 +8604,7 @@
                     <p>transitional states or security-relevant events requiring integrity checks (of information) are defined (if selected).</p>
                 </guideline>
             </param>
-            <param id=A.03.14.08E.ODP.12">
+            <param id="A.03.14.08E.ODP.12">
                 <prop name="label" value="A.03.14.08E.ODP[12]"/>
                 <label>frequency</label>
                 <usage>
@@ -8805,7 +8805,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.14.10E" class="security_requirement">
             <title>Protection of Boot Firmware</title>
-            <param id=A.03.14.10E.ODP.01">
+            <param id="A.03.14.10E.ODP.01">
                 <prop name="label" value="A.03.14.10E.ODP[01]"/>
                 <label>mechanisms</label>
                 <usage>
@@ -8815,7 +8815,7 @@
                     <p>mechanisms to be implemented to protect the integrity of boot firmware in system components are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.14.10E.ODP.02">
+            <param id="A.03.14.10E.ODP.02">
                 <prop name="label" value="A.03.14.10E.ODP[02]"/>
                 <label>system components</label>
                 <usage>
@@ -8907,7 +8907,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.14.11E" class="security_requirement">
             <title>Integration of Detection and Response</title>
-            <param id=A.03.14.11E.ODP.01">
+            <param id="A.03.14.11E.ODP.01">
                 <prop name="label" value="A.03.14.11E.ODP[01]"/>
                 <label>changes</label>
                 <usage>
@@ -8986,7 +8986,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.14.12E" class="security_requirement">
             <title>Information Input Validation</title>
-            <param id=A.03.14.12E.ODP.01">
+            <param id="A.03.14.12E.ODP.01">
                 <prop name="label" value="A.03.14.12E.ODP[01]"/>
                 <label>information inputs</label>
                 <usage>
@@ -9066,7 +9066,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.14.13E" class="security_requirement">
             <title>Error Handling</title>
-            <param id=A.03.14.13E.ODP.01">
+            <param id="A.03.14.13E.ODP.01">
                 <prop name="label" value="A.03.14.13E.ODP[01]"/>
                 <label>personnel or roles</label>
                 <usage>
@@ -9156,7 +9156,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.14.14E" class="security_requirement">
             <title>Memory Protection</title>
-            <param id=A.03.14.14E.ODP.01">
+            <param id="A.03.14.14E.ODP.01">
                 <prop name="label" value="A.03.14.14E.ODP[01]"/>
                 <label>safeguards</label>
                 <usage>
@@ -9243,7 +9243,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.14.15E" class="security_requirement">
             <title>Non-Persistent System Components and Services</title>
-            <param id=A.03.14.15E.ODP.01">
+            <param id="A.03.14.15E.ODP.01">
                 <prop name="label" value="A.03.14.15E.ODP[01]"/>
                 <label>non-persistent system components and services</label>
                 <usage>
@@ -9253,7 +9253,7 @@
                     <p>non-persistent system components and services to be implemented are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.14.15E.ODP.02">
+            <param id="A.03.14.15E.ODP.02">
                 <prop name="label" value="A.03.14.15E.ODP[02]"/>
                 <label>SELECTED PARAMETER VALUE(S)</label>
                 <select how-many="one-or-more">
@@ -9263,7 +9263,7 @@
                     </choice>
                 </select>
             </param>
-            <param id=A.03.14.15E.ODP.03">
+            <param id="A.03.14.15E.ODP.03">
                 <prop name="label" value="A.03.14.15E.ODP[03]"/>
                 <label>frequency</label>
                 <usage>
@@ -9394,7 +9394,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.14.16E" class="security_requirement">
             <title>Tainting</title>
-            <param id=A.03.14.16E.ODP.01">
+            <param id="A.03.14.16E.ODP.01">
                 <prop name="label" value="A.03.14.16E.ODP[01]"/>
                 <label>systems or system components</label>
                 <usage>
@@ -9473,7 +9473,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.14.17E" class="security_requirement">
             <title>System-Generated Alerts</title>
-            <param id=A.03.14.17E.ODP.01">
+            <param id="A.03.14.17E.ODP.01">
                 <prop name="label" value="A.03.14.17E.ODP[01]"/>
                 <label>personnel or roles</label>
                 <usage>
@@ -9483,7 +9483,7 @@
                     <p>personnel or roles to be alerted when indications of compromise or potential compromise occur are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.14.17E.ODP.02">
+            <param id="A.03.14.17E.ODP.02">
                 <prop name="label" value="A.03.14.17E.ODP[02]"/>
                 <label>indicators of compromise</label>
                 <usage>
@@ -9568,7 +9568,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.14.18E" class="security_requirement">
             <title>Automated Organization-Generated Alerts</title>
-            <param id=A.03.14.18E.ODP.01">
+            <param id="A.03.14.18E.ODP.01">
                 <prop name="label" value="A.03.14.18E.ODP[01]"/>
                 <label>personnel or roles</label>
                 <usage>
@@ -9578,7 +9578,7 @@
                     <p>personnel or roles to be alerted when indications of inappropriate or unusual activity with security implications occur are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.14.18E.ODP.02">
+            <param id="A.03.14.18E.ODP.02">
                 <prop name="label" value="A.03.14.18E.ODP[02]"/>
                 <label>automated mechanisms</label>
                 <usage>
@@ -9588,7 +9588,7 @@
                     <p>automated mechanisms used to alert personnel or roles are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.14.18E.ODP.03">
+            <param id="A.03.14.18E.ODP.03">
                 <prop name="label" value="A.03.14.18E.ODP[03]"/>
                 <label>activities</label>
                 <usage>
@@ -9756,7 +9756,7 @@
         <prop name="label" value="Planning (3.15)"/>
         <control id="SP_800_172_3_0_0_03.15.01E" class="security_requirement">
             <title>Security Architecture</title>
-            <param id=A.03.15.01E.ODP.01">
+            <param id="A.03.15.01E.ODP.01">
                 <prop name="label" value="A.03.15.01E.ODP[01]"/>
                 <label>frequency</label>
                 <usage>
@@ -9883,7 +9883,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.15.02E" class="security_requirement">
             <title>Defense In Depth</title>
-            <param id=A.03.15.02E.ODP.01">
+            <param id="A.03.15.02E.ODP.01">
                 <prop name="label" value="A.03.15.02E.ODP[01]"/>
                 <label>security requirements</label>
                 <usage>
@@ -9893,7 +9893,7 @@
                     <p>safeguards to be allocated to architectural layers and locations are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.15.02E.ODP.02">
+            <param id="A.03.15.02E.ODP.02">
                 <prop name="label" value="A.03.15.02E.ODP[02]"/>
                 <label>architectural layers and locations</label>
                 <usage>
@@ -10015,7 +10015,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.15.03E" class="security_requirement">
             <title>Supplier Diversity</title>
-            <param id=A.03.15.03E.ODP.01">
+            <param id="A.03.15.03E.ODP.01">
                 <prop name="label" value="A.03.15.03E.ODP[01]"/>
                 <label>safeguards</label>
                 <usage>
@@ -10025,7 +10025,7 @@
                     <p>safeguards to be allocated to architectural layers and locations are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.15.03E.ODP.02">
+            <param id="A.03.15.03E.ODP.02">
                 <prop name="label" value="A.03.15.03E.ODP[02]"/>
                 <label>architectural layers and locations</label>
                 <usage>
@@ -10132,7 +10132,7 @@
         <prop name="label" value="System and Services Acquisition (3.16)"/>
         <control id="SP_800_172_3_0_0_03.16.01E" class="security_requirement">
             <title>Specialization</title>
-            <param id=A.03.16.01E.ODP.01">
+            <param id="A.03.16.01E.ODP.01">
                 <prop name="label" value="A.03.16.01E.ODP[01]"/>
                 <label>SELECTED PARAMETER VALUE(S)</label>
                 <select how-many="one-or-more">
@@ -10142,7 +10142,7 @@
                     <choice>reconfiguration</choice>
                 </select>
             </param>
-            <param id=A.03.16.01E.ODP.02">
+            <param id="A.03.16.01E.ODP.02">
                 <prop name="label" value="A.03.16.01E.ODP[02]"/>
                 <label>systems or system components</label>
                 <usage>
@@ -10234,7 +10234,7 @@
         <prop name="label" value="Supply Chain Risk Management (3.17)"/>
         <control id="SP_800_172_3_0_0_03.17.01E" class="security_requirement">
             <title>Notification Agreements</title>
-            <param id=A.03.17.01E.ODP.01">
+            <param id="A.03.17.01E.ODP.01">
                 <prop name="label" value="A.03.17.01E.ODP[01]"/>
                 <label>SELECTED PARAMETER VALUE(S)</label>
                 <select how-many="one-or-more">
@@ -10245,7 +10245,7 @@
                     </choice>
                 </select>
             </param>
-            <param id=A.03.17.01E.ODP.02">
+            <param id="A.03.17.01E.ODP.02">
                 <prop name="label" value="A.03.17.01E.ODP[02]"/>
                 <label>information</label>
                 <usage>
@@ -10332,7 +10332,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.17.02E" class="security_requirement">
             <title>Inspection of Systems or Components</title>
-            <param id=A.03.17.02E.ODP.01">
+            <param id="A.03.17.02E.ODP.01">
                 <prop name="label" value="A.03.17.02E.ODP[01]"/>
                 <label>systems or system components</label>
                 <usage>
@@ -10342,7 +10342,7 @@
                     <p>systems or system components that require inspection are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.17.02E.ODP.02">
+            <param id="A.03.17.02E.ODP.02">
                 <prop name="label" value="A.03.17.02E.ODP[02]"/>
                 <label>SELECTED PARAMETER VALUE(S)</label>
                 <select how-many="one-or-more">
@@ -10355,7 +10355,7 @@
                     </choice>
                 </select>
             </param>
-            <param id=A.03.17.02E.ODP.03">
+            <param id="A.03.17.02E.ODP.03">
                 <prop name="label" value="A.03.17.02E.ODP[03]"/>
                 <label>frequency</label>
                 <usage>
@@ -10365,7 +10365,7 @@
                     <p>the frequency at which to inspect systems or system components is defined (if selected).</p>
                 </guideline>
             </param>
-            <param id=A.03.17.02E.ODP.04">
+            <param id="A.03.17.02E.ODP.04">
                 <prop name="label" value="A.03.17.02E.ODP[04]"/>
                 <label>indications of the need for inspection</label>
                 <usage>
@@ -10447,7 +10447,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.17.03E" class="security_requirement">
             <title>Component Authenticity</title>
-            <param id=A.03.17.03E.ODP.01">
+            <param id="A.03.17.03E.ODP.01">
                 <prop name="label" value="A.03.17.03E.ODP[01]"/>
                 <label>SELECTED PARAMETER VALUE(S)</label>
                 <select how-many="one-or-more">
@@ -10460,7 +10460,7 @@
                     </choice>
                 </select>
             </param>
-            <param id=A.03.17.03E.ODP.02">
+            <param id="A.03.17.03E.ODP.02">
                 <prop name="label" value="A.03.17.03E.ODP[02]"/>
                 <label>external reporting organizations</label>
                 <usage>
@@ -10470,7 +10470,7 @@
                     <p>external reporting organizations to whom counterfeit system components are to be reported are defined (if selected).</p>
                 </guideline>
             </param>
-            <param id=A.03.17.03E.ODP.03">
+            <param id="A.03.17.03E.ODP.03">
                 <prop name="label" value="A.03.17.03E.ODP[03]"/>
                 <label>personnel or roles</label>
                 <usage>
@@ -10593,7 +10593,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.17.04E" class="security_requirement">
             <title>Provenance</title>
-            <param id=A.03.17.04E.ODP.01">
+            <param id="A.03.17.04E.ODP.01">
                 <prop name="label" value="A.03.17.04E.ODP[01]"/>
                 <label>systems, system components, and associated CUI</label>
                 <usage>
@@ -10688,7 +10688,7 @@
         </control>
         <control id="SP_800_172_3_0_0_03.17.05E" class="security_requirement">
             <title>Supply Chain Integrity – Pedigree</title>
-            <param id=A.03.17.05E.ODP.01">
+            <param id="A.03.17.05E.ODP.01">
                 <prop name="label" value="A.03.17.05E.ODP[01]"/>
                 <label>safeguards</label>
                 <usage>
@@ -10698,7 +10698,7 @@
                     <p>safeguards employed to ensure the integrity of the system and system component are defined.</p>
                 </guideline>
             </param>
-            <param id=A.03.17.05E.ODP.02">
+            <param id="A.03.17.05E.ODP.02">
                 <prop name="label" value="A.03.17.05E.ODP[02]"/>
                 <label>analysis method</label>
                 <usage>
