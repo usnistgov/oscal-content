@@ -2,14 +2,24 @@
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 https://github.com/usnistgov/OSCAL/releases/download/v1.1.3/oscal_catalog_schema.xsd" 
-    uuid="720a010b-253c-4a94-bb65-cb58400966f5">
+    uuid="c44645ee-2b68-40fe-aa0b-79d0784f0870">
     <metadata>
         <title>Electronic Version of NIST Cybersecurity Framework 2.0</title>
         <published>2026-05-13T12:30:00-00:00</published>
-        <last-modified>2026-05-11T16:01:09.00000-00:00</last-modified>
-        <version>1.2.0</version>
+        <last-modified>2026-05-20T22:02:09.00000-00:00</last-modified>
+        <version>1.2.1</version>
         <oscal-version>v1.2.2</oscal-version>
         <revisions>
+            <revision>
+                <title>NIST Cybersecurity Framework 2.0</title>
+                <last-modified>2026-05-11T16:01:09.00000-00:00</last-modified>
+                <version>1.2.0</version>
+                <oscal-version>v1.2.2</oscal-version>
+                <link rel="version-history" href="720a010b-253c-4a94-bb65-cb58400966f5"/>
+                <remarks>
+                    <p>OSCAL v1.2.2 representation of the NIST Cybersecurity Framework 2.0 with bug fixes for withdrawn categories and subcategories.</p>
+                </remarks>
+            </revision>
             <revision>
                 <title>NIST Cybersecurity Framework 2.0</title>
                 <last-modified>2025-05-14T12:08:20.050176-05:00</last-modified>
@@ -4385,6 +4395,10 @@
         <resource uuid="720a010b-253c-4a94-bb65-cb58400966f5">
             <title>NIST CSF v2.0 content in OSCAL 1.1.3</title>
             <rlink href="https://github.com/usnistgov/oscal-content/releases/tag/v1.4.0"/>
+        </resource>
+        <resource uuid="720a010b-253c-4a94-bb65-cb58400966f5">
+            <title>NIST CSF v2.0 content in OSCAL 1.2.2</title>
+            <rlink href="https://github.com/usnistgov/oscal-content/releases/tag/v1.5.0"/>
         </resource>
     </back-matter>
 </catalog>
