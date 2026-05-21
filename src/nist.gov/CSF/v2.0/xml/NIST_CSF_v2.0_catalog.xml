@@ -4393,10 +4393,6 @@
             <rlink href="https://www.nist.gov/cyberframework" media-type="application/html" />
         </resource>
         <resource uuid="720a010b-253c-4a94-bb65-cb58400966f5">
-            <title>NIST CSF v2.0 content in OSCAL 1.1.3</title>
-            <rlink href="https://github.com/usnistgov/oscal-content/releases/tag/v1.4.0"/>
-        </resource>
-        <resource uuid="720a010b-253c-4a94-bb65-cb58400966f5">
             <title>NIST CSF v2.0 content in OSCAL 1.2.2</title>
             <rlink href="https://github.com/usnistgov/oscal-content/releases/tag/v1.5.0"/>
         </resource>
