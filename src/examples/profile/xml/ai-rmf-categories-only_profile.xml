@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="0a9a1f8e-3c2b-4f11-9a4e-6d2f7c81b301">
+  <metadata>
+    <title>AI RMF Categories-Only Example Profile for Demonstration and Testing</title>
+    <published>2026-07-31T00:00:00.000000-00:00</published>
+    <last-modified>2026-07-31T00:00:00.000000-00:00</last-modified>
+    <version>1.0.0</version>
+    <oscal-version>1.2.2</oscal-version>
+    <remarks>
+      <p>This example demonstrates the use of include-all narrowed by exclude-controls with matching patterns, resolved with as-is structuring, against the AI RMF 1.0 catalog. The selection retains the nineteen category-level controls and removes the subcategory-level controls. The selection is illustrative and is not a NIST-recommended, required, or otherwise normative AI RMF baseline.</p>
+    </remarks>
+  </metadata>
+  <import href="../../../nist.gov/AI100-1/ver1/xml/NIST_AI-RMF_v1_catalog.xml">
+    <include-all/>
+    <exclude-controls>
+      <matching pattern="GOVERN_*.*"/>
+      <matching pattern="MANAGE_*.*"/>
+      <matching pattern="MAP_*.*"/>
+      <matching pattern="MEASURE_*.*"/>
+    </exclude-controls>
+  </import>
+  <merge>
+    <as-is>true</as-is>
+  </merge>
+</profile>
