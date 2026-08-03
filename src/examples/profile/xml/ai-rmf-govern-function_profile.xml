@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="1b7c4d20-88f5-4a63-8f0d-5c9e2a1b7742">
+  <metadata>
+    <title>AI RMF GOVERN Function Example Profile for Demonstration and Testing</title>
+    <published>2026-07-31T00:00:00.000000-00:00</published>
+    <last-modified>2026-07-31T00:00:00.000000-00:00</last-modified>
+    <version>1.0.0</version>
+    <oscal-version>1.2.2</oscal-version>
+    <remarks>
+      <p>This example demonstrates include-controls with a matching pattern that selects one of the AI RMF functions in full, resolved with flat structuring. Paired with the categories-only example, which uses as-is structuring over the same catalog, the two illustrate the difference between the two structuring directives. The selection is illustrative and is not a NIST-recommended, required, or otherwise normative AI RMF baseline.</p>
+    </remarks>
+  </metadata>
+  <import href="../../../nist.gov/AI100-1/ver1/xml/NIST_AI-RMF_v1_catalog.xml">
+    <include-controls>
+      <matching pattern="GOVERN_*"/>
+    </include-controls>
+  </import>
+  <merge>
+    <flat/>
+  </merge>
+</profile>
