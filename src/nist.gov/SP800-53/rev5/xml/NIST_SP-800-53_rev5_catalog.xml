@@ -64643,7 +64643,7 @@
         <link rel="related" href="#ir-8"/>
         <link rel="related" href="#sa-5"/>
         <part name="statement" id="sa-15.13_smt">
-          <p>Require the developer of the system or system component to minimize the use of personally identifiable information in development and test environments.</p>
+          <p>Require the developer of the system, system component, or system service to use <insert type="param" id-ref="sa-15.13_odp.01"/> to log <insert type="param" id-ref="sa-15.13_odp.02"/> at <insert type="param" id-ref="sa-15.13_odp.03"/>.</p>
         </part>
         <part name="guidance" id="sa-15.13_gdn">
           <p>In support of better incident response and the ability to more quickly reconstruct security-related actions, identifying specific requirements for secure logging facilitates the ability to connect application-produced audit event logs with operational data.  Event types are consistent with the event types defined in <a href="#au-2">AU-02</a>.</p>
@@ -64656,7 +64656,7 @@
         </part>
         <part id="sa-15.13_asm-examine" name="assessment-method">
           <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="EXAMINE"/>
-          <prop name="label" class="sp800-53a" value="SA-15(12)-Examine"/>
+          <prop name="label" class="sp800-53a" value="SA-15(13)-Examine"/>
           <part name="assessment-objects">
             <p>System and services acquisition policy; </p>
             <p>solicitation documentation; </p>
