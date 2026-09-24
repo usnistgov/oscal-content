@@ -66191,7 +66191,7 @@
           <part id="sa-24_obj.a-5" name="assessment-objective">
             <prop name="label" class="sp800-53a" value="SA-24a.05"/>
             <p>organizational systems, system components, or system services achieve cyber resiliency through <insert type="param" id-ref="sa-24_odp.05"/>;</p>
-            <link rel="assessment-for" href="#ac-2_smt.a.5"/>
+            <link rel="assessment-for" href="#sa-24_smt.a.5"/>
           </part>
         </part>
         <part id="sa-24_obj.b" name="assessment-objective">
@@ -66199,29 +66199,30 @@
           <part id="sa-24_obj.b-1" name="assessment-objective">
             <prop name="label" class="sp800-53a" value="SA-24b.[01]"/>
             <p>selected cyber resiliency goals are implemented as part of an organizational risk management process of systems security engineering process;</p>
-            <link rel="assessment-for" href="#ac-2_smt.b"/>
+            <link rel="assessment-for" href="#sa-24_smt.b"/>
           </part>
           <part id="sa-24_obj.b-2" name="assessment-objective">
             <prop name="label" class="sp800-53a" value="SA-24b.[02]"/>
             <p>selected cyber resiliency objectives are implemented as part of an organizational risk management process of systems security engineering process;</p>
-            <link rel="assessment-for" href="#ac-2_smt.b"/>
+            <link rel="assessment-for" href="#sa-24_smt.b"/>
           </part>
           <part id="sa-24_obj.b-3" name="assessment-objective">
             <prop name="label" class="sp800-53a" value="SA-24b.[03]"/>
             <p>selected cyber resiliency techniques are implemented as part of an organizational risk management process of systems security engineering process;</p>
-            <link rel="assessment-for" href="#ac-2_smt.b"/>
+            <link rel="assessment-for" href="#sa-24_smt.b"/>
           </part>
           <part id="sa-24_obj.b-4" name="assessment-objective">
             <prop name="label" class="sp800-53a" value="SA-24b.[04]"/>
             <p>selected cyber resiliency implementation approaches are implemented as part of an organizational risk management process of systems security engineering process;</p>
-            <link rel="assessment-for" href="#ac-2_smt.b"/>
+            <link rel="assessment-for" href="#sa-24_smt.b"/>
           </part>
           <part id="sa-24_obj.b-5" name="assessment-objective">
             <prop name="label" class="sp800-53a" value="SA-24b.[05]"/>
             <p>selected cyber resiliency design principles are implemented as part of an organizational risk management process of systems security engineering process.</p>
-            <link rel="assessment-for" href="#ac-2_smt.b"/>
+            <link rel="assessment-for" href="#sa-24_smt.b"/>
           </part>
         </part>
+        <link rel="assessment-for" href="#sa-24_smt"/>
       </part>
       <part id="sa-24_asm-examine" name="assessment-method">
         <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="EXAMINE"/>
