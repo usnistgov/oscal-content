@@ -66221,6 +66221,31 @@
             <p>selected cyber resiliency design principles are implemented as part of an organizational risk management process of systems security engineering process.</p>
             <link rel="assessment-for" href="#ac-2_smt.b"/>
           </part>
+          <part id="sa-24_obj.b-6" name="assessment-objective">
+            <prop name="label" class="sp800-53a" value="SA-24b.[06]"/>
+            <p>selected cyber resiliency goals are reviewed as part of an organizational risk management process of systems security engineering process;</p>
+            <link rel="assessment-for" href="#sa-24_smt.b"/>
+          </part>
+          <part id="sa-24_obj.b-7" name="assessment-objective">
+            <prop name="label" class="sp800-53a" value="SA-24b.[07]"/>
+            <p>selected cyber resiliency objectives are reviewed as part of an organizational risk management process of systems security engineering process;</p>
+            <link rel="assessment-for" href="#sa-24_smt.b"/>
+          </part>
+          <part id="sa-24_obj.b-8" name="assessment-objective">
+            <prop name="label" class="sp800-53a" value="SA-24b.[08]"/>
+            <p>selected cyber resiliency techniques are reviewed as part of an organizational risk management process of systems security engineering process;</p>
+            <link rel="assessment-for" href="#sa-24_smt.b"/>
+          </part>
+          <part id="sa-24_obj.b-9" name="assessment-objective">
+            <prop name="label" class="sp800-53a" value="SA-24b.[09]"/>
+            <p>selected cyber resiliency implementation approaches are reviewed as part of an organizational risk management process of systems security engineering process;</p>
+            <link rel="assessment-for" href="#sa-24_smt.b"/>
+          </part>
+          <part id="sa-24_obj.b-10" name="assessment-objective">
+            <prop name="label" class="sp800-53a" value="SA-24b.[10]"/>
+            <p>selected cyber resiliency design principles are reviewed as part of an organizational risk management process of systems security engineering process.</p>
+            <link rel="assessment-for" href="#sa-24_smt.b"/>
+          </part>
         </part>
       </part>
       <part id="sa-24_asm-examine" name="assessment-method">
