@@ -77362,10 +77362,12 @@
             <part id="si-2.7_obj.c" name="assessment-objective">
               <prop name="label" class="sp800-53a" value="SI-02(07)c."/>
                 <part id="si-2.7_obj.c-1" name="assessment-objective">
+                  <prop name="label" class="sp800-53a" value="SI-02(07)c.[01]"/>
                   <p>The actions (defined in <a href="#si-2.7_smt.b">SI-02(07)b.</a>) are implemented</p>
                   <link rel="assessment-for" href="#si-2.7_smt.c"/>
                 </part>
                 <part id="si-2.7_obj.c-2" name="assessment-objective">
+                  <prop name="label" class="sp800-53a" value="SI-02(07)c.[02]"/>
                   <p>The implementation of actions is monitored for effectiveness.</p>
                   <link rel="assessment-for" href="#si-2.7_smt.c"/>
                 </part>
