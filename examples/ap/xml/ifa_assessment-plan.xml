@@ -134,7 +134,7 @@
     </assessment-subject>
     <task uuid="b3504d22-0e75-4dd7-9247-618661beba4e" type="action">
         <title>Examine Least Privilege Design and Implementation</title>
-        <associated-activity activity-uuid="52277182-1ba3-4cb6-8d96-b1b97aaf9d6b">
+        <associated-activity activity-uuid="0d243b23-a889-478f-9716-6d4870e56209">
             <subject type="component">
                 <include-all />
             </subject>
