@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="f554d6c8-4795-4f18-8b30-0cc93f7f1d7b">
+  <metadata>
+    <title>Sample Security Profile <em>All Controls</em> for Demonstration and Testing</title>
+    <published>2026-10-21T12:30:00.00000-00:00</published>
+    <last-modified>2026-10-21T02:46:09.00000-00:00</last-modified>
+    <version>1.1.1</version>
+    <oscal-version>1.2.3</oscal-version>
+    <remarks>
+      <p>The following document is used in the OSCAL Profile Tutorial and imports the complete sample catalog, including all controls.</p>
+    </remarks>
+  </metadata>
+  <import href="../../catalog/xml/basic_catalog.xml">
+    <include-controls>
+      <matching pattern="s*"/>
+    </include-controls>
+    <exclude-controls>
+      <matching pattern="s*.2"/>
+    </exclude-controls>
+  </import>
+  <merge>
+    <flat/>
+  </merge>
+  <modify>
+    <set-parameter param-id="s1.1.1-prm_2">
+      <label>a duration (maximum 30 minutes)</label>
+    </set-parameter>
+    <alter control-id="s1.1.1">
+      <add position="after" by-id="s1.1.1_gdn.3">
+        <part id="s1.1.1_gdn.4" name="assessment-objective" class="assessment-objective">
+          <p>Users of devices running Gnome may adjust the inactivity timeout using the following link: https://help.gnome.org/admin/system-admin-guide/stable/desktop-lockscreen.html.en</p>
+        </part>
+      </add>
+    </alter>
+  </modify>
+</profile>
