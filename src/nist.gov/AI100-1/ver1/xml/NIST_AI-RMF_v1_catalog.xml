@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="69ce74bf-714c-4bf4-9c3c-b11c061453be">
+<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="2cbeb73c-3204-4a37-b490-610f8d758fb3">
     <metadata>
         <title>Artificial Intelligence Risk Management Framework (AI RMF 1.0)</title>
-        <published>2026-07-07T10:02:11.237801-04:00</published>
-        <last-modified>2026-07-07T10:02:11.158696-04:00</last-modified>
+        <published>2026-10-22T16:00:00.00000-00:00</published>
+        <last-modified>2026-10-22T11:30:00.00000-00:00</last-modified>
         <version>1.0.0</version>
-        <oscal-version>v1.2.2</oscal-version>
+        <oscal-version>v1.2.3</oscal-version>
         <prop name="framework-identifier" ns="https://csrc.nist.gov/ns/cprt" value="AI_100" />
         <prop name="framework-version-identifier" ns="https://csrc.nist.gov/ns/cprt"
             value="AI_100_1_0_0" />

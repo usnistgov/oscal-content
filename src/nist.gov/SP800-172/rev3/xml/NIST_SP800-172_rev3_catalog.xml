@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="aead388b-f6c9-4777-931c-19e74867caee">
+<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="4c90674e-37a8-4833-8782-a482f9cc0a04">
     <metadata>
         <title>Electronic (OSCAL) Version of Enhanced Security Requirements for Protecting Controlled Unclassified Information v3.0.0</title>
-        <published>2026-05-20T16:22:03.874322-04:00</published>
-        <last-modified>2026-05-20T16:22:03.814564-04:00</last-modified>
+        <published>2026-10-22T16:00:00.00000-00:00</published>
+        <last-modified>2026-10-22T11:30:00.00000-00:00</last-modified>
         <version>1.0.1</version>
-        <oscal-version>v1.2.2</oscal-version>
+        <oscal-version>v1.2.3</oscal-version>
         <revisions>
             <revision>
                 <title>Electronic (OSCAL) Version of Enhanced Security Requirements for Protecting Controlled Unclassified Information v3.0.0</title>
