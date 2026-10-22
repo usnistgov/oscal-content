@@ -89141,12 +89141,12 @@
       <title>NIST SP 800-53 Rev 5.2.0 content in OSCAL 1.1.3, with minor bug fixes</title>
       <rlink href="https://github.com/usnistgov/oscal-content/releases/tag/v1.4.0"/>
     </resource>
-      <resource uuid="ea7c7688-79c5-463b-a91b-0650f2d98623">
-        <title>Electronic (OSCAL) Version of NIST SP 800-53 Rev 5.2.0 Controls and SP 800-53A Rev 5.2.0 Assessment Procedures</title>
-        <rlink media-type="application/oscal+zip" href="https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.5.0.zip"/>
-        <remarks>
-          <p>This OSCAL version of the Electronic (OSCAL) Version of NIST SP 800-53 Rev 5.2.0 Controls and SP 800-53A Rev 5.2.0 Assessment Procedures was released with the OSCAL content v1.5.0.</p>
-        </remarks>
-      </resource>
-    </back-matter>
+    <resource uuid="ea7c7688-79c5-463b-a91b-0650f2d98623">
+      <title>Electronic (OSCAL) Version of NIST SP 800-53 Rev 5.2.0 Controls and SP 800-53A Rev 5.2.0 Assessment Procedures</title>
+      <rlink media-type="application/oscal+zip" href="https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.5.0.zip"/>
+      <remarks>
+        <p>This OSCAL version of the Electronic (OSCAL) Version of NIST SP 800-53 Rev 5.2.0 Controls and SP 800-53A Rev 5.2.0 Assessment Procedures was released with the OSCAL content v1.5.0.</p>
+      </remarks>
+    </resource>
+  </back-matter>
 </catalog>

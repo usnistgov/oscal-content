@@ -303,12 +303,12 @@
             </description>
             <rlink media-type="application/oscal.profile+zip" href="https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.4.0.zip"/>
         </resource>
-            <resource uuid="cef90dc9-2745-4c59-90b6-f82f6a96dad7">
-                <title>IFA SYSTEM1234 System Security Plan</title>
-                <rlink media-type="application/oscal+zip" href="https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.5.0.zip"/>
-                <remarks>
-                    <p>This OSCAL version of the IFA SYSTEM1234 System Security Plan was released with the OSCAL content v1.5.0.</p>
-                </remarks>
-            </resource>
-        </back-matter>
+        <resource uuid="cef90dc9-2745-4c59-90b6-f82f6a96dad7">
+            <title>IFA SYSTEM1234 System Security Plan</title>
+            <rlink media-type="application/oscal+zip" href="https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.5.0.zip"/>
+            <remarks>
+                <p>This OSCAL version of the IFA SYSTEM1234 System Security Plan was released with the OSCAL content v1.5.0.</p>
+            </remarks>
+        </resource>
+    </back-matter>
 </system-security-plan>
