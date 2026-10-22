@@ -1,11 +1,20 @@
 catalog:
-  uuid: ebdc93fc-5ff6-43ac-bf63-4bffc1707c0a
+  uuid: 1073f478-e855-4011-b0b8-ace6be7a0f4e
   metadata:
     title: 'Sample Security Profile *For Demonstration* and Testing '
-    published: "2026-05-13T12:30:00.00000-00:00"
-    last-modified: "2026-05-13T05:09:16.25772Z"
+    published: "2026-10-22T16:00:00.00000-00:00"
+    last-modified: "2026-10-22T20:48:31.427678Z"
     version: 1.1.0
-    oscal-version: 1.2.2
+    oscal-version: 1.2.3
+    revisions:
+      - title: Sample Security Profile *For Demonstration* and Testing
+        last-modified: "2026-10-22T20:48:31.427678Z"
+        version: 1.1.0
+        oscal-version: 1.2.2
+        links:
+          - href: '#7db89308-6616-4b8a-8fe9-d2d9f2bb5292'
+            rel: version-history
+        remarks: This OSCAL version of the Sample Security Profile is part of the v 1.5.0 OSCAL content release.
     props:
       - name: resolution-tool
         value: OSCAL Profile Resolver XSLT Pipeline OPRXP
@@ -156,3 +165,11 @@ catalog:
 
                 1. Need-to-know: you are only granted access to the information you need to perform your tasks (different tasks/roles mean different need-to-know and hence different access profile);
                 1. Need-to-use: you are only granted access to the information processing facilities (IT equipment, applications, procedures, rooms) you need to perform your task/job/role.
+  back-matter:
+    resources:
+      - uuid: 7db89308-6616-4b8a-8fe9-d2d9f2bb5292
+        title: Sample Security Profile *For Demonstration* and Testing
+        rlinks:
+          - href: https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.5.0.zip
+            media-type: application/oscal+zip
+        remarks: This OSCAL version of the Sample Security Profile *For Demonstration* and Testing was released with the OSCAL content v1.5.0.

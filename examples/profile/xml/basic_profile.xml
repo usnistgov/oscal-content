@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="7db89308-6616-4b8a-8fe9-d2d9f2bb5292">
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="702ce615-ead4-4d7d-b6d9-a19875c34c6c">
   <metadata>
     <title>Sample Security Profile <em>For Demonstration</em> and Testing
     </title>
-      <published>2026-05-13T12:30:00.00000-00:00</published>
-      <last-modified>2026-05-12T02:46:09.00000-00:00</last-modified>
+      <published>2026-10-22T16:00:00.00000-00:00</published>
+      <last-modified>2026-10-22T11:30:00.00000-00:00</last-modified>
     <version>1.1.0</version>
-    <oscal-version>1.2.2</oscal-version>
+    <oscal-version>1.2.3</oscal-version>
+    <revisions>
+      <revision>
+        <title>Sample Security Profile <em>For Demonstration</em> and Testing</title>
+        <last-modified>2026-05-12T02:46:09.00000-00:00</last-modified>
+        <version>1.1.0</version>
+        <oscal-version>1.2.2</oscal-version>
+        <link rel="version-history" href="#7db89308-6616-4b8a-8fe9-d2d9f2bb5292"/>
+        <remarks>
+          <p>This OSCAL version of the Sample Security Profile is part of the v 1.5.0 OSCAL content release.</p>
+        </remarks>
+      </revision>
+    </revisions>
     <remarks>
       <p>The following document is used in the OSCAL Profile Tutorial and builds on the catalog created for the OSCAL Catalog Tutorial</p>
     </remarks>
@@ -37,4 +49,13 @@
       </add>
     </alter>
   </modify>
+  <back-matter>
+    <resource uuid="7db89308-6616-4b8a-8fe9-d2d9f2bb5292">
+      <title>Sample Security Profile <em>For Demonstration</em> and Testing</title>
+      <rlink media-type="application/oscal+zip" href="https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.5.0.zip"/>
+      <remarks>
+        <p>This OSCAL version of the Sample Security Profile <em>For Demonstration</em> and Testing was released with the OSCAL content v1.5.0.</p>
+      </remarks>
+    </resource>
+  </back-matter>
 </profile>

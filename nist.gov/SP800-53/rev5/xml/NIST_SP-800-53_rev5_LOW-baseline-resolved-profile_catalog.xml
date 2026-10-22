@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-          uuid="bf38fa2d-6772-4ae0-94f5-8ad0a76fd44c">
+          uuid="ac06cdc8-0ad2-4ff7-acfd-d03dea05ab6c">
    <metadata>
       <title>Electronic (OSCAL) Version of NIST Special Publication 800-53 Revision 5.2.0 LOW IMPACT BASELINE</title>
-      <last-modified>2026-05-13T05:08:56.112817Z</last-modified>
+      <last-modified>2026-10-22T20:48:32.364926Z</last-modified>
       <version>5.2.0</version>
-      <oscal-version>1.2.2</oscal-version>
+      <oscal-version>1.2.3</oscal-version>
       <prop name="resolution-tool"
              value="OSCAL Profile Resolver XSLT Pipeline OPRXP"/>
       <link href="NIST_SP-800-53_rev5_LOW-baseline_profile.xml"

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-          uuid="76996c98-965d-4202-bd74-e8baf65c99f5">
+          uuid="9f6457d3-ac84-47e5-a9b0-f07f72c177ad">
    <metadata>
       <title>Electronic (OSCAL) Version of NIST Special Publication 800-53 Revision 5.2.0 PRIVACY BASELINE</title>
-      <last-modified>2026-05-13T05:08:47.708155Z</last-modified>
+      <last-modified>2026-10-22T20:48:08.487884Z</last-modified>
       <version>5.2.0</version>
-      <oscal-version>1.2.2</oscal-version>
+      <oscal-version>1.2.3</oscal-version>
       <prop name="resolution-tool"
              value="OSCAL Profile Resolver XSLT Pipeline OPRXP"/>
       <link href="NIST_SP-800-53_rev5_PRIVACY-baseline_profile.xml"

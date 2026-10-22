@@ -1,11 +1,20 @@
 component-definition:
-  uuid: bedec39a-6f8c-4d24-8b12-34458f387800
+  uuid: a39f6507-97d6-4bbe-8f97-602225088fa4
   metadata:
     title: Test Component Definition
-    published: "2026-05-13T12:30:10.00000-00:00"
-    last-modified: "2026-05-12T09:26:10.00000-00:00"
+    published: "2026-10-22T16:00:00.00000-00:00"
+    last-modified: "2026-10-22T11:30:00.00000-00:00"
     version: "20231012"
-    oscal-version: 1.2.2
+    oscal-version: 1.2.3
+    revisions:
+      - title: Test Component Definition
+        last-modified: "2026-05-12T09:26:10.00000-00:00"
+        version: "20231012"
+        oscal-version: 1.2.2
+        links:
+          - href: '#bedec39a-6f8c-4d24-8b12-34458f387800'
+            rel: version-history
+        remarks: This OSCAL version of the Test Component Definition is part of the v 1.5.0 OSCAL content release.
     parties:
       - uuid: ee47836c-877c-4007-bbf3-c9d9bd805a9a
         type: organization
@@ -54,3 +63,9 @@ component-definition:
             media-type: application/oscal.catalog+json
           - href: https://raw.githubusercontent.com/GSA/fedramp-automation/master/dist/content/rev4/baselines/yaml/FedRAMP_rev4_HIGH-baseline_profile.yaml
             media-type: application/oscal.catalog+yaml
+      - uuid: bedec39a-6f8c-4d24-8b12-34458f387800
+        title: Test Component Definition
+        rlinks:
+          - href: https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.5.0.zip
+            media-type: application/oscal+zip
+        remarks: This OSCAL version of the Test Component Definition was released with the OSCAL content v1.5.0.

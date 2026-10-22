@@ -1,11 +1,11 @@
 {
   "catalog": {
-    "uuid": "6c87c4d8-bc9d-4817-8fc3-919ad85f17f8",
+    "uuid": "01d06766-70ef-42fe-9bf8-de63ca75d952",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 4 LOW IMPACT BASELINE",
-      "last-modified": "2026-05-13T05:09:14.847367Z",
+      "last-modified": "2026-10-22T20:47:55.691276Z",
       "version": "2015-01-22",
-      "oscal-version": "1.2.2",
+      "oscal-version": "1.2.3",
       "props": [
         {
           "name": "resolution-tool",

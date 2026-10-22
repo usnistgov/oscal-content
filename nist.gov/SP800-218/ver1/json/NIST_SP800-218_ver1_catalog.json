@@ -1,12 +1,12 @@
 {
   "catalog": {
-    "uuid": "ecaab8df-5a17-421c-bee7-044e3c0fac5c",
+    "uuid": "73d089ef-5aeb-443a-a053-c3a790e2062d",
     "metadata": {
       "title": "Electronic (OSCAL) Version of Secure Software Development Framework (SSDF): Recommendations for Mitigating the Risk of Software Vulnerabilities",
-      "published": "2026-05-13T12:30:00-00:00",
-      "last-modified": "2026-05-12T02:02:16.00000-00:00",
+      "published": "2026-10-22T16:00:00.00000-00:00",
+      "last-modified": "2026-10-22T11:30:00.00000-00:00",
       "version": "1.0.0",
-      "oscal-version": "v1.2.2",
+      "oscal-version": "v1.2.3",
       "revisions": [
         {
           "title": "Electronic (OSCAL) Version of Secure Software Development Framework (SSDF): Recommendations for Mitigating the Risk of Software Vulnerabilities",

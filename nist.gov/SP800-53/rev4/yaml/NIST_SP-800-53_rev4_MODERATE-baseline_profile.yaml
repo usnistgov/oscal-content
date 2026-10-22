@@ -1,10 +1,10 @@
 profile:
-  uuid: 8b3beca1-fcdc-43e0-aebb-ffc0a080c486
+  uuid: 85c1e167-cfe3-4740-ba5e-0fbaca02abe1
   metadata:
     title: NIST Special Publication 800-53 Revision 4 MODERATE IMPACT BASELINE
-    last-modified: "2026-05-11T16:16:09.00000-00:00"
+    last-modified: "2026-10-22T11:30:00.00000-00:00"
     version: "2015-01-22"
-    oscal-version: 1.2.2
+    oscal-version: 1.2.3
     roles:
       - id: creator
         title: Document Creator

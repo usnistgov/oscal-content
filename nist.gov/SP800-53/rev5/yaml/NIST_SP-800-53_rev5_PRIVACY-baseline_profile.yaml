@@ -1,10 +1,10 @@
 profile:
-  uuid: fed9f8ca-dcc2-492c-8a13-f9d979973e24
+  uuid: 18268f3c-e604-4e10-a117-d9ad268ab7fb
   metadata:
     title: Electronic (OSCAL) Version of NIST Special Publication 800-53 Revision 5.2.0 PRIVACY BASELINE
-    last-modified: "2026-05-11T16:10:16.00000-00:00"
+    last-modified: "2026-10-22T11:30:00.00000-00:00"
     version: 5.2.0
-    oscal-version: 1.2.2
+    oscal-version: 1.2.3
     roles:
       - id: creator
         title: OSCAL Version Creator

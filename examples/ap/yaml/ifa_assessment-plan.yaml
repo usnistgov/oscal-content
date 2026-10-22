@@ -1,11 +1,11 @@
 assessment-plan:
-  uuid: 74c1f5ed-7b04-49e4-a89b-f8b0120715fd
+  uuid: f12b274d-a851-452f-8f12-437b27d921b9
   metadata:
     title: IFA SYSTEM1234 Assessment Plan
-    published: "2026-05-13T12:30:00.00000-00:00"
-    last-modified: "2026-05-12T02:36:09.00000-00:00"
+    published: "2026-10-22T16:00:00.00000-00:00"
+    last-modified: "2026-10-22T11:30:00.00000-00:00"
     version: 1.1.0
-    oscal-version: 1.2.2
+    oscal-version: 1.2.3
     revisions:
       - title: IFA GoodRead Assessment Plan
         last-modified: "2024-02-01T13:57:28.355446-04:00"
@@ -23,6 +23,14 @@ assessment-plan:
           - href: '#97f36be8-fec0-4fa6-bcdf-e3f838eba040'
             rel: version-history
         remarks: This OSCAL version of the IFA Assessment Plan is part of the v 1.4.0 OSCAL content release.
+      - title: IFA SYSTEM1234 Assessment Plan
+        last-modified: "2026-05-12T02:36:09.00000-00:00"
+        version: 1.1.0
+        oscal-version: 1.2.2
+        links:
+          - href: '#74c1f5ed-7b04-49e4-a89b-f8b0120715fd'
+            rel: version-history
+        remarks: This OSCAL version of the IFA Assessment Plan is part of the v 1.5.0 OSCAL content release.
     roles:
       - id: assessor
         title: IFA Security Control Assessor
@@ -43,7 +51,7 @@ assessment-plan:
       - role-id: assessor
         party-uuids:
           - e7730080-71ce-4b20-bec4-84f33136fd58
-    remarks: In this version of the artifact, the content was updated to OSCAL v1.2.2.
+    remarks: In this version of the artifact, the content was updated to OSCAL v1.2.3.
   import-ssp:
     href: ../../ssp/xml/ifa_ssp.xml
   local-definitions:
@@ -96,7 +104,7 @@ assessment-plan:
       type: action
       title: Examine Least Privilege Design and Implementation
       associated-activities:
-        - activity-uuid: 0d243b23-a889-478f-9716-6d4870e56209
+        - activity-uuid: 52277182-1ba3-4cb6-8d96-b1b97aaf9d6b
           subjects:
             - type: component
               include-all: {}
@@ -121,3 +129,9 @@ assessment-plan:
           - href: https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.4.0.zip
             media-type: application/oscal+zip
         remarks: This OSCAL version of the IFA Assessment Plan was released with the OSCAL content v1.4.0.
+      - uuid: 74c1f5ed-7b04-49e4-a89b-f8b0120715fd
+        title: IFA SYSTEM1234 Assessment Plan
+        rlinks:
+          - href: https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.5.0.zip
+            media-type: application/oscal+zip
+        remarks: This OSCAL version of the IFA Assessment Plan was released with the OSCAL content v1.5.0.

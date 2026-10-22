@@ -1,11 +1,11 @@
 plan-of-action-and-milestones:
-  uuid: 4a202b62-38e0-40ac-9bf0-d595d5df7c28
+  uuid: 938b967d-1aa8-4c72-b431-32f9aede82f2
   metadata:
     title: IFA SYSTEM1234 Plan of Action and Milestones (POAM)
-    published: "2026-05-13T12:30:10.00000-00:00"
-    last-modified: "2026-05-12T02:46:09.00000-00:00"
+    published: "2026-10-22T16:00:00.00000-00:00"
+    last-modified: "2026-10-22T11:30:00.00000-00:00"
     version: 1.2.1
-    oscal-version: 1.2.2
+    oscal-version: 1.2.3
     revisions:
       - title: IFA GoodRead Plan of Action and Milestones
         last-modified: "2024-02-01T13:57:28.355446-04:00"
@@ -23,6 +23,14 @@ plan-of-action-and-milestones:
           - href: '#6374b585-dfeb-481d-bf08-5a97c49851fc'
             rel: version-history
         remarks: This OSCAL version of the IFA Plan of Actions and Milestones was published with OSCAL content v1.4.0.
+      - title: IFA SYSTEM1234 Plan of Action and Milestones (POAM)
+        last-modified: "2026-05-12T02:46:09.00000-00:00"
+        version: 1.2.1
+        oscal-version: 1.2.2
+        links:
+          - href: '#4a202b62-38e0-40ac-9bf0-d595d5df7c28'
+            rel: version-history
+        remarks: This OSCAL version of the IFA Plan of Action and Milestones is part of the v 1.5.0 OSCAL content release.
   import-ssp:
     href: ../../ssp/xml/ifa_ssp.xml
   system-id:
@@ -164,3 +172,9 @@ plan-of-action-and-milestones:
         title: IFA SYSTEM1234 Plan of Action and Milestones
         rlinks:
           - href: https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.4.0.zip
+      - uuid: 4a202b62-38e0-40ac-9bf0-d595d5df7c28
+        title: IFA SYSTEM1234 Plan of Action and Milestones (POAM)
+        rlinks:
+          - href: https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.5.0.zip
+            media-type: application/oscal+zip
+        remarks: This OSCAL version of the IFA SYSTEM1234 Plan of Action and Milestones (POAM) was released with the OSCAL content v1.5.0.

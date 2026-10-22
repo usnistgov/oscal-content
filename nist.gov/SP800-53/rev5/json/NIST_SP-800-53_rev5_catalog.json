@@ -1,11 +1,11 @@
 {
   "catalog": {
-    "uuid": "ea7c7688-79c5-463b-a91b-0650f2d98623",
+    "uuid": "d3880008-f544-4620-8f66-aaa4dfeb1202",
     "metadata": {
       "title": "Electronic (OSCAL) Version of NIST SP 800-53 Rev 5.2.0 Controls and SP 800-53A Rev 5.2.0 Assessment Procedures",
-      "last-modified": "2026-05-11T16:01:09.00000-00:00",
+      "last-modified": "2026-10-22T11:30:00.00000-00:00",
       "version": "5.2.0",
-      "oscal-version": "1.2.2",
+      "oscal-version": "1.2.3",
       "revisions": [
         {
           "title": "Electronic Version of NIST SP 800-53 Rev 5 Controls and SP 800-53A Rev 5 Assessment Procedures",
@@ -97,6 +97,19 @@
             }
           ],
           "remarks": "This OSCAL representation of the NIST SP 800-53 Revision 5.2.0 provides updates to the 800-53 v5.1.1 which support users to “securely and reliably deploy patches and updates\\\"."
+        },
+        {
+          "title": "Electronic (OSCAL) Version of NIST SP 800-53 Rev 5.2.0 Controls and SP 800-53A Rev 5.2.0 Assessment Procedures",
+          "last-modified": "2026-05-11T16:01:09.00000-00:00",
+          "version": "5.2.0",
+          "oscal-version": "1.2.2",
+          "links": [
+            {
+              "href": "#ea7c7688-79c5-463b-a91b-0650f2d98623",
+              "rel": "version-history"
+            }
+          ],
+          "remarks": "This OSCAL version of the Electronic (OSCAL) Version of NIST SP 800-53 Rev 5.2.0 Controls and SP 800-53A Rev 5.2.0 Assessment Procedures was released with the OSCAL content v1.5.0."
         }
       ],
       "props": [
@@ -188201,7 +188214,7 @@
                   {
                     "id": "sa-15.13_smt",
                     "name": "statement",
-                    "prose": "Require the developer of the system or system component to minimize the use of personally identifiable information in development and test environments."
+                    "prose": "Require the developer of the system, system component, or system service to use {{ insert: param, sa-15.13_odp.01 }} to log {{ insert: param, sa-15.13_odp.02 }} at {{ insert: param, sa-15.13_odp.03 }}."
                   },
                   {
                     "id": "sa-15.13_gdn",
@@ -188237,7 +188250,7 @@
                       },
                       {
                         "name": "label",
-                        "value": "SA-15(12)-Examine",
+                        "value": "SA-15(13)-Examine",
                         "class": "sp800-53a"
                       }
                     ],
@@ -192662,7 +192675,7 @@
                         "prose": "organizational systems, system components, or system services achieve cyber resiliency through {{ insert: param, sa-24_odp.05 }};",
                         "links": [
                           {
-                            "href": "#ac-2_smt.a.5",
+                            "href": "#sa-24_smt.a.5",
                             "rel": "assessment-for"
                           }
                         ]
@@ -192693,7 +192706,7 @@
                         "prose": "selected cyber resiliency goals are implemented as part of an organizational risk management process of systems security engineering process;",
                         "links": [
                           {
-                            "href": "#ac-2_smt.b",
+                            "href": "#sa-24_smt.b",
                             "rel": "assessment-for"
                           }
                         ]
@@ -192711,7 +192724,7 @@
                         "prose": "selected cyber resiliency objectives are implemented as part of an organizational risk management process of systems security engineering process;",
                         "links": [
                           {
-                            "href": "#ac-2_smt.b",
+                            "href": "#sa-24_smt.b",
                             "rel": "assessment-for"
                           }
                         ]
@@ -192729,7 +192742,7 @@
                         "prose": "selected cyber resiliency techniques are implemented as part of an organizational risk management process of systems security engineering process;",
                         "links": [
                           {
-                            "href": "#ac-2_smt.b",
+                            "href": "#sa-24_smt.b",
                             "rel": "assessment-for"
                           }
                         ]
@@ -192747,7 +192760,7 @@
                         "prose": "selected cyber resiliency implementation approaches are implemented as part of an organizational risk management process of systems security engineering process;",
                         "links": [
                           {
-                            "href": "#ac-2_smt.b",
+                            "href": "#sa-24_smt.b",
                             "rel": "assessment-for"
                           }
                         ]
@@ -192765,12 +192778,108 @@
                         "prose": "selected cyber resiliency design principles are implemented as part of an organizational risk management process of systems security engineering process.",
                         "links": [
                           {
-                            "href": "#ac-2_smt.b",
+                            "href": "#sa-24_smt.b",
+                            "rel": "assessment-for"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "sa-24_obj.b-6",
+                        "name": "assessment-objective",
+                        "props": [
+                          {
+                            "name": "label",
+                            "value": "SA-24b.[06]",
+                            "class": "sp800-53a"
+                          }
+                        ],
+                        "prose": "selected cyber resiliency goals are reviewed as part of an organizational risk management process of systems security engineering process;",
+                        "links": [
+                          {
+                            "href": "#sa-24_smt.b",
+                            "rel": "assessment-for"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "sa-24_obj.b-7",
+                        "name": "assessment-objective",
+                        "props": [
+                          {
+                            "name": "label",
+                            "value": "SA-24b.[07]",
+                            "class": "sp800-53a"
+                          }
+                        ],
+                        "prose": "selected cyber resiliency objectives are reviewed as part of an organizational risk management process of systems security engineering process;",
+                        "links": [
+                          {
+                            "href": "#sa-24_smt.b",
+                            "rel": "assessment-for"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "sa-24_obj.b-8",
+                        "name": "assessment-objective",
+                        "props": [
+                          {
+                            "name": "label",
+                            "value": "SA-24b.[08]",
+                            "class": "sp800-53a"
+                          }
+                        ],
+                        "prose": "selected cyber resiliency techniques are reviewed as part of an organizational risk management process of systems security engineering process;",
+                        "links": [
+                          {
+                            "href": "#sa-24_smt.b",
+                            "rel": "assessment-for"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "sa-24_obj.b-9",
+                        "name": "assessment-objective",
+                        "props": [
+                          {
+                            "name": "label",
+                            "value": "SA-24b.[09]",
+                            "class": "sp800-53a"
+                          }
+                        ],
+                        "prose": "selected cyber resiliency implementation approaches are reviewed as part of an organizational risk management process of systems security engineering process;",
+                        "links": [
+                          {
+                            "href": "#sa-24_smt.b",
+                            "rel": "assessment-for"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "sa-24_obj.b-10",
+                        "name": "assessment-objective",
+                        "props": [
+                          {
+                            "name": "label",
+                            "value": "SA-24b.[10]",
+                            "class": "sp800-53a"
+                          }
+                        ],
+                        "prose": "selected cyber resiliency design principles are reviewed as part of an organizational risk management process of systems security engineering process.",
+                        "links": [
+                          {
+                            "href": "#sa-24_smt.b",
                             "rel": "assessment-for"
                           }
                         ]
                       }
                     ]
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "#sa-24_smt",
+                    "rel": "assessment-for"
                   }
                 ]
               },
@@ -224111,6 +224220,13 @@
                           {
                             "id": "si-2.7_obj.c-1",
                             "name": "assessment-objective",
+                            "props": [
+                              {
+                                "name": "label",
+                                "value": "SI-02(07)c.[01]",
+                                "class": "sp800-53a"
+                              }
+                            ],
                             "prose": "The actions (defined in [SI-02(07)b.](#si-2.7_smt.b)) are implemented",
                             "links": [
                               {
@@ -224122,6 +224238,13 @@
                           {
                             "id": "si-2.7_obj.c-2",
                             "name": "assessment-objective",
+                            "props": [
+                              {
+                                "name": "label",
+                                "value": "SI-02(07)c.[02]",
+                                "class": "sp800-53a"
+                              }
+                            ],
                             "prose": "The implementation of actions is monitored for effectiveness.",
                             "links": [
                               {
@@ -255001,6 +255124,17 @@
               "href": "https://github.com/usnistgov/oscal-content/releases/tag/v1.4.0"
             }
           ]
+        },
+        {
+          "uuid": "ea7c7688-79c5-463b-a91b-0650f2d98623",
+          "title": "Electronic (OSCAL) Version of NIST SP 800-53 Rev 5.2.0 Controls and SP 800-53A Rev 5.2.0 Assessment Procedures",
+          "rlinks": [
+            {
+              "href": "https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.5.0.zip",
+              "media-type": "application/oscal+zip"
+            }
+          ],
+          "remarks": "This OSCAL version of the Electronic (OSCAL) Version of NIST SP 800-53 Rev 5.2.0 Controls and SP 800-53A Rev 5.2.0 Assessment Procedures was released with the OSCAL content v1.5.0."
         }
       ]
     }

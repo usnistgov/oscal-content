@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-model schematypens="http://www.w3.org/2001/XMLSchema" type="application/xml" href="https://github.com/usnistgov/OSCAL/releases/download/v1.1.1/oscal_complete_schema.xsd"?>
-  <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="ea7c7688-79c5-463b-a91b-0650f2d98623">
+  <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="d3880008-f544-4620-8f66-aaa4dfeb1202">
   <metadata>
     <title>Electronic (OSCAL) Version of NIST SP 800-53 Rev 5.2.0 Controls and SP 800-53A Rev 5.2.0 Assessment Procedures</title>
-    <last-modified>2026-05-11T16:01:09.00000-00:00</last-modified>
+    <last-modified>2026-10-22T11:30:00.00000-00:00</last-modified>
     <version>5.2.0</version>
-    <oscal-version>1.2.2</oscal-version>
+    <oscal-version>1.2.3</oscal-version>
     <revisions>
       <revision>
         <title>Electronic Version of NIST SP 800-53 Rev 5 Controls and SP 800-53A Rev 5 Assessment Procedures</title>
@@ -74,6 +74,16 @@
         <link rel="version-history" href="#5ba2a3ba-1aa2-47d8-ad69-5beef7372b98"/>
         <remarks>
           <p>This OSCAL representation of the NIST SP 800-53 Revision 5.2.0 provides updates to the 800-53 v5.1.1 which support users to “securely and reliably deploy patches and updates".</p>
+        </remarks>
+      </revision>
+      <revision>
+        <title>Electronic (OSCAL) Version of NIST SP 800-53 Rev 5.2.0 Controls and SP 800-53A Rev 5.2.0 Assessment Procedures</title>
+        <last-modified>2026-05-11T16:01:09.00000-00:00</last-modified>
+        <version>5.2.0</version>
+        <oscal-version>1.2.2</oscal-version>
+        <link rel="version-history" href="#ea7c7688-79c5-463b-a91b-0650f2d98623"/>
+        <remarks>
+          <p>This OSCAL version of the Electronic (OSCAL) Version of NIST SP 800-53 Rev 5.2.0 Controls and SP 800-53A Rev 5.2.0 Assessment Procedures was released with the OSCAL content v1.5.0.</p>
         </remarks>
       </revision>
     </revisions>
@@ -64643,7 +64653,7 @@
         <link rel="related" href="#ir-8"/>
         <link rel="related" href="#sa-5"/>
         <part name="statement" id="sa-15.13_smt">
-          <p>Require the developer of the system or system component to minimize the use of personally identifiable information in development and test environments.</p>
+          <p>Require the developer of the system, system component, or system service to use <insert type="param" id-ref="sa-15.13_odp.01"/> to log <insert type="param" id-ref="sa-15.13_odp.02"/> at <insert type="param" id-ref="sa-15.13_odp.03"/>.</p>
         </part>
         <part name="guidance" id="sa-15.13_gdn">
           <p>In support of better incident response and the ability to more quickly reconstruct security-related actions, identifying specific requirements for secure logging facilitates the ability to connect application-produced audit event logs with operational data.  Event types are consistent with the event types defined in <a href="#au-2">AU-02</a>.</p>
@@ -64656,7 +64666,7 @@
         </part>
         <part id="sa-15.13_asm-examine" name="assessment-method">
           <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="EXAMINE"/>
-          <prop name="label" class="sp800-53a" value="SA-15(12)-Examine"/>
+          <prop name="label" class="sp800-53a" value="SA-15(13)-Examine"/>
           <part name="assessment-objects">
             <p>System and services acquisition policy; </p>
             <p>solicitation documentation; </p>
@@ -66191,7 +66201,7 @@
           <part id="sa-24_obj.a-5" name="assessment-objective">
             <prop name="label" class="sp800-53a" value="SA-24a.05"/>
             <p>organizational systems, system components, or system services achieve cyber resiliency through <insert type="param" id-ref="sa-24_odp.05"/>;</p>
-            <link rel="assessment-for" href="#ac-2_smt.a.5"/>
+            <link rel="assessment-for" href="#sa-24_smt.a.5"/>
           </part>
         </part>
         <part id="sa-24_obj.b" name="assessment-objective">
@@ -66199,29 +66209,55 @@
           <part id="sa-24_obj.b-1" name="assessment-objective">
             <prop name="label" class="sp800-53a" value="SA-24b.[01]"/>
             <p>selected cyber resiliency goals are implemented as part of an organizational risk management process of systems security engineering process;</p>
-            <link rel="assessment-for" href="#ac-2_smt.b"/>
+            <link rel="assessment-for" href="#sa-24_smt.b"/>
           </part>
           <part id="sa-24_obj.b-2" name="assessment-objective">
             <prop name="label" class="sp800-53a" value="SA-24b.[02]"/>
             <p>selected cyber resiliency objectives are implemented as part of an organizational risk management process of systems security engineering process;</p>
-            <link rel="assessment-for" href="#ac-2_smt.b"/>
+            <link rel="assessment-for" href="#sa-24_smt.b"/>
           </part>
           <part id="sa-24_obj.b-3" name="assessment-objective">
             <prop name="label" class="sp800-53a" value="SA-24b.[03]"/>
             <p>selected cyber resiliency techniques are implemented as part of an organizational risk management process of systems security engineering process;</p>
-            <link rel="assessment-for" href="#ac-2_smt.b"/>
+            <link rel="assessment-for" href="#sa-24_smt.b"/>
           </part>
           <part id="sa-24_obj.b-4" name="assessment-objective">
             <prop name="label" class="sp800-53a" value="SA-24b.[04]"/>
             <p>selected cyber resiliency implementation approaches are implemented as part of an organizational risk management process of systems security engineering process;</p>
-            <link rel="assessment-for" href="#ac-2_smt.b"/>
+            <link rel="assessment-for" href="#sa-24_smt.b"/>
           </part>
           <part id="sa-24_obj.b-5" name="assessment-objective">
             <prop name="label" class="sp800-53a" value="SA-24b.[05]"/>
             <p>selected cyber resiliency design principles are implemented as part of an organizational risk management process of systems security engineering process.</p>
-            <link rel="assessment-for" href="#ac-2_smt.b"/>
+            <link rel="assessment-for" href="#sa-24_smt.b"/>
+          </part>
+          <part id="sa-24_obj.b-6" name="assessment-objective">
+            <prop name="label" class="sp800-53a" value="SA-24b.[06]"/>
+            <p>selected cyber resiliency goals are reviewed as part of an organizational risk management process of systems security engineering process;</p>
+            <link rel="assessment-for" href="#sa-24_smt.b"/>
+          </part>
+          <part id="sa-24_obj.b-7" name="assessment-objective">
+            <prop name="label" class="sp800-53a" value="SA-24b.[07]"/>
+            <p>selected cyber resiliency objectives are reviewed as part of an organizational risk management process of systems security engineering process;</p>
+            <link rel="assessment-for" href="#sa-24_smt.b"/>
+          </part>
+          <part id="sa-24_obj.b-8" name="assessment-objective">
+            <prop name="label" class="sp800-53a" value="SA-24b.[08]"/>
+            <p>selected cyber resiliency techniques are reviewed as part of an organizational risk management process of systems security engineering process;</p>
+            <link rel="assessment-for" href="#sa-24_smt.b"/>
+          </part>
+          <part id="sa-24_obj.b-9" name="assessment-objective">
+            <prop name="label" class="sp800-53a" value="SA-24b.[09]"/>
+            <p>selected cyber resiliency implementation approaches are reviewed as part of an organizational risk management process of systems security engineering process;</p>
+            <link rel="assessment-for" href="#sa-24_smt.b"/>
+          </part>
+          <part id="sa-24_obj.b-10" name="assessment-objective">
+            <prop name="label" class="sp800-53a" value="SA-24b.[10]"/>
+            <p>selected cyber resiliency design principles are reviewed as part of an organizational risk management process of systems security engineering process.</p>
+            <link rel="assessment-for" href="#sa-24_smt.b"/>
           </part>
         </part>
+        <link rel="assessment-for" href="#sa-24_smt"/>
       </part>
       <part id="sa-24_asm-examine" name="assessment-method">
         <prop name="method" ns="http://csrc.nist.gov/ns/rmf" value="EXAMINE"/>
@@ -77336,10 +77372,12 @@
             <part id="si-2.7_obj.c" name="assessment-objective">
               <prop name="label" class="sp800-53a" value="SI-02(07)c."/>
                 <part id="si-2.7_obj.c-1" name="assessment-objective">
+                  <prop name="label" class="sp800-53a" value="SI-02(07)c.[01]"/>
                   <p>The actions (defined in <a href="#si-2.7_smt.b">SI-02(07)b.</a>) are implemented</p>
                   <link rel="assessment-for" href="#si-2.7_smt.c"/>
                 </part>
                 <part id="si-2.7_obj.c-2" name="assessment-objective">
+                  <prop name="label" class="sp800-53a" value="SI-02(07)c.[02]"/>
                   <p>The implementation of actions is monitored for effectiveness.</p>
                   <link rel="assessment-for" href="#si-2.7_smt.c"/>
                 </part>
@@ -89102,6 +89140,13 @@
     <resource uuid="5ba2a3ba-1aa2-47d8-ad69-5beef7372b98">
       <title>NIST SP 800-53 Rev 5.2.0 content in OSCAL 1.1.3, with minor bug fixes</title>
       <rlink href="https://github.com/usnistgov/oscal-content/releases/tag/v1.4.0"/>
+    </resource>
+    <resource uuid="ea7c7688-79c5-463b-a91b-0650f2d98623">
+      <title>Electronic (OSCAL) Version of NIST SP 800-53 Rev 5.2.0 Controls and SP 800-53A Rev 5.2.0 Assessment Procedures</title>
+      <rlink media-type="application/oscal+zip" href="https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.5.0.zip"/>
+      <remarks>
+        <p>This OSCAL version of the Electronic (OSCAL) Version of NIST SP 800-53 Rev 5.2.0 Controls and SP 800-53A Rev 5.2.0 Assessment Procedures was released with the OSCAL content v1.5.0.</p>
+      </remarks>
     </resource>
   </back-matter>
 </catalog>
