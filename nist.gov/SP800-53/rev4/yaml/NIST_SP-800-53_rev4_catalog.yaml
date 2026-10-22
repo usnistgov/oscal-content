@@ -1,10 +1,10 @@
 catalog:
-  uuid: 9c106300-a2dd-40a4-bf03-a4a1e67c27a2
+  uuid: e3acde41-75d5-49d7-b8f8-236d87861dd7
   metadata:
     title: 'NIST Special Publication 800-53 Revision 4: Security and Privacy Controls for Federal Information Systems and Organizations'
-    last-modified: "2026-10-22T11:30:00.00000-00:00"
+    last-modified: "2026-10-22T16:30:00.00000-00:00"
     version: "2015-01-22"
-    oscal-version: 1.2.3
+    oscal-version: 1.0.0
     props:
       - name: keywords
         value: Assurance, computer security, FISMA, Privacy Act, Risk Management Framework, security controls, security requirements

@@ -1,16 +1,16 @@
 {
   "catalog": {
-    "uuid": "1073f478-e855-4011-b0b8-ace6be7a0f4e",
+    "uuid": "8e75bc09-0f29-4fb2-b375-34e2cfd7077c",
     "metadata": {
       "title": "Sample Security Profile *For Demonstration* and Testing ",
       "published": "2026-10-22T16:00:00.00000-00:00",
-      "last-modified": "2026-10-22T20:48:31.427678Z",
+      "last-modified": "2026-10-22T21:50:16.769047Z",
       "version": "1.1.0",
       "oscal-version": "1.2.3",
       "revisions": [
         {
           "title": "Sample Security Profile *For Demonstration* and Testing",
-          "last-modified": "2026-10-22T20:48:31.427678Z",
+          "last-modified": "2026-10-22T21:50:16.769047Z",
           "version": "1.1.0",
           "oscal-version": "1.2.2",
           "links": [

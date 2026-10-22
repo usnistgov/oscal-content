@@ -1,10 +1,10 @@
 profile:
-  uuid: c39aff01-b230-449b-bc7a-60772767bc3d
+  uuid: d6922615-da1f-4739-b5b3-7a42c713db3f
   metadata:
     title: NIST Special Publication 800-53 Revision 4 LOW IMPACT BASELINE
-    last-modified: "2026-10-22T11:30:00.00000-00:00"
+    last-modified: "2026-10-22T16:30:00.00000-00:00"
     version: "2015-01-22"
-    oscal-version: 1.2.3
+    oscal-version: 1.0.0
     roles:
       - id: creator
         title: Document Creator

@@ -1,11 +1,11 @@
 {
   "profile": {
-    "uuid": "271db34a-0697-4ac8-8a94-c894f16aaf06",
+    "uuid": "c207beb7-e545-4fd4-89f2-98d8e20c4a48",
     "metadata": {
       "title": "NIST Special Publication 800-53 Revision 4 HIGH IMPACT BASELINE",
-      "last-modified": "2026-10-22T11:30:00.00000-00:00",
+      "last-modified": "2026-10-22T16:30:00.00000-00:00",
       "version": "2015-01-22",
-      "oscal-version": "1.2.3",
+      "oscal-version": "1.0.0",
       "roles": [
         {
           "id": "creator",

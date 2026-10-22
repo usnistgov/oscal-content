@@ -1,9 +1,9 @@
 {
   "catalog": {
-    "uuid": "cdfd0da7-035f-40d4-929e-ebda81961604",
+    "uuid": "a26eb673-0cee-44e5-81a1-c9ece412e252",
     "metadata": {
       "title": "Electronic (OSCAL) Version of NIST Special Publication 800-53 Revision 5.1.1 HIGH IMPACT BASELINE",
-      "last-modified": "2026-10-22T20:48:20.753327Z",
+      "last-modified": "2026-10-22T21:50:07.189289Z",
       "version": "5.2.0",
       "oscal-version": "1.2.3",
       "props": [

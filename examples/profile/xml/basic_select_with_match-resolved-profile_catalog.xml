@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-          uuid="d570e06e-329c-44c0-baf7-da556e903f52">
+          uuid="37941a6e-ea2f-487f-81a7-7b69610e34c3">
    <metadata>
       <title>Sample Security Profile <em>All Controls</em> for Demonstration and Testing</title>
       <published>2026-10-21T12:30:00.00000-00:00</published>
-      <last-modified>2026-10-22T20:48:40.309217Z</last-modified>
+      <last-modified>2026-10-22T21:50:24.673519Z</last-modified>
       <version>1.1.1</version>
       <oscal-version>1.2.3</oscal-version>
       <prop name="resolution-tool"

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-          uuid="45425f3d-a465-45eb-ab1c-e50c8a5132e5">
+          uuid="39838abb-7153-4409-a6d1-fe51686a95ea">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 4 HIGH IMPACT BASELINE</title>
-      <last-modified>2026-10-22T20:48:07.167694Z</last-modified>
+      <last-modified>2026-10-22T21:49:55.690817Z</last-modified>
       <version>2015-01-22</version>
-      <oscal-version>1.2.3</oscal-version>
+      <oscal-version>1.0.0</oscal-version>
       <prop name="resolution-tool"
              value="OSCAL Profile Resolver XSLT Pipeline OPRXP"/>
       <link href="NIST_SP-800-53_rev4_HIGH-baseline_profile.xml"

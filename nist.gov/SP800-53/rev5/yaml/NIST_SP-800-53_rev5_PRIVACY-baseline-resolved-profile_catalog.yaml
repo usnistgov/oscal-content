@@ -1,8 +1,8 @@
 catalog:
-  uuid: 9f6457d3-ac84-47e5-a9b0-f07f72c177ad
+  uuid: 1f7f558e-c1c1-4539-a911-a76f54cf406b
   metadata:
     title: Electronic (OSCAL) Version of NIST Special Publication 800-53 Revision 5.2.0 PRIVACY BASELINE
-    last-modified: "2026-10-22T20:48:08.487884Z"
+    last-modified: "2026-10-22T21:49:56.134678Z"
     version: 5.2.0
     oscal-version: 1.2.3
     props:

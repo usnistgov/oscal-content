@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-          uuid="1073f478-e855-4011-b0b8-ace6be7a0f4e">
+          uuid="8e75bc09-0f29-4fb2-b375-34e2cfd7077c">
    <metadata>
       <title>Sample Security Profile <em>For Demonstration</em> and Testing
     </title>
       <published>2026-10-22T16:00:00.00000-00:00</published>
-      <last-modified>2026-10-22T20:48:31.427678Z</last-modified>
+      <last-modified>2026-10-22T21:50:16.769047Z</last-modified>
       <version>1.1.0</version>
       <oscal-version>1.2.3</oscal-version>
       <revisions>
          <revision>
             <title>Sample Security Profile <em>For Demonstration</em> and Testing</title>
-            <last-modified>2026-10-22T20:48:31.427678Z</last-modified>
+            <last-modified>2026-10-22T21:50:16.769047Z</last-modified>
             <version>1.1.0</version>
             <oscal-version>1.2.2</oscal-version>
             <link rel="version-history" href="#7db89308-6616-4b8a-8fe9-d2d9f2bb5292"/>

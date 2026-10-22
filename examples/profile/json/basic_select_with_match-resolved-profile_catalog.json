@@ -1,10 +1,10 @@
 {
   "catalog": {
-    "uuid": "d570e06e-329c-44c0-baf7-da556e903f52",
+    "uuid": "37941a6e-ea2f-487f-81a7-7b69610e34c3",
     "metadata": {
       "title": "Sample Security Profile *All Controls* for Demonstration and Testing",
       "published": "2026-10-21T12:30:00.00000-00:00",
-      "last-modified": "2026-10-22T20:48:40.309217Z",
+      "last-modified": "2026-10-22T21:50:24.673519Z",
       "version": "1.1.1",
       "oscal-version": "1.2.3",
       "props": [
