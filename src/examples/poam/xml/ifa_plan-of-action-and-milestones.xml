@@ -218,7 +218,7 @@
                 the IFA Office of Public Affairs and its staff.</p>
         </description>
         <related-observation observation-uuid="0c4de4fc-9bde-46af-b6fe-3b5e78194dcf" />
-        <associated-risk risk-uuid="401c15c9-ad6b-4d4a-a591-7d53a3abb3b6" />
+        <associated-risk risk-uuid="8b8bae66-b28c-4fa5-9a20-b79e7322fc00" />
     </poam-item>
     <poam-item uuid="48c8368d-43ff-4736-9b28-64b1b1284c03">
         <title>SYSTEM1234 System Engineers Have Over-Privileged Access to Cloud Infrastructure Account</title>
